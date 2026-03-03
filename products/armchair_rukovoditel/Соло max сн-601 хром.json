@@ -62,15 +62,15 @@
                     "depth": "270",
                     "height": "690"
                 },
-                "box_size": "910х270,0х690,0",
+                "box_size": "910х270х690",
                 "transportation": "удобства транспортировки и хранения кресло поставляется в разобранном виде. Каждое кресло упаковано в отдельный 5-слойный гофрокороб размером"
             }
         }
     ],
     "dimensions": [
         {
-            "brutto": "910",
-            "netto": "13,8",
+            "brutto": "13,8",
+            "netto": "12",
             "volume": "0,17"
         }
     ],
@@ -125,24 +125,55 @@
             },
             "seat_width_with_armrests": {
                 "min": "670",
-                "max": null
+                "max": "670"
             },
             "seat_width": {
                 "max": "540",
                 "min": ""
             },
             "diameter_cross": {
-                "max": "700",
+                "max": "495",
                 "min": ""
             },
             "runners_width": {
-                "max": "",
+                "max": "700",
                 "min": ""
             },
             "runners_depth": {
                 "max": "",
                 "min": ""
-            }
+            },
+            "seat_to_floor_height_upper": {
+                "min": "380",
+                "max": "480"
+            },
+            "armrest_height_from_floor": {
+                "min": "270"
+            },
+            "armrest_width_support": {},
+            "armrest_length_support": {
+                "max": "340"
+            },
+            "seat_depth_km": {},
+            "backrest_height_external": {},
+            "backrest_width_narrow": {
+                "max": "540"
+            },
+            "backrest_width_wide": {
+                "max": "430"
+            },
+            "recommended_load": "120",
+            "max_load": "150",
+            "skeleton": "немонолитный",
+            "minpromtorg": {},
+            "netto": "12",
+            "brutto": "13,8",
+            "package_width": "910",
+            "package_depth": "270,0",
+            "package_height": "690,0",
+            "volume": "0,17",
+            "box_on_pallet": {},
+            "pallet_width": {}
         }
     ],
     "skeleton": "немонолитный",

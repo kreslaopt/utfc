@@ -119,14 +119,14 @@
             },
             "seat_width_with_armrests": {
                 "min": "570",
-                "max": null
+                "max": "570"
             },
             "seat_width": {
                 "max": "495",
                 "min": ""
             },
             "diameter_cross": {
-                "max": "",
+                "max": "440",
                 "min": ""
             },
             "runners_width": {
@@ -134,9 +134,39 @@
                 "min": ""
             },
             "runners_depth": {
-                "max": "590",
+                "max": "480",
                 "min": ""
-            }
+            },
+            "seat_to_floor_height_upper": {
+                "min": "420"
+            },
+            "armrest_height_from_floor": {
+                "min": "240"
+            },
+            "armrest_width_support": {},
+            "armrest_length_support": {
+                "max": "250"
+            },
+            "seat_depth_km": {},
+            "backrest_height_external": {},
+            "backrest_width_narrow": {
+                "max": "495"
+            },
+            "backrest_width_wide": {
+                "max": "410"
+            },
+            "recommended_load": "90",
+            "max_load": "120",
+            "skeleton": "немонолитный",
+            "minpromtorg": "+",
+            "netto": "9,5",
+            "brutto": {},
+            "package_width": {},
+            "package_depth": {},
+            "package_height": {},
+            "volume": {},
+            "box_on_pallet": {},
+            "pallet_width": {}
         }
     ],
     "skeleton": "немонолитный",

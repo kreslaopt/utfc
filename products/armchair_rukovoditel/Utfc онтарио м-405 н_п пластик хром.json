@@ -53,15 +53,15 @@
                     "depth": "390",
                     "height": "670"
                 },
-                "box_size": "780х390,0х670,0",
+                "box_size": "780х390х670",
                 "transportation": "удобства транспортировки и хранения кресло поставляется в разобранном виде. Каждое кресло упаковано в отдельный 5-слойный гофрокороб размером"
             }
         }
     ],
     "dimensions": [
         {
-            "brutto": "780",
-            "netto": "18,6",
+            "brutto": "18,6",
+            "netto": "16,8",
             "volume": "0,22"
         }
     ],
@@ -116,14 +116,14 @@
             },
             "seat_width_with_armrests": {
                 "min": "675",
-                "max": null
+                "max": "675"
             },
             "seat_width": {
                 "max": "520",
                 "min": ""
             },
             "diameter_cross": {
-                "max": "",
+                "max": "535",
                 "min": ""
             },
             "runners_width": {
@@ -131,9 +131,35 @@
                 "min": ""
             },
             "runners_depth": {
-                "max": "560",
+                "max": "480",
                 "min": ""
-            }
+            },
+            "seat_to_floor_height_upper": {},
+            "armrest_height_from_floor": {
+                "min": "280"
+            },
+            "armrest_width_support": {},
+            "armrest_length_support": {},
+            "seat_depth_km": {},
+            "backrest_height_external": {},
+            "backrest_width_narrow": {
+                "max": "520"
+            },
+            "backrest_width_wide": {
+                "max": "490"
+            },
+            "recommended_load": "90",
+            "max_load": "120",
+            "skeleton": "немонолитный",
+            "minpromtorg": {},
+            "netto": "16,8",
+            "brutto": "18,6",
+            "package_width": "780",
+            "package_depth": "390,0",
+            "package_height": "670,0",
+            "volume": "0,22",
+            "box_on_pallet": {},
+            "pallet_width": {}
         }
     ],
     "lost": [

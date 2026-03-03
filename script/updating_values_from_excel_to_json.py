@@ -296,30 +296,40 @@ models_excel = df.iloc[3:, 1].dropna().tolist()
 print(df.head(10))
 
 columns_mapping = {
-    'Unnamed: 2': ('chair_height', 'min', 'max'),
-    'Unnamed: 4': ('headrest_height', 'min', 'max'),
-    'Unnamed: 6': ('seat_to_floor_height', 'min', 'max'),
-    'Unnamed: 12': ('armrest_height_from_seat', 'min', 'max'),
-    'Unnamed: 17': ('chair_depth', 'min', None),
-    'Unnamed: 19': ('seat_depth', 'min', 'max'),
-    'Unnamed: 22': ('backrest_height', None, 'max'),
-    'Unnamed: 23': ('backrest_to_seat_height', 'min', 'max'),
-    'Unnamed: 27': ('seat_width_with_armrests', 'min', 'max'),
-    'Unnamed: 29': ('seat_width', None, 'max'),
-    'Unnamed: 32': ('diameter_cross', None, 'max'),
-    'Unnamed: 33': ('runners_width', None, 'max'),
-    'Unnamed: 34': ('runners_depth', None, 'max'),
-    'Unnamed: 35': ('recommended_load', None, None),
-    'Unnamed: 36': ('max_load', None, None),
-    'Unnamed: 37': ('skeleton', None, None),
-    'Unnamed: 38': ('minpromtorg', None, None),
-    'Unnamed: 39': ('typeofproduct', None, None),
-    'Unnamed: 40': ('netto', None, None),
-    'Unnamed: 41': ('brutto', None, None),
-    'Unnamed: 42': ('package_width', None, None),
-    'Unnamed: 43': ('package_depth', None, None),
-    'Unnamed: 44': ('package_height', None, None),
-    'Unnamed: 45': ('volume', None, None)
+    'Unnamed: 2': ('chair_height', 'min', 'max'),  # Высота кресла
+    'Unnamed: 4': ('headrest_height', 'min', 'max'),  # Высота подголовника
+    'Unnamed: 6': ('seat_to_floor_height', 'min', 'max'),  # Высота до сиденья (до нижней части)
+    'Unnamed: 8': ('seat_to_floor_height_upper', 'min', 'max'),  # Высота до сиденья (до верхней части)
+    'Unnamed: 10': ('armrest_height_from_floor', 'min', 'max'),  # Высота подлокотника (до нижней части)
+    'Unnamed: 12': ('armrest_height_from_seat', 'min', 'max'),  # Высота подлокотника (от сиденья)
+    'Unnamed: 13': ('armrest_width_support', None, 'max'),  # Ширина подлокотников опорной части
+    'Unnamed: 15': ('armrest_length_support', None, 'max'),  # Длина подлокотников опорной части
+    'Unnamed: 17': ('chair_depth', 'min', None),  # Глубина кресла
+    'Unnamed: 19': ('seat_depth', 'min', 'max'),  # Глубина сиденья
+    'Unnamed: 20': ('seat_depth_km', None, 'max'),  # Глубина сиденья (КМ)
+    'Unnamed: 22': ('backrest_height', None, 'max'),  # Высота спинки
+    'Unnamed: 23': ('backrest_to_seat_height', 'min', 'max'),  # Высота спинки от сиденья
+    'Unnamed: 24': ('backrest_height_external', None, 'max'),  # Высота спинки с внешней стороны
+    'Unnamed: 26': ('seat_width_with_armrests', 'min', 'max'),  # Ширина сиденья с подлокотниками
+    'Unnamed: 28': ('seat_width', None, 'max'),  # Ширина сиденья
+    'Unnamed: 29': ('backrest_width_narrow', None, 'max'),  # Ширина спинки (узкая часть)
+    'Unnamed: 30': ('backrest_width_wide', None, 'max'),  # Ширина спинки (широкая часть)
+    'Unnamed: 31': ('diameter_cross', None, 'max'),  # Диаметр крестовины
+    'Unnamed: 32': ('runners_width', None, 'max'),  # Ширина полозьев
+    'Unnamed: 33': ('runners_depth', None, 'max'),  # Глубина полозьев
+    'Unnamed: 35': ('recommended_load', None, None),  # Рекомендуемая нагрузка
+    'Unnamed: 36': ('max_load', None, None),  # Предельно допустимая нагрузка
+    'Unnamed: 37': ('skeleton', None, None),  # Каркас
+    'Unnamed: 38': ('minpromtorg', None, None),  # Минпромторг
+    # 'Unnamed: 39': ('typeofproduct', None, None),  # Тип продукта
+    'Unnamed: 39': ('netto', None, None),  # Масса нетто
+    'Unnamed: 40': ('brutto', None, None),  # Масса брутто
+    'Unnamed: 41': ('package_width', None, None),  # Ширина упаковки
+    'Unnamed: 42': ('package_depth', None, None),  # Глубина упаковки
+    'Unnamed: 43': ('package_height', None, None),  # Высота упаковки
+    'Unnamed: 44': ('volume', None, None),  # Объем
+    'Unnamed: 45': ('box_on_pallet', None, None),  # Количество коробок на паллете, шт.
+    'Unnamed: 46': ('pallet_width', None, None)  # габариты нагруженного паллета, мм (д.ш.в.)		
 }
 
 for i, model in enumerate(models_excel):
@@ -387,29 +397,32 @@ for json_file in json_files:
         normalized = normalize_model_name(model_name)
         excel_model = None
 
-
         for model in excel_data:
             if normalize_model_name(model) == normalized:
                 excel_model = model
                 break
 
         if excel_model:
-            # Удаляем модель из missing_in_json, если она найдена в JSON
-            missing_in_json.discard(excel_model)
-
             excel_model_data = excel_data[excel_model]
 
             # Обновляем dimensions_details
-            if 'dimensions_details' in data and len(data['dimensions_details']) > 0:
-                for key, value in excel_model_data['dimensions_details'].items():
-                    if key in data['dimensions_details'][0]:
-                        if isinstance(value, dict):
-                            for sub_key, sub_value in value.items():
-                                if sub_value is not None:
-                                    data['dimensions_details'][0][key][sub_key] = sub_value
-                        else:
-                            if value is not None:
-                                data['dimensions_details'][0][key] = value
+            if 'dimensions_details' not in data:
+                data['dimensions_details'] = [{}]
+
+            for key, value in excel_model_data['dimensions_details'].items():
+                if key not in data['dimensions_details'][0]:
+                    data['dimensions_details'][0][key] = {}
+
+                if isinstance(value, dict):
+                    for sub_key, sub_value in value.items():
+                        if sub_value is not None:
+                            if sub_key not in data['dimensions_details'][0][key]:
+                                data['dimensions_details'][0][key][sub_key] = sub_value
+                            else:
+                                data['dimensions_details'][0][key][sub_key] = sub_value
+                else:
+                    if value is not None:
+                        data['dimensions_details'][0][key] = value
 
             # Обновляем additional_info
             if 'additional_info' in data:
@@ -444,20 +457,16 @@ for json_file in json_files:
             # Обновляем transportation.packaging.size и box_size
             if 'transportation' in data and len(data['transportation']) > 0:
                 if 'packaging' in data['transportation'][0]:
-                    # Обновляем размеры коробки из Excel
                     for key, value in excel_model_data['transportation']['size'].items():
                         if value is not None and value != '':
                             clean_value = remove_trailing_zero(value)
                             data['transportation'][0]['packaging']['size'][key] = clean_value
 
-                    # Генерируем box_size на основе значений из Excel
-                    width = excel_model_data['transportation']['size'].get('width', '')
-                    depth = excel_model_data['transportation']['size'].get('depth', '')
-                    height = excel_model_data['transportation']['size'].get('height', '')
+                    width = data['transportation'][0]['packaging']['size'].get('width', '')
+                    depth = data['transportation'][0]['packaging']['size'].get('depth', '')
+                    height = data['transportation'][0]['packaging']['size'].get('height', '')
                     if width and depth and height:
                         data['transportation'][0]['packaging']['box_size'] = f"{width}х{depth}х{height}"
-
-
 
             # Обновляем brutto и netto в dimensions
             if 'dimensions' in data and len(data['dimensions']) > 0:
@@ -485,7 +494,6 @@ for json_file in json_files:
             # Сохраняем обновленный JSON
             with open(json_file, 'w', encoding='utf-8') as f:
                 json.dump(data, f, ensure_ascii=False, indent=4)
-
     except Exception as e:
         failed_updates.append((json_file, str(e)))
 

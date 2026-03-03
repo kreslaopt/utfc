@@ -58,15 +58,15 @@
                     "depth": "340",
                     "height": "650"
                 },
-                "box_size": "855х340,0х650,0",
+                "box_size": "855х340х650",
                 "transportation": "удобства транспортировки и хранения кресло поставляется в разобранном виде"
             }
         }
     ],
     "dimensions": [
         {
-            "brutto": "855",
-            "netto": "22",
+            "brutto": "22",
+            "netto": "19,15",
             "volume": "0,19"
         }
     ],
@@ -121,24 +121,50 @@
             },
             "seat_width_with_armrests": {
                 "min": "660",
-                "max": null
+                "max": "660"
             },
             "seat_width": {
                 "max": "500",
                 "min": ""
             },
             "diameter_cross": {
-                "max": "700",
+                "max": "520",
                 "min": ""
             },
             "runners_width": {
-                "max": "",
+                "max": "700",
                 "min": ""
             },
             "runners_depth": {
                 "max": "",
                 "min": ""
-            }
+            },
+            "seat_to_floor_height_upper": {},
+            "armrest_height_from_floor": {
+                "min": "290"
+            },
+            "armrest_width_support": {},
+            "armrest_length_support": {},
+            "seat_depth_km": {},
+            "backrest_height_external": {},
+            "backrest_width_narrow": {
+                "max": "500"
+            },
+            "backrest_width_wide": {
+                "max": "470"
+            },
+            "recommended_load": "90",
+            "max_load": "120",
+            "skeleton": "немонолитный",
+            "minpromtorg": {},
+            "netto": "19,15",
+            "brutto": "22",
+            "package_width": "855",
+            "package_depth": "340,0",
+            "package_height": "650,0",
+            "volume": "0,19",
+            "box_on_pallet": {},
+            "pallet_width": {}
         }
     ],
     "skeleton": "немонолитный",
