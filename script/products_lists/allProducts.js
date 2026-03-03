@@ -396,22 +396,6 @@ const knownProductsAllFiles = [
     "category": "armchair_personal"
   },
   {
-    "name": "Клуб",
-    "category": "chair_visitors"
-  },
-  {
-    "name": "Клуб 4к",
-    "category": "chair_visitors"
-  },
-  {
-    "name": "Клуб 4l",
-    "category": "chair_visitors"
-  },
-  {
-    "name": "Клуб gts",
-    "category": "chair_visitors"
-  },
-  {
     "name": "Комо бюджет в пластик 727",
     "category": "armchair_rukovoditel"
   },
