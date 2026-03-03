@@ -142,6 +142,6 @@
         }
     ],
     "skeleton": "монолитный",
-    "minpromtorg": "+",
-    "typeofproduct": "СП"
+    "minpromtorg": "-",
+    "typeofproduct": "8,6"
 }

@@ -36,9 +36,9 @@ C:\Users\UTFC\Documents\Downloads\to\products\armchair_rukovoditel\escape\Пал
 C:\Users\UTFC\Documents\Downloads\to\products\armchair_rukovoditel\escape\Эфир с-30 в пластик 727.json: Модель не найдена в Excel
 C:\Users\UTFC\Documents\Downloads\to\products\chair_visitors\Изо-2.json: Модель не найдена в Excel
 C:\Users\UTFC\Documents\Downloads\to\products\chair_visitors\Изо-3.json: Модель не найдена в Excel
-C:\Users\UTFC\Documents\Downloads\to\products\chair_visitors\Клуб 4l.json: Модель не найдена в Excel
-C:\Users\UTFC\Documents\Downloads\to\products\chair_visitors\Клуб 4к.json: Модель не найдена в Excel
-C:\Users\UTFC\Documents\Downloads\to\products\chair_visitors\Клуб gts.json: Модель не найдена в Excel
-C:\Users\UTFC\Documents\Downloads\to\products\chair_visitors\Клуб.json: Модель не найдена в Excel
 C:\Users\UTFC\Documents\Downloads\to\products\chair_visitors\Шелл софт.json: Модель не найдена в Excel
+C:\Users\UTFC\Documents\Downloads\to\products\chair_visitors\escape\Клуб 4l.json: Модель не найдена в Excel
+C:\Users\UTFC\Documents\Downloads\to\products\chair_visitors\escape\Клуб 4к.json: Модель не найдена в Excel
+C:\Users\UTFC\Documents\Downloads\to\products\chair_visitors\escape\Клуб gts.json: Модель не найдена в Excel
+C:\Users\UTFC\Documents\Downloads\to\products\chair_visitors\escape\Клуб.json: Модель не найдена в Excel
 C:\Users\UTFC\Documents\Downloads\to\products\chair_visitors\escape\Фигаро к13 н_п хром.json: Модель не найдена в Excel

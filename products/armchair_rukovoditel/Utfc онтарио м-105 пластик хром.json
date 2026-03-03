@@ -62,8 +62,8 @@
     ],
     "dimensions": [
         {
-            "brutto": "23,3",
-            "netto": "20,4",
+            "brutto": "900",
+            "netto": "23,3",
             "volume": "0,2"
         }
     ],
@@ -142,7 +142,7 @@
         {
             "clean": false,
             "limit": false,
-            "del": true
+            "del": false
         }
     ]
 }

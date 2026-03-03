@@ -62,8 +62,8 @@
     ],
     "dimensions": [
         {
-            "brutto": "14,7",
-            "netto": "12,8",
+            "brutto": "630",
+            "netto": "14,7",
             "volume": "0,15"
         }
     ],
@@ -140,5 +140,5 @@
     ],
     "skeleton": "немонолитный",
     "minpromtorg": "-",
-    "typeofproduct": "К"
+    "typeofproduct": "12,8"
 }
