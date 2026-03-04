@@ -55,23 +55,36 @@
             "packaging": {
                 "type": "гофрокороб",
                 "size": {
-                    "width": "",
-                    "depth": "",
-                    "height": ""
+                    "width": 1045,
+                    "depth": 290,
+                    "height": 500
                 },
-                "box_size": "",
+                "box_size": "1045х290х500",
                 "transportation": "удобства транспортировки и хранения стул поставляется в сложенном виде<br><strong>Упаковка стульев:</strong><br><strong>Индивидуальная упаковка:</strong> 1 шт в гофрокороб размером <strong>1015х475х95 мм</strong><br><strong>BOX4:</strong> 4 шт в гофрокороб размером"
             }
         }
     ],
     "dimensions": [
         {
-            "packaging_type": ""
+            "packaging_type": [
+                {
+                    "type": "individual",
+                    "brutto": "5,59",
+                    "netto": "",
+                    "volume": "0,046"
+                },
+                {
+                    "type": "box4",
+                    "brutto": "5,44",
+                    "netto": "4,94",
+                    "volume": "0,038"
+                }
+            ]
         }
     ],
     "guarantee": [
         {
-            "period": "",
+            "period": "12",
             "max_load": "120",
             "recommended_load": "90"
         }
@@ -88,15 +101,15 @@
         {
             "chair_height": {
                 "min": "820",
-                "max": ""
+                "max": null
             },
             "headrest_height": {
                 "min": "",
                 "max": ""
             },
             "seat_to_floor_height": {
-                "min": "400",
-                "max": ""
+                "min": "460",
+                "max": null
             },
             "armrest_height": {
                 "min": "",
@@ -107,7 +120,7 @@
             },
             "seat_depth": {
                 "min": "390",
-                "max": ""
+                "max": null
             },
             "backrest_height": {
                 "min": "",
@@ -115,7 +128,7 @@
             },
             "height_backrest_seat": {
                 "min": "",
-                "max": ""
+                "max": 370
             },
             "seat_width_with_armrests": {
                 "min": "",
@@ -138,7 +151,7 @@
                 "min": ""
             },
             "seat_to_floor_height_upper": {
-                "min": "460"
+                "min": "400"
             },
             "armrest_height_from_floor": {},
             "armrest_height_from_seat": {},

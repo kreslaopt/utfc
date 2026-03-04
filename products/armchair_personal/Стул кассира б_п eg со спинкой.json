@@ -56,25 +56,25 @@
             "packaging": {
                 "type": "5-слойный гофрокороб",
                 "size": {
-                    "width": "",
-                    "depth": "",
-                    "height": ""
+                    "width": 540,
+                    "depth": 235,
+                    "height": 560
                 },
-                "box_size": "",
+                "box_size": "540х235х560",
                 "transportation": "удобства транспортировки и хранения стул поставляется в разобранном виде. Каждый стул упакован в отдельный 5-слойный гофрокороб размером"
             }
         }
     ],
     "dimensions": [
         {
-            "brutto": "",
+            "brutto": "8,4",
             "netto": "",
-            "volume": ""
+            "volume": "0,071"
         }
     ],
     "guarantee": [
         {
-            "period": "",
+            "period": "12",
             "max_load": "120",
             "recommended_load": "90"
         }
@@ -98,8 +98,8 @@
                 "max": ""
             },
             "seat_to_floor_height": {
-                "min": "540",
-                "max": "790"
+                "min": "620",
+                "max": "870"
             },
             "armrest_height_from_seat": {
                 "min": "",
@@ -107,7 +107,7 @@
             },
             "chair_depth": {
                 "min": "650",
-                "max": ""
+                "max": null
             },
             "seat_depth": {
                 "min": "430",
@@ -142,8 +142,8 @@
                 "min": ""
             },
             "seat_to_floor_height_upper": {
-                "min": "620",
-                "max": "870"
+                "min": "540",
+                "max": "790"
             },
             "armrest_height_from_floor": {},
             "armrest_width_support": {},

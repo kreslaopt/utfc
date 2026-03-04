@@ -50,25 +50,25 @@
             "packaging": {
                 "type": "гофрокороб",
                 "size": {
-                    "width": "",
-                    "depth": "",
-                    "height": ""
+                    "width": 430,
+                    "depth": 430,
+                    "height": 600
                 },
-                "box_size": "",
+                "box_size": "430х430х600",
                 "transportation": "удобства транспортировки и хранения табурет поставляется в разобранном виде<br><strong>Упаковка каркасов</strong> производится на поддоны в зависимости от заказа, максимально 300 шт<br><strong>Сиденья и крепежные изделия</strong> упаковываются отдельно по 15 комплектов в гофрокороб размером"
             }
         }
     ],
     "dimensions": [
         {
-            "brutto": "",
-            "netto": "",
-            "volume": ""
+            "brutto": "3,2",
+            "netto": "1,85",
+            "volume": "0,023"
         }
     ],
     "guarantee": [
         {
-            "period": "",
+            "period": "12",
             "max_load": "120",
             "recommended_load": "90"
         }
@@ -84,15 +84,15 @@
     "dimensions_details": [
         {
             "chair_height": {
-                "min": "",
-                "max": ""
+                "min": 450,
+                "max": 450
             },
             "headrest_height": {
                 "min": "",
                 "max": ""
             },
             "seat_to_floor_height": {
-                "min": "",
+                "min": "450",
                 "max": ""
             },
             "armrest_height_from_seat": {
@@ -100,20 +100,20 @@
                 "max": ""
             },
             "chair_depth": {
-                "min": "",
-                "max": ""
+                "min": 330,
+                "max": null
             },
             "seat_depth": {
-                "min": "",
-                "max": ""
+                "min": 325,
+                "max": null
             },
             "backrest_height": {
                 "max": "",
                 "min": ""
             },
             "backrest_to_seat_height": {
-                "min": "",
-                "max": ""
+                "min": null,
+                "max": null
             },
             "seat_width_with_armrests": {
                 "min": "",
@@ -145,9 +145,7 @@
                 "max": "325"
             },
             "backrest_height_external": {},
-            "backrest_width_narrow": {
-                "max": ""
-            },
+            "backrest_width_narrow": {},
             "backrest_width_wide": {},
             "recommended_load": "90",
             "max_load": "120",

@@ -53,25 +53,25 @@
             "packaging": {
                 "type": "5-слойный гофрокороб",
                 "size": {
-                    "width": "",
-                    "depth": "",
-                    "height": ""
+                    "width": "650",
+                    "depth": "530",
+                    "height": "1010"
                 },
-                "box_size": "",
+                "box_size": "650х530х1010",
                 "transportation": "Упаковка по 2 шт. в отдельный гофрокороб размером"
             }
         }
     ],
     "dimensions": [
         {
-            "brutto": "",
+            "brutto": "11,2",
             "netto": "",
-            "volume": ""
+            "volume": "0,175"
         }
     ],
     "guarantee": [
         {
-            "period": "",
+            "period": "12",
             "max_load": "120",
             "recommended_load": "90"
         }
@@ -88,14 +88,14 @@
         {
             "chair_height": {
                 "min": "900",
-                "max": ""
+                "max": 900
             },
             "headrest_height": {
-                "min": "",
-                "max": ""
+                "min": null,
+                "max": null
             },
             "seat_to_floor_height": {
-                "min": "",
+                "min": "480",
                 "max": ""
             },
             "armrest_height_from_seat": {
@@ -104,11 +104,11 @@
             },
             "chair_depth": {
                 "min": "560",
-                "max": ""
+                "max": null
             },
             "seat_depth": {
                 "min": "420",
-                "max": ""
+                "max": null
             },
             "backrest_height": {
                 "max": "455",
@@ -120,14 +120,14 @@
             },
             "seat_width_with_armrests": {
                 "min": "525",
-                "max": ""
+                "max": null
             },
             "seat_width": {
                 "max": "450",
                 "min": ""
             },
             "diameter_cross": {
-                "max": "",
+                "max": null,
                 "min": ""
             },
             "runners_width": {

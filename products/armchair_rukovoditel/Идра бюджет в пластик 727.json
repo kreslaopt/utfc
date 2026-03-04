@@ -56,25 +56,25 @@
             "packaging": {
                 "type": "5-слойный гофрокороб",
                 "size": {
-                    "width": "",
-                    "depth": "",
-                    "height": ""
+                    "width": 910,
+                    "depth": 270,
+                    "height": 690
                 },
-                "box_size": "",
+                "box_size": "910х270х690",
                 "transportation": "удобства транспортировки и хранения кресло поставляется в разобранном виде. Каждое кресло упаковано в отдельный 5-слойный гофрокороб размером"
             }
         }
     ],
     "dimensions": [
         {
-            "brutto": "",
+            "brutto": "14,4",
             "netto": "",
-            "volume": ""
+            "volume": "0,17"
         }
     ],
     "guarantee": [
         {
-            "period": "",
+            "period": "12",
             "max_load": "150",
             "recommended_load": "120"
         }
@@ -98,8 +98,8 @@
                 "max": ""
             },
             "seat_to_floor_height": {
-                "min": "",
-                "max": ""
+                "min": "470",
+                "max": "570"
             },
             "armrest_height_from_seat": {
                 "min": "200",
@@ -107,23 +107,23 @@
             },
             "chair_depth": {
                 "min": "650",
-                "max": ""
+                "max": null
             },
             "seat_depth": {
                 "min": "510",
-                "max": ""
+                "max": null
             },
             "backrest_height": {
                 "max": "700",
                 "min": ""
             },
             "backrest_to_seat_height": {
-                "min": "",
-                "max": ""
+                "min": null,
+                "max": null
             },
             "seat_width_with_armrests": {
                 "min": "660",
-                "max": ""
+                "max": null
             },
             "seat_width": {
                 "max": "535",
@@ -134,11 +134,11 @@
                 "min": ""
             },
             "runners_width": {
-                "max": "",
+                "max": null,
                 "min": ""
             },
             "runners_depth": {
-                "max": "",
+                "max": null,
                 "min": ""
             },
             "seat_to_floor_height_upper": {

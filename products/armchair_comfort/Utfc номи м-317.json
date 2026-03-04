@@ -62,12 +62,12 @@
         {
             "brutto": "13,45",
             "netto": "11,7",
-            "volume": ""
+            "volume": "0,16"
         }
     ],
     "guarantee": [
         {
-            "period": "",
+            "period": "12",
             "max_load": "120",
             "recommended_load": "90"
         }
@@ -91,8 +91,8 @@
                 "max": ""
             },
             "seat_to_floor_height": {
-                "min": "",
-                "max": ""
+                "min": "400",
+                "max": "500"
             },
             "armrest_height_from_seat": {
                 "min": "180",
@@ -100,23 +100,23 @@
             },
             "chair_depth": {
                 "min": "620",
-                "max": ""
+                "max": null
             },
             "seat_depth": {
                 "min": "440",
-                "max": ""
+                "max": null
             },
             "backrest_height": {
                 "max": "600",
                 "min": ""
             },
             "backrest_to_seat_height": {
-                "min": "",
-                "max": ""
+                "min": null,
+                "max": null
             },
             "seat_width_with_armrests": {
                 "min": "635",
-                "max": ""
+                "max": null
             },
             "seat_width": {
                 "max": "500",
@@ -167,12 +167,6 @@
             "volume": "0,16",
             "box_on_pallet": {},
             "pallet_width": {}
-        }
-    ],
-    "lost": [
-        {
-            "clean": true,
-            "limit": false
         }
     ],
     "skeleton": "немонолитный",

@@ -64,12 +64,12 @@
         {
             "brutto": "24",
             "netto": "21,4",
-            "volume": ""
+            "volume": "0,2"
         }
     ],
     "guarantee": [
         {
-            "period": "",
+            "period": "12",
             "max_load": "120",
             "recommended_load": "90"
         }
@@ -93,8 +93,8 @@
                 "max": ""
             },
             "seat_to_floor_height": {
-                "min": "",
-                "max": ""
+                "min": "455",
+                "max": "555"
             },
             "armrest_height_from_seat": {
                 "min": "200",
@@ -102,7 +102,7 @@
             },
             "chair_depth": {
                 "min": "630",
-                "max": ""
+                "max": null
             },
             "seat_depth": {
                 "min": "470",

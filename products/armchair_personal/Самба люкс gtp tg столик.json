@@ -58,25 +58,25 @@
             "packaging": {
                 "type": "5-слойный гофрокороб",
                 "size": {
-                    "width": "",
-                    "depth": "",
-                    "height": ""
+                    "width": 770,
+                    "depth": 450,
+                    "height": 670
                 },
-                "box_size": "",
+                "box_size": "770х450х670",
                 "transportation": "удобства транспортировки и хранения кресло поставляется в разобранном виде. Каждое кресло упаковано в отдельный 5-слойный гофрокороб размером"
             }
         }
     ],
     "dimensions": [
         {
-            "brutto": "",
+            "brutto": "12,42",
             "netto": "11,9",
-            "volume": ""
+            "volume": "0,22"
         }
     ],
     "guarantee": [
         {
-            "period": "",
+            "period": "12",
             "max_load": "120",
             "recommended_load": "90"
         }
@@ -100,8 +100,8 @@
                 "max": ""
             },
             "seat_to_floor_height": {
-                "min": "400",
-                "max": "520"
+                "min": "470",
+                "max": "590"
             },
             "armrest_height_from_seat": {
                 "min": "190",
@@ -109,11 +109,11 @@
             },
             "chair_depth": {
                 "min": "710",
-                "max": ""
+                "max": null
             },
             "seat_depth": {
                 "min": "440",
-                "max": ""
+                "max": null
             },
             "backrest_height": {
                 "max": "460",
@@ -125,7 +125,7 @@
             },
             "seat_width_with_armrests": {
                 "min": "565",
-                "max": ""
+                "max": null
             },
             "seat_width": {
                 "max": "460",
@@ -144,8 +144,8 @@
                 "min": ""
             },
             "seat_to_floor_height_upper": {
-                "min": "470",
-                "max": "590"
+                "min": "400",
+                "max": "520"
             },
             "armrest_height_from_floor": {
                 "min": "255"

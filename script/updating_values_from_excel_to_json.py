@@ -222,6 +222,45 @@ import re
 import math
 import copy
 
+def update_description_with_dimensions(original_data, excel_model_data):
+    if 'construction_and_materials' in original_data and len(original_data['construction_and_materials']) > 0:
+        components = original_data['construction_and_materials'][0].get('components', [])
+        for i, component in enumerate(components):
+            if isinstance(component, str):
+                # Обновляем значение диаметра пятилучья
+                if "d=" in component.lower() and "пятилучье" in component.lower():
+                    diameter_cross_max = excel_model_data['dimensions_details'].get('diameter_cross', {}).get('max')
+                    if diameter_cross_max is not None and diameter_cross_max != "":
+                        components[i] = re.sub(r'd=\d+', f'd={diameter_cross_max}', component, flags=re.IGNORECASE)
+
+                # Обновляем значение ширины полозьев
+                if "ширина полозьев" in component.lower():
+                    runners_width_max = excel_model_data['dimensions_details'].get('runners_width', {}).get('max')
+                    if runners_width_max is not None and runners_width_max != "":
+                        components[i] = re.sub(r'\d+(?=\s*мм\s*с\s*\d+\s*роликами)', runners_width_max, component, flags=re.IGNORECASE)
+
+                # Обновляем значение глубины полозьев
+                if "глубина полозьев" in component.lower():
+                    runners_depth_max = excel_model_data['dimensions_details'].get('runners_depth', {}).get('max')
+                    if runners_depth_max is not None and runners_depth_max != "":
+                        components[i] = re.sub(r'глубина полозьев\s*\w*\s*=\s*\d+', f'глубина полозьев = {runners_depth_max}', component, flags=re.IGNORECASE)
+
+                # Обновляем значение диаметра крестовины
+                if "диаметр крестовины" in component.lower():
+                    diameter_cross_max = excel_model_data['dimensions_details'].get('diameter_cross', {}).get('max')
+                    if diameter_cross_max is not None and diameter_cross_max != "":
+                        components[i] = re.sub(r'диаметр\s*крестовины\s*\w*\s*=\s*\d+', f'диаметр крестовины = {diameter_cross_max}', component, flags=re.IGNORECASE)
+
+                # Обновляем значение диаметра роликов
+                if "ролики" in component.lower() and "d=" in component.lower():
+                    runners_width_max = excel_model_data['dimensions_details'].get('runners_width', {}).get('max')
+                    if runners_width_max is not None and runners_width_max != "":
+                        components[i] = re.sub(r'ролики\s*\w*\s*d=\d+', f'ролики d={runners_width_max}', component, flags=re.IGNORECASE)
+
+        original_data['construction_and_materials'][0]['components'] = components
+
+    return original_data
+
 def compare_and_log_changes(original_data, updated_data, json_file):
     changes_detected = False
     changes_log = []
@@ -346,8 +385,8 @@ print(df.head(10))
 columns_mapping = {
     'Unnamed: 2': ('chair_height', 'min', 'max'),  # Высота кресла
     'Unnamed: 4': ('headrest_height', 'min', 'max'),  # Высота подголовника
-    'Unnamed: 6': ('seat_to_floor_height_upper', 'min', 'max'),  # Высота сиденья (до верхней части)
-    'Unnamed: 8': ('seat_to_floor_height', 'min', 'max'),  # Высота до сиденья (до нижней части)
+    'Unnamed: 6': ('seat_to_floor_height', 'min', 'max'),  # Высота сиденья (до верхней части)
+    'Unnamed: 8': ('seat_to_floor_height_upper', 'min', 'max'),  # Высота до сиденья (до нижней части)
     'Unnamed: 10': ('armrest_height_from_floor', 'min', 'max'),  # Высота подлокотника (до нижней части)
     'Unnamed: 12': ('armrest_height_from_seat', 'min', 'max'),  # Высота подлокотника (от сиденья)
     'Unnamed: 14': ('armrest_width_support', None, 'max'),  # Ширина подлокотников опорной части
@@ -420,11 +459,31 @@ for i, model in enumerate(models_excel):
 
 # Рекурсивный поиск всех JSON-файлов в папке и подпапках
 products_dir = r'C:\Users\UTFC\Documents\Downloads\to\products'
+
 json_files = []
 for root, dirs, files in os.walk(products_dir):
     for file in files:
         if file.endswith('.json'):
             json_files.append(os.path.join(root, file))
+
+#             # Отладочный вывод для первых 10 моделей из Excel
+# print("Нормализованные имена из Excel:")
+# for model in list(excel_data.keys())[:10]:
+#     print(f"Оригинал: {model} -> Нормализовано: {normalize_model_name(model)}")
+
+# # Отладочный вывод для первых 10 JSON-файлов
+# print("\nНормализованные имена из JSON:")
+# json_files_sample = json_files[:10]
+# for json_file in json_files_sample:
+#     try:
+#         with open(json_file, 'r', encoding='utf-8') as f:
+#             data = json.load(f)
+#         model_name = data.get('namefile', [''])[0]
+#         if not model_name:
+#             model_name = data.get('name', [''])[0]
+#         print(f"Файл: {os.path.basename(json_file)}, Оригинал: {model_name} -> Нормализовано: {normalize_model_name(model_name)}")
+#     except Exception as e:
+#         print(f"Ошибка при чтении файла {json_file}: {e}")
 
 # Список для моделей, отсутствующих в JSON
 missing_in_json = set(excel_data.keys())
@@ -451,29 +510,35 @@ for json_file in json_files:
         for model in excel_data:
             if normalize_model_name(model) == normalized:
                 excel_model = model
+                missing_in_json.discard(model)
                 break
 
         if excel_model:
             excel_model_data = excel_data[excel_model]
+
+            # print(f"Обновляем файл: {os.path.basename(json_file)}")
+            # print(f"brutto: {excel_model_data['dimensions_details'].get('brutto')}")
+            # print(f"netto: {excel_model_data['dimensions_details'].get('netto')}")
+            # print(f"volume: {excel_model_data['additional_info'].get('volume')}")
+            # print(f"max_load: {excel_model_data['dimensions_details'].get('max_load')}")
+            # print(f"recommended_load: {excel_model_data['dimensions_details'].get('recommended_load')}")
+
 
             # Обновляем dimensions_details
             if 'dimensions_details' not in original_data:
                 original_data['dimensions_details'] = [{}]
 
             for key, value in excel_model_data['dimensions_details'].items():
-                if key not in original_data['dimensions_details'][0]:
-                    original_data['dimensions_details'][0][key] = {}
+                    if key not in original_data['dimensions_details'][0]:
+                        original_data['dimensions_details'][0][key] = {}
 
-                if isinstance(value, dict):
-                    for sub_key, sub_value in value.items():
-                        if sub_value is not None:
-                            if sub_key not in original_data['dimensions_details'][0][key]:
-                                original_data['dimensions_details'][0][key][sub_key] = sub_value
-                            else:
-                                original_data['dimensions_details'][0][key][sub_key] = sub_value
-                else:
-                    if value is not None:
-                        original_data['dimensions_details'][0][key] = value
+                    if isinstance(value, dict):
+                        for sub_key, sub_value in value.items():
+                            if sub_value is not None:
+                                original_data['dimensions_details'][0][key][sub_key] = format_number(sub_value)
+                    else:
+                        if value is not None:
+                            original_data['dimensions_details'][0][key] = format_number(value)
 
             # Обновляем additional_info
             if 'additional_info' in original_data:
@@ -519,16 +584,23 @@ for json_file in json_files:
                     if width and depth and height:
                         original_data['transportation'][0]['packaging']['box_size'] = f"{width}х{depth}х{height}"
 
-            # Обновляем brutto и netto в dimensions
+        # Обновляем brutto и netto в dimensions
             if 'dimensions' in original_data and len(original_data['dimensions']) > 0:
-                if 'brutto' in original_data['dimensions'][0] and excel_model_data['dimensions_details'].get('brutto') is not None:
-                    original_data['dimensions'][0]['brutto'] = format_number(excel_model_data['dimensions_details'].get('brutto'))
-                if 'netto' in original_data['dimensions'][0] and excel_model_data['dimensions_details'].get('netto') is not None:
-                    data['dimensions'][0]['netto'] = format_number(excel_model_data['dimensions_details'].get('netto'))
+                if 'brutto' in original_data['dimensions'][0]:
+                    print(f"Обновляем brutto: {original_data['dimensions'][0]['brutto']} -> {excel_model_data['dimensions_details'].get('brutto')}")
+                    if excel_model_data['dimensions_details'].get('brutto') is not None:
+                        original_data['dimensions'][0]['brutto'] = format_number(excel_model_data['dimensions_details'].get('brutto'))
+                if 'netto' in original_data['dimensions'][0]:
+                    print(f"Обновляем netto: {original_data['dimensions'][0]['netto']} -> {excel_model_data['dimensions_details'].get('netto')}")
+                    if excel_model_data['dimensions_details'].get('netto') is not None:
+                        original_data['dimensions'][0]['netto'] = format_number(excel_model_data['dimensions_details'].get('netto'))
 
             # Обновляем volume в dimensions
             if 'dimensions' in original_data and len(original_data['dimensions']) > 0 and excel_model_data['additional_info'].get('volume') is not None:
                 original_data['dimensions'][0]['volume'] = format_number(excel_model_data['additional_info'].get('volume'))
+
+
+            original_data = update_description_with_dimensions(original_data, excel_model_data)
 
             # Сравниваем и логируем изменения
             compare_and_log_changes(original_data_copy, original_data, json_file)

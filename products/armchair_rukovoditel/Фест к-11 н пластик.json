@@ -50,25 +50,25 @@
             "packaging": {
                 "type": "5-слойный гофрокороб",
                 "size": {
-                    "width": "",
-                    "depth": "",
-                    "height": ""
+                    "width": 630,
+                    "depth": 290,
+                    "height": 600
                 },
-                "box_size": "",
+                "box_size": "630х290х600",
                 "transportation": "удобства транспортировки и хранения кресло поставляется в разобранном виде. Каждое кресло упаковано в отдельный 5-слойный гофрокороб размером"
             }
         }
     ],
     "dimensions": [
         {
-            "brutto": "",
+            "brutto": "12,3",
             "netto": "",
-            "volume": ""
+            "volume": "0,11"
         }
     ],
     "guarantee": [
         {
-            "period": "",
+            "period": "12",
             "max_load": "120",
             "recommended_load": "90"
         }
@@ -92,8 +92,8 @@
                 "max": ""
             },
             "seat_to_floor_height": {
-                "min": "360",
-                "max": "460"
+                "min": "430",
+                "max": "530"
             },
             "armrest_height_from_seat": {
                 "min": "220",
@@ -101,7 +101,7 @@
             },
             "chair_depth": {
                 "min": "630",
-                "max": ""
+                "max": null
             },
             "seat_depth": {
                 "min": "480",
@@ -117,7 +117,7 @@
             },
             "seat_width_with_armrests": {
                 "min": "580",
-                "max": ""
+                "max": null
             },
             "seat_width": {
                 "max": "470",
@@ -136,8 +136,8 @@
                 "min": ""
             },
             "seat_to_floor_height_upper": {
-                "min": "430",
-                "max": "530"
+                "min": "360",
+                "max": "460"
             },
             "armrest_height_from_floor": {
                 "min": "290"

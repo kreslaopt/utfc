@@ -52,25 +52,25 @@
             "packaging": {
                 "type": "5-слойный гофрокороб",
                 "size": {
-                    "width": "",
-                    "depth": "",
-                    "height": ""
+                    "width": 584,
+                    "depth": 262,
+                    "height": 584
                 },
-                "box_size": "",
+                "box_size": "584х262х584",
                 "transportation": "удобства транспортировки и хранения кресло поставляется в разобранном виде. Каждое кресло упаковано в отдельный 5-слойный гофрокороб размером"
             }
         }
     ],
     "dimensions": [
         {
-            "brutto": "",
+            "brutto": "10",
             "netto": "",
-            "volume": ""
+            "volume": "0,13"
         }
     ],
     "guarantee": [
         {
-            "period": "",
+            "period": "12",
             "max_load": "120",
             "recommended_load": "90"
         }
@@ -94,8 +94,8 @@
                 "max": ""
             },
             "seat_to_floor_height": {
-                "min": "",
-                "max": ""
+                "min": "430",
+                "max": "570"
             },
             "armrest_height_from_seat": {
                 "min": "",
@@ -103,7 +103,7 @@
             },
             "chair_depth": {
                 "min": "510",
-                "max": ""
+                "max": null
             },
             "seat_depth": {
                 "min": "350",

@@ -50,25 +50,25 @@
             "packaging": {
                 "type": "5-слойный гофрокороб",
                 "size": {
-                    "width": "",
-                    "depth": "",
-                    "height": ""
+                    "width": 610,
+                    "depth": 500,
+                    "height": 510
                 },
-                "box_size": "",
+                "box_size": "610х500х510",
                 "transportation": "Упаковка мягких частей по 6 шт. в отдельный гофрокороб размером <strong>900х490х676 мм</strong><br>Каркасы на поддоне 80 шт. оборачиваются стрейч-пленкой<br>ВОХ2 - упаковка по 2 шт. в отдельный гофрокороб размером"
             }
         }
     ],
     "dimensions": [
         {
-            "brutto": "",
+            "brutto": "7,95",
             "netto": "",
-            "volume": ""
+            "volume": "0,08"
         }
     ],
     "guarantee": [
         {
-            "period": "",
+            "period": "12",
             "max_load": "120",
             "recommended_load": "90"
         }
@@ -85,14 +85,14 @@
         {
             "chair_height": {
                 "min": "850",
-                "max": ""
+                "max": 850
             },
             "headrest_height": {
                 "min": "",
                 "max": ""
             },
             "seat_to_floor_height": {
-                "min": "",
+                "min": "500",
                 "max": ""
             },
             "armrest_height_from_seat": {
@@ -101,11 +101,11 @@
             },
             "chair_depth": {
                 "min": "580",
-                "max": ""
+                "max": null
             },
             "seat_depth": {
                 "min": "400",
-                "max": ""
+                "max": null
             },
             "backrest_height": {
                 "max": "380",
@@ -117,14 +117,14 @@
             },
             "seat_width_with_armrests": {
                 "min": "",
-                "max": ""
+                "max": null
             },
             "seat_width": {
                 "max": "450",
                 "min": ""
             },
             "diameter_cross": {
-                "max": "",
+                "max": null,
                 "min": ""
             },
             "runners_width": {

@@ -53,25 +53,25 @@
             "packaging": {
                 "type": "5-слойный гофрокороб",
                 "size": {
-                    "width": "",
-                    "depth": "",
-                    "height": ""
+                    "width": 740,
+                    "depth": 280,
+                    "height": 600
                 },
-                "box_size": "",
+                "box_size": "740х280х600",
                 "transportation": "удобства транспортировки и хранения кресло поставляется в разобранном виде. Каждое кресло упаковано в отдельный 5-слойный гофрокороб размером"
             }
         }
     ],
     "dimensions": [
         {
-            "brutto": "",
+            "brutto": "14,2",
             "netto": "12",
-            "volume": ""
+            "volume": "0,133"
         }
     ],
     "guarantee": [
         {
-            "period": "",
+            "period": "12",
             "max_load": "120",
             "recommended_load": "90"
         }
@@ -95,8 +95,8 @@
                 "max": ""
             },
             "seat_to_floor_height": {
-                "min": "360",
-                "max": "460"
+                "min": "450",
+                "max": "550"
             },
             "armrest_height_from_seat": {
                 "min": "210",
@@ -104,7 +104,7 @@
             },
             "chair_depth": {
                 "min": "690",
-                "max": ""
+                "max": null
             },
             "seat_depth": {
                 "min": "450",
@@ -120,7 +120,7 @@
             },
             "seat_width_with_armrests": {
                 "min": "590",
-                "max": ""
+                "max": null
             },
             "seat_width": {
                 "max": "500",
@@ -139,8 +139,8 @@
                 "min": ""
             },
             "seat_to_floor_height_upper": {
-                "min": "450",
-                "max": "550"
+                "min": "360",
+                "max": "460"
             },
             "armrest_height_from_floor": {
                 "min": "290"

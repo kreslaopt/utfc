@@ -53,25 +53,25 @@
             "packaging": {
                 "type": "5-слойный гофрокороб",
                 "size": {
-                    "width": "",
-                    "depth": "",
-                    "height": ""
+                    "width": 760,
+                    "depth": 440,
+                    "height": 650
                 },
-                "box_size": "",
+                "box_size": "760х440х650",
                 "transportation": "удобства транспортировки и хранения кресло поставляется в разобранном виде. Каждое кресло упаковано в отдельный 5-слойный гофрокороб размером"
             }
         }
     ],
     "dimensions": [
         {
-            "brutto": "",
+            "brutto": "10,8",
             "netto": "",
-            "volume": ""
+            "volume": "0,22"
         }
     ],
     "guarantee": [
         {
-            "period": "",
+            "period": "12",
             "max_load": "120",
             "recommended_load": "90"
         }
@@ -95,8 +95,8 @@
                 "max": ""
             },
             "seat_to_floor_height": {
-                "min": "",
-                "max": ""
+                "min": "450",
+                "max": "590"
             },
             "armrest_height_from_seat": {
                 "min": "210",
@@ -104,23 +104,23 @@
             },
             "chair_depth": {
                 "min": "535",
-                "max": ""
+                "max": null
             },
             "seat_depth": {
                 "min": "425",
-                "max": ""
+                "max": null
             },
             "backrest_height": {
                 "max": "465",
                 "min": ""
             },
             "backrest_to_seat_height": {
-                "min": "",
-                "max": ""
+                "min": null,
+                "max": null
             },
             "seat_width_with_armrests": {
                 "min": "540",
-                "max": ""
+                "max": null
             },
             "seat_width": {
                 "max": "445",
