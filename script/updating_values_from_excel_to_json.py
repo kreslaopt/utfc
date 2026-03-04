@@ -298,25 +298,25 @@ print(df.head(10))
 columns_mapping = {
     'Unnamed: 2': ('chair_height', 'min', 'max'),  # Высота кресла
     'Unnamed: 4': ('headrest_height', 'min', 'max'),  # Высота подголовника
-    'Unnamed: 6': ('seat_to_floor_height', 'min', 'max'),  # Высота до сиденья (до нижней части)
-    'Unnamed: 8': ('seat_to_floor_height_upper', 'min', 'max'),  # Высота до сиденья (до верхней части)
+    'Unnamed: 6': ('seat_to_floor_height_upper', 'min', 'max'),  # Высота сиденья (до верхней части)
+    'Unnamed: 8': ('seat_to_floor_height', 'min', 'max'),  # Высота до сиденья (до нижней части)
     'Unnamed: 10': ('armrest_height_from_floor', 'min', 'max'),  # Высота подлокотника (до нижней части)
     'Unnamed: 12': ('armrest_height_from_seat', 'min', 'max'),  # Высота подлокотника (от сиденья)
-    'Unnamed: 13': ('armrest_width_support', None, 'max'),  # Ширина подлокотников опорной части
+    'Unnamed: 14': ('armrest_width_support', None, 'max'),  # Ширина подлокотников опорной части
     'Unnamed: 15': ('armrest_length_support', None, 'max'),  # Длина подлокотников опорной части
     'Unnamed: 17': ('chair_depth', 'min', None),  # Глубина кресла
     'Unnamed: 19': ('seat_depth', 'min', 'max'),  # Глубина сиденья
-    'Unnamed: 20': ('seat_depth_km', None, 'max'),  # Глубина сиденья (КМ)
+    'Unnamed: 21': ('seat_depth_km', None, 'max'),  # Глубина сиденья (КМ)
     'Unnamed: 22': ('backrest_height', None, 'max'),  # Высота спинки
-    'Unnamed: 23': ('backrest_to_seat_height', 'min', 'max'),  # Высота спинки от сиденья
-    'Unnamed: 24': ('backrest_height_external', None, 'max'),  # Высота спинки с внешней стороны
-    'Unnamed: 26': ('seat_width_with_armrests', 'min', 'max'),  # Ширина сиденья с подлокотниками
-    'Unnamed: 28': ('seat_width', None, 'max'),  # Ширина сиденья
-    'Unnamed: 29': ('backrest_width_narrow', None, 'max'),  # Ширина спинки (узкая часть)
-    'Unnamed: 30': ('backrest_width_wide', None, 'max'),  # Ширина спинки (широкая часть)
-    'Unnamed: 31': ('diameter_cross', None, 'max'),  # Диаметр крестовины
-    'Unnamed: 32': ('runners_width', None, 'max'),  # Ширина полозьев
-    'Unnamed: 33': ('runners_depth', None, 'max'),  # Глубина полозьев
+    'Unnamed: 23': ('backrest_to_seat_height', 'min', 'max'),  # Высота спинки до сиденья
+    'Unnamed: 25': ('backrest_height_external', None, 'max'),  # Высота спинки с внешней стороны
+    'Unnamed: 27': ('seat_width_with_armrests', 'min', 'max'),  # Ширина сиденья с подлокотниками
+    'Unnamed: 29': ('seat_width', None, 'max'),  # Ширина сиденья
+    'Unnamed: 30': ('backrest_width_narrow', None, 'max'),  # Ширина спинки (узкая часть)
+    'Unnamed: 31': ('backrest_width_wide', None, 'max'),  # Ширина спинки (широкая часть)
+    'Unnamed: 32': ('diameter_cross', None, 'max'),  # Диаметр крестовины
+    'Unnamed: 33': ('runners_width', None, 'max'),  # Ширина полозьев
+    'Unnamed: 34': ('runners_depth', None, 'max'),  # Глубина полозьев
     'Unnamed: 35': ('recommended_load', None, None),  # Рекомендуемая нагрузка
     'Unnamed: 36': ('max_load', None, None),  # Предельно допустимая нагрузка
     'Unnamed: 37': ('skeleton', None, None),  # Каркас

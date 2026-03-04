@@ -134,10 +134,12 @@
                 "min": ""
             },
             "runners_depth": {
-                "max": "460",
+                "max": "520",
                 "min": ""
             },
-            "seat_to_floor_height_upper": {},
+            "seat_to_floor_height_upper": {
+                "min": "470"
+            },
             "armrest_height_from_floor": {},
             "armrest_width_support": {},
             "armrest_length_support": {},

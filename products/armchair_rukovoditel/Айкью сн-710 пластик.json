@@ -130,7 +130,7 @@
                 "min": ""
             },
             "diameter_cross": {
-                "max": "480",
+                "max": "660",
                 "min": ""
             },
             "runners_width": {
@@ -141,7 +141,10 @@
                 "max": "",
                 "min": ""
             },
-            "seat_to_floor_height_upper": {},
+            "seat_to_floor_height_upper": {
+                "min": "470",
+                "max": "570"
+            },
             "armrest_height_from_floor": {
                 "min": "250"
             },
@@ -150,10 +153,10 @@
             "seat_depth_km": {},
             "backrest_height_external": {},
             "backrest_width_narrow": {
-                "max": "500"
+                "max": "380"
             },
             "backrest_width_wide": {
-                "max": "380"
+                "max": "480"
             },
             "recommended_load": "120",
             "max_load": "150",

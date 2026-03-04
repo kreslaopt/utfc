@@ -135,11 +135,15 @@
                 "max": "330",
                 "min": ""
             },
-            "seat_to_floor_height_upper": {},
+            "seat_to_floor_height_upper": {
+                "min": "450"
+            },
             "armrest_height_from_floor": {},
             "armrest_width_support": {},
             "armrest_length_support": {},
-            "seat_depth_km": {},
+            "seat_depth_km": {
+                "max": "305"
+            },
             "backrest_height_external": {},
             "backrest_width_narrow": {
                 "max": "305"

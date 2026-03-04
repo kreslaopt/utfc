@@ -97,8 +97,8 @@
                 "max": ""
             },
             "seat_to_floor_height": {
-                "min": "480",
-                "max": "580"
+                "min": "360",
+                "max": "460"
             },
             "armrest_height_from_seat": {
                 "min": "230",
@@ -141,18 +141,24 @@
                 "min": ""
             },
             "seat_to_floor_height_upper": {
-                "min": "360",
-                "max": "460"
+                "min": "480",
+                "max": "580"
             },
             "armrest_height_from_floor": {
                 "min": "290"
             },
-            "armrest_width_support": {},
+            "armrest_width_support": {
+                "max": "60"
+            },
             "armrest_length_support": {
                 "max": "320"
             },
-            "seat_depth_km": {},
-            "backrest_height_external": {},
+            "seat_depth_km": {
+                "max": "530"
+            },
+            "backrest_height_external": {
+                "max": "770"
+            },
             "backrest_width_narrow": {
                 "max": "530"
             },
