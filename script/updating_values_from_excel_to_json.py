@@ -419,7 +419,7 @@ columns_mapping = {
     'Unnamed: 44': ('volume', None, None),  # Объем
     'Unnamed: 45': ('box_on_pallet', None, None),  # Количество коробок на паллете, шт.
     'Unnamed: 46': ('pallet_width', None, None),
-    'Unnamed: 49': ('addition', None, None)  # Дополнения		
+    # 'Unnamed: 49': ('addition', None, None)  # Дополнения		
 }
 
 for i, model in enumerate(models_excel):
@@ -431,13 +431,13 @@ for i, model in enumerate(models_excel):
     }
 
     for col, (key, min_key, max_key) in columns_mapping.items():
-        if min_key is None and max_key is None:
-            if key == 'addition':
-                raw_value = df.iloc[i + 3, df.columns.get_loc(col)]
-                if pd.isna(raw_value) or raw_value == "":
-                    model_data[key] = ""
-                else:
-                    model_data[key] = str(raw_value)
+        # if min_key is None and max_key is None:
+        #     if key == 'addition':
+        #         raw_value = df.iloc[i + 3, df.columns.get_loc(col)]
+        #         if pd.isna(raw_value) or raw_value == "":
+        #             model_data[key] = ""
+        #         else:
+        #             model_data[key] = str(raw_value)
 
 
         if min_key is not None and max_key is not None:
@@ -617,8 +617,8 @@ for json_file in json_files:
                 original_data['dimensions'][0]['volume'] = format_number(excel_model_data['additional_info'].get('volume'))
 
             # Обновляем addition (если оно есть в excel_model_data)
-            if 'addition' in excel_model_data:
-                original_data['addition'] = excel_model_data['addition']
+            # if 'addition' in excel_model_data:
+            #     original_data['addition'] = excel_model_data['addition']
 
 
             original_data = update_description_with_dimensions(original_data, excel_model_data)
