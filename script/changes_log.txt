@@ -1,3 +1,83 @@
 
-Файл: C:\Users\UTFC\Documents\Downloads\to\products\armchair_personal\Метро т-01 пвм пластик.json
-Изменено: construction_and_materials[0].components[8]: '<strong>Пятилучье</strong> пластиковое d=590 мм с 5-тью роликами обеспечивает устойчивость и позволяет креслу легко поворачиваться и перемещаться по любому стандартному покрытию пола' → '<strong>Пятилучье</strong> пластиковое d=580 мм с 5-тью роликами обеспечивает устойчивость и позволяет креслу легко поворачиваться и перемещаться по любому стандартному покрытию пола'
+Файл: C:\Users\UTFC\Documents\Downloads\to\products\armchair_rukovoditel\Идра н_п пластик.json
+Изменено: dimensions_details[0].armrest_width_support.max: '45' → '50'
+Изменено: dimensions_details[0].armrest_length_support.max: '340' → '270'
+
+Файл: C:\Users\UTFC\Documents\Downloads\to\products\armchair_comfort\Utfc номи м-317.json
+Изменено: dimensions_details[0].armrest_height_from_seat.min: '180' → '200'
+Изменено: dimensions_details[0].chair_depth.min: '620' → '630'
+Изменено: dimensions_details[0].seat_width_with_armrests.min: '635' → '655'
+Изменено: dimensions_details[0].backrest_width_narrow.max: '430' → '420'
+
+Файл: C:\Users\UTFC\Documents\Downloads\to\products\armchair_comfort\Квадро м-807 white ch.json
+Изменено: dimensions_details[0].diameter_cross.max: '600' → '640'
+
+Файл: C:\Users\UTFC\Documents\Downloads\to\products\armchair_comfort\Микс сн-696 хром tg.json
+Изменено: dimensions_details[0].diameter_cross.max: '600' → '640'
+
+Файл: C:\Users\UTFC\Documents\Downloads\to\products\armchair_comfort\Энтер сн-320 нептун хром.json
+Изменено: dimensions_details[0].diameter_cross.max: '600' → '640'
+
+Файл: C:\Users\UTFC\Documents\Downloads\to\products\armchair_personal\Бэрри м-902 tg хром.json
+Изменено: dimensions_details[0].diameter_cross.max: '600' → '640'
+
+Файл: C:\Users\UTFC\Documents\Downloads\to\products\armchair_personal\Кремона хром.json
+Изменено: dimensions_details[0].diameter_cross.max: '600' → '640'
+
+Файл: C:\Users\UTFC\Documents\Downloads\to\products\armchair_personal\Манго с-109 нептун люкс хром.json
+Изменено: dimensions_details[0].diameter_cross.max: '600' → '640'
+
+Файл: C:\Users\UTFC\Documents\Downloads\to\products\armchair_personal\Мартин люкс нептун хром.json
+Изменено: dimensions_details[0].diameter_cross.max: '600' → '640'
+
+Файл: C:\Users\UTFC\Documents\Downloads\to\products\armchair_personal\Метро люкс нептун хром.json
+Изменено: dimensions_details[0].diameter_cross.max: '600' → '640'
+
+Файл: C:\Users\UTFC\Documents\Downloads\to\products\armchair_personal\Престиж нептун овалина хром.json
+Изменено: dimensions_details[0].diameter_cross.max: '600' → '640'
+
+Файл: C:\Users\UTFC\Documents\Downloads\to\products\armchair_personal\Пронто сн-211 хром.json
+Изменено: dimensions_details[0].diameter_cross.max: '600' → '640'
+
+Файл: C:\Users\UTFC\Documents\Downloads\to\products\armchair_personal\Самба gtp tg.json
+Изменено: dimensions_details[0].diameter_cross.max: '600' → '640'
+
+Файл: C:\Users\UTFC\Documents\Downloads\to\products\armchair_personal\Самба gtp пиастра.json
+Изменено: dimensions_details[0].diameter_cross.max: '600' → '640'
+
+Файл: C:\Users\UTFC\Documents\Downloads\to\products\armchair_personal\Самба люкс gtp tg столик.json
+Изменено: dimensions_details[0].diameter_cross.max: '600' → '640'
+
+Файл: C:\Users\UTFC\Documents\Downloads\to\products\armchair_personal\Самба люкс gtp tg.json
+Изменено: dimensions_details[0].diameter_cross.max: '600' → '640'
+
+Файл: C:\Users\UTFC\Documents\Downloads\to\products\armchair_personal\Самба люкс gtp пиастра столик.json
+Изменено: dimensions_details[0].diameter_cross.max: '600' → '640'
+
+Файл: C:\Users\UTFC\Documents\Downloads\to\products\armchair_personal\Самба люкс gtp пиастра.json
+Изменено: dimensions_details[0].diameter_cross.max: '600' → '640'
+
+Файл: C:\Users\UTFC\Documents\Downloads\to\products\armchair_personal\Честер gts tg хром.json
+Изменено: dimensions_details[0].diameter_cross.max: '600' → '640'
+
+Файл: C:\Users\UTFC\Documents\Downloads\to\products\armchair_personal\Честер gts пиастра хром.json
+Изменено: dimensions_details[0].diameter_cross.max: '600' → '640'
+
+Файл: C:\Users\UTFC\Documents\Downloads\to\products\armchair_personal\Шелл gts с-21 хром.json
+Изменено: dimensions_details[0].diameter_cross.max: '600' → '640'
+
+Файл: C:\Users\UTFC\Documents\Downloads\to\products\armchair_rukovoditel\Борн c-44 в хром мб.json
+Изменено: dimensions_details[0].armrest_width_support.max: '55' → '60'
+Изменено: dimensions_details[0].armrest_length_support.max: '300' → '290'
+
+Файл: C:\Users\UTFC\Documents\Downloads\to\products\armchair_rukovoditel\Борн с-44 в хром.json
+Изменено: dimensions_details[0].armrest_width_support.max: '55' → '60'
+Изменено: dimensions_details[0].armrest_length_support.max: '300' → '290'
+
+Файл: C:\Users\UTFC\Documents\Downloads\to\products\armchair_rukovoditel\Идра в пластик.json
+Изменено: dimensions_details[0].armrest_width_support.max: '50' → '45'
+Изменено: dimensions_details[0].armrest_length_support.max: '270' → '340'
+
+Файл: C:\Users\UTFC\Documents\Downloads\to\products\armchair_rukovoditel\Идра н_п пластик.json
+Изменено: dimensions_details[0].armrest_width_support.max: '50' → '45'
+Изменено: dimensions_details[0].armrest_length_support.max: '270' → '340'

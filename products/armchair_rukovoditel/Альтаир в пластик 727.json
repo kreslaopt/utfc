@@ -136,8 +136,8 @@
                 "min": ""
             },
             "seat_to_floor_height_upper": {
-                "min": "450",
-                "max": "550"
+                "min": "350",
+                "max": "450"
             },
             "armrest_height_from_floor": {
                 "min": "270"

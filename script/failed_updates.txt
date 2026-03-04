@@ -14,6 +14,8 @@ C:\Users\UTFC\Documents\Downloads\to\products\armchair_personal\escape\Фига�
 C:\Users\UTFC\Documents\Downloads\to\products\armchair_personal\escape\Фигаро gts к13 пиастра хром.json: Модель не найдена в Excel
 C:\Users\UTFC\Documents\Downloads\to\products\armchair_rukovoditel\Кайман в топ-ган lux.json: Модель не найдена в Excel
 C:\Users\UTFC\Documents\Downloads\to\products\armchair_rukovoditel\Ройс м-704.json: Модель не найдена в Excel
+C:\Users\UTFC\Documents\Downloads\to\products\armchair_rukovoditel\Сн-710 айкью н пластик.json: Модель не найдена в Excel
+C:\Users\UTFC\Documents\Downloads\to\products\armchair_rukovoditel\Сн-710 айкью н_п.json: Модель не найдена в Excel
 C:\Users\UTFC\Documents\Downloads\to\products\armchair_rukovoditel\escape\Аляска ch-153 в хром хдп мб.json: Модель не найдена в Excel
 C:\Users\UTFC\Documents\Downloads\to\products\armchair_rukovoditel\escape\Аризона ch-400 в хром хдп.json: Модель не найдена в Excel
 C:\Users\UTFC\Documents\Downloads\to\products\armchair_rukovoditel\escape\Аризона сн-400 бюджет в пластик-люкс 727.json: Модель не найдена в Excel

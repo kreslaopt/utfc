@@ -143,7 +143,9 @@
             "armrest_height_from_floor": {},
             "armrest_width_support": {},
             "armrest_length_support": {},
-            "seat_depth_km": {},
+            "seat_depth_km": {
+                "max": "420"
+            },
             "backrest_height_external": {
                 "max": "470"
             },

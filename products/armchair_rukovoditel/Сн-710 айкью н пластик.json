@@ -172,5 +172,12 @@
             "box_on_pallet": {},
             "pallet_width": {}
         }
+    ],
+    "lost": [
+        {
+            "clean": false,
+            "limit": false,
+            "del": true
+        }
     ]
 }

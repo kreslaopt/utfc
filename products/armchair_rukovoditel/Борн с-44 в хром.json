@@ -143,10 +143,10 @@
                 "min": "290"
             },
             "armrest_width_support": {
-                "max": "55"
+                "max": "60"
             },
             "armrest_length_support": {
-                "max": "300"
+                "max": "290"
             },
             "seat_depth_km": {
                 "max": "530"

@@ -145,7 +145,9 @@
             "armrest_width_support": {
                 "max": "75"
             },
-            "armrest_length_support": {},
+            "armrest_length_support": {
+                "max": "350"
+            },
             "seat_depth_km": {},
             "backrest_height_external": {},
             "backrest_width_narrow": {
