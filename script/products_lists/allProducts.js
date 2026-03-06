@@ -336,6 +336,10 @@ const knownProductsAllFiles = [
     "category": "armchair_rukovoditel"
   },
   {
+    "name": "Кайман комфорт ch-301 в bl",
+    "category": "armchair_rukovoditel"
+  },
+  {
     "name": "Кайман комфорт ch-301 н хром",
     "category": "armchair_rukovoditel"
   },

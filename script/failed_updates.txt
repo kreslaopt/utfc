@@ -17,6 +17,7 @@ C:\Users\UTFC\Documents\Downloads\to\products\armchair_rukovoditel\Кайман 
 C:\Users\UTFC\Documents\Downloads\to\products\armchair_rukovoditel\Кайман ch-300 н bl.json: Модель не найдена в Excel
 C:\Users\UTFC\Documents\Downloads\to\products\armchair_rukovoditel\Кайман ch-300 н_п bl.json: Модель не найдена в Excel
 C:\Users\UTFC\Documents\Downloads\to\products\armchair_rukovoditel\Кайман в топ-ган lux.json: Модель не найдена в Excel
+C:\Users\UTFC\Documents\Downloads\to\products\armchair_rukovoditel\Кайман комфорт ch-301 в bl.json: Модель не найдена в Excel
 C:\Users\UTFC\Documents\Downloads\to\products\armchair_rukovoditel\Ройс м-704.json: Модель не найдена в Excel
 C:\Users\UTFC\Documents\Downloads\to\products\armchair_rukovoditel\Сн-710 айкью н пластик.json: Модель не найдена в Excel
 C:\Users\UTFC\Documents\Downloads\to\products\armchair_rukovoditel\Сн-710 айкью н_п bl.json: Модель не найдена в Excel
