@@ -549,19 +549,22 @@ for json_file in json_files:
                 if key not in original_data['dimensions_details'][0]:
                     original_data['dimensions_details'][0][key] = {}
 
-                if isinstance(value, dict):
-                    for sub_key, sub_value in value.items():
-                        if sub_value is not None and sub_value != "":
-                            original_data['dimensions_details'][0][key][sub_key] = format_number(sub_value)
-                else:
-                    if value is not None and value != "":
-                        original_data['dimensions_details'][0][key] = format_number(value)
+            if isinstance(value, dict):
+                for sub_key, sub_value in value.items():
+                    if sub_value is not None and sub_value != "" and sub_value != "0":
+                        original_data['dimensions_details'][0][key][sub_key] = format_number(sub_value)
+                    # Если sub_value пусто или 0, оставляем значение из JSON
+            else:
+                if value is not None and value != "" and value != "0":
+                    original_data['dimensions_details'][0][key] = format_number(value)
+                # Если value пусто или 0, оставляем значение из JSON
+
 
             # Обновляем additional_info
             if 'additional_info' in original_data:
                 if 'package_dimensions' in original_data['additional_info']:
                     for key, value in excel_model_data['additional_info']['package_dimensions'].items():
-                        if value is not None:
+                        if value is not None and value != "" and value != "0":
                             original_data['additional_info']['package_dimensions'][key] = value
                 if 'volume' in original_data['additional_info']:
                     if excel_model_data['additional_info']['volume'] is not None:
@@ -591,7 +594,7 @@ for json_file in json_files:
             if 'transportation' in original_data and len(original_data['transportation']) > 0:
                 if 'packaging' in original_data['transportation'][0]:
                     for key, value in excel_model_data['transportation']['size'].items():
-                        if value is not None and value != '':
+                        if value is not None and value != '' and value != "0":
                             clean_value = remove_trailing_zero(value)
                             original_data['transportation'][0]['packaging']['size'][key] = clean_value
 
@@ -605,16 +608,16 @@ for json_file in json_files:
             if 'dimensions' in original_data and len(original_data['dimensions']) > 0:
                 if 'brutto' in original_data['dimensions'][0]:
                     print(f"Обновляем brutto: {original_data['dimensions'][0]['brutto']} -> {excel_model_data['dimensions_details'].get('brutto')}")
-                    if excel_model_data['dimensions_details'].get('brutto') is not None:
+                    if excel_model_data['dimensions_details'].get('brutto') is not None and excel_model_data != "" and excel_model_data != "0":
                         original_data['dimensions'][0]['brutto'] = format_number(excel_model_data['dimensions_details'].get('brutto'))
                 if 'netto' in original_data['dimensions'][0]:
                     print(f"Обновляем netto: {original_data['dimensions'][0]['netto']} -> {excel_model_data['dimensions_details'].get('netto')}")
-                    if excel_model_data['dimensions_details'].get('netto') is not None:
+                    if excel_model_data['dimensions_details'].get('netto') is not None and excel_model_data != "" and excel_model_data != "0":
                         original_data['dimensions'][0]['netto'] = format_number(excel_model_data['dimensions_details'].get('netto'))
 
             # Обновляем volume в dimensions
             if 'dimensions' in original_data and len(original_data['dimensions']) > 0:
-                if excel_model_data['dimensions_details'].get('volume') is not None:
+                if excel_model_data['dimensions_details'].get('volume') is not None and excel_model_data != "" and excel_model_data != "0":
                     original_data['dimensions'][0]['volume'] = format_number(excel_model_data['dimensions_details'].get('volume'))
 
 

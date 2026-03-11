@@ -684,15 +684,7 @@ const knownProductsAllFiles = [
     "category": "armchair_personal"
   },
   {
-    "name": "Престиж люкс",
-    "category": "armchair_personal"
-  },
-  {
     "name": "Престиж нептун овалина хром",
-    "category": "armchair_personal"
-  },
-  {
-    "name": "Престиж пвм",
     "category": "armchair_personal"
   },
   {
@@ -709,10 +701,6 @@ const knownProductsAllFiles = [
   },
   {
     "name": "Престиж соната пластик",
-    "category": "armchair_personal"
-  },
-  {
-    "name": "Престиж cpt",
     "category": "armchair_personal"
   },
   {
