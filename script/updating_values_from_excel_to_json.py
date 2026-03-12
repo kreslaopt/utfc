@@ -223,40 +223,104 @@ import math
 import copy
 
 
+# def update_description_with_dimensions(original_data, excel_model_data):
+#     if 'construction_and_materials' in original_data and len(original_data['construction_and_materials']) > 0:
+#         components = original_data['construction_and_materials'][0].get('components', [])
+#         for i, component in enumerate(components):
+#             if isinstance(component, str):
+#                 # Обновляем значение диаметра пятилучья
+#                 if "d=" in component.lower() and "пятилучье" in component.lower():
+#                     diameter_cross_max = excel_model_data['dimensions_details'].get('diameter_cross', {}).get('max')
+#                     if diameter_cross_max is not None and diameter_cross_max != "":
+#                         components[i] = re.sub(r'd=\d+', f'd={diameter_cross_max}', component, flags=re.IGNORECASE)
+
+#                 # Обновляем значение ширины полозьев
+#                 if "ширина полозьев" in component.lower():
+#                     runners_width_max = excel_model_data['dimensions_details'].get('runners_width', {}).get('max')
+#                     if runners_width_max is not None and runners_width_max != "":
+#                         components[i] = re.sub(r'\d+(?=\s*мм\s*с\s*\d+\s*роликами)', runners_width_max, component, flags=re.IGNORECASE)
+
+#                 # Обновляем значение глубины полозьев
+#                 if "глубина полозьев" in component.lower():
+#                     runners_depth_max = excel_model_data['dimensions_details'].get('runners_depth', {}).get('max')
+#                     if runners_depth_max is not None and runners_depth_max != "":
+#                         components[i] = re.sub(r'глубина полозьев\s*\w*\s*=\s*\d+', f'глубина полозьев = {runners_depth_max}', component, flags=re.IGNORECASE)
+
+#                 # Обновляем значение диаметра крестовины
+#                 if "диаметр крестовины" in component.lower():
+#                     diameter_cross_max = excel_model_data['dimensions_details'].get('diameter_cross', {}).get('max')
+#                     if diameter_cross_max is not None and diameter_cross_max != "":
+#                         components[i] = re.sub(r'диаметр\s*крестовины\s*\w*\s*=\s*\d+', f'диаметр крестовины = {diameter_cross_max}', component, flags=re.IGNORECASE)
+
+#                 # Обновляем значение диаметра роликов
+#                 if "ролики" in component.lower() and "d=" in component.lower():
+#                     runners_width_max = excel_model_data['dimensions_details'].get('runners_width', {}).get('max')
+#                     if runners_width_max is not None and runners_width_max != "":
+#                         components[i] = re.sub(r'ролики\s*\w*\s*d=\d+', f'ролики d={runners_width_max}', component, flags=re.IGNORECASE)
+
+#         original_data['construction_and_materials'][0]['components'] = components
+
+#     return original_data
 def update_description_with_dimensions(original_data, excel_model_data):
     if 'construction_and_materials' in original_data and len(original_data['construction_and_materials']) > 0:
         components = original_data['construction_and_materials'][0].get('components', [])
         for i, component in enumerate(components):
             if isinstance(component, str):
-                # Обновляем значение диаметра пятилучья
+                # Обновляем значение диаметра пятилучья (только первое вхождение)
                 if "d=" in component.lower() and "пятилучье" in component.lower():
                     diameter_cross_max = excel_model_data['dimensions_details'].get('diameter_cross', {}).get('max')
                     if diameter_cross_max is not None and diameter_cross_max != "":
-                        components[i] = re.sub(r'd=\d+', f'd={diameter_cross_max}', component, flags=re.IGNORECASE)
+                        # Ищем первое вхождение d=\d+ и заменяем только его
+                        pattern = re.compile(r'd=\d+', flags=re.IGNORECASE)
+                        match = pattern.search(component)
+                        if match:
+                            start, end = match.span()
+                            new_component = component[:start] + f'd={diameter_cross_max}' + component[end:]
+                            components[i] = new_component
 
-                # Обновляем значение ширины полозьев
+                # Обновляем значение ширины полозьев (только первое вхождение)
                 if "ширина полозьев" in component.lower():
                     runners_width_max = excel_model_data['dimensions_details'].get('runners_width', {}).get('max')
                     if runners_width_max is not None and runners_width_max != "":
-                        components[i] = re.sub(r'\d+(?=\s*мм\s*с\s*\d+\s*роликами)', runners_width_max, component, flags=re.IGNORECASE)
+                        pattern = re.compile(r'\d+(?=\s*мм\s*с\s*\d+\s*роликами)')
+                        match = pattern.search(component)
+                        if match:
+                            start, end = match.span()
+                            new_component = component[:start] + runners_width_max + component[end:]
+                            components[i] = new_component
 
-                # Обновляем значение глубины полозьев
+                # Обновляем значение глубины полозьев (только первое вхождение)
                 if "глубина полозьев" in component.lower():
                     runners_depth_max = excel_model_data['dimensions_details'].get('runners_depth', {}).get('max')
                     if runners_depth_max is not None and runners_depth_max != "":
-                        components[i] = re.sub(r'глубина полозьев\s*\w*\s*=\s*\d+', f'глубина полозьев = {runners_depth_max}', component, flags=re.IGNORECASE)
+                        pattern = re.compile(r'глубина полозьев\s*\w*\s*=\s*\d+', flags=re.IGNORECASE)
+                        match = pattern.search(component)
+                        if match:
+                            start, end = match.span()
+                            new_component = component[:start] + f'глубина полозьев = {runners_depth_max}' + component[end:]
+                            components[i] = new_component
 
-                # Обновляем значение диаметра крестовины
+                # Обновляем значение диаметра крестовины (только первое вхождение)
                 if "диаметр крестовины" in component.lower():
                     diameter_cross_max = excel_model_data['dimensions_details'].get('diameter_cross', {}).get('max')
                     if diameter_cross_max is not None and diameter_cross_max != "":
-                        components[i] = re.sub(r'диаметр\s*крестовины\s*\w*\s*=\s*\d+', f'диаметр крестовины = {diameter_cross_max}', component, flags=re.IGNORECASE)
+                        pattern = re.compile(r'диаметр\s*крестовины\s*\w*\s*=\s*\d+', flags=re.IGNORECASE)
+                        match = pattern.search(component)
+                        if match:
+                            start, end = match.span()
+                            new_component = component[:start] + f'диаметр крестовины = {diameter_cross_max}' + component[end:]
+                            components[i] = new_component
 
-                # Обновляем значение диаметра роликов
+                # Обновляем значение диаметра роликов (только первое вхождение)
                 if "ролики" in component.lower() and "d=" in component.lower():
                     runners_width_max = excel_model_data['dimensions_details'].get('runners_width', {}).get('max')
                     if runners_width_max is not None and runners_width_max != "":
-                        components[i] = re.sub(r'ролики\s*\w*\s*d=\d+', f'ролики d={runners_width_max}', component, flags=re.IGNORECASE)
+                        pattern = re.compile(r'ролики\s*\w*\s*d=\d+', flags=re.IGNORECASE)
+                        match = pattern.search(component)
+                        if match:
+                            start, end = match.span()
+                            new_component = component[:start] + f'ролики d={runners_width_max}' + component[end:]
+                            components[i] = new_component
 
         original_data['construction_and_materials'][0]['components'] = components
 
