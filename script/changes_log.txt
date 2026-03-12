@@ -4249,3 +4249,6 @@
 Изменено: dimensions_details[0].package_depth: '{}' → '322,0'
 Изменено: dimensions_details[0].package_height: '{}' → '665,0'
 Изменено: dimensions_details[0].volume: '0' → '0,13361712'
+
+Файл: C:\Users\UTFC\Documents\Downloads\to\products\armchair_rukovoditel\Кайман ch-300 в хром мб.json
+Изменено: dimensions_details[0].chair_height.min: '111trghe0' → '1110'
