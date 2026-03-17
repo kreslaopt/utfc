@@ -64,9 +64,9 @@
            border-radius: 4px;
        }
 
-       .content {
-           padding: 5px;
-       }
+    //    .content {
+    //        padding: 5px;
+    //    }
 
        h1 {
            font-size: 21px;
@@ -78,12 +78,14 @@
        h3 {
            font-size: 14px;
            color: #3D4555;
-           margin-top: 20px;
+           margin-top: 8px;
 
            margin-bottom: 8px;
        }
 
-
+.top_block {
+    height: 660px;
+}
 
        .filter-block {
            margin-top: 11px;
@@ -116,7 +118,7 @@
            width: 8px;
            height: 8px;
            border-radius: 5%;
-           background: #96C22B;
+           background: $GreenMainColor;
            cursor: pointer;
            -webkit-appearance: none;
            z-index: 3;
@@ -127,7 +129,7 @@
            width: 15px;
            height: 15px;
            border-radius: 5%;
-           background: #96C22B;
+           background:$GreenMainColor;
            cursor: pointer;
        }
 
@@ -230,21 +232,81 @@
            margin-bottom: 20px;
        }
 
-       .analytics-content {
-           width: 100%;
-           transition: max-height 0.3s ease-out, opacity 0.2s ease-out;
+    //    .analytics-content {
+    // max-height: 0;
+    // overflow: hidden;
+    // transition: max-height 0.3s ease-out, opacity 0.2s ease-out;
+    // opacity: 0;
+    // display: block;
+    //    }
 
-           display: block;
-       }
+//        .analytics-content.expanded {
+//     max-height: 660px;
+//     opacity: 1;
+//     min-height: 660px;
+// }
 
        .analytics-content.hidden {
            display: none;
 
        }
 
+       .toggle-view-button {
+    background: #f0f0f0;
+    color: #3D4555;
+    border: 1px solid #ccc;
+    padding: 5px 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+    font-size: 12px;
+}
+
+.toggle-view-button.active {
+    background:$GreenMainColor;
+    color: white;
+    border-color: $GreenMainColor;
+}
+
+.tabs-header {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.tab-button {
+    background: #f0f0f0;
+    color: #3D4555;
+    border: 1px solid #ccc;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+    transition: all 0.2s ease;
+}
+
+.tab-button.active {
+    background:$GreenMainColor;
+    color: white;
+    border-color:$GreenMainColor;
+}
+
+#analyticsBlock, #schemaBlock {
+    display: none;
+}
+
+#analyticsBlock.active, #schemaBlock.active {
+    display: block;
+}
+
+.analytics-block {
+    height: 660px;
+    min-height: 660px;
+}
        #overallChart {
            width: 100%;
-           height: 600px;
+               height: 660px;
+    min-height: 660px;
        }
 
        .product-card {
@@ -261,7 +323,7 @@
 
        .checkbox-group label {
            display: flex;
-           margin: 0.5px 0;
+           margin: 4px 0;
            cursor: pointer;
            font-size: 11px;
            align-items: center;
@@ -311,6 +373,8 @@
            position: relative;
            display: flex;
            align-items: center;
+           margin-bottom: 30px;
+
        }
 
        #searchInput {
@@ -399,7 +463,7 @@
        }
 
        #diameter-filter-content {
-           margin-bottom: 100px;
+           margin-bottom: 20px;
        }
 
        .filter-content.expanded {
@@ -495,7 +559,7 @@
     left: 25px; /* Смещаем вправо, чтобы не перекрывал красный кружок */
     width: 12px;
     height: 12px;
-    background-color: #96C22B; /* Салатовый цвет */
+    background-color:$GreenMainColor; 
     border-radius: 50%;
     z-index: 1000;
 }
@@ -505,26 +569,62 @@
     left: 45px; /* Смещаем вправо, чтобы не перекрывал красный кружок */
     width: 12px;
     height: 12px;
-    background-color: #652bc2; /* Салатовый цвет */
+    background-color: #652bc2;
     border-radius: 50%;
     z-index: 1000;
 }
 .missing_in_json {
-    position: fixed;
+    // position: fixed;
     width: 300px;
     color: #a6a7a8;
-    font-size: 9px;
+    font-size: 11px;
                text-decoration: none;
            outline: none;
-    top: 5px;
-    right: -25px;
-    z-index: 1050; /* Чтобы блок был поверх других элементов */
-    background: white; /* Фон для читаемости */
-    border-radius: 4px; /* Скругление углов */
-    padding: 9px; /* Внутренние отступы */
-   
 }
 
+           .filtering_results {
+    margin-top: 15px;
+}
+
+.passed_filtering,
+.failed_filtering {
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-size: 11px;
+    overflow: hidden;
+}
+
+.passed_filtering ul,
+.failed_filtering ul {
+    margin: 3px 0 0 0;
+    list-style-type: none;
+}
+
+.passed_filtering li,
+.failed_filtering li {
+    word-wrap: break-word;
+    white-space: normal;
+    max-width: 215px;
+    padding: 1px 0; /* Уменьшаем внутренние отступы */
+    // line-height: 0.8; /* Уменьшаем межстрочный интервал */
+    color: #3D4555; /* Цвет текста */
+}
+
+.passed_filtering li {
+    color:$GreenMainColor; /* Зелёный цвет для прошедших */
+}
+
+.failed_filtering li {
+    color: #e74c3c; /* Красный цвет для непрошедших */
+}
+
+#passedProductsList li {
+line-height: 0.65;
+}
+
+#failedProductsList li {
+line-height: 0.65;
+}
 
 
 

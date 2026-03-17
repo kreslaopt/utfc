@@ -107,11 +107,11 @@
             },
             "chair_depth": {
                 "min": "820",
-                "max": null
+                "max": "820"
             },
             "seat_depth": {
                 "min": "520",
-                "max": null
+                "max": ""
             },
             "backrest_height": {
                 "max": "720",
