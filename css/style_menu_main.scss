@@ -607,7 +607,7 @@
     max-width: 215px;
     padding: 1px 0; /* Уменьшаем внутренние отступы */
     // line-height: 0.8; /* Уменьшаем межстрочный интервал */
-    color: #3D4555; /* Цвет текста */
+    color: #a6a7a8; /* Цвет текста */
 }
 
 .passed_filtering li {
@@ -615,7 +615,7 @@
 }
 
 .failed_filtering li {
-    color: #e74c3c; /* Красный цвет для непрошедших */
+    color: #565555; /* Красный цвет для непрошедших */
 }
 
 #passedProductsList li {
