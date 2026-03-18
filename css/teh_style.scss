@@ -116,14 +116,8 @@
     transform: translateX(-50%);
 }
 
-.custom-slider.vertical .min-thumb {
-    bottom: 0;
-}
 
-.custom-slider.vertical .max-thumb {
-    bottom: 100%;
-    transform: translateX(-50%) translateY(100%);
-}
+
    
 .custom-slider.vertical .min-thumb {
     position: absolute;

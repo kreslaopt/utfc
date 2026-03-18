@@ -736,36 +736,44 @@
         let productNameFile = '';
         // Основной код загрузки
         document.addEventListener('DOMContentLoaded', function () {
-            const urlParams = new URLSearchParams(window.location.search);
-            const category = urlParams.get('category');
-            const productName = decodeURIComponent(urlParams.get('name'));
-            const uniqueName = decodeURIComponent(urlParams.get('unique_name'));
+    const urlParams = new URLSearchParams(window.location.search);
+const category = urlParams.get('category');
+const uniqueName = decodeURIComponent(urlParams.get('unique_name'));
 
+// Очищаем имя файла от недопустимых символов
+const sanitizedUniqueName = uniqueName.charAt(0).toUpperCase() + uniqueName.slice(1).toLowerCase().replace(/[/\\:*?"<>|]/g, '_');
 
-            // if (!category || !uniqueName) {
-            //     alert("Ошибка: не указаны категория или название товара");
-            //     return;
-            //         }
-            // Очищаем имя файла от недопустимых символов
-            const sanitizedProductName = productName.replace(/[/\\:*?"<>|]/g, '_');
-            const sanitizedUniqueName = uniqueName.charAt(0).toUpperCase() + uniqueName.slice(1).toLowerCase().replace(/[/\\:*?"<>|]/g, '_');
-            const filePath = `products/${category}/${sanitizedUniqueName}.json`;
-            console.log("Путь к файлу:", filePath);
-            fetch(filePath)
-                .then(response => {
-                    if (!response.ok) throw new Error(`Ошибка загрузки данных: ${response.statusText}`);
-                    return response.json();
-                })
-                .then(product => {
-                    if (!product) throw new Error("Данные о товаре отсутствуют");
-                    productNameFile = (product.namefile && product.namefile.length > 0) ? product.namefile[0] : 'модель';
+// Сначала пробуем загрузить из обычной папки
+let productPath = `products/${encodeURIComponent(category)}/${sanitizedUniqueName}.json`;
 
-                    // Обновляем title страницы
-                    const productTitle = product.name?.[0] || 'Техническое описание';
-                    document.getElementById('pageTitle').textContent = `ТО: ${productTitle}`;
+fetch(productPath)
+    .then(response => {
+        if (!response.ok) {
+            // Если не найден в обычной папке — пробуем в escape
+            productPath = `products/${encodeURIComponent(category)}/escape/${sanitizedUniqueName}.json`;
+            return fetch(productPath);
+        }
+        return response.json();
+    })
+    .then(response => {
+        if (response instanceof Response) {
+            if (!response.ok) {
+                throw new Error(`Товар не найден: ${uniqueName}`);
+            }
+            return response.json();
+        }
+        return response;
+    })
+    .then(product => {
+        product.category = category;
+        product.is_archive = productPath.includes('escape'); // Помечаем товар как архивный, если загружен из escape
 
-                    // Заполнение данных для основного товара
-                    fillProductFields(product, 0);
+        // Обновляем title страницы
+        const productTitle = product.name?.[0] || 'Техническое описание';
+        document.getElementById('pageTitle').textContent = `ТО: ${productTitle}`;
+
+        // Заполнение данных для основного товара
+        fillProductFields(product, 0);
 
                     // Заполнение технического блока
                     const technicalBlock = document.querySelector('.technical');

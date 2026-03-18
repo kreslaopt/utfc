@@ -44,6 +44,8 @@
                 <label><input type="checkbox" class="category-filter" value="chair_visitors" checked> Стулья для
                     посетителей</label>
                 <label><input type="checkbox" class="category-filter" value="armchair_epik" checked> Кресла EPIK</label>
+                <label><input type="checkbox" class="category-filter" value="archive" id="archiveFilter">Архив</label>
+
             </div>
         </div>
 
@@ -194,7 +196,7 @@
 
         <div class="missing_in_json">
             Комо нп хром - ТО есть, фото заменить<br><br>
-            <b>В каталоге отсутствуют<br>(нет фото/ТО/выведен):</b><br><br>
+            <b>В каталоге отсутствуют<br>(нет фото/ТО):</b><br><br>
             Самба GTP пиастра/столик<br>
             Престиж Нептун хром<br>
             Айкью Н СН-710 пластик<br>
@@ -408,6 +410,8 @@
         // let minSeatWidthInput, maxSeatWidthInput, minSeatWidthValue, maxSeatWidthValue;
         let validProducts = [];
         let filteredProducts = [];
+        let activeProducts = [];
+let archiveProducts = [];
         let isManualInput = false;
         // let isSeatWidthWithArmrestsChanged = false;
         // let isSeatToFloorHeightChanged = false;
@@ -460,6 +464,10 @@ function parseDimensionValue(value) {
 }
 
 function updateSliderFromInput(minInput, maxInput, minThumb, maxThumb, track, isVertical, isMin) {
+        if (!minInput || !maxInput || !minThumb || !maxThumb || !track) {
+        console.warn("Отсутствуют необходимые элементы для обновления слайдера");
+        return;
+    }
     const minVal = parseInt(minInput.value);
     const maxVal = parseInt(maxInput.value);
     const minLimit = parseInt(minInput.min);
@@ -645,6 +653,8 @@ function isValueInRange(dimension, filterMin, filterMax) {
             const minValue = slider.closest('.size-filter').querySelector('.min-value');
             const maxValue = slider.closest('.size-filter').querySelector('.max-value');
 
+            
+
                 // Инициализируем переменные для текущего слайдера
     // const minValueInput = minValue;
     // const maxValueInput = maxValue;
@@ -731,6 +741,7 @@ function dragThumb(thumb, isMin) {
 }
 
   function updateSlider() {
+    
                 if (isVertical) {
      minThumb.style.bottom = `${minPos}%`;
             maxThumb.style.bottom = `${maxPos}%`;
@@ -755,18 +766,26 @@ function dragThumb(thumb, isMin) {
             setThumbPosition(maxThumb, parseInt(maxValue.value), false);
         }
 
-        function recalculateSliderValues(filteredProducts = []) {
-                if (isManualInput) return;
+function recalculateSliderValues(filteredProducts = []) {
+    
+    const isArchiveSelected = document.getElementById('archiveFilter').checked;
+    let productsToUse = isArchiveSelected ? archiveProducts : activeProducts;
 
-            const productsToUse = filteredProducts.length > 0 ? filteredProducts : validProducts;
-            const selectedCategories = Array.from(document.querySelectorAll('.category-filter:checked')).map(el => el.value);
-            let filteredByCategory = productsToUse;
+    if (isManualInput) return;
 
-            if (selectedCategories.length > 0) {
-                filteredByCategory = productsToUse.filter(product =>
-                    product.category && selectedCategories.includes(product.category)
-                );
-            }
+      if (filteredProducts.length > 0) {
+        productsToUse = filteredProducts;
+    }
+
+    productsToUse = filteredProducts.length > 0 ? filteredProducts : productsToUse;
+    const selectedCategories = Array.from(document.querySelectorAll('.category-filter:checked')).map(el => el.value);
+    let filteredByCategory = productsToUse;
+
+    if (selectedCategories.length > 0) {
+        filteredByCategory = productsToUse.filter(product =>
+            product.category && selectedCategories.includes(product.category)
+        );
+    }
 
 // function calculateMinMaxForAllWidth(products) {
 //     let minPossible = Infinity;
@@ -934,6 +953,7 @@ function calculateMinMaxForAllDepth(products) {
 
 
             function calculateMinMaxForParam(products, paramName) {
+                
                 let minPossible = Infinity;
                 let maxPossible = -Infinity;
                 products.forEach(product => {
@@ -970,6 +990,73 @@ function calculateMinMaxForAllDepth(products) {
                     max: maxPossible !== -Infinity ? maxPossible : ""
                 };
             }
+
+
+// function calculateMinMaxForParam(products, paramName, isArchive = false) {
+//     let minPossible = Infinity;
+//     let maxPossible = -Infinity;
+
+//     products.forEach(product => {
+//         // Пропускаем товары не из нужной группы
+//         if (isArchive && !product.is_archive) return;
+//         if (!isArchive && product.is_archive) return;
+
+//         const valueObj = product.dimensions_details?.[0]?.[paramName];
+//         if (!valueObj) return;
+
+//         let minVal = parseDimensionValue(valueObj.min);
+//         let maxVal = parseDimensionValue(valueObj.max);
+
+//         if (minVal === null && maxVal !== null) minVal = maxVal;
+//         if (maxVal === null && minVal !== null) maxVal = minVal;
+
+//         if (minVal !== null && minVal < minPossible) minPossible = minVal;
+//         if (maxVal !== null && maxVal > maxPossible) maxPossible = maxVal;
+//     });
+
+//     // Для архивных товаров: если нет данных — пустая строка
+//     if (isArchive) {
+//         return {
+//             min: minPossible !== Infinity ? minPossible : 300,
+//             max: maxPossible !== -Infinity ? maxPossible : 1500
+//         };
+//     }
+//     // Для основного каталога: если нет данных — дефолтные значения
+//     else {
+//         return {
+//             min: minPossible !== Infinity ? minPossible : "",
+//             max: maxPossible !== -Infinity ? maxPossible : ""
+//         };
+//     }
+// }
+
+
+
+
+            // function calculateMinMaxForParam(products, paramName) {
+//     let minPossible = Infinity;
+//     let maxPossible = -Infinity;
+//     products.forEach(product => {
+//         const dimensions = product.dimensions_details?.[0] || {};
+//         const valueObj = dimensions[paramName];
+//         if (!valueObj) return;
+
+//         let minVal = parseDimensionValue(valueObj.min);
+//         let maxVal = parseDimensionValue(valueObj.max);
+
+//         if (minVal === null && maxVal !== null) minVal = maxVal;
+//         if (maxVal === null && minVal !== null) maxVal = minVal;
+
+//         if (minVal !== null && minVal < minPossible) minPossible = minVal;
+//         if (maxVal !== null && maxVal > maxPossible) maxPossible = maxVal;
+//     });
+
+//     // Если не нашли ни одного значения — возвращаем дефолтные
+//     if (minPossible === Infinity) minPossible = 300;
+//     if (maxPossible === -Infinity) maxPossible = 1500;
+
+//     return { min: minPossible, max: maxPossible };
+// }
 
             const paramsToCalculate = [
                 "all_width",
@@ -1056,10 +1143,17 @@ function calculateMinMaxForAllDepth(products) {
             const loadFilters = Array.from(document.querySelectorAll('.load-filter:checked')).map(el => el.value);
             const diameterFilters = Array.from(document.querySelectorAll('.diameter-filter:checked')).map(el => el.value);
             const selectedCategories = Array.from(document.querySelectorAll('.category-filter:checked')).map(el => el.value);
+const isArchiveSelected = document.getElementById('archiveFilter').checked;
 
-            let filtered = selectedCategories.length > 0
-                ? validProducts.filter(product => product.category && selectedCategories.includes(product.category))
-                : validProducts;
+  // Фильтрация по категории и архиву
+    let filtered = [];
+    if (isArchiveSelected) {
+        filtered = validProducts.filter(product => product.is_archive === true);
+    } else {
+        filtered = selectedCategories.length > 0
+            ? validProducts.filter(product => !product.is_archive && product.category && selectedCategories.includes(product.category))
+            : validProducts.filter(product => !product.is_archive);
+    }
 
             if (specialOfferFilters.length > 0) {
                 filtered = filtered.filter(product => {
@@ -1073,6 +1167,9 @@ function calculateMinMaxForAllDepth(products) {
                     );
                 });
             }
+
+
+
 
             if (armrestFilters.length > 0 || mechanismFilters.length > 0 || finishFilters.length > 0 || loadFilters.length > 0 || diameterFilters.length > 0) {
                 filtered = filtered.filter(product => {
@@ -1750,6 +1847,8 @@ if (paramChangeFlags.all_depth) {
                 console.warn("Нет данных для графика!");
                 return;
             }
+              const isArchiveSelected = document.getElementById('archiveFilter').checked;
+    const productsToUse = isArchiveSelected ? archiveProducts : activeProducts;
             const productNames = products.map(p => p.unique_name[0]);
             const traces = [];
             const parameters = [
@@ -1954,7 +2053,7 @@ if (paramChangeFlags.all_depth) {
 
             document.querySelectorAll('.armrest-filter, .mechanism-filter, .finish-filter, .category-filter, .load-filter, .diameter-filter, .special-offer-filter').forEach(checkbox => {
                 checkbox.addEventListener('change', () => {
-                    recalculateSliderValues();
+                    recalculateSliderValues(filteredProducts);
                     filterProducts();
                     buildOverallChart(filteredProducts);
                 });
@@ -2007,8 +2106,8 @@ isManualInput = true;
         const maxPercent = ((maxVal - minLimit) / (maxLimit - minLimit)) * 100;
 
         if (isVertical) {
-            minThumb.style.bottom = `${100 - maxPercent}%`;
-            maxThumb.style.bottom = `${100 - minPercent}%`;
+            minThumb.style.bottom = `${minPercent}%`;
+            maxThumb.style.bottom = `${maxPercent}%`;
             track.style.bottom = `${100 - maxPercent}%`;
             track.style.height = `${maxPercent - minPercent}%`;
         } else {
@@ -2027,6 +2126,48 @@ isManualInput = true;
         isManualInput = false;
     });
 });
+// При изменении фильтра категории или архива
+document.querySelectorAll('.category-filter, #archiveFilter').forEach(checkbox => {
+    checkbox.addEventListener('change', () => {
+        const isArchiveSelected = document.getElementById('archiveFilter').checked;
+        const selectedCategories = Array.from(document.querySelectorAll('.category-filter:checked')).map(el => el.value);
+        let productsToUse = isArchiveSelected ? archiveProducts : activeProducts;
+
+        if (!isArchiveSelected && selectedCategories.length > 0) {
+            productsToUse = productsToUse.filter(product =>
+                product.category && selectedCategories.includes(product.category)
+            );
+        }
+
+        recalculateSliderValues(productsToUse);
+        filterProducts();
+    });
+});
+
+document.getElementById('archiveFilter').addEventListener('change', function() {
+    const isArchiveSelected = this.checked;
+    const otherCategoryFilters = document.querySelectorAll('.category-filter:not(#archiveFilter)');
+
+    if (isArchiveSelected) {
+        otherCategoryFilters.forEach(checkbox => {
+            checkbox.checked = false;
+        });
+    } else {
+        otherCategoryFilters.forEach(checkbox => {
+            checkbox.checked = true;
+        });
+    }
+    // Обновляем filteredProducts
+    filteredProducts = isArchiveSelected ? [...archiveProducts] : [...activeProducts];
+
+    // Обновляем слайдеры и фильтруем
+    recalculateSliderValues(filteredProducts);
+    buildOverallChart(filteredProducts);
+    filterProducts();
+});
+
+
+
 
 
             document.getElementById('searchInput').addEventListener('input', filterProducts);
@@ -2056,51 +2197,131 @@ isManualInput = true;
                 showSchemaButton.classList.add('active');
             });
 
-            const products = [];
-            const promises = knownProductsAllFiles.map(item => {
-                return fetch(`products/${encodeURIComponent(item.category)}/${encodeURIComponent(item.name)}.json`)
-                    .then(response => {
-                        if (!response.ok) {
-                            throw new Error(`Ошибка загрузки ${item.name}: ${response.statusText}`);
-                        }
-                        return response.json();
-                    })
-                    .then(product => {
-                        product.category = item.category;
-                        products.push(product);
-                    })
-                    .catch(error => {
-                        console.error(`Ошибка загрузки ${item.name}:`, error);
+const products = [];
+const promises = knownProductsAllFiles.map(item => {
+    const category = item.category;
+    const name = item.name;
+    const encodedName = encodeURIComponent(name);
+    const mainUrl = `products/${category}/${encodedName}.json`;
+    const escapeUrl = `products/${category}/escape/${encodedName}.json`;
+
+    if (item.is_archive) {
+        return fetch(escapeUrl)
+            .then(escapeResponse => {
+                if (escapeResponse.ok) {
+                    return escapeResponse.json().then(product => {
+                        product.category = category;
+                        product.is_archive = true;
+                        return product;
                     });
+                } else {
+                    console.warn(`Файл не найден в escape: ${name}`);
+                    return null;
+                }
+            })
+            .catch(error => {
+                console.error(`Ошибка загрузки ${name} из escape:`, error);
+                return null;
             });
-
-            Promise.all(promises)
-                .then(() => {
-                    validProducts = products.filter(p => {
-                        if (!p || !p.unique_name || (Array.isArray(p.unique_name) && p.unique_name.length === 0)) {
-                            console.warn("Товар отсеян на этапе валидации:", p);
-                            return false;
-                        }
-                        return true;
+    } else {
+        return fetch(mainUrl)
+            .then(response => {
+                if (response.ok) {
+                    return response.json().then(product => {
+                        product.category = category;
+                        product.is_archive = false;
+                        return product;
                     });
+                } else {
+                    console.warn(`Файл не найден в основной папке: ${name}`);
+                    return null;
+                }
+            })
+            .catch(error => {
+                console.error(`Ошибка загрузки ${name} из основной папки:`, error);
+                return null;
+            });
+    }
+});
 
-                    validProducts.sort((a, b) => {
-                        const aName = Array.isArray(a.unique_name) ? a.unique_name[0] : a.unique_name;
-                        const bName = Array.isArray(b.unique_name) ? b.unique_name[0] : b.unique_name;
-                        return aName.localeCompare(bName, 'ru');
-                    });
+Promise.all(promises)
+    .then(results => {
+        results.forEach(product => {
+            if (product) {
+                products.push(product);
+            }
+        });
 
-                    recalculateSliderValues();
-                    document.querySelectorAll('.custom-slider').forEach(slider => {
-                        initCustomSlider(slider, slider.classList.contains('vertical'));
-                    });
-                    buildOverallChart(validProducts);
-                    filterProducts();
-                })
-                .catch(error => {
-                    console.error('Ошибка загрузки данных:', error);
-                    document.getElementById('products').innerHTML = '<p>Не удалось загрузить товары. Попробуйте позже</p>';
-                });
+        validProducts = products.filter(p => p !== null && p.unique_name && (Array.isArray(p.unique_name) ? p.unique_name.length > 0 : true));
+
+        validProducts.forEach(product => {
+            if (product.is_archive) {
+                archiveProducts.push(product);
+                 console.log("Добавлен архивный товар:", product.unique_name);
+            } else {
+                activeProducts.push(product);
+            }
+//             console.log("Archive products:", archiveProducts);
+// console.log("Active products:", activeProducts);
+
+        });
+
+        // Сортировка
+        activeProducts.sort((a, b) => {
+            const aName = Array.isArray(a.unique_name) ? a.unique_name[0] : a.unique_name;
+            const bName = Array.isArray(b.unique_name) ? b.unique_name[0] : b.unique_name;
+            return aName.localeCompare(bName, 'ru');
+        });
+
+        archiveProducts.sort((a, b) => {
+            const aName = Array.isArray(a.unique_name) ? a.unique_name[0] : a.unique_name;
+            const bName = Array.isArray(b.unique_name) ? b.unique_name[0] : b.unique_name;
+            return aName.localeCompare(bName, 'ru');
+        });
+
+        // По умолчанию отображаем только активные товары
+        filteredProducts = [...activeProducts];
+        document.getElementById('productsCountValue').textContent = filteredProducts.length;
+
+// Логирование архивных товаров
+archiveProducts.forEach(product => {
+    const dimensions = product.dimensions_details?.[0] || {};
+    console.log("--- Архивный товар:", product.unique_name[0], "---");
+
+    Object.entries(dimensions).forEach(([paramName, valueObj]) => {
+        if (valueObj && (valueObj.min !== undefined || valueObj.max !== undefined)) {
+            const minVal = valueObj.min !== undefined ? valueObj.min : "нет";
+            const maxVal = valueObj.max !== undefined ? valueObj.max : "нет";
+            console.log(`  ${paramName}: min=${minVal}, max=${maxVal}`);
+        }
+    });
+});
+
+
+        // Инициализация слайдеров
+        recalculateSliderValues(activeProducts);
+        document.querySelectorAll('.custom-slider').forEach(slider => {
+            initCustomSlider(slider, slider.classList.contains('vertical'));
+        });
+
+        // // Построение графиков и отображение товаров
+        // buildOverallChart(filteredProducts);
+        // filterProducts(); // Вызов фильтрации для отображения товаров
+
+const isArchiveSelected = this.checked;
+        const productsToUse = isArchiveSelected ? archiveProducts : activeProducts;
+    filteredProducts = [...productsToUse];
+    recalculateSliderValues(filteredProducts);
+    buildOverallChart(productsToUse);
+    filterProducts();
+    })
+    .catch(error => {
+        console.error('Ошибка загрузки данных:', error);
+        document.getElementById('products').innerHTML = '<p>Не удалось загрузить товары. Попробуйте позже</p>';
+    });
+
+
+
 
             window.addEventListener('pageshow', function (event) {
                 document.getElementById('searchInput').value = '';

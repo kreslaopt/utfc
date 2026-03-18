@@ -93,8 +93,8 @@
                 "max": "1110"
             },
             "headrest_height": {
-                "min": "970",
-                "max": "1110"
+                "min": "",
+                "max": ""
             },
             "seat_to_floor_height": {
                 "min": "440",
