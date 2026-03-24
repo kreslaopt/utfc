@@ -1,0 +1,186 @@
+{
+    "namefile": [
+        "Utfc номи м-317 с подголовником"
+    ],
+    "name_all": [
+        "Номи",
+        "Номи с подголовником"
+    ],
+    "name": [
+        "Номи с подголовником"
+    ],
+    "unique_name": [
+        "UTFC Номи М-317 с подголовником"
+    ],
+    "vid": [
+        "кресло"
+    ],
+    "category": [
+        "поворотное кресло"
+    ],
+    "destiny": [
+        "ежедневной работы в офисных и домашних помещениях"
+    ],
+    "technical_requirements": [
+        [
+            "Кресло должно соответствовать требованиям:",
+            "ГОСТ 19917-2014 «Мебель для сидения и лежания. Общие технические условия»",
+            "ГОСТ 26800.3-86 «Мебель для административных помещений. Функциональные размеры»",
+            "настоящего технического описания",
+            "комплекта конструкторской документации",
+            "образцу-эталону, утвержденному в установленном порядке производителем"
+        ]
+    ],
+    "construction_and_materials": [
+        {
+            "upholstery_materials": [
+                "- материал облицовки спинки:<br>сетка<br>\n- материал облицовки сиденья: ткань<br>\n- цвет материала - по каталогу"
+            ],
+            "components": [
+                "подголовника, спинки, сиденья, подлокотников, механизма качания, газ-лифта, пятилучья и 5-ти роликов",
+                "<strong>Подголовник</strong> состоит из пластикового каркаса, кронштейна и обивочного элемента. Облицовка подголовника: сетка",
+                "<strong>Спинка</strong> состоит из пластикового каркаса и обивочного элемента. Облицовка спинки: сетка",
+                "<strong>Сиденье</strong> из основания, пенополиуретана и обивочного элемента. Облицовка сиденья: ткань",
+                "<strong>Подлокотники</strong> - пластиковые, крепятся к основанию сиденья с помощью винтов",
+                "<strong>Механизм качания</strong> «Топ-ган» позволяет регулировать высоту сиденья, регулировку силы отклонения спинки под вес пользователя в режиме качания и фиксацию в вертикальном положении",
+                "<strong>Газ-лифт</strong> черный с высотой подъема 100 мм ± 10 мм позволяет плавно регулировать высоту сиденья относительно пола",
+                "<strong>Пятилучье</strong> пластиковое d=680 мм с узкими лучами с 5-тью роликами обеспечивает устойчивость и позволяет креслу легко поворачиваться и перемещаться по любому стандартному покрытию пола",
+                "<strong>Ролики</strong> с полиуретановым покрытием d=55 мм имеют узкий шток"
+            ]
+        }
+    ],
+    "transportation": [
+        {
+            "standard": "ГОСТ 16371-2014",
+            "packaging": {
+                "type": "5-слойный гофрокороб",
+                "size": {
+                    "width": "720",
+                    "depth": "335",
+                    "height": "645"
+                },
+                "box_size": "720х335х645",
+                "transportation": "удобства транспортировки и хранения кресло поставляется в разобранном виде. Каждое кресло упаковано в отдельный 5-слойный гофрокороб размером"
+            }
+        }
+    ],
+    "dimensions": [
+        {
+            "brutto": "14,75",
+            "netto": "13",
+            "volume": "0,16"
+        }
+    ],
+    "guarantee": [
+        {
+            "period": "12",
+            "max_load": "120",
+            "recommended_load": "90"
+        }
+    ],
+    "images": [
+        {
+            "vid_main": "img/armchair_comfort/nomi_m_317_bl_black_podgolovnik_01.png",
+            "chair_view": "img/armchair_comfort/nomi_m_317_bl_black_podgolovnik_02.png",
+            "dimensions": "img/armchair_comfort/dimensions/nomi_m_317_bl_black_podgolovnik_01.png",
+            "box": "img/box_UTFC.png"
+        }
+    ],
+    "dimensions_details": [
+        {
+            "chair_height": {
+                "min": "1100",
+                "max": "1250"
+            },
+            "headrest_height": {
+                "min": "110",
+                "max": "160"
+            },
+            "seat_to_floor_height": {
+                "min": "400",
+                "max": "500"
+            },
+            "armrest_height_from_seat": {
+                "min": "200",
+                "max": ""
+            },
+            "chair_depth": {
+                "min": "630",
+                "max": null
+            },
+            "seat_depth": {
+                "min": "440",
+                "max": null
+            },
+            "backrest_height": {
+                "max": "600",
+                "min": ""
+            },
+            "backrest_to_seat_height": {
+                "min": null,
+                "max": null
+            },
+            "seat_width_with_armrests": {
+                "min": "655",
+                "max": null
+            },
+            "seat_width": {
+                "max": "500",
+                "min": ""
+            },
+            "diameter_cross": {
+                "max": "680",
+                "min": ""
+            },
+            "runners_width": {
+                "max": "",
+                "min": ""
+            },
+            "runners_depth": {
+                "max": "",
+                "min": ""
+            },
+            "seat_to_floor_height_upper": {
+                "min": "340",
+                "max": "440"
+            },
+            "armrest_height_from_floor": {
+                "min": "250"
+            },
+            "armrest_width_support": {
+                "max": "85"
+            },
+            "armrest_length_support": {
+                "max": "245"
+            },
+            "seat_depth_km": {
+                "max": "480"
+            },
+            "backrest_height_external": {
+                "max": "700"
+            },
+            "backrest_width_narrow": {
+                "max": "420"
+            },
+            "backrest_width_wide": {
+                "max": "510"
+            },
+            "recommended_load": "90",
+            "max_load": "120",
+            "skeleton": "немонолитный",
+            "minpromtorg": {},
+            "netto": "13",
+            "brutto": "14,75",
+            "package_width": "720",
+            "package_depth": "335,0",
+            "package_height": "645,0",
+            "volume": "0,155574",
+            "box_on_pallet": {},
+            "pallet_width": {},
+            "addition": {}
+        }
+    ],
+    "skeleton": "немонолитный",
+    "minpromtorg": "",
+    "addition": ""
+}

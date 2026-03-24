@@ -1,0 +1,180 @@
+{
+    "namefile": [
+        "UTFC Онтарио М-405 Н_п пластик хром"
+    ],
+    "name": [
+        "Онтарио Н/п"
+    ],
+    "unique_name": [
+        "Utfc онтарио м-405 н_п пластик хром"
+    ],
+    "vid": [
+        "кресло"
+    ],
+    "category": [
+        "конференц-кресло"
+    ],
+    "destiny": [
+        "ежедневной работы в офисных и домашних помещениях"
+    ],
+    "technical_requirements": [
+        [
+            "Кресло должно соответствовать требованиям:",
+            "ГОСТ 19917-2014 «Мебель для сидения и лежания. Общие технические условия»",
+            "ГОСТ 26800.3-86 «Мебель для административных помещений. Функциональные размеры»",
+            "настоящего технического описания",
+            "комплекта конструкторской документации",
+            "образцу-эталону, утвержденному в установленном порядке производителем"
+        ]
+    ],
+    "construction_and_materials": [
+        {
+            "upholstery_materials": [
+                "- материал облицовки спинки и сиденья кресла: искусственная кожа<br>\n- цвет материала - по каталогу"
+            ],
+            "components": [
+                "спинки, сиденья, подлокотников, металлического каркаса и 4-х пластиковых опор",
+                "<strong>Спинка</strong> состоит из основания, вкладыша пенополиуретанового и обивочного материала",
+                "<strong>Сиденье</strong> состоит из основания, вкладыша пенополиуретанового и обивочного элемента",
+                "<strong>Облицовка спинки и сиденья</strong>: искусственная кожа",
+                "<strong>Подлокотники</strong> - пластиковые с мягкими накладками и вставками с имитацией под хром",
+                "<strong>Каркас</strong> металлический хромированный. На опорную поверхность каркаса устанавливаются опоры (4 шт.)",
+                "<strong>Опоры</strong> - пластиковые из материалов согласно технологии поставщика комплектующих"
+            ]
+        }
+    ],
+    "transportation": [
+        {
+            "standard": "ГОСТ 16371-2014",
+            "packaging": {
+                "type": "5-слойный гофрокороб",
+                "size": {
+                    "width": "780",
+                    "depth": "390",
+                    "height": "670"
+                },
+                "box_size": "780х390х670",
+                "transportation": "удобства транспортировки и хранения кресло поставляется в разобранном виде. Каждое кресло упаковано в отдельный 5-слойный гофрокороб размером"
+            }
+        }
+    ],
+    "dimensions": [
+        {
+            "brutto": "18,6",
+            "netto": "16,8",
+            "volume": "0,2"
+        }
+    ],
+    "guarantee": [
+        {
+            "period": "12",
+            "max_load": "120",
+            "recommended_load": "90"
+        }
+    ],
+    "images": [
+        {
+            "vid_main": "img/armchair_rukovoditel/ontario_m-405_np_ch_black_01.png",
+            "chair_view": "img/armchair_rukovoditel/ontario_m-405_np_ch_black_02.png",
+            "dimensions": "img/armchair_rukovoditel/dimensions/ontario_m-405_np_ch_black_01.png",
+            "box": "img/box_UTFC.png"
+        }
+    ],
+    "dimensions_details": [
+        {
+            "chair_height": {
+                "min": "1055",
+                "max": ""
+            },
+            "headrest_height": {
+                "min": "",
+                "max": ""
+            },
+            "seat_to_floor_height": {
+                "min": "495",
+                "max": ""
+            },
+            "armrest_height_from_seat": {
+                "min": "185",
+                "max": ""
+            },
+            "chair_depth": {
+                "min": "700",
+                "max": null
+            },
+            "seat_depth": {
+                "min": "500",
+                "max": null
+            },
+            "backrest_height": {
+                "max": "580",
+                "min": ""
+            },
+            "backrest_to_seat_height": {
+                "min": "",
+                "max": ""
+            },
+            "seat_width_with_armrests": {
+                "min": "675",
+                "max": null
+            },
+            "seat_width": {
+                "max": "520",
+                "min": ""
+            },
+            "diameter_cross": {
+                "max": "",
+                "min": ""
+            },
+            "runners_width": {
+                "max": "480",
+                "min": ""
+            },
+            "runners_depth": {
+                "max": "560",
+                "min": ""
+            },
+            "seat_to_floor_height_upper": {
+                "min": "495"
+            },
+            "armrest_height_from_floor": {
+                "min": "280"
+            },
+            "armrest_width_support": {},
+            "armrest_length_support": {},
+            "seat_depth_km": {
+                "max": "535"
+            },
+            "backrest_height_external": {
+                "max": "680"
+            },
+            "backrest_width_narrow": {
+                "max": "490"
+            },
+            "backrest_width_wide": {
+                "max": "535"
+            },
+            "recommended_load": "90",
+            "max_load": "120",
+            "skeleton": "немонолитный",
+            "minpromtorg": {},
+            "netto": "16,8",
+            "brutto": "18,6",
+            "package_width": "780",
+            "package_depth": "390,0",
+            "package_height": "670,0",
+            "volume": "0,203814",
+            "box_on_pallet": {},
+            "pallet_width": {},
+            "addition": {}
+        }
+    ],
+    "lost": [
+        {
+            "clean": false,
+            "limit": false,
+            "del": false
+        }
+    ],
+    "addition": ""
+}

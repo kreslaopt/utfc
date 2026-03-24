@@ -1,0 +1,191 @@
+{
+    "namefile": [
+        "Хэнди м-806 gray ch"
+    ],
+    "name_all": [
+        "Хэнди gray ch",
+        "Хэнди black pl"
+    ],
+    "name": [
+        "Хэнди gray ch"
+    ],
+    "unique_name": [
+        "Хэнди М-806 gray ch"
+    ],
+    "vid": [
+        "кресло"
+    ],
+    "category": [
+        "поворотное кресло серии комфорт"
+    ],
+    "destiny": [
+        "ежедневной работы в офисных и домашних помещениях"
+    ],
+    "technical_requirements": [
+        [
+            "Кресло должно соответствовать требованиям:",
+            "ГОСТ 19917-2014 «Мебель для сидения и лежания. Общие технические условия»",
+            "ГОСТ 26800.3-86 «Мебель для административных помещений. Функциональные размеры»",
+            "настоящего технического описания",
+            "комплекта конструкторской документации",
+            "образцу-эталону, утвержденному в установленном порядке производителем"
+        ]
+    ],
+    "construction_and_materials": [
+        {
+            "upholstery_materials": [
+                "- материал облицовки спинки кресла: сетка (JD)<br>\n- материал облицовки сиденья кресла: ткань (D)<br>\n- цвет материала - по каталогу"
+            ],
+            "components": [
+                "спинки, сиденья, подлокотников, механизма качания, газ-лифта, пятилучья и 5-ти роликов",
+                "<strong>Спинка</strong> состоит из пластикового каркаса и облицовки. Крепится к основанию сиденья 4-мя винтами. Материал облицовки спинки: сетка (JD)",
+                "<strong>Сиденье</strong> состоит из фанерного основания, мягкого элемента (жесткость - 40, плотность - 22 кг/м<sup>3</sup>) и облицовки. Материал облицовки сиденья: ткань (D)",
+                "<strong>Подлокотники</strong> пластиковые. Крепятся к каркасу спинки и основанию сиденья с помощью винтов",
+                "<strong>Механизм качания</strong> Топ-Ган обеспечивает регулировку высоты сиденья, регулировку силы отклонения спинки под вес пользователя в режиме качания и фиксацию в вертикальном положении",
+                "<strong>Газ-лифт</strong> с высотой подъема 100 мм ± 10 мм позволяет плавно регулировать высоту сиденья относительно пола, подпружинивает сиденье и демпфирует нагрузку на позвоночник в момент посадки",
+                "<strong>Пятилучье</strong> металлическое хромированное d=640 мм с узкими лучами с 5-тью роликами обеспечивает устойчивость и позволяет креслу легко поворачиваться и перемещаться по любому стандартному покрытию пола",
+                "<strong>Ролики</strong> черные d=60 мм с серым полиуретановым покрытием имеют узкий шток"
+            ]
+        }
+    ],
+    "transportation": [
+        {
+            "standard": "ГОСТ 16371-2014",
+            "packaging": {
+                "type": "5-слойный гофрокороб",
+                "size": {
+                    "width": 630,
+                    "depth": 290,
+                    "height": 600
+                },
+                "box_size": "630х290х600",
+                "transportation": "удобства транспортировки и хранения кресло поставляется в разобранном виде. Каждое кресло упаковано в отдельный 5-слойный гофрокороб размером"
+            }
+        }
+    ],
+    "dimensions": [
+        {
+            "brutto": "",
+            "netto": "8,55",
+            "volume": "0,0"
+        }
+    ],
+    "guarantee": [
+        {
+            "period": "12",
+            "max_load": "120",
+            "recommended_load": "90"
+        }
+    ],
+    "images": [
+        {
+            "vid_main": "img/armchair_comfort/handy_ch_grey_blue_01.png",
+            "chair_view": "img/armchair_comfort/handy_ch_grey_blue_02.png",
+            "dimensions": "img/armchair_comfort/dimensions/handy_ch_grey_blue_01.png",
+            "box": "img/box_UTFC.png"
+        }
+    ],
+    "dimensions_details": [
+        {
+            "chair_height": {
+                "min": "935",
+                "max": "1035"
+            },
+            "headrest_height": {
+                "min": null,
+                "max": null
+            },
+            "seat_to_floor_height": {
+                "min": "430",
+                "max": "530"
+            },
+            "armrest_height_from_seat": {
+                "min": "240",
+                "max": null
+            },
+            "chair_depth": {
+                "min": "550",
+                "max": null
+            },
+            "seat_depth": {
+                "min": "400",
+                "max": null
+            },
+            "backrest_height": {
+                "max": "510",
+                "min": ""
+            },
+            "backrest_to_seat_height": {
+                "min": null,
+                "max": null
+            },
+            "seat_width_with_armrests": {
+                "min": "535",
+                "max": null
+            },
+            "seat_width": {
+                "max": "500",
+                "min": ""
+            },
+            "diameter_cross": {
+                "max": "640",
+                "min": ""
+            },
+            "runners_width": {
+                "max": null,
+                "min": ""
+            },
+            "runners_depth": {
+                "max": null,
+                "min": ""
+            },
+            "seat_to_floor_height_upper": {
+                "min": "400",
+                "max": "500"
+            },
+            "armrest_height_from_floor": {
+                "min": "260"
+            },
+            "armrest_width_support": {
+                "max": "45"
+            },
+            "armrest_length_support": {
+                "max": "320"
+            },
+            "seat_depth_km": {
+                "max": "480"
+            },
+            "backrest_height_external": {
+                "max": "580"
+            },
+            "backrest_width_narrow": {
+                "max": "390"
+            },
+            "backrest_width_wide": {
+                "max": "480"
+            },
+            "recommended_load": "90",
+            "max_load": "120",
+            "skeleton": "немонолитный",
+            "minpromtorg": "+",
+            "netto": "8,55",
+            "brutto": {},
+            "package_width": {},
+            "package_depth": {},
+            "package_height": {},
+            "volume": "0",
+            "box_on_pallet": {},
+            "pallet_width": {},
+            "addition": {}
+        }
+    ],
+    "lost": [
+        {
+            "clean": true,
+            "limit": false
+        }
+    ],
+    "skeleton": "немонолитный",
+    "minpromtorg": "+",
+    "addition": ""
+}

@@ -1,0 +1,171 @@
+{
+    "namefile": [
+        "Стандарт"
+    ],
+    "name_all": [
+        "Стандарт"
+    ],
+    "name": [
+        "Стандарт"
+    ],
+    "unique_name": [
+        "Стандарт"
+    ],
+    "vid": [
+        "стул"
+    ],
+    "category": [
+        "стул"
+    ],
+    "destiny": [
+        "работы и кратковременного отдыха сидя<br>Устанавливается в жилых и административных помещениях<br>Изготавливается с мягким элементом спинки и сиденья"
+    ],
+    "technical_requirements": [
+        [
+            "Стул должен соответствовать требованиям:",
+            "ГОСТ 19917-2014 «Мебель для сидения и лежания. Общие технические условия»",
+            "ГОСТ 26800.3-86 «Мебель для административных помещений. Функциональные размеры»",
+            "настоящего технического описания",
+            "комплекта конструкторской документации",
+            "образцу-эталону, утвержденному в установленном порядке производителем"
+        ]
+    ],
+    "construction_and_materials": [
+        {
+            "upholstery_materials": [
+                "- тип покрытия каркаса стула: BL, GR где<br>\nBL - окрашенный, цвет черный<br>\nGR - окрашенный, цвет серый<br>- материал облицовки спинки и сиденья стула:<br>ткань (С, Moderno, D), ткань-сетка (Е), кожзаменитель (Z), экокожа (S,R)<br>\n- цвет материала - по каталогу"
+            ],
+            "components": [
+                "металлического каркаса, спинки, сиденья, пластиковых заглушек и крепежных элементов. Нерегулируемый",
+                "<strong>Каркас</strong> стула сварной металлический с защитно-декоративным покрытием",
+                "<strong>Спинка</strong>, опоры сиденья и ножки изготовлены из стальной трубы круглого сечения Ф20х1,2 мм, перекладина - из стальной трубы круглого сечения Ф16х1,2 мм, пластины - из стального листа толщиной 2 мм",
+                "<strong>Покрытие каркаса</strong>: термореактивная порошковая краска черного илисерого цвета. На опорную поверхность ножек каркаса и на торцы спинки устанавливаются заглушки",
+                "<strong>Спинка и сиденье</strong> состоят из фанерного вкладыша, мягкого элемента (пенополиуретан, жесткость - 24, плотность - 18 кг/м<sup>3</sup>) и облицовки. Крепятся к каркасу на 4 самореза",
+                "<strong>Материал</strong> облицовки спинки и сиденья: ткань (С, Moderno, D), ткань-сетка (Е), кожзаменитель (Z), экокожа (S,R)"
+            ]
+        }
+    ],
+    "transportation": [
+        {
+            "standard": "ГОСТ 16371-2014",
+            "packaging": {
+                "type": "5-слойный гофрокороб",
+                "size": {
+                    "width": "",
+                    "depth": "",
+                    "height": ""
+                },
+                "box_size": "",
+                "transportation": "удобства транспортировки и хранения стул поставляется в собранном виде и укладывается в стопку по 15 шт."
+            }
+        }
+    ],
+    "dimensions": [
+        {
+            "brutto": "",
+            "netto": "",
+            "volume": "0,0"
+        }
+    ],
+    "guarantee": [
+        {
+            "period": "12",
+            "max_load": "120",
+            "recommended_load": "90"
+        }
+    ],
+    "images": [
+        {
+            "vid_main": "img/chair_visitors/standart_bl_z71_01.png",
+            "chair_view": "img/chair_visitors/standart_bl_z71_02.png",
+            "dimensions": "img/chair_visitors/dimensions/standart_bl_z71_01.png",
+            "box": "img/box_0.png"
+        }
+    ],
+    "dimensions_details": [
+        {
+            "chair_height": {
+                "min": "830",
+                "max": 830
+            },
+            "headrest_height": {
+                "min": null,
+                "max": null
+            },
+            "seat_to_floor_height": {
+                "min": "475",
+                "max": ""
+            },
+            "armrest_height_from_seat": {
+                "min": "",
+                "max": ""
+            },
+            "chair_depth": {
+                "min": "560",
+                "max": null
+            },
+            "seat_depth": {
+                "min": "430",
+                "max": null
+            },
+            "backrest_height": {
+                "max": "395",
+                "min": ""
+            },
+            "backrest_to_seat_height": {
+                "min": "",
+                "max": ""
+            },
+            "seat_width_with_armrests": {
+                "min": "",
+                "max": null
+            },
+            "seat_width": {
+                "max": "415",
+                "min": ""
+            },
+            "diameter_cross": {
+                "max": null,
+                "min": ""
+            },
+            "runners_width": {
+                "max": "450",
+                "min": ""
+            },
+            "runners_depth": {
+                "max": "520",
+                "min": ""
+            },
+            "seat_to_floor_height_upper": {
+                "min": "475"
+            },
+            "armrest_height_from_floor": {},
+            "armrest_width_support": {},
+            "armrest_length_support": {},
+            "seat_depth_km": {},
+            "backrest_height_external": {},
+            "backrest_width_narrow": {
+                "max": "395"
+            },
+            "backrest_width_wide": {
+                "max": "395"
+            },
+            "recommended_load": "90",
+            "max_load": "120",
+            "skeleton": "монолитный",
+            "minpromtorg": "+",
+            "netto": {},
+            "brutto": {},
+            "package_width": {},
+            "package_depth": {},
+            "package_height": {},
+            "volume": "0",
+            "box_on_pallet": {},
+            "pallet_width": {},
+            "addition": {}
+        }
+    ],
+    "skeleton": "монолитный",
+    "minpromtorg": "+",
+    "addition": ""
+}

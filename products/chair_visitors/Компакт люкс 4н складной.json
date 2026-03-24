@@ -1,0 +1,192 @@
+{
+    "namefile": [
+        "Компакт люкс 4н складной"
+    ],
+    "name_all": [
+        "Компакт",
+        "Компакт Люкс",
+        "Компакт 4Н",
+        "Компакт Люкс 4Н"
+    ],
+    "name": [
+        "Компакт Люкс 4Н"
+    ],
+    "unique_name": [
+        "Компакт люкс 4н складной"
+    ],
+    "vid": [
+        "стул"
+    ],
+    "category": [
+        "стул складной"
+    ],
+    "destiny": [
+        "работы и кратковременного отдыха сидя<br>Устанавливается в жилых и административных помещениях<br>Изготавливается с мягкими элементом спинки и сиденья"
+    ],
+    "technical_requirements": [
+        [
+            "Стул должен соответствовать требованиям:",
+            "ГОСТ 19917-2014 «Мебель для сидения и лежания. Общие технические условия»",
+            "ГОСТ 26800.3-86 «Мебель для административных помещений. Функциональные размеры»",
+            "настоящего технического описания",
+            "комплекта конструкторской документации",
+            "образцу-эталону, утвержденному в установленном порядке производителем"
+        ]
+    ],
+    "construction_and_materials": [
+        {
+            "upholstery_materials": [
+                "- тип покрытия каркаса стула:<br>\nBL, GR, где BL - окрашенный, цвет черный<br>\nGR - окрашенный, цвет серый<br>\n- материал облицовки спинки и сиденья стула:<br>ткань (С, Moderno), кожзаменитель (Z), экокожа (S,R), велюр (Velutto)<br>\n- цвет материала - по каталогу"
+            ],
+            "components": [
+                "каркаса, спинки, сиденья, заглушек и крепежных элементов. Складной, нерегулируемый",
+                "<strong>Каркас</strong> стула сварной металлический с защитно-декоративным покрытием. Состоит из спинки, опор, перекладины (стальная труба Ф22х1,1 мм) и пластин (лист толщиной 2 мм)",
+                "<strong>Покрытие каркаса</strong> - термореактивная порошковая краска, черного или серого цвета",
+                "<strong>Спинка</strong> - двойная: передняя состоит из фанерного вкладыша, мягкого элемента (пенополиуретан, жесткость - 22, плотность - 18 кг/м<sup>3</sup>) и облицовки, задняя - из ДВП, мягкого элемента (пенополиуретан, жесткость - 22, плотность - 18 кг/м<sup>3</sup>) и облицовки. Соединение передней и задней спинки осуществляется 2-мя соединениями клипс",
+                "<strong>Сиденье</strong> состоит из фанерного вкладыша, мягкого элемента (пенополиуретан, жесткость - 22, плотность - 18 кг/м<sup>3</sup>) и облицовки. Крепится к каркасу саморезами",
+                "<strong>Материал</strong> облицовки спинки и сиденья: ткань (С, Moderno), кожзаменитель (Z), экокожа (S,R), велюр (Velutto)",
+                "Заглушки устанавливаются на ножки (4 шт.) и на торцы задних ножек (2 шт.)"
+            ]
+        }
+    ],
+    "transportation": [
+        {
+            "standard": "ГОСТ 16371-2014",
+            "packaging": {
+                "type": "гофрокороб",
+                "size": {
+                    "width": 1045,
+                    "depth": 290,
+                    "height": 500
+                },
+                "box_size": "1045х290х500",
+                "transportation": "удобства транспортировки и хранения стул поставляется в сложенном виде<br><strong>Упаковка стульев:</strong><br><strong>Индивидуальная упаковка:</strong> 1 шт в гофрокороб размером <strong>1015х475х95 мм</strong><br><strong>BOX4:</strong> 4 шт в гофрокороб размером"
+            }
+        }
+    ],
+    "dimensions": [
+        {
+            "packaging_type": [
+                {
+                    "type": "individual",
+                    "brutto": "5,61",
+                    "netto": "",
+                    "volume": "0,046"
+                },
+                {
+                    "type": "box4",
+                    "brutto": "5,46",
+                    "netto": "4,94",
+                    "volume": "0,038"
+                }
+            ],
+            "volume": "0,0"
+        }
+    ],
+    "guarantee": [
+        {
+            "period": "12",
+            "max_load": "120",
+            "recommended_load": "90"
+        }
+    ],
+    "images": [
+        {
+            "vid_main": "img/chair_visitors/kompakt_lux_4h_bl_s0401_01.png",
+            "chair_view": "img/chair_visitors/kompakt_lux_4h_bl_s0401_02.png",
+            "dimensions": "img/chair_visitors/dimensions/kompakt_lux_4h_bl_s0401_01.png",
+            "box": "img/box_UTFC_4x.png"
+        }
+    ],
+    "dimensions_details": [
+        {
+            "chair_height": {
+                "min": "820",
+                "max": null
+            },
+            "headrest_height": {
+                "min": "",
+                "max": ""
+            },
+            "seat_to_floor_height": {
+                "min": "480",
+                "max": null
+            },
+            "armrest_height": {
+                "min": "",
+                "max": ""
+            },
+            "chair_depth": {
+                "min": "500"
+            },
+            "seat_depth": {
+                "min": "390",
+                "max": null
+            },
+            "backrest_height": {
+                "min": "",
+                "max": "360"
+            },
+            "height_backrest_seat": {
+                "min": "",
+                "max": 370
+            },
+            "seat_width_with_armrests": {
+                "min": "",
+                "max": ""
+            },
+            "seat_width": {
+                "max": "405",
+                "min": ""
+            },
+            "diameter_cross": {
+                "max": "",
+                "min": ""
+            },
+            "runners_width": {
+                "max": "450",
+                "min": ""
+            },
+            "runners_depth": {
+                "max": "460",
+                "min": ""
+            },
+            "seat_to_floor_height_upper": {
+                "min": "400"
+            },
+            "armrest_height_from_floor": {},
+            "armrest_height_from_seat": {},
+            "armrest_width_support": {},
+            "armrest_length_support": {},
+            "seat_depth_km": {
+                "max": "405"
+            },
+            "backrest_to_seat_height": {},
+            "backrest_height_external": {
+                "max": "145"
+            },
+            "backrest_width_narrow": {
+                "max": "410"
+            },
+            "backrest_width_wide": {
+                "max": "410"
+            },
+            "recommended_load": "90",
+            "max_load": "120",
+            "skeleton": "складной",
+            "minpromtorg": "+",
+            "netto": "4,94",
+            "brutto": "5,46",
+            "package_width": {},
+            "package_depth": {},
+            "package_height": {},
+            "volume": "0",
+            "box_on_pallet": {},
+            "pallet_width": {},
+            "addition": {}
+        }
+    ],
+    "skeleton": "складной",
+    "minpromtorg": "+",
+    "addition": ""
+}

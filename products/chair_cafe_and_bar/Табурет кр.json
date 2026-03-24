@@ -1,0 +1,168 @@
+{
+    "namefile": [
+        "Табурет кр"
+    ],
+    "name_all": [
+        "Табурет"
+    ],
+    "name": [
+        "Табурет КР"
+    ],
+    "unique_name": [
+        "Табурет КР"
+    ],
+    "vid": [
+        "табурет"
+    ],
+    "category": [
+        "табурет"
+    ],
+    "destiny": [
+        "работы и кратковременного отдыха сидя<br>Устанавливается в жилых и административных помещениях<br>Изготавливается с мягким сиденьем"
+    ],
+    "technical_requirements": [
+        [
+            "Табурет должен соответствовать требованиям:",
+            "ГОСТ 19917-2014 «Мебель для сидения и лежания. Общие технические условия»",
+            "ГОСТ 26800.3-86 «Мебель для административных помещений. Функциональные размеры»",
+            "настоящего технического описания",
+            "комплекта конструкторской документации",
+            "образцу-эталону, утвержденному в установленном порядке производителем"
+        ]
+    ],
+    "construction_and_materials": [
+        {
+            "upholstery_materials": [
+                "- форма сиденья: КР (круглое), ПР (прямоугольное)<br>- тип покрытия каркаса: BL (окрашенный, цвет черный), CH (хромовое блестящее), GR (окрашенный, цвет серый)<br>- материал облицовки сиденья: искусственная кожа (Z), экокожа (S, R)<br>\n- цвет материала - по каталогу"
+            ],
+            "components": [
+                "состоит из металлического каркаса, сиденья круглого или квадратного в зависимости от заказа, пластиковых заглушек и крепежных элементов. Нерегулируемый",
+                "<strong>Каркас</strong> табурета сварной металлический с защитно-декоративным покрытием. Изготовлен из стальных труб круглого сечения Ф20х1,2 мм",
+                "<strong>Покрытие каркаса:</strong> термореактивная порошковая краска черного или серого цвета, хромовое блестящее. На ножки каркаса устанавливаются заглушки",
+                "<strong>Сиденье</strong> состоит из фанерного вкладыша (10-слойная фанера), мягкого элемента (пенополиуретан, жесткость - 25, плотность - 18 кг/м<sup>3</sup>) и облицовки. Крепится к каркасу на 4 самореза",
+                "<strong>Материал</strong> облицовки сиденья: кожзаменитель (Z), экокожа (S,R)"
+            ]
+        }
+    ],
+    "transportation": [
+        {
+            "standard": "ГОСТ 16371-2014",
+            "packaging": {
+                "type": "гофрокороб",
+                "size": {
+                    "width": 430,
+                    "depth": 430,
+                    "height": 600
+                },
+                "box_size": "430х430х600",
+                "transportation": "удобства транспортировки и хранения табурет поставляется в разобранном виде<br><strong>Упаковка каркасов</strong> производится на поддоны в зависимости от заказа, максимально 300 шт<br><strong>Сиденья и крепежные изделия</strong> упаковываются отдельно по 15 комплектов в гофрокороб размером"
+            }
+        }
+    ],
+    "dimensions": [
+        {
+            "brutto": "",
+            "netto": "",
+            "volume": "0,0"
+        }
+    ],
+    "guarantee": [
+        {
+            "period": "12",
+            "max_load": "120",
+            "recommended_load": "90"
+        }
+    ],
+    "images": [
+        {
+            "vid_main": "img/chair_cafe_and_bar/taburet_gr_kr_s0420_01.png",
+            "chair_view": "img/chair_cafe_and_bar/taburet_gr_kr_s0420_02.png",
+            "dimensions": "img/chair_cafe_and_bar/dimensions/taburet.png",
+            "box": "img/box_UTFC.png"
+        }
+    ],
+    "dimensions_details": [
+        {
+            "chair_height": {
+                "min": 450,
+                "max": 450
+            },
+            "headrest_height": {
+                "min": "",
+                "max": ""
+            },
+            "seat_to_floor_height": {
+                "min": "450",
+                "max": ""
+            },
+            "armrest_height_from_seat": {
+                "min": "",
+                "max": ""
+            },
+            "chair_depth": {
+                "min": "330",
+                "max": null
+            },
+            "seat_depth": {
+                "min": 325,
+                "max": null
+            },
+            "backrest_height": {
+                "max": "",
+                "min": ""
+            },
+            "backrest_to_seat_height": {
+                "min": null,
+                "max": null
+            },
+            "seat_width_with_armrests": {
+                "min": "",
+                "max": ""
+            },
+            "seat_width": {
+                "max": "325",
+                "min": ""
+            },
+            "diameter_cross": {
+                "max": "",
+                "min": ""
+            },
+            "runners_width": {
+                "max": "330",
+                "min": ""
+            },
+            "runners_depth": {
+                "max": "330",
+                "min": ""
+            },
+            "seat_to_floor_height_upper": {
+                "min": "450"
+            },
+            "armrest_height_from_floor": {},
+            "armrest_width_support": {},
+            "armrest_length_support": {},
+            "seat_depth_km": {
+                "max": "325"
+            },
+            "backrest_height_external": {},
+            "backrest_width_narrow": {},
+            "backrest_width_wide": {},
+            "recommended_load": "90",
+            "max_load": "120",
+            "skeleton": "монолитный",
+            "minpromtorg": "+",
+            "netto": {},
+            "brutto": {},
+            "package_width": {},
+            "package_depth": {},
+            "package_height": {},
+            "volume": "0",
+            "box_on_pallet": {},
+            "pallet_width": {},
+            "addition": {}
+        }
+    ],
+    "skeleton": "монолитный",
+    "minpromtorg": "+",
+    "addition": ""
+}
