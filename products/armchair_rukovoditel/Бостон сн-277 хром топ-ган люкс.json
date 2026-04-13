@@ -67,7 +67,7 @@
     "dimensions": [
         {
             "brutto": "",
-            "netto": "12,9",
+            "netto": "13,00",
             "volume": "0,17"
         }
     ],
@@ -117,8 +117,8 @@
                 "min": ""
             },
             "backrest_to_seat_height": {
-                "min": "",
-                "max": ""
+                "min": "540",
+                "max": "700"
             },
             "seat_width_with_armrests": {
                 "min": "640",
@@ -133,11 +133,11 @@
                 "min": ""
             },
             "runners_width": {
-                "max": "",
+                "max": "510",
                 "min": ""
             },
             "runners_depth": {
-                "max": "",
+                "max": "700",
                 "min": ""
             },
             "seat_to_floor_height_upper": {
@@ -169,15 +169,16 @@
             "max_load": "120",
             "skeleton": "немонолитный",
             "minpromtorg": "+",
-            "netto": "12,9",
-            "brutto": {},
+            "netto": "13",
+            "brutto": "12,9",
             "package_width": "910",
-            "package_depth": "270,0",
-            "package_height": "690,0",
-            "volume": "0,169533",
+            "package_depth": "270",
+            "package_height": "690",
+            "volume": "0",
             "box_on_pallet": {},
             "pallet_width": {},
-            "addition": {}
+            "addition": {},
+            "typeofproduct": "немонолитный"
         }
     ],
     "skeleton": "немонолитный",

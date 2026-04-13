@@ -66,8 +66,8 @@
     "dimensions": [
         {
             "brutto": "",
-            "netto": "8,9",
-            "volume": "0,0"
+            "netto": "9,00",
+            "volume": "0,22"
         }
     ],
     "guarantee": [
@@ -116,11 +116,11 @@
                 "min": ""
             },
             "backrest_to_seat_height": {
-                "min": "",
-                "max": ""
+                "min": "440",
+                "max": "450"
             },
             "seat_width_with_armrests": {
-                "min": "540",
+                "min": "510",
                 "max": null
             },
             "seat_width": {
@@ -132,11 +132,11 @@
                 "min": ""
             },
             "runners_width": {
-                "max": "",
+                "max": "450",
                 "min": ""
             },
             "runners_depth": {
-                "max": "",
+                "max": "640",
                 "min": ""
             },
             "seat_to_floor_height_upper": {
@@ -162,15 +162,16 @@
             "max_load": "120",
             "skeleton": "монолитный",
             "minpromtorg": "+",
-            "netto": "8,9",
-            "brutto": {},
-            "package_width": {},
-            "package_depth": {},
-            "package_height": {},
+            "netto": "9",
+            "brutto": "8,9",
+            "package_width": "760",
+            "package_depth": "440",
+            "package_height": "650",
             "volume": "0",
             "box_on_pallet": {},
             "pallet_width": {},
-            "addition": {}
+            "addition": {},
+            "typeofproduct": "монолитный"
         }
     ],
     "skeleton": "монолитный",

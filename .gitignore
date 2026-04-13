@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 index copy.html
 index copy 2.html
 index copy 3.html
@@ -25,7 +25,6 @@ requirements.txt
 *.sqlite
 *.db
 *.log
-=======
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
@@ -233,4 +232,5 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
->>>>>>> d3aed2cf461244bf2950648fa2d273b7a7703b25
+.vercel
+node_modules

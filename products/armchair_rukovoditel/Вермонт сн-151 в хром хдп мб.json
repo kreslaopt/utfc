@@ -9,7 +9,7 @@
         "Вермонт"
     ],
     "unique_name": [
-        "Вермонт сн-151 в хром хдп мб"
+        "Вермонт СН-151 в хром хдп мб"
     ],
     "vid": [
         "кресло"
@@ -65,7 +65,7 @@
     "dimensions": [
         {
             "brutto": "",
-            "netto": "18,3",
+            "netto": "18,00",
             "volume": "0,22"
         }
     ],
@@ -115,8 +115,8 @@
                 "min": ""
             },
             "backrest_to_seat_height": {
-                "min": "",
-                "max": ""
+                "min": "540",
+                "max": "650"
             },
             "seat_width_with_armrests": {
                 "min": "670",
@@ -131,11 +131,11 @@
                 "min": ""
             },
             "runners_width": {
-                "max": null,
+                "max": "580",
                 "min": ""
             },
             "runners_depth": {
-                "max": null,
+                "max": "700",
                 "min": ""
             },
             "seat_to_floor_height_upper": {
@@ -167,16 +167,141 @@
             "max_load": "180",
             "skeleton": "немонолитный",
             "minpromtorg": "+",
-            "netto": "18,3",
-            "brutto": {},
+            "netto": "18",
+            "brutto": "18,3",
             "package_width": "760",
-            "package_depth": "440,0",
-            "package_height": "650,0",
-            "volume": "0,21736",
+            "package_depth": "440",
+            "package_height": "650",
+            "volume": "0",
             "box_on_pallet": {},
             "pallet_width": {},
-            "addition": {}
+            "addition": {},
+            "typeofproduct": "немонолитный"
         }
     ],
-    "addition": ""
+    "addition": "",
+    "parent": {
+        "IE_XML_ID": "s8020",
+        "IE_NAME": "СН-151 Вермонт В хром ХДП Ср",
+        "IE_PREVIEW_TEXT": "Хромированные элементы являются частью уникального стиля кресла руководителя. Высокая эргономичная спинка с поясничной поддержкой усилит комфорт использования кресла. Максимальная нагрузка 150 кг.",
+        "IE_DETAIL_TEXT": "Хромированные элементы являются частью уникального стиля кресла руководителя. Высокая эргономичная спинка с поясничной поддержкой усилит комфорт использования кресла. Максимальная нагрузка 150 кг.",
+        "IP_PROP2": 670,
+        "IP_PROP3": "1145-1245",
+        "IP_PROP4": 720,
+        "IP_PROP6": "",
+        "IP_PROP19": 150,
+        "IP_PROP25": "Немонолитный",
+        "IP_PROP18": "https://utfc.ru/upload/dev2fun.imagecompress/webp/iblock/ed8/cquzm2pab63e45ynhy1l8u32awo1hqjb.webp",
+        "IP_PROP31": "https://utfc.ru/upload/dev2fun.imagecompress/webp/iblock/1a4/ojz2b9p28jpfnoxy69wu5nmi7uaufymb.webp",
+        "IP_PROP5": 760,
+        "IP_PROP26": 650,
+        "IP_PROP27": 440,
+        "IP_PROP28": "19,1",
+        "IP_PROP29": "Гофрокартон",
+        "IP_PROP30": "0,22",
+        "IP_PROP7": "",
+        "IP_PROP8": "",
+        "IP_PROP9": "vermont_v_ch",
+        "IP_PROP10": "",
+        "IP_PROP11": "",
+        "IP_PROP12": "",
+        "IP_PROP13": "https://utfc.ru/upload/iblock/d06/d06e42b1be6da41d281a8e5170bfecde.png",
+        "IP_PROP14": "",
+        "IP_PROP15": "",
+        "IP_PROP16": "",
+        "IP_PROP17": "",
+        "IP_PROP22": "",
+        "IP_PROP41": "pch_700_ch",
+        "IP_PROP42": "pl_hdp",
+        "IP_PROP43": "gl_230",
+        "IP_PROP44": "m_tg",
+        "IP_PROP45": "",
+        "IP_PROP46": "r_50_o_pu",
+        "IP_PROP47": "",
+        "IP_PROP48": "5060793906ac14749248e1f5b64e4f39",
+        "IP_PROP49": "",
+        "IP_PROP50": "",
+        "IP_PROP51": "",
+        "IP_PROP52": "",
+        "IP_PROP54": "utfc",
+        "IP_PROP59": "Нет",
+        "IC_GROUP0": "Кресла для руководителя",
+        "IC_GROUP1": "",
+        "IC_GROUP2": "",
+        "CP_QUANTITY": 0,
+        "CP_WEIGHT": 0,
+        "CP_WIDTH": "",
+        "CP_HEIGHT": "",
+        "CP_LENGTH": "",
+        "CV_QUANTITY_FROM": "",
+        "CV_QUANTITY_TO": "",
+        "CV_PRICE_1": 12813,
+        "CV_CURRENCY_1": "RUB",
+        "CV_PRICE_2": 13198,
+        "CV_CURRENCY_2": "RUB",
+        "CV_PRICE_3": 12813,
+        "CV_CURRENCY_3": "RUB"
+    },
+    "children": [
+        {
+            "IE_XML_ID": 25329,
+            "IE_NAME": "Кресло СН-151 Вермонт В хром ХДП Ср S-0401 (черный)",
+            "IE_ACTIVE": "Y",
+            "IE_ACTIVE_FROM": "",
+            "IE_ACTIVE_TO": "",
+            "IE_SORT": 500,
+            "IE_PREVIEW_PICTURE": "https://utfc.ru/upload/iblock/233/23354663d83a864c83249bf5bf042f19.png",
+            "IE_PREVIEW_TEXT": "",
+            "IE_PREVIEW_TEXT_TYPE": "text",
+            "IE_DETAIL_PICTURE": "https://utfc.ru/upload/iblock/08b/08bb10bec9b900aae6d5381b58334de5.png",
+            "IE_DETAIL_TEXT": "",
+            "IE_DETAIL_TEXT_TYPE": "text",
+            "IE_CODE": "",
+            "IE_TAGS": "",
+            "IE_ID": 7890,
+            "IP_PROP34": "s8020",
+            "IP_PROP35": "ДКВермонт04",
+            "IP_PROP36": [
+                "https://utfc.ru/upload/iblock/4d8/4d8b9b414c6fe4fca3c1cd128566ec15.png",
+                "https://utfc.ru/upload/iblock/9aa/9aafff2a1d3a5edd5f300993a211df7e.png",
+                "https://utfc.ru/upload/iblock/6cf/6cfe04d7b394ebd1e7c30c23e46151fe.png",
+                "https://utfc.ru/upload/iblock/b01/b01c92549e48b0a97378feaeacf72c60.png"
+            ],
+            "IP_PROP37": "m_11",
+            "IP_PROP38": "s_0401",
+            "IP_PROP39": "",
+            "IP_PROP40": "",
+            "IP_PROP55": "&nbsp;",
+            "IP_PROP61": "",
+            "IC_GROUP0": "",
+            "IC_XML_ID1": "",
+            "IC_GROUP1": "",
+            "IC_GROUP2": "",
+            "CP_QUANTITY": 5,
+            "CP_QUANTITY_TRACE": "D",
+            "CP_CAN_BUY_ZERO": "D",
+            "CP_WEIGHT": 0,
+            "CP_WIDTH": "",
+            "CP_HEIGHT": "",
+            "CP_LENGTH": "",
+            "CP_PURCHASING_PRICE": "",
+            "CP_PURCHASING_CURRENCY": "",
+            "CP_PRICE_TYPE": "S",
+            "CP_RECUR_SCHEME_LENGTH": "",
+            "CP_RECUR_SCHEME_TYPE": "D",
+            "CP_TRIAL_PRICE_ID": "",
+            "CP_WITHOUT_ORDER": "N",
+            "CP_VAT_ID": 1,
+            "CP_VAT_INCLUDED": "Y",
+            "CP_MEASURE": 5,
+            "CV_QUANTITY_FROM": "",
+            "CV_QUANTITY_TO": "",
+            "CV_PRICE_1": 12813,
+            "CV_CURRENCY_1": "RUB",
+            "CV_PRICE_2": 13198,
+            "CV_CURRENCY_2": "RUB",
+            "CV_PRICE_3": 12813,
+            "CV_CURRENCY_3": "RUB"
+        }
+    ]
 }

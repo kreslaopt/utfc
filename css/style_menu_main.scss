@@ -30,6 +30,7 @@
            /* Вертикальная прокрутка */
            padding: 12px 20px;
            z-index: 1000;
+           background-color: #ffffff;
        }
 
        .sidebar ul {
@@ -84,8 +85,12 @@
        }
 
 .top_block {
-    height: 660px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
 }
+
 
        .filter-block {
            margin-top: 11px;
@@ -472,7 +477,10 @@
        }
 
        #products {
-           margin-bottom: 170px;
+              display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+    margin-bottom: 150px;
        }
 
        .modal {
@@ -546,7 +554,7 @@
        .lost-indicator {
             position: absolute;
             top: 5px;
-            left: 5px;
+            left: 18px;
             width: 12px;
             height: 12px;
             background-color: red;
@@ -627,6 +635,197 @@ line-height: 0.65;
 }
 
 
+
+.cart-icon {
+    position: absolute;
+    top: 22px;
+    left: 15px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.cart-icon svg {
+    width: 20px;
+    height: 20px;
+    transition: fill 0.2s;
+}
+
+.cart-icon.in-cart svg {
+    fill: #96C22B; /* Зелёный, если в корзине */
+    stroke: rgb(255, 255, 255);
+}
+
+.cart-icon:not(.in-cart) svg {
+    fill: #ccc; /* Серый, если не в корзине */
+}
+.basket-container {
+    background: white;
+    z-index: 10000;
+    // padding: 20px;
+    box-sizing: border-box;
+}
+#basket .products {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+#basket {
+    display: none;
+}
+#basket.active {
+    display: block;
+}
+table {
+  border-collapse: collapse;
+}
+
+td, th {
+  border: 0; // И границы исчезают!
+}
+
+/* Стили для таблицы избранных */
+#selectedProductsTable, #finalSelectedProductsTable {
+    font-size: 11px;
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 70px;
+}
+
+
+#selectedProductsTable th, #selectedProductsTable td, #finalSelectedProductsTable th, #finalSelectedProductsTable td {
+    border: 0.5px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+#selectedProductsTable th, #finalSelectedProductsTable th {
+    background-color: #f2f2f2;
+}
+#analyticsBlock, #schemaBlock, #basket {
+    display: none;
+}
+#analyticsBlock.active, #schemaBlock.active, #basket.active {
+    display: block;
+}
+
+#selectedProductsTable .image-cell img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* Стили для таблицы "Выбранные" */
+#selectedProductsTable, #finalSelectedProductsTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#selectedProductsTable .parent-row, #finalSelectedProductsTable .parent-row {
+    background-color: #f5f5f5;
+    font-weight: bold;
+}
+
+#selectedProductsTable .child-row, #finalSelectedProductsTable .child-row{
+    background-color: #ffffff;
+}
+
+#selectedProductsTable .image-cell, #finalSelectedProductsTable .image-cell {
+    width: 60px;
+    height: 60px;
+    text-align: center;
+}
+
+#selectedProductsTable .image-cell img, #finalSelectedProductsTable .image-cell img {
+    max-width: 50px;
+    max-height: 100%;
+}
+
+
+#schemaBlock,
+#basket
+{
+    // display: none !important;
+        display: none;
+
+}
+
+
+
+
+
+#generateOffer {
+    margin-left: auto;
+    background: #96C22B;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+#generateOffer:hover {
+    background: #85a925;
+}
+
+.parent-row {
+    background-color: #f5f5f5;
+    font-weight: bold;
+}
+
+.child-row {
+    background-color: #ffffff;
+}
+
+.empty-cell {
+    border: none !important;
+    background-color: transparent !important;
+}
+
+// .final-selection-container {
+//     display: none; /* По умолчанию скрыт */
+// }
+
+.final-selection-container.active {
+    display: block; /* Показывается только на вкладке "Выбранные" */
+}
+/* В CSS */
+#schemaBlock {
+    display: none;
+}
+
+#schemaBlock.active {
+    display: block;
+}
+
+.qr-cell {
+    width: 60px !important;
+    padding: 4px !important;
+    text-align: center !important;
+}
+
+.qr-cell img {
+    transition: transform 0.2s;
+}
+
+.qr-cell img:hover {
+    transform: scale(1.1);
+}
+
+td[contenteditable="true"] {
+  padding: 8px;
+  border: 1px solid #ddd;
+  min-width: 80px;
+}
+
+td[contenteditable="true"]:hover {
+  background-color: #f9f9f9;
+}
+
+td[contenteditable="true"]:focus {
+  outline: 1px solid #96C22B;
+  background-color: #fff;
+}
 
        // .edit-controls {
        //     margin: 15px 0;

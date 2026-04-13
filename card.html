@@ -136,44 +136,44 @@
                 <img src="img/v.png" alt="Объем">
                 <p><span id="volume"></span> м³</p>
             </div>
-<!-- Блок для индивидуальной упаковки -->
-<div class="box-info-row" id="box-info-individual">
-    <div class="box-info-label">Индивидуальная</div>
-    <div class="box-info-item">
-        <img src="img/brutto.png" alt="Вес брутто">
-        <p><span id="brutto-individual"></span> кг</p>
-    </div>
-    <div class="box-info-line"></div>
-    <div class="box-info-item">
-        <img src="img/netto.png" alt="Вес нетто">
-        <p><span id="netto-individual"></span> кг</p>
-    </div>
-    <div class="box-info-line"></div>
-    <div class="box-info-item">
-        <img src="img/v.png" alt="Объем">
-        <p><span id="volume-individual"></span> м³</p>
-    </div>
-    
-</div>
+            <!-- Блок для индивидуальной упаковки -->
+            <div class="box-info-row" id="box-info-individual">
+                <div class="box-info-label">Индивидуальная</div>
+                <div class="box-info-item">
+                    <img src="img/brutto.png" alt="Вес брутто">
+                    <p><span id="brutto-individual"></span> кг</p>
+                </div>
+                <div class="box-info-line"></div>
+                <div class="box-info-item">
+                    <img src="img/netto.png" alt="Вес нетто">
+                    <p><span id="netto-individual"></span> кг</p>
+                </div>
+                <div class="box-info-line"></div>
+                <div class="box-info-item">
+                    <img src="img/v.png" alt="Объем">
+                    <p><span id="volume-individual"></span> м³</p>
+                </div>
 
-<!-- Блок для BOX4 -->
-<div class="box-info-row" id="box-info-box4">
-    <div class="box-info-label">BOX4</div>
-    <div class="box-info-item">
-        <img src="img/brutto.png" alt="Вес брутто">
-        <p><span id="brutto-box4"></span> кг</p>
-    </div>
-    <div class="box-info-line"></div>
-    <div class="box-info-item">
-        <img src="img/netto.png" alt="Вес нетто">
-        <p><span id="netto-box4"></span> кг</p>
-    </div>
-    <div class="box-info-line"></div>
-    <div class="box-info-item">
-        <img src="img/v.png" alt="Объем">
-        <p><span id="volume-box4"></span> м³</p>
-    </div>    
-</div>
+            </div>
+
+            <!-- Блок для BOX4 -->
+            <div class="box-info-row" id="box-info-box4">
+                <div class="box-info-label">BOX4</div>
+                <div class="box-info-item">
+                    <img src="img/brutto.png" alt="Вес брутто">
+                    <p><span id="brutto-box4"></span> кг</p>
+                </div>
+                <div class="box-info-line"></div>
+                <div class="box-info-item">
+                    <img src="img/netto.png" alt="Вес нетто">
+                    <p><span id="netto-box4"></span> кг</p>
+                </div>
+                <div class="box-info-line"></div>
+                <div class="box-info-item">
+                    <img src="img/v.png" alt="Объем">
+                    <p><span id="volume-box4"></span> м³</p>
+                </div>
+            </div>
 
 
             <div class="box-container">
@@ -749,7 +749,10 @@
             // Очищаем имя файла от недопустимых символов
             const sanitizedProductName = productName.replace(/[/\\:*?"<>|]/g, '_');
             const sanitizedUniqueName = uniqueName.charAt(0).toUpperCase() + uniqueName.slice(1).toLowerCase().replace(/[/\\:*?"<>|]/g, '_');
-            const filePath = `products/${category}/${sanitizedUniqueName}.json`;
+            let filePath = `products/${category}/${sanitizedUniqueName}.json`;
+            
+
+            
             console.log("Путь к файлу:", filePath);
             fetch(filePath)
                 .then(response => {
@@ -862,65 +865,65 @@
                         chairImageElement.src = product.images?.[0]?.chair_view || '';
                     }
 
-// Получаем данные по упаковкам
-const packagingData = product.dimensions?.[0]?.packaging_type || [];
-let bruttoIndividual = null, nettoIndividual = null, volumeIndividual = null;
-let bruttoBox4 = null, nettoBox4 = null, volumeBox4 = null;
+                    // Получаем данные по упаковкам
+                    const packagingData = product.dimensions?.[0]?.packaging_type || [];
+                    let bruttoIndividual = null, nettoIndividual = null, volumeIndividual = null;
+                    let bruttoBox4 = null, nettoBox4 = null, volumeBox4 = null;
 
-packagingData.forEach(pack => {
-    if (pack.type === 'individual') {
-        bruttoIndividual = pack.brutto;
-        nettoIndividual = pack.netto;
-        volumeIndividual = pack.volume;
-    } else if (pack.type === 'box4') {
-        bruttoBox4 = pack.brutto;
-        nettoBox4 = pack.netto;
-        volumeBox4 = pack.volume;
-    }
-});
+                    packagingData.forEach(pack => {
+                        if (pack.type === 'individual') {
+                            bruttoIndividual = pack.brutto;
+                            nettoIndividual = pack.netto;
+                            volumeIndividual = pack.volume;
+                        } else if (pack.type === 'box4') {
+                            bruttoBox4 = pack.brutto;
+                            nettoBox4 = pack.netto;
+                            volumeBox4 = pack.volume;
+                        }
+                    });
 
-// Если есть packaging_type — заполняем новые блоки, скрываем старый
-if (packagingData.length > 0) {
-    document.querySelector('.box-info').style.display = 'none';
+                    // Если есть packaging_type — заполняем новые блоки, скрываем старый
+                    if (packagingData.length > 0) {
+                        document.querySelector('.box-info').style.display = 'none';
 
-    // Заполняем данные для индивидуальной упаковки
-    if (bruttoIndividual || nettoIndividual || volumeIndividual) {
-        document.getElementById('brutto-individual').textContent = bruttoIndividual || 'не указан';
-        document.getElementById('netto-individual').textContent = nettoIndividual || 'не указан';
-        document.getElementById('volume-individual').textContent = volumeIndividual || 'не указан';
-    } else {
-        document.getElementById('box-info-individual').style.display = 'none';
-    }
+                        // Заполняем данные для индивидуальной упаковки
+                        if (bruttoIndividual || nettoIndividual || volumeIndividual) {
+                            document.getElementById('brutto-individual').textContent = bruttoIndividual || 'не указан';
+                            document.getElementById('netto-individual').textContent = nettoIndividual || 'не указан';
+                            document.getElementById('volume-individual').textContent = volumeIndividual || 'не указан';
+                        } else {
+                            document.getElementById('box-info-individual').style.display = 'none';
+                        }
 
-    // Заполняем данные для BOX4
-    if (bruttoBox4 || nettoBox4 || volumeBox4) {
-        document.getElementById('brutto-box4').textContent = bruttoBox4 || 'не указан';
-        document.getElementById('netto-box4').textContent = nettoBox4 || 'не указан';
-        document.getElementById('volume-box4').textContent = volumeBox4 || 'не указан';
-    } else {
-        document.getElementById('box-info-box4').style.display = 'none';
-    }
-}
-else {
-    // Если нет packaging_type — заполняем старый блок, скрываем новые
-    document.getElementById('box-info-individual').style.display = 'none';
-    document.getElementById('box-info-box4').style.display = 'none';
+                        // Заполняем данные для BOX4
+                        if (bruttoBox4 || nettoBox4 || volumeBox4) {
+                            document.getElementById('brutto-box4').textContent = bruttoBox4 || 'не указан';
+                            document.getElementById('netto-box4').textContent = nettoBox4 || 'не указан';
+                            document.getElementById('volume-box4').textContent = volumeBox4 || 'не указан';
+                        } else {
+                            document.getElementById('box-info-box4').style.display = 'none';
+                        }
+                    }
+                    else {
+                        // Если нет packaging_type — заполняем старый блок, скрываем новые
+                        document.getElementById('box-info-individual').style.display = 'none';
+                        document.getElementById('box-info-box4').style.display = 'none';
 
-    const bruttoElement = document.getElementById('brutto');
-    if (bruttoElement) {
-        bruttoElement.textContent = product.dimensions?.[0]?.brutto || 'не указан';
-    }
+                        const bruttoElement = document.getElementById('brutto');
+                        if (bruttoElement) {
+                            bruttoElement.textContent = product.dimensions?.[0]?.brutto || 'не указан';
+                        }
 
-    const nettoElement = document.getElementById('netto');
-    if (nettoElement) {
-        nettoElement.textContent = product.dimensions?.[0]?.netto || 'не указан';
-    }
+                        const nettoElement = document.getElementById('netto');
+                        if (nettoElement) {
+                            nettoElement.textContent = product.dimensions?.[0]?.netto || 'не указан';
+                        }
 
-    const volumeElement = document.getElementById('volume');
-    if (volumeElement) {
-        volumeElement.textContent = product.dimensions?.[0]?.volume || 'не указан';
-    }
-}
+                        const volumeElement = document.getElementById('volume');
+                        if (volumeElement) {
+                            volumeElement.textContent = product.dimensions?.[0]?.volume || 'не указан';
+                        }
+                    }
 
 
                     // Заполнение весов и объема
@@ -938,6 +941,8 @@ else {
                     if (volumeElement) {
                         volumeElement.textContent = product.dimensions?.[0]?.volume || 'не указан';
                     }
+
+                    
 
                     // Заполнение размеров коробки
                     const widthElement = document.querySelector('.box-dimension.width');
@@ -1009,7 +1014,7 @@ else {
                 downloadBtn.style.display = 'none';
                 if (sidebar) {
                     sidebar.style.display = 'none';
-        }
+                }
 
                 // Удаляем ненужные элементы
                 const scripts = document.querySelectorAll('script');
@@ -1066,8 +1071,8 @@ else {
                 downloadBtn.style.display = 'block';
                 if (sidebar) {
                     sidebar.style.display = 'block';
+                }
             }
-        }
         });
 
         // document.getElementById('downloadPdf').addEventListener('click', async function(e) {
