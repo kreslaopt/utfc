@@ -1635,6 +1635,16 @@ const knownProductsAllFiles = [
     "is_archive": false
   },
   {
+    "name": "Epik a-130-g brown",
+    "category": "armchair_epik",
+    "is_archive": false
+  },
+  {
+    "name": "Epik a-130-g grey",
+    "category": "armchair_epik",
+    "is_archive": false
+  },
+  {
     "name": "Epik a-155-g",
     "category": "armchair_epik",
     "is_archive": false
@@ -1711,6 +1721,21 @@ const knownProductsAllFiles = [
   },
   {
     "name": "Utfc мориока м-242",
+    "category": "armchair_comfort",
+    "is_archive": false
+  },
+  {
+    "name": "Utfc мориока м-242 black",
+    "category": "armchair_comfort",
+    "is_archive": false
+  },
+  {
+    "name": "Utfc мориока м-242 green",
+    "category": "armchair_comfort",
+    "is_archive": false
+  },
+  {
+    "name": "Utfc мориока м-242 red",
     "category": "armchair_comfort",
     "is_archive": false
   },

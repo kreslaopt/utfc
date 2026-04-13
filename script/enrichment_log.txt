@@ -1,9 +1,9 @@
 
 === Начало обогащения данных: enrich_parent.py ===
 
-Найдено родительских файлов: 355
+Найдено родительских файлов: 357
 Ищем для base_name: Кресло Кремона хром -> mapped: Кремона хром
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\armchair_personal\Кремона пластик.json: title, base_name, article_number, full_describe, Link_arm, Основание, Газлифт, Ролики
+Обновлен C:\Users\UTFC\Documents\БалтМебель\to\products\armchair_personal\Кремона пластик.json: title, base_name, article_number, full_describe, Link_arm, Основание, Газлифт, Ролики
 Ищем для base_name: Кресло Кремона хром -> mapped: Кремона хром
 Ищем для base_name: Кресло Кремона хром -> mapped: Кремона хром
 Ищем для base_name: Кресло Кремона хром -> mapped: Кремона хром
@@ -90,7 +90,7 @@
 Ищем для base_name: Стул Парма 4К BL -> mapped: Парма 4к
 Ищем для base_name: Стул Парма 4К BL -> mapped: Парма 4к
 Ищем для base_name: Кресло Кремона пластик -> mapped: Кремона пластик
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\armchair_personal\Кремона пластик.json: title, base_name, article_number, full_describe, Link_arm, Основание, Газлифт, Ролики
+Обновлен C:\Users\UTFC\Documents\БалтМебель\to\products\armchair_personal\Кремона пластик.json: title, base_name, article_number, full_describe, Link_arm, Основание, Газлифт, Ролики
 Ищем для base_name: Кресло Кремона пластик -> mapped: Кремона пластик
 Ищем для base_name: Кресло Кремона пластик -> mapped: Кремона пластик
 Ищем для base_name: Кресло Кремона пластик -> mapped: Кремона пластик
@@ -309,7 +309,7 @@
 Ищем для base_name: Кресло Чехол Шелл Пик -> mapped: Кресло Чехол Шелл Пик
 Ищем для base_name: Кресло Чехол Шелл Пик -> mapped: Кресло Чехол Шелл Пик
 Ищем для base_name: Стул Честер BL 4L -> mapped: Честер 4l bl
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\chair_visitors\Честер 4l bl.json: title, base_name, article_number, Link_arm, Основание
+Обновлен C:\Users\UTFC\Documents\БалтМебель\to\products\chair_visitors\Честер 4l bl.json: title, base_name, article_number, Link_arm, Основание
 Ищем для base_name: Стул Честер BL 4L -> mapped: Честер 4l bl
 Ищем для base_name: Стул Честер BL 4L -> mapped: Честер 4l bl
 Ищем для base_name: Стул Честер BL 4L -> mapped: Честер 4l bl
@@ -489,7 +489,7 @@
 Ищем для base_name: Стул С-07 Шелл Софт СН -> mapped: Стул С-07 Шелл Софт СН
 Ищем для base_name: Стул С-07 Шелл Софт СН -> mapped: Стул С-07 Шелл Софт СН
 Ищем для base_name: Стул Версаль BL -> mapped: Версаль
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\chair_cafe_and_bar\Версаль ch.json: title, base_name, article_number, full_describe, Link_arm, Основание
+Обновлен C:\Users\UTFC\Documents\БалтМебель\to\products\chair_cafe_and_bar\Версаль ch.json: title, base_name, article_number, full_describe, Link_arm, Основание
 Ищем для base_name: Стул Версаль BL -> mapped: Версаль
 Ищем для base_name: Стул Версаль BL -> mapped: Версаль
 Ищем для base_name: Стул Версаль BL -> mapped: Версаль
@@ -505,7 +505,7 @@
 Ищем для base_name: Стул Версаль BL -> mapped: Версаль
 Ищем для base_name: Стул Версаль BL -> mapped: Версаль
 Ищем для base_name: Стул Бистро BL -> mapped: Бистро bl
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\chair_cafe_and_bar\Бистро bl.json: title, base_name, article_number, full_describe, Link_arm, Основание
+Обновлен C:\Users\UTFC\Documents\БалтМебель\to\products\chair_cafe_and_bar\Бистро bl.json: title, base_name, article_number, full_describe, Link_arm, Основание
 Ищем для base_name: Стул Бистро BL -> mapped: Бистро bl
 Ищем для base_name: Стул Бистро BL -> mapped: Бистро bl
 Ищем для base_name: Стул Бистро BL -> mapped: Бистро bl
@@ -527,7 +527,7 @@
 Ищем для base_name: Стул Бистро BL -> mapped: Бистро bl
 Ищем для base_name: Стул Бистро BL -> mapped: Бистро bl
 Ищем для base_name: Стул Бистро СН -> mapped: Бистро
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\chair_cafe_and_bar\Бистро bl.json: title, base_name, article_number, full_describe, Link_arm, Основание
+Обновлен C:\Users\UTFC\Documents\БалтМебель\to\products\chair_cafe_and_bar\Бистро bl.json: title, base_name, article_number, full_describe, Link_arm, Основание
 Ищем для base_name: Стул Бистро СН -> mapped: Бистро
 Ищем для base_name: Стул Бистро СН -> mapped: Бистро
 Ищем для base_name: Стул Бистро СН -> mapped: Бистро
@@ -578,7 +578,7 @@
 Ищем для base_name: Стул Венус GR -> mapped: Венус gr
 Ищем для base_name: Стул Венус GR -> mapped: Венус gr
 Ищем для base_name: Стул Ванесса СН -> mapped: Ванесса
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\chair_cafe_and_bar\Ванесса bl.json: title, base_name, article_number, full_describe, Link_arm, Основание
+Обновлен C:\Users\UTFC\Documents\БалтМебель\to\products\chair_cafe_and_bar\Ванесса bl.json: title, base_name, article_number, full_describe, Link_arm, Основание
 Ищем для base_name: Стул Ванесса СН -> mapped: Ванесса
 Ищем для base_name: Стул Ванесса СН -> mapped: Ванесса
 Ищем для base_name: Стул Ванесса СН -> mapped: Ванесса
@@ -606,7 +606,7 @@
 Ищем для base_name: Стул Ванесса СН -> mapped: Ванесса
 Ищем для base_name: Стул Ванесса СН -> mapped: Ванесса
 Ищем для base_name: Стул Ванесса BL -> mapped: Ванесса bl
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\chair_cafe_and_bar\Ванесса bl.json: title, base_name, article_number, full_describe, Link_arm, Основание
+Обновлен C:\Users\UTFC\Documents\БалтМебель\to\products\chair_cafe_and_bar\Ванесса bl.json: title, base_name, article_number, full_describe, Link_arm, Основание
 Ищем для base_name: Стул Ванесса BL -> mapped: Ванесса bl
 Ищем для base_name: Стул Ванесса BL -> mapped: Ванесса bl
 Ищем для base_name: Стул Ванесса BL -> mapped: Ванесса bl
@@ -633,7 +633,7 @@
 Ищем для base_name: Стул складной Компакт Люкс 4Н BL -> mapped: Компакт люкс 4н складной
 Ищем для base_name: Стул складной Компакт Люкс 4Н BL -> mapped: Компакт люкс 4н складной
 Ищем для base_name: Стул Венус BL -> mapped: Венус
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\chair_cafe_and_bar\Венус ch.json: title, base_name, article_number, full_describe, Link_arm, Основание
+Обновлен C:\Users\UTFC\Documents\БалтМебель\to\products\chair_cafe_and_bar\Венус ch.json: title, base_name, article_number, full_describe, Link_arm, Основание
 Ищем для base_name: Стул Венус BL -> mapped: Венус
 Ищем для base_name: Стул Венус BL -> mapped: Венус
 Ищем для base_name: Стул Венус BL -> mapped: Венус
@@ -658,7 +658,7 @@
 Ищем для base_name: Стул Венус BL -> mapped: Венус
 Ищем для base_name: Стул Венус BL -> mapped: Венус
 Ищем для base_name: Стул Версаль СН -> mapped: Версаль ch
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\chair_cafe_and_bar\Версаль ch.json: title, base_name, article_number, full_describe, Link_arm, Основание
+Обновлен C:\Users\UTFC\Documents\БалтМебель\to\products\chair_cafe_and_bar\Версаль ch.json: title, base_name, article_number, full_describe, Link_arm, Основание
 Ищем для base_name: Стул Версаль СН -> mapped: Версаль ch
 Ищем для base_name: Стул Версаль СН -> mapped: Версаль ch
 Ищем для base_name: Стул Версаль СН -> mapped: Версаль ch
@@ -706,7 +706,7 @@
 Ищем для base_name: Стул С-07 Шелл Софт GR -> mapped: Стул С-07 Шелл Софт GR
 Ищем для base_name: Стул С-07 Шелл Софт GR -> mapped: Стул С-07 Шелл Софт GR
 Ищем для base_name: Стул Венус СН -> mapped: Венус ch
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\chair_cafe_and_bar\Венус ch.json: title, base_name, article_number, Link_arm, Основание
+Обновлен C:\Users\UTFC\Documents\БалтМебель\to\products\chair_cafe_and_bar\Венус ch.json: title, base_name, article_number, Link_arm, Основание
 Ищем для base_name: Стул Венус СН -> mapped: Венус ch
 Ищем для base_name: Стул Венус СН -> mapped: Венус ch
 Ищем для base_name: Стул Венус СН -> mapped: Венус ch
@@ -731,7 +731,7 @@
 Ищем для base_name: Стул Венус СН -> mapped: Венус ch
 Ищем для base_name: Стул Венус СН -> mapped: Венус ch
 Ищем для base_name: Стул Венус М СН -> mapped: Венус м
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\chair_cafe_and_bar\Венус ch.json: title, base_name, article_number, full_describe, Link_arm, Основание
+Обновлен C:\Users\UTFC\Documents\БалтМебель\to\products\chair_cafe_and_bar\Венус ch.json: title, base_name, article_number, full_describe, Link_arm, Основание
 Ищем для base_name: Стул Венус М СН -> mapped: Венус м
 Ищем для base_name: Стул Венус М СН -> mapped: Венус м
 Ищем для base_name: Стул Венус М СН -> mapped: Венус м
@@ -762,7 +762,7 @@
 Ищем для base_name: Стул Венус М СН -> mapped: Венус м
 Ищем для base_name: Стул Венус М СН -> mapped: Венус м
 Ищем для base_name: Стул София СН со столиком -> mapped: София со столиком
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\chair_visitors\София bl.json: title, base_name, article_number, full_describe, Link_arm
+Обновлен C:\Users\UTFC\Documents\БалтМебель\to\products\chair_visitors\София bl.json: title, base_name, article_number, full_describe, Link_arm
 Ищем для base_name: Стул София СН со столиком -> mapped: София со столиком
 Ищем для base_name: Стул София СН со столиком -> mapped: София со столиком
 Ищем для base_name: Стул София СН со столиком -> mapped: София со столиком
@@ -791,7 +791,7 @@
 Ищем для base_name: Стул София СН со столиком -> mapped: София со столиком
 Ищем для base_name: Стул София СН со столиком -> mapped: София со столиком
 Ищем для base_name: Стул Бистро М СН -> mapped: Бистро м
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\chair_cafe_and_bar\Бистро bl.json: title, base_name, article_number, full_describe, Link_arm, Основание
+Обновлен C:\Users\UTFC\Documents\БалтМебель\to\products\chair_cafe_and_bar\Бистро bl.json: title, base_name, article_number, full_describe, Link_arm, Основание
 Ищем для base_name: Стул Бистро М СН -> mapped: Бистро м
 Ищем для base_name: Стул Бистро М СН -> mapped: Бистро м
 Ищем для base_name: Стул Бистро М СН -> mapped: Бистро м
@@ -843,7 +843,7 @@
 Ищем для base_name: Стул КОРА BL -> mapped: Кора чёрный
 Ищем для base_name: Стул КОРА BL -> mapped: Кора чёрный
 Ищем для base_name: Стул Стандарт BL -> mapped: Стандарт
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\chair_visitors\Стандарт gr.json: title, base_name, article_number, Link_arm, Основание
+Обновлен C:\Users\UTFC\Documents\БалтМебель\to\products\chair_visitors\Стандарт gr.json: title, base_name, article_number, Link_arm, Основание
 Ищем для base_name: Стул Стандарт BL -> mapped: Стандарт
 Ищем для base_name: Стул Стандарт BL -> mapped: Стандарт
 Ищем для base_name: Стул Стандарт BL -> mapped: Стандарт
@@ -883,7 +883,7 @@
 Ищем для base_name: Стул Стандарт BL -> mapped: Стандарт
 Ищем для base_name: Стул Стандарт BL -> mapped: Стандарт
 Ищем для base_name: Стул София BL -> mapped: София bl
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\chair_visitors\София bl.json: title, base_name, article_number, full_describe, Link_arm, Основание
+Обновлен C:\Users\UTFC\Documents\БалтМебель\to\products\chair_visitors\София bl.json: title, base_name, article_number, full_describe, Link_arm, Основание
 Ищем для base_name: Стул София BL -> mapped: София bl
 Ищем для base_name: Стул София BL -> mapped: София bl
 Ищем для base_name: Стул София BL -> mapped: София bl
@@ -1032,14 +1032,14 @@
 Ищем для base_name: Стул Сильвия СН -> mapped: Cильвия хром
 Ищем для base_name: Стул Сильвия СН -> mapped: Cильвия хром
 Ищем для base_name: Стул ИЗО СН со столиком -> mapped: Изо со столиком
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\chair_visitors\Изо +.json: title, base_name, article_number, full_describe, Link_arm, Подлокотники
+Обновлен C:\Users\UTFC\Documents\БалтМебель\to\products\chair_visitors\Изо +.json: title, base_name, article_number, full_describe, Link_arm, Подлокотники
 Ищем для base_name: Стул ИЗО СН со столиком -> mapped: Изо со столиком
 Ищем для base_name: Стул ИЗО СН со столиком -> mapped: Изо со столиком
 Ищем для base_name: Стул ИЗО СН со столиком -> mapped: Изо со столиком
 Ищем для base_name: Стул ИЗО СН со столиком -> mapped: Изо со столиком
 Ищем для base_name: Стул ИЗО СН со столиком -> mapped: Изо со столиком
 Ищем для base_name: Стул ИЗО СН -> mapped: Изо
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\chair_visitors\Изо +.json: title, base_name, article_number, full_describe, Link_arm, Подлокотники
+Обновлен C:\Users\UTFC\Documents\БалтМебель\to\products\chair_visitors\Изо +.json: title, base_name, article_number, full_describe, Link_arm, Подлокотники
 Ищем для base_name: Стул ИЗО СН -> mapped: Изо
 Ищем для base_name: Стул ИЗО СН -> mapped: Изо
 Ищем для base_name: Стул ИЗО СН -> mapped: Изо
@@ -1159,7 +1159,7 @@
 Ищем для base_name: Стул КОРА СН -> mapped: Кора ch
 Ищем для base_name: Стул КОРА СН -> mapped: Кора ch
 Ищем для base_name: Форум BL -> mapped: Форум bl
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\chair_visitors\Форум bl.json: title, base_name, article_number, Link_arm, Основание
+Обновлен C:\Users\UTFC\Documents\БалтМебель\to\products\chair_visitors\Форум bl.json: title, base_name, article_number, Link_arm, Основание
 Ищем для base_name: Форум BL -> mapped: Форум bl
 Ищем для base_name: Форум BL -> mapped: Форум bl
 Ищем для base_name: Форум BL -> mapped: Форум bl
@@ -1191,7 +1191,7 @@
 Ищем для base_name: Стул Неон GR -> mapped: Неон gr
 Ищем для base_name: Стул Неон GR -> mapped: Неон gr
 Ищем для base_name: Стул Неон СН -> mapped: Неон
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\chair_visitors\Неон bl.json: title, base_name, article_number, Link_arm, Основание
+Обновлен C:\Users\UTFC\Documents\БалтМебель\to\products\chair_visitors\Неон bl.json: title, base_name, article_number, Link_arm, Основание
 Ищем для base_name: Стул Неон СН -> mapped: Неон
 Ищем для base_name: Стул Неон СН -> mapped: Неон
 Ищем для base_name: Стул Неон СН -> mapped: Неон
@@ -1220,7 +1220,7 @@
 Ищем для base_name: Стул Неон СН -> mapped: Неон
 Ищем для base_name: Стул Неон СН -> mapped: Неон
 Ищем для base_name: Табурет GR ПР -> mapped: Табурет пр
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\chair_cafe_and_bar\Табурет пр bl.json: title, base_name, article_number, full_describe, Link_arm, Основание
+Обновлен C:\Users\UTFC\Documents\БалтМебель\to\products\chair_cafe_and_bar\Табурет пр bl.json: title, base_name, article_number, full_describe, Link_arm, Основание
 Ищем для base_name: Табурет GR ПР -> mapped: Табурет пр
 Ищем для base_name: Табурет GR ПР -> mapped: Табурет пр
 Ищем для base_name: Табурет GR ПР -> mapped: Табурет пр
@@ -1264,7 +1264,7 @@
 Ищем для base_name: Стул Честер BL 4L -> mapped: Честер 4l bl
 Ищем для base_name: Стул Честер BL 4L -> mapped: Честер 4l bl
 Ищем для base_name: Стул Неон BL -> mapped: Неон bl
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\chair_visitors\Неон bl.json: title, base_name, article_number, Link_arm, Основание
+Обновлен C:\Users\UTFC\Documents\БалтМебель\to\products\chair_visitors\Неон bl.json: title, base_name, article_number, Link_arm, Основание
 Ищем для base_name: Стул Неон BL -> mapped: Неон bl
 Ищем для base_name: Стул Неон BL -> mapped: Неон bl
 Ищем для base_name: Стул Неон BL -> mapped: Неон bl
@@ -1275,7 +1275,7 @@
 Ищем для base_name: Стул Неон BL -> mapped: Неон bl
 Ищем для base_name: Стул Неон BL -> mapped: Неон bl
 Ищем для base_name: Табурет GR КР -> mapped: Табурет кр
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\chair_cafe_and_bar\Табурет кр bl.json: title, base_name, article_number, full_describe, Link_arm, Основание
+Обновлен C:\Users\UTFC\Documents\БалтМебель\to\products\chair_cafe_and_bar\Табурет кр bl.json: title, base_name, article_number, full_describe, Link_arm, Основание
 Ищем для base_name: Табурет GR КР -> mapped: Табурет кр
 Ищем для base_name: Табурет GR КР -> mapped: Табурет кр
 Ищем для base_name: Табурет GR КР -> mapped: Табурет кр
@@ -1285,7 +1285,7 @@
 Ищем для base_name: Табурет GR КР -> mapped: Табурет кр
 Ищем для base_name: Табурет GR КР -> mapped: Табурет кр
 Ищем для base_name: Табурет BL КР -> mapped: Табурет кр bl
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\chair_cafe_and_bar\Табурет кр bl.json: title, base_name, article_number, full_describe, Link_arm, Основание
+Обновлен C:\Users\UTFC\Documents\БалтМебель\to\products\chair_cafe_and_bar\Табурет кр bl.json: title, base_name, article_number, full_describe, Link_arm, Основание
 Ищем для base_name: Табурет BL КР -> mapped: Табурет кр bl
 Ищем для base_name: Табурет BL КР -> mapped: Табурет кр bl
 Ищем для base_name: Табурет BL КР -> mapped: Табурет кр bl
@@ -1334,7 +1334,7 @@
 Ищем для base_name: Стул Марко СН -> mapped: Марко
 Ищем для base_name: Стул Марко СН -> mapped: Марко
 Ищем для base_name: Секция ИЗО/2 -> mapped: Изо-2
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\chair_visitors\Изо-2.json: title, base_name, article_number, full_describe, Link_arm, Основание
+Обновлен C:\Users\UTFC\Documents\БалтМебель\to\products\chair_visitors\Изо-2.json: title, base_name, article_number, full_describe, Link_arm, Основание
 Ищем для base_name: Секция ИЗО/2 -> mapped: Изо-2
 Ищем для base_name: Секция ИЗО/2 -> mapped: Изо-2
 Ищем для base_name: Секция ИЗО/2 -> mapped: Изо-2
@@ -1344,7 +1344,7 @@
 Ищем для base_name: Секция ИЗО/2 -> mapped: Изо-2
 Ищем для base_name: Секция ИЗО/2 -> mapped: Изо-2
 Ищем для base_name: Стул Стандарт GR -> mapped: Стандарт gr
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\chair_visitors\Стандарт gr.json: title, base_name, article_number, Link_arm, Основание
+Обновлен C:\Users\UTFC\Documents\БалтМебель\to\products\chair_visitors\Стандарт gr.json: title, base_name, article_number, Link_arm, Основание
 Ищем для base_name: Стул Стандарт GR -> mapped: Стандарт gr
 Ищем для base_name: Стул Бистро GR -> mapped: Бистро gr
 Ищем для base_name: Стул Бистро GR -> mapped: Бистро gr
@@ -1442,7 +1442,7 @@
 Ищем для base_name: Стул ИЗО BL пластик -> mapped: Изо пластик bl
 Ищем для base_name: Стул ИЗО BL пластик -> mapped: Изо пластик bl
 Ищем для base_name: Секция ИЗО/3 -> mapped: Изо-3
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\chair_visitors\Изо-2.json: title, base_name, article_number, full_describe, Link_arm, Основание
+Обновлен C:\Users\UTFC\Documents\БалтМебель\to\products\chair_visitors\Изо-2.json: title, base_name, article_number, full_describe, Link_arm, Основание
 Ищем для base_name: Секция ИЗО/3 -> mapped: Изо-3
 Ищем для base_name: Секция ИЗО/3 -> mapped: Изо-3
 Ищем для base_name: Секция ИЗО/3 -> mapped: Изо-3
@@ -1479,7 +1479,7 @@
 Ищем для base_name: Табурет СН КР -> mapped: Табурет кр ch
 Ищем для base_name: Табурет СН КР -> mapped: Табурет кр ch
 Ищем для base_name: Табурет BL ПР -> mapped: Табурет пр bl
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\chair_cafe_and_bar\Табурет пр bl.json: title, base_name, article_number, full_describe, Link_arm, Основание
+Обновлен C:\Users\UTFC\Documents\БалтМебель\to\products\chair_cafe_and_bar\Табурет пр bl.json: title, base_name, article_number, full_describe, Link_arm, Основание
 Ищем для base_name: Табурет BL ПР -> mapped: Табурет пр bl
 Ищем для base_name: Табурет BL ПР -> mapped: Табурет пр bl
 Ищем для base_name: Табурет BL ПР -> mapped: Табурет пр bl
@@ -1541,11 +1541,11 @@
 Ищем для base_name: Стул Самба BL со столиком -> mapped: Самба со столиком bl
 Ищем для base_name: Стул Самба BL со столиком -> mapped: Самба со столиком bl
 Ищем для base_name: Стул Самба BL -> mapped: Самба bl
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\chair_visitors\Самба bl.json: title, base_name, article_number, Link_arm, Основание
+Обновлен C:\Users\UTFC\Documents\БалтМебель\to\products\chair_visitors\Самба bl.json: title, base_name, article_number, Link_arm, Основание
 Ищем для base_name: Стул Самба BL -> mapped: Самба bl
 Ищем для base_name: Стул Самба BL -> mapped: Самба bl
 Ищем для base_name: Стул София СН -> mapped: София
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\chair_visitors\София bl.json: title, base_name, article_number, full_describe, Link_arm, Основание
+Обновлен C:\Users\UTFC\Documents\БалтМебель\to\products\chair_visitors\София bl.json: title, base_name, article_number, full_describe, Link_arm, Основание
 Ищем для base_name: Стул София СН -> mapped: София
 Ищем для base_name: Стул София СН -> mapped: София
 Ищем для base_name: Стул София СН -> mapped: София
@@ -1574,7 +1574,7 @@
 Ищем для base_name: Стул Самба soft GR -> mapped: Стул Самба soft GR
 Ищем для base_name: Стул Самба soft GR -> mapped: Стул Самба soft GR
 Ищем для base_name: Стул Самба soft СН со столиком -> mapped: Самба со столиком
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\chair_visitors\Самба bl.json: title, base_name, article_number, full_describe, Link_arm, Основание
+Обновлен C:\Users\UTFC\Documents\БалтМебель\to\products\chair_visitors\Самба bl.json: title, base_name, article_number, full_describe, Link_arm, Основание
 Ищем для base_name: Стул Самба soft СН со столиком -> mapped: Самба со столиком
 Ищем для base_name: Стул Самба soft СН со столиком -> mapped: Самба со столиком
 Ищем для base_name: Стул Самба soft СН со столиком -> mapped: Самба со столиком
@@ -1606,7 +1606,7 @@
 Ищем для base_name: Стул С-07 Шелл СН -> mapped: Шелл с-07
 Ищем для base_name: Стул С-07 Шелл СН -> mapped: Шелл с-07
 Ищем для base_name: Стул Самба СН -> mapped: Самба
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\chair_visitors\Самба bl.json: title, base_name, article_number, full_describe, Link_arm
+Обновлен C:\Users\UTFC\Documents\БалтМебель\to\products\chair_visitors\Самба bl.json: title, base_name, article_number, full_describe, Link_arm
 Ищем для base_name: Стул Самба СН -> mapped: Самба
 Ищем для base_name: Стул Самба СН -> mapped: Самба
 Ищем для base_name: Стул Самба СН -> mapped: Самба
@@ -1659,7 +1659,7 @@
 Ищем для base_name: Стул Самба GR -> mapped: Самба gr
 Ищем для base_name: Стул Самба GR -> mapped: Самба gr
 Ищем для base_name: Стул Честер СН 4L -> mapped: Честер 4l хром
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\chair_visitors\Честер 4l bl.json: title, base_name, article_number, Link_arm, Основание
+Обновлен C:\Users\UTFC\Documents\БалтМебель\to\products\chair_visitors\Честер 4l bl.json: title, base_name, article_number, Link_arm, Основание
 Ищем для base_name: Стул Честер СН 4L -> mapped: Честер 4l хром
 Ищем для base_name: Стул Честер СН 4L -> mapped: Честер 4l хром
 Ищем для base_name: Стул Честер СН 4L -> mapped: Честер 4l хром
@@ -1690,7 +1690,7 @@
 Ищем для base_name: Стул Честер СН -> mapped: Честер хром
 Ищем для base_name: Стул Честер СН -> mapped: Честер хром
 Ищем для base_name: Форум СН -> mapped: Форум
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\chair_visitors\Форум bl.json: title, base_name, article_number, Link_arm, Основание
+Обновлен C:\Users\UTFC\Documents\БалтМебель\to\products\chair_visitors\Форум bl.json: title, base_name, article_number, Link_arm, Основание
 Ищем для base_name: Форум СН -> mapped: Форум
 Ищем для base_name: Форум СН -> mapped: Форум
 Ищем для base_name: Форум СН -> mapped: Форум
@@ -1999,10 +1999,10 @@
 Ищем для base_name: Кресло Идра Н/п пластик -> mapped: Идра н_п пластик
 Ищем для base_name: Кресло Идра Н/п пластик -> mapped: Идра н_п пластик
 Ищем для base_name: Кресло Атлант В пластик -> mapped: Атлант в пластик
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\armchair_rukovoditel\Атлант в дерево.json: title, base_name, article_number, full_describe, Link_arm, Подлокотники
+Обновлен C:\Users\UTFC\Documents\БалтМебель\to\products\armchair_rukovoditel\Атлант в дерево.json: title, base_name, article_number, full_describe, Link_arm, Подлокотники
 Ищем для base_name: Кресло Атлант В пластик -> mapped: Атлант в пластик
 Ищем для base_name: Кресло Атлант В дерево -> mapped: Атлант в дерево
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\armchair_rukovoditel\Атлант в дерево.json: title, base_name, article_number, full_describe, Link_arm, Основание, Подлокотники, Ролики
+Обновлен C:\Users\UTFC\Documents\БалтМебель\to\products\armchair_rukovoditel\Атлант в дерево.json: title, base_name, article_number, full_describe, Link_arm, Основание, Подлокотники, Ролики
 Ищем для base_name: Кресло Атлант В дерево -> mapped: Атлант в дерево
 Ищем для base_name: Кресло Атлант В дерево -> mapped: Атлант в дерево
 Ищем для base_name: Кресло Атлант В дерево -> mapped: Атлант в дерево
@@ -2012,7 +2012,7 @@
 Ищем для base_name: Кресло Атлант В дерево -> mapped: Атлант в дерево
 Ищем для base_name: Кресло Атлант В дерево -> mapped: Атлант в дерево
 Ищем для base_name: Кресло Орион В дерево -> mapped: Орион в дерево
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\armchair_rukovoditel\Орион в дерево.json: title, base_name, article_number, full_describe, Link_arm, Основание, Подлокотники, Ролики
+Обновлен C:\Users\UTFC\Documents\БалтМебель\to\products\armchair_rukovoditel\Орион в дерево.json: title, base_name, article_number, full_describe, Link_arm, Основание, Подлокотники, Ролики
 Ищем для base_name: Кресло Орион В дерево -> mapped: Орион в дерево
 Ищем для base_name: Кресло Артекс В хром -> mapped: Артекс в хром
 Ищем для base_name: Кресло Артекс В хром -> mapped: Артекс в хром
@@ -2030,7 +2030,7 @@
 Ищем для base_name: Кресло Атлант В/п хром -> mapped: Атлант в_п хром
 Ищем для base_name: Кресло Атлант В/п хром -> mapped: Атлант в_п хром
 Ищем для base_name: Кресло Атлант В хром -> mapped: Атлант в хром
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\armchair_rukovoditel\Атлант в дерево.json: title, base_name, article_number, full_describe, Link_arm, Основание, Подлокотники, Ролики
+Обновлен C:\Users\UTFC\Documents\БалтМебель\to\products\armchair_rukovoditel\Атлант в дерево.json: title, base_name, article_number, full_describe, Link_arm, Основание, Подлокотники, Ролики
 Ищем для base_name: Кресло Атлант В хром -> mapped: Атлант в хром
 Ищем для base_name: Кресло Атлант В хром -> mapped: Атлант в хром
 Ищем для base_name: Кресло Атлант В хром -> mapped: Атлант в хром
@@ -2065,11 +2065,11 @@
 Ищем для base_name: Кресло СН-686 Орегон В пластик-люкс 727 -> mapped: Орегон сн-686 в пластик-люкс 727
 Ищем для base_name: Кресло СН-686 Орегон В пластик-люкс 727 -> mapped: Орегон сн-686 в пластик-люкс 727
 Ищем для base_name: Кресло Орион В пластик -> mapped: Орион в пластик
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\armchair_rukovoditel\Орион в дерево.json: title, base_name, article_number, full_describe, Link_arm, Основание, Подлокотники, Ролики
+Обновлен C:\Users\UTFC\Documents\БалтМебель\to\products\armchair_rukovoditel\Орион в дерево.json: title, base_name, article_number, full_describe, Link_arm, Основание, Подлокотники, Ролики
 Ищем для base_name: Кресло Орион В пластик -> mapped: Орион в пластик
 Ищем для base_name: Кресло Орион В пластик -> mapped: Орион в пластик
 Ищем для base_name: Кресло Орион В хром -> mapped: Орион в хром
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\armchair_rukovoditel\Орион в дерево.json: title, base_name, article_number, full_describe, Link_arm, Основание, Подлокотники
+Обновлен C:\Users\UTFC\Documents\БалтМебель\to\products\armchair_rukovoditel\Орион в дерево.json: title, base_name, article_number, full_describe, Link_arm, Основание, Подлокотники
 Ищем для base_name: Кресло Орион В хром -> mapped: Орион в хром
 Ищем для base_name: Кресло Орион В хром -> mapped: Орион в хром
 Ищем для base_name: Кресло Орион В хром -> mapped: Орион в хром
@@ -2082,7 +2082,7 @@
 Ищем для base_name: Кресло Орион В хром -> mapped: Орион в хром
 Ищем для base_name: Кресло Орион В хром -> mapped: Орион в хром
 Ищем для base_name: Кресло Атлант В пластик-люкс 727 -> mapped: Атлант в пластик-люкс 727
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\armchair_rukovoditel\Атлант в дерево.json: title, base_name, article_number, full_describe, Link_arm, Основание, Подлокотники
+Обновлен C:\Users\UTFC\Documents\БалтМебель\to\products\armchair_rukovoditel\Атлант в дерево.json: title, base_name, article_number, full_describe, Link_arm, Основание, Подлокотники
 Ищем для base_name: Кресло Атлант В пластик-люкс 727 -> mapped: Атлант в пластик-люкс 727
 Ищем для base_name: Кресло Атлант В пластик-люкс 727 -> mapped: Атлант в пластик-люкс 727
 Ищем для base_name: Кресло Атлант В пластик-люкс 727 -> mapped: Атлант в пластик-люкс 727
@@ -2095,7 +2095,7 @@
 Ищем для base_name: Кресло Орион Н/п дерево -> mapped: Орион н_п дерево
 Ищем для base_name: Кресло Орион Н/п дерево -> mapped: Орион н_п дерево
 Ищем для base_name: Кресло Пилот В пластик -> mapped: Пилот в пластик
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\armchair_rukovoditel\Пилот в пластик-люкс 727.json: title, base_name, article_number, full_describe, Link_arm, Подлокотники
+Обновлен C:\Users\UTFC\Documents\БалтМебель\to\products\armchair_rukovoditel\Пилот в пластик-люкс 727.json: title, base_name, article_number, full_describe, Link_arm, Подлокотники
 Ищем для base_name: Кресло Пилот В пластик -> mapped: Пилот в пластик
 Ищем для base_name: Кресло Пилот В пластик -> mapped: Пилот в пластик
 Ищем для base_name: Кресло Пилот Н/п пластик -> mapped: Пилот н_п пластик
@@ -2103,17 +2103,17 @@
 Ищем для base_name: Кресло Пилот Н/п пластик -> mapped: Пилот н_п пластик
 Ищем для base_name: Кресло Пилот Н/п пластик -> mapped: Пилот н_п пластик
 Ищем для base_name: Кресло Премьер В пластик-люкс 727 -> mapped: Премьер в пластик-люкс 727
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\armchair_rukovoditel\Премьер в пластик 727.json: title, base_name, article_number, full_describe, Link_arm, Подлокотники
+Обновлен C:\Users\UTFC\Documents\БалтМебель\to\products\armchair_rukovoditel\Премьер в пластик 727.json: title, base_name, article_number, full_describe, Link_arm, Подлокотники
 Ищем для base_name: Кресло Премьер В пластик-люкс 727 -> mapped: Премьер в пластик-люкс 727
 Ищем для base_name: Кресло Премьер В пластик-люкс 727 -> mapped: Премьер в пластик-люкс 727
 Ищем для base_name: Кресло Премьер В пластик-люкс 727 -> mapped: Премьер в пластик-люкс 727
 Ищем для base_name: Кресло Пилот Н пластик-люкс 727 -> mapped: Пилот н пластик-люкс 727
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\armchair_rukovoditel\Пилот в пластик-люкс 727.json: title, base_name, article_number, full_describe, Link_arm, Подлокотники
+Обновлен C:\Users\UTFC\Documents\БалтМебель\to\products\armchair_rukovoditel\Пилот в пластик-люкс 727.json: title, base_name, article_number, full_describe, Link_arm, Подлокотники
 Ищем для base_name: Кресло Пилот Н пластик-люкс 727 -> mapped: Пилот н пластик-люкс 727
 Ищем для base_name: Кресло Пилот Н пластик-люкс 727 -> mapped: Пилот н пластик-люкс 727
 Ищем для base_name: Кресло Пилот Н пластик-люкс 727 -> mapped: Пилот н пластик-люкс 727
 Ищем для base_name: Кресло Премьер В пластик 727 -> mapped: Премьер в пластик 727
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\armchair_rukovoditel\Премьер в пластик 727.json: title, base_name, article_number, full_describe, Link_arm, Подлокотники
+Обновлен C:\Users\UTFC\Documents\БалтМебель\to\products\armchair_rukovoditel\Премьер в пластик 727.json: title, base_name, article_number, full_describe, Link_arm, Подлокотники
 Ищем для base_name: Кресло Премьер В пластик 727 -> mapped: Премьер в пластик 727
 Ищем для base_name: Кресло Премьер В пластик 727 -> mapped: Премьер в пластик 727
 Ищем для base_name: Кресло Премьер В пластик 727 -> mapped: Премьер в пластик 727
@@ -2193,7 +2193,7 @@
 Ищем для base_name: Кресло Эльф В пластик 727 -> mapped: Эльф в пластик 727
 Ищем для base_name: Кресло Эльф В пластик 727 -> mapped: Эльф в пластик 727
 Ищем для base_name: Кресло Пилот Н пластик -> mapped: Пилот н пластик
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\armchair_rukovoditel\Пилот в пластик-люкс 727.json: title, base_name, article_number, Link_arm, Подлокотники
+Обновлен C:\Users\UTFC\Documents\БалтМебель\to\products\armchair_rukovoditel\Пилот в пластик-люкс 727.json: title, base_name, article_number, Link_arm, Подлокотники
 Ищем для base_name: Кресло Пилот Н пластик -> mapped: Пилот н пластик
 Ищем для base_name: Кресло Пилот Н пластик -> mapped: Пилот н пластик
 Ищем для base_name: Кресло Пилот Н пластик -> mapped: Пилот н пластик
@@ -2209,7 +2209,7 @@
 Ищем для base_name: Кресло Пилот Н пластик -> mapped: Пилот н пластик
 Ищем для base_name: Кресло Пилот Н пластик -> mapped: Пилот н пластик
 Ищем для base_name: Кресло Пилот В пластик-люкс 727 -> mapped: Пилот в пластик-люкс 727
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\armchair_rukovoditel\Пилот в пластик-люкс 727.json: title, base_name, article_number, full_describe, Link_arm, Подлокотники
+Обновлен C:\Users\UTFC\Documents\БалтМебель\to\products\armchair_rukovoditel\Пилот в пластик-люкс 727.json: title, base_name, article_number, full_describe, Link_arm, Подлокотники
 Ищем для base_name: Кресло Пилот В пластик-люкс 727 -> mapped: Пилот в пластик-люкс 727
 Ищем для base_name: Кресло Альтаир В пластик 727 -> mapped: Альтаир в пластик 727
 Ищем для base_name: Кресло Альтаир В пластик 727 -> mapped: Альтаир в пластик 727
@@ -2327,7 +2327,7 @@
 Ищем для base_name: Кресло СН-602 Соло Макс пластик SoloBL Ср -> mapped: Соло max сн-601 пластик
 Ищем для base_name: Кресло СН-602 Соло Макс пластик SoloBL Ср -> mapped: Соло max сн-601 пластик
 Ищем для base_name: Кресло Идра В дерево -> mapped: Идра в дерево
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\armchair_rukovoditel\Идра бюджет в пластик 727.json: title, base_name, article_number, full_describe, Link_arm, Основание, Подлокотники, Ролики
+Обновлен C:\Users\UTFC\Documents\БалтМебель\to\products\armchair_rukovoditel\Идра бюджет в пластик 727.json: title, base_name, article_number, full_describe, Link_arm, Основание, Подлокотники, Ролики
 Ищем для base_name: Кресло Идра В дерево -> mapped: Идра в дерево
 Ищем для base_name: Кресло Идра В дерево -> mapped: Идра в дерево
 Ищем для base_name: Кресло Идра В дерево -> mapped: Идра в дерево
@@ -2348,7 +2348,7 @@
 Ищем для base_name: Кресло Комо Н/п дерево -> mapped: Комо н_п дерево
 Ищем для base_name: Кресло Комо Н/п дерево -> mapped: Комо н_п дерево
 Ищем для base_name: Кресло Комо В хром -> mapped: Комо в хром
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\armchair_rukovoditel\Комо бюджет в пластик 727.json: title, base_name, article_number, full_describe, Link_arm, Основание, Подлокотники
+Обновлен C:\Users\UTFC\Documents\БалтМебель\to\products\armchair_rukovoditel\Комо бюджет в пластик 727.json: title, base_name, article_number, full_describe, Link_arm, Основание, Подлокотники
 Ищем для base_name: Кресло Комо В хром -> mapped: Комо в хром
 Ищем для base_name: Кресло Комо В хром -> mapped: Комо в хром
 Ищем для base_name: Кресло Комо В хром -> mapped: Комо в хром
@@ -2358,7 +2358,7 @@
 Ищем для base_name: Кресло Комо В хром -> mapped: Комо в хром
 Ищем для base_name: Кресло Комо В хром -> mapped: Комо в хром
 Ищем для base_name: Кресло Комо Бюджет В пластик 727 -> mapped: Комо бюджет в пластик 727
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\armchair_rukovoditel\Комо бюджет в пластик 727.json: title, base_name, article_number, full_describe, Link_arm, Основание, Подлокотники
+Обновлен C:\Users\UTFC\Documents\БалтМебель\to\products\armchair_rukovoditel\Комо бюджет в пластик 727.json: title, base_name, article_number, full_describe, Link_arm, Основание, Подлокотники
 Ищем для base_name: Кресло Комо Бюджет В пластик 727 -> mapped: Комо бюджет в пластик 727
 Ищем для base_name: Кресло Комо Бюджет В пластик 727 -> mapped: Комо бюджет в пластик 727
 Ищем для base_name: Кресло Комо Бюджет В пластик 727 -> mapped: Комо бюджет в пластик 727
@@ -2387,7 +2387,7 @@
 Ищем для base_name: Кресло Комо Н/п пластик -> mapped: Комо н_п пластик
 Ищем для base_name: Кресло Комо Н/п пластик -> mapped: Комо н_п пластик
 Ищем для base_name: Кресло Идра В пластик -> mapped: Идра в пластик
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\armchair_rukovoditel\Идра бюджет в пластик 727.json: title, base_name, article_number, full_describe, Link_arm, Основание, Подлокотники, Ролики
+Обновлен C:\Users\UTFC\Documents\БалтМебель\to\products\armchair_rukovoditel\Идра бюджет в пластик 727.json: title, base_name, article_number, full_describe, Link_arm, Основание, Подлокотники, Ролики
 Ищем для base_name: Кресло Идра В пластик -> mapped: Идра в пластик
 Ищем для base_name: Кресло Идра В пластик -> mapped: Идра в пластик
 Ищем для base_name: Кресло Идра В пластик -> mapped: Идра в пластик
@@ -2408,7 +2408,7 @@
 Ищем для base_name: Кресло Идра В пластик -> mapped: Идра в пластик
 Ищем для base_name: Кресло Идра В пластик -> mapped: Идра в пластик
 Ищем для base_name: Кресло Комо В дерево -> mapped: Комо в дерево
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\armchair_rukovoditel\Комо бюджет в пластик 727.json: title, base_name, article_number, full_describe, Link_arm, Основание, Подлокотники, Ролики
+Обновлен C:\Users\UTFC\Documents\БалтМебель\to\products\armchair_rukovoditel\Комо бюджет в пластик 727.json: title, base_name, article_number, full_describe, Link_arm, Основание, Подлокотники, Ролики
 Ищем для base_name: Кресло Комо В дерево -> mapped: Комо в дерево
 Ищем для base_name: Кресло Комо В дерево -> mapped: Комо в дерево
 Ищем для base_name: Кресло Комо В дерево -> mapped: Комо в дерево
@@ -2423,7 +2423,7 @@
 Ищем для base_name: Кресло Комо Н/п пластик-люкс 727 -> mapped: Комо н_п пластик-люкс 727
 Ищем для base_name: Кресло Комо Н/п пластик-люкс 727 -> mapped: Комо н_п пластик-люкс 727
 Ищем для base_name: Кресло Идра Бюджет В пластик 727 -> mapped: Идра бюджет в пластик 727
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\armchair_rukovoditel\Идра бюджет в пластик 727.json: title, base_name, article_number, full_describe, Link_arm, Подлокотники
+Обновлен C:\Users\UTFC\Documents\БалтМебель\to\products\armchair_rukovoditel\Идра бюджет в пластик 727.json: title, base_name, article_number, full_describe, Link_arm, Подлокотники
 Ищем для base_name: Кресло Идра Бюджет В пластик 727 -> mapped: Идра бюджет в пластик 727
 Ищем для base_name: Кресло Идра Бюджет В пластик 727 -> mapped: Идра бюджет в пластик 727
 Ищем для base_name: Кресло Идра Бюджет В пластик 727 -> mapped: Идра бюджет в пластик 727
@@ -2432,7 +2432,7 @@
 Ищем для base_name: Кресло Идра Бюджет В пластик 727 -> mapped: Идра бюджет в пластик 727
 Ищем для base_name: Кресло Идра Бюджет В пластик 727 -> mapped: Идра бюджет в пластик 727
 Ищем для base_name: Кресло Идра В хром -> mapped: Идра в хром
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\armchair_rukovoditel\Идра бюджет в пластик 727.json: title, base_name, article_number, full_describe, Link_arm, Основание, Подлокотники
+Обновлен C:\Users\UTFC\Documents\БалтМебель\to\products\armchair_rukovoditel\Идра бюджет в пластик 727.json: title, base_name, article_number, full_describe, Link_arm, Основание, Подлокотники
 Ищем для base_name: Кресло Идра В хром -> mapped: Идра в хром
 Ищем для base_name: Кресло Идра В хром -> mapped: Идра в хром
 Ищем для base_name: Кресло Идра В хром -> mapped: Идра в хром
@@ -2441,7 +2441,7 @@
 Ищем для base_name: Кресло Идра В хром -> mapped: Идра в хром
 Ищем для base_name: Кресло Идра В хром -> mapped: Идра в хром
 Ищем для base_name: Кресло Комо В пластик -> mapped: Комо в пластик
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\armchair_rukovoditel\Комо бюджет в пластик 727.json: title, base_name, article_number, full_describe, Link_arm, Основание, Подлокотники, Ролики
+Обновлен C:\Users\UTFC\Documents\БалтМебель\to\products\armchair_rukovoditel\Комо бюджет в пластик 727.json: title, base_name, article_number, full_describe, Link_arm, Основание, Подлокотники, Ролики
 Ищем для base_name: Кресло Комо В пластик -> mapped: Комо в пластик
 Ищем для base_name: Кресло Комо В пластик -> mapped: Комо в пластик
 Ищем для base_name: Кресло Атлант В/п пластик -> mapped: Атлант в_п пластик
@@ -2748,7 +2748,7 @@
 Ищем для base_name: Кресло Престиж Самба О -> mapped: Престиж самба овалина пластик
 Ищем для base_name: Кресло Престиж Самба О -> mapped: Престиж самба овалина пластик
 Ищем для base_name: Кресло Кремона хром -> mapped: Кремона хром
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\armchair_personal\Кремона пластик.json: title, base_name, article_number, full_describe, Link_arm, Основание, Газлифт, Ролики
+Обновлен C:\Users\UTFC\Documents\БалтМебель\to\products\armchair_personal\Кремона пластик.json: title, base_name, article_number, full_describe, Link_arm, Основание, Газлифт, Ролики
 Ищем для base_name: Кресло Кремона хром -> mapped: Кремона хром
 Ищем для base_name: Кресло Кремона хром -> mapped: Кремона хром
 Ищем для base_name: Кресло Кремона хром -> mapped: Кремона хром
@@ -2761,7 +2761,7 @@
 Ищем для base_name: Кресло ИЗО/ЖТС со столиком -> mapped: Изо_жтс со столиком
 Ищем для base_name: Кресло ИЗО/ЖТС со столиком -> mapped: Изо_жтс со столиком
 Ищем для base_name: Кресло ИЗО ЖТС -> mapped: Кресло ИЗО ЖТС
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\armchair_personal\Изо_жтс +.json: title, base_name, article_number, full_describe, Link_arm, Подлокотники
+Обновлен C:\Users\UTFC\Documents\БалтМебель\to\products\armchair_personal\Изо_жтс +.json: title, base_name, article_number, full_describe, Link_arm, Подлокотники
 Ищем для base_name: Кресло ИЗО ЖТС -> mapped: Кресло ИЗО ЖТС
 Ищем для base_name: Кресло ИЗО ЖТС -> mapped: Кресло ИЗО ЖТС
 Ищем для base_name: Кресло ИЗО ЖТС -> mapped: Кресло ИЗО ЖТС
@@ -2839,7 +2839,7 @@
 Ищем для base_name: Кресло С-21 Шелл GTS хром Ср -> mapped: Шелл gts с-21 хром
 Ищем для base_name: Кресло С-21 Шелл GTS хром Ср -> mapped: Шелл gts с-21 хром
 Ищем для base_name: Кресло Кремона пластик -> mapped: Кремона пластик
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\armchair_personal\Кремона пластик.json: title, base_name, article_number, full_describe, Link_arm, Основание, Газлифт, Ролики
+Обновлен C:\Users\UTFC\Documents\БалтМебель\to\products\armchair_personal\Кремона пластик.json: title, base_name, article_number, full_describe, Link_arm, Основание, Газлифт, Ролики
 Ищем для base_name: Кресло Кремона пластик -> mapped: Кремона пластик
 Ищем для base_name: Кресло Кремона пластик -> mapped: Кремона пластик
 Ищем для base_name: Кресло Кремона пластик -> mapped: Кремона пластик
@@ -2850,7 +2850,7 @@
 Ищем для base_name: Кресло Кремона пластик -> mapped: Кремона пластик
 Ищем для base_name: Кресло Кремона пластик -> mapped: Кремона пластик
 Ищем для base_name: Кресло ИЗО/ЖТС + -> mapped: Изо_жтс +
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\armchair_personal\Изо_жтс +.json: title, base_name, article_number, full_describe, Link_arm, Подлокотники
+Обновлен C:\Users\UTFC\Documents\БалтМебель\to\products\armchair_personal\Изо_жтс +.json: title, base_name, article_number, full_describe, Link_arm, Подлокотники
 Ищем для base_name: Кресло ИЗО/ЖТС + -> mapped: Изо_жтс +
 Ищем для base_name: Кресло ИЗО/ЖТС + -> mapped: Изо_жтс +
 Ищем для base_name: Кресло ИЗО/ЖТС + -> mapped: Изо_жтс +
@@ -3011,7 +3011,7 @@
 Ищем для base_name: Кресло М-804 Ситро/Citro greyPL хром Ср -> mapped: Ситро м-804 gray ch
 Ищем для base_name: Кресло М-804 Ситро/Citro greyPL хром Ср -> mapped: Ситро м-804 gray ch
 Ищем для base_name: Кресло Стул кассира со спинкой L -> mapped: Стул кассира l б_п со спинкой
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\armchair_personal\Стул кассира l б_п со спинкой.json: title, base_name, article_number, full_describe, Link_arm, Газлифт, Особенности
+Обновлен C:\Users\UTFC\Documents\БалтМебель\to\products\armchair_personal\Стул кассира l б_п со спинкой.json: title, base_name, article_number, full_describe, Link_arm, Газлифт, Особенности
 Ищем для base_name: Кресло Стул кассира со спинкой L -> mapped: Стул кассира l б_п со спинкой
 Ищем для base_name: Кресло Стул кассира со спинкой L -> mapped: Стул кассира l б_п со спинкой
 Ищем для base_name: Кресло Стул кассира со спинкой L -> mapped: Стул кассира l б_п со спинкой
@@ -3055,7 +3055,7 @@
 Ищем для base_name: Кресло М-804 Ситро/Citro blackPL Ср -> mapped: Ситро м-804 black pl
 Ищем для base_name: Кресло М-804 Ситро/Citro blackPL Ср -> mapped: Ситро м-804 black pl
 Ищем для base_name: Кресло Стул кассира -> mapped: Кресло Стул кассира
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\armchair_personal\Стул кассира l б_п со спинкой.json: title, base_name, article_number, full_describe, Link_arm, Газлифт, Особенности
+Обновлен C:\Users\UTFC\Documents\БалтМебель\to\products\armchair_personal\Стул кассира l б_п со спинкой.json: title, base_name, article_number, full_describe, Link_arm, Газлифт, Особенности
 Ищем для base_name: Кресло Стул кассира -> mapped: Кресло Стул кассира
 Ищем для base_name: Кресло Стул кассира -> mapped: Кресло Стул кассира
 Ищем для base_name: Кресло Стул кассира -> mapped: Кресло Стул кассира
@@ -4065,7 +4065,7 @@
 Ищем для base_name: Кресло СН-500 Гарвард хром -> mapped: Гарвард сн-500 хром
 Ищем для base_name: Кресло СН-500 Гарвард хром -> mapped: Гарвард сн-500 хром
 Ищем для base_name: Кресло UTFC Астон М-711 белый пластик -> mapped: Астон м-711 с подголовником белый пластик
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\armchair_comfort\Астон м-711 с подголовником белый пластик.json: title, base_name, article_number, Link_arm, Подлокотники
+Обновлен C:\Users\UTFC\Documents\БалтМебель\to\products\armchair_comfort\Астон м-711 с подголовником белый пластик.json: title, base_name, article_number, Link_arm, Подлокотники
 Ищем для base_name: Кресло UTFC Астон М-711 белый пластик -> mapped: Астон м-711 с подголовником белый пластик
 Ищем для base_name: Кресло UTFC Астон М-711 белый пластик -> mapped: Астон м-711 с подголовником белый пластик
 Ищем для base_name: Кресло UTFC Астон М-711 белый пластик -> mapped: Астон м-711 с подголовником белый пластик
@@ -4122,7 +4122,7 @@
 Ищем для base_name: Кресло М-805 Йота/Yota grey PL -> mapped: Йота м-805 gray ch
 Ищем для base_name: Кресло М-805 Йота/Yota grey PL -> mapped: Йота м-805 gray ch
 Ищем для base_name: Кресло UTFC Астон М-711 черный пластик -> mapped: Астон м-711 с подголовником черный пластик
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\armchair_comfort\Астон м-711 с подголовником белый пластик.json: title, base_name, article_number, Link_arm, Подлокотники
+Обновлен C:\Users\UTFC\Documents\БалтМебель\to\products\armchair_comfort\Астон м-711 с подголовником белый пластик.json: title, base_name, article_number, Link_arm, Подлокотники
 Ищем для base_name: Кресло UTFC Астон М-711 черный пластик -> mapped: Астон м-711 с подголовником черный пластик
 Ищем для base_name: Кресло UTFC Астон М-711 черный пластик -> mapped: Астон м-711 с подголовником черный пластик
 Ищем для base_name: Кресло UTFC Астон М-711 черный пластик -> mapped: Астон м-711 с подголовником черный пластик
@@ -4491,8 +4491,10 @@
 Ищем для base_name: Кресло EPIK А-011-G 201 (темно-синий) -> mapped: Кресло EPIK А-011-G 201 (темно-синий)
 Ищем для base_name: Кресло EPIK А-130-G (черный) -> mapped: Epik a-130-g
 Ищем для base_name: Кресло EPIK А-130-G (черный) -> mapped: Epik a-130-g
-Ищем для base_name: Кресло EPIK А-130-G (коричневый) -> mapped: Кресло EPIK А-130-G (коричневый)
-Ищем для base_name: Кресло EPIK А-130-G (коричневый) -> mapped: Кресло EPIK А-130-G (коричневый)
+Ищем для base_name: Кресло EPIK А-130-G (коричневый) -> mapped: Epik a-130-g brown
+Обновлен C:\Users\UTFC\Documents\БалтМебель\to\products\armchair_epik\Epik a-130-g brown.json: title, base_name, article_number, Link_arm, color, variant_name, images, images, images, images, images, images, images, images, images, images, images, images, images, images
+Ищем для base_name: Кресло EPIK А-130-G (коричневый) -> mapped: Epik a-130-g brown
+Обновлен C:\Users\UTFC\Documents\БалтМебель\to\products\armchair_epik\Epik a-130-g brown.json: variant_name
 Ищем для base_name: Кресло EPIK А-001-МВ L235-187 (кремовый/ светло-серый) -> mapped: Кресло EPIK А-001-МВ L235-187 (кремовый/ светло-серый)
 Ищем для base_name: Кресло EPIK А-001-МВ L235-187 (кремовый/ светло-серый) -> mapped: Кресло EPIK А-001-МВ L235-187 (кремовый/ светло-серый)
 Ищем для base_name: Кресло EPIK А-011-G 169 (черный) -> mapped: Epik а-011-g
@@ -4505,8 +4507,10 @@
 Ищем для base_name: Кресло EPIK А-001-МВ 201-235 (темно-синий/ кремовый) -> mapped: Кресло EPIK А-001-МВ 201-235 (темно-синий/ кремовый)
 Ищем для base_name: Кресло EPIK А-007-G L200 (коричневый) -> mapped: Кресло EPIK А-007-G L200 (коричневый)
 Ищем для base_name: Кресло EPIK А-007-G L200 (коричневый) -> mapped: Кресло EPIK А-007-G L200 (коричневый)
-Ищем для base_name: Кресло EPIK А-130-G (серый) -> mapped: Кресло EPIK А-130-G (серый)
-Ищем для base_name: Кресло EPIK А-130-G (серый) -> mapped: Кресло EPIK А-130-G (серый)
+Ищем для base_name: Кресло EPIK А-130-G (серый) -> mapped: Epik a-130-g grey
+Обновлен C:\Users\UTFC\Documents\БалтМебель\to\products\armchair_epik\Epik a-130-g grey.json: title, base_name, article_number, Link_arm, color, variant_name, images, images, images, images, images, images, images, images, images, images, images, images, images, images
+Ищем для base_name: Кресло EPIK А-130-G (серый) -> mapped: Epik a-130-g grey
+Обновлен C:\Users\UTFC\Documents\БалтМебель\to\products\armchair_epik\Epik a-130-g grey.json: variant_name
 Ищем для base_name: Кресло EPIK А-155-G (черный) -> mapped: Epik a-155-g
 Ищем для base_name: Кресло EPIK А-155-G (черный) -> mapped: Epik a-155-g
 Ищем для base_name: Кресло EPIK К-430-СН -> mapped: Epik k-430-ch
@@ -4556,7 +4560,7 @@
 Ищем для base_name: Кресло UTFC Киото М-250 черный пластик -> mapped: Utfc киото м-250
 Ищем для base_name: Кресло UTFC Киото М-250 черный пластик -> mapped: Utfc киото м-250
 Ищем для base_name: Кресло Кремона хром -> mapped: Кремона хром
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\armchair_personal\Кремона пластик.json: title, base_name, article_number, full_describe, Link_arm, Основание, Газлифт, Ролики
+Обновлен C:\Users\UTFC\Documents\БалтМебель\to\products\armchair_personal\Кремона пластик.json: title, base_name, article_number, full_describe, Link_arm, Основание, Газлифт, Ролики
 Ищем для base_name: Кресло Кремона хром -> mapped: Кремона хром
 Ищем для base_name: Кресло Кремона хром -> mapped: Кремона хром
 Ищем для base_name: Кресло Кремона хром -> mapped: Кремона хром
@@ -4623,7 +4627,7 @@
 Ищем для base_name: Стул Парма 4К BL -> mapped: Парма 4к
 Ищем для base_name: Стул Парма 4К BL -> mapped: Парма 4к
 Ищем для base_name: Кресло Кремона пластик -> mapped: Кремона пластик
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\armchair_personal\Кремона пластик.json: title, base_name, article_number, full_describe, Link_arm, Основание, Газлифт, Ролики
+Обновлен C:\Users\UTFC\Documents\БалтМебель\to\products\armchair_personal\Кремона пластик.json: title, base_name, article_number, full_describe, Link_arm, Основание, Газлифт, Ролики
 Ищем для base_name: Кресло Кремона пластик -> mapped: Кремона пластик
 Ищем для base_name: Кресло Кремона пластик -> mapped: Кремона пластик
 Ищем для base_name: Кресло Кремона пластик -> mapped: Кремона пластик
@@ -4755,8 +4759,8 @@
 Ищем для base_name: Кресло UTFC Бремен М-123 алюминий -> mapped: Utfc бремен м-123 алюминий
 Ищем для base_name: Кресло UTFC Бремен М-123 алюминий -> mapped: Utfc бремен м-123 алюминий
 Ищем для base_name: Кресло UTFC Бремен М-123 алюминий -> mapped: Utfc бремен м-123 алюминий
-Ищем для base_name: Кресло EPIK А-130-G (коричневый) -> mapped: Кресло EPIK А-130-G (коричневый)
-Ищем для base_name: Кресло EPIK А-130-G (коричневый) -> mapped: Кресло EPIK А-130-G (коричневый)
+Ищем для base_name: Кресло EPIK А-130-G (коричневый) -> mapped: Epik a-130-g brown
+Ищем для base_name: Кресло EPIK А-130-G (коричневый) -> mapped: Epik a-130-g brown
 Ищем для base_name: Кресло UTFC Номи М-317 -> mapped: Utfc номи м-317
 Ищем для base_name: Кресло UTFC Номи М-317 -> mapped: Utfc номи м-317
 Ищем для base_name: Кресло UTFC Номи М-317 -> mapped: Utfc номи м-317
@@ -4771,8 +4775,8 @@
 Ищем для base_name: Кресло UTFC Мориока М-242 серый пластик -> mapped: Utfc мориока м-242
 Ищем для base_name: Кресло UTFC Онтарио М-405 Н/п пластик/хром -> mapped: Utfc онтарио м-405 н_п пластик хром
 Ищем для base_name: Кресло UTFC Онтарио М-405 Н/п пластик/хром -> mapped: Utfc онтарио м-405 н_п пластик хром
-Ищем для base_name: Кресло EPIK А-130-G (серый) -> mapped: Кресло EPIK А-130-G (серый)
-Ищем для base_name: Кресло EPIK А-130-G (серый) -> mapped: Кресло EPIK А-130-G (серый)
+Ищем для base_name: Кресло EPIK А-130-G (серый) -> mapped: Epik a-130-g grey
+Ищем для base_name: Кресло EPIK А-130-G (серый) -> mapped: Epik a-130-g grey
 Ищем для base_name: Кресло Чехол Шелл Ромб -> mapped: Кресло Чехол Шелл Ромб
 Ищем для base_name: Кресло Чехол Шелл Ромб -> mapped: Кресло Чехол Шелл Ромб
 Ищем для base_name: Кресло Чехол Шелл Ромб -> mapped: Кресло Чехол Шелл Ромб
@@ -4807,58 +4811,55 @@
 Ищем для base_name: Кресло Чехол Шелл Пик -> mapped: Кресло Чехол Шелл Пик
 
 === Итоги ===
-Обновлено родительских файлов: 65
-Не найдено соответствий: 43
+Обновлено родительских файлов: 69
+Не найдено соответствий: 40
 Список не найденных base_name:
-  - Кресло EPIK А-011-G 201 (темно-синий)
-  - Стул С-07 Шелл Софт СН
-  - Стул Самба BL со столиком
-  - Кресло EPIK А-130-G (коричневый)
-  - Кресло Честер GTS хром
-  - Кресло СН-303 Кайман Трио Н BL Ср
-  - Стул Самба soft BL
   - Кресло UTFC Мориока М-242 красный пластик
-  - Кресло EPIK А-011-G 200 (коричневый)
-  - Кресло UTFC Киото М-250 серый пластик
-  - Кресло СН-303 Кайман Трио В BL Ср
-  - Кресло EPIK А-007-G L170 (зеленый)
-  - Кресло EPIK А-007-G L200 (коричневый)
-  - Кресло EPIK А-155-G (темно-синий)
-  - Кресло UTFC Мориока М-242 зеленый пластик
-  - Стул С-07 Шелл Софт BL
-  - Стул Самба soft СН
-  - Кресло EPIK Е-222-G S001-115 (черный)
-  - Кресло Чехол Шелл Пик
-  - Кресло UTFC Санда М-207 черный пластик
-  - Кресло СН-301 Кайман Комфорт Н BL
-  - Кресло EPIK А-001-МВ 201-235 (темно-синий/ кремовый)
-  - Кресло UTFC Мориока М-242 черный пластик
-  - Кресло UTFC Осака М-201 красный пластик
-  - Кресло EPIK А-001-МВ 235-187 (кремовый/ светло-серый)
-  - Кресло EPIK А-112-G L113 (кэмел)
-  - Кресло Чехол Шелл Ромб
-  - Кресло СН-602 Соло Макс хром SoloСН Ср
-  - Кресло EPIK А-001-МВ L235-187 (кремовый/ светло-серый)
-  - Кресло EPIK А-001-GB L201-271 (темно-синий/ светло-серый)
-  - Кресло EPIK Р-700 PL TW69-128 (серый)
-  - Кресло EPIK Е-201-G М021 (серый)
-  - Кресло EPIK А-181-G L200 (коричневый)
-  - Стул Самба soft GR
-  - Кресло СН-303 Кайман Трио Н/п BL
-  - Стул С-07 Шелл Софт GR
-  - Кресло EPIK А-130-G (серый)
-  - Кресло EPIK А-155-G (песочный)
-  - Кресло EPIK Р-521-SB М021 (серый)
-  - Кресло СН-301 Кайман Комфорт Н/п BL
-  - Кресло UTFC Осака М-201 черный пластик
-  - Кресло EPIK Р-700 PLW TW69-128 (серый)
   - Кресло EPIK А-001-МВ L171-172 (темно-серый/ коричневый)
+  - Стул С-07 Шелл Софт BL
+  - Кресло EPIK А-181-G L200 (коричневый)
+  - Кресло EPIK А-155-G (темно-синий)
+  - Кресло UTFC Санда М-207 черный пластик
+  - Кресло СН-303 Кайман Трио В BL Ср
+  - Кресло UTFC Мориока М-242 зеленый пластик
+  - Стул Самба soft BL
+  - Кресло EPIK А-001-МВ 201-235 (темно-синий/ кремовый)
+  - Кресло EPIK Р-521-SB М021 (серый)
+  - Кресло СН-303 Кайман Трио Н/п BL
+  - Кресло Чехол Шелл Ромб
+  - Кресло EPIK А-011-G 201 (темно-синий)
+  - Кресло UTFC Осака М-201 черный пластик
+  - Стул С-07 Шелл Софт СН
+  - Стул Самба soft СН
+  - Кресло СН-303 Кайман Трио Н BL Ср
+  - Кресло EPIK А-007-G L200 (коричневый)
+  - Кресло EPIK А-011-G 200 (коричневый)
+  - Кресло EPIK А-001-GB L201-271 (темно-синий/ светло-серый)
+  - Кресло UTFC Мориока М-242 черный пластик
+  - Кресло EPIK Р-700 PLW TW69-128 (серый)
+  - Кресло Честер GTS хром
+  - Кресло EPIK А-155-G (песочный)
+  - Кресло Чехол Шелл Пик
+  - Кресло EPIK А-001-МВ 235-187 (кремовый/ светло-серый)
+  - Кресло EPIK А-007-G L170 (зеленый)
+  - Кресло UTFC Осака М-201 красный пластик
+  - Кресло СН-301 Кайман Комфорт Н/п BL
+  - Стул С-07 Шелл Софт GR
+  - Кресло EPIK А-112-G L113 (кэмел)
+  - Кресло EPIK Е-222-G S001-115 (черный)
+  - Кресло EPIK А-001-МВ L235-187 (кремовый/ светло-серый)
+  - Кресло EPIK Е-201-G М021 (серый)
+  - Кресло СН-602 Соло Макс хром SoloСН Ср
+  - Кресло СН-301 Кайман Комфорт Н BL
+  - Стул Самба soft GR
+  - Кресло UTFC Киото М-250 серый пластик
+  - Кресло EPIK Р-700 PL TW69-128 (серый)
 
 === Начало обогащения данных: enrich_parent.py ===
 
-Найдено родительских файлов: 355
+Найдено родительских файлов: 360
 Ищем для base_name: Кресло Кремона хром -> mapped: Кремона хром
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\armchair_personal\Кремона пластик.json: title, base_name, article_number, full_describe, Link_arm, Основание, Газлифт, Ролики
+Обновлен C:\Users\UTFC\Documents\БалтМебель\to\products\armchair_personal\Кремона пластик.json: title, base_name, article_number, full_describe, Link_arm, Основание, Газлифт, Ролики
 Ищем для base_name: Кресло Кремона хром -> mapped: Кремона хром
 Ищем для base_name: Кресло Кремона хром -> mapped: Кремона хром
 Ищем для base_name: Кресло Кремона хром -> mapped: Кремона хром
@@ -4945,7 +4946,7 @@
 Ищем для base_name: Стул Парма 4К BL -> mapped: Парма 4к
 Ищем для base_name: Стул Парма 4К BL -> mapped: Парма 4к
 Ищем для base_name: Кресло Кремона пластик -> mapped: Кремона пластик
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\armchair_personal\Кремона пластик.json: title, base_name, article_number, full_describe, Link_arm, Основание, Газлифт, Ролики
+Обновлен C:\Users\UTFC\Documents\БалтМебель\to\products\armchair_personal\Кремона пластик.json: title, base_name, article_number, full_describe, Link_arm, Основание, Газлифт, Ролики
 Ищем для base_name: Кресло Кремона пластик -> mapped: Кремона пластик
 Ищем для base_name: Кресло Кремона пластик -> mapped: Кремона пластик
 Ищем для base_name: Кресло Кремона пластик -> mapped: Кремона пластик
@@ -5164,7 +5165,7 @@
 Ищем для base_name: Кресло Чехол Шелл Пик -> mapped: Кресло Чехол Шелл Пик
 Ищем для base_name: Кресло Чехол Шелл Пик -> mapped: Кресло Чехол Шелл Пик
 Ищем для base_name: Стул Честер BL 4L -> mapped: Честер 4l bl
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\chair_visitors\Честер 4l bl.json: title, base_name, article_number, Link_arm, Основание
+Обновлен C:\Users\UTFC\Documents\БалтМебель\to\products\chair_visitors\Честер 4l bl.json: title, base_name, article_number, Link_arm, Основание
 Ищем для base_name: Стул Честер BL 4L -> mapped: Честер 4l bl
 Ищем для base_name: Стул Честер BL 4L -> mapped: Честер 4l bl
 Ищем для base_name: Стул Честер BL 4L -> mapped: Честер 4l bl
@@ -5344,7 +5345,7 @@
 Ищем для base_name: Стул С-07 Шелл Софт СН -> mapped: Стул С-07 Шелл Софт СН
 Ищем для base_name: Стул С-07 Шелл Софт СН -> mapped: Стул С-07 Шелл Софт СН
 Ищем для base_name: Стул Версаль BL -> mapped: Версаль
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\chair_cafe_and_bar\Версаль ch.json: title, base_name, article_number, full_describe, Link_arm, Основание
+Обновлен C:\Users\UTFC\Documents\БалтМебель\to\products\chair_cafe_and_bar\Версаль ch.json: title, base_name, article_number, full_describe, Link_arm, Основание
 Ищем для base_name: Стул Версаль BL -> mapped: Версаль
 Ищем для base_name: Стул Версаль BL -> mapped: Версаль
 Ищем для base_name: Стул Версаль BL -> mapped: Версаль
@@ -5360,7 +5361,7 @@
 Ищем для base_name: Стул Версаль BL -> mapped: Версаль
 Ищем для base_name: Стул Версаль BL -> mapped: Версаль
 Ищем для base_name: Стул Бистро BL -> mapped: Бистро bl
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\chair_cafe_and_bar\Бистро bl.json: title, base_name, article_number, full_describe, Link_arm, Основание
+Обновлен C:\Users\UTFC\Documents\БалтМебель\to\products\chair_cafe_and_bar\Бистро bl.json: title, base_name, article_number, full_describe, Link_arm, Основание
 Ищем для base_name: Стул Бистро BL -> mapped: Бистро bl
 Ищем для base_name: Стул Бистро BL -> mapped: Бистро bl
 Ищем для base_name: Стул Бистро BL -> mapped: Бистро bl
@@ -5382,7 +5383,7 @@
 Ищем для base_name: Стул Бистро BL -> mapped: Бистро bl
 Ищем для base_name: Стул Бистро BL -> mapped: Бистро bl
 Ищем для base_name: Стул Бистро СН -> mapped: Бистро
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\chair_cafe_and_bar\Бистро bl.json: title, base_name, article_number, full_describe, Link_arm, Основание
+Обновлен C:\Users\UTFC\Documents\БалтМебель\to\products\chair_cafe_and_bar\Бистро bl.json: title, base_name, article_number, full_describe, Link_arm, Основание
 Ищем для base_name: Стул Бистро СН -> mapped: Бистро
 Ищем для base_name: Стул Бистро СН -> mapped: Бистро
 Ищем для base_name: Стул Бистро СН -> mapped: Бистро
@@ -5433,7 +5434,7 @@
 Ищем для base_name: Стул Венус GR -> mapped: Венус gr
 Ищем для base_name: Стул Венус GR -> mapped: Венус gr
 Ищем для base_name: Стул Ванесса СН -> mapped: Ванесса
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\chair_cafe_and_bar\Ванесса bl.json: title, base_name, article_number, full_describe, Link_arm, Основание
+Обновлен C:\Users\UTFC\Documents\БалтМебель\to\products\chair_cafe_and_bar\Ванесса bl.json: title, base_name, article_number, full_describe, Link_arm, Основание
 Ищем для base_name: Стул Ванесса СН -> mapped: Ванесса
 Ищем для base_name: Стул Ванесса СН -> mapped: Ванесса
 Ищем для base_name: Стул Ванесса СН -> mapped: Ванесса
@@ -5461,7 +5462,7 @@
 Ищем для base_name: Стул Ванесса СН -> mapped: Ванесса
 Ищем для base_name: Стул Ванесса СН -> mapped: Ванесса
 Ищем для base_name: Стул Ванесса BL -> mapped: Ванесса bl
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\chair_cafe_and_bar\Ванесса bl.json: title, base_name, article_number, full_describe, Link_arm, Основание
+Обновлен C:\Users\UTFC\Documents\БалтМебель\to\products\chair_cafe_and_bar\Ванесса bl.json: title, base_name, article_number, full_describe, Link_arm, Основание
 Ищем для base_name: Стул Ванесса BL -> mapped: Ванесса bl
 Ищем для base_name: Стул Ванесса BL -> mapped: Ванесса bl
 Ищем для base_name: Стул Ванесса BL -> mapped: Ванесса bl
@@ -5488,7 +5489,7 @@
 Ищем для base_name: Стул складной Компакт Люкс 4Н BL -> mapped: Компакт люкс 4н складной
 Ищем для base_name: Стул складной Компакт Люкс 4Н BL -> mapped: Компакт люкс 4н складной
 Ищем для base_name: Стул Венус BL -> mapped: Венус
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\chair_cafe_and_bar\Венус ch.json: title, base_name, article_number, full_describe, Link_arm, Основание
+Обновлен C:\Users\UTFC\Documents\БалтМебель\to\products\chair_cafe_and_bar\Венус ch.json: title, base_name, article_number, full_describe, Link_arm, Основание
 Ищем для base_name: Стул Венус BL -> mapped: Венус
 Ищем для base_name: Стул Венус BL -> mapped: Венус
 Ищем для base_name: Стул Венус BL -> mapped: Венус
@@ -5513,7 +5514,7 @@
 Ищем для base_name: Стул Венус BL -> mapped: Венус
 Ищем для base_name: Стул Венус BL -> mapped: Венус
 Ищем для base_name: Стул Версаль СН -> mapped: Версаль ch
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\chair_cafe_and_bar\Версаль ch.json: title, base_name, article_number, full_describe, Link_arm, Основание
+Обновлен C:\Users\UTFC\Documents\БалтМебель\to\products\chair_cafe_and_bar\Версаль ch.json: title, base_name, article_number, full_describe, Link_arm, Основание
 Ищем для base_name: Стул Версаль СН -> mapped: Версаль ch
 Ищем для base_name: Стул Версаль СН -> mapped: Версаль ch
 Ищем для base_name: Стул Версаль СН -> mapped: Версаль ch
@@ -5561,7 +5562,7 @@
 Ищем для base_name: Стул С-07 Шелл Софт GR -> mapped: Стул С-07 Шелл Софт GR
 Ищем для base_name: Стул С-07 Шелл Софт GR -> mapped: Стул С-07 Шелл Софт GR
 Ищем для base_name: Стул Венус СН -> mapped: Венус ch
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\chair_cafe_and_bar\Венус ch.json: title, base_name, article_number, Link_arm, Основание
+Обновлен C:\Users\UTFC\Documents\БалтМебель\to\products\chair_cafe_and_bar\Венус ch.json: title, base_name, article_number, Link_arm, Основание
 Ищем для base_name: Стул Венус СН -> mapped: Венус ch
 Ищем для base_name: Стул Венус СН -> mapped: Венус ch
 Ищем для base_name: Стул Венус СН -> mapped: Венус ch
@@ -5586,7 +5587,7 @@
 Ищем для base_name: Стул Венус СН -> mapped: Венус ch
 Ищем для base_name: Стул Венус СН -> mapped: Венус ch
 Ищем для base_name: Стул Венус М СН -> mapped: Венус м
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\chair_cafe_and_bar\Венус ch.json: title, base_name, article_number, full_describe, Link_arm, Основание
+Обновлен C:\Users\UTFC\Documents\БалтМебель\to\products\chair_cafe_and_bar\Венус ch.json: title, base_name, article_number, full_describe, Link_arm, Основание
 Ищем для base_name: Стул Венус М СН -> mapped: Венус м
 Ищем для base_name: Стул Венус М СН -> mapped: Венус м
 Ищем для base_name: Стул Венус М СН -> mapped: Венус м
@@ -5617,7 +5618,7 @@
 Ищем для base_name: Стул Венус М СН -> mapped: Венус м
 Ищем для base_name: Стул Венус М СН -> mapped: Венус м
 Ищем для base_name: Стул София СН со столиком -> mapped: София со столиком
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\chair_visitors\София bl.json: title, base_name, article_number, full_describe, Link_arm
+Обновлен C:\Users\UTFC\Documents\БалтМебель\to\products\chair_visitors\София bl.json: title, base_name, article_number, full_describe, Link_arm
 Ищем для base_name: Стул София СН со столиком -> mapped: София со столиком
 Ищем для base_name: Стул София СН со столиком -> mapped: София со столиком
 Ищем для base_name: Стул София СН со столиком -> mapped: София со столиком
@@ -5646,7 +5647,7 @@
 Ищем для base_name: Стул София СН со столиком -> mapped: София со столиком
 Ищем для base_name: Стул София СН со столиком -> mapped: София со столиком
 Ищем для base_name: Стул Бистро М СН -> mapped: Бистро м
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\chair_cafe_and_bar\Бистро bl.json: title, base_name, article_number, full_describe, Link_arm, Основание
+Обновлен C:\Users\UTFC\Documents\БалтМебель\to\products\chair_cafe_and_bar\Бистро bl.json: title, base_name, article_number, full_describe, Link_arm, Основание
 Ищем для base_name: Стул Бистро М СН -> mapped: Бистро м
 Ищем для base_name: Стул Бистро М СН -> mapped: Бистро м
 Ищем для base_name: Стул Бистро М СН -> mapped: Бистро м
@@ -5698,7 +5699,7 @@
 Ищем для base_name: Стул КОРА BL -> mapped: Кора чёрный
 Ищем для base_name: Стул КОРА BL -> mapped: Кора чёрный
 Ищем для base_name: Стул Стандарт BL -> mapped: Стандарт
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\chair_visitors\Стандарт gr.json: title, base_name, article_number, Link_arm, Основание
+Обновлен C:\Users\UTFC\Documents\БалтМебель\to\products\chair_visitors\Стандарт gr.json: title, base_name, article_number, Link_arm, Основание
 Ищем для base_name: Стул Стандарт BL -> mapped: Стандарт
 Ищем для base_name: Стул Стандарт BL -> mapped: Стандарт
 Ищем для base_name: Стул Стандарт BL -> mapped: Стандарт
@@ -5738,7 +5739,7 @@
 Ищем для base_name: Стул Стандарт BL -> mapped: Стандарт
 Ищем для base_name: Стул Стандарт BL -> mapped: Стандарт
 Ищем для base_name: Стул София BL -> mapped: София bl
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\chair_visitors\София bl.json: title, base_name, article_number, full_describe, Link_arm, Основание
+Обновлен C:\Users\UTFC\Documents\БалтМебель\to\products\chair_visitors\София bl.json: title, base_name, article_number, full_describe, Link_arm, Основание
 Ищем для base_name: Стул София BL -> mapped: София bl
 Ищем для base_name: Стул София BL -> mapped: София bl
 Ищем для base_name: Стул София BL -> mapped: София bl
@@ -5887,14 +5888,14 @@
 Ищем для base_name: Стул Сильвия СН -> mapped: Cильвия хром
 Ищем для base_name: Стул Сильвия СН -> mapped: Cильвия хром
 Ищем для base_name: Стул ИЗО СН со столиком -> mapped: Изо со столиком
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\chair_visitors\Изо +.json: title, base_name, article_number, full_describe, Link_arm, Подлокотники
+Обновлен C:\Users\UTFC\Documents\БалтМебель\to\products\chair_visitors\Изо +.json: title, base_name, article_number, full_describe, Link_arm, Подлокотники
 Ищем для base_name: Стул ИЗО СН со столиком -> mapped: Изо со столиком
 Ищем для base_name: Стул ИЗО СН со столиком -> mapped: Изо со столиком
 Ищем для base_name: Стул ИЗО СН со столиком -> mapped: Изо со столиком
 Ищем для base_name: Стул ИЗО СН со столиком -> mapped: Изо со столиком
 Ищем для base_name: Стул ИЗО СН со столиком -> mapped: Изо со столиком
 Ищем для base_name: Стул ИЗО СН -> mapped: Изо
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\chair_visitors\Изо +.json: title, base_name, article_number, full_describe, Link_arm, Подлокотники
+Обновлен C:\Users\UTFC\Documents\БалтМебель\to\products\chair_visitors\Изо +.json: title, base_name, article_number, full_describe, Link_arm, Подлокотники
 Ищем для base_name: Стул ИЗО СН -> mapped: Изо
 Ищем для base_name: Стул ИЗО СН -> mapped: Изо
 Ищем для base_name: Стул ИЗО СН -> mapped: Изо
@@ -6014,7 +6015,7 @@
 Ищем для base_name: Стул КОРА СН -> mapped: Кора ch
 Ищем для base_name: Стул КОРА СН -> mapped: Кора ch
 Ищем для base_name: Форум BL -> mapped: Форум bl
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\chair_visitors\Форум bl.json: title, base_name, article_number, Link_arm, Основание
+Обновлен C:\Users\UTFC\Documents\БалтМебель\to\products\chair_visitors\Форум bl.json: title, base_name, article_number, Link_arm, Основание
 Ищем для base_name: Форум BL -> mapped: Форум bl
 Ищем для base_name: Форум BL -> mapped: Форум bl
 Ищем для base_name: Форум BL -> mapped: Форум bl
@@ -6046,7 +6047,7 @@
 Ищем для base_name: Стул Неон GR -> mapped: Неон gr
 Ищем для base_name: Стул Неон GR -> mapped: Неон gr
 Ищем для base_name: Стул Неон СН -> mapped: Неон
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\chair_visitors\Неон bl.json: title, base_name, article_number, Link_arm, Основание
+Обновлен C:\Users\UTFC\Documents\БалтМебель\to\products\chair_visitors\Неон bl.json: title, base_name, article_number, Link_arm, Основание
 Ищем для base_name: Стул Неон СН -> mapped: Неон
 Ищем для base_name: Стул Неон СН -> mapped: Неон
 Ищем для base_name: Стул Неон СН -> mapped: Неон
@@ -6075,7 +6076,7 @@
 Ищем для base_name: Стул Неон СН -> mapped: Неон
 Ищем для base_name: Стул Неон СН -> mapped: Неон
 Ищем для base_name: Табурет GR ПР -> mapped: Табурет пр
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\chair_cafe_and_bar\Табурет пр bl.json: title, base_name, article_number, full_describe, Link_arm, Основание
+Обновлен C:\Users\UTFC\Documents\БалтМебель\to\products\chair_cafe_and_bar\Табурет пр bl.json: title, base_name, article_number, full_describe, Link_arm, Основание
 Ищем для base_name: Табурет GR ПР -> mapped: Табурет пр
 Ищем для base_name: Табурет GR ПР -> mapped: Табурет пр
 Ищем для base_name: Табурет GR ПР -> mapped: Табурет пр
@@ -6119,7 +6120,7 @@
 Ищем для base_name: Стул Честер BL 4L -> mapped: Честер 4l bl
 Ищем для base_name: Стул Честер BL 4L -> mapped: Честер 4l bl
 Ищем для base_name: Стул Неон BL -> mapped: Неон bl
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\chair_visitors\Неон bl.json: title, base_name, article_number, Link_arm, Основание
+Обновлен C:\Users\UTFC\Documents\БалтМебель\to\products\chair_visitors\Неон bl.json: title, base_name, article_number, Link_arm, Основание
 Ищем для base_name: Стул Неон BL -> mapped: Неон bl
 Ищем для base_name: Стул Неон BL -> mapped: Неон bl
 Ищем для base_name: Стул Неон BL -> mapped: Неон bl
@@ -6130,7 +6131,7 @@
 Ищем для base_name: Стул Неон BL -> mapped: Неон bl
 Ищем для base_name: Стул Неон BL -> mapped: Неон bl
 Ищем для base_name: Табурет GR КР -> mapped: Табурет кр
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\chair_cafe_and_bar\Табурет кр bl.json: title, base_name, article_number, full_describe, Link_arm, Основание
+Обновлен C:\Users\UTFC\Documents\БалтМебель\to\products\chair_cafe_and_bar\Табурет кр bl.json: title, base_name, article_number, full_describe, Link_arm, Основание
 Ищем для base_name: Табурет GR КР -> mapped: Табурет кр
 Ищем для base_name: Табурет GR КР -> mapped: Табурет кр
 Ищем для base_name: Табурет GR КР -> mapped: Табурет кр
@@ -6140,7 +6141,7 @@
 Ищем для base_name: Табурет GR КР -> mapped: Табурет кр
 Ищем для base_name: Табурет GR КР -> mapped: Табурет кр
 Ищем для base_name: Табурет BL КР -> mapped: Табурет кр bl
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\chair_cafe_and_bar\Табурет кр bl.json: title, base_name, article_number, full_describe, Link_arm, Основание
+Обновлен C:\Users\UTFC\Documents\БалтМебель\to\products\chair_cafe_and_bar\Табурет кр bl.json: title, base_name, article_number, full_describe, Link_arm, Основание
 Ищем для base_name: Табурет BL КР -> mapped: Табурет кр bl
 Ищем для base_name: Табурет BL КР -> mapped: Табурет кр bl
 Ищем для base_name: Табурет BL КР -> mapped: Табурет кр bl
@@ -6189,7 +6190,7 @@
 Ищем для base_name: Стул Марко СН -> mapped: Марко
 Ищем для base_name: Стул Марко СН -> mapped: Марко
 Ищем для base_name: Секция ИЗО/2 -> mapped: Изо-2
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\chair_visitors\Изо-2.json: title, base_name, article_number, full_describe, Link_arm, Основание
+Обновлен C:\Users\UTFC\Documents\БалтМебель\to\products\chair_visitors\Изо-2.json: title, base_name, article_number, full_describe, Link_arm, Основание
 Ищем для base_name: Секция ИЗО/2 -> mapped: Изо-2
 Ищем для base_name: Секция ИЗО/2 -> mapped: Изо-2
 Ищем для base_name: Секция ИЗО/2 -> mapped: Изо-2
@@ -6199,7 +6200,7 @@
 Ищем для base_name: Секция ИЗО/2 -> mapped: Изо-2
 Ищем для base_name: Секция ИЗО/2 -> mapped: Изо-2
 Ищем для base_name: Стул Стандарт GR -> mapped: Стандарт gr
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\chair_visitors\Стандарт gr.json: title, base_name, article_number, Link_arm, Основание
+Обновлен C:\Users\UTFC\Documents\БалтМебель\to\products\chair_visitors\Стандарт gr.json: title, base_name, article_number, Link_arm, Основание
 Ищем для base_name: Стул Стандарт GR -> mapped: Стандарт gr
 Ищем для base_name: Стул Бистро GR -> mapped: Бистро gr
 Ищем для base_name: Стул Бистро GR -> mapped: Бистро gr
@@ -6297,7 +6298,7 @@
 Ищем для base_name: Стул ИЗО BL пластик -> mapped: Изо пластик bl
 Ищем для base_name: Стул ИЗО BL пластик -> mapped: Изо пластик bl
 Ищем для base_name: Секция ИЗО/3 -> mapped: Изо-3
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\chair_visitors\Изо-2.json: title, base_name, article_number, full_describe, Link_arm, Основание
+Обновлен C:\Users\UTFC\Documents\БалтМебель\to\products\chair_visitors\Изо-2.json: title, base_name, article_number, full_describe, Link_arm, Основание
 Ищем для base_name: Секция ИЗО/3 -> mapped: Изо-3
 Ищем для base_name: Секция ИЗО/3 -> mapped: Изо-3
 Ищем для base_name: Секция ИЗО/3 -> mapped: Изо-3
@@ -6334,7 +6335,7 @@
 Ищем для base_name: Табурет СН КР -> mapped: Табурет кр ch
 Ищем для base_name: Табурет СН КР -> mapped: Табурет кр ch
 Ищем для base_name: Табурет BL ПР -> mapped: Табурет пр bl
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\chair_cafe_and_bar\Табурет пр bl.json: title, base_name, article_number, full_describe, Link_arm, Основание
+Обновлен C:\Users\UTFC\Documents\БалтМебель\to\products\chair_cafe_and_bar\Табурет пр bl.json: title, base_name, article_number, full_describe, Link_arm, Основание
 Ищем для base_name: Табурет BL ПР -> mapped: Табурет пр bl
 Ищем для base_name: Табурет BL ПР -> mapped: Табурет пр bl
 Ищем для base_name: Табурет BL ПР -> mapped: Табурет пр bl
@@ -6370,63 +6371,37 @@
 Ищем для base_name: Стул Чико BL 4L -> mapped: Чико 4l bl
 Ищем для base_name: Стул Чико BL 4L -> mapped: Чико 4l bl
 Ищем для base_name: Стул Самба BL со столиком -> mapped: Самба со столиком bl
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\chair_visitors\Самба со столиком bl.json: title, base_name, article_number, full_describe, Link_arm, Основание, variant_name, images, images, images, images, images, images, images, images, images, images, images, images, images, images, images
 Ищем для base_name: Стул Самба BL со столиком -> mapped: Самба со столиком bl
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\chair_visitors\Самба со столиком bl.json: color, variant_name
 Ищем для base_name: Стул Самба BL со столиком -> mapped: Самба со столиком bl
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\chair_visitors\Самба со столиком bl.json: variant_name
 Ищем для base_name: Стул Самба BL со столиком -> mapped: Самба со столиком bl
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\chair_visitors\Самба со столиком bl.json: variant_name
 Ищем для base_name: Стул Самба BL со столиком -> mapped: Самба со столиком bl
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\chair_visitors\Самба со столиком bl.json: color, variant_name
 Ищем для base_name: Стул Самба BL со столиком -> mapped: Самба со столиком bl
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\chair_visitors\Самба со столиком bl.json: variant_name
 Ищем для base_name: Стул Самба BL со столиком -> mapped: Самба со столиком bl
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\chair_visitors\Самба со столиком bl.json: variant_name
 Ищем для base_name: Стул Самба BL со столиком -> mapped: Самба со столиком bl
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\chair_visitors\Самба со столиком bl.json: variant_name
 Ищем для base_name: Стул Самба BL со столиком -> mapped: Самба со столиком bl
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\chair_visitors\Самба со столиком bl.json: variant_name
 Ищем для base_name: Стул Самба BL со столиком -> mapped: Самба со столиком bl
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\chair_visitors\Самба со столиком bl.json: variant_name
 Ищем для base_name: Стул Самба BL со столиком -> mapped: Самба со столиком bl
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\chair_visitors\Самба со столиком bl.json: variant_name
 Ищем для base_name: Стул Самба BL со столиком -> mapped: Самба со столиком bl
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\chair_visitors\Самба со столиком bl.json: color, variant_name
 Ищем для base_name: Стул Самба BL со столиком -> mapped: Самба со столиком bl
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\chair_visitors\Самба со столиком bl.json: variant_name
 Ищем для base_name: Стул Самба BL со столиком -> mapped: Самба со столиком bl
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\chair_visitors\Самба со столиком bl.json: variant_name
 Ищем для base_name: Стул Самба BL со столиком -> mapped: Самба со столиком bl
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\chair_visitors\Самба со столиком bl.json: variant_name
 Ищем для base_name: Стул Самба BL со столиком -> mapped: Самба со столиком bl
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\chair_visitors\Самба со столиком bl.json: variant_name
 Ищем для base_name: Стул Самба BL со столиком -> mapped: Самба со столиком bl
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\chair_visitors\Самба со столиком bl.json: variant_name
 Ищем для base_name: Стул Самба BL со столиком -> mapped: Самба со столиком bl
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\chair_visitors\Самба со столиком bl.json: variant_name
 Ищем для base_name: Стул Самба BL со столиком -> mapped: Самба со столиком bl
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\chair_visitors\Самба со столиком bl.json: variant_name
 Ищем для base_name: Стул Самба BL со столиком -> mapped: Самба со столиком bl
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\chair_visitors\Самба со столиком bl.json: variant_name
 Ищем для base_name: Стул Самба BL со столиком -> mapped: Самба со столиком bl
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\chair_visitors\Самба со столиком bl.json: variant_name
 Ищем для base_name: Стул Самба BL со столиком -> mapped: Самба со столиком bl
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\chair_visitors\Самба со столиком bl.json: variant_name
 Ищем для base_name: Стул Самба BL со столиком -> mapped: Самба со столиком bl
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\chair_visitors\Самба со столиком bl.json: variant_name
 Ищем для base_name: Стул Самба BL со столиком -> mapped: Самба со столиком bl
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\chair_visitors\Самба со столиком bl.json: variant_name
 Ищем для base_name: Стул Самба BL со столиком -> mapped: Самба со столиком bl
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\chair_visitors\Самба со столиком bl.json: variant_name
 Ищем для base_name: Стул Самба BL со столиком -> mapped: Самба со столиком bl
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\chair_visitors\Самба со столиком bl.json: variant_name
 Ищем для base_name: Стул Самба BL -> mapped: Самба bl
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\chair_visitors\Самба bl.json: title, base_name, article_number, Link_arm, Основание
+Обновлен C:\Users\UTFC\Documents\БалтМебель\to\products\chair_visitors\Самба bl.json: title, base_name, article_number, Link_arm, Основание
 Ищем для base_name: Стул Самба BL -> mapped: Самба bl
 Ищем для base_name: Стул Самба BL -> mapped: Самба bl
 Ищем для base_name: Стул София СН -> mapped: София
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\chair_visitors\София bl.json: title, base_name, article_number, full_describe, Link_arm, Основание
+Обновлен C:\Users\UTFC\Documents\БалтМебель\to\products\chair_visitors\София bl.json: title, base_name, article_number, full_describe, Link_arm, Основание
 Ищем для base_name: Стул София СН -> mapped: София
 Ищем для base_name: Стул София СН -> mapped: София
 Ищем для base_name: Стул София СН -> mapped: София
@@ -6455,7 +6430,7 @@
 Ищем для base_name: Стул Самба soft GR -> mapped: Стул Самба soft GR
 Ищем для base_name: Стул Самба soft GR -> mapped: Стул Самба soft GR
 Ищем для base_name: Стул Самба soft СН со столиком -> mapped: Самба со столиком
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\chair_visitors\Самба bl.json: title, base_name, article_number, full_describe, Link_arm, Основание
+Обновлен C:\Users\UTFC\Documents\БалтМебель\to\products\chair_visitors\Самба bl.json: title, base_name, article_number, full_describe, Link_arm, Основание
 Ищем для base_name: Стул Самба soft СН со столиком -> mapped: Самба со столиком
 Ищем для base_name: Стул Самба soft СН со столиком -> mapped: Самба со столиком
 Ищем для base_name: Стул Самба soft СН со столиком -> mapped: Самба со столиком
@@ -6487,7 +6462,7 @@
 Ищем для base_name: Стул С-07 Шелл СН -> mapped: Шелл с-07
 Ищем для base_name: Стул С-07 Шелл СН -> mapped: Шелл с-07
 Ищем для base_name: Стул Самба СН -> mapped: Самба
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\chair_visitors\Самба bl.json: title, base_name, article_number, full_describe, Link_arm
+Обновлен C:\Users\UTFC\Documents\БалтМебель\to\products\chair_visitors\Самба bl.json: title, base_name, article_number, full_describe, Link_arm
 Ищем для base_name: Стул Самба СН -> mapped: Самба
 Ищем для base_name: Стул Самба СН -> mapped: Самба
 Ищем для base_name: Стул Самба СН -> mapped: Самба
@@ -6540,7 +6515,7 @@
 Ищем для base_name: Стул Самба GR -> mapped: Самба gr
 Ищем для base_name: Стул Самба GR -> mapped: Самба gr
 Ищем для base_name: Стул Честер СН 4L -> mapped: Честер 4l хром
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\chair_visitors\Честер 4l bl.json: title, base_name, article_number, Link_arm, Основание
+Обновлен C:\Users\UTFC\Documents\БалтМебель\to\products\chair_visitors\Честер 4l bl.json: title, base_name, article_number, Link_arm, Основание
 Ищем для base_name: Стул Честер СН 4L -> mapped: Честер 4l хром
 Ищем для base_name: Стул Честер СН 4L -> mapped: Честер 4l хром
 Ищем для base_name: Стул Честер СН 4L -> mapped: Честер 4l хром
@@ -6571,7 +6546,7 @@
 Ищем для base_name: Стул Честер СН -> mapped: Честер хром
 Ищем для base_name: Стул Честер СН -> mapped: Честер хром
 Ищем для base_name: Форум СН -> mapped: Форум
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\chair_visitors\Форум bl.json: title, base_name, article_number, Link_arm, Основание
+Обновлен C:\Users\UTFC\Documents\БалтМебель\to\products\chair_visitors\Форум bl.json: title, base_name, article_number, Link_arm, Основание
 Ищем для base_name: Форум СН -> mapped: Форум
 Ищем для base_name: Форум СН -> mapped: Форум
 Ищем для base_name: Форум СН -> mapped: Форум
@@ -6880,10 +6855,10 @@
 Ищем для base_name: Кресло Идра Н/п пластик -> mapped: Идра н_п пластик
 Ищем для base_name: Кресло Идра Н/п пластик -> mapped: Идра н_п пластик
 Ищем для base_name: Кресло Атлант В пластик -> mapped: Атлант в пластик
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\armchair_rukovoditel\Атлант в дерево.json: title, base_name, article_number, full_describe, Link_arm, Подлокотники
+Обновлен C:\Users\UTFC\Documents\БалтМебель\to\products\armchair_rukovoditel\Атлант в дерево.json: title, base_name, article_number, full_describe, Link_arm, Подлокотники
 Ищем для base_name: Кресло Атлант В пластик -> mapped: Атлант в пластик
 Ищем для base_name: Кресло Атлант В дерево -> mapped: Атлант в дерево
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\armchair_rukovoditel\Атлант в дерево.json: title, base_name, article_number, full_describe, Link_arm, Основание, Подлокотники, Ролики
+Обновлен C:\Users\UTFC\Documents\БалтМебель\to\products\armchair_rukovoditel\Атлант в дерево.json: title, base_name, article_number, full_describe, Link_arm, Основание, Подлокотники, Ролики
 Ищем для base_name: Кресло Атлант В дерево -> mapped: Атлант в дерево
 Ищем для base_name: Кресло Атлант В дерево -> mapped: Атлант в дерево
 Ищем для base_name: Кресло Атлант В дерево -> mapped: Атлант в дерево
@@ -6893,7 +6868,7 @@
 Ищем для base_name: Кресло Атлант В дерево -> mapped: Атлант в дерево
 Ищем для base_name: Кресло Атлант В дерево -> mapped: Атлант в дерево
 Ищем для base_name: Кресло Орион В дерево -> mapped: Орион в дерево
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\armchair_rukovoditel\Орион в дерево.json: title, base_name, article_number, full_describe, Link_arm, Основание, Подлокотники, Ролики
+Обновлен C:\Users\UTFC\Documents\БалтМебель\to\products\armchair_rukovoditel\Орион в дерево.json: title, base_name, article_number, full_describe, Link_arm, Основание, Подлокотники, Ролики
 Ищем для base_name: Кресло Орион В дерево -> mapped: Орион в дерево
 Ищем для base_name: Кресло Артекс В хром -> mapped: Артекс в хром
 Ищем для base_name: Кресло Артекс В хром -> mapped: Артекс в хром
@@ -6911,7 +6886,7 @@
 Ищем для base_name: Кресло Атлант В/п хром -> mapped: Атлант в_п хром
 Ищем для base_name: Кресло Атлант В/п хром -> mapped: Атлант в_п хром
 Ищем для base_name: Кресло Атлант В хром -> mapped: Атлант в хром
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\armchair_rukovoditel\Атлант в дерево.json: title, base_name, article_number, full_describe, Link_arm, Основание, Подлокотники, Ролики
+Обновлен C:\Users\UTFC\Documents\БалтМебель\to\products\armchair_rukovoditel\Атлант в дерево.json: title, base_name, article_number, full_describe, Link_arm, Основание, Подлокотники, Ролики
 Ищем для base_name: Кресло Атлант В хром -> mapped: Атлант в хром
 Ищем для base_name: Кресло Атлант В хром -> mapped: Атлант в хром
 Ищем для base_name: Кресло Атлант В хром -> mapped: Атлант в хром
@@ -6946,11 +6921,11 @@
 Ищем для base_name: Кресло СН-686 Орегон В пластик-люкс 727 -> mapped: Орегон сн-686 в пластик-люкс 727
 Ищем для base_name: Кресло СН-686 Орегон В пластик-люкс 727 -> mapped: Орегон сн-686 в пластик-люкс 727
 Ищем для base_name: Кресло Орион В пластик -> mapped: Орион в пластик
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\armchair_rukovoditel\Орион в дерево.json: title, base_name, article_number, full_describe, Link_arm, Основание, Подлокотники, Ролики
+Обновлен C:\Users\UTFC\Documents\БалтМебель\to\products\armchair_rukovoditel\Орион в дерево.json: title, base_name, article_number, full_describe, Link_arm, Основание, Подлокотники, Ролики
 Ищем для base_name: Кресло Орион В пластик -> mapped: Орион в пластик
 Ищем для base_name: Кресло Орион В пластик -> mapped: Орион в пластик
 Ищем для base_name: Кресло Орион В хром -> mapped: Орион в хром
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\armchair_rukovoditel\Орион в дерево.json: title, base_name, article_number, full_describe, Link_arm, Основание, Подлокотники
+Обновлен C:\Users\UTFC\Documents\БалтМебель\to\products\armchair_rukovoditel\Орион в дерево.json: title, base_name, article_number, full_describe, Link_arm, Основание, Подлокотники
 Ищем для base_name: Кресло Орион В хром -> mapped: Орион в хром
 Ищем для base_name: Кресло Орион В хром -> mapped: Орион в хром
 Ищем для base_name: Кресло Орион В хром -> mapped: Орион в хром
@@ -6963,7 +6938,7 @@
 Ищем для base_name: Кресло Орион В хром -> mapped: Орион в хром
 Ищем для base_name: Кресло Орион В хром -> mapped: Орион в хром
 Ищем для base_name: Кресло Атлант В пластик-люкс 727 -> mapped: Атлант в пластик-люкс 727
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\armchair_rukovoditel\Атлант в дерево.json: title, base_name, article_number, full_describe, Link_arm, Основание, Подлокотники
+Обновлен C:\Users\UTFC\Documents\БалтМебель\to\products\armchair_rukovoditel\Атлант в дерево.json: title, base_name, article_number, full_describe, Link_arm, Основание, Подлокотники
 Ищем для base_name: Кресло Атлант В пластик-люкс 727 -> mapped: Атлант в пластик-люкс 727
 Ищем для base_name: Кресло Атлант В пластик-люкс 727 -> mapped: Атлант в пластик-люкс 727
 Ищем для base_name: Кресло Атлант В пластик-люкс 727 -> mapped: Атлант в пластик-люкс 727
@@ -6976,7 +6951,7 @@
 Ищем для base_name: Кресло Орион Н/п дерево -> mapped: Орион н_п дерево
 Ищем для base_name: Кресло Орион Н/п дерево -> mapped: Орион н_п дерево
 Ищем для base_name: Кресло Пилот В пластик -> mapped: Пилот в пластик
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\armchair_rukovoditel\Пилот в пластик-люкс 727.json: title, base_name, article_number, full_describe, Link_arm, Подлокотники
+Обновлен C:\Users\UTFC\Documents\БалтМебель\to\products\armchair_rukovoditel\Пилот в пластик-люкс 727.json: title, base_name, article_number, full_describe, Link_arm, Подлокотники
 Ищем для base_name: Кресло Пилот В пластик -> mapped: Пилот в пластик
 Ищем для base_name: Кресло Пилот В пластик -> mapped: Пилот в пластик
 Ищем для base_name: Кресло Пилот Н/п пластик -> mapped: Пилот н_п пластик
@@ -6984,17 +6959,17 @@
 Ищем для base_name: Кресло Пилот Н/п пластик -> mapped: Пилот н_п пластик
 Ищем для base_name: Кресло Пилот Н/п пластик -> mapped: Пилот н_п пластик
 Ищем для base_name: Кресло Премьер В пластик-люкс 727 -> mapped: Премьер в пластик-люкс 727
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\armchair_rukovoditel\Премьер в пластик 727.json: title, base_name, article_number, full_describe, Link_arm, Подлокотники
+Обновлен C:\Users\UTFC\Documents\БалтМебель\to\products\armchair_rukovoditel\Премьер в пластик 727.json: title, base_name, article_number, full_describe, Link_arm, Подлокотники
 Ищем для base_name: Кресло Премьер В пластик-люкс 727 -> mapped: Премьер в пластик-люкс 727
 Ищем для base_name: Кресло Премьер В пластик-люкс 727 -> mapped: Премьер в пластик-люкс 727
 Ищем для base_name: Кресло Премьер В пластик-люкс 727 -> mapped: Премьер в пластик-люкс 727
 Ищем для base_name: Кресло Пилот Н пластик-люкс 727 -> mapped: Пилот н пластик-люкс 727
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\armchair_rukovoditel\Пилот в пластик-люкс 727.json: title, base_name, article_number, full_describe, Link_arm, Подлокотники
+Обновлен C:\Users\UTFC\Documents\БалтМебель\to\products\armchair_rukovoditel\Пилот в пластик-люкс 727.json: title, base_name, article_number, full_describe, Link_arm, Подлокотники
 Ищем для base_name: Кресло Пилот Н пластик-люкс 727 -> mapped: Пилот н пластик-люкс 727
 Ищем для base_name: Кресло Пилот Н пластик-люкс 727 -> mapped: Пилот н пластик-люкс 727
 Ищем для base_name: Кресло Пилот Н пластик-люкс 727 -> mapped: Пилот н пластик-люкс 727
 Ищем для base_name: Кресло Премьер В пластик 727 -> mapped: Премьер в пластик 727
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\armchair_rukovoditel\Премьер в пластик 727.json: title, base_name, article_number, full_describe, Link_arm, Подлокотники
+Обновлен C:\Users\UTFC\Documents\БалтМебель\to\products\armchair_rukovoditel\Премьер в пластик 727.json: title, base_name, article_number, full_describe, Link_arm, Подлокотники
 Ищем для base_name: Кресло Премьер В пластик 727 -> mapped: Премьер в пластик 727
 Ищем для base_name: Кресло Премьер В пластик 727 -> mapped: Премьер в пластик 727
 Ищем для base_name: Кресло Премьер В пластик 727 -> mapped: Премьер в пластик 727
@@ -7074,7 +7049,7 @@
 Ищем для base_name: Кресло Эльф В пластик 727 -> mapped: Эльф в пластик 727
 Ищем для base_name: Кресло Эльф В пластик 727 -> mapped: Эльф в пластик 727
 Ищем для base_name: Кресло Пилот Н пластик -> mapped: Пилот н пластик
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\armchair_rukovoditel\Пилот в пластик-люкс 727.json: title, base_name, article_number, Link_arm, Подлокотники
+Обновлен C:\Users\UTFC\Documents\БалтМебель\to\products\armchair_rukovoditel\Пилот в пластик-люкс 727.json: title, base_name, article_number, Link_arm, Подлокотники
 Ищем для base_name: Кресло Пилот Н пластик -> mapped: Пилот н пластик
 Ищем для base_name: Кресло Пилот Н пластик -> mapped: Пилот н пластик
 Ищем для base_name: Кресло Пилот Н пластик -> mapped: Пилот н пластик
@@ -7090,7 +7065,7 @@
 Ищем для base_name: Кресло Пилот Н пластик -> mapped: Пилот н пластик
 Ищем для base_name: Кресло Пилот Н пластик -> mapped: Пилот н пластик
 Ищем для base_name: Кресло Пилот В пластик-люкс 727 -> mapped: Пилот в пластик-люкс 727
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\armchair_rukovoditel\Пилот в пластик-люкс 727.json: title, base_name, article_number, full_describe, Link_arm, Подлокотники
+Обновлен C:\Users\UTFC\Documents\БалтМебель\to\products\armchair_rukovoditel\Пилот в пластик-люкс 727.json: title, base_name, article_number, full_describe, Link_arm, Подлокотники
 Ищем для base_name: Кресло Пилот В пластик-люкс 727 -> mapped: Пилот в пластик-люкс 727
 Ищем для base_name: Кресло Альтаир В пластик 727 -> mapped: Альтаир в пластик 727
 Ищем для base_name: Кресло Альтаир В пластик 727 -> mapped: Альтаир в пластик 727
@@ -7208,7 +7183,7 @@
 Ищем для base_name: Кресло СН-602 Соло Макс пластик SoloBL Ср -> mapped: Соло max сн-601 пластик
 Ищем для base_name: Кресло СН-602 Соло Макс пластик SoloBL Ср -> mapped: Соло max сн-601 пластик
 Ищем для base_name: Кресло Идра В дерево -> mapped: Идра в дерево
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\armchair_rukovoditel\Идра бюджет в пластик 727.json: title, base_name, article_number, full_describe, Link_arm, Основание, Подлокотники, Ролики
+Обновлен C:\Users\UTFC\Documents\БалтМебель\to\products\armchair_rukovoditel\Идра бюджет в пластик 727.json: title, base_name, article_number, full_describe, Link_arm, Основание, Подлокотники, Ролики
 Ищем для base_name: Кресло Идра В дерево -> mapped: Идра в дерево
 Ищем для base_name: Кресло Идра В дерево -> mapped: Идра в дерево
 Ищем для base_name: Кресло Идра В дерево -> mapped: Идра в дерево
@@ -7229,7 +7204,7 @@
 Ищем для base_name: Кресло Комо Н/п дерево -> mapped: Комо н_п дерево
 Ищем для base_name: Кресло Комо Н/п дерево -> mapped: Комо н_п дерево
 Ищем для base_name: Кресло Комо В хром -> mapped: Комо в хром
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\armchair_rukovoditel\Комо бюджет в пластик 727.json: title, base_name, article_number, full_describe, Link_arm, Основание, Подлокотники
+Обновлен C:\Users\UTFC\Documents\БалтМебель\to\products\armchair_rukovoditel\Комо бюджет в пластик 727.json: title, base_name, article_number, full_describe, Link_arm, Основание, Подлокотники
 Ищем для base_name: Кресло Комо В хром -> mapped: Комо в хром
 Ищем для base_name: Кресло Комо В хром -> mapped: Комо в хром
 Ищем для base_name: Кресло Комо В хром -> mapped: Комо в хром
@@ -7239,7 +7214,7 @@
 Ищем для base_name: Кресло Комо В хром -> mapped: Комо в хром
 Ищем для base_name: Кресло Комо В хром -> mapped: Комо в хром
 Ищем для base_name: Кресло Комо Бюджет В пластик 727 -> mapped: Комо бюджет в пластик 727
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\armchair_rukovoditel\Комо бюджет в пластик 727.json: title, base_name, article_number, full_describe, Link_arm, Основание, Подлокотники
+Обновлен C:\Users\UTFC\Documents\БалтМебель\to\products\armchair_rukovoditel\Комо бюджет в пластик 727.json: title, base_name, article_number, full_describe, Link_arm, Основание, Подлокотники
 Ищем для base_name: Кресло Комо Бюджет В пластик 727 -> mapped: Комо бюджет в пластик 727
 Ищем для base_name: Кресло Комо Бюджет В пластик 727 -> mapped: Комо бюджет в пластик 727
 Ищем для base_name: Кресло Комо Бюджет В пластик 727 -> mapped: Комо бюджет в пластик 727
@@ -7268,7 +7243,7 @@
 Ищем для base_name: Кресло Комо Н/п пластик -> mapped: Комо н_п пластик
 Ищем для base_name: Кресло Комо Н/п пластик -> mapped: Комо н_п пластик
 Ищем для base_name: Кресло Идра В пластик -> mapped: Идра в пластик
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\armchair_rukovoditel\Идра бюджет в пластик 727.json: title, base_name, article_number, full_describe, Link_arm, Основание, Подлокотники, Ролики
+Обновлен C:\Users\UTFC\Documents\БалтМебель\to\products\armchair_rukovoditel\Идра бюджет в пластик 727.json: title, base_name, article_number, full_describe, Link_arm, Основание, Подлокотники, Ролики
 Ищем для base_name: Кресло Идра В пластик -> mapped: Идра в пластик
 Ищем для base_name: Кресло Идра В пластик -> mapped: Идра в пластик
 Ищем для base_name: Кресло Идра В пластик -> mapped: Идра в пластик
@@ -7289,7 +7264,7 @@
 Ищем для base_name: Кресло Идра В пластик -> mapped: Идра в пластик
 Ищем для base_name: Кресло Идра В пластик -> mapped: Идра в пластик
 Ищем для base_name: Кресло Комо В дерево -> mapped: Комо в дерево
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\armchair_rukovoditel\Комо бюджет в пластик 727.json: title, base_name, article_number, full_describe, Link_arm, Основание, Подлокотники, Ролики
+Обновлен C:\Users\UTFC\Documents\БалтМебель\to\products\armchair_rukovoditel\Комо бюджет в пластик 727.json: title, base_name, article_number, full_describe, Link_arm, Основание, Подлокотники, Ролики
 Ищем для base_name: Кресло Комо В дерево -> mapped: Комо в дерево
 Ищем для base_name: Кресло Комо В дерево -> mapped: Комо в дерево
 Ищем для base_name: Кресло Комо В дерево -> mapped: Комо в дерево
@@ -7304,7 +7279,7 @@
 Ищем для base_name: Кресло Комо Н/п пластик-люкс 727 -> mapped: Комо н_п пластик-люкс 727
 Ищем для base_name: Кресло Комо Н/п пластик-люкс 727 -> mapped: Комо н_п пластик-люкс 727
 Ищем для base_name: Кресло Идра Бюджет В пластик 727 -> mapped: Идра бюджет в пластик 727
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\armchair_rukovoditel\Идра бюджет в пластик 727.json: title, base_name, article_number, full_describe, Link_arm, Подлокотники
+Обновлен C:\Users\UTFC\Documents\БалтМебель\to\products\armchair_rukovoditel\Идра бюджет в пластик 727.json: title, base_name, article_number, full_describe, Link_arm, Подлокотники
 Ищем для base_name: Кресло Идра Бюджет В пластик 727 -> mapped: Идра бюджет в пластик 727
 Ищем для base_name: Кресло Идра Бюджет В пластик 727 -> mapped: Идра бюджет в пластик 727
 Ищем для base_name: Кресло Идра Бюджет В пластик 727 -> mapped: Идра бюджет в пластик 727
@@ -7313,7 +7288,7 @@
 Ищем для base_name: Кресло Идра Бюджет В пластик 727 -> mapped: Идра бюджет в пластик 727
 Ищем для base_name: Кресло Идра Бюджет В пластик 727 -> mapped: Идра бюджет в пластик 727
 Ищем для base_name: Кресло Идра В хром -> mapped: Идра в хром
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\armchair_rukovoditel\Идра бюджет в пластик 727.json: title, base_name, article_number, full_describe, Link_arm, Основание, Подлокотники
+Обновлен C:\Users\UTFC\Documents\БалтМебель\to\products\armchair_rukovoditel\Идра бюджет в пластик 727.json: title, base_name, article_number, full_describe, Link_arm, Основание, Подлокотники
 Ищем для base_name: Кресло Идра В хром -> mapped: Идра в хром
 Ищем для base_name: Кресло Идра В хром -> mapped: Идра в хром
 Ищем для base_name: Кресло Идра В хром -> mapped: Идра в хром
@@ -7322,7 +7297,7 @@
 Ищем для base_name: Кресло Идра В хром -> mapped: Идра в хром
 Ищем для base_name: Кресло Идра В хром -> mapped: Идра в хром
 Ищем для base_name: Кресло Комо В пластик -> mapped: Комо в пластик
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\armchair_rukovoditel\Комо бюджет в пластик 727.json: title, base_name, article_number, full_describe, Link_arm, Основание, Подлокотники, Ролики
+Обновлен C:\Users\UTFC\Documents\БалтМебель\to\products\armchair_rukovoditel\Комо бюджет в пластик 727.json: title, base_name, article_number, full_describe, Link_arm, Основание, Подлокотники, Ролики
 Ищем для base_name: Кресло Комо В пластик -> mapped: Комо в пластик
 Ищем для base_name: Кресло Комо В пластик -> mapped: Комо в пластик
 Ищем для base_name: Кресло Атлант В/п пластик -> mapped: Атлант в_п пластик
@@ -7629,7 +7604,7 @@
 Ищем для base_name: Кресло Престиж Самба О -> mapped: Престиж самба овалина пластик
 Ищем для base_name: Кресло Престиж Самба О -> mapped: Престиж самба овалина пластик
 Ищем для base_name: Кресло Кремона хром -> mapped: Кремона хром
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\armchair_personal\Кремона пластик.json: title, base_name, article_number, full_describe, Link_arm, Основание, Газлифт, Ролики
+Обновлен C:\Users\UTFC\Documents\БалтМебель\to\products\armchair_personal\Кремона пластик.json: title, base_name, article_number, full_describe, Link_arm, Основание, Газлифт, Ролики
 Ищем для base_name: Кресло Кремона хром -> mapped: Кремона хром
 Ищем для base_name: Кресло Кремона хром -> mapped: Кремона хром
 Ищем для base_name: Кресло Кремона хром -> mapped: Кремона хром
@@ -7642,7 +7617,7 @@
 Ищем для base_name: Кресло ИЗО/ЖТС со столиком -> mapped: Изо_жтс со столиком
 Ищем для base_name: Кресло ИЗО/ЖТС со столиком -> mapped: Изо_жтс со столиком
 Ищем для base_name: Кресло ИЗО ЖТС -> mapped: Кресло ИЗО ЖТС
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\armchair_personal\Изо_жтс +.json: title, base_name, article_number, full_describe, Link_arm, Подлокотники
+Обновлен C:\Users\UTFC\Documents\БалтМебель\to\products\armchair_personal\Изо_жтс +.json: title, base_name, article_number, full_describe, Link_arm, Подлокотники
 Ищем для base_name: Кресло ИЗО ЖТС -> mapped: Кресло ИЗО ЖТС
 Ищем для base_name: Кресло ИЗО ЖТС -> mapped: Кресло ИЗО ЖТС
 Ищем для base_name: Кресло ИЗО ЖТС -> mapped: Кресло ИЗО ЖТС
@@ -7720,7 +7695,7 @@
 Ищем для base_name: Кресло С-21 Шелл GTS хром Ср -> mapped: Шелл gts с-21 хром
 Ищем для base_name: Кресло С-21 Шелл GTS хром Ср -> mapped: Шелл gts с-21 хром
 Ищем для base_name: Кресло Кремона пластик -> mapped: Кремона пластик
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\armchair_personal\Кремона пластик.json: title, base_name, article_number, full_describe, Link_arm, Основание, Газлифт, Ролики
+Обновлен C:\Users\UTFC\Documents\БалтМебель\to\products\armchair_personal\Кремона пластик.json: title, base_name, article_number, full_describe, Link_arm, Основание, Газлифт, Ролики
 Ищем для base_name: Кресло Кремона пластик -> mapped: Кремона пластик
 Ищем для base_name: Кресло Кремона пластик -> mapped: Кремона пластик
 Ищем для base_name: Кресло Кремона пластик -> mapped: Кремона пластик
@@ -7731,7 +7706,7 @@
 Ищем для base_name: Кресло Кремона пластик -> mapped: Кремона пластик
 Ищем для base_name: Кресло Кремона пластик -> mapped: Кремона пластик
 Ищем для base_name: Кресло ИЗО/ЖТС + -> mapped: Изо_жтс +
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\armchair_personal\Изо_жтс +.json: title, base_name, article_number, full_describe, Link_arm, Подлокотники
+Обновлен C:\Users\UTFC\Documents\БалтМебель\to\products\armchair_personal\Изо_жтс +.json: title, base_name, article_number, full_describe, Link_arm, Подлокотники
 Ищем для base_name: Кресло ИЗО/ЖТС + -> mapped: Изо_жтс +
 Ищем для base_name: Кресло ИЗО/ЖТС + -> mapped: Изо_жтс +
 Ищем для base_name: Кресло ИЗО/ЖТС + -> mapped: Изо_жтс +
@@ -7892,7 +7867,7 @@
 Ищем для base_name: Кресло М-804 Ситро/Citro greyPL хром Ср -> mapped: Ситро м-804 gray ch
 Ищем для base_name: Кресло М-804 Ситро/Citro greyPL хром Ср -> mapped: Ситро м-804 gray ch
 Ищем для base_name: Кресло Стул кассира со спинкой L -> mapped: Стул кассира l б_п со спинкой
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\armchair_personal\Стул кассира l б_п со спинкой.json: title, base_name, article_number, full_describe, Link_arm, Газлифт, Особенности
+Обновлен C:\Users\UTFC\Documents\БалтМебель\to\products\armchair_personal\Стул кассира l б_п со спинкой.json: title, base_name, article_number, full_describe, Link_arm, Газлифт, Особенности
 Ищем для base_name: Кресло Стул кассира со спинкой L -> mapped: Стул кассира l б_п со спинкой
 Ищем для base_name: Кресло Стул кассира со спинкой L -> mapped: Стул кассира l б_п со спинкой
 Ищем для base_name: Кресло Стул кассира со спинкой L -> mapped: Стул кассира l б_п со спинкой
@@ -7936,7 +7911,7 @@
 Ищем для base_name: Кресло М-804 Ситро/Citro blackPL Ср -> mapped: Ситро м-804 black pl
 Ищем для base_name: Кресло М-804 Ситро/Citro blackPL Ср -> mapped: Ситро м-804 black pl
 Ищем для base_name: Кресло Стул кассира -> mapped: Кресло Стул кассира
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\armchair_personal\Стул кассира l б_п со спинкой.json: title, base_name, article_number, full_describe, Link_arm, Газлифт, Особенности
+Обновлен C:\Users\UTFC\Documents\БалтМебель\to\products\armchair_personal\Стул кассира l б_п со спинкой.json: title, base_name, article_number, full_describe, Link_arm, Газлифт, Особенности
 Ищем для base_name: Кресло Стул кассира -> mapped: Кресло Стул кассира
 Ищем для base_name: Кресло Стул кассира -> mapped: Кресло Стул кассира
 Ищем для base_name: Кресло Стул кассира -> mapped: Кресло Стул кассира
@@ -8699,8 +8674,10 @@
 Ищем для base_name: Кресло UTFC Киото М-250 черный пластик -> mapped: Utfc киото м-250
 Ищем для base_name: Кресло UTFC Киото М-250 черный пластик -> mapped: Utfc киото м-250
 Ищем для base_name: Кресло UTFC Киото М-250 черный пластик -> mapped: Utfc киото м-250
-Ищем для base_name: Кресло UTFC Мориока М-242 красный пластик -> mapped: Кресло UTFC Мориока М-242 красный пластик
-Ищем для base_name: Кресло UTFC Мориока М-242 красный пластик -> mapped: Кресло UTFC Мориока М-242 красный пластик
+Ищем для base_name: Кресло UTFC Мориока М-242 красный пластик -> mapped: Utfc мориока м-242 red
+Обновлен C:\Users\UTFC\Documents\БалтМебель\to\products\armchair_comfort\Utfc мориока м-242 red.json: title, base_name, article_number, Link_arm, Основание, Ролики, color, variant_name, images, images, images, images, images, images, images, images, images, images, images, images, images, images, images
+Ищем для base_name: Кресло UTFC Мориока М-242 красный пластик -> mapped: Utfc мориока м-242 red
+Обновлен C:\Users\UTFC\Documents\БалтМебель\to\products\armchair_comfort\Utfc мориока м-242 red.json: variant_name
 Ищем для base_name: Кресло UTFC Санда М-207 черный пластик -> mapped: Кресло UTFC Санда М-207 черный пластик
 Ищем для base_name: Кресло UTFC Санда М-207 черный пластик -> mapped: Кресло UTFC Санда М-207 черный пластик
 Ищем для base_name: Кресло UTFC Санда М-207 черный пластик -> mapped: Кресло UTFC Санда М-207 черный пластик
@@ -8713,10 +8690,14 @@
 Ищем для base_name: Кресло UTFC Санда М-207 серый пластик -> mapped: Utfc санда м-207
 Ищем для base_name: Кресло UTFC Санда М-207 серый пластик -> mapped: Utfc санда м-207
 Ищем для base_name: Кресло UTFC Санда М-207 серый пластик -> mapped: Utfc санда м-207
-Ищем для base_name: Кресло UTFC Мориока М-242 черный пластик -> mapped: Кресло UTFC Мориока М-242 черный пластик
-Ищем для base_name: Кресло UTFC Мориока М-242 черный пластик -> mapped: Кресло UTFC Мориока М-242 черный пластик
-Ищем для base_name: Кресло UTFC Мориока М-242 зеленый пластик -> mapped: Кресло UTFC Мориока М-242 зеленый пластик
-Ищем для base_name: Кресло UTFC Мориока М-242 зеленый пластик -> mapped: Кресло UTFC Мориока М-242 зеленый пластик
+Ищем для base_name: Кресло UTFC Мориока М-242 черный пластик -> mapped: Utfc мориока м-242 black
+Обновлен C:\Users\UTFC\Documents\БалтМебель\to\products\armchair_comfort\Utfc мориока м-242 black.json: title, base_name, article_number, Link_arm, Основание, Ролики, color, variant_name, images, images, images, images, images, images, images, images, images, images, images, images, images, images, images
+Ищем для base_name: Кресло UTFC Мориока М-242 черный пластик -> mapped: Utfc мориока м-242 black
+Обновлен C:\Users\UTFC\Documents\БалтМебель\to\products\armchair_comfort\Utfc мориока м-242 black.json: variant_name
+Ищем для base_name: Кресло UTFC Мориока М-242 зеленый пластик -> mapped: Utfc мориока м-242 green
+Обновлен C:\Users\UTFC\Documents\БалтМебель\to\products\armchair_comfort\Utfc мориока м-242 green.json: title, base_name, article_number, Link_arm, Основание, Ролики, color, variant_name, images, images, images, images, images, images, images, images, images, images, images, images, images, images, images
+Ищем для base_name: Кресло UTFC Мориока М-242 зеленый пластик -> mapped: Utfc мориока м-242 green
+Обновлен C:\Users\UTFC\Documents\БалтМебель\to\products\armchair_comfort\Utfc мориока м-242 green.json: variant_name
 Ищем для base_name: Кресло UTFC Рекорд М-878 белый пластик -> mapped: Рекорд м-878 белый пластик
 Ищем для base_name: Кресло UTFC Рекорд М-878 белый пластик -> mapped: Рекорд м-878 белый пластик
 Ищем для base_name: Кресло UTFC Рекорд М-878 белый пластик -> mapped: Рекорд м-878 белый пластик
@@ -8946,7 +8927,7 @@
 Ищем для base_name: Кресло СН-500 Гарвард хром -> mapped: Гарвард сн-500 хром
 Ищем для base_name: Кресло СН-500 Гарвард хром -> mapped: Гарвард сн-500 хром
 Ищем для base_name: Кресло UTFC Астон М-711 белый пластик -> mapped: Астон м-711 с подголовником белый пластик
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\armchair_comfort\Астон м-711 с подголовником белый пластик.json: title, base_name, article_number, Link_arm, Подлокотники
+Обновлен C:\Users\UTFC\Documents\БалтМебель\to\products\armchair_comfort\Астон м-711 с подголовником белый пластик.json: title, base_name, article_number, Link_arm, Подлокотники
 Ищем для base_name: Кресло UTFC Астон М-711 белый пластик -> mapped: Астон м-711 с подголовником белый пластик
 Ищем для base_name: Кресло UTFC Астон М-711 белый пластик -> mapped: Астон м-711 с подголовником белый пластик
 Ищем для base_name: Кресло UTFC Астон М-711 белый пластик -> mapped: Астон м-711 с подголовником белый пластик
@@ -9003,7 +8984,7 @@
 Ищем для base_name: Кресло М-805 Йота/Yota grey PL -> mapped: Йота м-805 gray ch
 Ищем для base_name: Кресло М-805 Йота/Yota grey PL -> mapped: Йота м-805 gray ch
 Ищем для base_name: Кресло UTFC Астон М-711 черный пластик -> mapped: Астон м-711 с подголовником черный пластик
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\armchair_comfort\Астон м-711 с подголовником белый пластик.json: title, base_name, article_number, Link_arm, Подлокотники
+Обновлен C:\Users\UTFC\Documents\БалтМебель\to\products\armchair_comfort\Астон м-711 с подголовником белый пластик.json: title, base_name, article_number, Link_arm, Подлокотники
 Ищем для base_name: Кресло UTFC Астон М-711 черный пластик -> mapped: Астон м-711 с подголовником черный пластик
 Ищем для base_name: Кресло UTFC Астон М-711 черный пластик -> mapped: Астон м-711 с подголовником черный пластик
 Ищем для base_name: Кресло UTFC Астон М-711 черный пластик -> mapped: Астон м-711 с подголовником черный пластик
@@ -9372,8 +9353,8 @@
 Ищем для base_name: Кресло EPIK А-011-G 201 (темно-синий) -> mapped: Кресло EPIK А-011-G 201 (темно-синий)
 Ищем для base_name: Кресло EPIK А-130-G (черный) -> mapped: Epik a-130-g
 Ищем для base_name: Кресло EPIK А-130-G (черный) -> mapped: Epik a-130-g
-Ищем для base_name: Кресло EPIK А-130-G (коричневый) -> mapped: Кресло EPIK А-130-G (коричневый)
-Ищем для base_name: Кресло EPIK А-130-G (коричневый) -> mapped: Кресло EPIK А-130-G (коричневый)
+Ищем для base_name: Кресло EPIK А-130-G (коричневый) -> mapped: Epik a-130-g brown
+Ищем для base_name: Кресло EPIK А-130-G (коричневый) -> mapped: Epik a-130-g brown
 Ищем для base_name: Кресло EPIK А-001-МВ L235-187 (кремовый/ светло-серый) -> mapped: Кресло EPIK А-001-МВ L235-187 (кремовый/ светло-серый)
 Ищем для base_name: Кресло EPIK А-001-МВ L235-187 (кремовый/ светло-серый) -> mapped: Кресло EPIK А-001-МВ L235-187 (кремовый/ светло-серый)
 Ищем для base_name: Кресло EPIK А-011-G 169 (черный) -> mapped: Epik а-011-g
@@ -9386,8 +9367,8 @@
 Ищем для base_name: Кресло EPIK А-001-МВ 201-235 (темно-синий/ кремовый) -> mapped: Кресло EPIK А-001-МВ 201-235 (темно-синий/ кремовый)
 Ищем для base_name: Кресло EPIK А-007-G L200 (коричневый) -> mapped: Кресло EPIK А-007-G L200 (коричневый)
 Ищем для base_name: Кресло EPIK А-007-G L200 (коричневый) -> mapped: Кресло EPIK А-007-G L200 (коричневый)
-Ищем для base_name: Кресло EPIK А-130-G (серый) -> mapped: Кресло EPIK А-130-G (серый)
-Ищем для base_name: Кресло EPIK А-130-G (серый) -> mapped: Кресло EPIK А-130-G (серый)
+Ищем для base_name: Кресло EPIK А-130-G (серый) -> mapped: Epik a-130-g grey
+Ищем для base_name: Кресло EPIK А-130-G (серый) -> mapped: Epik a-130-g grey
 Ищем для base_name: Кресло EPIK А-155-G (черный) -> mapped: Epik a-155-g
 Ищем для base_name: Кресло EPIK А-155-G (черный) -> mapped: Epik a-155-g
 Ищем для base_name: Кресло EPIK К-430-СН -> mapped: Epik k-430-ch
@@ -9437,7 +9418,7 @@
 Ищем для base_name: Кресло UTFC Киото М-250 черный пластик -> mapped: Utfc киото м-250
 Ищем для base_name: Кресло UTFC Киото М-250 черный пластик -> mapped: Utfc киото м-250
 Ищем для base_name: Кресло Кремона хром -> mapped: Кремона хром
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\armchair_personal\Кремона пластик.json: title, base_name, article_number, full_describe, Link_arm, Основание, Газлифт, Ролики
+Обновлен C:\Users\UTFC\Documents\БалтМебель\to\products\armchair_personal\Кремона пластик.json: title, base_name, article_number, full_describe, Link_arm, Основание, Газлифт, Ролики
 Ищем для base_name: Кресло Кремона хром -> mapped: Кремона хром
 Ищем для base_name: Кресло Кремона хром -> mapped: Кремона хром
 Ищем для base_name: Кресло Кремона хром -> mapped: Кремона хром
@@ -9504,7 +9485,7 @@
 Ищем для base_name: Стул Парма 4К BL -> mapped: Парма 4к
 Ищем для base_name: Стул Парма 4К BL -> mapped: Парма 4к
 Ищем для base_name: Кресло Кремона пластик -> mapped: Кремона пластик
-Обновлен C:\Users\UTFC\Documents\БалтМебель\to222\products\armchair_personal\Кремона пластик.json: title, base_name, article_number, full_describe, Link_arm, Основание, Газлифт, Ролики
+Обновлен C:\Users\UTFC\Documents\БалтМебель\to\products\armchair_personal\Кремона пластик.json: title, base_name, article_number, full_describe, Link_arm, Основание, Газлифт, Ролики
 Ищем для base_name: Кресло Кремона пластик -> mapped: Кремона пластик
 Ищем для base_name: Кресло Кремона пластик -> mapped: Кремона пластик
 Ищем для base_name: Кресло Кремона пластик -> mapped: Кремона пластик
@@ -9608,8 +9589,8 @@
 Ищем для base_name: Кресло EPIK А-155-G (песочный) -> mapped: Кресло EPIK А-155-G (песочный)
 Ищем для base_name: Кресло EPIK А-155-G (черный) -> mapped: Epik a-155-g
 Ищем для base_name: Кресло EPIK А-155-G (черный) -> mapped: Epik a-155-g
-Ищем для base_name: Кресло UTFC Мориока М-242 красный пластик -> mapped: Кресло UTFC Мориока М-242 красный пластик
-Ищем для base_name: Кресло UTFC Мориока М-242 красный пластик -> mapped: Кресло UTFC Мориока М-242 красный пластик
+Ищем для base_name: Кресло UTFC Мориока М-242 красный пластик -> mapped: Utfc мориока м-242 red
+Ищем для base_name: Кресло UTFC Мориока М-242 красный пластик -> mapped: Utfc мориока м-242 red
 Ищем для base_name: Кресло UTFC Санда М-207 черный пластик -> mapped: Кресло UTFC Санда М-207 черный пластик
 Ищем для base_name: Кресло UTFC Санда М-207 черный пластик -> mapped: Кресло UTFC Санда М-207 черный пластик
 Ищем для base_name: Кресло UTFC Санда М-207 черный пластик -> mapped: Кресло UTFC Санда М-207 черный пластик
@@ -9630,14 +9611,14 @@
 Ищем для base_name: Кресло UTFC Онтарио М-105 пластик/хром -> mapped: Utfc онтарио м-105 пластик хром
 Ищем для base_name: Кресло UTFC Онтарио М-105 пластик/хром -> mapped: Utfc онтарио м-105 пластик хром
 Ищем для base_name: Кресло UTFC Онтарио М-105 пластик/хром -> mapped: Utfc онтарио м-105 пластик хром
-Ищем для base_name: Кресло UTFC Мориока М-242 черный пластик -> mapped: Кресло UTFC Мориока М-242 черный пластик
-Ищем для base_name: Кресло UTFC Мориока М-242 черный пластик -> mapped: Кресло UTFC Мориока М-242 черный пластик
+Ищем для base_name: Кресло UTFC Мориока М-242 черный пластик -> mapped: Utfc мориока м-242 black
+Ищем для base_name: Кресло UTFC Мориока М-242 черный пластик -> mapped: Utfc мориока м-242 black
 Ищем для base_name: Кресло UTFC Бремен М-123 алюминий -> mapped: Utfc бремен м-123 алюминий
 Ищем для base_name: Кресло UTFC Бремен М-123 алюминий -> mapped: Utfc бремен м-123 алюминий
 Ищем для base_name: Кресло UTFC Бремен М-123 алюминий -> mapped: Utfc бремен м-123 алюминий
 Ищем для base_name: Кресло UTFC Бремен М-123 алюминий -> mapped: Utfc бремен м-123 алюминий
-Ищем для base_name: Кресло EPIK А-130-G (коричневый) -> mapped: Кресло EPIK А-130-G (коричневый)
-Ищем для base_name: Кресло EPIK А-130-G (коричневый) -> mapped: Кресло EPIK А-130-G (коричневый)
+Ищем для base_name: Кресло EPIK А-130-G (коричневый) -> mapped: Epik a-130-g brown
+Ищем для base_name: Кресло EPIK А-130-G (коричневый) -> mapped: Epik a-130-g brown
 Ищем для base_name: Кресло UTFC Номи М-317 -> mapped: Utfc номи м-317
 Ищем для base_name: Кресло UTFC Номи М-317 -> mapped: Utfc номи м-317
 Ищем для base_name: Кресло UTFC Номи М-317 -> mapped: Utfc номи м-317
@@ -9646,14 +9627,14 @@
 Ищем для base_name: Кресло UTFC Номи М-317 -> mapped: Utfc номи м-317
 Ищем для base_name: Кресло UTFC Номи М-317 -> mapped: Utfc номи м-317
 Ищем для base_name: Кресло UTFC Номи М-317 -> mapped: Utfc номи м-317
-Ищем для base_name: Кресло UTFC Мориока М-242 зеленый пластик -> mapped: Кресло UTFC Мориока М-242 зеленый пластик
-Ищем для base_name: Кресло UTFC Мориока М-242 зеленый пластик -> mapped: Кресло UTFC Мориока М-242 зеленый пластик
+Ищем для base_name: Кресло UTFC Мориока М-242 зеленый пластик -> mapped: Utfc мориока м-242 green
+Ищем для base_name: Кресло UTFC Мориока М-242 зеленый пластик -> mapped: Utfc мориока м-242 green
 Ищем для base_name: Кресло UTFC Мориока М-242 серый пластик -> mapped: Utfc мориока м-242
 Ищем для base_name: Кресло UTFC Мориока М-242 серый пластик -> mapped: Utfc мориока м-242
 Ищем для base_name: Кресло UTFC Онтарио М-405 Н/п пластик/хром -> mapped: Utfc онтарио м-405 н_п пластик хром
 Ищем для base_name: Кресло UTFC Онтарио М-405 Н/п пластик/хром -> mapped: Utfc онтарио м-405 н_п пластик хром
-Ищем для base_name: Кресло EPIK А-130-G (серый) -> mapped: Кресло EPIK А-130-G (серый)
-Ищем для base_name: Кресло EPIK А-130-G (серый) -> mapped: Кресло EPIK А-130-G (серый)
+Ищем для base_name: Кресло EPIK А-130-G (серый) -> mapped: Epik a-130-g grey
+Ищем для base_name: Кресло EPIK А-130-G (серый) -> mapped: Epik a-130-g grey
 Ищем для base_name: Кресло Чехол Шелл Ромб -> mapped: Кресло Чехол Шелл Ромб
 Ищем для base_name: Кресло Чехол Шелл Ромб -> mapped: Кресло Чехол Шелл Ромб
 Ищем для base_name: Кресло Чехол Шелл Ромб -> mapped: Кресло Чехол Шелл Ромб
@@ -9688,48 +9669,43 @@
 Ищем для base_name: Кресло Чехол Шелл Пик -> mapped: Кресло Чехол Шелл Пик
 
 === Итоги ===
-Обновлено родительских файлов: 91
-Не найдено соответствий: 42
+Обновлено родительских файлов: 71
+Не найдено соответствий: 37
 Список не найденных base_name:
-  - Кресло EPIK А-130-G (серый)
   - Стул Самба soft GR
-  - Кресло EPIK А-001-МВ L235-187 (кремовый/ светло-серый)
-  - Кресло EPIK А-130-G (коричневый)
-  - Стул Самба soft СН
+  - Кресло СН-301 Кайман Комфорт Н/п BL
+  - Кресло EPIK Р-700 PLW TW69-128 (серый)
   - Кресло EPIK Р-521-SB М021 (серый)
-  - Кресло EPIK А-011-G 200 (коричневый)
-  - Кресло EPIK А-011-G 201 (темно-синий)
-  - Кресло UTFC Мориока М-242 зеленый пластик
-  - Кресло EPIK А-007-G L170 (зеленый)
-  - Кресло EPIK Р-700 PL TW69-128 (серый)
-  - Кресло UTFC Санда М-207 черный пластик
-  - Кресло СН-301 Кайман Комфорт Н BL
   - Кресло EPIK А-001-GB L201-271 (темно-синий/ светло-серый)
   - Стул С-07 Шелл Софт СН
-  - Кресло EPIK А-155-G (песочный)
-  - Кресло EPIK А-155-G (темно-синий)
-  - Кресло UTFC Киото М-250 серый пластик
-  - Кресло UTFC Мориока М-242 черный пластик
-  - Кресло EPIK А-001-МВ 235-187 (кремовый/ светло-серый)
-  - Кресло UTFC Мориока М-242 красный пластик
-  - Кресло Честер GTS хром
+  - Кресло СН-301 Кайман Комфорт Н BL
+  - Кресло EPIK А-001-МВ L235-187 (кремовый/ светло-серый)
   - Кресло EPIK А-001-МВ 201-235 (темно-синий/ кремовый)
-  - Кресло СН-602 Соло Макс хром SoloСН Ср
-  - Кресло EPIK А-001-МВ L171-172 (темно-серый/ коричневый)
-  - Кресло СН-303 Кайман Трио Н BL Ср
-  - Кресло Чехол Шелл Ромб
-  - Кресло EPIK А-112-G L113 (кэмел)
-  - Кресло Чехол Шелл Пик
-  - Кресло UTFC Осака М-201 черный пластик
-  - Стул Самба soft BL
-  - Кресло UTFC Осака М-201 красный пластик
-  - Стул С-07 Шелл Софт BL
-  - Кресло СН-303 Кайман Трио Н/п BL
-  - Кресло EPIK А-181-G L200 (коричневый)
-  - Кресло СН-301 Кайман Комфорт Н/п BL
-  - Кресло EPIK Е-201-G М021 (серый)
-  - Кресло EPIK Е-222-G S001-115 (черный)
-  - Кресло СН-303 Кайман Трио В BL Ср
   - Кресло EPIK А-007-G L200 (коричневый)
-  - Кресло EPIK Р-700 PLW TW69-128 (серый)
+  - Кресло СН-602 Соло Макс хром SoloСН Ср
+  - Кресло UTFC Санда М-207 черный пластик
   - Стул С-07 Шелл Софт GR
+  - Кресло Чехол Шелл Пик
+  - Кресло EPIK А-001-МВ 235-187 (кремовый/ светло-серый)
+  - Кресло EPIK Р-700 PL TW69-128 (серый)
+  - Кресло СН-303 Кайман Трио Н BL Ср
+  - Стул С-07 Шелл Софт BL
+  - Кресло EPIK А-155-G (темно-синий)
+  - Кресло EPIK А-007-G L170 (зеленый)
+  - Кресло EPIK А-155-G (песочный)
+  - Кресло Честер GTS хром
+  - Кресло EPIK А-181-G L200 (коричневый)
+  - Стул Самба soft BL
+  - Кресло EPIK Е-201-G М021 (серый)
+  - Кресло EPIK А-011-G 201 (темно-синий)
+  - Кресло EPIK А-112-G L113 (кэмел)
+  - Кресло UTFC Киото М-250 серый пластик
+  - Кресло EPIK Е-222-G S001-115 (черный)
+  - Кресло UTFC Осака М-201 красный пластик
+  - Кресло EPIK А-011-G 200 (коричневый)
+  - Кресло СН-303 Кайман Трио В BL Ср
+  - Кресло EPIK А-001-МВ L171-172 (темно-серый/ коричневый)
+  - Стул Самба soft СН
+  - Кресло UTFC Осака М-201 черный пластик
+  - Кресло Чехол Шелл Ромб
+  - Кресло СН-303 Кайман Трио Н/п BL

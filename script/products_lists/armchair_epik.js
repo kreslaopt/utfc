@@ -4,6 +4,8 @@ const knownProducts = [
   "Epik а-011-g",
   "Epik a-112-g",
   "Epik a-130-g",
+  "Epik a-130-g brown",
+  "Epik a-130-g grey",
   "Epik a-155-g",
   "Epik a-177-g",
   "Epik a-181-g",

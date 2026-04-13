@@ -293,9 +293,14 @@ NAME_MAPPING = {
     'UTFC Киото М-250 черный пластик': 'Utfc киото м-250',
     'UTFC Кофу М-231': 'Utfc кофу м-231',
     'UTFC Мориока М-242 серый пластик': 'Utfc мориока м-242',
+    'UTFC Мориока М-242 красный пластик': 'Utfc мориока м-242 red',
+    'UTFC Мориока М-242 зеленый пластик': 'Utfc мориока м-242 green',
+    'UTFC Мориока М-242 черный пластик': 'Utfc мориока м-242 black',
     'UTFC Номи М-317 с подголовником': 'Utfc номи м-317 с подголовником',
     'EPIK А-112-G L114 (черный)': 'Epik a-112-g',
     'EPIK А-130-G (черный)': 'Epik a-130-g',
+    'EPIK А-130-G (серый)': 'Epik a-130-g grey',
+    'EPIK А-130-G (коричневый)': 'Epik a-130-g brown',
     'EPIK А-155-G (черный)': 'Epik a-155-g',
     'EPIK А-177-G 187-200 (светло-серый/ коричневый)': 'Epik a-177-g',
     'EPIK А-181-G L169 (черный)': 'Epik a-181-g',
@@ -424,8 +429,8 @@ def update_product_file(filepath, merged_item):
             logger.error(f"Ошибка сохранения файла {filepath}: {e}")
 
 def main():
-    products_dir = r'C:\Users\UTFC\Documents\БалтМебель\to222\products'
-    merged_file = r'C:\Users\UTFC\Documents\БалтМебель\to222\script\merged_result.json'
+    products_dir = r'C:\Users\UTFC\Documents\БалтМебель\to\products'
+    merged_file = r'C:\Users\UTFC\Documents\БалтМебель\to\script\merged_result.json'
 
      # Обновляем данные из файла перед обработкой
     try:
