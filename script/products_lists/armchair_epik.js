@@ -12,6 +12,7 @@ const knownProducts = [
   "Epik a-155-g",
   "Epik a-177-g",
   "Epik a-181-g",
+  "Epik a-181-g l200",
   "Epik e-201-g",
   "Epik e-212-g",
   "Epik e-222-mb",
