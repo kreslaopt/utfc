@@ -1725,17 +1725,17 @@ const knownProductsAllFiles = [
     "is_archive": false
   },
   {
-    "name": "Utfc мориока м-242 black",
+    "name": "Utfc мориока м-242 зеленый пластик",
     "category": "armchair_comfort",
     "is_archive": false
   },
   {
-    "name": "Utfc мориока м-242 green",
+    "name": "Utfc мориока м-242 красный пластик",
     "category": "armchair_comfort",
     "is_archive": false
   },
   {
-    "name": "Utfc мориока м-242 red",
+    "name": "Utfc мориока м-242 черный пластик",
     "category": "armchair_comfort",
     "is_archive": false
   },
