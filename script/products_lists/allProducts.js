@@ -1630,6 +1630,16 @@ const knownProductsAllFiles = [
     "is_archive": false
   },
   {
+    "name": "Epik а-001-mb 235-187",
+    "category": "armchair_epik",
+    "is_archive": false
+  },
+  {
+    "name": "Epik а-001-mb l235-187",
+    "category": "armchair_epik",
+    "is_archive": false
+  },
+  {
     "name": "Epik а-007-g",
     "category": "armchair_epik",
     "is_archive": false
@@ -1641,6 +1651,11 @@ const knownProductsAllFiles = [
   },
   {
     "name": "Epik a-112-g",
+    "category": "armchair_epik",
+    "is_archive": false
+  },
+  {
+    "name": "Epik a-112-g L113 кэмел",
     "category": "armchair_epik",
     "is_archive": false
   },
@@ -1726,6 +1741,11 @@ const knownProductsAllFiles = [
   },
   {
     "name": "Utfc киото м-250",
+    "category": "armchair_comfort",
+    "is_archive": false
+  },
+  {
+    "name": "Utfc киото м-250 серый пластик",
     "category": "armchair_comfort",
     "is_archive": false
   },
