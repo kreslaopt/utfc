@@ -78,8 +78,8 @@
   ],
   "images": [
     {
-      "vid_main": "img/chair_visitors/samba_bl_soft_s0401_01.png",
-      "chair_view": "img/chair_visitors/samba_bl_soft_s0401_02.png",
+      "vid_main": "img/chair_visitors/samba_bl_soft_stolik_s0401_01.png",
+      "chair_view": "img/chair_visitors/samba_bl_soft_stolik_s0401_02.png",
       "dimensions": "img/chair_visitors/dimensions/samba_stol_soft_bl_01.png",
       "box": "img/box_0.png",
       "additional": [

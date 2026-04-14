@@ -1210,6 +1210,21 @@ const knownProductsAllFiles = [
     "is_archive": false
   },
   {
+    "name": "Самба soft bl",
+    "category": "chair_visitors",
+    "is_archive": false
+  },
+  {
+    "name": "Самба soft ch",
+    "category": "chair_visitors",
+    "is_archive": false
+  },
+  {
+    "name": "Самба soft gr",
+    "category": "chair_visitors",
+    "is_archive": false
+  },
+  {
     "name": "Сиена 4к",
     "category": "chair_visitors",
     "is_archive": false
