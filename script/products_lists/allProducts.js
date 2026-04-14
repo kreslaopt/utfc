@@ -545,7 +545,22 @@ const knownProductsAllFiles = [
     "is_archive": false
   },
   {
+    "name": "Кайман комфорт ch-301 н bl",
+    "category": "armchair_rukovoditel",
+    "is_archive": false
+  },
+  {
     "name": "Кайман комфорт ch-301 н_п хром",
+    "category": "armchair_rukovoditel",
+    "is_archive": false
+  },
+  {
+    "name": "Кайман комфорт ch-301 н_п bl",
+    "category": "armchair_rukovoditel",
+    "is_archive": false
+  },
+  {
+    "name": "Кайман трио сн-303 в bl",
     "category": "armchair_rukovoditel",
     "is_archive": false
   },
@@ -565,7 +580,17 @@ const knownProductsAllFiles = [
     "is_archive": false
   },
   {
+    "name": "Кайман трио ch-303 н bl",
+    "category": "armchair_rukovoditel",
+    "is_archive": false
+  },
+  {
     "name": "Кайман трио ch-303 н_п хром",
+    "category": "armchair_rukovoditel",
+    "is_archive": false
+  },
+  {
+    "name": "Кайман трио ch-303 н_п bl",
     "category": "armchair_rukovoditel",
     "is_archive": false
   },
@@ -1285,12 +1310,12 @@ const knownProductsAllFiles = [
     "is_archive": false
   },
   {
-    "name": "Соло max сн-601 пластик",
+    "name": "Соло max сн-602 пластик",
     "category": "armchair_rukovoditel",
     "is_archive": false
   },
   {
-    "name": "Соло max сн-601 хром",
+    "name": "Соло max сн-602 хром",
     "category": "armchair_rukovoditel",
     "is_archive": false
   },
@@ -1655,6 +1680,11 @@ const knownProductsAllFiles = [
     "is_archive": false
   },
   {
+    "name": "Epik а-001-mb l171-172",
+    "category": "armchair_epik",
+    "is_archive": false
+  },
+  {
     "name": "Epik а-001-mb l235-187",
     "category": "armchair_epik",
     "is_archive": false
@@ -1676,6 +1706,16 @@ const knownProductsAllFiles = [
   },
   {
     "name": "Epik а-011-g",
+    "category": "armchair_epik",
+    "is_archive": false
+  },
+  {
+    "name": "Epik а-011-g 200",
+    "category": "armchair_epik",
+    "is_archive": false
+  },
+  {
+    "name": "Epik а-011-g 201",
     "category": "armchair_epik",
     "is_archive": false
   },
@@ -1710,6 +1750,16 @@ const knownProductsAllFiles = [
     "is_archive": false
   },
   {
+    "name": "Epik a-155-g песочный",
+    "category": "armchair_epik",
+    "is_archive": false
+  },
+  {
+    "name": "Epik a-155-g темно-синий",
+    "category": "armchair_epik",
+    "is_archive": false
+  },
+  {
     "name": "Epik a-177-g",
     "category": "armchair_epik",
     "is_archive": false
@@ -1730,7 +1780,17 @@ const knownProductsAllFiles = [
     "is_archive": false
   },
   {
+    "name": "Epik e-201-g m021",
+    "category": "armchair_epik",
+    "is_archive": false
+  },
+  {
     "name": "Epik e-212-g",
+    "category": "armchair_epik",
+    "is_archive": false
+  },
+  {
+    "name": "Epik e-222-g s001-115",
     "category": "armchair_epik",
     "is_archive": false
   },
