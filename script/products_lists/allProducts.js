@@ -1535,6 +1535,16 @@ const knownProductsAllFiles = [
     "is_archive": false
   },
   {
+    "name": "Шелл софт bl",
+    "category": "chair_visitors",
+    "is_archive": false
+  },
+  {
+    "name": "Шелл софт gr",
+    "category": "chair_visitors",
+    "is_archive": false
+  },
+  {
     "name": "Шелл gts с-21 белый",
     "category": "armchair_personal",
     "is_archive": false
@@ -1625,7 +1635,17 @@ const knownProductsAllFiles = [
     "is_archive": false
   },
   {
+    "name": "Epik а-001-gb l201-271",
+    "category": "armchair_epik",
+    "is_archive": false
+  },
+  {
     "name": "Epik а-001-mb",
+    "category": "armchair_epik",
+    "is_archive": false
+  },
+  {
+    "name": "Epik а-001-mb 201-235",
     "category": "armchair_epik",
     "is_archive": false
   },
@@ -1641,6 +1661,16 @@ const knownProductsAllFiles = [
   },
   {
     "name": "Epik а-007-g",
+    "category": "armchair_epik",
+    "is_archive": false
+  },
+  {
+    "name": "Epik а-007-g l170",
+    "category": "armchair_epik",
+    "is_archive": false
+  },
+  {
+    "name": "Epik а-007-g l200",
     "category": "armchair_epik",
     "is_archive": false
   },
@@ -1725,7 +1755,22 @@ const knownProductsAllFiles = [
     "is_archive": false
   },
   {
+    "name": "Epik p-521-sb m021",
+    "category": "armchair_epik",
+    "is_archive": false
+  },
+  {
     "name": "Epik p-700",
+    "category": "armchair_epik",
+    "is_archive": false
+  },
+  {
+    "name": "Epik p-700 pl tw69-128",
+    "category": "armchair_epik",
+    "is_archive": false
+  },
+  {
+    "name": "Epik p-700 plw tw69-128",
     "category": "armchair_epik",
     "is_archive": false
   },
@@ -1805,7 +1850,22 @@ const knownProductsAllFiles = [
     "is_archive": false
   },
   {
+    "name": "Utfc осака м-201 красный пластик",
+    "category": "armchair_comfort",
+    "is_archive": false
+  },
+  {
+    "name": "Utfc осака м-201 черный пластик",
+    "category": "armchair_comfort",
+    "is_archive": false
+  },
+  {
     "name": "Utfc санда м-207",
+    "category": "armchair_comfort",
+    "is_archive": false
+  },
+  {
+    "name": "Utfc санда м-207 черный пластик",
     "category": "armchair_comfort",
     "is_archive": false
   }

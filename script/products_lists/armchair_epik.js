@@ -1,8 +1,12 @@
 const knownProducts = [
+  "Epik а-001-gb l201-271",
   "Epik а-001-mb",
+  "Epik а-001-mb 201-235",
   "Epik а-001-mb 235-187",
   "Epik а-001-mb l235-187",
   "Epik а-007-g",
+  "Epik а-007-g l170",
+  "Epik а-007-g l200",
   "Epik а-011-g",
   "Epik a-112-g",
   "Epik a-112-g L113 кэмел",
@@ -19,5 +23,8 @@ const knownProducts = [
   "Epik k-400-ch",
   "Epik k-430-ch",
   "Epik p-521-sb",
-  "Epik p-700"
+  "Epik p-521-sb m021",
+  "Epik p-700",
+  "Epik p-700 pl tw69-128",
+  "Epik p-700 plw tw69-128"
 ];
