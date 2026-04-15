@@ -585,6 +585,12 @@ def get_product_data_with_selenium(product_url):
             article_span = article_tag.find('span', class_='grey')
             article_number = article_span.text.strip() if article_span else None
 
+        minpromtorg_tag = soup.find('div', class_='label-product label-minpromtorg')
+        minpromtorg = minpromtorg_tag.text.strip() if minpromtorg_tag else None
+
+        madeinrf_tag = soup.find('div', class_='label-product label-made-in-rf')
+        madeinrf = madeinrf_tag.text.strip() if madeinrf_tag else None
+
         # --- Сбор вариантов отделки ---
         # 1. Основная отделка (тип + цвет)
         finish_types = {}
@@ -688,6 +694,8 @@ def get_product_data_with_selenium(product_url):
         "color_seat": None,
     "variant_name": None,
     "fullname": variant_name,
+    "minpromtorg": minpromtorg,
+    "madeinrf": madeinrf,
     "category": category,
     "article_number": article_number,
     "full_describe": full_describe,
@@ -769,6 +777,8 @@ def get_product_data_with_selenium(product_url):
                         "color_seat": finish_seat["color_seat"],
                         "variant_name": variant_name,
                         "fullname": variant_name,
+                        "minpromtorg": minpromtorg,
+                        "madeinrf": madeinrf,
                         "category": category,
                         "article_number": article_number,
                         "full_describe": full_describe,
@@ -816,7 +826,7 @@ def main():
     all_products = []
     fieldnames = [
   "title", "base_name", "finish_type", "color", "finish_type_seat", "color_seat",
-    "variant_name", "fullname", "category", "article_number", "full_describe", "images",
+    "variant_name", "fullname", "minpromtorg", "madeinrf", "category", "article_number", "full_describe", "images",
     "Основание", "Подлокотники", "Газлифт", "Механизм", "Особенности", "Ролики",
     "sizes", "package_sizes", "Specifications", "Link_arm"
     ]
