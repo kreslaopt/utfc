@@ -66,9 +66,9 @@
     ],
     "dimensions": [
         {
-            "brutto": "16,00",
-            "netto": "14,00",
-            "volume": "0,00"
+            "brutto": "16",
+            "netto": "14",
+            "volume": "0"
         }
     ],
     "guarantee": [

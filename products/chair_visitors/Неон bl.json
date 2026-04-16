@@ -241,7 +241,7 @@
             "max_load": "120",
             "skeleton": "монолитный",
             "minpromtorg": "+",
-            "netto": "4,3",
+            "netto": "4",
             "brutto": {},
             "package_width": {},
             "package_depth": {},
@@ -767,5 +767,10 @@
     "color_seat": [
         ""
     ],
-    "madeinrf": "Сделано РФ"
+    "madeinrf": "Сделано РФ",
+    "additional_info": {
+        "package_dimensions": {},
+        "netto": "4",
+        "volume": "0"
+    }
 }

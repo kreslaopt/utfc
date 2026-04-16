@@ -391,5 +391,15 @@
         "Ткань М-250 (черный)",
         "Ткань М-250 (серый)"
     ],
-    "madeinrf": "Сделано РФ"
+    "madeinrf": "Сделано РФ",
+    "additional_info": {
+        "package_dimensions": {
+            "width": "19",
+            "depth": "745",
+            "height": "380"
+        },
+        "netto": "17",
+        "brutto": "19",
+        "volume": "0"
+    }
 }

@@ -478,5 +478,9 @@
             "CV_CURRENCY_3": "RUB"
         }
     ],
-    "madeinrf": "Сделано РФ"
+    "madeinrf": "Сделано РФ",
+    "additional_info": {
+        "package_dimensions": {},
+        "volume": "0"
+    }
 }

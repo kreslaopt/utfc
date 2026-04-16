@@ -391,5 +391,15 @@
         "Ткань М-201 (серый)",
         "Ткань М-201 (красный)"
     ],
-    "madeinrf": "Сделано РФ"
+    "madeinrf": "Сделано РФ",
+    "additional_info": {
+        "package_dimensions": {
+            "width": "15",
+            "depth": "630",
+            "height": "370"
+        },
+        "netto": "13",
+        "brutto": "15",
+        "volume": "0"
+    }
 }

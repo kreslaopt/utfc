@@ -455,5 +455,15 @@
         "Ткань М-207 (серый)",
         "Ткань М-207 (черный)"
     ],
-    "madeinrf": "Сделано РФ"
+    "madeinrf": "Сделано РФ",
+    "additional_info": {
+        "package_dimensions": {
+            "width": "14",
+            "depth": "840",
+            "height": "270"
+        },
+        "netto": "12",
+        "brutto": "14",
+        "volume": "0"
+    }
 }

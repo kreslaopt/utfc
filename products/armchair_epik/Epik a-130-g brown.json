@@ -384,5 +384,15 @@
     "color_seat": [
         ""
     ],
-    "madeinrf": ""
+    "madeinrf": "",
+    "additional_info": {
+        "package_dimensions": {
+            "width": "22",
+            "depth": "890",
+            "height": "350"
+        },
+        "netto": "19",
+        "brutto": "22",
+        "volume": "0"
+    }
 }

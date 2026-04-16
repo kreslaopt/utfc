@@ -525,5 +525,10 @@
     "color_seat": [
         ""
     ],
-    "madeinrf": "Сделано РФ"
+    "madeinrf": "Сделано РФ",
+    "additional_info": {
+        "package_dimensions": {},
+        "netto": "4",
+        "volume": "0"
+    }
 }

@@ -1102,5 +1102,9 @@
         "",
         "Экокожа Santorini S0422 (темно-серый)"
     ],
-    "madeinrf": "Сделано РФ"
+    "madeinrf": "Сделано РФ",
+    "additional_info": {
+        "package_dimensions": {},
+        "volume": "0"
+    }
 }
