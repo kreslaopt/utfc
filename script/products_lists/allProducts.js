@@ -1740,7 +1740,7 @@ const knownProductsAllFiles = [
     "is_archive": false
   },
   {
-    "name": "Epik a-130-g grey",
+    "name": "Epik a-130-g gr",
     "category": "armchair_epik",
     "is_archive": false
   },

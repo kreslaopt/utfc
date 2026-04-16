@@ -15,7 +15,7 @@ const knownProducts = [
   "Epik a-112-g L113 кэмел",
   "Epik a-130-g",
   "Epik a-130-g brown",
-  "Epik a-130-g grey",
+  "Epik a-130-g gr",
   "Epik a-155-g",
   "Epik a-155-g песочный",
   "Epik a-155-g темно-синий",
