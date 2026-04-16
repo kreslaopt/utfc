@@ -135,7 +135,8 @@
                 "https://utfc.ru/upload/dev2fun.imagecompress/webp/iblock/4a5/iv6n87yqzp6hyngn4s9pi0wnn5jf1ufm.webp",
                 "https://utfc.ru/upload/resize_cache/iblock/e60/140_140_0/vdnafuo80i7lc01mj1tzvqrxaul53cby.png",
                 "https://utfc.ru/upload/resize_cache/iblock/a4a/140_140_0/boo1mhvmjcya332aar7f8h4s162ix74t.png",
-                "https://utfc.ru/upload/dev2fun.imagecompress/webp/uf/ba4/b5si50vt41b6kyvl2vwoifidb0xr5af0.webp"
+                "https://utfc.ru/upload/dev2fun.imagecompress/webp/uf/ba4/b5si50vt41b6kyvl2vwoifidb0xr5af0.webp",
+                "https://utfc.ru/upload/resize_cache/iblock/5f2/70_70_0/jtoqpoxf3v0ai54dthupo7bqv6dlhff8.png"
             ]
         }
     ],
@@ -220,7 +221,7 @@
             },
             "recommended_load": "90",
             "max_load": "120",
-            "skeleton": "монолитный",
+            "skeleton": "немонолитный",
             "minpromtorg": "120",
             "netto": "9",
             "brutto": "8,6",
@@ -231,10 +232,10 @@
             "box_on_pallet": {},
             "pallet_width": {},
             "addition": {},
-            "typeofproduct": "монолитный"
+            "typeofproduct": ""
         }
     ],
-    "skeleton": "монолитный",
+    "skeleton": "немонолитный",
     "minpromtorg": "",
     "addition": "",
     "parent": {
@@ -680,5 +681,6 @@
     ],
     "color_seat": [
         ""
-    ]
+    ],
+    "madeinrf": "Сделано РФ"
 }

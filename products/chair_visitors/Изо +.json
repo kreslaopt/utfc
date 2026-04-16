@@ -173,7 +173,10 @@
                 "https://utfc.ru/upload/resize_cache/iblock/2ce/140_140_0/zsdggemujp5bc1nakuxv29nuhbpxfn6q.png",
                 "https://utfc.ru/upload/dev2fun.imagecompress/webp/iblock/2ce/zsdggemujp5bc1nakuxv29nuhbpxfn6q.webp",
                 "https://utfc.ru/upload/resize_cache/iblock/866/140_140_0/cfxszjanu1jy4c5hgaqaz9gpxis37dne.png",
-                "https://utfc.ru/upload/dev2fun.imagecompress/webp/iblock/866/cfxszjanu1jy4c5hgaqaz9gpxis37dne.webp"
+                "https://utfc.ru/upload/dev2fun.imagecompress/webp/iblock/866/cfxszjanu1jy4c5hgaqaz9gpxis37dne.webp",
+                "https://utfc.ru/upload/dev2fun.imagecompress/webp/iblock/1b7/adp0v6tshe1o0owf8kpgxwximqyyt5o4.webp",
+                "https://utfc.ru/upload/resize_cache/iblock/5f2/70_70_0/jtoqpoxf3v0ai54dthupo7bqv6dlhff8.png",
+                "https://utfc.ru/upload/dev2fun.imagecompress/webp/iblock/27a/7v0k2iv9m0nmd35mlxdwr9hdv2grlbnz.webp"
             ]
         }
     ],
@@ -263,16 +266,16 @@
             "typeofproduct": "монолитный"
         }
     ],
-    "skeleton": "монолитный",
+    "skeleton": "",
     "minpromtorg": "+",
     "addition": "",
-    "title": "Стул ИЗО СН для посетителей с большим выбором обивки производства компании UTFC",
-    "base_name": "Стул ИЗО СН",
-    "article_number": "1120CHЛ3",
-    "full_describe": "Бестселлер в категории \"стулья для посетителей\". Стул для посетителей имеет широкую спинку и сиденье. Представлен большой выбор обивки. Максимальная нагрузка - 150 кг.",
-    "Link_arm": "https://utfc.ru/catalog/pos_chair/izo_ch/",
+    "title": "Стул ИЗО СН со столиком для семинаров, лекций и залов ожидания производства компании UTFC",
+    "base_name": "Стул ИЗО СН со столиком",
+    "article_number": "ГС112021",
+    "full_describe": "​​​​​​​Бестселлер в категории \"стулья для посетителей\". Стул для посетителей имеет широкую спинку и сиденье. На каркас стула установлен подлокотник, к которому крепится пластиковый столик. Удобный вариант для проведения семинаров, лекций. Максимальная нагрузка 150 кг.",
+    "Link_arm": "https://utfc.ru/catalog/pos_chair/iso_ch_stolik/",
     "Основание": "Металлические опоры стула ИЗО, защитно-декоративное покрытие никель-хром (СН),  d = 16 мм",
-    "Подлокотники": "Без подлокотников",
+    "Подлокотники": "Подлокотник ИЗО +16 к столику для стульев ИЗО, ИЗО ЛАЙТ, ИЗО/ЖТС, ИЗО/ЖТС ЛАЙТ, секций ИЗО/2,3,4",
     "Газлифт": "",
     "Механизм": "",
     "Особенности": "",
@@ -414,5 +417,6 @@
     ],
     "color_seat": [
         ""
-    ]
+    ],
+    "madeinrf": "Сделано РФ"
 }

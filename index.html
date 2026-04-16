@@ -83,38 +83,83 @@
                 <label><input type="checkbox" class="armrest-filter" value="соната"> Соната</label>
                 <label><input type="checkbox" class="armrest-filter" value="t-01|t01|T-01|т-01"> T-01</label>
                 <label><input type="checkbox" class="armrest-filter" value="ХДП|хдп"> ХДП</label>
+                <label><input type="checkbox" class="armrest-filter" value="Пластиковые|пластиковые">
+                    Пластиковые</label>
+                <label><input type="checkbox" class="armrest-filter" value="Металлические|металлические">
+                    Металлические</label>
+                <label><input type="checkbox" class="armrest-filter" value="Алюминиевые|алюминиевые">
+                    Алюминиевые</label>
+                <label><input type="checkbox" class="armrest-filter" value="Деревянные|деревянные"> Деревянные</label>
+                <label><input type="checkbox" class="armrest-filter" value="С мягкими накладками|с мягкими накладками">
+                    С мягкими накладками</label>
             </div>
         </div>
 
         <!-- Конструктив -->
         <h3 class="filter-header">
-            Конструктив
+            Механизм
             <button class="toggle-filter" data-target="mechanism-filter-content">+</button>
         </h3>
         <div class="filter-content" id="mechanism-filter-content">
             <div class="checkbox-group">
                 <label><input type="checkbox" class="mechanism-filter" value="пиастра"> Пиастра</label>
                 <label><input type="checkbox" class="mechanism-filter" value="TG|tg|тг|топ-ган|Топ-ган"> Топ-ган</label>
-                <label><input type="checkbox" class="mechanism-filter" value="GTP|gtp|Gtp|GTS|gts|Gts|ЖТС|жтс">
-                    GTP/GTS</label>
                 <label><input type="checkbox" class="mechanism-filter" value="мультиблок|mb|MB|Mb| мб|MB">
                     Мультиблок</label>
                 <label><input type="checkbox" class="mechanism-filter" value="ПВМ|пвм"> ПВМ</label>
                 <label><input type="checkbox" class="mechanism-filter" value="CPT|срт"> CPT</label>
                 <label><input type="checkbox" class="mechanism-filter" value=" О | O | о | o |_о_|овалина">
-                    Овалина</label>
-                <label><input type="checkbox" class="mechanism-filter" value="EG|eg"> EG</label>
-                <label><input type="checkbox" class="mechanism-filter" value="н_п|н-п|нп|полозья|Н_п|В_п|в_п">
-                    Полозья</label>
-                <label><input type="checkbox" class="mechanism-filter" value="подг|подголовник|подголовником">
-                    Подголовник</label>
-                <label><input type="checkbox" class="mechanism-filter" value="стол|столик|столиком"> Столик</label>
-                <label><input type="checkbox" class="mechanism-filter" value="монолит|монолитный"> Монолитный</label>
-                <label><input type="checkbox" class="mechanism-filter" value="немонолит|немонолитный">
-                    Немонолитный</label>
-                <label><input type="checkbox" class="mechanism-filter" value="складной"> Складной</label>
             </div>
         </div>
+
+                <!-- Каркас -->
+        <h3 class="filter-header">
+            Каркас
+            <button class="toggle-filter" data-target="karkas-filter-content">+</button>
+        </h3>
+        <div class="filter-content" id="karkas-filter-content">
+            <div class="checkbox-group">            
+                <label><input type="checkbox" class="karkas-filter" value="монолит|монолитный"> Монолитный</label>
+                <label><input type="checkbox" class="karkas-filter" value="немонолит|немонолитный">
+                    Немонолитный</label>
+            </div>
+        </div>
+
+        <!-- Подголовник -->
+        <h3 class="filter-header">
+            Подголовник
+            <button class="toggle-filter" data-target="podgolovnik-filter-content">+</button>
+        </h3>
+                <div class="filter-content" id="podgolovnik-filter-content">
+            <div class="checkbox-group">
+                <label><input type="checkbox" class="podgolovnik-filter" value="подг|подголовник|подголовником">
+                    Да</label>
+            </div>
+        </div>
+
+                <!-- Столик -->
+        <h3 class="filter-header">
+            Столик
+            <button class="toggle-filter" data-target="stolik-filter-content">+</button>
+        </h3>
+                <div class="filter-content" id="stolik-filter-content">
+            <div class="checkbox-group">
+                <label><input type="checkbox" class="stolik-filter" value="стол|столик|столиком">
+                    Да</label>
+            </div>
+        </div>
+
+                        <!-- Складной -->
+        <h3 class="filter-header">
+            Складной
+            <button class="toggle-filter" data-target="skladnoy-filter-content">+</button>
+        </h3>
+                <div class="filter-content" id="skladnoy-filter-content">
+            <div class="checkbox-group">
+                <label><input type="checkbox" class="skladnoy-filter" value="складной">Да</label>
+            </div>
+        </div>
+
 
         <!-- Исполнение -->
         <h3 class="filter-header">
@@ -167,6 +212,24 @@
                 <label><input type="checkbox" class="diameter-filter" value="740"> 740</label>
                 <label><input type="checkbox" class="diameter-filter" value="760"> 760</label>
                 <label><input type="checkbox" class="diameter-filter" value="other"> Другие варианты</label>
+            </div>
+        </div>
+
+
+              <!-- Прочие комплектации -->
+        <h3 class="filter-header">
+            Прочие комплектации
+            <button class="toggle-filter" data-target="other-filter-content">+</button>
+        </h3>
+        <div class="filter-content" id="other-filter-content">
+            <div class="checkbox-group">
+                <label><input type="checkbox" class="other-filter" value="GTP|gtp|Gtp|ЖТП|жтп">
+                    GTP</label>
+                <label><input type="checkbox" class="other-filter" value="GTS|GTS|gts|Gts|ЖТС|жтс">
+                    GTS</label>
+                 <label><input type="checkbox" class="other-filter" value="EG|eg"> EG</label>
+                <label><input type="checkbox" class="other-filter" value="н_п|н-п|нп|полозья|Н_п|В_п|в_п">
+                    Полозья</label>     
             </div>
         </div>
 
@@ -407,7 +470,7 @@
 
             <div id="products"></div>
 
-               <div class="final-selection-container">
+            <div class="final-selection-container">
                 <h3>Итоговая выборка</h3>
                 <button onclick="addNewRowToFinalSelection()">Добавить строку со своими данными</button>
                 <div id="finalSelectedProductsTable">
@@ -417,7 +480,7 @@
                                 <!-- <th>Название</th> -->
                                 <th>Артикул</th>
                                 <th>Тип отделки</th>
-                                <th>Тип отделки сиденья</th>                                
+                                <th>Тип отделки сиденья</th>
                                 <th>Подлокотники</th>
                                 <th>Каркас</th>
                                 <th>Нагрузка (кг)</th>
@@ -449,7 +512,7 @@
                                 <!-- <th>Описание</th> -->
                                 <th>Артикул</th>
                                 <th>Тип отделки</th>
-                                <th>Тип отделки сиденья</th>     
+                                <th>Тип отделки сиденья</th>
                                 <th>Подлокотники</th>
                                 <th>Каркас</th>
                                 <th>Нагрузка (кг)</th>
@@ -535,118 +598,118 @@
             diameter_cross: false
         };
 
-function getEditableHeaders() {
-    const headers = document.querySelectorAll('#finalSelectedProductsTable thead tr th[contenteditable="true"]');
-    const headerValues = [];
-    headers.forEach(th => {
-        headerValues.push(th.innerHTML.trim());
-    });
-    return headerValues;
-}
+        function getEditableHeaders() {
+            const headers = document.querySelectorAll('#finalSelectedProductsTable thead tr th[contenteditable="true"]');
+            const headerValues = [];
+            headers.forEach(th => {
+                headerValues.push(th.innerHTML.trim());
+            });
+            return headerValues;
+        }
 
 
 
-// function fetchImageAsBase64(url) {
-//   return fetch(url)
-//     .then(response => response.blob())
-//     .then(blob => new Promise((resolve, reject) => {
-//       const reader = new FileReader();
-//       reader.onloadend = () => resolve(reader.result);
-//       reader.onerror = reject;
-//       reader.readAsDataURL(blob);
-//     }));
-// }
-// async function convertProductImagesToBase64(selectedProducts) {
-//   for (let product of selectedProducts) {
-//     if (product.images && Array.isArray(product.images)) {
-//       const base64Images = await Promise.all(
-//         product.images.map(async (imgUrl) => {
-//           try {
-//             const base64 = await fetchImageAsBase64(imgUrl);
-//             return base64;
-//           } catch (error) {
-//             console.error(`Ошибка при загрузке изображения ${imgUrl}`, error);
-//             return null;
-//           }
-//         })
-//       );
-//       // заменяем ссылки на base64
-//       product.images = base64Images.filter(img => img !== null);
-//     }
-//   }
-//   return selectedProducts;
-// }
+        // function fetchImageAsBase64(url) {
+        //   return fetch(url)
+        //     .then(response => response.blob())
+        //     .then(blob => new Promise((resolve, reject) => {
+        //       const reader = new FileReader();
+        //       reader.onloadend = () => resolve(reader.result);
+        //       reader.onerror = reject;
+        //       reader.readAsDataURL(blob);
+        //     }));
+        // }
+        // async function convertProductImagesToBase64(selectedProducts) {
+        //   for (let product of selectedProducts) {
+        //     if (product.images && Array.isArray(product.images)) {
+        //       const base64Images = await Promise.all(
+        //         product.images.map(async (imgUrl) => {
+        //           try {
+        //             const base64 = await fetchImageAsBase64(imgUrl);
+        //             return base64;
+        //           } catch (error) {
+        //             console.error(`Ошибка при загрузке изображения ${imgUrl}`, error);
+        //             return null;
+        //           }
+        //         })
+        //       );
+        //       // заменяем ссылки на base64
+        //       product.images = base64Images.filter(img => img !== null);
+        //     }
+        //   }
+        //   return selectedProducts;
+        // }
         // Функция для загрузки и сохранения изображения в localStorage
 
-async function saveImageToLocalStorage(url, key) {
-    try {
-        console.log(`Пытаюсь сохранить изображение по ключу: ${key}, URL: ${url}`);
-        const response = await fetch(url);
-        if (!response.ok) {
-            throw new Error(`Ошибка загрузки изображения: ${response.status}`);
+        async function saveImageToLocalStorage(url, key) {
+            try {
+                console.log(`Пытаюсь сохранить изображение по ключу: ${key}, URL: ${url}`);
+                const response = await fetch(url);
+                if (!response.ok) {
+                    throw new Error(`Ошибка загрузки изображения: ${response.status}`);
+                }
+                const blob = await response.blob();
+                const reader = new FileReader();
+                reader.onload = () => {
+                    localStorage.setItem(key, reader.result);
+                    console.log(`Изображение успешно сохранено в localStorage по ключу: ${key}`);
+                };
+                reader.onerror = () => {
+                    console.error("Ошибка чтения изображения:", url);
+                };
+                reader.readAsDataURL(blob);
+            } catch (e) {
+                console.error("Ошибка сохранения изображения:", url, e);
+            }
         }
-        const blob = await response.blob();
-        const reader = new FileReader();
-        reader.onload = () => {
-            localStorage.setItem(key, reader.result);
-            console.log(`Изображение успешно сохранено в localStorage по ключу: ${key}`);
-        };
-        reader.onerror = () => {
-            console.error("Ошибка чтения изображения:", url);
-        };
-        reader.readAsDataURL(blob);
-    } catch (e) {
-        console.error("Ошибка сохранения изображения:", url, e);
-    }
-}
-
-      
-// async function saveAllImagesFromSelection(selection, format = 'image/png') {
-//     const images = Object.values(selection).flatMap(item => item.images);
-//     for (let i = 0; i < images.length; i++) {
-//         const url = images[i];
-//         const key = `image_${i}`;
-//         await saveImageToLocalStorage(url, key, format);
-//     }
-// }
-
-// // Функция для преобразования и сохранения изображения в localStorage
-// async function saveImageToLocalStorage(url, key, format = 'image/png') {
-//     try {
-//         const response = await fetch(url);
-//         if (!response.ok) {
-//             throw new Error(`Ошибка загрузки изображения: ${response.status}`);
-//         }
-//         const blob = await response.blob();
-
-//         const img = new Image();
-//         const objectURL = URL.createObjectURL(blob);
-//         img.src = objectURL;
-
-//         await new Promise((resolve, reject) => {
-//             img.onload = () => {
-//                 const canvas = document.createElement('canvas');
-//                 canvas.width = img.width;
-//                 canvas.height = img.height;
-//                 const ctx = canvas.getContext('2d');
-//                 ctx.drawImage(img, 0, 0);
-//                 const dataURL = canvas.toDataURL(format);
-//                 localStorage.setItem(key, dataURL);
-//                 URL.revokeObjectURL(objectURL);
-//                 resolve();
-//             };
-//             img.onerror = reject;
-//         });
-//     } catch (e) {
-//         console.error("Ошибка при сохранении изображения:", url, e);
-//     }
-// }
 
 
-// Вызов функции для обработки всех изображений
-// saveAllImagesFromSelection(finalSelection);
+        // async function saveAllImagesFromSelection(selection, format = 'image/png') {
+        //     const images = Object.values(selection).flatMap(item => item.images);
+        //     for (let i = 0; i < images.length; i++) {
+        //         const url = images[i];
+        //         const key = `image_${i}`;
+        //         await saveImageToLocalStorage(url, key, format);
+        //     }
+        // }
 
-function parseDimensionValue(value) {
+        // // Функция для преобразования и сохранения изображения в localStorage
+        // async function saveImageToLocalStorage(url, key, format = 'image/png') {
+        //     try {
+        //         const response = await fetch(url);
+        //         if (!response.ok) {
+        //             throw new Error(`Ошибка загрузки изображения: ${response.status}`);
+        //         }
+        //         const blob = await response.blob();
+
+        //         const img = new Image();
+        //         const objectURL = URL.createObjectURL(blob);
+        //         img.src = objectURL;
+
+        //         await new Promise((resolve, reject) => {
+        //             img.onload = () => {
+        //                 const canvas = document.createElement('canvas');
+        //                 canvas.width = img.width;
+        //                 canvas.height = img.height;
+        //                 const ctx = canvas.getContext('2d');
+        //                 ctx.drawImage(img, 0, 0);
+        //                 const dataURL = canvas.toDataURL(format);
+        //                 localStorage.setItem(key, dataURL);
+        //                 URL.revokeObjectURL(objectURL);
+        //                 resolve();
+        //             };
+        //             img.onerror = reject;
+        //         });
+        //     } catch (e) {
+        //         console.error("Ошибка при сохранении изображения:", url, e);
+        //     }
+        // }
+
+
+        // Вызов функции для обработки всех изображений
+        // saveAllImagesFromSelection(finalSelection);
+
+        function parseDimensionValue(value) {
             if (value === "" || value === null || value === undefined) {
                 return null;
             }
@@ -654,52 +717,52 @@ function parseDimensionValue(value) {
             return isNaN(parsed) ? null : parsed;
         }
 
-function getFinalSelectionData() {
-    const result = [];
+        function getFinalSelectionData() {
+            const result = [];
 
-    Object.entries(finalSelection).forEach(([name, data]) => {
-        // Инициализируем массив images, если его нет
-        if (!data.images) {
-            data.images = [];
+            Object.entries(finalSelection).forEach(([name, data]) => {
+                // Инициализируем массив images, если его нет
+                if (!data.images) {
+                    data.images = [];
+                }
+
+                // Загружаем изображения из localStorage
+                for (let i = 0; i < 4; i++) {
+                    const imageKey = `image_${name}_${i}`;
+                    const cachedImage = localStorage.getItem(imageKey);
+                    if (cachedImage) {
+                        data.images[i] = cachedImage;
+                    } else if (!data.images[i]) {
+                        data.images[i] = "";
+                    }
+                }
+
+                result.push({
+                    name: name,
+                    article_number: data.article_number || '—',
+                    finish_type: data.finish_type || '—',
+                    finish_type_seat: data.finish_type_seat || '—',
+                    Подлокотники: data.Подлокотники || '—',
+                    skeleton: data.skeleton || '—',
+                    max_load: data.max_load || '—',
+                    recommended_load: data.recommended_load || '—',
+                    Основание: data.Основание || '—',
+                    Газлифт: data.Газлифт || '—',
+                    Механизм: data.Механизм || '—',
+                    Особенности: data.Особенности || '—',
+                    Ролики: data.Ролики || '—',
+                    images: data.images,
+                    count: data.count || 1,
+                    CV_PRICE_1: data.CV_PRICE_1 || '—',
+                    CV_PRICE_2: data.CV_PRICE_2 || '—',
+                    CV_PRICE_3: data.CV_PRICE_3 || '—',
+                    Link_arm: data.Link_arm || '#',
+                });
+            });
+
+            return result;
         }
-
-        // Загружаем изображения из localStorage
-        for (let i = 0; i < 4; i++) {
-            const imageKey = `image_${name}_${i}`;
-            const cachedImage = localStorage.getItem(imageKey);
-            if (cachedImage) {
-                data.images[i] = cachedImage;
-            } else if (!data.images[i]) {
-                data.images[i] = "";
-            }
-        }
-
-        result.push({
-            name: name,
-            article_number: data.article_number || '—',
-            finish_type: data.finish_type || '—',
-            finish_type_seat: data.finish_type_seat || '—',
-            Подлокотники: data.Подлокотники || '—',
-            skeleton: data.skeleton || '—',
-            max_load: data.max_load || '—',
-            recommended_load: data.recommended_load || '—',
-            Основание: data.Основание || '—',
-            Газлифт: data.Газлифт || '—',
-            Механизм: data.Механизм || '—',
-            Особенности: data.Особенности || '—',
-            Ролики: data.Ролики || '—',
-            images: data.images,
-            count: data.count || 1,
-            CV_PRICE_1: data.CV_PRICE_1 || '—',
-            CV_PRICE_2: data.CV_PRICE_2 || '—',
-            CV_PRICE_3: data.CV_PRICE_3 || '—',
-            Link_arm: data.Link_arm || '#',
-        });
-    });
-
-    return result;
-}
-          function updateSliderFromInput(minInput, maxInput, minThumb, maxThumb, track, isVertical, isMin) {
+        function updateSliderFromInput(minInput, maxInput, minThumb, maxThumb, track, isVertical, isMin) {
             if (!minInput || !maxInput || !minThumb || !maxThumb || !track) {
                 console.warn("Отсутствуют необходимые элементы для обновления слайдера");
                 return;
@@ -921,41 +984,41 @@ function getFinalSelectionData() {
 
 
 
- function normalizeSearchTerm(term) {
-    if (term == null) return '__NOT_SPECIFIED__';
+        function normalizeSearchTerm(term) {
+            if (term == null) return '__NOT_SPECIFIED__';
 
-    // Приводим к строке, делаем нижний регистр и удаляем знаки препинания
-    term = String(term).toLowerCase().trim();
-    term = term.replace(/[.,!?;:"'()\-]/g, ' '); // заменяем знаки препинания на пробелы
-    term = term.replace(/\s+/g, ' '); // убираем лишние пробелы
+            // Приводим к строке, делаем нижний регистр и удаляем знаки препинания
+            term = String(term).toLowerCase().trim();
+            term = term.replace(/[.,!?;:"'()\-]/g, ' '); // заменяем знаки препинания на пробелы
+            term = term.replace(/\s+/g, ' '); // убираем лишние пробелы
 
-    // Заменяем вариации слов на стандартные термины
-    term = term
-        .replace(/люкс|lux|LUX|Lyuks|Lyux|Liuks|Liux|люкc|ЛЮКС/gi, 'люкс')
-        .replace(/полозья|Н_п|Нп|полоз/gi, 'полозья')
-        .replace(/велюр|велютто|velu|velur/gi, 'велюр')
-        .replace(/модерно|mod|moderno|модерн/gi, 'модерно')
-        .replace(/мультиб|мультиблок|МВ|MB/gi, 'мультиблок');
+            // Заменяем вариации слов на стандартные термины
+            term = term
+                .replace(/люкс|lux|LUX|Lyuks|Lyux|Liuks|Liux|люкc|ЛЮКС/gi, 'люкс')
+                .replace(/полозья|Н_п|Нп|полоз/gi, 'полозья')
+                .replace(/велюр|велютто|velu|velur/gi, 'велюр')
+                .replace(/модерно|mod|moderno|модерн/gi, 'модерно')
+                .replace(/мультиб|мультиблок|МВ|MB/gi, 'мультиблок');
 
-    // Проверки на специальные фразы
-    if (term.includes('высота не указана') || term.includes('h не указана')) {
-        return '__NOT_SPECIFIED_H__';
-    }
-    if (term.includes('ширина не указана') || term.includes('w не указана')) {
-        return '__NOT_SPECIFIED_W__';
-    }
-    if (term.includes('ширина с подлокотниками не указана') || term.includes('w+ не указана')) {
-        return '__NOT_SPECIFIED_W_PLUS__';
-    }
-    if (term.includes('глубина не указана') || term.includes('d не указана')) {
-        return '__NOT_SPECIFIED_D__';
-    }
-    if (term === 'не указана' || term === 'не указано' || term === 'не указан') {
-        return '__NOT_SPECIFIED__';
-    }
+            // Проверки на специальные фразы
+            if (term.includes('высота не указана') || term.includes('h не указана')) {
+                return '__NOT_SPECIFIED_H__';
+            }
+            if (term.includes('ширина не указана') || term.includes('w не указана')) {
+                return '__NOT_SPECIFIED_W__';
+            }
+            if (term.includes('ширина с подлокотниками не указана') || term.includes('w+ не указана')) {
+                return '__NOT_SPECIFIED_W_PLUS__';
+            }
+            if (term.includes('глубина не указана') || term.includes('d не указана')) {
+                return '__NOT_SPECIFIED_D__';
+            }
+            if (term === 'не указана' || term === 'не указано' || term === 'не указан') {
+                return '__NOT_SPECIFIED__';
+            }
 
-    return term;
-}
+            return term;
+        }
 
         // function normalizeSearchTerm(term) {
         //     if (term == null) return '__NOT_SPECIFIED__';
@@ -986,77 +1049,118 @@ function getFinalSelectionData() {
         //     return term;
         // }
 
-  // Функция для проверки наличия противоположных слов
-function containsOppositeTerms(str, searchTerm) {
-    const oppositesMap = {
-        'регулируемый': ['нерегулируемый'],
-        'регулируемые': ['нерегулируемые'],
-        'регулируются': ['нерегулируются'],
-        
-    };
+        // Функция для проверки наличия противоположных слов
+        function containsOppositeTerms(str, searchTerm) {
+            const oppositesMap = {
+                'регулируемый': ['нерегулируемый'],
+                'регулируемые': ['нерегулируемые'],
+                'регулируются': ['нерегулируются'],
 
-    const key = searchTerm.toLowerCase();
-    const opposites = oppositesMap[key] || [];
+            };
 
-    for (const opposite of opposites) {
-        const regex = new RegExp(`\\b${opposite}\\b`, 'i');
-        if (regex.test(str)) {
-            return true;
-        }
-    }
-    return false;
-}
+            const key = searchTerm.toLowerCase();
+            const opposites = oppositesMap[key] || [];
 
-// Функция для разбивки строки на слова после нормализации
-function getNormalizedWords(str) {
-    return normalizeSearchTerm(str).split(/\s+/);
-}
-
-// Обновленная функция поиска, ищет целую фразу или слова
-function searchInObject(obj, searchTerm) {
-  if (!obj) return false;
-
-  // Нормализуем поисковый термин и получаем массив слов
-  const searchWords = getNormalizedWords(searchTerm).filter(w => w);
-
-  if (searchWords.length === 0) return false;
-
-  // Для строк
-  if (typeof obj === 'string') {
-    const objWords = getNormalizedWords(obj);
-    // Проверяем, содержит ли строка последовательность searchWords
-    // Например, ищем подмассив searchWords внутри objWords
-    return containsSequence(objWords, searchWords);
-  }
-
-  // Для массивов
-  if (Array.isArray(obj)) {
-    return obj.some(item => searchInObject(item, searchTerm));
-  }
-
-  // Для объектов
-  if (typeof obj === 'object') {
-    return Object.values(obj).some(value => searchInObject(value, searchTerm));
-  }
-
-  return false;
-}
-
-// Вспомогательная функция для поиска последовательности слов в массиве
-function containsSequence(sourceWords, targetWords) {
-    if (targetWords.length === 0) return true;
-    for (let i = 0; i <= sourceWords.length - targetWords.length; i++) {
-        let match = true;
-        for (let j = 0; j < targetWords.length; j++) {
-            if (sourceWords[i + j] !== targetWords[j]) {
-                match = false;
-                break;
+            for (const opposite of opposites) {
+                const regex = new RegExp(`\\b${opposite}\\b`, 'i');
+                if (regex.test(str)) {
+                    return true;
+                }
             }
+            return false;
         }
-        if (match) return true;
-    }
-    return false;
-}
+
+        // Функция для разбивки строки на слова после нормализации
+        function getNormalizedWords(str) {
+            return normalizeSearchTerm(str).split(/\s+/);
+        }
+
+        // Обновленная функция поиска, ищет целую фразу или слова
+        function searchInObject(obj, searchTerm) {
+            if (!obj) return false;
+
+            // Нормализуем поисковый термин и получаем массив слов
+            const searchWords = getNormalizedWords(searchTerm).filter(w => w);
+
+            if (searchWords.length === 0) return false;
+
+            // Для строк
+            if (typeof obj === 'string') {
+                const objWords = getNormalizedWords(obj);
+                // Проверяем, содержит ли строка последовательность searchWords
+                // Например, ищем подмассив searchWords внутри objWords
+                return containsSequence(objWords, searchWords);
+            }
+
+            // Для массивов
+            if (Array.isArray(obj)) {
+                return obj.some(item => searchInObject(item, searchTerm));
+            }
+
+            // Для объектов
+            if (typeof obj === 'object') {
+                return Object.values(obj).some(value => searchInObject(value, searchTerm));
+            }
+
+             // Для объектов
+    // if (typeof obj === 'object') {
+    //     // Если поле 'Основание' или 'title', пропускаем поиск
+    //     if (obj.hasOwnProperty('Основание')) {
+    //         return false;
+    //     }
+    //     return Object.values(obj).some(value => searchInObject(value, searchTerm));
+    // }
+
+            return false;
+        }
+
+//         function searchInObject(obj, searchTerm) {
+//     if (!obj) return false;
+
+//     // Нормализуем поисковый термин и получаем массив слов
+//     const searchWords = getNormalizedWords(searchTerm).filter(w => w);
+
+//     if (searchWords.length === 0) return false;
+
+//     // Для строк
+//     if (typeof obj === 'string') {
+//         const objWords = getNormalizedWords(obj);
+//         // Проверяем, содержит ли строка последовательность searchWords
+//         return containsSequence(objWords, searchWords);
+//     }
+
+//     // Для массивов
+//     if (Array.isArray(obj)) {
+//         return obj.some(item => searchInObject(item, searchTerm));
+//     }
+
+//     // Для объектов
+//     if (typeof obj === 'object') {
+//         // Если поле 'Основание' или 'title', пропускаем поиск
+//         if (obj.hasOwnProperty('Основание') || obj.hasOwnProperty('title')) {
+//             return false;
+//         }
+//         return Object.values(obj).some(value => searchInObject(value, searchTerm));
+//     }
+
+//     return false;
+// }
+
+        // Вспомогательная функция для поиска последовательности слов в массиве
+        function containsSequence(sourceWords, targetWords) {
+            if (targetWords.length === 0) return true;
+            for (let i = 0; i <= sourceWords.length - targetWords.length; i++) {
+                let match = true;
+                for (let j = 0; j < targetWords.length; j++) {
+                    if (sourceWords[i + j] !== targetWords[j]) {
+                        match = false;
+                        break;
+                    }
+                }
+                if (match) return true;
+            }
+            return false;
+        }
 
 
         // function searchInObject(obj, searchTerm) {
@@ -1572,6 +1676,11 @@ function containsSequence(sourceWords, targetWords) {
             const specialOfferFilters = Array.from(document.querySelectorAll('.special-offer-filter:checked')).map(el => el.value);
             const armrestFilters = Array.from(document.querySelectorAll('.armrest-filter:checked')).map(el => el.value);
             const mechanismFilters = Array.from(document.querySelectorAll('.mechanism-filter:checked')).map(el => el.value);
+            const karkasFilters = Array.from(document.querySelectorAll('.karkas-filter:checked')).map(el => el.value);
+            const otherFilters = Array.from(document.querySelectorAll('.other-filter:checked')).map(el => el.value);
+            const podgolovnikFilters = Array.from(document.querySelectorAll('.podgolovnik-filter:checked')).map(el => el.value);
+            const stolikFilters = Array.from(document.querySelectorAll('.stolik-filter:checked')).map(el => el.value);
+            const skladnoyFilters = Array.from(document.querySelectorAll('.skladnoy-filter:checked')).map(el => el.value);
             const finishFilters = Array.from(document.querySelectorAll('.finish-filter:checked')).map(el => el.value);
             const loadFilters = Array.from(document.querySelectorAll('.load-filter:checked')).map(el => el.value);
             const diameterFilters = Array.from(document.querySelectorAll('.diameter-filter:checked')).map(el => el.value);
@@ -1601,10 +1710,12 @@ function containsSequence(sourceWords, targetWords) {
                 });
             }
 
+            // Получаем выбранные фильтры по подлокотникам
+            const selectedArmrestFilters = Array.from(document.querySelectorAll('.armrest-filter:checked'))
+                .map(input => input.value);
 
 
-
-            if (armrestFilters.length > 0 || mechanismFilters.length > 0 || finishFilters.length > 0 || loadFilters.length > 0 || diameterFilters.length > 0) {
+            if (armrestFilters.length > 0 || mechanismFilters.length > 0 || karkasFilters.length > 0 || podgolovnikFilters.length > 0 || stolikFilters.length > 0 || otherFilters.length > 0 || skladnoyFilters.length > 0 || finishFilters.length > 0 || loadFilters.length > 0 || diameterFilters.length > 0) {
                 filtered = filtered.filter(product => {
                     const uniqueName = (Array.isArray(product.unique_name) ? product.unique_name[0] : product.unique_name).toLowerCase();
 
@@ -1630,13 +1741,37 @@ function containsSequence(sourceWords, targetWords) {
                         }
                     }
 
+// Создаем объект с условиями и строками для поиска
+const filtersMap = {
+  "<strong>Подлокотники</strong> пластиковые": armrestFilters.some(f => f.includes("пластиковые")),
+  "<strong>Подлокотники</strong> металлические": armrestFilters.some(f => f.includes("металлические")),
+  "Подлокотники алюминиевые": armrestFilters.some(f => f.includes("алюминиевые")),
+  "деревянные": armrestFilters.some(f => f.includes("деревянные")),
+  "с мягкими накладками": armrestFilters.some(f => f.includes("с мягкими накладками"))
+};
+
+const productName = Array.isArray(product.unique_name) ? product.unique_name[0] : product.unique_name;
+
+// Проходим по каждому условию и ищем, если оно выполнено
+for (const [searchTerm, condition] of Object.entries(filtersMap)) {
+  if (condition) {
+    if (productName.includes('Б_п')) {
+  // Пропускаем этот продукт
+  continue; // если внутри цикла
+}
+    armrestMatch = searchInObject(product, searchTerm);
+    // Если достаточно первого совпадения, можно прервать цикл
+    // break;
+  }
+}
+
+
                     let mechanismMatch = true;
                     if (mechanismFilters.length > 0) {
                         const expandedMechanismFilters = mechanismFilters.flatMap(filter => filter.split('|').map(item => item.trim()));
                         const isMonolitSelected = expandedMechanismFilters.includes("монолит") || expandedMechanismFilters.includes("монолитный");
                         const isNemMonolitSelected = expandedMechanismFilters.includes("немонолит") || expandedMechanismFilters.includes("немонолитный");
                         const isFoldingSelected = expandedMechanismFilters.includes("складной");
-                        const isPodgоловnikSelected = mechanismFilters.some(f => f.includes("подг"));
 
                         if (isMonolitSelected || isNemMonolitSelected || isFoldingSelected) {
                             const productSkeleton = product.skeleton?.toLowerCase().trim();
@@ -1649,10 +1784,6 @@ function containsSequence(sourceWords, targetWords) {
                                 if (isFoldingSelected) selectedSkeletons.push("складной");
                                 mechanismMatch = selectedSkeletons.includes(productSkeleton);
                             }
-                        }
-
-                        if (isPodgоловnikSelected) {
-                            mechanismMatch = searchInObject(product, "подголовник");
                         }
 
                         if (mechanismMatch && mechanismFilters.length > 0) {
@@ -1678,6 +1809,150 @@ function containsSequence(sourceWords, targetWords) {
                             }
                         }
                     }
+
+                        let karkasMatch = true;
+                    if (karkasFilters.length > 0) {
+                        const expandedKarkasFilters = karkasFilters.flatMap(filter => filter.split('|').map(item => item.trim()));
+                        const isMonolitSelected = expandedKarkasFilters.includes("монолит") || expandedKarkasFilters.includes("монолитный");
+                        const isNemMonolitSelected = expandedKarkasFilters.includes("немонолит") || expandedKarkasFilters.includes("немонолитный");
+                        const isFoldingSelected = expandedKarkasFilters.includes("складной");
+
+                        if (isMonolitSelected || isNemMonolitSelected || isFoldingSelected) {
+                            const productSkeleton = product.skeleton?.toLowerCase().trim();
+                            if (!productSkeleton) {
+                                karkasMatch = false;
+                            } else {
+                                const selectedSkeletons = [];
+                                if (isMonolitSelected) selectedSkeletons.push("монолитный");
+                                if (isNemMonolitSelected) selectedSkeletons.push("немонолитный");
+                                if (isFoldingSelected) selectedSkeletons.push("складной");
+                                karkasMatch = selectedSkeletons.includes(productSkeleton);
+                            }
+                        }
+
+                        if (karkasMatch && karkasFilters.length > 0) {
+                            const otherKarkasFilters = karkasFilters.filter(f =>
+                                
+                                !f.includes("монолит") &&
+                                !f.includes("немонолит")
+                            );
+                            if (otherKarkasFilters.length > 0) {
+                                const cleanedUniqueName = uniqueName
+                                    .replace(/\s*([мm]b|mb)[-\s]?\d*\s*/gi, ' ')
+                                    .trim()
+                                    .toLowerCase();
+                                karkasMatch = otherKarkasFilters.every(filter => {
+                                    const patterns = filter.split('|');
+                                    return patterns.some(pattern => {
+                                        const lowerPattern = pattern.toLowerCase().trim();
+                                        const regex = new RegExp(`(^|\\s)(${lowerPattern})(\\s|$|-)`, 'i');
+                                        return regex.test(cleanedUniqueName);
+                                    });
+                                });
+                            }
+                        }
+                    }
+
+
+
+                    let otherMatch = true;
+                    if (otherFilters.length > 0) {
+                        const expandedMechanismFilters = otherFilters.flatMap(filter => filter.split('|').map(item => item.trim()));
+                        const isMonolitSelected = expandedMechanismFilters.includes("монолит") || expandedMechanismFilters.includes("монолитный");
+                        const isNemMonolitSelected = expandedMechanismFilters.includes("немонолит") || expandedMechanismFilters.includes("немонолитный");
+                        const isFoldingSelected = expandedMechanismFilters.includes("складной");
+
+                     
+                        if (otherMatch && otherFilters.length > 0) {
+                            const otherMechanismFilters = otherFilters.filter(f =>
+                                !f.includes("подг") &&
+                                !f.includes("монолит") &&
+                                !f.includes("немонолит") &&
+                                !f.includes("складной")
+                            );
+                            if (otherMechanismFilters.length > 0) {
+                                const cleanedUniqueName = uniqueName
+                                    .replace(/\s*([мm]b|mb)[-\s]?\d*\s*/gi, ' ')
+                                    .trim()
+                                    .toLowerCase();
+                                otherMatch = otherMechanismFilters.every(filter => {
+                                    const patterns = filter.split('|');
+                                    return patterns.some(pattern => {
+                                        const lowerPattern = pattern.toLowerCase().trim();
+                                        const regex = new RegExp(`(^|\\s)(${lowerPattern})(\\s|$|-)`, 'i');
+                                        return regex.test(cleanedUniqueName);
+                                    });
+                                });
+                            }
+                        }
+                    }
+
+               
+
+
+                    let podgolovnikMatch = true;
+                    if (podgolovnikFilters.length > 0) {
+                        const expandedMechanismFilters = podgolovnikFilters.flatMap(filter => filter.split('|').map(item => item.trim()));   
+                        const isPodgоловnikSelected = podgolovnikFilters.some(f => f.includes("подг"));  
+
+                        if (isPodgоловnikSelected) {
+                            podgolovnikMatch = searchInObject(product, "подголовник");
+                        }
+                    }
+
+                    let skladnoyMatch = true;
+                    if (skladnoyFilters.length > 0) {
+                        const expandedMechanismFilters = skladnoyFilters.flatMap(filter => filter.split('|').map(item => item.trim()));   
+                        const isskladnoySelected = skladnoyFilters.some(f => f.includes("складной"));  
+
+                        if (isskladnoySelected) {
+                            skladnoyMatch = searchInObject(product, "складной");
+                        }
+                    }
+
+
+                    let stolikMatch = true;
+
+                    if (stolikFilters.length > 0) {
+                        const expandedMechanismFilters = stolikFilters.flatMap(filter => filter.split('|').map(item => item.trim()));   
+                        const isstolikSelected = stolikFilters.some(f => f.includes("стол|столик|столиком")); 
+                        const productName = Array.isArray(product.unique_name) ? product.unique_name[0] : product.unique_name; 
+
+                        const keywords = ['стол', 'столик', 'столиком'];
+                        const containsKeyword = keywords.some(keyword => productName.toLowerCase().includes(keyword));
+
+                        if (isstolikSelected) {
+                            if (containsKeyword) {
+                                stolikMatch = searchInObject(product, "столиком");
+                            } else {
+                                stolikMatch = false; // или оставить true, если нужно
+                            }
+                        }
+                    }
+
+
+  
+
+                    // let stolikMatch = true; // Изначально предполагаем, что подходит
+
+                    // if (stolikFilters.length > 0) {
+                    //     const productName = Array.isArray(product.unique_name) ? product.unique_name[0] : product.unique_name;
+
+                    //     const isstolikSelected = stolikFilters.some(f => f.includes("стол|столик|столиком"));
+
+                    //     const keywords = ['стол', 'столик', 'столиком'];
+
+                    //     const containsKeyword = keywords.some(keyword => productName.includes(keyword));
+
+                    //     if (containsKeyword) {
+                    //         if (isstolikSelected) {
+                    //             stolikMatch = searchInObject(product, "столиком");
+                    //         } } 
+                    // }
+
+                    // return stolikMatch;
+                    
+
 
                     let finishMatch = true;
                     if (finishFilters.length > 0) {
@@ -1738,7 +2013,7 @@ function containsSequence(sourceWords, targetWords) {
                         }
                     }
 
-                    return armrestMatch && mechanismMatch && finishMatch && loadMatch && diameterMatch;
+                    return armrestMatch && mechanismMatch && podgolovnikMatch && stolikMatch && karkasMatch && otherMatch && skladnoyMatch && finishMatch && loadMatch && diameterMatch;
                 });
             }
 
@@ -2312,41 +2587,41 @@ function containsSequence(sourceWords, targetWords) {
 
 
 
-document.querySelectorAll('.open-card-modal').forEach(button => {
-    button.addEventListener('click', async function () {
-        const category = this.getAttribute('data-category');
-        const name = this.getAttribute('data-name');
-        let uniqueName = this.getAttribute('data-unique-name');
-        uniqueName = uniqueName.charAt(0).toUpperCase() + uniqueName.slice(1).toLowerCase();
+            document.querySelectorAll('.open-card-modal').forEach(button => {
+                button.addEventListener('click', async function () {
+                    const category = this.getAttribute('data-category');
+                    const name = this.getAttribute('data-name');
+                    let uniqueName = this.getAttribute('data-unique-name');
+                    uniqueName = uniqueName.charAt(0).toUpperCase() + uniqueName.slice(1).toLowerCase();
 
-        const mainPath = `card.html?category=${encodeURIComponent(category)}&name=${encodeURIComponent(name)}&unique_name=${encodeURIComponent(uniqueName)}`;
-        const archivePath = `card.html?category=${encodeURIComponent(category)}/escape&name=${encodeURIComponent(name)}&unique_name=${encodeURIComponent(uniqueName)}`;
+                    const mainPath = `card.html?category=${encodeURIComponent(category)}&name=${encodeURIComponent(name)}&unique_name=${encodeURIComponent(uniqueName)}`;
+                    const archivePath = `card.html?category=${encodeURIComponent(category)}/escape&name=${encodeURIComponent(name)}&unique_name=${encodeURIComponent(uniqueName)}`;
 
-        // Проверка существования архивных файлов
-        let urlToOpen = mainPath;
-        try {
-            const response = await fetch(`products/${category}/${uniqueName}.json`, { method: 'HEAD' });
-            if (!response.ok) {
-                // Проверка в архиве
-                const archiveResponse = await fetch(`products/${category}/escape/${uniqueName}.json`, { method: 'HEAD' });
-                if (archiveResponse.ok) {
-                    urlToOpen = archivePath; // открываем архивную страницу
-                } else {
-                    alert('Файл не найден в основном месте и в архиве');
-                    return;
-                }
-            }
-        } catch (error) {
-            alert('Ошибка при проверке файла');
-            return;
+                    // Проверка существования архивных файлов
+                    let urlToOpen = mainPath;
+                    try {
+                        const response = await fetch(`products/${category}/${uniqueName}.json`, { method: 'HEAD' });
+                        if (!response.ok) {
+                            // Проверка в архиве
+                            const archiveResponse = await fetch(`products/${category}/escape/${uniqueName}.json`, { method: 'HEAD' });
+                            if (archiveResponse.ok) {
+                                urlToOpen = archivePath; // открываем архивную страницу
+                            } else {
+                                alert('Файл не найден в основном месте и в архиве');
+                                return;
+                            }
+                        }
+                    } catch (error) {
+                        alert('Ошибка при проверке файла');
+                        return;
+                    }
+
+                    window.open(urlToOpen, '_blank');
+                });
+            });
         }
 
-        window.open(urlToOpen, '_blank');
-    });
-});
-        }
 
-        
 
         function buildOverallChart(products) {
             if (!products || products.length === 0) {
@@ -2645,10 +2920,10 @@ document.querySelectorAll('.open-card-modal').forEach(button => {
                 parentRow.appendChild(nameCell);
 
                 // Столбец с описанием
-const describeCell = document.createElement('td');
-describeCell.textContent = parent.full_describe || '—';
-describeCell.setAttribute('colspan', '16');
-parentRow.appendChild(describeCell);
+                const describeCell = document.createElement('td');
+                describeCell.textContent = parent.full_describe || '—';
+                describeCell.setAttribute('colspan', '16');
+                parentRow.appendChild(describeCell);
 
                 const parentQRCell = document.createElement('td');
                 parentQRCell.className = 'qr-cell';
@@ -2676,22 +2951,22 @@ parentRow.appendChild(describeCell);
                     childNameCell.style.paddingLeft = '30px';
                     childRow.appendChild(childNameCell);
 
-                            // Описание (занимает 1 колонку)
-        // const describeCell = document.createElement('td');
-        // describeCell.textContent = parent.full_describe || '—';
-        // childRow.appendChild(describeCell);
+                    // Описание (занимает 1 колонку)
+                    // const describeCell = document.createElement('td');
+                    // describeCell.textContent = parent.full_describe || '—';
+                    // childRow.appendChild(describeCell);
 
                     // Артикул
                     const articleCell = document.createElement('td');
                     articleCell.textContent = parent.article_number || '—';
                     childRow.appendChild(articleCell);
 
-                                        // Тип оделки
+                    // Тип оделки
                     const finishtypeCell = document.createElement('td');
                     finishtypeCell.textContent = parent.finish_type || '—';
                     childRow.appendChild(finishtypeCell);
 
-                                                   // Тип оделки сиденья
+                    // Тип оделки сиденья
                     const finishtypeseatCell = document.createElement('td');
                     finishtypeseatCell.textContent = parent.finish_type_seat || '—';
                     childRow.appendChild(finishtypeseatCell);
@@ -2755,7 +3030,7 @@ parentRow.appendChild(describeCell);
                             imgUrl = parent.images[0].vid_main;
                         }
 
-              if (imgUrl) {
+                        if (imgUrl) {
                             const img = document.createElement('img');
                             img.src = imgUrl;
                             img.style.width = '50px';
@@ -2805,19 +3080,19 @@ parentRow.appendChild(describeCell);
                         toggleChildInFinalSelection(child, false);
 
                         const finalSelection = JSON.parse(localStorage.getItem('finalSelection')) || {};
-if (finalSelection[name]) {
-    finalSelection[name].count = (finalSelection[name].count || 0) - 1;
-    if (finalSelection[name].count <= 0) {
-        // Удаляем изображения из localStorage
-        for (let i = 0; i < 4; i++) {
-            const imageKey = `image_${name}_${i}`;
-            localStorage.removeItem(imageKey);
-        }
-        delete finalSelection[name];
-    }
-    localStorage.setItem('finalSelection', JSON.stringify(finalSelection));
-    updateFinalSelectionTable();
-}
+                        if (finalSelection[name]) {
+                            finalSelection[name].count = (finalSelection[name].count || 0) - 1;
+                            if (finalSelection[name].count <= 0) {
+                                // Удаляем изображения из localStorage
+                                for (let i = 0; i < 4; i++) {
+                                    const imageKey = `image_${name}_${i}`;
+                                    localStorage.removeItem(imageKey);
+                                }
+                                delete finalSelection[name];
+                            }
+                            localStorage.setItem('finalSelection', JSON.stringify(finalSelection));
+                            updateFinalSelectionTable();
+                        }
                     });
 
                     actionsCell.appendChild(plusButton);
@@ -2834,10 +3109,10 @@ if (finalSelection[name]) {
             document.getElementById('productsCountValue').textContent = `${parentsCount} (база) + ${childrenCount} (варианты)`;
             updateFinalSelectionTable();
         }
-        
-        
-        
-        
+
+
+
+
         // function toggleProductInCart(product) {
         //     const productName = Array.isArray(product.unique_name) ? product.unique_name[0] : product.unique_name;
         //     const index = selectedProducts.findIndex(p => {
@@ -2864,102 +3139,102 @@ if (finalSelection[name]) {
 
         // ----------------------------
 
-function toggleProductInCart(product) {
-    const productName = Array.isArray(product.unique_name) ? product.unique_name[0] : product.unique_name;
-    const index = selectedProducts.findIndex(p => {
-        const pName = Array.isArray(p.unique_name) ? p.unique_name[0] : p.unique_name;
-        return pName === productName;
-    });
-
-    // Объект finalSelection из localStorage
-    let finalSelection = JSON.parse(localStorage.getItem('finalSelection')) || {};
-
-    if (index === -1) {
-        // Добавляем товар
-        if (product.images && product.images.length > 0) {
-            product.images.forEach((imgUrl, imgIndex) => {
-                if (imgUrl && typeof imgUrl === 'string') {
-                    const key = `image_${productName}_${imgIndex}`;
-                    if (!localStorage.getItem(key)) {
-                        saveImageToLocalStorage(imgUrl, key);
-                    }
-                }
+        function toggleProductInCart(product) {
+            const productName = Array.isArray(product.unique_name) ? product.unique_name[0] : product.unique_name;
+            const index = selectedProducts.findIndex(p => {
+                const pName = Array.isArray(p.unique_name) ? p.unique_name[0] : p.unique_name;
+                return pName === productName;
             });
-        }
-        selectedProducts.push(product);
-        if (product.children && product.children.length > 0) {
-            product.children.forEach(child => {
-                const childName = child.IE_NAME;
-                const childIndex = selectedProducts.findIndex(p => {
-                    const pName = Array.isArray(p.unique_name) ? p.unique_name[0] : p.unique_name;
-                    return pName === childName;
-                });
-                if (childIndex === -1) {
-                    selectedProducts.push({
-                        ...child,
-                        isChild: true,
-                        parentName: productName
+
+            // Объект finalSelection из localStorage
+            let finalSelection = JSON.parse(localStorage.getItem('finalSelection')) || {};
+
+            if (index === -1) {
+                // Добавляем товар
+                if (product.images && product.images.length > 0) {
+                    product.images.forEach((imgUrl, imgIndex) => {
+                        if (imgUrl && typeof imgUrl === 'string') {
+                            const key = `image_${productName}_${imgIndex}`;
+                            if (!localStorage.getItem(key)) {
+                                saveImageToLocalStorage(imgUrl, key);
+                            }
+                        }
                     });
                 }
-            });
-        }
-        // Обновляем finalSelection
-        finalSelection[productName] = product;
-    } else {
-        // Удаляем товар из selectedProducts
-        selectedProducts = selectedProducts.filter(p => {
-            const pName = Array.isArray(p.unique_name) ? p.unique_name[0] : p.unique_name;
-            return pName !== productName && p.parentName !== productName;
-        });
+                selectedProducts.push(product);
+                if (product.children && product.children.length > 0) {
+                    product.children.forEach(child => {
+                        const childName = child.IE_NAME;
+                        const childIndex = selectedProducts.findIndex(p => {
+                            const pName = Array.isArray(p.unique_name) ? p.unique_name[0] : p.unique_name;
+                            return pName === childName;
+                        });
+                        if (childIndex === -1) {
+                            selectedProducts.push({
+                                ...child,
+                                isChild: true,
+                                parentName: productName
+                            });
+                        }
+                    });
+                }
+                // Обновляем finalSelection
+                finalSelection[productName] = product;
+            } else {
+                // Удаляем товар из selectedProducts
+                selectedProducts = selectedProducts.filter(p => {
+                    const pName = Array.isArray(p.unique_name) ? p.unique_name[0] : p.unique_name;
+                    return pName !== productName && p.parentName !== productName;
+                });
 
-        // Удаляем связанные изображения из localStorage
-        const keysToRemove = [];
-        for (let i = 0; i < localStorage.length; i++) {
-            const key = localStorage.key(i);
-            if (key.startsWith(`image_${productName}_`)) {
-                keysToRemove.push(key);
-            }
-        }
-        keysToRemove.forEach(key => localStorage.removeItem(key));
+                // Удаляем связанные изображения из localStorage
+                const keysToRemove = [];
+                for (let i = 0; i < localStorage.length; i++) {
+                    const key = localStorage.key(i);
+                    if (key.startsWith(`image_${productName}_`)) {
+                        keysToRemove.push(key);
+                    }
+                }
+                keysToRemove.forEach(key => localStorage.removeItem(key));
 
-        // Удаляем товар из finalSelection
-        if (finalSelection.hasOwnProperty(productName)) {
-            delete finalSelection[productName];
-        }
+                // Удаляем товар из finalSelection
+                if (finalSelection.hasOwnProperty(productName)) {
+                    delete finalSelection[productName];
+                }
 
-        // Если товаров больше не осталось, очищаем все связанные данные
-        if (Object.keys(finalSelection).length === 0) {
-            localStorage.removeItem('finalSelection');
-            // Удаляем все картинки
-            for (let i = 0; i < localStorage.length; i++) {
-                const key = localStorage.key(i);
-                if (key.startsWith('image_')) {
-                    localStorage.removeItem(key);
+                // Если товаров больше не осталось, очищаем все связанные данные
+                if (Object.keys(finalSelection).length === 0) {
+                    localStorage.removeItem('finalSelection');
+                    // Удаляем все картинки
+                    for (let i = 0; i < localStorage.length; i++) {
+                        const key = localStorage.key(i);
+                        if (key.startsWith('image_')) {
+                            localStorage.removeItem(key);
+                        }
+                    }
+                } else {
+                    // Обновляем finalSelection в localStorage
+                    localStorage.setItem('finalSelection', JSON.stringify(finalSelection));
                 }
             }
-        } else {
-            // Обновляем finalSelection в localStorage
-            localStorage.setItem('finalSelection', JSON.stringify(finalSelection));
+
+            // Обновляем selectedProducts в localStorage
+            if (selectedProducts.length > 0) {
+                localStorage.setItem('selectedProducts', JSON.stringify(selectedProducts));
+            } else {
+                localStorage.removeItem('selectedProducts');
+            }
+
+            // Обновляем интерфейс
+            updateCartIcons();
+            updateFinalSelectionTable();
+            updateSelectedProductsTable();
+
+            // Обновляем вкладку, если активна
+            if (basketContainer.classList.contains('active')) {
+                updateSelectedProductsTable();
+            }
         }
-    }
-
-    // Обновляем selectedProducts в localStorage
-    if (selectedProducts.length > 0) {
-        localStorage.setItem('selectedProducts', JSON.stringify(selectedProducts));
-    } else {
-        localStorage.removeItem('selectedProducts');
-    }
-
-    // Обновляем интерфейс
-    updateCartIcons();
-    updateFinalSelectionTable();
-    updateSelectedProductsTable();
-
-    // Обновляем вкладку, если активна
-    if (basketContainer.classList.contains('active')) {
-        updateSelectedProductsTable();
-    }
-}
         // -----------------------
 
         // Функция для обновления итоговой таблицы
@@ -3052,400 +3327,400 @@ function toggleProductInCart(product) {
         }
 
         function saveEditableField(name, fieldName, newValue) {
-    const finalSelection = JSON.parse(localStorage.getItem('finalSelection')) || {};
-    if (finalSelection[name]) {
-        finalSelection[name][fieldName] = newValue;
-        localStorage.setItem('finalSelection', JSON.stringify(finalSelection));
-    }
-}
+            const finalSelection = JSON.parse(localStorage.getItem('finalSelection')) || {};
+            if (finalSelection[name]) {
+                finalSelection[name][fieldName] = newValue;
+                localStorage.setItem('finalSelection', JSON.stringify(finalSelection));
+            }
+        }
 
-async function updateFinalSelectionTable() {
-    try {
-        await loadQRCodeLibrary();
-    } catch (error) {
-        console.error('Ошибка загрузки QRCode:', error);
-        return;
-    }
+        async function updateFinalSelectionTable() {
+            try {
+                await loadQRCodeLibrary();
+            } catch (error) {
+                console.error('Ошибка загрузки QRCode:', error);
+                return;
+            }
 
-    const finalSelection = JSON.parse(localStorage.getItem('finalSelection')) || {};
-    const finalTableBody = document.getElementById('finalSelectionTableBody');
-    finalTableBody.innerHTML = '';
+            const finalSelection = JSON.parse(localStorage.getItem('finalSelection')) || {};
+            const finalTableBody = document.getElementById('finalSelectionTableBody');
+            finalTableBody.innerHTML = '';
 
-    Object.entries(finalSelection).forEach(([name, data]) => {
-     const nameRow = document.createElement('tr');
-        nameRow.className = 'parent-row';
+            Object.entries(finalSelection).forEach(([name, data]) => {
+                const nameRow = document.createElement('tr');
+                nameRow.className = 'parent-row';
 
-        const nameCell = document.createElement('td');
-        nameCell.textContent = name;
-        nameCell.contentEditable = true;
-        nameCell.onblur = () => saveEditableField(name, 'base_name', nameCell.textContent);
-        nameCell.setAttribute('colspan', '2');
-        nameRow.appendChild(nameCell);
+                const nameCell = document.createElement('td');
+                nameCell.textContent = name;
+                nameCell.contentEditable = true;
+                nameCell.onblur = () => saveEditableField(name, 'base_name', nameCell.textContent);
+                nameCell.setAttribute('colspan', '2');
+                nameRow.appendChild(nameCell);
 
-        const describeCell = document.createElement('td');
-        describeCell.textContent = data.full_describe || '—';
-        describeCell.contentEditable = true;
-        describeCell.onblur = () => saveEditableField(name, 'full_describe', describeCell.textContent);
-        describeCell.setAttribute('colspan', '16');
-        nameRow.appendChild(describeCell);
+                const describeCell = document.createElement('td');
+                describeCell.textContent = data.full_describe || '—';
+                describeCell.contentEditable = true;
+                describeCell.onblur = () => saveEditableField(name, 'full_describe', describeCell.textContent);
+                describeCell.setAttribute('colspan', '16');
+                nameRow.appendChild(describeCell);
 
                 // QR-код
-        const qrCell = document.createElement('td');
-        qrCell.className = 'qr-cell';
-        const qrId = `qr-${Math.random().toString(36).substr(2, 9)}`;
-        qrCell.id = qrId;
-        nameRow.appendChild(qrCell);    
+                const qrCell = document.createElement('td');
+                qrCell.className = 'qr-cell';
+                const qrId = `qr-${Math.random().toString(36).substr(2, 9)}`;
+                qrCell.id = qrId;
+                nameRow.appendChild(qrCell);
 
 
 
-        const row = document.createElement('tr');
+                const row = document.createElement('tr');
 
-       // Артикул
-        const articleCell = document.createElement('td');
-        articleCell.textContent = data.article_number || '—';
-        articleCell.contentEditable = true;
-        articleCell.onblur = () => saveEditableField(name, 'article_number', articleCell.textContent);
-        row.appendChild(articleCell);
+                // Артикул
+                const articleCell = document.createElement('td');
+                articleCell.textContent = data.article_number || '—';
+                articleCell.contentEditable = true;
+                articleCell.onblur = () => saveEditableField(name, 'article_number', articleCell.textContent);
+                row.appendChild(articleCell);
 
-        // Тип отделки
-        const finishTypeCell = document.createElement('td');
-        finishTypeCell.textContent = data.finish_type || '—';
-        finishTypeCell.contentEditable = true;
-        finishTypeCell.onblur = () => saveEditableField(name, 'finish_type', finishTypeCell.textContent);
-        row.appendChild(finishTypeCell);
+                // Тип отделки
+                const finishTypeCell = document.createElement('td');
+                finishTypeCell.textContent = data.finish_type || '—';
+                finishTypeCell.contentEditable = true;
+                finishTypeCell.onblur = () => saveEditableField(name, 'finish_type', finishTypeCell.textContent);
+                row.appendChild(finishTypeCell);
 
-        // Тип отделки сиденья
-        const finishTypeSeatCell = document.createElement('td');
-        finishTypeSeatCell.textContent = data.finish_type_seat || '—';
-        finishTypeSeatCell.contentEditable = true;
-        finishTypeSeatCell.onblur = () => saveEditableField(name, 'finish_type_seat', finishTypeSeatCell.textContent);
-        row.appendChild(finishTypeSeatCell);
+                // Тип отделки сиденья
+                const finishTypeSeatCell = document.createElement('td');
+                finishTypeSeatCell.textContent = data.finish_type_seat || '—';
+                finishTypeSeatCell.contentEditable = true;
+                finishTypeSeatCell.onblur = () => saveEditableField(name, 'finish_type_seat', finishTypeSeatCell.textContent);
+                row.appendChild(finishTypeSeatCell);
 
-        // Подлокотники
-        const armrestCell = document.createElement('td');
-        armrestCell.textContent = data.Подлокотники || '—';
-        armrestCell.contentEditable = true;
-        armrestCell.onblur = () => saveEditableField(name, 'Подлокотники', armrestCell.textContent);
-        row.appendChild(armrestCell);
+                // Подлокотники
+                const armrestCell = document.createElement('td');
+                armrestCell.textContent = data.Подлокотники || '—';
+                armrestCell.contentEditable = true;
+                armrestCell.onblur = () => saveEditableField(name, 'Подлокотники', armrestCell.textContent);
+                row.appendChild(armrestCell);
 
-        // Каркас
-        const skeletonCell = document.createElement('td');
-        skeletonCell.textContent = data.skeleton || '—';
-        skeletonCell.contentEditable = true;
-        skeletonCell.onblur = () => saveEditableField(name, 'skeleton', skeletonCell.textContent);
-        row.appendChild(skeletonCell);
+                // Каркас
+                const skeletonCell = document.createElement('td');
+                skeletonCell.textContent = data.skeleton || '—';
+                skeletonCell.contentEditable = true;
+                skeletonCell.onblur = () => saveEditableField(name, 'skeleton', skeletonCell.textContent);
+                row.appendChild(skeletonCell);
 
-        // Нагрузка
-        const loadCell = document.createElement('td');
-        loadCell.textContent = data.max_load || '—';
-        loadCell.contentEditable = true;
-        loadCell.onblur = () => saveEditableField(name, 'max_load', loadCell.textContent);
-        row.appendChild(loadCell);
+                // Нагрузка
+                const loadCell = document.createElement('td');
+                loadCell.textContent = data.max_load || '—';
+                loadCell.contentEditable = true;
+                loadCell.onblur = () => saveEditableField(name, 'max_load', loadCell.textContent);
+                row.appendChild(loadCell);
 
-        // Основание
-        const baseCell = document.createElement('td');
-        baseCell.textContent = data.Основание || '—';
-        baseCell.contentEditable = true;
-        baseCell.onblur = () => saveEditableField(name, 'Основание', baseCell.textContent);
-        row.appendChild(baseCell);
+                // Основание
+                const baseCell = document.createElement('td');
+                baseCell.textContent = data.Основание || '—';
+                baseCell.contentEditable = true;
+                baseCell.onblur = () => saveEditableField(name, 'Основание', baseCell.textContent);
+                row.appendChild(baseCell);
 
-        // Газлифт
-        const gasLiftCell = document.createElement('td');
-        gasLiftCell.textContent = data.Газлифт || '—';
-        gasLiftCell.contentEditable = true;
-        gasLiftCell.onblur = () => saveEditableField(name, 'Газлифт', gasLiftCell.textContent);
-        row.appendChild(gasLiftCell);
+                // Газлифт
+                const gasLiftCell = document.createElement('td');
+                gasLiftCell.textContent = data.Газлифт || '—';
+                gasLiftCell.contentEditable = true;
+                gasLiftCell.onblur = () => saveEditableField(name, 'Газлифт', gasLiftCell.textContent);
+                row.appendChild(gasLiftCell);
 
-        // Механизм
-        const mechanismCell = document.createElement('td');
-        mechanismCell.textContent = data.Механизм || '—';
-        mechanismCell.contentEditable = true;
-        mechanismCell.onblur = () => saveEditableField(name, 'Механизм', mechanismCell.textContent);
-        row.appendChild(mechanismCell);
+                // Механизм
+                const mechanismCell = document.createElement('td');
+                mechanismCell.textContent = data.Механизм || '—';
+                mechanismCell.contentEditable = true;
+                mechanismCell.onblur = () => saveEditableField(name, 'Механизм', mechanismCell.textContent);
+                row.appendChild(mechanismCell);
 
-        // Особенности
-        const featuresCell = document.createElement('td');
-        featuresCell.textContent = data.Особенности || '—';
-        featuresCell.contentEditable = true;
-        featuresCell.onblur = () => saveEditableField(name, 'Особенности', featuresCell.textContent);
-        row.appendChild(featuresCell);
+                // Особенности
+                const featuresCell = document.createElement('td');
+                featuresCell.textContent = data.Особенности || '—';
+                featuresCell.contentEditable = true;
+                featuresCell.onblur = () => saveEditableField(name, 'Особенности', featuresCell.textContent);
+                row.appendChild(featuresCell);
 
-        // Ролики
-        const rollersCell = document.createElement('td');
-        rollersCell.textContent = data.Ролики || '—';
-        rollersCell.contentEditable = true;
-        rollersCell.onblur = () => saveEditableField(name, 'Ролики', rollersCell.textContent);
-        row.appendChild(rollersCell);
+                // Ролики
+                const rollersCell = document.createElement('td');
+                rollersCell.textContent = data.Ролики || '—';
+                rollersCell.contentEditable = true;
+                rollersCell.onblur = () => saveEditableField(name, 'Ролики', rollersCell.textContent);
+                row.appendChild(rollersCell);
 
-// Три изображения
-for (let i = 0; i < 3; i++) {
-    const imgCell = document.createElement('td');
-    imgCell.className = 'image-cell';
-    imgCell.setAttribute('data-cell-type', 'image');
+                // Три изображения
+                for (let i = 0; i < 3; i++) {
+                    const imgCell = document.createElement('td');
+                    imgCell.className = 'image-cell';
+                    imgCell.setAttribute('data-cell-type', 'image');
 
-    // Определяем индекс изображения в массиве
-    let imgIndex;
-    if (i === 2) {
-        // Для третьей ячейки — 4-й ракурс (индекс 3)
-        imgIndex = 3;
-    } else {
-        // Для первой и второй — 0-й и 1-й
-        imgIndex = i;
-    }
+                    // Определяем индекс изображения в массиве
+                    let imgIndex;
+                    if (i === 2) {
+                        // Для третьей ячейки — 4-й ракурс (индекс 3)
+                        imgIndex = 3;
+                    } else {
+                        // Для первой и второй — 0-й и 1-й
+                        imgIndex = i;
+                    }
 
-    // Получаем изображение из localStorage, если есть
-    const cachedImage = localStorage.getItem(`image_${name}_${imgIndex}`);
-    let imgUrl = cachedImage;
+                    // Получаем изображение из localStorage, если есть
+                    const cachedImage = localStorage.getItem(`image_${name}_${imgIndex}`);
+                    let imgUrl = cachedImage;
 
-    // Если в localStorage нет, берем из данных
-    if (!imgUrl) {
-        if (data.images && data.images[imgIndex]) {
-            imgUrl = data.images[imgIndex];
-        }
-    }
-
-    if (imgUrl) {
-        const img = document.createElement('img');
-        img.src = imgUrl;
-        img.style.width = '50px';
-        img.style.height = '50px';
-        imgCell.appendChild(img);
-    } else {
-        const placeholder = document.createElement('img');
-        placeholder.src = 'https://via.placeholder.com/50?text=Нет+фото';
-        placeholder.style.width = '50px';
-        placeholder.style.height = '50px';
-        imgCell.appendChild(placeholder);
-    }
-
-    // Обработчики событий для изменения фото
-    imgCell.addEventListener('click', (e) => handleImageCellClick(e, imgCell));
-    imgCell.addEventListener('dragover', (e) => e.preventDefault());
-    imgCell.addEventListener('drop', (e) => handleDrop(e, imgCell));
-
-    row.appendChild(imgCell);
-}
-
-        // Цена 1
-        const price1Cell = document.createElement('td');
-        price1Cell.textContent = data.CV_PRICE_1 ? `${data.CV_PRICE_1} ${data.CV_CURRENCY_1 || 'RUB'}` : '—';
-        price1Cell.contentEditable = true;
-        price1Cell.onblur = () => saveEditableField(name, 'CV_PRICE_1', price1Cell.textContent);
-        row.appendChild(price1Cell);
-
-        // Цена 2
-        const price2Cell = document.createElement('td');
-        price2Cell.textContent = data.CV_PRICE_2 ? `${data.CV_PRICE_2} ${data.CV_CURRENCY_2 || 'RUB'}` : '—';
-        price2Cell.contentEditable = true;
-        price2Cell.onblur = () => saveEditableField(name, 'CV_PRICE_2', price2Cell.textContent);
-        row.appendChild(price2Cell);
-
-        // Цена 3
-        const price3Cell = document.createElement('td');
-        price3Cell.textContent = data.CV_PRICE_3 ? `${data.CV_PRICE_3} ${data.CV_CURRENCY_3 || 'RUB'}` : '—';
-        price3Cell.contentEditable = true;
-        price3Cell.onblur = () => saveEditableField(name, 'CV_PRICE_3', price3Cell.textContent);
-        row.appendChild(price3Cell);
-
-        // Количество
-        const countCell = document.createElement('td');
-        countCell.textContent = data.count || 1;
-        countCell.contentEditable = true;
-        countCell.onblur = () => saveEditableField(name, 'count', countCell.textContent);
-        row.appendChild(countCell);
-
-
-
-        // Действия
-        const actionsCell = document.createElement('td');
-        const plusButton = document.createElement('button');
-        plusButton.textContent = '+';
-        plusButton.style.marginRight = '5px';
-        plusButton.style.cursor = 'pointer';
-        plusButton.addEventListener('click', () => {
-            finalSelection[name].count = (finalSelection[name].count || 0) + 1;
-            localStorage.setItem('finalSelection', JSON.stringify(finalSelection));
-            updateFinalSelectionTable();
-        });
-
-        const minusButton = document.createElement('button');
-        minusButton.textContent = '−';
-        minusButton.style.cursor = 'pointer';
-       minusButton.addEventListener('click', () => {
-    finalSelection[name].count = (finalSelection[name].count || 0) - 1;
-    if (finalSelection[name].count <= 0) {
-        // Удаляем все связанные изображения
-        for (let i = 0; i < 4; i++) {
-            const imageKey = `image_${name}_${i}`;
-            localStorage.removeItem(imageKey);
-        }
-        delete finalSelection[name];
-        
-        // Если это последний товар — полностью очищаем localStorage
-        if (Object.keys(finalSelection).length === 0) {
-            // Полностью очищаем localStorage
-            localStorage.clear();
-        } else {
-            localStorage.setItem('finalSelection', JSON.stringify(finalSelection));
-        }
-    } else {
-        localStorage.setItem('finalSelection', JSON.stringify(finalSelection));
-    }
-    updateFinalSelectionTable();
-});
-
-        actionsCell.appendChild(plusButton);
-        actionsCell.appendChild(minusButton);
-        row.appendChild(actionsCell);
-
-        finalTableBody.appendChild(nameRow);
-        finalTableBody.appendChild(row);
-
-        // Генерация QR-кода
-        const linkUrl = data.Link_arm ? data.Link_arm : '#';
-        setTimeout(() => {
-    generateQRCode(linkUrl, qrId);
-}, 10);
-    });
-
-    
-}
-
-
-
-function handleImageCellClick(event, cell) {
-    const row = cell.closest('tr');
-    const nameRow = row.previousElementSibling;
-    const nameCell = nameRow.querySelector('td:first-child');
-    const productName = nameCell ? nameCell.textContent.trim() : null;
-    if (!productName) return;
-
-    const input = document.createElement('input');
-    input.type = 'file';
-    input.accept = 'image/*';
-    input.onchange = function (e) {
-        const file = e.target.files[0];
-        if (file && file.type.match('image.*')) {
-            const reader = new FileReader();
-            reader.onload = function (e) {
-                const img = document.createElement('img');
-                img.src = e.target.result;
-                img.style.maxWidth = '50px';
-                img.style.maxHeight = '50px';
-                cell.innerHTML = '';
-                cell.appendChild(img);
-                saveImageToProduct(cell, e.target.result, productName);
-            };
-            reader.readAsDataURL(file);
-        }
-    };
-    input.click();
-}
-
-function handleDrop(event, cell) {
-    event.preventDefault();
-    event.stopPropagation();
-    const files = event.dataTransfer.files;
-    if (files && files.length > 0) {
-        const file = files[0];
-        if (file.type.match('image.*')) {
-            const reader = new FileReader();
-            reader.onload = function (e) {
-                const img = document.createElement('img');
-                img.src = e.target.result;
-                img.style.maxWidth = '100px';
-                img.style.maxHeight = '100px';
-                cell.innerHTML = '';
-                cell.appendChild(img);
-                // Сохраняем в localStorage и finalSelection
-                saveImageToProduct(cell, e.target.result);
-                // cell.innerHTML = `<img src="${imageDataUrl}" style="width:50px;height:50px;">`;
-            };
-            reader.readAsDataURL(file);
-        }
-    }
-}
-
-// Функция для сохранения всех изображений товаров в localStorage в base64
-async function saveAllImagesToLocalStorage(products) {
-    for (const product of products) {
-        if (product.images && product.images.length > 0) {
-            for (let i = 0; i < product.images.length; i++) {
-                const url = product.images[i];
-                if (url && typeof url === 'string') {
-                    const key = `image_${product.unique_name[0]}_${i}`;
-                    if (!localStorage.getItem(key)) {
-                        try {
-                            await saveImageToLocalStorage(url, key);
-                        } catch (error) {
-                            console.error(`Ошибка при сохранении изображения: ${url}`, error);
+                    // Если в localStorage нет, берем из данных
+                    if (!imgUrl) {
+                        if (data.images && data.images[imgIndex]) {
+                            imgUrl = data.images[imgIndex];
                         }
                     }
+
+                    if (imgUrl) {
+                        const img = document.createElement('img');
+                        img.src = imgUrl;
+                        img.style.width = '50px';
+                        img.style.height = '50px';
+                        imgCell.appendChild(img);
+                    } else {
+                        const placeholder = document.createElement('img');
+                        placeholder.src = 'https://via.placeholder.com/50?text=Нет+фото';
+                        placeholder.style.width = '50px';
+                        placeholder.style.height = '50px';
+                        imgCell.appendChild(placeholder);
+                    }
+
+                    // Обработчики событий для изменения фото
+                    imgCell.addEventListener('click', (e) => handleImageCellClick(e, imgCell));
+                    imgCell.addEventListener('dragover', (e) => e.preventDefault());
+                    imgCell.addEventListener('drop', (e) => handleDrop(e, imgCell));
+
+                    row.appendChild(imgCell);
+                }
+
+                // Цена 1
+                const price1Cell = document.createElement('td');
+                price1Cell.textContent = data.CV_PRICE_1 ? `${data.CV_PRICE_1} ${data.CV_CURRENCY_1 || 'RUB'}` : '—';
+                price1Cell.contentEditable = true;
+                price1Cell.onblur = () => saveEditableField(name, 'CV_PRICE_1', price1Cell.textContent);
+                row.appendChild(price1Cell);
+
+                // Цена 2
+                const price2Cell = document.createElement('td');
+                price2Cell.textContent = data.CV_PRICE_2 ? `${data.CV_PRICE_2} ${data.CV_CURRENCY_2 || 'RUB'}` : '—';
+                price2Cell.contentEditable = true;
+                price2Cell.onblur = () => saveEditableField(name, 'CV_PRICE_2', price2Cell.textContent);
+                row.appendChild(price2Cell);
+
+                // Цена 3
+                const price3Cell = document.createElement('td');
+                price3Cell.textContent = data.CV_PRICE_3 ? `${data.CV_PRICE_3} ${data.CV_CURRENCY_3 || 'RUB'}` : '—';
+                price3Cell.contentEditable = true;
+                price3Cell.onblur = () => saveEditableField(name, 'CV_PRICE_3', price3Cell.textContent);
+                row.appendChild(price3Cell);
+
+                // Количество
+                const countCell = document.createElement('td');
+                countCell.textContent = data.count || 1;
+                countCell.contentEditable = true;
+                countCell.onblur = () => saveEditableField(name, 'count', countCell.textContent);
+                row.appendChild(countCell);
+
+
+
+                // Действия
+                const actionsCell = document.createElement('td');
+                const plusButton = document.createElement('button');
+                plusButton.textContent = '+';
+                plusButton.style.marginRight = '5px';
+                plusButton.style.cursor = 'pointer';
+                plusButton.addEventListener('click', () => {
+                    finalSelection[name].count = (finalSelection[name].count || 0) + 1;
+                    localStorage.setItem('finalSelection', JSON.stringify(finalSelection));
+                    updateFinalSelectionTable();
+                });
+
+                const minusButton = document.createElement('button');
+                minusButton.textContent = '−';
+                minusButton.style.cursor = 'pointer';
+                minusButton.addEventListener('click', () => {
+                    finalSelection[name].count = (finalSelection[name].count || 0) - 1;
+                    if (finalSelection[name].count <= 0) {
+                        // Удаляем все связанные изображения
+                        for (let i = 0; i < 4; i++) {
+                            const imageKey = `image_${name}_${i}`;
+                            localStorage.removeItem(imageKey);
+                        }
+                        delete finalSelection[name];
+
+                        // Если это последний товар — полностью очищаем localStorage
+                        if (Object.keys(finalSelection).length === 0) {
+                            // Полностью очищаем localStorage
+                            localStorage.clear();
+                        } else {
+                            localStorage.setItem('finalSelection', JSON.stringify(finalSelection));
+                        }
+                    } else {
+                        localStorage.setItem('finalSelection', JSON.stringify(finalSelection));
+                    }
+                    updateFinalSelectionTable();
+                });
+
+                actionsCell.appendChild(plusButton);
+                actionsCell.appendChild(minusButton);
+                row.appendChild(actionsCell);
+
+                finalTableBody.appendChild(nameRow);
+                finalTableBody.appendChild(row);
+
+                // Генерация QR-кода
+                const linkUrl = data.Link_arm ? data.Link_arm : '#';
+                setTimeout(() => {
+                    generateQRCode(linkUrl, qrId);
+                }, 10);
+            });
+
+
+        }
+
+
+
+        function handleImageCellClick(event, cell) {
+            const row = cell.closest('tr');
+            const nameRow = row.previousElementSibling;
+            const nameCell = nameRow.querySelector('td:first-child');
+            const productName = nameCell ? nameCell.textContent.trim() : null;
+            if (!productName) return;
+
+            const input = document.createElement('input');
+            input.type = 'file';
+            input.accept = 'image/*';
+            input.onchange = function (e) {
+                const file = e.target.files[0];
+                if (file && file.type.match('image.*')) {
+                    const reader = new FileReader();
+                    reader.onload = function (e) {
+                        const img = document.createElement('img');
+                        img.src = e.target.result;
+                        img.style.maxWidth = '50px';
+                        img.style.maxHeight = '50px';
+                        cell.innerHTML = '';
+                        cell.appendChild(img);
+                        saveImageToProduct(cell, e.target.result, productName);
+                    };
+                    reader.readAsDataURL(file);
+                }
+            };
+            input.click();
+        }
+
+        function handleDrop(event, cell) {
+            event.preventDefault();
+            event.stopPropagation();
+            const files = event.dataTransfer.files;
+            if (files && files.length > 0) {
+                const file = files[0];
+                if (file.type.match('image.*')) {
+                    const reader = new FileReader();
+                    reader.onload = function (e) {
+                        const img = document.createElement('img');
+                        img.src = e.target.result;
+                        img.style.maxWidth = '100px';
+                        img.style.maxHeight = '100px';
+                        cell.innerHTML = '';
+                        cell.appendChild(img);
+                        // Сохраняем в localStorage и finalSelection
+                        saveImageToProduct(cell, e.target.result);
+                        // cell.innerHTML = `<img src="${imageDataUrl}" style="width:50px;height:50px;">`;
+                    };
+                    reader.readAsDataURL(file);
                 }
             }
         }
-        // Обработка детей
-        if (product.children && product.children.length > 0) {
-            await saveAllImagesToLocalStorage(product.children);
+
+        // Функция для сохранения всех изображений товаров в localStorage в base64
+        async function saveAllImagesToLocalStorage(products) {
+            for (const product of products) {
+                if (product.images && product.images.length > 0) {
+                    for (let i = 0; i < product.images.length; i++) {
+                        const url = product.images[i];
+                        if (url && typeof url === 'string') {
+                            const key = `image_${product.unique_name[0]}_${i}`;
+                            if (!localStorage.getItem(key)) {
+                                try {
+                                    await saveImageToLocalStorage(url, key);
+                                } catch (error) {
+                                    console.error(`Ошибка при сохранении изображения: ${url}`, error);
+                                }
+                            }
+                        }
+                    }
+                }
+                // Обработка детей
+                if (product.children && product.children.length > 0) {
+                    await saveAllImagesToLocalStorage(product.children);
+                }
+            }
         }
-    }
-}
 
-function saveImageToProduct(cell, imageDataUrl, productName) {
-    const row = cell.closest('tr');
-    const indexInRow = Array.from(row.querySelectorAll('[data-cell-type="image"]')).indexOf(cell);
-    let imageIndex;
+        function saveImageToProduct(cell, imageDataUrl, productName) {
+            const row = cell.closest('tr');
+            const indexInRow = Array.from(row.querySelectorAll('[data-cell-type="image"]')).indexOf(cell);
+            let imageIndex;
 
-    // Определяем индекс, который соответствует ячейке
-    if (indexInRow === 0) imageIndex = 0; // первая ячейка — 0-й ракурс
-    else if (indexInRow === 1) imageIndex = 1; // вторая
-    else if (indexInRow === 2) imageIndex = 3; // третья — 3-й ракурс
+            // Определяем индекс, который соответствует ячейке
+            if (indexInRow === 0) imageIndex = 0; // первая ячейка — 0-й ракурс
+            else if (indexInRow === 1) imageIndex = 1; // вторая
+            else if (indexInRow === 2) imageIndex = 3; // третья — 3-й ракурс
 
-    // Сохраняем в localStorage
-    const finalSelection = JSON.parse(localStorage.getItem('finalSelection')) || {};
-    const product = finalSelection[productName];
-    if (!product) return;
+            // Сохраняем в localStorage
+            const finalSelection = JSON.parse(localStorage.getItem('finalSelection')) || {};
+            const product = finalSelection[productName];
+            if (!product) return;
 
-    if (!product.images) {
-        product.images = [];
-    }
-    product.images[imageIndex] = imageDataUrl;
+            if (!product.images) {
+                product.images = [];
+            }
+            product.images[imageIndex] = imageDataUrl;
 
-    // Обновляем localStorage
-    localStorage.setItem('image_' + productName + '_' + imageIndex, imageDataUrl);
-    localStorage.setItem('finalSelection', JSON.stringify(finalSelection));
+            // Обновляем localStorage
+            localStorage.setItem('image_' + productName + '_' + imageIndex, imageDataUrl);
+            localStorage.setItem('finalSelection', JSON.stringify(finalSelection));
 
 
-    // Обновляем только эту строку
-    updateRowImages(row, productName);
-}
-
-function updateRowImages(row, productName) {
-    const finalSelection = JSON.parse(localStorage.getItem('finalSelection')) || {};
-    const product = finalSelection[productName];
-    if (!product || !product.images) return;
-
-    const imageCells = row.querySelectorAll('[data-cell-type="image"]');
-
-    imageCells.forEach((cell, index) => {
-        // Индекс для отображения (0, 1, 3)
-        let imageIndex;
-        if (index === 0) imageIndex = 0; // первая ячейка — 0-й ракурс
-        else if (index === 1) imageIndex = 1; // вторая — 1-й ракурс
-        else if (index === 2) imageIndex = 3; // третья — 3-й ракурс (только для отображения)
-        else return;
-
-        const imgUrl = product.images[imageIndex];
-        if (imgUrl) {
-            const img = document.createElement('img');
-            img.src = imgUrl;
-            img.style.width = '50px';
-            img.style.height = '50px';
-            cell.innerHTML = '';
-            cell.appendChild(img);
+            // Обновляем только эту строку
+            updateRowImages(row, productName);
         }
-    });
-}
+
+        function updateRowImages(row, productName) {
+            const finalSelection = JSON.parse(localStorage.getItem('finalSelection')) || {};
+            const product = finalSelection[productName];
+            if (!product || !product.images) return;
+
+            const imageCells = row.querySelectorAll('[data-cell-type="image"]');
+
+            imageCells.forEach((cell, index) => {
+                // Индекс для отображения (0, 1, 3)
+                let imageIndex;
+                if (index === 0) imageIndex = 0; // первая ячейка — 0-й ракурс
+                else if (index === 1) imageIndex = 1; // вторая — 1-й ракурс
+                else if (index === 2) imageIndex = 3; // третья — 3-й ракурс (только для отображения)
+                else return;
+
+                const imgUrl = product.images[imageIndex];
+                if (imgUrl) {
+                    const img = document.createElement('img');
+                    img.src = imgUrl;
+                    img.style.width = '50px';
+                    img.style.height = '50px';
+                    cell.innerHTML = '';
+                    cell.appendChild(img);
+                }
+            });
+        }
 
         function addNewRowToFinalSelection() {
             const finalSelection = JSON.parse(localStorage.getItem('finalSelection')) || {};
@@ -3504,279 +3779,279 @@ function updateRowImages(row, productName) {
         //     updateFinalSelectionTable();
         // }
 
-//  function imageToBase64(imageUrl) {
-//     return new Promise((resolve, reject) => {
-//         const img = new Image();
-//         img.crossOrigin = 'Anonymous'; // Чтобы избежать CORS ошибок, если нужно
-//         img.onload = () => {
-//             const canvas = document.createElement('canvas');
-//             canvas.width = img.width;
-//             canvas.height = img.height;
-//             const ctx = canvas.getContext('2d');
-//             ctx.drawImage(img, 0, 0);
-//             const dataURL = canvas.toDataURL('image/png');
-//             resolve(dataURL);
-//         };
-//         img.onerror = reject;
-//         img.src = imageUrl;
-//     });
-// }       
+        //  function imageToBase64(imageUrl) {
+        //     return new Promise((resolve, reject) => {
+        //         const img = new Image();
+        //         img.crossOrigin = 'Anonymous'; // Чтобы избежать CORS ошибок, если нужно
+        //         img.onload = () => {
+        //             const canvas = document.createElement('canvas');
+        //             canvas.width = img.width;
+        //             canvas.height = img.height;
+        //             const ctx = canvas.getContext('2d');
+        //             ctx.drawImage(img, 0, 0);
+        //             const dataURL = canvas.toDataURL('image/png');
+        //             resolve(dataURL);
+        //         };
+        //         img.onerror = reject;
+        //         img.src = imageUrl;
+        //     });
+        // }       
 
 
 
-// function toggleChildInFinalSelection(child, isAdd) {
-//     const finalSelection = JSON.parse(localStorage.getItem('finalSelection')) || {};
-//     const childName = child.IE_NAME;
+        // function toggleChildInFinalSelection(child, isAdd) {
+        //     const finalSelection = JSON.parse(localStorage.getItem('finalSelection')) || {};
+        //     const childName = child.IE_NAME;
 
-//     // Ищем родителя для этого ребёнка
-//     const parent = selectedProducts.find(p => !p.isChild && p.unique_name && p.unique_name[0] === child.parentName);
-//     if (!parent) {
-//         console.warn(`Родитель для ${childName} не найден!`);
-//         return;
-//     }
+        //     // Ищем родителя для этого ребёнка
+        //     const parent = selectedProducts.find(p => !p.isChild && p.unique_name && p.unique_name[0] === child.parentName);
+        //     if (!parent) {
+        //         console.warn(`Родитель для ${childName} не найден!`);
+        //         return;
+        //     }
 
-//     if (isAdd) {
-//         // Если строка уже существует — увеличиваем count
-//         if (finalSelection[childName]) {
-//             finalSelection[childName].count = (finalSelection[childName].count || 0) + 1;
-//         }
-//         // Если строки нет — создаём новую с полными данными
-//         else {
-//             // Загружаем фото из localStorage
-//             let images = [];
-//             const productName = Array.isArray(parent.unique_name) ? parent.unique_name[0] : parent.unique_name;
-//             for (let i = 0; i < 4; i++) {
-//                 const imageKey = `image_${productName}_${i}`;
-//                 const cachedImage = localStorage.getItem(imageKey);
-//                 if (cachedImage) {
-//                     images[i] = cachedImage;
-//                 } else {
-//                     images[i] = "";
-//                 }
-//             }
+        //     if (isAdd) {
+        //         // Если строка уже существует — увеличиваем count
+        //         if (finalSelection[childName]) {
+        //             finalSelection[childName].count = (finalSelection[childName].count || 0) + 1;
+        //         }
+        //         // Если строки нет — создаём новую с полными данными
+        //         else {
+        //             // Загружаем фото из localStorage
+        //             let images = [];
+        //             const productName = Array.isArray(parent.unique_name) ? parent.unique_name[0] : parent.unique_name;
+        //             for (let i = 0; i < 4; i++) {
+        //                 const imageKey = `image_${productName}_${i}`;
+        //                 const cachedImage = localStorage.getItem(imageKey);
+        //                 if (cachedImage) {
+        //                     images[i] = cachedImage;
+        //                 } else {
+        //                     images[i] = "";
+        //                 }
+        //             }
 
-//                    // Если у ребёнка есть свои изображения (например, IP_PROP36), используем их
-//             if (child.IP_PROP36 && child.IP_PROP36.length > 0) {
-//                 for (let i = 0; i < 4; i++) {
-//                     if (child.IP_PROP36[i]) {
-//                         images[i] = child.IP_PROP36[i];
-//                         // Сохраняем в localStorage под уникальным ключом для ребёнка
-//                         const childImageKey = `image_${childName}_${i}`;
-//                         localStorage.setItem(childImageKey, child.IP_PROP36[i]);
-//                     }
-//                 }
-//             }
+        //                    // Если у ребёнка есть свои изображения (например, IP_PROP36), используем их
+        //             if (child.IP_PROP36 && child.IP_PROP36.length > 0) {
+        //                 for (let i = 0; i < 4; i++) {
+        //                     if (child.IP_PROP36[i]) {
+        //                         images[i] = child.IP_PROP36[i];
+        //                         // Сохраняем в localStorage под уникальным ключом для ребёнка
+        //                         const childImageKey = `image_${childName}_${i}`;
+        //                         localStorage.setItem(childImageKey, child.IP_PROP36[i]);
+        //                     }
+        //                 }
+        //             }
 
-//             finalSelection[childName] = {
-//                 count: 1,
-//                 images: images,
-//                 article_number: parent.article_number || '—',
-//                 finish_type: parent.finish_type || '—',
-//                 finish_type_seat: parent.finish_type_seat || '—',
-//                 Подлокотники: parent.Подлокотники || '—',
-//                 skeleton: parent.skeleton || '—',
-//                 max_load: parent.guarantee?.[0]?.max_load || '—',
-//                 recommended_load: parent.guarantee?.[0]?.recommended_load || '—',
-//                 Основание: parent.Основание || '—',
-//                 Газлифт: parent.Газлифт || '—',
-//                 Механизм: parent.Механизм || '—',
-//                 Особенности: parent.Особенности || '—',
-//                 Ролики: parent.Ролики || '—',
-//                 CV_PRICE_1: child.CV_PRICE_1 || parent.CV_PRICE_1 || '—',
-//                 CV_CURRENCY_1: child.CV_CURRENCY_1 || parent.CV_CURRENCY_1 || 'RUB',
-//                 CV_PRICE_2: child.CV_PRICE_2 || parent.CV_PRICE_2 || '—',
-//                 CV_CURRENCY_2: child.CV_CURRENCY_2 || parent.CV_CURRENCY_2 || 'RUB',
-//                 CV_PRICE_3: child.CV_PRICE_3 || parent.CV_PRICE_3 || '—',
-//                 CV_CURRENCY_3: child.CV_CURRENCY_3 || parent.CV_CURRENCY_3 || 'RUB',
-//                 Link_arm: parent.Link_arm || '#',  // <-- Убедитесь, что это поле передаётся!
-//                 full_describe: parent.full_describe || '—',
-//             };
-//         }
-//     }
-//     else {
-//         // Уменьшаем count, если строка существует
-//         if (finalSelection[childName]) {
-//             finalSelection[childName].count = (finalSelection[childName].count || 0) - 1;
-//             if (finalSelection[childName].count <= 0) {
-//                 delete finalSelection[childName];
-//             }
-//         }
-//     }
+        //             finalSelection[childName] = {
+        //                 count: 1,
+        //                 images: images,
+        //                 article_number: parent.article_number || '—',
+        //                 finish_type: parent.finish_type || '—',
+        //                 finish_type_seat: parent.finish_type_seat || '—',
+        //                 Подлокотники: parent.Подлокотники || '—',
+        //                 skeleton: parent.skeleton || '—',
+        //                 max_load: parent.guarantee?.[0]?.max_load || '—',
+        //                 recommended_load: parent.guarantee?.[0]?.recommended_load || '—',
+        //                 Основание: parent.Основание || '—',
+        //                 Газлифт: parent.Газлифт || '—',
+        //                 Механизм: parent.Механизм || '—',
+        //                 Особенности: parent.Особенности || '—',
+        //                 Ролики: parent.Ролики || '—',
+        //                 CV_PRICE_1: child.CV_PRICE_1 || parent.CV_PRICE_1 || '—',
+        //                 CV_CURRENCY_1: child.CV_CURRENCY_1 || parent.CV_CURRENCY_1 || 'RUB',
+        //                 CV_PRICE_2: child.CV_PRICE_2 || parent.CV_PRICE_2 || '—',
+        //                 CV_CURRENCY_2: child.CV_CURRENCY_2 || parent.CV_CURRENCY_2 || 'RUB',
+        //                 CV_PRICE_3: child.CV_PRICE_3 || parent.CV_PRICE_3 || '—',
+        //                 CV_CURRENCY_3: child.CV_CURRENCY_3 || parent.CV_CURRENCY_3 || 'RUB',
+        //                 Link_arm: parent.Link_arm || '#',  // <-- Убедитесь, что это поле передаётся!
+        //                 full_describe: parent.full_describe || '—',
+        //             };
+        //         }
+        //     }
+        //     else {
+        //         // Уменьшаем count, если строка существует
+        //         if (finalSelection[childName]) {
+        //             finalSelection[childName].count = (finalSelection[childName].count || 0) - 1;
+        //             if (finalSelection[childName].count <= 0) {
+        //                 delete finalSelection[childName];
+        //             }
+        //         }
+        //     }
 
-//     localStorage.setItem('finalSelection', JSON.stringify(finalSelection));
-//     updateFinalSelectionTable(); // Обновляем таблицу сразу после изменения
-// }
+        //     localStorage.setItem('finalSelection', JSON.stringify(finalSelection));
+        //     updateFinalSelectionTable(); // Обновляем таблицу сразу после изменения
+        // }
 
-function fetchImageAsBase64(url) {
-  return fetch(url)
-    .then(response => response.blob())
-    .then(blob => new Promise((resolve, reject) => {
-      const reader = new FileReader();
-      reader.onloadend = () => resolve(reader.result);
-      reader.onerror = reject;
-      reader.readAsDataURL(blob);
-    }));
-}
-
-
-async function urlToBase64(url) {
-    const response = await fetch(url);
-    const blob = await response.blob();
-    return new Promise((resolve, reject) => {
-        const reader = new FileReader();
-        reader.onloadend = () => resolve(reader.result);
-        reader.onerror = reject;
-        reader.readAsDataURL(blob);
-    });
-}
-
-async function saveIP_PROP36ImagesAsBase64(child, childName) {
-    const images = [];
-    const promises = [];
-
-    if (child.IP_PROP36 && child.IP_PROP36.length > 0) {
-        for (let i = 0; i < 4; i++) {
-            if (child.IP_PROP36[i]) {
-                const url = child.IP_PROP36[i];
-                promises.push(
-                    urlToBase64(url).then(base64 => {
-                        images[i] = base64;
-                        const key = `image_${childName}_${i}`;
-                        localStorage.setItem(key, base64);
-                    }).catch(() => {
-                        // В случае ошибки загрузки, сохраняем пустую строку
-                        images[i] = "";
-                        const key = `image_${childName}_${i}`;
-                        localStorage.setItem(key, "");
-                    })
-                );
-            } else {
-                images[i] = "";
-            }
+        function fetchImageAsBase64(url) {
+            return fetch(url)
+                .then(response => response.blob())
+                .then(blob => new Promise((resolve, reject) => {
+                    const reader = new FileReader();
+                    reader.onloadend = () => resolve(reader.result);
+                    reader.onerror = reject;
+                    reader.readAsDataURL(blob);
+                }));
         }
-    }
 
-    await Promise.all(promises);
-    return images;
-}
 
-async function toggleChildInFinalSelection(child, isAdd) {
-  const finalSelection = JSON.parse(localStorage.getItem('finalSelection')) || {};
-  const childName = child.IE_NAME;
-
-  // Ищем родителя
-  const parent = selectedProducts.find(p => !p.isChild && p.unique_name && p.unique_name[0] === child.parentName);
-  if (!parent) {
-    console.warn(`Родитель для ${childName} не найден!`);
-    return;
-  }
-
-   if (isAdd) {
-        // Если строка уже существует — увеличиваем count
-        if (finalSelection[childName]) {
-            finalSelection[childName].count = (finalSelection[childName].count || 0) + 1;
+        async function urlToBase64(url) {
+            const response = await fetch(url);
+            const blob = await response.blob();
+            return new Promise((resolve, reject) => {
+                const reader = new FileReader();
+                reader.onloadend = () => resolve(reader.result);
+                reader.onerror = reject;
+                reader.readAsDataURL(blob);
+            });
         }
-        // Если строки нет — создаём новую с полными данными
-        else {
-            // Загружаем фото из localStorage
-            let images = [];
-            const productName = Array.isArray(parent.unique_name) ? parent.unique_name[0] : parent.unique_name;
-            for (let i = 0; i < 4; i++) {
-                const imageKey = `image_${productName}_${i}`;
-                const cachedImage = localStorage.getItem(imageKey);
-                if (cachedImage) {
-                    images[i] = cachedImage;
-                } else {
-                    images[i] = "";
-                }
-            }
 
-                   // Если у ребёнка есть свои изображения (например, IP_PROP36), используем их
+        async function saveIP_PROP36ImagesAsBase64(child, childName) {
+            const images = [];
+            const promises = [];
+
             if (child.IP_PROP36 && child.IP_PROP36.length > 0) {
                 for (let i = 0; i < 4; i++) {
                     if (child.IP_PROP36[i]) {
-                        images[i] = child.IP_PROP36[i];
-                        // Сохраняем в localStorage под уникальным ключом для ребёнка
-                        const childImageKey = `image_${childName}_${i}`;
-                        localStorage.setItem(childImageKey, child.IP_PROP36[i]);
+                        const url = child.IP_PROP36[i];
+                        promises.push(
+                            urlToBase64(url).then(base64 => {
+                                images[i] = base64;
+                                const key = `image_${childName}_${i}`;
+                                localStorage.setItem(key, base64);
+                            }).catch(() => {
+                                // В случае ошибки загрузки, сохраняем пустую строку
+                                images[i] = "";
+                                const key = `image_${childName}_${i}`;
+                                localStorage.setItem(key, "");
+                            })
+                        );
+                    } else {
+                        images[i] = "";
                     }
                 }
             }
-      
-      finalSelection[childName] = {
-                count: 1,
-                images: images,
-                article_number: parent.article_number || '—',
-                finish_type: parent.finish_type || '—',
-                finish_type_seat: parent.finish_type_seat || '—',
-                Подлокотники: parent.Подлокотники || '—',
-                skeleton: parent.skeleton || '—',
-                max_load: parent.guarantee?.[0]?.max_load || '—',
-                recommended_load: parent.guarantee?.[0]?.recommended_load || '—',
-                Основание: parent.Основание || '—',
-                Газлифт: parent.Газлифт || '—',
-                Механизм: parent.Механизм || '—',
-                Особенности: parent.Особенности || '—',
-                Ролики: parent.Ролики || '—',
-                CV_PRICE_1: child.CV_PRICE_1 || parent.CV_PRICE_1 || '—',
-                CV_CURRENCY_1: child.CV_CURRENCY_1 || parent.CV_CURRENCY_1 || 'RUB',
-                CV_PRICE_2: child.CV_PRICE_2 || parent.CV_PRICE_2 || '—',
-                CV_CURRENCY_2: child.CV_CURRENCY_2 || parent.CV_CURRENCY_2 || 'RUB',
-                CV_PRICE_3: child.CV_PRICE_3 || parent.CV_PRICE_3 || '—',
-                CV_CURRENCY_3: child.CV_CURRENCY_3 || parent.CV_CURRENCY_3 || 'RUB',
-                Link_arm: parent.Link_arm || '#',
-                full_describe: parent.full_describe || '—',
-           };
-    }
-  } else {
-    if (finalSelection[childName]) {
-      finalSelection[childName].count -= 1;
-      if (finalSelection[childName].count <= 0) {
-        delete finalSelection[childName];
-      }
-    }
-  }
 
-  localStorage.setItem('finalSelection', JSON.stringify(finalSelection));
-  updateFinalSelectionTable();
-}
+            await Promise.all(promises);
+            return images;
+        }
+
+        async function toggleChildInFinalSelection(child, isAdd) {
+            const finalSelection = JSON.parse(localStorage.getItem('finalSelection')) || {};
+            const childName = child.IE_NAME;
+
+            // Ищем родителя
+            const parent = selectedProducts.find(p => !p.isChild && p.unique_name && p.unique_name[0] === child.parentName);
+            if (!parent) {
+                console.warn(`Родитель для ${childName} не найден!`);
+                return;
+            }
+
+            if (isAdd) {
+                // Если строка уже существует — увеличиваем count
+                if (finalSelection[childName]) {
+                    finalSelection[childName].count = (finalSelection[childName].count || 0) + 1;
+                }
+                // Если строки нет — создаём новую с полными данными
+                else {
+                    // Загружаем фото из localStorage
+                    let images = [];
+                    const productName = Array.isArray(parent.unique_name) ? parent.unique_name[0] : parent.unique_name;
+                    for (let i = 0; i < 4; i++) {
+                        const imageKey = `image_${productName}_${i}`;
+                        const cachedImage = localStorage.getItem(imageKey);
+                        if (cachedImage) {
+                            images[i] = cachedImage;
+                        } else {
+                            images[i] = "";
+                        }
+                    }
+
+                    // Если у ребёнка есть свои изображения (например, IP_PROP36), используем их
+                    if (child.IP_PROP36 && child.IP_PROP36.length > 0) {
+                        for (let i = 0; i < 4; i++) {
+                            if (child.IP_PROP36[i]) {
+                                images[i] = child.IP_PROP36[i];
+                                // Сохраняем в localStorage под уникальным ключом для ребёнка
+                                const childImageKey = `image_${childName}_${i}`;
+                                localStorage.setItem(childImageKey, child.IP_PROP36[i]);
+                            }
+                        }
+                    }
+
+                    finalSelection[childName] = {
+                        count: 1,
+                        images: images,
+                        article_number: parent.article_number || '—',
+                        finish_type: parent.finish_type || '—',
+                        finish_type_seat: parent.finish_type_seat || '—',
+                        Подлокотники: parent.Подлокотники || '—',
+                        skeleton: parent.skeleton || '—',
+                        max_load: parent.guarantee?.[0]?.max_load || '—',
+                        recommended_load: parent.guarantee?.[0]?.recommended_load || '—',
+                        Основание: parent.Основание || '—',
+                        Газлифт: parent.Газлифт || '—',
+                        Механизм: parent.Механизм || '—',
+                        Особенности: parent.Особенности || '—',
+                        Ролики: parent.Ролики || '—',
+                        CV_PRICE_1: child.CV_PRICE_1 || parent.CV_PRICE_1 || '—',
+                        CV_CURRENCY_1: child.CV_CURRENCY_1 || parent.CV_CURRENCY_1 || 'RUB',
+                        CV_PRICE_2: child.CV_PRICE_2 || parent.CV_PRICE_2 || '—',
+                        CV_CURRENCY_2: child.CV_CURRENCY_2 || parent.CV_CURRENCY_2 || 'RUB',
+                        CV_PRICE_3: child.CV_PRICE_3 || parent.CV_PRICE_3 || '—',
+                        CV_CURRENCY_3: child.CV_CURRENCY_3 || parent.CV_CURRENCY_3 || 'RUB',
+                        Link_arm: parent.Link_arm || '#',
+                        full_describe: parent.full_describe || '—',
+                    };
+                }
+            } else {
+                if (finalSelection[childName]) {
+                    finalSelection[childName].count -= 1;
+                    if (finalSelection[childName].count <= 0) {
+                        delete finalSelection[childName];
+                    }
+                }
+            }
+
+            localStorage.setItem('finalSelection', JSON.stringify(finalSelection));
+            updateFinalSelectionTable();
+        }
 
 
 
-// Функция для загрузки изображения по URL и конвертации его в base64
-// async function urlToBase64(url) {
-//     try {
-//         if (url.startsWith('data:')) {
-//             return url; // Уже в формате base64
-//         }
-//         if (url.startsWith('img/')) {
-//             return null; // Локальные изображения не нуждаются в конвертации
-//         }
-//         const response = await fetch(url);
-//         if (!response.ok || response.status === 0) {
-//             // Статус 0 обычно указывает на CORS или сетевую ошибку
-//             console.warn(`Ошибка загрузки изображения: ${url} статус: ${response.status}`);
-//             return null;
-//         }
-//         const blob = await response.blob();
-//         return new Promise((resolve) => {
-//             const reader = new FileReader();
-//             reader.onload = () => resolve(reader.result);
-//             reader.onerror = () => {
-//                 console.error(`Ошибка при чтении файла: ${url}`);
-//                 resolve(null);
-//             };
-//             reader.readAsDataURL(blob);
-//         });
-//     } catch (e) {
-//         console.error("Ошибка загрузки изображения:", url, e);
-//         return null;
-//     }
-// }
+        // Функция для загрузки изображения по URL и конвертации его в base64
+        // async function urlToBase64(url) {
+        //     try {
+        //         if (url.startsWith('data:')) {
+        //             return url; // Уже в формате base64
+        //         }
+        //         if (url.startsWith('img/')) {
+        //             return null; // Локальные изображения не нуждаются в конвертации
+        //         }
+        //         const response = await fetch(url);
+        //         if (!response.ok || response.status === 0) {
+        //             // Статус 0 обычно указывает на CORS или сетевую ошибку
+        //             console.warn(`Ошибка загрузки изображения: ${url} статус: ${response.status}`);
+        //             return null;
+        //         }
+        //         const blob = await response.blob();
+        //         return new Promise((resolve) => {
+        //             const reader = new FileReader();
+        //             reader.onload = () => resolve(reader.result);
+        //             reader.onerror = () => {
+        //                 console.error(`Ошибка при чтении файла: ${url}`);
+        //                 resolve(null);
+        //             };
+        //             reader.readAsDataURL(blob);
+        //         });
+        //     } catch (e) {
+        //         console.error("Ошибка загрузки изображения:", url, e);
+        //         return null;
+        //     }
+        // }
 
 
 
-function updateCartIcons() {
+        function updateCartIcons() {
             const selectedProducts = JSON.parse(localStorage.getItem('selectedProducts')) || [];
             document.querySelectorAll('.cart-icon').forEach(icon => {
                 const productName = icon.getAttribute('data-product-name');
@@ -3794,152 +4069,152 @@ function updateCartIcons() {
                 document.getElementById('productsCountValue').textContent = `${parentsCount} (родители) + ${childrenCount} (дети)`;
             }
         }
-// function generateOfferData() {
-//     const finalSelection = JSON.parse(localStorage.getItem('finalSelection')) || {};
-//     const uniqueProducts = {};
-//     const offerData = [];
+        // function generateOfferData() {
+        //     const finalSelection = JSON.parse(localStorage.getItem('finalSelection')) || {};
+        //     const uniqueProducts = {};
+        //     const offerData = [];
 
-//     // Группируем товары по name (или по уникальному ключу)
-//     Object.entries(finalSelection).forEach(([name, product]) => {
-//         if (!uniqueProducts[name]) {
-//             // Загружаем фото из localStorage
-//             if (!product.images) {
-//                 product.images = [];
-//             }
-//             for (let i = 0; i < 4; i++) {
-//                 const imageKey = `image_${name}_${i}`;
-//                 const cachedImage = localStorage.getItem(imageKey);
-//                 if (cachedImage) {
-//                     product.images[i] = cachedImage;
-//                 } else if (!product.images[i]) {
-//                     product.images[i] = "";
-//                 }
-//             }
-//             uniqueProducts[name] = { ...product, name: name };
-//         } else {
-//             // Объединяем данные, если есть дубликат
-//             if (product.images && product.images.length > 0) {
-//                 uniqueProducts[name].images = product.images;
-//             }
-//             // Объединяем количество
-//             if (product.count) {
-//                 uniqueProducts[name].count = (uniqueProducts[name].count || 0) + product.count;
-//             }
-//         }
-//     });
+        //     // Группируем товары по name (или по уникальному ключу)
+        //     Object.entries(finalSelection).forEach(([name, product]) => {
+        //         if (!uniqueProducts[name]) {
+        //             // Загружаем фото из localStorage
+        //             if (!product.images) {
+        //                 product.images = [];
+        //             }
+        //             for (let i = 0; i < 4; i++) {
+        //                 const imageKey = `image_${name}_${i}`;
+        //                 const cachedImage = localStorage.getItem(imageKey);
+        //                 if (cachedImage) {
+        //                     product.images[i] = cachedImage;
+        //                 } else if (!product.images[i]) {
+        //                     product.images[i] = "";
+        //                 }
+        //             }
+        //             uniqueProducts[name] = { ...product, name: name };
+        //         } else {
+        //             // Объединяем данные, если есть дубликат
+        //             if (product.images && product.images.length > 0) {
+        //                 uniqueProducts[name].images = product.images;
+        //             }
+        //             // Объединяем количество
+        //             if (product.count) {
+        //                 uniqueProducts[name].count = (uniqueProducts[name].count || 0) + product.count;
+        //             }
+        //         }
+        //     });
 
-//     // Формируем offerData
-//     Object.values(uniqueProducts).forEach(product => {
-//         offerData.push(product);
-//     });
+        //     // Формируем offerData
+        //     Object.values(uniqueProducts).forEach(product => {
+        //         offerData.push(product);
+        //     });
 
-//     return offerData;
-// }
+        //     return offerData;
+        // }
 
 
-async function convertImagesToDataURLs(product) {
-  // Обработка массива изображений
-  for (let i = 0; i < product.images.length; i++) {
-    const url = product.images[i];
-    // Проверка, если уже DataURL (например, начинается с 'data:')
-    if (url.startsWith('data:')) {
-      continue; // Уже встроено
-    }
-    // Если ссылка внешняя, скачиваем и преобразуем
-    try {
-      const response = await fetch(url);
-      const blob = await response.blob();
-      const dataUrl = await new Promise((resolve, reject) => {
-        const reader = new FileReader();
-        reader.onloadend = () => resolve(reader.result);
-        reader.onerror = reject;
-        reader.readAsDataURL(blob);
-      });
-      product.images[i] = dataUrl; // заменяем ссылку на DataURL
-    } catch (e) {
-      console.error(`Ошибка при обработке изображения ${url}`, e);
-      // Можно оставить оригинальную ссылку или поставить пустую строку
-      product.images[i] = "";
-    }
-  }
-}
+        async function convertImagesToDataURLs(product) {
+            // Обработка массива изображений
+            for (let i = 0; i < product.images.length; i++) {
+                const url = product.images[i];
+                // Проверка, если уже DataURL (например, начинается с 'data:')
+                if (url.startsWith('data:')) {
+                    continue; // Уже встроено
+                }
+                // Если ссылка внешняя, скачиваем и преобразуем
+                try {
+                    const response = await fetch(url);
+                    const blob = await response.blob();
+                    const dataUrl = await new Promise((resolve, reject) => {
+                        const reader = new FileReader();
+                        reader.onloadend = () => resolve(reader.result);
+                        reader.onerror = reject;
+                        reader.readAsDataURL(blob);
+                    });
+                    product.images[i] = dataUrl; // заменяем ссылку на DataURL
+                } catch (e) {
+                    console.error(`Ошибка при обработке изображения ${url}`, e);
+                    // Можно оставить оригинальную ссылку или поставить пустую строку
+                    product.images[i] = "";
+                }
+            }
+        }
 
-async function generateOfferData() {
-    const finalSelection = JSON.parse(localStorage.getItem('finalSelection')) || {};
-    const uniqueProducts = {};
-    const offerData = [];
+        async function generateOfferData() {
+            const finalSelection = JSON.parse(localStorage.getItem('finalSelection')) || {};
+            const uniqueProducts = {};
+            const offerData = [];
 
-    // Вспомогательная функция для загрузки и конвертации изображения
-    async function fetchImageAsDataURL(url) {
-        const response = await fetch(url);
-        const blob = await response.blob();
-        return new Promise((resolve, reject) => {
-            const reader = new FileReader();
-            reader.onloadend = () => resolve(reader.result);
-            reader.onerror = reject;
-            reader.readAsDataURL(blob);
-        });
-    }
-
-    // Обрабатываем каждый продукт
-    for (const [name, product] of Object.entries(finalSelection)) {
-        if (!uniqueProducts[name]) {
-            // Инициализация images
-            if (!product.images) {
-                product.images = [];
+            // Вспомогательная функция для загрузки и конвертации изображения
+            async function fetchImageAsDataURL(url) {
+                const response = await fetch(url);
+                const blob = await response.blob();
+                return new Promise((resolve, reject) => {
+                    const reader = new FileReader();
+                    reader.onloadend = () => resolve(reader.result);
+                    reader.onerror = reject;
+                    reader.readAsDataURL(blob);
+                });
             }
 
-            await convertImagesToDataURLs(product);
+            // Обрабатываем каждый продукт
+            for (const [name, product] of Object.entries(finalSelection)) {
+                if (!uniqueProducts[name]) {
+                    // Инициализация images
+                    if (!product.images) {
+                        product.images = [];
+                    }
 
-            // Обрабатываем 4 изображения
-            for (let i = 0; i < 4; i++) {
-                const imageKey = `image_${name}_${i}`;
-                let cachedImage = localStorage.getItem(imageKey);
+                    await convertImagesToDataURLs(product);
 
-                if (cachedImage) {
-                    product.images[i] = cachedImage;
-                } else {
-                    // Если в localStorage нет, скачиваем и сохраняем
-                    const imageUrl = product.images[i] || ""; // предполагается, что есть ссылка
-                    if (imageUrl) {
-                        try {
-                            const dataUrl = await fetchImageAsDataURL(imageUrl);
-                            localStorage.setItem(imageKey, dataUrl);
-                            product.images[i] = dataUrl;
-                        } catch (e) {
-                            console.error(`Ошибка при загрузке изображения ${imageUrl}`, e);
-                            product.images[i] = "";
+                    // Обрабатываем 4 изображения
+                    for (let i = 0; i < 4; i++) {
+                        const imageKey = `image_${name}_${i}`;
+                        let cachedImage = localStorage.getItem(imageKey);
+
+                        if (cachedImage) {
+                            product.images[i] = cachedImage;
+                        } else {
+                            // Если в localStorage нет, скачиваем и сохраняем
+                            const imageUrl = product.images[i] || ""; // предполагается, что есть ссылка
+                            if (imageUrl) {
+                                try {
+                                    const dataUrl = await fetchImageAsDataURL(imageUrl);
+                                    localStorage.setItem(imageKey, dataUrl);
+                                    product.images[i] = dataUrl;
+                                } catch (e) {
+                                    console.error(`Ошибка при загрузке изображения ${imageUrl}`, e);
+                                    product.images[i] = "";
+                                }
+                            } else {
+                                product.images[i] = "";
+                            }
                         }
-                    } else {
-                        product.images[i] = "";
+                    }
+
+                    uniqueProducts[name] = { ...product, name: name };
+                } else {
+                    // Объединяем данные, если есть дубликат
+                    if (product.images && product.images.length > 0) {
+                        uniqueProducts[name].images = product.images;
+                    }
+                    if (product.count) {
+                        uniqueProducts[name].count = (uniqueProducts[name].count || 0) + product.count;
                     }
                 }
             }
 
-            uniqueProducts[name] = { ...product, name: name };
-        } else {
-            // Объединяем данные, если есть дубликат
-            if (product.images && product.images.length > 0) {
-                uniqueProducts[name].images = product.images;
-            }
-            if (product.count) {
-                uniqueProducts[name].count = (uniqueProducts[name].count || 0) + product.count;
-            }
+            // Формируем offerData
+            Object.values(uniqueProducts).forEach(product => {
+                offerData.push(product);
+            });
+
+            return offerData;
         }
-    }
 
-    // Формируем offerData
-    Object.values(uniqueProducts).forEach(product => {
-        offerData.push(product);
-    });
-
-    return offerData;
-}
-
-// Использование:
-// const offerData = generateOfferData();
-// localStorage.setItem('offerData', JSON.stringify(offerData));
-// window.open('commercial.html', '_blank');
+        // Использование:
+        // const offerData = generateOfferData();
+        // localStorage.setItem('offerData', JSON.stringify(offerData));
+        // window.open('commercial.html', '_blank');
 
         function makeCellEditable(cell, fieldName, productName) {
             cell.contentEditable = true;
@@ -3992,7 +4267,7 @@ async function generateOfferData() {
                 filter.classList.add(uniqueClass);
             });
 
-            
+
 
             document.addEventListener('click', (e) => {
                 if (e.target.closest('.cart-icon')) {
@@ -4119,7 +4394,7 @@ async function generateOfferData() {
                 return;
             }
 
-            document.querySelectorAll('.armrest-filter, .mechanism-filter, .finish-filter, .category-filter, .load-filter, .diameter-filter, .special-offer-filter').forEach(checkbox => {
+            document.querySelectorAll('.armrest-filter, .mechanism-filter, .karkas-filter, .podgolovnik-filter, .stolik-filter, .skladnoy-filter, .other-filter, .finish-filter, .category-filter, .load-filter, .diameter-filter, .special-offer-filter').forEach(checkbox => {
                 checkbox.addEventListener('change', () => {
                     if (!basketContainer.classList.contains('active')) {
                         recalculateSliderValues(filteredProducts);
@@ -4338,21 +4613,21 @@ async function generateOfferData() {
             });
 
 
-const generateOfferButton = document.getElementById('generateCommercialOffer');
-if (generateOfferButton) {
-    generateOfferButton.addEventListener('click', function() {
-        const finalSelection = JSON.parse(localStorage.getItem('finalSelection')) || {};
-        if (Object.keys(finalSelection).length === 0) {
-            alert("Нет выбранных товаров для формирования предложения!");
-            return;
-        }
-        const offerData = generateOfferData();
-        localStorage.setItem('offerData', JSON.stringify(offerData));
-        window.open('commercial.html', '_blank');
-    });
-} else {
-        console.error('Кнопка "Сформировать предложение" не найдена!');
-    }
+            const generateOfferButton = document.getElementById('generateCommercialOffer');
+            if (generateOfferButton) {
+                generateOfferButton.addEventListener('click', function () {
+                    const finalSelection = JSON.parse(localStorage.getItem('finalSelection')) || {};
+                    if (Object.keys(finalSelection).length === 0) {
+                        alert("Нет выбранных товаров для формирования предложения!");
+                        return;
+                    }
+                    const offerData = generateOfferData();
+                    localStorage.setItem('offerData', JSON.stringify(offerData));
+                    window.open('commercial.html', '_blank');
+                });
+            } else {
+                console.error('Кнопка "Сформировать предложение" не найдена!');
+            }
 
 
 
@@ -4402,11 +4677,11 @@ if (generateOfferButton) {
                         });
                 }
 
-                
+
             });
 
             Promise.all(promises)
-                .then(async (results)=> {
+                .then(async (results) => {
                     results.forEach(product => {
                         if (product) {
                             products.push(product);
@@ -4485,7 +4760,7 @@ if (generateOfferButton) {
 
             window.addEventListener('pageshow', function (event) {
                 document.getElementById('searchInput').value = '';
-                document.querySelectorAll('.armrest-filter, .mechanism-filter, .finish-filter, .load-filter, .diameter-filter, .special-offer-filter').forEach(checkbox => {
+                document.querySelectorAll('.armrest-filter, .mechanism-filter, .podgolovnik-filter, .stolik-filter, .skladnoy-filter, .finish-filter, .load-filter, .diameter-filter, .special-offer-filter').forEach(checkbox => {
                     checkbox.checked = false;
                 });
                 sliderParams.forEach(({ param, minId, maxId, minValueId, maxValueId }) => {

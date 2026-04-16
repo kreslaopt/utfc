@@ -157,7 +157,8 @@
                 "https://utfc.ru/upload/resize_cache/iblock/7f2/140_140_0/qjtigt3pkfr5dqyb7295n90xdn80yrlj.png",
                 "https://utfc.ru/upload/dev2fun.imagecompress/webp/iblock/6ab/8jhmqww57sqmn3215996vulf8nweytsz.webp",
                 "https://utfc.ru/upload/resize_cache/iblock/6ab/140_140_0/8jhmqww57sqmn3215996vulf8nweytsz.png",
-                "https://utfc.ru/upload/dev2fun.imagecompress/webp/iblock/153/rq9h9m3cl6igutt4irnnmw48o65igwwj.webp"
+                "https://utfc.ru/upload/dev2fun.imagecompress/webp/iblock/153/rq9h9m3cl6igutt4irnnmw48o65igwwj.webp",
+                "https://utfc.ru/upload/resize_cache/iblock/5f2/70_70_0/jtoqpoxf3v0ai54dthupo7bqv6dlhff8.png"
             ]
         }
     ],
@@ -256,7 +257,7 @@
         }
     ],
     "skeleton": "монолитный",
-    "minpromtorg": "+",
+    "minpromtorg": "Минпромторг",
     "addition": "",
     "parent": {
         "IE_XML_ID": "a_1110",
@@ -1748,12 +1749,12 @@
             "CV_CURRENCY_3": "RUB"
         }
     ],
-    "title": "Стул София СН для посетителей с мягкими подлокотниками производства компании UTFC",
-    "base_name": "Стул София СН",
-    "article_number": "СтСофияСН13",
-    "full_describe": "Элегантное кресло для посетителей имеет широкий выбор расцветки обивки кресла, мягкие подлокотники с накладками люкс и хромированный каркас. Максимальная нагрузка - 120 кг.",
-    "Link_arm": "https://utfc.ru/catalog/pos_chair/sofia_ch/",
-    "Основание": "Металлический изогнутый каркас стула София, защитно-декоративное покрытие никель-хром (СН)",
+    "title": "Стул София BL для посетителей с мягкими подлокотниками производства компании UTFC",
+    "base_name": "Стул София BL",
+    "article_number": "ДКСофия3",
+    "full_describe": "Элегантное кресло для посетителей имеет широкий выбор расцветки обивки кресла, мягкие подлокотники с накладками люкс и черный каркас. Максимальная нагрузка - 120 кг.",
+    "Link_arm": "https://utfc.ru/catalog/pos_chair/sofia_bl/",
+    "Основание": "Металлический изогнутый каркас стула София,защитно-декоративное порошковое покрытие черного цвета (BL)",
     "Подлокотники": "",
     "Газлифт": "",
     "Механизм": "",
@@ -1933,5 +1934,6 @@
     ],
     "color_seat": [
         ""
-    ]
+    ],
+    "madeinrf": "Сделано РФ"
 }

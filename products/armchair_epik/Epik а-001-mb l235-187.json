@@ -129,7 +129,9 @@
                 "https://utfc.ru/upload/dev2fun.imagecompress/webp/iblock/8ed/vk1uw0a9n279mg2jfue9d1zg0epo2jrx.webp",
                 "https://utfc.ru/upload/dev2fun.imagecompress/webp/iblock/92a/xr4c0v5sw5h4w8e5ny4f5cwu08fksae6.webp",
                 "https://utfc.ru/upload/dev2fun.imagecompress/webp/iblock/61a/3irith7g72fx67xbqfv0s50tyng10hz2.webp",
-                "https://utfc.ru/upload/dev2fun.imagecompress/webp/iblock/d8e/kislayeu25mqutu5mskhnt7eqmn6qgpw.webp"
+                "https://utfc.ru/upload/dev2fun.imagecompress/webp/iblock/d8e/kislayeu25mqutu5mskhnt7eqmn6qgpw.webp",
+                "https://utfc.ru/upload/resize_cache/iblock/c70/400_400_0/5kk900l7qfsrm711xoakxvtnc111yqik.png",
+                "https://utfc.ru/upload/resize_cache/iblock/5f2/70_70_0/jtoqpoxf3v0ai54dthupo7bqv6dlhff8.png"
             ]
         }
     ],
@@ -226,8 +228,8 @@
     "minpromtorg": "",
     "addition": "",
     "parent": {
-        "IE_XML_ID": "a_1072",
-        "IE_NAME": "EPIK А-001-МВ 171-172 (темно-серый/ коричневый)",
+        "IE_XML_ID": "a_1076",
+        "IE_NAME": "EPIK А-001-МВ L235-187 (кремовый/ светло-серый)",
         "IE_PREVIEW_TEXT": "Современное кресло руководителя. Регулируемый подголовник имеет увеличенную мягкую подушку с уникальным рисунком. Механизм качания позволяет фиксировать наклон кресла в любом положении, что обеспечит полный комфорт и расслабление во время рабочего дня.",
         "IE_DETAIL_TEXT": "Современное кресло руководителя. Регулируемый подголовник имеет увеличенную мягкую подушку с уникальным рисунком. Механизм качания позволяет фиксировать наклон кресла в любом положении, что обеспечит полный комфорт и расслабление во время рабочего дня.",
         "IP_PROP2": "690",
@@ -236,8 +238,8 @@
         "IP_PROP6": "",
         "IP_PROP19": "120",
         "IP_PROP25": "Немонолитный",
-        "IP_PROP18": "https://utfc.ru/upload/dev2fun.imagecompress/webp/iblock/a5e/8xpyendkzdmiyl09pi3g6h3xrugvkaoa.webp",
-        "IP_PROP31": "https://utfc.ru/upload/dev2fun.imagecompress/webp/iblock/714/ut5plazvllru3hu8c5wbz17e5tj55yd9.webp",
+        "IP_PROP18": "https://utfc.ru/upload/dev2fun.imagecompress/webp/iblock/7cb/eypmyoobfcvia066v8onyjrcbllp4vo2.webp",
+        "IP_PROP31": "https://utfc.ru/upload/dev2fun.imagecompress/webp/iblock/61a/3irith7g72fx67xbqfv0s50tyng10hz2.webp",
         "IP_PROP5": "1065",
         "IP_PROP26": "585",
         "IP_PROP27": "730",
@@ -246,11 +248,11 @@
         "IP_PROP30": "0,45",
         "IP_PROP7": "",
         "IP_PROP8": "",
-        "IP_PROP9": "EPIK_A001MB_171_172",
+        "IP_PROP9": "EPIK_A001MB_L235_187",
         "IP_PROP10": "",
         "IP_PROP11": "",
         "IP_PROP12": "",
-        "IP_PROP13": "https://utfc.ru/upload/dev2fun.imagecompress/webp/iblock/1dd/d2zt0kd3p0nerthlv8scewa9cza0zziu.webp",
+        "IP_PROP13": "https://utfc.ru/upload/dev2fun.imagecompress/webp/iblock/92a/xr4c0v5sw5h4w8e5ny4f5cwu08fksae6.webp",
         "IP_PROP14": "",
         "IP_PROP15": "",
         "IP_PROP16": "",
@@ -280,17 +282,17 @@
         "CP_LENGTH": "",
         "CV_QUANTITY_FROM": "",
         "CV_QUANTITY_TO": "",
-        "CV_PRICE_1": "51700.00",
+        "CV_PRICE_1": "73750.00",
         "CV_CURRENCY_1": "RUB",
-        "CV_PRICE_2": "53251.00",
+        "CV_PRICE_2": "75963.00",
         "CV_CURRENCY_2": "RUB",
-        "CV_PRICE_3": "51700.00",
+        "CV_PRICE_3": "73750.00",
         "CV_CURRENCY_3": "RUB"
     },
     "children": [
         {
-            "IE_XML_ID": "50286",
-            "IE_NAME": "Кресло EPIK A-001-MB 171-172 (темно-серый/ коричневый)",
+            "IE_XML_ID": "50290",
+            "IE_NAME": "Кресло EPIK A-001-MB L235-187 (кремовый/ светло-серый)",
             "IE_ACTIVE": "Y",
             "IE_ACTIVE_FROM": "",
             "IE_ACTIVE_TO": "",
@@ -303,12 +305,12 @@
             "IE_DETAIL_TEXT_TYPE": "text",
             "IE_CODE": "",
             "IE_TAGS": "",
-            "IE_ID": "12372",
-            "IP_PROP34": "a_1072",
-            "IP_PROP35": "КИЕ-00003",
+            "IE_ID": "12376",
+            "IP_PROP34": "a_1076",
+            "IP_PROP35": "КИЕ-00007",
             "IP_PROP36": "",
-            "IP_PROP37": "m_42",
-            "IP_PROP38": "a001_171-172",
+            "IP_PROP37": "m_43",
+            "IP_PROP38": "a001_L235-187",
             "IP_PROP39": "",
             "IP_PROP40": "",
             "IP_PROP55": "&nbsp;",
@@ -337,15 +339,15 @@
             "CP_MEASURE": "5",
             "CV_QUANTITY_FROM": "",
             "CV_QUANTITY_TO": "",
-            "CV_PRICE_1": "51700.00",
+            "CV_PRICE_1": "73750.00",
             "CV_CURRENCY_1": "RUB",
-            "CV_PRICE_2": "53251.00",
+            "CV_PRICE_2": "75963.00",
             "CV_CURRENCY_2": "RUB",
-            "CV_PRICE_3": "51700.00",
+            "CV_PRICE_3": "73750.00",
             "CV_CURRENCY_3": "RUB"
         }
     ],
-    "title": "Стильное офисное кресло EPIK А-001-МВ L235-187 (кремовый/ светло-серый) производства компании UTFC",
+    "title": "Элегантное комфортное современное кресло для руководителя EPIK А-001-МВ L235-187 (кремовый/ светло-серый) производства компании UTFC",
     "base_name": "Кресло EPIK А-001-МВ L235-187 (кремовый/ светло-серый)",
     "article_number": "КИЕ-00007",
     "full_describe": "Современное кресло руководителя. Регулируемый подголовник имеет увеличенную мягкую подушку с уникальным рисунком. Механизм качания позволяет фиксировать наклон кресла в любом положении, что обеспечит полный комфорт и расслабление во время рабочего дня.",
@@ -377,5 +379,6 @@
     ],
     "color_seat": [
         ""
-    ]
+    ],
+    "madeinrf": ""
 }

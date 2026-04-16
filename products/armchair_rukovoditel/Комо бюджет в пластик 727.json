@@ -202,7 +202,9 @@
                 "https://utfc.ru/upload/dev2fun.imagecompress/webp/iblock/e41/3mk13tqi2hkt4es5095636ccyrxqxd0r.webp",
                 "https://utfc.ru/upload/resize_cache/iblock/e41/140_140_0/3mk13tqi2hkt4es5095636ccyrxqxd0r.png",
                 "https://utfc.ru/upload/dev2fun.imagecompress/webp/iblock/4ca/gpxmz9ypks46sf4g1px1a1z3bizwfq2h.webp",
-                "https://utfc.ru/upload/dev2fun.imagecompress/webp/iblock/dce/5l0tpxz5789274ybca78llqoaefushw7.webp"
+                "https://utfc.ru/upload/dev2fun.imagecompress/webp/iblock/dce/5l0tpxz5789274ybca78llqoaefushw7.webp",
+                "https://utfc.ru/upload/dev2fun.imagecompress/webp/iblock/9eb/xibtegety1jo9wvrk7ykw3i2pjti7hck.webp",
+                "https://utfc.ru/upload/resize_cache/iblock/5f2/70_70_0/jtoqpoxf3v0ai54dthupo7bqv6dlhff8.png"
             ]
         }
     ],
@@ -1272,13 +1274,13 @@
             "CV_CURRENCY_3": "RUB"
         }
     ],
-    "title": "Кресло Комо В пластик производства компании UTFC",
-    "base_name": "Кресло Комо В пластик",
-    "article_number": "ДККомо252",
-    "full_describe": "Кресло является одной из самых популярных моделей для руководителей и персонала уже долгое время! Его особенности это: удобство, лаконичный дизайн и надежность. Широкие пластиковые подлокотники и глубокое сиденье обеспечат комфортную посадку. Максимальная нагрузка до 150 кг.",
-    "Link_arm": "https://utfc.ru/catalog/boss_chairs/komo_v_pl/",
-    "Основание": "Пятилучье пластиковое d=660 мм",
-    "Подлокотники": "Подлокотники пластиковые «Сенатор» используются на все ДК в исполнении Пластик",
+    "title": "Удобное качественное кресло руководителя Комо В хром производства компании UTFC",
+    "base_name": "Кресло Комо В хром",
+    "article_number": "ДККомо35",
+    "full_describe": "Кресло является одной из самых популярных моделей для руководителей и персонала уже долгое время! Его особенности это: удобство, лаконичный дизайн и надежность. Хромированные подлокотники с мягкими накладками и глубокое сиденье обеспечат комфортную посадку. Максимальная нагрузка до 150 кг.",
+    "Link_arm": "https://utfc.ru/catalog/boss_chairs/komo_v_ch/",
+    "Основание": "Пятилучье хромированное d=700 мм",
+    "Подлокотники": "Подлокотники «Айрон-хром» с декоративными мягкими накладками",
     "Газлифт": "Газ-лифт 3 категории по стандарту Germany DIN 4550, h=230 мм, длина штока 100 мм",
     "Механизм": "Однопозиционный механизм качания Топ-Ган регулирует высоту сиденья, обеспечивает режим свободного качания и фиксацию каркаса в рабочем положении.",
     "Особенности": "",
@@ -1396,5 +1398,6 @@
     ],
     "color_seat": [
         ""
-    ]
+    ],
+    "madeinrf": "Сделано РФ"
 }

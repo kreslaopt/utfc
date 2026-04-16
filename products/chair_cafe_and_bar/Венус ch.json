@@ -135,7 +135,8 @@
                 "https://utfc.ru/upload/dev2fun.imagecompress/webp/iblock/364/p2irps965c0fga49vhdtiri56j5y1ej1.webp",
                 "https://utfc.ru/upload/resize_cache/iblock/5c5/140_140_0/ezyvpzosr9xd3kkgqomo94nzgpac2nte.png",
                 "https://utfc.ru/upload/resize_cache/iblock/122/140_140_0/c5lw2erw7uaucg5qozox1jbeemiglj40.png",
-                "https://utfc.ru/upload/dev2fun.imagecompress/webp/uf/f8c/mc7t50zzlmnnma5uyc7s1w0o9ouy044o.webp"
+                "https://utfc.ru/upload/dev2fun.imagecompress/webp/uf/f8c/mc7t50zzlmnnma5uyc7s1w0o9ouy044o.webp",
+                "https://utfc.ru/upload/resize_cache/iblock/5f2/70_70_0/jtoqpoxf3v0ai54dthupo7bqv6dlhff8.png"
             ]
         }
     ],
@@ -225,7 +226,7 @@
         }
     ],
     "skeleton": "монолитный",
-    "minpromtorg": "+",
+    "minpromtorg": "Минпромторг",
     "addition": "",
     "parent": {
         "IE_XML_ID": "p_5105",
@@ -1471,12 +1472,12 @@
             "CV_CURRENCY_3": "RUB"
         }
     ],
-    "title": "Стул Венус М СН с мягкой вставкой на спинке для кафе и дома производства компании UTFC",
-    "base_name": "Стул Венус М СН",
-    "article_number": "ВенусМСН23",
-    "full_describe": "Мягкая вставка на спинке дополняет изящный дизайн стула, что позволяет ему сочетаться с разными интерьерами. Подходит как для домашнего использования, так и для мест общественного питания. Каркас стула выполнен из хромированного металла.",
-    "Link_arm": "https://utfc.ru/catalog/pos_chair/venus_m_ch/",
-    "Основание": "Металлические опоры стула Венус М, защитно-декоративное покрытие никель-хром (СН)",
+    "title": "Стул Венус СН для кафе и дома производства компании UTFC",
+    "base_name": "Стул Венус СН",
+    "article_number": "ВенусСН65",
+    "full_describe": "Стул имеет изящный дизайн спинки, что позволяет ему сочетаться с разными интерьерами. Подходит как для домашнего использования, так и для мест общественного питания.",
+    "Link_arm": "https://utfc.ru/catalog/pos_chair/venus_ch/",
+    "Основание": "Металлические опоры стула Венус, защитно-декоративное покрытие никель-хром (СН)",
     "Подлокотники": "Без подлокотников",
     "Газлифт": "",
     "Механизм": "",
@@ -1617,5 +1618,6 @@
     ],
     "color_seat": [
         ""
-    ]
+    ],
+    "madeinrf": "Сделано РФ"
 }

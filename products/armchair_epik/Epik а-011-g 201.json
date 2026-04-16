@@ -128,7 +128,9 @@
                 "https://utfc.ru/upload/dev2fun.imagecompress/webp/iblock/8b7/kai9pdyglqlrcbbag7f01sl6fmcybsug.webp",
                 "https://utfc.ru/upload/dev2fun.imagecompress/webp/iblock/bcf/io0ue910u1crjonkt9r8tmpgnagxd0ii.webp",
                 "https://utfc.ru/upload/resize_cache/iblock/bcf/140_140_0/io0ue910u1crjonkt9r8tmpgnagxd0ii.png",
-                "https://utfc.ru/upload/dev2fun.imagecompress/webp/uf/c27/mk9gegswlbxu1wawx1uvgxfyg38l4kfg.webp"
+                "https://utfc.ru/upload/dev2fun.imagecompress/webp/uf/c27/mk9gegswlbxu1wawx1uvgxfyg38l4kfg.webp",
+                "https://utfc.ru/upload/resize_cache/iblock/5f2/70_70_0/jtoqpoxf3v0ai54dthupo7bqv6dlhff8.png",
+                "https://utfc.ru/upload/uf/6ff/cq1dwiujkap4m3iolsldnnvphshfle5k.png"
             ]
         }
     ],
@@ -227,8 +229,8 @@
     "minpromtorg": "",
     "addition": "",
     "parent": {
-        "IE_XML_ID": "a_1080",
-        "IE_NAME": "EPIK А-011-G 169 (черный)",
+        "IE_XML_ID": "a_1081",
+        "IE_NAME": "EPIK А-011-G 201 (темно-синий)",
         "IE_PREVIEW_TEXT": "Эргономичное кресло руководителя с высокой спинкой и широким сиденьем. Уникальная особенность кресла - подлокотники регулируются при использовании механизма отклонения спинки и сиденья. Максимальная нагрузка 120 кг.",
         "IE_DETAIL_TEXT": "Эргономичное кресло руководителя с высокой спинкой и широким сиденьем. Уникальная особенность кресла - подлокотники регулируются при использовании механизма отклонения спинки и сиденья. Максимальная нагрузка 120 кг.",
         "IP_PROP2": "670",
@@ -237,8 +239,8 @@
         "IP_PROP6": "",
         "IP_PROP19": "120",
         "IP_PROP25": "Немонолитный",
-        "IP_PROP18": "https://utfc.ru/upload/iblock/215/f3ycsaka9lttsqoyqk7tn9zdoltjg7d0.png",
-        "IP_PROP31": "https://utfc.ru/upload/iblock/8d1/2iyghyhfwcy1r03d4pxmj9wz05qoesqm.png",
+        "IP_PROP18": "https://utfc.ru/upload/iblock/506/8cirq9jpte20f7slbufk8oxath9gos7b.png",
+        "IP_PROP31": "https://utfc.ru/upload/iblock/8b7/kai9pdyglqlrcbbag7f01sl6fmcybsug.png",
         "IP_PROP5": "645",
         "IP_PROP26": "960",
         "IP_PROP27": "470",
@@ -247,11 +249,11 @@
         "IP_PROP30": "0,29",
         "IP_PROP7": "",
         "IP_PROP8": "",
-        "IP_PROP9": "EPIK_A011G_169",
+        "IP_PROP9": "EPIK_A011G_201",
         "IP_PROP10": "",
         "IP_PROP11": "",
         "IP_PROP12": "",
-        "IP_PROP13": "https://utfc.ru/upload/iblock/12e/sgh6qs5mfsc4vqpta73mfs8hufq77ybb.png",
+        "IP_PROP13": "https://utfc.ru/upload/iblock/666/et7pivmlbu2pwc092wsrknvv0y0f42bd.png",
         "IP_PROP14": "",
         "IP_PROP15": "",
         "IP_PROP16": "",
@@ -290,8 +292,8 @@
     },
     "children": [
         {
-            "IE_XML_ID": "50294",
-            "IE_NAME": "Кресло EPIK A-011-G 169 (черный)",
+            "IE_XML_ID": "50295",
+            "IE_NAME": "Кресло EPIK A-011-G 201 (темно-синий)",
             "IE_ACTIVE": "Y",
             "IE_ACTIVE_FROM": "",
             "IE_ACTIVE_TO": "",
@@ -304,12 +306,12 @@
             "IE_DETAIL_TEXT_TYPE": "text",
             "IE_CODE": "",
             "IE_TAGS": "",
-            "IE_ID": "12380",
-            "IP_PROP34": "a_1080",
-            "IP_PROP35": "КИЕ-00011",
+            "IE_ID": "12381",
+            "IP_PROP34": "a_1081",
+            "IP_PROP35": "КИЕ-00013",
             "IP_PROP36": "",
             "IP_PROP37": "m_53",
-            "IP_PROP38": "a011_169",
+            "IP_PROP38": "a011_201",
             "IP_PROP39": "",
             "IP_PROP40": "",
             "IP_PROP55": "&nbsp;",
@@ -319,7 +321,7 @@
             "IC_XML_ID1": "",
             "IC_GROUP1": "",
             "IC_GROUP2": "",
-            "CP_QUANTITY": "27",
+            "CP_QUANTITY": "29",
             "CP_QUANTITY_TRACE": "D",
             "CP_CAN_BUY_ZERO": "D",
             "CP_WEIGHT": "0",
@@ -378,5 +380,6 @@
     ],
     "color_seat": [
         ""
-    ]
+    ],
+    "madeinrf": ""
 }

@@ -130,7 +130,9 @@
                 "https://utfc.ru/upload/resize_cache/iblock/de0/140_140_0/b71rt5kxw5sm41ox05w5kzeb272ijhd4.png",
                 "https://utfc.ru/upload/dev2fun.imagecompress/webp/uf/3a5/v7ri0rqalu3ru2hj2b0nfob4ybo455w7.webp",
                 "https://utfc.ru/upload/resize_cache/iblock/334/140_140_0/avjcgxjccz06yq9y7g3ohvictxrp053j.png",
-                "https://utfc.ru/upload/dev2fun.imagecompress/webp/iblock/de0/b71rt5kxw5sm41ox05w5kzeb272ijhd4.webp"
+                "https://utfc.ru/upload/dev2fun.imagecompress/webp/iblock/de0/b71rt5kxw5sm41ox05w5kzeb272ijhd4.webp",
+                "https://utfc.ru/upload/resize_cache/iblock/5f2/70_70_0/jtoqpoxf3v0ai54dthupo7bqv6dlhff8.png",
+                "https://utfc.ru/upload/uf/040/oazbzfn7g0ijv5oidrn04ujwalc75xx3.png"
             ]
         }
     ],
@@ -228,8 +230,8 @@
     "minpromtorg": "",
     "addition": "",
     "parent": {
-        "IE_XML_ID": "a_1077",
-        "IE_NAME": "EPIK А-007-G L169 (черный)",
+        "IE_XML_ID": "a_1078",
+        "IE_NAME": "EPIK А-007-G L200 (коричневый)",
         "IE_PREVIEW_TEXT": "Грациозная модель кресла руководителя. Изящные изгибы, натуральная кожа, декоративные вставки из ABS-пластика с аквапринтом - все это подчеркивает эксклюзивность модели. Подголовник и подлокотники регулируются. Максимальная нагрузка 130 кг.",
         "IE_DETAIL_TEXT": "Грациозная модель кресла руководителя. Изящные изгибы, натуральная кожа, декоративные вставки из ABS-пластика с аквапринтом - все это подчеркивает эксклюзивность модели. Подголовник и подлокотники регулируются. Максимальная нагрузка 130 кг.",
         "IP_PROP2": "750",
@@ -238,8 +240,8 @@
         "IP_PROP6": "",
         "IP_PROP19": "130",
         "IP_PROP25": "Немонолитный",
-        "IP_PROP18": "https://utfc.ru/upload/iblock/29a/u5jozhnnne6skwvd0o3gxvv0e1eqhuzq.png",
-        "IP_PROP31": "https://utfc.ru/upload/iblock/5d7/kn6ke3uireztopz8huah9pdnrr1kdgpr.png",
+        "IP_PROP18": "https://utfc.ru/upload/iblock/42f/2993vsudh83oohrtgnohgx1r9wky4c6m.png",
+        "IP_PROP31": "https://utfc.ru/upload/iblock/461/m94x31uhir4lkbvr0ba4whq22mksfhjz.png",
         "IP_PROP5": "440",
         "IP_PROP26": "930",
         "IP_PROP27": "765",
@@ -248,11 +250,11 @@
         "IP_PROP30": "0,31",
         "IP_PROP7": "",
         "IP_PROP8": "",
-        "IP_PROP9": "EPIK_A007G_L169",
+        "IP_PROP9": "EPIK_A007G_L200",
         "IP_PROP10": "",
         "IP_PROP11": "",
         "IP_PROP12": "",
-        "IP_PROP13": "https://utfc.ru/upload/iblock/0f5/c89kcztt9b9esn2o3av5wber7htz33un.png",
+        "IP_PROP13": "https://utfc.ru/upload/iblock/de0/b71rt5kxw5sm41ox05w5kzeb272ijhd4.png",
         "IP_PROP14": "",
         "IP_PROP15": "",
         "IP_PROP16": "",
@@ -291,8 +293,8 @@
     },
     "children": [
         {
-            "IE_XML_ID": "50291",
-            "IE_NAME": "Кресло EPIK A-007-G L169 (черный)",
+            "IE_XML_ID": "50292",
+            "IE_NAME": "Кресло EPIK A-007-G L200 (коричневый)",
             "IE_ACTIVE": "Y",
             "IE_ACTIVE_FROM": "",
             "IE_ACTIVE_TO": "",
@@ -305,12 +307,12 @@
             "IE_DETAIL_TEXT_TYPE": "text",
             "IE_CODE": "",
             "IE_TAGS": "",
-            "IE_ID": "12377",
-            "IP_PROP34": "a_1077",
-            "IP_PROP35": "КИЕ-00008",
+            "IE_ID": "12378",
+            "IP_PROP34": "a_1078",
+            "IP_PROP35": "КИЕ-00010",
             "IP_PROP36": "",
             "IP_PROP37": "m_54",
-            "IP_PROP38": "a007_L169",
+            "IP_PROP38": "a007_L200",
             "IP_PROP39": "",
             "IP_PROP40": "",
             "IP_PROP55": "&nbsp;",
@@ -320,7 +322,7 @@
             "IC_XML_ID1": "",
             "IC_GROUP1": "",
             "IC_GROUP2": "",
-            "CP_QUANTITY": "11",
+            "CP_QUANTITY": "3",
             "CP_QUANTITY_TRACE": "D",
             "CP_CAN_BUY_ZERO": "D",
             "CP_WEIGHT": "0",
@@ -347,7 +349,7 @@
             "CV_CURRENCY_3": "RUB"
         }
     ],
-    "title": "Стильное офисное кресло EPIK А-007-G L200 (коричневый) производства компании UTFC",
+    "title": "Элегантное офисное кресло с декоративными вставками EPIK А-007-G L200 (коричневый) производства компании UTFC",
     "base_name": "Кресло EPIK А-007-G L200 (коричневый)",
     "article_number": "КИЕ-00010",
     "full_describe": "Грациозная модель кресла руководителя. Изящные изгибы, натуральная кожа, декоративные вставки из ABS-пластика с аквапринтом - все это подчеркивает эксклюзивность модели. Подголовник и подлокотники регулируются. Максимальная нагрузка 130 кг.",
@@ -379,5 +381,6 @@
     ],
     "color_seat": [
         ""
-    ]
+    ],
+    "madeinrf": ""
 }

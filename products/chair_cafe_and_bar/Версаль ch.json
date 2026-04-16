@@ -125,7 +125,8 @@
                 "https://utfc.ru/upload/resize_cache/iblock/809/140_140_0/809c79b0981e7681cc6f81e52bfe3824.png",
                 "https://utfc.ru/upload/dev2fun.imagecompress/webp/iblock/809/809c79b0981e7681cc6f81e52bfe3824.webp",
                 "https://utfc.ru/upload/dev2fun.imagecompress/webp/iblock/c7e/abnuiikhyuqhwgxasrxwklb210uh2p4t.webp",
-                "https://utfc.ru/upload/dev2fun.imagecompress/webp/uf/fa6/83i9l0q3t5aq4d9nqb6qpydexebokzjq.webp"
+                "https://utfc.ru/upload/dev2fun.imagecompress/webp/uf/fa6/83i9l0q3t5aq4d9nqb6qpydexebokzjq.webp",
+                "https://utfc.ru/upload/resize_cache/iblock/5f2/70_70_0/jtoqpoxf3v0ai54dthupo7bqv6dlhff8.png"
             ]
         }
     ],
@@ -212,7 +213,7 @@
         }
     ],
     "skeleton": "монолитный",
-    "minpromtorg": "+",
+    "minpromtorg": "Минпромторг",
     "addition": "",
     "parent": {
         "IE_XML_ID": "p_5110",
@@ -1550,12 +1551,12 @@
             "CV_CURRENCY_3": "RUB"
         }
     ],
-    "title": "Стул Версаль СН с округлой спинкой и мягким сиденьем производства компании UTFC",
-    "base_name": "Стул Версаль СН",
-    "article_number": "ВерсальСНS-0406",
-    "full_describe": "Небольшой стул с округлой спинкой и мягким сиденьем может выступать как часть обеденной зоны, а может быть самостоятельной деталью в интерьере. Каркас стула выполнен из хромированного металла.",
-    "Link_arm": "https://utfc.ru/catalog/pos_chair/versal_ch/",
-    "Основание": "Металлические опоры стула Версаль, защитно-декоративное покрытие никель-хром (СН)",
+    "title": "Стул Версаль BL с округлой спинкой и мягким сиденьем производства компании UTFC",
+    "base_name": "Стул Версаль BL",
+    "article_number": "ГС-00065",
+    "full_describe": "Небольшой стул с округлой спинкой и мягким сиденьем может выступать как часть обеденной зоны, а может быть самостоятельной деталью в интерьере. Каркас стула выполнен из металла.",
+    "Link_arm": "https://utfc.ru/catalog/pos_chair/versal_bl/",
+    "Основание": "Металлические опоры стула Версаль, защитно-декоративное порошковое покрытие черного цвета (BL)",
     "Подлокотники": "Без подлокотников",
     "Газлифт": "",
     "Механизм": "",
@@ -1686,5 +1687,6 @@
     ],
     "color_seat": [
         ""
-    ]
+    ],
+    "madeinrf": "Сделано РФ"
 }

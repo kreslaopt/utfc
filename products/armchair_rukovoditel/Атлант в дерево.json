@@ -183,7 +183,9 @@
                 "https://utfc.ru/upload/resize_cache/iblock/db9/140_140_0/db965536184a1a2effcd7c373d5d2cbb.png",
                 "https://utfc.ru/upload/resize_cache/iblock/a60/140_140_0/a6012c497fb6308aba440c74e13d7f48.png",
                 "https://utfc.ru/upload/resize_cache/iblock/963/140_140_0/963c0d50454a5469703683e9b657418a.png",
-                "https://utfc.ru/upload/resize_cache/iblock/98e/140_140_0/98ef0d4ce14ce53c111e0bee818ec269.png"
+                "https://utfc.ru/upload/resize_cache/iblock/98e/140_140_0/98ef0d4ce14ce53c111e0bee818ec269.png",
+                "https://utfc.ru/upload/dev2fun.imagecompress/webp/iblock/9eb/xibtegety1jo9wvrk7ykw3i2pjti7hck.webp",
+                "https://utfc.ru/upload/resize_cache/iblock/5f2/70_70_0/jtoqpoxf3v0ai54dthupo7bqv6dlhff8.png"
             ]
         }
     ],
@@ -777,5 +779,6 @@
     ],
     "color_seat": [
         ""
-    ]
+    ],
+    "madeinrf": "Сделано РФ"
 }

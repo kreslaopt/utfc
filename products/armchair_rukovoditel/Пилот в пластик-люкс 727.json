@@ -175,7 +175,14 @@
                 "https://utfc.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/7a8/140_140_0/gtqb2iap1juewbe5sep1w6725nvi7oqh.webp",
                 "https://utfc.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/e86/140_140_0/q8zn4gz9be9slhbjrdii1ttb39bephtr.webp",
                 "https://utfc.ru/upload/dev2fun.imagecompress/webp/iblock/0ac/nhdcqvkd63spj0cvvys3yzsb29r4h18e.webp",
-                "https://utfc.ru/upload/dev2fun.imagecompress/webp/iblock/6bd/o3nfpo2thlqfiibodfnabn30a8ekgegm.webp"
+                "https://utfc.ru/upload/dev2fun.imagecompress/webp/iblock/6bd/o3nfpo2thlqfiibodfnabn30a8ekgegm.webp",
+                "https://utfc.ru/upload/dev2fun.imagecompress/webp/iblock/9eb/xibtegety1jo9wvrk7ykw3i2pjti7hck.webp",
+                "https://utfc.ru/upload/resize_cache/iblock/5f2/70_70_0/jtoqpoxf3v0ai54dthupo7bqv6dlhff8.png",
+                "https://utfc.ru/upload/resize_cache/iblock/7a8/140_140_0/gtqb2iap1juewbe5sep1w6725nvi7oqh.png",
+                "https://utfc.ru/upload/resize_cache/iblock/0ac/140_140_0/nhdcqvkd63spj0cvvys3yzsb29r4h18e.png",
+                "https://utfc.ru/upload/resize_cache/iblock/31b/140_140_0/icl4mpuz4jhbsqe64tdw768e1mwbytnr.png",
+                "https://utfc.ru/upload/resize_cache/iblock/e86/140_140_0/q8zn4gz9be9slhbjrdii1ttb39bephtr.png",
+                "https://utfc.ru/upload/resize_cache/iblock/6bd/140_140_0/o3nfpo2thlqfiibodfnabn30a8ekgegm.png"
             ]
         }
     ],
@@ -465,12 +472,17 @@
         "Кресло Пилот Н пластик (-, Кожзаменитель Z21 (бежевый),, )",
         "Кресло Пилот Н пластик (-, Кожзаменитель Z34 (светло-зеленый),, )",
         "Кресло Пилот В пластик-люкс 727 (Экокожа Santorini, Экокожа Santorini S0401 (черный),, )",
-        "Кресло Пилот В пластик-люкс 727 (-, Экокожа Santorini S0401 (черный),, )"
+        "Кресло Пилот В пластик-люкс 727 (-, Экокожа Santorini S0401 (черный),, )",
+        "Кресло Пилот Н пластик-люкс 727 (Кожзаменитель Z, Экокожа Santorini S0401 (черный),, )",
+        "Кресло Пилот Н пластик-люкс 727 (Кожзаменитель Z, Экокожа Santorini S0422 (темно-серый),, )",
+        "Кресло Пилот Н пластик-люкс 727 (Ткань Сетка Е, Экокожа Santorini S0401 (черный),, )",
+        "Кресло Пилот Н пластик-люкс 727 (Ткань Сетка Е, Экокожа Santorini S0422 (темно-серый),, )"
     ],
     "finish_type_seat": [
         ""
     ],
     "color_seat": [
         ""
-    ]
+    ],
+    "madeinrf": "Сделано РФ"
 }

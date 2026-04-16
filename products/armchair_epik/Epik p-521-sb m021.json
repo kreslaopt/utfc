@@ -129,7 +129,8 @@
                 "https://utfc.ru/upload/dev2fun.imagecompress/webp/iblock/0a0/sidbcp4ibvlm0x0l3lrq46dv0piahwab.webp",
                 "https://utfc.ru/upload/dev2fun.imagecompress/webp/uf/3ae/21sedcpqa24pjspqe285237zibm9n5wo.webp",
                 "https://utfc.ru/upload/dev2fun.imagecompress/webp/iblock/50e/tvk7fqwl0fkkth8ycmi3ahgl77t8s1tk.webp",
-                "https://utfc.ru/upload/resize_cache/iblock/50e/140_140_0/tvk7fqwl0fkkth8ycmi3ahgl77t8s1tk.png"
+                "https://utfc.ru/upload/resize_cache/iblock/50e/140_140_0/tvk7fqwl0fkkth8ycmi3ahgl77t8s1tk.png",
+                "https://utfc.ru/upload/resize_cache/iblock/5f2/70_70_0/jtoqpoxf3v0ai54dthupo7bqv6dlhff8.png"
             ]
         }
     ],
@@ -348,7 +349,7 @@
             "CV_CURRENCY_3": "RUB"
         }
     ],
-    "title": "Эргономичное офисное кресло EPIK Р-521-SB М021 (серый) производства компании UTFC",
+    "title": "Высокоэргономичное функциональное офисное кресло EPIK Р-521-SB М021 (серый) производства компании UTFC",
     "base_name": "Кресло EPIK Р-521-SB М021 (серый)",
     "article_number": "КИЕ-00026",
     "full_describe": "Стильный металлический каркас кресла изготовлен по оригинальному дизайну. Конструкция кресла предусматривает регулируемые по высоте подлокотники с мягкими полиуретановыми накладками, которые двигаются вперед-назад. Анатомическая поддержка обеспечивается регулируемым по высоте подголовником и адаптивной поясничной опорой (что снижает нагрузку при длительном использовании).Дополнительные функции и преимущества:✓ Слайдер для регулировки глубины сиденья.",
@@ -380,5 +381,6 @@
     ],
     "color_seat": [
         ""
-    ]
+    ],
+    "madeinrf": ""
 }

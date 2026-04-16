@@ -148,7 +148,13 @@
                 "https://utfc.ru/upload/dev2fun.imagecompress/webp/iblock/2c5/la5q5j1dq4xkk7rjhqmcfd73xxh1zdp9.webp",
                 "https://utfc.ru/upload/iblock/369/flqokk6cx11xq0u00xao1lb8vv0uh9to.png",
                 "https://utfc.ru/upload/dev2fun.imagecompress/webp/uf/8d0/8d0fc428274bc3dd435ab3736b873e89.webp",
-                "https://utfc.ru/upload/resize_cache/iblock/369/140_140_0/flqokk6cx11xq0u00xao1lb8vv0uh9to.png"
+                "https://utfc.ru/upload/resize_cache/iblock/369/140_140_0/flqokk6cx11xq0u00xao1lb8vv0uh9to.png",
+                "https://utfc.ru/upload/resize_cache/iblock/5f2/70_70_0/jtoqpoxf3v0ai54dthupo7bqv6dlhff8.png",
+                "https://utfc.ru/upload/dev2fun.imagecompress/webp/iblock/953/mwc75ncb5gndz4w8b96zri3yotgg4a5v.webp",
+                "https://utfc.ru/upload/dev2fun.imagecompress/webp/iblock/369/flqokk6cx11xq0u00xao1lb8vv0uh9to.webp",
+                "https://utfc.ru/upload/dev2fun.imagecompress/webp/iblock/9d8/7aey8lwhbiditj30q32rq71ycn07wcm2.webp",
+                "https://utfc.ru/upload/dev2fun.imagecompress/webp/iblock/b4f/kp86ujk5vqe6v3tzxjuae44pcviwwiwp.webp",
+                "https://utfc.ru/upload/dev2fun.imagecompress/webp/iblock/f8d/gy2kbf1w8n5n8a7wso7766dh5qpjkoah.webp"
             ]
         }
     ],
@@ -239,7 +245,7 @@
         }
     ],
     "skeleton": "монолитный",
-    "minpromtorg": "+",
+    "minpromtorg": "Минпромторг",
     "addition": "",
     "parent": {
         "IE_XML_ID": "p_5257",
@@ -987,12 +993,12 @@
             "CV_CURRENCY_3": "RUB"
         }
     ],
-    "title": "Стул С-07 Шелл Софт СН производства компании UTFC",
-    "base_name": "Стул С-07 Шелл Софт СН",
-    "article_number": "КФ-00946",
-    "full_describe": "Идеальное сочетание стиля и функциональности. Пластиковая ракушка обеспечивает комфорт и легкость, подпружинивающая конструкция и мягкое сиденье добавляют дополнительное удобство. Ножки хромированного цвета придают стулу современный стильный вид.",
-    "Link_arm": "https://utfc.ru/catalog/pos_chair/shell_soft_ch/",
-    "Основание": "Металлические опоры, защитно-декоративное покрытие никель-хром (СН)",
+    "title": "Стул С-07 Шелл BL для офиса и дома производства компании UTFC",
+    "base_name": "Стул С-07 Шелл BL",
+    "article_number": "КФ-00736",
+    "full_describe": "Идеальное сочетание стиля и функциональности. Пластиковая ракушка обеспечивает комфорт и легкость, а подпружинивающая конструкция добавляет дополнительное удобство. Ножки черного матового цвета придают стулу современный и элегантный вид.Цветной пластик доступен при заказе от 200 штук (за исключением белого, серого и чёрного).",
+    "Link_arm": "https://utfc.ru/catalog/pos_chair/shell_bl/",
+    "Основание": "Металлические опоры, защитно-декоративное порошковое покрытие черного цвета (BL)",
     "Подлокотники": "Без подлокотников",
     "Газлифт": "",
     "Механизм": "",
@@ -1095,5 +1101,6 @@
     "color_seat": [
         "",
         "Экокожа Santorini S0422 (темно-серый)"
-    ]
+    ],
+    "madeinrf": "Сделано РФ"
 }

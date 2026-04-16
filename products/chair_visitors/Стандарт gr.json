@@ -141,7 +141,8 @@
                 "https://utfc.ru/upload/resize_cache/iblock/7e9/140_140_0/bcye8t8936ne2ixcnqmlbmjj7li70qyl.png",
                 "https://utfc.ru/upload/resize_cache/iblock/7c4/140_140_0/122c1jv0g1qj8zar5vuu8hqds2uaqx8b.png",
                 "https://utfc.ru/upload/resize_cache/iblock/5e9/140_140_0/m2nszx5hcx8qi5nn4d8bso4vudve3o5r.png",
-                "https://utfc.ru/upload/dev2fun.imagecompress/webp/iblock/3da/65xee8qfhxn04d1hk4fzb20q2kware70.webp"
+                "https://utfc.ru/upload/dev2fun.imagecompress/webp/iblock/3da/65xee8qfhxn04d1hk4fzb20q2kware70.webp",
+                "https://utfc.ru/upload/resize_cache/iblock/5f2/70_70_0/jtoqpoxf3v0ai54dthupo7bqv6dlhff8.png"
             ]
         }
     ],
@@ -233,7 +234,7 @@
         }
     ],
     "skeleton": "монолитный",
-    "minpromtorg": "+",
+    "minpromtorg": "Минпромторг",
     "addition": "",
     "parent": {
         "IE_XML_ID": "a_1109",
@@ -297,12 +298,12 @@
         "CV_PRICE_3": "1552.00",
         "CV_CURRENCY_3": "RUB"
     },
-    "title": "Стул Стандарт GR для посетителей в залах ожидания, работы и отдыха производства компании UTFC",
-    "base_name": "Стул Стандарт GR",
-    "article_number": "СтандартGR",
+    "title": "Стул Стандарт BL для посетителей учебных заведениях, а также помещений для ожидания производства компании UTFC.",
+    "base_name": "Стул Стандарт BL",
+    "article_number": "СтандартBL02",
     "full_describe": "Широкий ассортимент материалов обивки и цветовых решений позволяет выбрать идеальный вариант. Стул предназначен для использования в барах и кафе, учебных заведениях, а также в других помещениях для ожидания, работы и отдыха. Он оснащен широким сиденьем и удобной спинкой для максимального комфорта.",
-    "Link_arm": "https://utfc.ru/catalog/pos_chair/standart_gr/",
-    "Основание": "Металлические опоры стула Стандарт, защитно-декоративное порошковое покрытие серого цвета (GR)",
+    "Link_arm": "https://utfc.ru/catalog/pos_chair/standart_bl/",
+    "Основание": "Металлические опоры стула Стандарт, защитно-декоративное порошковое покрытие черного цвета (BL)",
     "Подлокотники": "Без подлокотников",
     "Газлифт": "",
     "Механизм": "",
@@ -476,5 +477,6 @@
             "CV_PRICE_3": "1552.00",
             "CV_CURRENCY_3": "RUB"
         }
-    ]
+    ],
+    "madeinrf": "Сделано РФ"
 }

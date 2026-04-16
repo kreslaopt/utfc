@@ -141,7 +141,9 @@
                 "https://utfc.ru/upload/dev2fun.imagecompress/webp/iblock/e4d/r9oev9pv4r6v8b0di5kusbw9r80lsfhn.webp",
                 "https://utfc.ru/upload/dev2fun.imagecompress/webp/iblock/4a2/zgl2wwfew7mgjzk8h3z05rj1vhetsjvd.webp",
                 "https://utfc.ru/upload/resize_cache/iblock/aad/140_140_0/or2ts0q9iamm6xpljyua3oy3aedeaog3.png",
-                "https://utfc.ru/upload/dev2fun.imagecompress/webp/iblock/aad/or2ts0q9iamm6xpljyua3oy3aedeaog3.webp"
+                "https://utfc.ru/upload/dev2fun.imagecompress/webp/iblock/aad/or2ts0q9iamm6xpljyua3oy3aedeaog3.webp",
+                "https://utfc.ru/upload/dev2fun.imagecompress/webp/iblock/9eb/xibtegety1jo9wvrk7ykw3i2pjti7hck.webp",
+                "https://utfc.ru/upload/resize_cache/iblock/5f2/70_70_0/jtoqpoxf3v0ai54dthupo7bqv6dlhff8.png"
             ]
         }
     ],
@@ -236,7 +238,7 @@
         }
     ],
     "skeleton": "монолитный",
-    "minpromtorg": "+",
+    "minpromtorg": "Минпромторг",
     "addition": "",
     "parent": {
         "IE_XML_ID": "p_5187",
@@ -663,5 +665,6 @@
     ],
     "color_seat": [
         ""
-    ]
+    ],
+    "madeinrf": "Сделано РФ"
 }

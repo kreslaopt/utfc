@@ -128,7 +128,8 @@
                 "https://utfc.ru/upload/dev2fun.imagecompress/webp/iblock/c31/xfc3rfps6b3y6602tkrixszt9abzdmwz.webp",
                 "https://utfc.ru/upload/dev2fun.imagecompress/webp/iblock/369/9dier4j8537cozlbf0nr8r7i3sb6cxbc.webp",
                 "https://utfc.ru/upload/resize_cache/iblock/379/140_140_0/qthbufb9cgzqdj6rbjjatw1l0omgwvma.png",
-                "https://utfc.ru/upload/dev2fun.imagecompress/webp/uf/3a5/v7ri0rqalu3ru2hj2b0nfob4ybo455w7.webp"
+                "https://utfc.ru/upload/dev2fun.imagecompress/webp/uf/3a5/v7ri0rqalu3ru2hj2b0nfob4ybo455w7.webp",
+                "https://utfc.ru/upload/resize_cache/iblock/5f2/70_70_0/jtoqpoxf3v0ai54dthupo7bqv6dlhff8.png"
             ]
         }
     ],
@@ -223,8 +224,8 @@
     "minpromtorg": "",
     "addition": "",
     "parent": {
-        "IE_XML_ID": "a_1083",
-        "IE_NAME": "EPIK А-181-G L169 (черный)",
+        "IE_XML_ID": "a_1084",
+        "IE_NAME": "EPIK А-181-G L200 (коричневый)",
         "IE_PREVIEW_TEXT": "Роскошное кресло в строгом стиле прекрасно дополнит кабинет руководителя как в современной обстановке, так и в кабинете с классическими и деревянными элементами. Удобный дизайн спинки и сиденья позволит спине полностью расслабиться. Механизм качания фиксируется в 4 положениях для большего комфорта. Крестовина и подлокотники выполнены из алюминия. Максимальная нагрузка 120 кг.",
         "IE_DETAIL_TEXT": "Роскошное кресло в строгом стиле прекрасно дополнит кабинет руководителя как в современной обстановке, так и в кабинете с классическими и деревянными элементами. Удобный дизайн спинки и сиденья позволит спине полностью расслабиться. Механизм качания фиксируется в 4 положениях для большего комфорта. Крестовина и подлокотники выполнены из алюминия. Максимальная нагрузка 120 кг.",
         "IP_PROP2": "720",
@@ -233,8 +234,8 @@
         "IP_PROP6": "",
         "IP_PROP19": "120",
         "IP_PROP25": "Монолитный",
-        "IP_PROP18": "https://utfc.ru/upload/iblock/6db/nc5c56lv8qv5hnpah2596c66qq9zdcck.png",
-        "IP_PROP31": "https://utfc.ru/upload/dev2fun.imagecompress/webp/iblock/516/rp3envn0mgf03lg6zucpgabun15wkmqp.webp",
+        "IP_PROP18": "https://utfc.ru/upload/iblock/209/kzat17vl1oek20afq44ovl6rx25zt5fq.png",
+        "IP_PROP31": "https://utfc.ru/upload/dev2fun.imagecompress/webp/iblock/06d/94a9qqpl99o579jjcdjt7kf2tf082en6.webp",
         "IP_PROP5": "1020",
         "IP_PROP26": "660",
         "IP_PROP27": "700",
@@ -243,11 +244,11 @@
         "IP_PROP30": "0,43",
         "IP_PROP7": "",
         "IP_PROP8": "",
-        "IP_PROP9": "EPIK_A181G_L169",
+        "IP_PROP9": "EPIK_A181G_L200",
         "IP_PROP10": "",
         "IP_PROP11": "",
         "IP_PROP12": "",
-        "IP_PROP13": "https://utfc.ru/upload/dev2fun.imagecompress/webp/iblock/291/b1z135e6a7lbxvjdau0iguzwl1egue5i.webp",
+        "IP_PROP13": "https://utfc.ru/upload/iblock/379/qthbufb9cgzqdj6rbjjatw1l0omgwvma.png",
         "IP_PROP14": "",
         "IP_PROP15": "",
         "IP_PROP16": "",
@@ -286,8 +287,8 @@
     },
     "children": [
         {
-            "IE_XML_ID": "50297",
-            "IE_NAME": "Кресло EPIK A-181-G L169 (черный)",
+            "IE_XML_ID": "50298",
+            "IE_NAME": "Кресло EPIK A-181-G L200 (коричневый)",
             "IE_ACTIVE": "Y",
             "IE_ACTIVE_FROM": "",
             "IE_ACTIVE_TO": "",
@@ -300,12 +301,12 @@
             "IE_DETAIL_TEXT_TYPE": "text",
             "IE_CODE": "",
             "IE_TAGS": "",
-            "IE_ID": "12383",
-            "IP_PROP34": "a_1083",
-            "IP_PROP35": "КИЕ-00015",
+            "IE_ID": "12384",
+            "IP_PROP34": "a_1084",
+            "IP_PROP35": "КИЕ-00016",
             "IP_PROP36": "",
             "IP_PROP37": "m_51",
-            "IP_PROP38": "a007_L169",
+            "IP_PROP38": "a007_L200",
             "IP_PROP39": "",
             "IP_PROP40": "",
             "IP_PROP55": "&nbsp;",
@@ -315,7 +316,7 @@
             "IC_XML_ID1": "",
             "IC_GROUP1": "",
             "IC_GROUP2": "",
-            "CP_QUANTITY": "35",
+            "CP_QUANTITY": "10",
             "CP_QUANTITY_TRACE": "D",
             "CP_CAN_BUY_ZERO": "D",
             "CP_WEIGHT": "0",
@@ -342,7 +343,7 @@
             "CV_CURRENCY_3": "RUB"
         }
     ],
-    "title": "Стильное офисное кресло EPIK А-181-G L200 (коричневый) производства компании UTFC",
+    "title": "Кресло для руководителя в строгом стиле EPIK А-181-G L200 (коричневый) производства компании UTFC",
     "base_name": "Кресло EPIK А-181-G L200 (коричневый)",
     "article_number": "КИЕ-00016",
     "full_describe": "Роскошное кресло в строгом стиле прекрасно дополнит кабинет руководителя как в современной обстановке, так и в кабинете с классическими и деревянными элементами. Удобный дизайн спинки и сиденья позволит спине полностью расслабиться. Механизм качания фиксируется в 4 положениях для большего комфорта. Крестовина и подлокотники выполнены из алюминия. Максимальная нагрузка 120 кг.",
@@ -374,5 +375,6 @@
     ],
     "color_seat": [
         ""
-    ]
+    ],
+    "madeinrf": ""
 }

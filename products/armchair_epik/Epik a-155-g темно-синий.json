@@ -128,7 +128,8 @@
                 "https://utfc.ru/upload/dev2fun.imagecompress/webp/iblock/b92/1brctkpuwl92yvihsoph3dmmau1aq7ks.webp",
                 "https://utfc.ru/upload/dev2fun.imagecompress/webp/uf/0ce/vhf50h157hpt2160bfb119xizx44lvju.webp",
                 "https://utfc.ru/upload/dev2fun.imagecompress/webp/iblock/f74/uuzx10if0gspjvoo7n84nyjxsxq5kdum.webp",
-                "https://utfc.ru/upload/resize_cache/iblock/3c8/140_140_0/t0dgn01e6eq146q4e2a9y73nw079tm6k.png"
+                "https://utfc.ru/upload/resize_cache/iblock/3c8/140_140_0/t0dgn01e6eq146q4e2a9y73nw079tm6k.png",
+                "https://utfc.ru/upload/resize_cache/iblock/5f2/70_70_0/jtoqpoxf3v0ai54dthupo7bqv6dlhff8.png"
             ]
         }
     ],
@@ -227,8 +228,8 @@
     "minpromtorg": "",
     "addition": "",
     "parent": {
-        "IE_XML_ID": "a_1096",
-        "IE_NAME": "EPIK А-155-G (черный)",
+        "IE_XML_ID": "a_1097",
+        "IE_NAME": "EPIK А-155-G (темно-синий)",
         "IE_PREVIEW_TEXT": "Кресло EPIK A155 — воплощение городского дизайна, которое гармонично дополнит интерьер в стиле хай-тек. Благодаря обивке из мягкой экокожи класса Lux, оно создаёт ощущение роскоши и комфорта. Элегантный дизайн кресла делает его отличным дополнением к рабочей обстановке. Кресла серии EPIK — это не просто кресла, это показатель вашего безупречного вкуса и чувства эстетики.",
         "IE_DETAIL_TEXT": "Кресло EPIK A155 — воплощение городского дизайна, которое гармонично дополнит интерьер в стиле хай-тек. Благодаря обивке из мягкой экокожи класса Lux, оно создаёт ощущение роскоши и комфорта. Элегантный дизайн кресла делает его отличным дополнением к рабочей обстановке. Кресла серии EPIK — это не просто кресла, это показатель вашего безупречного вкуса и чувства эстетики.",
         "IP_PROP2": "660",
@@ -237,8 +238,8 @@
         "IP_PROP6": "",
         "IP_PROP19": "120",
         "IP_PROP25": "Немонолитный",
-        "IP_PROP18": "https://utfc.ru/upload/iblock/b2b/3p3qxt60qht80qtrcmn78y9i40zc04ff.png",
-        "IP_PROP31": "https://utfc.ru/upload/iblock/bd9/p6qdrj43bcpp12unsje8ds0gb49qyf03.png",
+        "IP_PROP18": "https://utfc.ru/upload/iblock/ecf/if9prblhkmwt7h671ovkfqgnt2twf9sr.png",
+        "IP_PROP31": "https://utfc.ru/upload/iblock/bf4/e1bwdynwloo2odbw7hzesdedkm826w7s.png",
         "IP_PROP5": "855",
         "IP_PROP26": "650",
         "IP_PROP27": "340",
@@ -247,11 +248,11 @@
         "IP_PROP30": "0,19",
         "IP_PROP7": "",
         "IP_PROP8": "",
-        "IP_PROP9": "EPIK_A155G_bl",
+        "IP_PROP9": "EPIK_A155G_blue",
         "IP_PROP10": "",
         "IP_PROP11": "",
         "IP_PROP12": "",
-        "IP_PROP13": "https://utfc.ru/upload/iblock/143/cni4fi13r2svcthx3e0awkml0ulxjg74.png",
+        "IP_PROP13": "https://utfc.ru/upload/iblock/100/xxtwqessitaec324giw1yw7z7fa07uvu.png",
         "IP_PROP14": "",
         "IP_PROP15": "",
         "IP_PROP16": "",
@@ -290,8 +291,8 @@
     },
     "children": [
         {
-            "IE_XML_ID": "50310",
-            "IE_NAME": "Кресло EPIK A-155-G (черный)",
+            "IE_XML_ID": "50311",
+            "IE_NAME": "Кресло EPIK A-155-G (темно-синий)",
             "IE_ACTIVE": "Y",
             "IE_ACTIVE_FROM": "",
             "IE_ACTIVE_TO": "",
@@ -304,12 +305,12 @@
             "IE_DETAIL_TEXT_TYPE": "text",
             "IE_CODE": "",
             "IE_TAGS": "",
-            "IE_ID": "12396",
-            "IP_PROP34": "a_1096",
-            "IP_PROP35": "80725187",
+            "IE_ID": "12397",
+            "IP_PROP34": "a_1097",
+            "IP_PROP35": "80725186",
             "IP_PROP36": "",
             "IP_PROP37": "m_62",
-            "IP_PROP38": "a155_bl",
+            "IP_PROP38": "a155_blue",
             "IP_PROP39": "",
             "IP_PROP40": "",
             "IP_PROP55": "&nbsp;",
@@ -319,7 +320,7 @@
             "IC_XML_ID1": "",
             "IC_GROUP1": "",
             "IC_GROUP2": "",
-            "CP_QUANTITY": "3",
+            "CP_QUANTITY": "30",
             "CP_QUANTITY_TRACE": "D",
             "CP_CAN_BUY_ZERO": "D",
             "CP_WEIGHT": "0",
@@ -346,7 +347,7 @@
             "CV_CURRENCY_3": "RUB"
         }
     ],
-    "title": "Новинка: офисное кресло руководителя EPIK А-155-G (темно-синий) производства компании UTFC",
+    "title": "Кресло руководителя в лаконичном строгом дизайне EPIK А-155-G (темно-синий) производства компании UTFC",
     "base_name": "Кресло EPIK А-155-G (темно-синий)",
     "article_number": "80725186",
     "full_describe": "Кресло EPIK A155 — воплощение городского дизайна, которое гармонично дополнит интерьер в стиле хай-тек. Благодаря обивке из мягкой экокожи класса Lux, оно создаёт ощущение роскоши и комфорта. Элегантный дизайн кресла делает его отличным дополнением к рабочей обстановке. Кресла серии EPIK — это не просто кресла, это показатель вашего безупречного вкуса и чувства эстетики.",
@@ -378,5 +379,6 @@
     ],
     "color_seat": [
         ""
-    ]
+    ],
+    "madeinrf": ""
 }
