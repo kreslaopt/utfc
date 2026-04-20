@@ -478,23 +478,23 @@
                         <thead>
                             <tr>
                                 <!-- <th>Название</th> -->
-                                <th>Артикул</th>
-                                <th>Тип отделки</th>
-                                <th>Тип отделки сиденья</th>
-                                <th>Подлокотники</th>
-                                <th>Каркас</th>
-                                <th>Нагрузка (кг)</th>
-                                <th>Основание</th>
-                                <th>Газ-лифт</th>
-                                <th>Механизм</th>
-                                <th>Особенности</th>
-                                <th>Ролики</th>
-                                <th colspan="3">Фото</th>
-                                <th>Цена 1</th>
-                                <th>Цена 2</th>
-                                <th>Цена 3</th>
-                                <th>Кол-во</th>
-                                <th>QR-код</th>
+                               <th contenteditable="true">Артикул</th>
+        <th contenteditable="true">Тип отделки</th>
+        <th contenteditable="true">Тип отделки сиденья</th>
+        <th contenteditable="true">Подлокотники</th>
+        <th contenteditable="true">Каркас</th>
+        <th contenteditable="true">Нагрузка (кг)</th>
+        <th contenteditable="true">Основание</th>
+        <th contenteditable="true">Газ-лифт</th>
+        <th contenteditable="true">Механизм</th>
+        <th contenteditable="true">Особенности</th>
+        <th contenteditable="true">Ролики</th>
+        <th colspan="3" contenteditable="true">Фото</th>
+        <th contenteditable="true">Цена 1</th>
+        <th contenteditable="true">Цена 2</th>
+        <th contenteditable="true">Цена 3</th>
+        <th contenteditable="true">Кол-во</th>
+        <th contenteditable="true">QR-код</th>
                             </tr>
                         </thead>
                         <tbody id="finalSelectionTableBody"></tbody>
@@ -598,14 +598,14 @@
             diameter_cross: false
         };
 
-        function getEditableHeaders() {
-            const headers = document.querySelectorAll('#finalSelectedProductsTable thead tr th[contenteditable="true"]');
-            const headerValues = [];
-            headers.forEach(th => {
-                headerValues.push(th.innerHTML.trim());
-            });
-            return headerValues;
-        }
+function getEditableHeaders() {
+    const headers = document.querySelectorAll('#finalSelectedProductsTable thead tr th[contenteditable="true"]');
+    const headerValues = [];
+    headers.forEach(header => {
+        headerValues.push(header.textContent.trim());
+    });
+    return headerValues;
+}
 
 
 
@@ -708,6 +708,75 @@
 
         // Вызов функции для обработки всех изображений
         // saveAllImagesFromSelection(finalSelection);
+
+// Сохранение заголовков
+function saveEditableHeaders() {
+    const headers = document.querySelectorAll('#finalSelectedProductsTable thead tr th[contenteditable="true"]');
+    const headerValues = [];
+    headers.forEach(th => {
+        headerValues.push(th.textContent.trim());
+    });
+    localStorage.setItem('editableHeaders', JSON.stringify(headerValues));
+}
+
+// Загрузка заголовков
+function loadEditableHeaders() {
+    const savedHeaders = localStorage.getItem('editableHeaders');
+    if (savedHeaders) {
+        const headerValues = JSON.parse(savedHeaders);
+        const headers = document.querySelectorAll('#finalSelectedProductsTable thead tr th[contenteditable="true"]');
+        headers.forEach((th, index) => {
+            if (headerValues[index]) {
+                th.textContent = headerValues[index];
+            }
+        });
+    }
+}
+
+// В updateFinalSelectionTable():
+async function updateFinalSelectionTable() {
+    try {
+        await loadQRCodeLibrary();
+    } catch (error) {
+        console.error('Ошибка загрузки QRCode:', error);
+        return;
+    }
+
+    // ... (существующий код создания таблицы) ...
+
+    // После создания таблицы:
+    loadEditableHeaders();
+
+    // Привязываем обработчики для сохранения заголовков
+    document.querySelectorAll('#finalSelectedProductsTable thead tr th[contenteditable="true"]').forEach(th => {
+        th.addEventListener('blur', saveEditableHeaders);
+    });
+}
+
+// В DOMContentLoaded:
+document.addEventListener('DOMContentLoaded', function () {
+    // ... (существующий код) ...
+
+    // Загружаем заголовки при старте
+    loadEditableHeaders();
+
+    // Привязываем обработчики для сохранения заголовков
+    document.querySelectorAll('#finalSelectedProductsTable thead tr th[contenteditable="true"]').forEach(th => {
+        th.addEventListener('blur', saveEditableHeaders);
+    });
+});
+function loadEditableHeaders() {
+    const savedHeaders = localStorage.getItem('editableHeaders');
+    if (savedHeaders) {
+        const headerValues = JSON.parse(savedHeaders);
+        const headers = document.querySelectorAll('#finalSelectedProductsTable thead tr th[contenteditable="true"]');
+        headers.forEach((th, index) => {
+            if (headerValues[index]) {
+                th.textContent = headerValues[index];
+            }
+        });
+    }
+}
 
         function parseDimensionValue(value) {
             if (value === "" || value === null || value === undefined) {
@@ -3583,6 +3652,13 @@ for (const [searchTerm, condition] of Object.entries(filtersMap)) {
                 }, 10);
             });
 
+loadEditableHeaders();
+
+    // Привязываем обработчики для сохранения заголовков
+    document.querySelectorAll('#finalSelectedProductsTable thead tr th[contenteditable="true"]').forEach(th => {
+        th.addEventListener('blur', saveEditableHeaders);
+    });
+
 
         }
 
@@ -4265,6 +4341,12 @@ for (const [searchTerm, condition] of Object.entries(filtersMap)) {
                 const param = filter.getAttribute('data-param');
                 const uniqueClass = `${param}-filter`;
                 filter.classList.add(uniqueClass);
+                loadEditableHeaders();
+
+    // Привязываем обработчики для сохранения заголовков
+    document.querySelectorAll('#finalSelectedProductsTable thead tr th[contenteditable="true"]').forEach(th => {
+        th.addEventListener('blur', saveEditableHeaders);
+    });
             });
 
 
@@ -4777,6 +4859,13 @@ for (const [searchTerm, condition] of Object.entries(filtersMap)) {
                 });
             });
         });
+
+window.onload = async () => {
+    loadEditableHeaders();
+    document.querySelectorAll('#finalSelectedProductsTable thead tr th[contenteditable="true"]').forEach(th => {
+        th.addEventListener('blur', saveEditableHeaders);
+    });
+};
 
 
     </script>

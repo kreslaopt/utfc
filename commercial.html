@@ -620,7 +620,7 @@ async function createCommercialProduct(product, index) {
             <div id="${qrId}" class="qr-code-container" style="display: inline-block; vertical-align: top;"></div>
         </div>
         
-        <div class="commercial-product-details">
+        <div class="commercial-product-details" contenteditable="true">
             <p><strong>Количество:</strong> ${product.count}</p>
             <p><strong>Цена:</strong> ${product.CV_PRICE_1} ${product.CV_CURRENCY_1 || 'RUB'}</p>
             <p><strong>Сумма:</strong> ${(parseFloat(product.CV_PRICE_1) * product.count).toFixed(2)} ${product.CV_CURRENCY_1 || 'RUB'}</p>
