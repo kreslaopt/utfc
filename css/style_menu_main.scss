@@ -436,6 +436,33 @@
            display: block;
        }
 
+    .tooltip {
+  position: absolute;
+  right: 30px;
+  display: inline-block;
+  z-index: 9999;
+  font-size: 14px;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: rgb(255, 255, 255);
+  color: #000000;
+  padding: 10px;
+  right: 20px;
+  top: 20px;
+  border-radius: 6px;
+  position: absolute;
+  width: 530px;
+  font-size: 11px;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+
 
        .search-icon {
            position: absolute;
