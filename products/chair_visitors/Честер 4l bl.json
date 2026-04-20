@@ -150,7 +150,12 @@
                 "https://utfc.ru/upload/dev2fun.imagecompress/webp/uf/ccc/5xcickzs2axuwpbdpx1k1g9yj7gadtu6.webp",
                 "https://utfc.ru/upload/resize_cache/iblock/207/140_140_0/n4cx8jc0u93p5pvd1yoo946i21lofofn.png",
                 "https://utfc.ru/upload/dev2fun.imagecompress/webp/iblock/f7e/svmj7rbg6hteapd9jjs33gk8wqhs9gm6.webp",
-                "https://utfc.ru/upload/resize_cache/iblock/5f2/70_70_0/jtoqpoxf3v0ai54dthupo7bqv6dlhff8.png"
+                "https://utfc.ru/upload/resize_cache/iblock/5f2/70_70_0/jtoqpoxf3v0ai54dthupo7bqv6dlhff8.png",
+                "https://utfc.ru/upload/iblock/939/82z0be2auda9dimifdfr4i9whpcr2ws2.png",
+                "https://utfc.ru/upload/iblock/acb/n506m76mnvf8gwfk5xlq8x5fhj42117u.png",
+                "https://utfc.ru/upload/iblock/9bb/ftyd9o6hkt3h3bh2ga65c09x2dt4876h.png",
+                "https://utfc.ru/upload/iblock/c6c/yf8qcxbkmxsmugb55pbb43yc06d5z7uq.png",
+                "https://utfc.ru/upload/iblock/dbc/x7r9mjw025wlx073yfc5lm8o7vwf5qcb.png"
             ]
         }
     ],
@@ -619,12 +624,12 @@
             "CV_CURRENCY_3": "RUB"
         }
     ],
-    "title": "Стул Честер BL 4L производства компании UTFC",
-    "base_name": "Стул Честер BL 4L",
-    "article_number": "КФ-00835",
+    "title": "Стул Честер СН 4L в современном дизайне с мягкой износостойкой обивкой производства компании UTFC",
+    "base_name": "Стул Честер СН 4L",
+    "article_number": "ДкЧестер4L03",
     "full_describe": "Универсальная модель стула в современном дизайне с горизонтальными прострочками на спинке. Этот стул добавит уют в ваш дом и прекрасно подойдет для размещения посетителей.",
-    "Link_arm": "https://utfc.ru/catalog/pos_chair/chester_bl_4l/",
-    "Основание": "Металлические опоры, защитно-декоративное порошковое покрытие черного цвета (BL)",
+    "Link_arm": "https://utfc.ru/catalog/pos_chair/chester_ch_4l/?offers=10849",
+    "Основание": "Металлические опоры, защитно-декоративное покрытие никель-хром (СН)",
     "Подлокотники": "Без подлокотников",
     "Газлифт": "",
     "Механизм": "",

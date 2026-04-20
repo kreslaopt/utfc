@@ -1,222 +1,1076 @@
 {
-    "namefile": [
-        "Комфорт б/п пластик"
-    ],
-    "name": [
-        "Комфорт"
-    ],
-    "unique_name": [
-        "Комфорт Б_п пластик"
-    ],
-    "vid": [
-        "кресло"
-    ],
-    "category": [
-        "поворотное кресло для персонала"
-    ],
-    "destiny": [
-        "ежедневной работы в офисных и домашних помещениях"
-    ],
-    "technical_requirements": [
-        [
-            "Кресло должно соответствовать требованиям:",
-            "ГОСТ 19917-2014 «Мебель для сидения и лежания. Общие технические условия»",
-            "ГОСТ 26800.3-86 «Мебель для административных помещений. Функциональные размеры»",
-            "настоящего технического описания",
-            "комплекта конструкторской документации",
-            "образцу-эталону, утвержденному в установленном порядке производителем"
-        ]
-    ],
-    "construction_and_materials": [
-        {
-            "upholstery_materials": [
-                "- материал облицовки спинки и сиденья кресла: ткань (С, D, Moderno), ткань-сетка (Е), кожзаменитель (Z), экокожа (S,R), термопечать<br>\n- цвет материала - по каталогу"
-            ],
-            "components": [
-                "спинки, сиденья, пиастры, механизма СРТ, газ-лифта, пятилучья и 5-ти роликов",
-                "<strong>Спинка</strong> состоит из основания пластикового, вкладыша пенополиуретанового (жесткость - 30, плотность 20 кг/м<sup>3</sup>), чехла пластикового и обивочного материала",
-                "<strong>Сиденье</strong> состоит из основания фанерного (фанера гнуто-клееная 5-слойная), вкладыша пенополиуретанового (жесткость - 30, плотность 20 кг/м<sup>3</sup>), чехла пластикового и обивочного элемента",
-                "<strong>Облицовка спинки и сиденья</strong>: ткань (С, D, Moderno), ткань-сетка (Е), кожзаменитель (Z), экокожа (S,R), термопечать. Пиастра крепится к основанию сиденья с помощью 4-х винтов М6, снабжена рычагом регулировки газ-лифта. Механизм СРТ (узел крепления спинки с сиденьем) позволяет регулировать высоту, наклон спинки и расстояние от спинки до сиденья",
-                "<strong>Газ-лифт</strong> с высотой подъема 140 мм ± 10 мм позволяет плавно регулировать высоту сиденья относительно пола, подпружинивает сиденье и демпфирует нагрузку на позвоночник в момент посадки. Газ-лифт закрыт телескопическим чехлом. По желанию заказчика на газ-лифт можно установить кольцо для ног, которое крепится на любой, удобной высоте и служит как опора для ног. Допустимая нагрузка на кольцо для ног - 40 кг",
-                "<strong>Пятилучье</strong> пластиковое d=580 мм с 5-тью роликами обеспечивает устойчивость и позволяет креслу легко поворачиваться и перемещаться по любому стандартному покрытию пола",
-                "<strong>Ролики</strong> черные d=50 мм имеют имеют открытый пластиковый чехол. По желанию заказчика пластиковые ролики могут быть заменены на ролики с полиуретановым покрытием (Ср) или глайдеры (G)"
-            ]
-        }
-    ],
-    "transportation": [
-        {
-            "standard": "ГОСТ 16371-2014",
-            "packaging": {
-                "type": "5-слойный гофрокороб",
-                "size": {
-                    "width": 574,
-                    "depth": 252,
-                    "height": 574
-                },
-                "box_size": "574x252x574",
-                "transportation": "удобства транспортировки и хранения кресло поставляется в разобранном виде. Каждое кресло упаковано в отдельный 5-слойный гофрокороб размером"
-            }
-        }
-    ],
-    "dimensions": [
-        {
-            "brutto": "7,5",
-            "netto": "",
-            "volume": "0,09"
-        }
-    ],
-    "guarantee": [
-        {
-            "period": "12",
-            "max_load": "120",
-            "recommended_load": "90"
-        }
-    ],
-    "images": [
-        {
-            "vid_main": "img/armchair_personal/komfort_bp_c34_01.png",
-            "chair_view": "img/armchair_personal/komfort_bp_c34_02.png",
-            "dimensions": "img/armchair_personal/dimensions/komfort_bp_c34_01.png",
-            "box": "img/box_UTFC.png"
-        }
-    ],
-    "dimensions_details": [
-        {
-            "chair_height": {
-                "min": 800,
-                "max": 940
-            },
-            "headrest_height": {
-                "min": "",
-                "max": ""
-            },
-            "seat_to_floor_height": {
-                "min": 420,
-                "max": 560
-            },
-            "armrest_height_from_seat": {
-                "min": "",
-                "max": ""
-            },
-            "chair_depth": {
-                "min": "",
-                "max": 430
-            },
-            "seat_depth": {
-                "min": "",
-                "max": 330
-            },
-            "backrest_height": {
-                "max": "",
-                "min": ""
-            },
-            "backrest_to_seat_height": {
-                "min": 390,
-                "max": 440
-            },
-            "seat_width_with_armrests": {
-                "min": "",
-                "max": ""
-            },
-            "seat_width": {
-                "max": 400,
-                "min": ""
-            },
-            "diameter_cross": {
-                "max": 580,
-                "min": ""
-            },
-            "runners_width": {
-                "max": "",
-                "min": ""
-            },
-            "runners_depth": {
-                "max": "",
-                "min": ""
-            },
-            "seat_to_floor_height_upper": {
-                "min": "",
-                "max": ""
-            },
-            "armrest_height_from_floor": {
-                "min": "",
-                "max": ""
-            },
-            "armrest_width_support": {
-                "min": "",
-                "max": ""
-            },
-            "armrest_length_support": {
-                "min": "",
-                "max": ""
-            },
-            "seat_depth_km": {
-                "min": "",
-                "max": ""
-            },
-            "backrest_height_external": {
-                "min": "",
-                "max": ""
-            },
-            "backrest_width_narrow": {
-                "min": "",
-                "max": ""
-            },
-            "backrest_width_wide": {
-                "min": "",
-                "max": ""
-            },
-            "recommended_load": {
-                "min": "",
-                "max": ""
-            },
-            "max_load": {
-                "min": "",
-                "max": ""
-            },
-            "skeleton": {
-                "min": "",
-                "max": ""
-            },
-            "minpromtorg": {
-                "min": "",
-                "max": ""
-            },
-            "typeofproduct": {
-                "min": "",
-                "max": ""
-            },
-            "netto": {
-                "min": "",
-                "max": ""
-            },
-            "brutto": {
-                "min": "",
-                "max": ""
-            },
-            "package_width": {
-                "min": "",
-                "max": ""
-            },
-            "package_depth": {
-                "min": "",
-                "max": ""
-            },
-            "package_height": {
-                "min": "",
-                "max": ""
-            },
-            "volume": {
-                "min": "",
-                "max": ""
-            }
-        }
-    ],
-    "lost": [
-        {
-            "clean": false,
-            "limit": false,
-            "del": true
-        }
+  "namefile": [
+    "Комфорт б/п пластик"
+  ],
+  "name": [
+    "Комфорт"
+  ],
+  "unique_name": [
+    "Комфорт Б_п пластик"
+  ],
+  "vid": [
+    "кресло"
+  ],
+  "category": [
+    "поворотное кресло для персонала"
+  ],
+  "destiny": [
+    "ежедневной работы в офисных и домашних помещениях"
+  ],
+  "technical_requirements": [
+    [
+      "Кресло должно соответствовать требованиям:",
+      "ГОСТ 19917-2014 «Мебель для сидения и лежания. Общие технические условия»",
+      "ГОСТ 26800.3-86 «Мебель для административных помещений. Функциональные размеры»",
+      "настоящего технического описания",
+      "комплекта конструкторской документации",
+      "образцу-эталону, утвержденному в установленном порядке производителем"
     ]
+  ],
+  "construction_and_materials": [
+    {
+      "upholstery_materials": [
+        "- материал облицовки спинки и сиденья кресла: ткань (С, D, Moderno), ткань-сетка (Е), кожзаменитель (Z), экокожа (S,R), термопечать<br>\n- цвет материала - по каталогу"
+      ],
+      "components": [
+        "спинки, сиденья, пиастры, механизма СРТ, газ-лифта, пятилучья и 5-ти роликов",
+        "<strong>Спинка</strong> состоит из основания пластикового, вкладыша пенополиуретанового (жесткость - 30, плотность 20 кг/м<sup>3</sup>), чехла пластикового и обивочного материала",
+        "<strong>Сиденье</strong> состоит из основания фанерного (фанера гнуто-клееная 5-слойная), вкладыша пенополиуретанового (жесткость - 30, плотность 20 кг/м<sup>3</sup>), чехла пластикового и обивочного элемента",
+        "<strong>Облицовка спинки и сиденья</strong>: ткань (С, D, Moderno), ткань-сетка (Е), кожзаменитель (Z), экокожа (S,R), термопечать. Пиастра крепится к основанию сиденья с помощью 4-х винтов М6, снабжена рычагом регулировки газ-лифта. Механизм СРТ (узел крепления спинки с сиденьем) позволяет регулировать высоту, наклон спинки и расстояние от спинки до сиденья",
+        "<strong>Газ-лифт</strong> с высотой подъема 140 мм ± 10 мм позволяет плавно регулировать высоту сиденья относительно пола, подпружинивает сиденье и демпфирует нагрузку на позвоночник в момент посадки. Газ-лифт закрыт телескопическим чехлом. По желанию заказчика на газ-лифт можно установить кольцо для ног, которое крепится на любой, удобной высоте и служит как опора для ног. Допустимая нагрузка на кольцо для ног - 40 кг",
+        "<strong>Пятилучье</strong> пластиковое d=580 мм с 5-тью роликами обеспечивает устойчивость и позволяет креслу легко поворачиваться и перемещаться по любому стандартному покрытию пола",
+        "<strong>Ролики</strong> черные d=50 мм имеют имеют открытый пластиковый чехол. По желанию заказчика пластиковые ролики могут быть заменены на ролики с полиуретановым покрытием (Ср) или глайдеры (G)"
+      ]
+    }
+  ],
+  "transportation": [
+    {
+      "standard": "ГОСТ 16371-2014",
+      "packaging": {
+        "type": "5-слойный гофрокороб",
+        "size": {
+          "width": 574,
+          "depth": 252,
+          "height": 574
+        },
+        "box_size": "574x252x574",
+        "transportation": "удобства транспортировки и хранения кресло поставляется в разобранном виде. Каждое кресло упаковано в отдельный 5-слойный гофрокороб размером"
+      }
+    }
+  ],
+  "dimensions": [
+    {
+      "brutto": "7,5",
+      "netto": "",
+      "volume": "0,09"
+    }
+  ],
+  "guarantee": [
+    {
+      "period": "12",
+      "max_load": "120",
+      "recommended_load": "90"
+    }
+  ],
+  "images": [
+    {
+      "vid_main": "img/armchair_personal/komfort_bp_c34_01.png",
+      "chair_view": "img/armchair_personal/komfort_bp_c34_02.png",
+      "dimensions": "img/armchair_personal/dimensions/komfort_bp_c34_01.png",
+      "box": "img/box_UTFC.png"
+    }
+  ],
+  "dimensions_details": [
+    {
+      "chair_height": {
+        "min": 800,
+        "max": 940
+      },
+      "headrest_height": {
+        "min": "",
+        "max": ""
+      },
+      "seat_to_floor_height": {
+        "min": 420,
+        "max": 560
+      },
+      "armrest_height_from_seat": {
+        "min": "",
+        "max": ""
+      },
+      "chair_depth": {
+        "min": "",
+        "max": 430
+      },
+      "seat_depth": {
+        "min": "",
+        "max": 330
+      },
+      "backrest_height": {
+        "max": "",
+        "min": ""
+      },
+      "backrest_to_seat_height": {
+        "min": 390,
+        "max": 440
+      },
+      "seat_width_with_armrests": {
+        "min": "",
+        "max": ""
+      },
+      "seat_width": {
+        "max": 400,
+        "min": ""
+      },
+      "diameter_cross": {
+        "max": 580,
+        "min": ""
+      },
+      "runners_width": {
+        "max": "",
+        "min": ""
+      },
+      "runners_depth": {
+        "max": "",
+        "min": ""
+      },
+      "seat_to_floor_height_upper": {
+        "min": "",
+        "max": ""
+      },
+      "armrest_height_from_floor": {
+        "min": "",
+        "max": ""
+      },
+      "armrest_width_support": {
+        "min": "",
+        "max": ""
+      },
+      "armrest_length_support": {
+        "min": "",
+        "max": ""
+      },
+      "seat_depth_km": {
+        "min": "",
+        "max": ""
+      },
+      "backrest_height_external": {
+        "min": "",
+        "max": ""
+      },
+      "backrest_width_narrow": {
+        "min": "",
+        "max": ""
+      },
+      "backrest_width_wide": {
+        "min": "",
+        "max": ""
+      },
+      "recommended_load": {
+        "min": "",
+        "max": ""
+      },
+      "max_load": {
+        "min": "",
+        "max": ""
+      },
+      "skeleton": {
+        "min": "",
+        "max": ""
+      },
+      "minpromtorg": {
+        "min": "",
+        "max": ""
+      },
+      "typeofproduct": {
+        "min": "",
+        "max": ""
+      },
+      "netto": {
+        "min": "",
+        "max": ""
+      },
+      "brutto": {
+        "min": "",
+        "max": ""
+      },
+      "package_width": {
+        "min": "",
+        "max": ""
+      },
+      "package_depth": {
+        "min": "",
+        "max": ""
+      },
+      "package_height": {
+        "min": "",
+        "max": ""
+      },
+      "volume": {
+        "min": "",
+        "max": ""
+      }
+    }
+  ],
+  "lost": [
+    {
+      "clean": false,
+      "limit": false,
+      "del": true
+    }
+  ],
+  "parent": {
+    "IE_XML_ID": "s8030",
+    "IE_NAME": "Комфорт",
+    "IE_PREVIEW_TEXT": "Кресло имеет эргономичную спинку с боковой поддержкой спины, фиксируется в любом положении и позволяет сохранить правильное положение при использовании. Подходит как для детей, так и для подростков. ",
+    "IE_DETAIL_TEXT": "Кресло имеет эргономичную спинку с боковой поддержкой спины, фиксируется в любом положении и позволяет сохранить правильное положение при использовании. Подходит как для детей, так и для подростков. ",
+    "IP_PROP2": "400",
+    "IP_PROP3": "800-940",
+    "IP_PROP4": "430",
+    "IP_PROP6": "",
+    "IP_PROP19": "120",
+    "IP_PROP25": "Немонолитный",
+    "IP_PROP18": "https://utfc.ru/upload/iblock/579/05krq0ratgucfpuv85povli10fja95f4.png",
+    "IP_PROP31": "https://utfc.ru/upload/dev2fun.imagecompress/webp/iblock/2db/2dbe90f874b29dba708b67cc516e19b3.webp",
+    "IP_PROP5": "574",
+    "IP_PROP26": "574",
+    "IP_PROP27": "252",
+    "IP_PROP28": "7,5",
+    "IP_PROP29": "Гофрокартон",
+    "IP_PROP30": "0,09",
+    "IP_PROP7": "",
+    "IP_PROP8": "",
+    "IP_PROP9": "komfort",
+    "IP_PROP10": "",
+    "IP_PROP11": "",
+    "IP_PROP12": "",
+    "IP_PROP13": "https://utfc.ru/upload/dev2fun.imagecompress/webp/iblock/aed/aed067c039568e99952265f93f74d10d.webp",
+    "IP_PROP14": "",
+    "IP_PROP15": "",
+    "IP_PROP16": "",
+    "IP_PROP17": "",
+    "IP_PROP22": "",
+    "IP_PROP41": "pch_580_pl",
+    "IP_PROP42": "wo",
+    "IP_PROP43": "gl_290",
+    "IP_PROP44": "m_cpt",
+    "IP_PROP45": "",
+    "IP_PROP46": "r_50_o",
+    "IP_PROP47": "",
+    "IP_PROP48": "5060793906ac14749248e1f5b64e4f39",
+    "IP_PROP49": "",
+    "IP_PROP50": "",
+    "IP_PROP51": "",
+    "IP_PROP52": "",
+    "IP_PROP54": "utfc",
+    "IP_PROP59": "Нет",
+    "IC_GROUP0": "Кресла для персонала",
+    "IC_GROUP1": "",
+    "IC_GROUP2": "",
+    "CP_QUANTITY": "0",
+    "CP_WEIGHT": "0",
+    "CP_WIDTH": "",
+    "CP_HEIGHT": "",
+    "CP_LENGTH": "",
+    "CV_QUANTITY_FROM": "",
+    "CV_QUANTITY_TO": "",
+    "CV_PRICE_1": "2672.00",
+    "CV_CURRENCY_1": "RUB",
+    "CV_PRICE_2": "2753.00",
+    "CV_CURRENCY_2": "RUB",
+    "CV_PRICE_3": "2672.00",
+    "CV_CURRENCY_3": "RUB"
+  },
+  "children": [
+    {
+      "IE_XML_ID": "19364",
+      "IE_NAME": "Кресло Комфорт Z11 (черный)",
+      "IE_ACTIVE": "N",
+      "IE_ACTIVE_FROM": "",
+      "IE_ACTIVE_TO": "",
+      "IE_SORT": "500",
+      "IE_PREVIEW_PICTURE": "",
+      "IE_PREVIEW_TEXT": "",
+      "IE_PREVIEW_TEXT_TYPE": "text",
+      "IE_DETAIL_PICTURE": "",
+      "IE_DETAIL_TEXT": "",
+      "IE_DETAIL_TEXT_TYPE": "text",
+      "IE_CODE": "",
+      "IE_TAGS": "",
+      "IE_ID": "8029",
+      "IP_PROP34": "s8030",
+      "IP_PROP35": "КомфортZ11",
+      "IP_PROP36": "",
+      "IP_PROP37": "m_02",
+      "IP_PROP38": "z_11",
+      "IP_PROP39": "",
+      "IP_PROP40": "",
+      "IP_PROP55": "&nbsp;",
+      "IP_PROP61": "",
+      "IC_GROUP0": "",
+      "IP_PROP121": "",
+      "IC_XML_ID1": "",
+      "IC_GROUP1": "",
+      "IC_GROUP2": "",
+      "CP_QUANTITY": "0",
+      "CP_QUANTITY_TRACE": "D",
+      "CP_CAN_BUY_ZERO": "D",
+      "CP_WEIGHT": "0",
+      "CP_WIDTH": "",
+      "CP_HEIGHT": "",
+      "CP_LENGTH": "",
+      "CP_PURCHASING_PRICE": "",
+      "CP_PURCHASING_CURRENCY": "",
+      "CP_PRICE_TYPE": "S",
+      "CP_RECUR_SCHEME_LENGTH": "",
+      "CP_RECUR_SCHEME_TYPE": "D",
+      "CP_TRIAL_PRICE_ID": "",
+      "CP_WITHOUT_ORDER": "N",
+      "CP_VAT_ID": "",
+      "CP_VAT_INCLUDED": "Y",
+      "CP_MEASURE": "",
+      "CV_QUANTITY_FROM": "",
+      "CV_QUANTITY_TO": "",
+      "CV_PRICE_1": "2802.00",
+      "CV_CURRENCY_1": "RUB",
+      "CV_PRICE_2": "2887.00",
+      "CV_CURRENCY_2": "RUB",
+      "CV_PRICE_3": "2802.00",
+      "CV_CURRENCY_3": "RUB"
+    },
+    {
+      "IE_XML_ID": "19368",
+      "IE_NAME": "Кресло Комфорт Z21 (бежевый)",
+      "IE_ACTIVE": "N",
+      "IE_ACTIVE_FROM": "",
+      "IE_ACTIVE_TO": "",
+      "IE_SORT": "500",
+      "IE_PREVIEW_PICTURE": "",
+      "IE_PREVIEW_TEXT": "",
+      "IE_PREVIEW_TEXT_TYPE": "text",
+      "IE_DETAIL_PICTURE": "",
+      "IE_DETAIL_TEXT": "",
+      "IE_DETAIL_TEXT_TYPE": "text",
+      "IE_CODE": "",
+      "IE_TAGS": "",
+      "IE_ID": "8030",
+      "IP_PROP34": "s8030",
+      "IP_PROP35": "КомфортZ21",
+      "IP_PROP36": "",
+      "IP_PROP37": "m_02",
+      "IP_PROP38": "z_21",
+      "IP_PROP39": "",
+      "IP_PROP40": "",
+      "IP_PROP55": "&nbsp;",
+      "IP_PROP61": "",
+      "IC_GROUP0": "",
+      "IP_PROP121": "",
+      "IC_XML_ID1": "",
+      "IC_GROUP1": "",
+      "IC_GROUP2": "",
+      "CP_QUANTITY": "0",
+      "CP_QUANTITY_TRACE": "D",
+      "CP_CAN_BUY_ZERO": "D",
+      "CP_WEIGHT": "0",
+      "CP_WIDTH": "",
+      "CP_HEIGHT": "",
+      "CP_LENGTH": "",
+      "CP_PURCHASING_PRICE": "",
+      "CP_PURCHASING_CURRENCY": "",
+      "CP_PRICE_TYPE": "S",
+      "CP_RECUR_SCHEME_LENGTH": "",
+      "CP_RECUR_SCHEME_TYPE": "D",
+      "CP_TRIAL_PRICE_ID": "",
+      "CP_WITHOUT_ORDER": "N",
+      "CP_VAT_ID": "",
+      "CP_VAT_INCLUDED": "Y",
+      "CP_MEASURE": "",
+      "CV_QUANTITY_FROM": "",
+      "CV_QUANTITY_TO": "",
+      "CV_PRICE_1": "2842.00",
+      "CV_CURRENCY_1": "RUB",
+      "CV_PRICE_2": "2928.00",
+      "CV_CURRENCY_2": "RUB",
+      "CV_PRICE_3": "2842.00",
+      "CV_CURRENCY_3": "RUB"
+    },
+    {
+      "IE_XML_ID": "19369",
+      "IE_NAME": "Кресло Комфорт Z29 (красный)",
+      "IE_ACTIVE": "N",
+      "IE_ACTIVE_FROM": "",
+      "IE_ACTIVE_TO": "",
+      "IE_SORT": "500",
+      "IE_PREVIEW_PICTURE": "",
+      "IE_PREVIEW_TEXT": "",
+      "IE_PREVIEW_TEXT_TYPE": "text",
+      "IE_DETAIL_PICTURE": "",
+      "IE_DETAIL_TEXT": "",
+      "IE_DETAIL_TEXT_TYPE": "text",
+      "IE_CODE": "",
+      "IE_TAGS": "",
+      "IE_ID": "8031",
+      "IP_PROP34": "s8030",
+      "IP_PROP35": "ОК-00505",
+      "IP_PROP36": "",
+      "IP_PROP37": "m_02",
+      "IP_PROP38": "z_29",
+      "IP_PROP39": "",
+      "IP_PROP40": "",
+      "IP_PROP55": "&nbsp;",
+      "IP_PROP61": "",
+      "IC_GROUP0": "",
+      "IP_PROP121": "",
+      "IC_XML_ID1": "",
+      "IC_GROUP1": "",
+      "IC_GROUP2": "",
+      "CP_QUANTITY": "0",
+      "CP_QUANTITY_TRACE": "D",
+      "CP_CAN_BUY_ZERO": "D",
+      "CP_WEIGHT": "0",
+      "CP_WIDTH": "",
+      "CP_HEIGHT": "",
+      "CP_LENGTH": "",
+      "CP_PURCHASING_PRICE": "",
+      "CP_PURCHASING_CURRENCY": "",
+      "CP_PRICE_TYPE": "S",
+      "CP_RECUR_SCHEME_LENGTH": "",
+      "CP_RECUR_SCHEME_TYPE": "D",
+      "CP_TRIAL_PRICE_ID": "",
+      "CP_WITHOUT_ORDER": "N",
+      "CP_VAT_ID": "",
+      "CP_VAT_INCLUDED": "Y",
+      "CP_MEASURE": "",
+      "CV_QUANTITY_FROM": "",
+      "CV_QUANTITY_TO": "",
+      "CV_PRICE_1": "2842.00",
+      "CV_CURRENCY_1": "RUB",
+      "CV_PRICE_2": "2928.00",
+      "CV_CURRENCY_2": "RUB",
+      "CV_PRICE_3": "2842.00",
+      "CV_CURRENCY_3": "RUB"
+    },
+    {
+      "IE_XML_ID": "19370",
+      "IE_NAME": "Кресло Комфорт Z34 (светло-зеленый)",
+      "IE_ACTIVE": "N",
+      "IE_ACTIVE_FROM": "",
+      "IE_ACTIVE_TO": "",
+      "IE_SORT": "500",
+      "IE_PREVIEW_PICTURE": "",
+      "IE_PREVIEW_TEXT": "",
+      "IE_PREVIEW_TEXT_TYPE": "text",
+      "IE_DETAIL_PICTURE": "",
+      "IE_DETAIL_TEXT": "",
+      "IE_DETAIL_TEXT_TYPE": "text",
+      "IE_CODE": "",
+      "IE_TAGS": "",
+      "IE_ID": "8032",
+      "IP_PROP34": "s8030",
+      "IP_PROP35": "КомфортZ34",
+      "IP_PROP36": "",
+      "IP_PROP37": "m_02",
+      "IP_PROP38": "z_34",
+      "IP_PROP39": "",
+      "IP_PROP40": "",
+      "IP_PROP55": "&nbsp;",
+      "IP_PROP61": "",
+      "IC_GROUP0": "",
+      "IP_PROP121": "",
+      "IC_XML_ID1": "",
+      "IC_GROUP1": "",
+      "IC_GROUP2": "",
+      "CP_QUANTITY": "0",
+      "CP_QUANTITY_TRACE": "D",
+      "CP_CAN_BUY_ZERO": "D",
+      "CP_WEIGHT": "0",
+      "CP_WIDTH": "",
+      "CP_HEIGHT": "",
+      "CP_LENGTH": "",
+      "CP_PURCHASING_PRICE": "",
+      "CP_PURCHASING_CURRENCY": "",
+      "CP_PRICE_TYPE": "S",
+      "CP_RECUR_SCHEME_LENGTH": "",
+      "CP_RECUR_SCHEME_TYPE": "D",
+      "CP_TRIAL_PRICE_ID": "",
+      "CP_WITHOUT_ORDER": "N",
+      "CP_VAT_ID": "",
+      "CP_VAT_INCLUDED": "Y",
+      "CP_MEASURE": "",
+      "CV_QUANTITY_FROM": "",
+      "CV_QUANTITY_TO": "",
+      "CV_PRICE_1": "2842.00",
+      "CV_CURRENCY_1": "RUB",
+      "CV_PRICE_2": "2928.00",
+      "CV_CURRENCY_2": "RUB",
+      "CV_PRICE_3": "2842.00",
+      "CV_CURRENCY_3": "RUB"
+    },
+    {
+      "IE_XML_ID": "19372",
+      "IE_NAME": "Кресло Комфорт Z71 (серый)",
+      "IE_ACTIVE": "N",
+      "IE_ACTIVE_FROM": "",
+      "IE_ACTIVE_TO": "",
+      "IE_SORT": "500",
+      "IE_PREVIEW_PICTURE": "",
+      "IE_PREVIEW_TEXT": "",
+      "IE_PREVIEW_TEXT_TYPE": "text",
+      "IE_DETAIL_PICTURE": "",
+      "IE_DETAIL_TEXT": "",
+      "IE_DETAIL_TEXT_TYPE": "text",
+      "IE_CODE": "",
+      "IE_TAGS": "",
+      "IE_ID": "8033",
+      "IP_PROP34": "s8030",
+      "IP_PROP35": "КомфортZ71",
+      "IP_PROP36": "",
+      "IP_PROP37": "m_02",
+      "IP_PROP38": "z_71",
+      "IP_PROP39": "",
+      "IP_PROP40": "",
+      "IP_PROP55": "&nbsp;",
+      "IP_PROP61": "",
+      "IC_GROUP0": "",
+      "IP_PROP121": "",
+      "IC_XML_ID1": "",
+      "IC_GROUP1": "",
+      "IC_GROUP2": "",
+      "CP_QUANTITY": "0",
+      "CP_QUANTITY_TRACE": "D",
+      "CP_CAN_BUY_ZERO": "D",
+      "CP_WEIGHT": "0",
+      "CP_WIDTH": "",
+      "CP_HEIGHT": "",
+      "CP_LENGTH": "",
+      "CP_PURCHASING_PRICE": "",
+      "CP_PURCHASING_CURRENCY": "",
+      "CP_PRICE_TYPE": "S",
+      "CP_RECUR_SCHEME_LENGTH": "",
+      "CP_RECUR_SCHEME_TYPE": "D",
+      "CP_TRIAL_PRICE_ID": "",
+      "CP_WITHOUT_ORDER": "N",
+      "CP_VAT_ID": "",
+      "CP_VAT_INCLUDED": "Y",
+      "CP_MEASURE": "",
+      "CV_QUANTITY_FROM": "",
+      "CV_QUANTITY_TO": "",
+      "CV_PRICE_1": "2842.00",
+      "CV_CURRENCY_1": "RUB",
+      "CV_PRICE_2": "2928.00",
+      "CV_CURRENCY_2": "RUB",
+      "CV_PRICE_3": "2842.00",
+      "CV_CURRENCY_3": "RUB"
+    },
+    {
+      "IE_XML_ID": "19414",
+      "IE_NAME": "Кресло Комфорт С02 (красный)",
+      "IE_ACTIVE": "N",
+      "IE_ACTIVE_FROM": "",
+      "IE_ACTIVE_TO": "",
+      "IE_SORT": "500",
+      "IE_PREVIEW_PICTURE": "",
+      "IE_PREVIEW_TEXT": "",
+      "IE_PREVIEW_TEXT_TYPE": "text",
+      "IE_DETAIL_PICTURE": "",
+      "IE_DETAIL_TEXT": "",
+      "IE_DETAIL_TEXT_TYPE": "text",
+      "IE_CODE": "",
+      "IE_TAGS": "",
+      "IE_ID": "8034",
+      "IP_PROP34": "s8030",
+      "IP_PROP35": "КомфортЛ6",
+      "IP_PROP36": "",
+      "IP_PROP37": "m_16",
+      "IP_PROP38": "c_02",
+      "IP_PROP39": "",
+      "IP_PROP40": "",
+      "IP_PROP55": "&nbsp;",
+      "IP_PROP61": "",
+      "IC_GROUP0": "",
+      "IP_PROP121": "",
+      "IC_XML_ID1": "",
+      "IC_GROUP1": "",
+      "IC_GROUP2": "",
+      "CP_QUANTITY": "0",
+      "CP_QUANTITY_TRACE": "D",
+      "CP_CAN_BUY_ZERO": "D",
+      "CP_WEIGHT": "0",
+      "CP_WIDTH": "",
+      "CP_HEIGHT": "",
+      "CP_LENGTH": "",
+      "CP_PURCHASING_PRICE": "",
+      "CP_PURCHASING_CURRENCY": "",
+      "CP_PRICE_TYPE": "S",
+      "CP_RECUR_SCHEME_LENGTH": "",
+      "CP_RECUR_SCHEME_TYPE": "D",
+      "CP_TRIAL_PRICE_ID": "",
+      "CP_WITHOUT_ORDER": "N",
+      "CP_VAT_ID": "",
+      "CP_VAT_INCLUDED": "Y",
+      "CP_MEASURE": "",
+      "CV_QUANTITY_FROM": "",
+      "CV_QUANTITY_TO": "",
+      "CV_PRICE_1": "2672.00",
+      "CV_CURRENCY_1": "RUB",
+      "CV_PRICE_2": "2753.00",
+      "CV_CURRENCY_2": "RUB",
+      "CV_PRICE_3": "2672.00",
+      "CV_CURRENCY_3": "RUB"
+    },
+    {
+      "IE_XML_ID": "19415",
+      "IE_NAME": "Кресло Комфорт С06 (синий)",
+      "IE_ACTIVE": "N",
+      "IE_ACTIVE_FROM": "",
+      "IE_ACTIVE_TO": "",
+      "IE_SORT": "500",
+      "IE_PREVIEW_PICTURE": "",
+      "IE_PREVIEW_TEXT": "",
+      "IE_PREVIEW_TEXT_TYPE": "text",
+      "IE_DETAIL_PICTURE": "",
+      "IE_DETAIL_TEXT": "",
+      "IE_DETAIL_TEXT_TYPE": "text",
+      "IE_CODE": "",
+      "IE_TAGS": "",
+      "IE_ID": "8035",
+      "IP_PROP34": "s8030",
+      "IP_PROP35": "КомфортЛ10",
+      "IP_PROP36": "",
+      "IP_PROP37": "m_16",
+      "IP_PROP38": "c_06",
+      "IP_PROP39": "",
+      "IP_PROP40": "",
+      "IP_PROP55": "&nbsp;",
+      "IP_PROP61": "",
+      "IC_GROUP0": "",
+      "IP_PROP121": "",
+      "IC_XML_ID1": "",
+      "IC_GROUP1": "",
+      "IC_GROUP2": "",
+      "CP_QUANTITY": "0",
+      "CP_QUANTITY_TRACE": "D",
+      "CP_CAN_BUY_ZERO": "D",
+      "CP_WEIGHT": "0",
+      "CP_WIDTH": "",
+      "CP_HEIGHT": "",
+      "CP_LENGTH": "",
+      "CP_PURCHASING_PRICE": "",
+      "CP_PURCHASING_CURRENCY": "",
+      "CP_PRICE_TYPE": "S",
+      "CP_RECUR_SCHEME_LENGTH": "",
+      "CP_RECUR_SCHEME_TYPE": "D",
+      "CP_TRIAL_PRICE_ID": "",
+      "CP_WITHOUT_ORDER": "N",
+      "CP_VAT_ID": "1",
+      "CP_VAT_INCLUDED": "Y",
+      "CP_MEASURE": "5",
+      "CV_QUANTITY_FROM": "",
+      "CV_QUANTITY_TO": "",
+      "CV_PRICE_1": "2672.00",
+      "CV_CURRENCY_1": "RUB",
+      "CV_PRICE_2": "2753.00",
+      "CV_CURRENCY_2": "RUB",
+      "CV_PRICE_3": "2672.00",
+      "CV_CURRENCY_3": "RUB"
+    },
+    {
+      "IE_XML_ID": "19418",
+      "IE_NAME": "Кресло Комфорт С11 (черный)",
+      "IE_ACTIVE": "N",
+      "IE_ACTIVE_FROM": "",
+      "IE_ACTIVE_TO": "",
+      "IE_SORT": "500",
+      "IE_PREVIEW_PICTURE": "",
+      "IE_PREVIEW_TEXT": "",
+      "IE_PREVIEW_TEXT_TYPE": "text",
+      "IE_DETAIL_PICTURE": "",
+      "IE_DETAIL_TEXT": "",
+      "IE_DETAIL_TEXT_TYPE": "text",
+      "IE_CODE": "",
+      "IE_TAGS": "",
+      "IE_ID": "8036",
+      "IP_PROP34": "s8030",
+      "IP_PROP35": "КомфортЛ3",
+      "IP_PROP36": "",
+      "IP_PROP37": "m_16",
+      "IP_PROP38": "c_11",
+      "IP_PROP39": "",
+      "IP_PROP40": "",
+      "IP_PROP55": "&nbsp;",
+      "IP_PROP61": "",
+      "IC_GROUP0": "",
+      "IP_PROP121": "",
+      "IC_XML_ID1": "",
+      "IC_GROUP1": "",
+      "IC_GROUP2": "",
+      "CP_QUANTITY": "0",
+      "CP_QUANTITY_TRACE": "D",
+      "CP_CAN_BUY_ZERO": "D",
+      "CP_WEIGHT": "0",
+      "CP_WIDTH": "",
+      "CP_HEIGHT": "",
+      "CP_LENGTH": "",
+      "CP_PURCHASING_PRICE": "",
+      "CP_PURCHASING_CURRENCY": "",
+      "CP_PRICE_TYPE": "S",
+      "CP_RECUR_SCHEME_LENGTH": "",
+      "CP_RECUR_SCHEME_TYPE": "D",
+      "CP_TRIAL_PRICE_ID": "",
+      "CP_WITHOUT_ORDER": "N",
+      "CP_VAT_ID": "",
+      "CP_VAT_INCLUDED": "Y",
+      "CP_MEASURE": "",
+      "CV_QUANTITY_FROM": "",
+      "CV_QUANTITY_TO": "",
+      "CV_PRICE_1": "2672.00",
+      "CV_CURRENCY_1": "RUB",
+      "CV_PRICE_2": "2753.00",
+      "CV_CURRENCY_2": "RUB",
+      "CV_PRICE_3": "2672.00",
+      "CV_CURRENCY_3": "RUB"
+    },
+    {
+      "IE_XML_ID": "19426",
+      "IE_NAME": "Кресло Комфорт С24 (бежево-коричневый клетка)",
+      "IE_ACTIVE": "N",
+      "IE_ACTIVE_FROM": "",
+      "IE_ACTIVE_TO": "",
+      "IE_SORT": "500",
+      "IE_PREVIEW_PICTURE": "",
+      "IE_PREVIEW_TEXT": "",
+      "IE_PREVIEW_TEXT_TYPE": "text",
+      "IE_DETAIL_PICTURE": "",
+      "IE_DETAIL_TEXT": "",
+      "IE_DETAIL_TEXT_TYPE": "text",
+      "IE_CODE": "",
+      "IE_TAGS": "",
+      "IE_ID": "8037",
+      "IP_PROP34": "s8030",
+      "IP_PROP35": "КомфортЛ19",
+      "IP_PROP36": "",
+      "IP_PROP37": "m_16",
+      "IP_PROP38": "c_24",
+      "IP_PROP39": "",
+      "IP_PROP40": "",
+      "IP_PROP55": "&nbsp;",
+      "IP_PROP61": "",
+      "IC_GROUP0": "",
+      "IP_PROP121": "",
+      "IC_XML_ID1": "",
+      "IC_GROUP1": "",
+      "IC_GROUP2": "",
+      "CP_QUANTITY": "0",
+      "CP_QUANTITY_TRACE": "D",
+      "CP_CAN_BUY_ZERO": "D",
+      "CP_WEIGHT": "0",
+      "CP_WIDTH": "",
+      "CP_HEIGHT": "",
+      "CP_LENGTH": "",
+      "CP_PURCHASING_PRICE": "",
+      "CP_PURCHASING_CURRENCY": "",
+      "CP_PRICE_TYPE": "S",
+      "CP_RECUR_SCHEME_LENGTH": "",
+      "CP_RECUR_SCHEME_TYPE": "D",
+      "CP_TRIAL_PRICE_ID": "",
+      "CP_WITHOUT_ORDER": "N",
+      "CP_VAT_ID": "",
+      "CP_VAT_INCLUDED": "Y",
+      "CP_MEASURE": "5",
+      "CV_QUANTITY_FROM": "",
+      "CV_QUANTITY_TO": "",
+      "CV_PRICE_1": "2672.00",
+      "CV_CURRENCY_1": "RUB",
+      "CV_PRICE_2": "2753.00",
+      "CV_CURRENCY_2": "RUB",
+      "CV_PRICE_3": "2672.00",
+      "CV_CURRENCY_3": "RUB"
+    },
+    {
+      "IE_XML_ID": "19430",
+      "IE_NAME": "Кресло Комфорт С34 (зеленый)",
+      "IE_ACTIVE": "N",
+      "IE_ACTIVE_FROM": "",
+      "IE_ACTIVE_TO": "",
+      "IE_SORT": "500",
+      "IE_PREVIEW_PICTURE": "https://utfc.ru/upload/iblock/1ad/1ad500ff004a9e59a3662760b25caab2.png",
+      "IE_PREVIEW_TEXT": "",
+      "IE_PREVIEW_TEXT_TYPE": "text",
+      "IE_DETAIL_PICTURE": "https://utfc.ru/upload/iblock/0b7/0b7e2811225861d37c3cfd334e5869bc.png",
+      "IE_DETAIL_TEXT": "",
+      "IE_DETAIL_TEXT_TYPE": "text",
+      "IE_CODE": "",
+      "IE_TAGS": "",
+      "IE_ID": "8038",
+      "IP_PROP34": "s8030",
+      "IP_PROP35": "КомфортЛ5",
+      "IP_PROP36": [
+        "https://utfc.ru/upload/iblock/bbc/bbc3c51d5b68f81925b801d6868c8201.png",
+        "https://utfc.ru/upload/iblock/fdd/fddd2d10810abd3565c0662b8ed72c4d.png",
+        "https://utfc.ru/upload/iblock/952/952695cb2c6f7139d7a728bc07dd13c8.png",
+        "https://utfc.ru/upload/iblock/dd6/dd68188383b7aa77d997065e9eff8c48.png",
+        "https://utfc.ru/upload/iblock/25f/25fa63cfd21d9407e2df55403e62c24a.png"
+      ],
+      "IP_PROP37": "m_16",
+      "IP_PROP38": "c_34",
+      "IP_PROP39": "",
+      "IP_PROP40": "",
+      "IP_PROP55": "&nbsp;",
+      "IP_PROP61": "",
+      "IC_GROUP0": "",
+      "IP_PROP121": "",
+      "IC_XML_ID1": "",
+      "IC_GROUP1": "",
+      "IC_GROUP2": "",
+      "CP_QUANTITY": "0",
+      "CP_QUANTITY_TRACE": "D",
+      "CP_CAN_BUY_ZERO": "D",
+      "CP_WEIGHT": "0",
+      "CP_WIDTH": "",
+      "CP_HEIGHT": "",
+      "CP_LENGTH": "",
+      "CP_PURCHASING_PRICE": "",
+      "CP_PURCHASING_CURRENCY": "",
+      "CP_PRICE_TYPE": "S",
+      "CP_RECUR_SCHEME_LENGTH": "",
+      "CP_RECUR_SCHEME_TYPE": "D",
+      "CP_TRIAL_PRICE_ID": "",
+      "CP_WITHOUT_ORDER": "N",
+      "CP_VAT_ID": "1",
+      "CP_VAT_INCLUDED": "Y",
+      "CP_MEASURE": "5",
+      "CV_QUANTITY_FROM": "",
+      "CV_QUANTITY_TO": "",
+      "CV_PRICE_1": "2672.00",
+      "CV_CURRENCY_1": "RUB",
+      "CV_PRICE_2": "2753.00",
+      "CV_CURRENCY_2": "RUB",
+      "CV_PRICE_3": "2672.00",
+      "CV_CURRENCY_3": "RUB"
+    },
+    {
+      "IE_XML_ID": "19431",
+      "IE_NAME": "Кресло Комфорт С39 (бежевый)",
+      "IE_ACTIVE": "N",
+      "IE_ACTIVE_FROM": "",
+      "IE_ACTIVE_TO": "",
+      "IE_SORT": "500",
+      "IE_PREVIEW_PICTURE": "",
+      "IE_PREVIEW_TEXT": "",
+      "IE_PREVIEW_TEXT_TYPE": "text",
+      "IE_DETAIL_PICTURE": "",
+      "IE_DETAIL_TEXT": "",
+      "IE_DETAIL_TEXT_TYPE": "text",
+      "IE_CODE": "",
+      "IE_TAGS": "",
+      "IE_ID": "8039",
+      "IP_PROP34": "s8030",
+      "IP_PROP35": "КомфортЛ16",
+      "IP_PROP36": "",
+      "IP_PROP37": "m_16",
+      "IP_PROP38": "c_39",
+      "IP_PROP39": "",
+      "IP_PROP40": "",
+      "IP_PROP55": "&nbsp;",
+      "IP_PROP61": "",
+      "IC_GROUP0": "",
+      "IP_PROP121": "",
+      "IC_XML_ID1": "",
+      "IC_GROUP1": "",
+      "IC_GROUP2": "",
+      "CP_QUANTITY": "0",
+      "CP_QUANTITY_TRACE": "D",
+      "CP_CAN_BUY_ZERO": "D",
+      "CP_WEIGHT": "0",
+      "CP_WIDTH": "",
+      "CP_HEIGHT": "",
+      "CP_LENGTH": "",
+      "CP_PURCHASING_PRICE": "",
+      "CP_PURCHASING_CURRENCY": "",
+      "CP_PRICE_TYPE": "S",
+      "CP_RECUR_SCHEME_LENGTH": "",
+      "CP_RECUR_SCHEME_TYPE": "D",
+      "CP_TRIAL_PRICE_ID": "",
+      "CP_WITHOUT_ORDER": "N",
+      "CP_VAT_ID": "",
+      "CP_VAT_INCLUDED": "Y",
+      "CP_MEASURE": "",
+      "CV_QUANTITY_FROM": "",
+      "CV_QUANTITY_TO": "",
+      "CV_PRICE_1": "2672.00",
+      "CV_CURRENCY_1": "RUB",
+      "CV_PRICE_2": "2753.00",
+      "CV_CURRENCY_2": "RUB",
+      "CV_PRICE_3": "2672.00",
+      "CV_CURRENCY_3": "RUB"
+    },
+    {
+      "IE_XML_ID": "19432",
+      "IE_NAME": "Кресло Комфорт С71 (меланж)",
+      "IE_ACTIVE": "N",
+      "IE_ACTIVE_FROM": "",
+      "IE_ACTIVE_TO": "",
+      "IE_SORT": "500",
+      "IE_PREVIEW_PICTURE": "",
+      "IE_PREVIEW_TEXT": "",
+      "IE_PREVIEW_TEXT_TYPE": "text",
+      "IE_DETAIL_PICTURE": "",
+      "IE_DETAIL_TEXT": "",
+      "IE_DETAIL_TEXT_TYPE": "text",
+      "IE_CODE": "",
+      "IE_TAGS": "",
+      "IE_ID": "8040",
+      "IP_PROP34": "s8030",
+      "IP_PROP35": "КомфортЛ1",
+      "IP_PROP36": "",
+      "IP_PROP37": "m_16",
+      "IP_PROP38": "c_71",
+      "IP_PROP39": "",
+      "IP_PROP40": "",
+      "IP_PROP55": "&nbsp;",
+      "IP_PROP61": "",
+      "IC_GROUP0": "",
+      "IP_PROP121": "",
+      "IC_XML_ID1": "",
+      "IC_GROUP1": "",
+      "IC_GROUP2": "",
+      "CP_QUANTITY": "2",
+      "CP_QUANTITY_TRACE": "D",
+      "CP_CAN_BUY_ZERO": "D",
+      "CP_WEIGHT": "0",
+      "CP_WIDTH": "",
+      "CP_HEIGHT": "",
+      "CP_LENGTH": "",
+      "CP_PURCHASING_PRICE": "",
+      "CP_PURCHASING_CURRENCY": "",
+      "CP_PRICE_TYPE": "S",
+      "CP_RECUR_SCHEME_LENGTH": "",
+      "CP_RECUR_SCHEME_TYPE": "D",
+      "CP_TRIAL_PRICE_ID": "",
+      "CP_WITHOUT_ORDER": "N",
+      "CP_VAT_ID": "",
+      "CP_VAT_INCLUDED": "Y",
+      "CP_MEASURE": "",
+      "CV_QUANTITY_FROM": "",
+      "CV_QUANTITY_TO": "",
+      "CV_PRICE_1": "2672.00",
+      "CV_CURRENCY_1": "RUB",
+      "CV_PRICE_2": "2753.00",
+      "CV_CURRENCY_2": "RUB",
+      "CV_PRICE_3": "2672.00",
+      "CV_CURRENCY_3": "RUB"
+    },
+    {
+      "IE_XML_ID": "19433",
+      "IE_NAME": "Кресло Комфорт С72 (черно-стальной мелкая клетка)",
+      "IE_ACTIVE": "N",
+      "IE_ACTIVE_FROM": "",
+      "IE_ACTIVE_TO": "",
+      "IE_SORT": "500",
+      "IE_PREVIEW_PICTURE": "",
+      "IE_PREVIEW_TEXT": "",
+      "IE_PREVIEW_TEXT_TYPE": "text",
+      "IE_DETAIL_PICTURE": "",
+      "IE_DETAIL_TEXT": "",
+      "IE_DETAIL_TEXT_TYPE": "text",
+      "IE_CODE": "",
+      "IE_TAGS": "",
+      "IE_ID": "8041",
+      "IP_PROP34": "s8030",
+      "IP_PROP35": "КомфортЛ14",
+      "IP_PROP36": "",
+      "IP_PROP37": "m_16",
+      "IP_PROP38": "c_72",
+      "IP_PROP39": "",
+      "IP_PROP40": "",
+      "IP_PROP55": "&nbsp;",
+      "IP_PROP61": "",
+      "IC_GROUP0": "",
+      "IP_PROP121": "",
+      "IC_XML_ID1": "",
+      "IC_GROUP1": "",
+      "IC_GROUP2": "",
+      "CP_QUANTITY": "1",
+      "CP_QUANTITY_TRACE": "D",
+      "CP_CAN_BUY_ZERO": "D",
+      "CP_WEIGHT": "0",
+      "CP_WIDTH": "",
+      "CP_HEIGHT": "",
+      "CP_LENGTH": "",
+      "CP_PURCHASING_PRICE": "",
+      "CP_PURCHASING_CURRENCY": "",
+      "CP_PRICE_TYPE": "S",
+      "CP_RECUR_SCHEME_LENGTH": "",
+      "CP_RECUR_SCHEME_TYPE": "D",
+      "CP_TRIAL_PRICE_ID": "",
+      "CP_WITHOUT_ORDER": "N",
+      "CP_VAT_ID": "",
+      "CP_VAT_INCLUDED": "Y",
+      "CP_MEASURE": "5",
+      "CV_QUANTITY_FROM": "",
+      "CV_QUANTITY_TO": "",
+      "CV_PRICE_1": "2672.00",
+      "CV_CURRENCY_1": "RUB",
+      "CV_PRICE_2": "2753.00",
+      "CV_CURRENCY_2": "RUB",
+      "CV_PRICE_3": "2672.00",
+      "CV_CURRENCY_3": "RUB"
+    },
+    {
+      "IE_XML_ID": "19435",
+      "IE_NAME": "Кресло Комфорт С73 (серый)",
+      "IE_ACTIVE": "N",
+      "IE_ACTIVE_FROM": "",
+      "IE_ACTIVE_TO": "",
+      "IE_SORT": "500",
+      "IE_PREVIEW_PICTURE": "",
+      "IE_PREVIEW_TEXT": "",
+      "IE_PREVIEW_TEXT_TYPE": "text",
+      "IE_DETAIL_PICTURE": "",
+      "IE_DETAIL_TEXT": "",
+      "IE_DETAIL_TEXT_TYPE": "text",
+      "IE_CODE": "",
+      "IE_TAGS": "",
+      "IE_ID": "8042",
+      "IP_PROP34": "s8030",
+      "IP_PROP35": "КомфортЛ2",
+      "IP_PROP36": "",
+      "IP_PROP37": "m_16",
+      "IP_PROP38": "c_73",
+      "IP_PROP39": "",
+      "IP_PROP40": "",
+      "IP_PROP55": "&nbsp;",
+      "IP_PROP61": "",
+      "IC_GROUP0": "",
+      "IP_PROP121": "",
+      "IC_XML_ID1": "",
+      "IC_GROUP1": "",
+      "IC_GROUP2": "",
+      "CP_QUANTITY": "1",
+      "CP_QUANTITY_TRACE": "D",
+      "CP_CAN_BUY_ZERO": "D",
+      "CP_WEIGHT": "0",
+      "CP_WIDTH": "",
+      "CP_HEIGHT": "",
+      "CP_LENGTH": "",
+      "CP_PURCHASING_PRICE": "",
+      "CP_PURCHASING_CURRENCY": "",
+      "CP_PRICE_TYPE": "S",
+      "CP_RECUR_SCHEME_LENGTH": "",
+      "CP_RECUR_SCHEME_TYPE": "D",
+      "CP_TRIAL_PRICE_ID": "",
+      "CP_WITHOUT_ORDER": "N",
+      "CP_VAT_ID": "",
+      "CP_VAT_INCLUDED": "Y",
+      "CP_MEASURE": "",
+      "CV_QUANTITY_FROM": "",
+      "CV_QUANTITY_TO": "",
+      "CV_PRICE_1": "2672.00",
+      "CV_CURRENCY_1": "RUB",
+      "CV_PRICE_2": "2753.00",
+      "CV_CURRENCY_2": "RUB",
+      "CV_PRICE_3": "2672.00",
+      "CV_CURRENCY_3": "RUB"
+    }
+  ]
 }

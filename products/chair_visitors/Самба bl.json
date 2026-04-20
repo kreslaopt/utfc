@@ -180,7 +180,12 @@
                 "https://utfc.ru/upload/resize_cache/iblock/30e/140_140_0/3x0oa9lwkdie16hv4x1f30py4vcwl4db.png",
                 "https://utfc.ru/upload/dev2fun.imagecompress/webp/iblock/e7e/q73ojhr1lmqcu0ggnt33977rty18cr39.webp",
                 "https://utfc.ru/upload/dev2fun.imagecompress/webp/iblock/30e/3x0oa9lwkdie16hv4x1f30py4vcwl4db.webp",
-                "https://utfc.ru/upload/resize_cache/iblock/5f2/70_70_0/jtoqpoxf3v0ai54dthupo7bqv6dlhff8.png"
+                "https://utfc.ru/upload/resize_cache/iblock/5f2/70_70_0/jtoqpoxf3v0ai54dthupo7bqv6dlhff8.png",
+                "https://utfc.ru/upload/iblock/da6/da6e3b2866eb510dcc5a5da05c7cec03.png",
+                "https://utfc.ru/upload/iblock/a2a/a2ae99827df80de27d0fa21cccf74648.png",
+                "https://utfc.ru/upload/iblock/80a/80ad26f02c30afd41f85b04a1403437f.png",
+                "https://utfc.ru/upload/iblock/ef6/ef6c595fbbba7b6d4ac02c838e97e40f.png",
+                "https://utfc.ru/upload/iblock/c15/c1575c9435fd6151d8fc4540e07933f6.png"
             ]
         }
     ],
@@ -1217,7 +1222,7 @@
     "base_name": "Стул Самба СН",
     "article_number": "СамбаСНд68",
     "full_describe": "Конференц-кресло идеально будет смотреться как в офисе, так и дома. Интересный каркас и деревянные накладки на металлических подлокотниках придают креслу элегантный внешний вид.",
-    "Link_arm": "https://utfc.ru/catalog/pos_chair/samba_ch/",
+    "Link_arm": "https://utfc.ru/catalog/pos_chair/samba_ch/?offers=7667",
     "Основание": "Металлические опоры стула Самба, защитно-декоративное покрытие никель-хром (СН)",
     "Подлокотники": "",
     "Газлифт": "",

@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -243,29 +242,45 @@ document.getElementById('delete-icon-blocks').addEventListener('click', () => {
   });
 
   const signatures = {
-  first: {
+ first: {
     signature: 'Поставщик: ООО «ФЕСТ»',
     dir: 'Генеральный директор',
     name_dir: 'Коротков А.Е.',
-    stamp: 'img/fax.png' // путь к изображению печати
+    stamp: 'img/fax.png',
+    company: 'ООО «ФЕСТ»',
+    address: 'ЯРОСЛАВЛЬ, УЛИЦА РЕВОЛЮЦИОННАЯ, ДОМ 30, ОФИС 1',
+    phone: '8 800 350 12 34',
+    email: 'sale@utfc.ru',
   },
   second: {
     signature: 'Поставщик: ООО «Поставщик 2»',
-    dir: 'Поставщик 2',
+    dir: 'Директор',
     name_dir: 'Иванов И.И.',
-    stamp: 'img/fax2.png'
+    stamp: 'img/fax2.png',
+    company: 'ООО «Поставщик 2»',
+    address: 'Адрес',
+    phone: 'Телефон',
+    email: 'E-mail',
   },
   third: {
     signature: 'Поставщик: ООО «Поставщик 3»',
-    dir: 'Поставщик 3',
+    dir: 'Руководитель',
     name_dir: 'Петров П.П.',
-    stamp: 'img/fax3.png'
+    stamp: 'img/fax3.png',
+    company: 'ООО «Поставщик 3»',
+    address: 'Адрес',
+    phone: 'Телефон',
+    email: 'E-mail',
   },
   fourth: {
     signature: '',
     dir: '',
     name_dir: '',
-    stamp: ''
+    stamp: '',
+    company: '',
+    address: '',
+    phone: '',
+    email: '',
   }
 };
 
@@ -279,6 +294,15 @@ document.querySelectorAll('#signature-buttons button').forEach(btn => {
     document.getElementById('custom-fax').innerHTML = `<img src="${data.stamp}" style="max-width: 200px;">`;
     document.getElementById('custom-dir').innerHTML = `<p>${data.dir}</p>`;
     document.getElementById('custom-name_dir').innerHTML = `<p>${data.name_dir}</p>`;
+
+     document.querySelectorAll('.commercial-company').forEach(block => {
+      block.innerHTML = `
+        <p>${data.company}</p>
+        <p>${data.address}</p>
+        <p>${data.phone}</p>
+        <p>${data.email}</p>
+      `;
+      });
   });
 });
 
@@ -505,7 +529,7 @@ function getFinalSelectionData() {
             }
         }
 
-        // Функция для создания блока товара (только с непустыми полями)
+// Функция для создания блока товара
 async function createCommercialProduct(product, index) {
     const productDiv = document.createElement('div');
     productDiv.className = 'commercial-product a4-container';
@@ -513,54 +537,62 @@ async function createCommercialProduct(product, index) {
     const qrId = `qr-${index}-${Math.random().toString(36).substr(2, 9)}`;
     let imagesHTML = '';
 
-  try {
-    // Фильтруем массив изображений: удаляем пустые и дубликаты
-    let uniqueImages = [];
-    if (product.images && product.images.length > 0) {
-        uniqueImages = product.images
-            .filter(img => img && img.trim() !== "") // Удаляем пустые
-            .filter((img, i, arr) => arr.indexOf(img) === i); // Удаляем дубликаты
+    try {
+        // Фильтруем массив изображений
+        let uniqueImages = [];
+        if (product.images && product.images.length > 0) {
+            uniqueImages = product.images
+                .filter(img => img && img.trim() !== "")
+                .filter((img, i, arr) => arr.indexOf(img) === i);
+        }
+
+        // Формируем HTML для изображений
+        for (let i = 0; i < 3; i++) {
+            let imgUrl;
+            const imgIndex = i === 2 ? 3 : i;
+            const imageKey = `image_${product.name}_${imgIndex}`;
+            const cachedImage = localStorage.getItem(imageKey);
+
+            if (cachedImage) {
+                imgUrl = cachedImage;
+                if (!product.images) product.images = [];
+                product.images[imgIndex] = imgUrl;
+            } else if (uniqueImages[imgIndex]) {
+                imgUrl = uniqueImages[imgIndex];
+            } else {
+                imgUrl = "img/no-photo.png";
+            }
+
+            imagesHTML += `
+                <div class="product-image-container" style="display: inline-block; margin-right: 10px;">
+                    <img src="${imgUrl}"
+                         alt="Изображение ${i + 1}"
+                         style="max-width: 280px; max-height: 280px; cursor: pointer;"
+                         data-product-name="${product.name}"
+                         data-image-index="${imgIndex}">
+                </div>
+            `;
+        }
+    } catch (e) {
+        console.error("Ошибка при формировании изображений:", e);
+        imagesHTML = `
+            <div class="product-image-container" style="display: inline-block; margin-right: 10px;">
+                <img src="img/no-photo.png"
+                     alt="Ошибка"
+                     style="max-width: 280px; max-height: 280px; cursor: pointer;"
+                     data-product-name="${product.name}"
+                     data-image-index="0">
+            </div>
+        `;
     }
 
-    // Формируем HTML только для уникальных изображений
-    for (let i = 0; i < 3; i++) {
-        let imgUrl;
-        const imgIndex = i === 2 ? 3 : i;
-        const imageKey = `image_${product.name}_${imgIndex}`;
-        const cachedImage = localStorage.getItem(imageKey);
-
-        console.log(`Пробуем загрузить изображение из localStorage по ключу: ${imageKey}, результат: ${cachedImage ? 'найдено' : 'не найдено'}`);
-
-        // Если есть сохранённое изображение в localStorage — используем его
-        if (cachedImage) {
-            imgUrl = cachedImage;
-            // Обновляем объект product, чтобы изображения были в PDF
-            if (!product.images) product.images = [];
-            product.images[imgIndex] = imgUrl;
-        }
-        // Если нет — берём из product.images (если есть)
-        else if (uniqueImages[imgIndex]) {
-            imgUrl = uniqueImages[imgIndex];
-        }
-        // Если нет ни там, ни там — ставим заглушку
-        else {
-            imgUrl = "img/no-photo.png";
-        }
-
-        // Добавляем только если imgUrl не пустой и не заглушка (если уже была)
-        if (imgUrl && imgUrl !== "img/no-photo.png") {
-            imagesHTML += `<img src="${imgUrl}" alt="Изображение ${i + 1}" style="max-width: 280px; max-height: 280px;">`;
-        }
-    }
-
-    // Если не добавилось ни одного изображения — добавляем заглушку
-    if (imagesHTML === '') {
-        imagesHTML = '<img src="img/no-photo.png" alt="Нет фото" style="max-width: 280px; max-height: 280px;">';
-    }
-} catch (e) {
-    console.error("Ошибка при формировании изображений:", e);
-    imagesHTML = '<img src="img/no-photo.png" alt="Ошибка" style="max-width: 280px; max-height: 280px;">';
-}
+    // const saveImagesButton = `
+    //     <button class="save-images-button"
+    //             data-product-name="${product.name}"
+    //             style="margin: 10px 0; padding: 5px 10px; background: #96C22B; color: white; border: none; border-radius: 3px; cursor: pointer;">
+    //         Сохранить все изображения
+    //     </button>
+    // `;
 
     const fields = [
         { label: 'Артикул', value: product.article_number },
@@ -579,19 +611,23 @@ async function createCommercialProduct(product, index) {
     ];
 
     let detailsHTML = `
-     <div class="commercial-titul-site">
-        <img src="img/titul_commercial_site.png" alt="Фоновое изображение">
-    </div>
+        <div class="commercial-titul-site">
+            <img src="img/titul_commercial_site.png" alt="Фоновое изображение">
+        </div>
         <h3>${index + 1}. ${product.name}</h3>
         <div class="commercial-product-images">
-            <div>${imagesHTML}</div>
-            <div id="${qrId}" class="qr-code-container"></div>
+            ${imagesHTML}
+            <div id="${qrId}" class="qr-code-container" style="display: inline-block; vertical-align: top;"></div>
         </div>
+        
         <div class="commercial-product-details">
             <p><strong>Количество:</strong> ${product.count}</p>
             <p><strong>Цена:</strong> ${product.CV_PRICE_1} ${product.CV_CURRENCY_1 || 'RUB'}</p>
             <p><strong>Сумма:</strong> ${(parseFloat(product.CV_PRICE_1) * product.count).toFixed(2)} ${product.CV_CURRENCY_1 || 'RUB'}</p>
+            
     `;
+
+    // ${saveImagesButton}
 
     fields.forEach(field => {
         if (field.value && field.value !== '—' && field.value !== null) {
@@ -607,7 +643,97 @@ async function createCommercialProduct(product, index) {
     }, 100);
 
     return productDiv;
+}   
+// Функция для сохранения изображений на диск
+// function setupSaveImagesButtons() {
+//     document.querySelectorAll('.save-images-button').forEach(button => {
+//         button.addEventListener('click', async (e) => {
+//             const productName = e.target.getAttribute('data-product-name');
+//             const finalSelection = JSON.parse(localStorage.getItem('finalSelection')) || {};
+//             const product = finalSelection[productName];
+
+//             if (!product || !product.images || product.images.length === 0) {
+//                 alert(`Нет изображений для товара "${productName}"!`);
+//                 return;
+//             }
+
+//             // Создаём временные ссылки для скачивания
+//             product.images.forEach((imgUrl, i) => {
+//                 if (imgUrl && !imgUrl.startsWith('data:')) {
+//                     // Если изображение не в base64, пропускаем (или можно добавить конвертацию)
+//                     return;
+//                 }
+
+//                 const link = document.createElement('a');
+//                 link.href = imgUrl;
+//                 link.download = `${productName}_image_${i + 1}.png`;
+//                 document.body.appendChild(link);
+//                 link.click();
+//                 document.body.removeChild(link);
+//             });
+
+//             alert(`Изображения для "${productName}" сохранены!`);
+//         });
+//     });
+// }
+
+// Функция для загрузки изображений с диска
+function setupLoadImagesButtons() {
+    document.querySelectorAll('.load-images-button').forEach(button => {
+        button.addEventListener('click', (e) => {
+            const productName = e.target.getAttribute('data-product-name');
+            const input = document.createElement('input');
+            input.type = 'file';
+            input.accept = 'image/*';
+            input.multiple = true;
+            input.onchange = async (event) => {
+                const files = Array.from(event.target.files);
+                const finalSelection = JSON.parse(localStorage.getItem('finalSelection')) || {};
+                const product = finalSelection[productName];
+
+                if (!product) {
+                    alert(`Товар "${productName}" не найден!`);
+                    return;
+                }
+
+                if (!product.images) {
+                    product.images = [];
+                }
+
+                // Очищаем текущие изображения
+                product.images = Array(4).fill('');
+
+                // Сохраняем новые изображения в product.images и localStorage
+                for (let i = 0; i < files.length && i < 4; i++) {
+                    const file = files[i];
+                    if (file.type.startsWith('image/')) {
+                        const reader = new FileReader();
+                        reader.onload = (e) => {
+                            const imageDataUrl = e.target.result;
+                            product.images[i] = imageDataUrl;
+                            localStorage.setItem(`image_${productName}_${i}`, imageDataUrl);
+                            localStorage.setItem('finalSelection', JSON.stringify(finalSelection));
+
+                            // Обновляем отображение товара
+                            const productDiv = document.querySelector(`.commercial-product h3:contains("${productName}")`).closest('.commercial-product');
+                            if (productDiv) {
+                                const imgContainer = productDiv.querySelector('.commercial-product-images div');
+                                if (imgContainer) {
+                                    imgContainer.innerHTML = `<img src="${imageDataUrl}" alt="Изображение ${i + 1}" style="max-width: 280px; max-height: 280px;">`;
+                                }
+                            }
+                        };
+                        reader.readAsDataURL(file);
+                    }
+                }
+
+                alert(`Изображения для "${productName}" загружены!`);
+            };
+            input.click();
+        });
+    });
 }
+
 // Функция для конвертации URL в base64 (с обработкой ошибок)
 async function urlToBase64(url) {
     try {
@@ -654,11 +780,111 @@ async function replaceExternalImagesWithBase64() {
         }
     }
 }
+// Функция для обработки drag-and-drop
+function setupDragAndDrop() {
+    document.querySelectorAll('.commercial-product-images').forEach(container => {
+        container.addEventListener('dragover', (e) => {
+            e.preventDefault();
+            container.style.borderColor = '#96C22B';
+        });
 
+        container.addEventListener('dragleave', () => {
+            container.style.borderColor = '#ccc';
+        });
+
+        container.addEventListener('drop', (e) => {
+            e.preventDefault();
+            container.style.borderColor = '#ccc';
+
+            const productName = container.getAttribute('data-product-name');
+            const files = Array.from(e.dataTransfer.files);
+            const finalSelection = JSON.parse(localStorage.getItem('finalSelection')) || {};
+            const product = finalSelection[productName];
+
+            if (!product) {
+                alert(`Товар "${productName}" не найден!`);
+                return;
+            }
+
+            if (!product.images) {
+                product.images = [];
+            }
+
+            // Очищаем текущие изображения
+            product.images = Array(4).fill('');
+
+            // Сохраняем новые изображения в product.images и localStorage
+            for (let i = 0; i < files.length && i < 4; i++) {
+                const file = files[i];
+                if (file.type.startsWith('image/')) {
+                    const reader = new FileReader();
+                    reader.onload = (event) => {
+                        const imageDataUrl = event.target.result;
+                        product.images[i] = imageDataUrl;
+                        localStorage.setItem(`image_${productName}_${i}`, imageDataUrl);
+                        localStorage.setItem('finalSelection', JSON.stringify(finalSelection));
+
+                        // Обновляем отображение товара
+                        const imgContainer = container.querySelector('div');
+                        if (imgContainer) {
+                            imgContainer.innerHTML = `<img src="${imageDataUrl}" alt="Изображение ${i + 1}" style="max-width: 280px; max-height: 280px;">`;
+                        }
+                    };
+                    reader.readAsDataURL(file);
+                }
+            }
+        });
+    });
+}
+// Функция для настройки обработчиков кликов по изображениям
+function setupImageClickHandlers() {
+    document.querySelectorAll('.commercial-product-images img[data-product-name]').forEach(img => {
+        img.addEventListener('click', (e) => {
+            const productName = e.target.getAttribute('data-product-name');
+            const imageIndex = e.target.getAttribute('data-image-index');
+            const input = document.createElement('input');
+            input.type = 'file';
+            input.accept = 'image/*';
+
+            input.onchange = (event) => {
+                const file = event.target.files[0];
+                if (file && file.type.startsWith('image/')) {
+                    const reader = new FileReader();
+                    reader.onload = (e) => {
+                        const imageDataUrl = e.target.result;
+                        const finalSelection = JSON.parse(localStorage.getItem('finalSelection')) || {};
+                        const product = finalSelection[productName];
+
+                        if (product) {
+                            if (!product.images) {
+                                product.images = [];
+                            }
+                            product.images[imageIndex] = imageDataUrl;
+                            localStorage.setItem(`image_${productName}_${imageIndex}`, imageDataUrl);
+                            localStorage.setItem('finalSelection', JSON.stringify(finalSelection));
+
+                            // Обновляем изображение на странице
+                            img.src = imageDataUrl;
+                        }
+                    };
+                    reader.readAsDataURL(file);
+                }
+            };
+
+            input.click();
+        });
+    });
+}
 
   // Функция для генерации PDF
+// Функция для генерации PDF
 async function generateCommercialOffer() {
-    
+    // Скрываем все кнопки "Сохранить все изображения" внутри блоков товаров
+    const saveButtons = document.querySelectorAll('.save-images-button');
+    saveButtons.forEach(button => {
+        button.style.display = 'none';
+    });
+
     const { jsPDF } = window.jspdf;
     const doc = new jsPDF({
         orientation: 'landscape',
@@ -666,13 +892,13 @@ async function generateCommercialOffer() {
         format: 'a4',
     });
 
-    // 1. Титульный лист (первый статический контейнер)
+    // 1. Титульный лист
     const titlePage = document.querySelector('.a4-container:first-of-type');
     const titleCanvas = await html2canvas(titlePage, { scale: 2, useCORS: true, allowTaint: true });
     const titleImgData = titleCanvas.toDataURL('image/jpeg', 1.0);
     doc.addImage(titleImgData, 'JPEG', 0, 0, 297, 210);
 
-    // 2. Таблицы товаров (все динамически созданные контейнеры с таблицами)
+    // 2. Таблицы товаров
     const tablePages = document.querySelectorAll('.commercial-table-container .a4-container');
     for (const tablePage of tablePages) {
         doc.addPage();
@@ -690,7 +916,7 @@ async function generateCommercialOffer() {
         doc.addImage(productImgData, 'JPEG', 0, 0, 297, 210);
     }
 
-    // 4. Завершающая страница (последний статический контейнер)
+    // 4. Завершающая страница
     const allPages = document.querySelectorAll('.a4-container');
     const footerPage = allPages[allPages.length - 1];
     const footerCanvas = await html2canvas(footerPage, { scale: 2, useCORS: true, allowTaint: true });
@@ -698,20 +924,13 @@ async function generateCommercialOffer() {
     doc.addPage();
     doc.addImage(footerImgData, 'JPEG', 0, 0, 297, 210);
 
-    
-
-    // Нумерация страниц
-    // for (let i = 2; i <= doc.internal.getNumberOfPages(); i++) {
-    //     doc.setPage(i);
-    //     doc.setFontSize(12);
-    //     doc.setTextColor(255, 255, 255);
-    //     doc.setFillColor(150, 194, 43);
-    //     doc.rect(277, 195, 20, 10, 'F');
-    //     doc.text((i - 1).toString(), 282, 202, { align: 'center' });
-    // }
     doc.save(`Коммерческое_предложение_${new Date().toISOString().slice(0, 10)}.pdf`);
-}
 
+    // Показываем кнопки обратно после генерации PDF
+    saveButtons.forEach(button => {
+        button.style.display = '';
+    });
+}
 function updatePageNumbers() {
     // Удаляем все существующие номера страниц
     document.querySelectorAll('.page-number-box').forEach(el => el.remove());
@@ -838,37 +1057,11 @@ document.getElementById('generateOffer').addEventListener('click', async functio
 
         await Promise.all(productPromises);
 
-         // Обновляем нумерацию страниц в HTML
+        // Обновляем нумерацию страниц в HTML
         updatePageNumbers();
 
         // Ждём 1 секунду на случай, если QR-коды ещё грузятся
         await new Promise(resolve => setTimeout(resolve, 1000));
-// await replaceExternalImagesWithBase64();
-const finalSelection = getFinalSelectionData();
-// Получаем массив изображений из finalSelection
-const images = Object.values(finalSelection).flatMap(item => item.images);
-
-// Находим все изображения на странице, которые нужно заменить
-const imgs = document.querySelectorAll('.commercial-product-images img');
-
-images.forEach((url, index) => {
-  if (imgs[index]) {
-    // Загружаем изображение как blob
-    fetch(url)
-      .then(response => response.blob())
-      .then(blob => {
-        const reader = new FileReader();
-        reader.onload = () => {
-          const base64data = reader.result;
-          imgs[index].src = base64data;
-          // Можно дополнительно сохранить в localStorage
-          localStorage.setItem(`imported_image_${index}`, base64data);
-        };
-        reader.readAsDataURL(blob);
-      })
-      .catch(error => console.error('Ошибка загрузки изображения:', url));
-  }
-});
 
         // Генерируем PDF
         await generateCommercialOffer();
@@ -877,10 +1070,13 @@ images.forEach((url, index) => {
         alert("Не удалось сформировать PDF. Проверьте консоль для деталей.");
     }
 });
-        // Загружаем и отображаем товары при загрузке страницы
-       window.onload = () => {
-  loadAndDisplayProducts();
-  setDefaultSignature(); // Устанавливаем первую подпись по умолчанию
+
+// Загружаем и отображаем товары при загрузке страницы
+window.onload = async () => {
+    await loadAndDisplayProducts();
+    setDefaultSignature();
+    // setupSaveImagesButtons();
+    setupImageClickHandlers(); 
 };
     </script>
 </body>
