@@ -987,7 +987,7 @@ async function loadAndDisplayProducts() {
         table.innerHTML = `
             <thead>
                 <tr>
-                    <th>N</th>
+                    <th>№</th>
                     <th>Наименование</th>
                     <th>Кол-во</th>
                     <th>Цена с НДС 22%</th>
@@ -1000,7 +1000,7 @@ async function loadAndDisplayProducts() {
         // Заполняем таблицу строками
         const tbody = table.querySelector('tbody');
         pageData.forEach((product, index) => {
-            const row = createTableRow(product, i + index + 1);
+            const row = createTableRow(product, i + index);
             tbody.appendChild(row);
         });
 
