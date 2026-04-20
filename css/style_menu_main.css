@@ -256,6 +256,25 @@ h3 {
   border-color: #96C22B;
 }
 
+.add-button {
+  background: #c5c5c5;
+  color: #fff;
+  border: 1px solid #ccc;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+  transition: all 0.2s ease;
+  margin-bottom: 10px;
+  margin-right: 8px;
+}
+
+.add-button.active {
+  background: #96C22B;
+  color: white;
+  border-color: #96C22B;
+}
+
 #analyticsBlock, #schemaBlock {
   display: none;
 }
@@ -434,7 +453,7 @@ h3 {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 15px;
-  margin-bottom: 150px;
+  margin-bottom: 70px;
 }
 
 .modal {
@@ -649,12 +668,19 @@ td, th {
 
 #selectedProductsTable th, #selectedProductsTable td, #finalSelectedProductsTable th, #finalSelectedProductsTable td {
   border: 0.5px solid #ddd;
-  padding: 8px;
+  padding: 4px;
   text-align: left;
 }
 
 #selectedProductsTable th, #finalSelectedProductsTable th {
-  background-color: #f2f2f2;
+  background-color: #96C22B;
+  border-color: #fff;
+  color: #fff;
+}
+
+#finalSelectionTableBody {
+  background-color: #fff;
+  border-color: #96C22B;
 }
 
 #analyticsBlock, #schemaBlock, #basket {

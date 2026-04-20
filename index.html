@@ -306,8 +306,6 @@
                 <button class="tab-button active" id="showSchema">Фильтры на схеме</button>
                 <button class="tab-button" id="showAnalytics">Аналитика</button>
                 <button class="tab-button" id="showAnalytics">Выбранные</button>
-                <button class="tab-button" id="generateCommercialOffer" class="generate-offer-button"
-                    style="margin-left: auto; background: #96C22B; color: white;">Сформировать предложение</button>
             </div>
 
             <div class="top_block">
@@ -472,7 +470,9 @@
 
             <div class="final-selection-container">
                 <h3>Итоговая выборка</h3>
-                <button onclick="addNewRowToFinalSelection()">Добавить строку со своими данными</button>
+                <button class="add-button" onclick="addNewRowToFinalSelection()">Добавить строку со своими данными</button>
+                                <button class="tab-button" id="generateCommercialOffer" class="generate-offer-button"
+                    style="margin-left: auto; background: #96C22B; color: white;">Сформировать предложение</button>
                 <div id="finalSelectedProductsTable">
                     <table>
                         <thead>
@@ -504,6 +504,7 @@
 
 
             <div class="basket-container" id="basket">
+                <h3>Варианты</h3>
                 <div id="selectedProductsTable">
                     <table>
                         <thead>
@@ -3017,7 +3018,7 @@ for (const [searchTerm, condition] of Object.entries(filtersMap)) {
                     // Наименование ребёнка
                     const childNameCell = document.createElement('td');
                     childNameCell.textContent = child.IE_NAME;
-                    childNameCell.style.paddingLeft = '30px';
+                    childNameCell.style.paddingLeft = '4px';
                     childRow.appendChild(childNameCell);
 
                     // Описание (занимает 1 колонку)
@@ -3052,7 +3053,7 @@ for (const [searchTerm, condition] of Object.entries(filtersMap)) {
 
                     // Нагрузка
                     const loadCell = document.createElement('td');
-                    loadCell.textContent = `Макс.: ${parent.guarantee?.[0]?.max_load || '—'} кг, Реком.: ${parent.guarantee?.[0]?.recommended_load || '—'} кг`;
+                    loadCell.textContent = `Макс.: ${parent.guarantee?.[0]?.max_load || '—'}, Реком.: ${parent.guarantee?.[0]?.recommended_load || '—'}`;
                     childRow.appendChild(loadCell);
 
                     // Основание
@@ -3481,7 +3482,7 @@ for (const [searchTerm, condition] of Object.entries(filtersMap)) {
 
                 // Нагрузка
                 const loadCell = document.createElement('td');
-                loadCell.textContent = data.max_load || '—';
+                loadCell.textContent = `Макс.: ${data.max_load || '—'}, Реком.: ${data.recommended_load || '—'}`;
                 loadCell.contentEditable = true;
                 loadCell.onblur = () => saveEditableField(name, 'max_load', loadCell.textContent);
                 row.appendChild(loadCell);
