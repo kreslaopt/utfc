@@ -95,6 +95,18 @@
             </div>
         </div>
 
+        <!-- Подлокотники -->
+        <h3 class="filter-header">
+            Тип подлокотников
+            <button class="toggle-filter" data-target="armrest-type-filter-content">+</button>
+        </h3>
+        <div class="filter-content" id="armrest-type-filter-content">
+            <div class="checkbox-group">           
+                    <label><input type="checkbox" class="armrest-type-filter" value="регулируемые"> Регулируемые</label>
+                    <label><input type="checkbox" class="armrest-type-filter" value="нерегулируемые"> Нерегулируемые</label>
+            </div>
+        </div>
+
         <!-- Конструктив -->
         <h3 class="filter-header">
             Механизм
@@ -1113,10 +1125,12 @@ function loadEditableHeaders() {
             // Заменяем вариации слов на стандартные термины
             term = term
                 .replace(/люкс|lux|LUX|Lyuks|Lyux|Liuks|Liux|люкc|ЛЮКС/gi, 'люкс')
+                .replace(/мультиблок|мульти-блок|мульти блок| mb| мв| МВ|Мультиблок|Мульти-Блок|Мульти Блок/gi, 'мультиблок')
                 .replace(/полозья|Н_п|Нп|полоз/gi, 'полозья')
                 .replace(/велюр|велютто|velu|velur/gi, 'велюр')
                 .replace(/модерно|mod|moderno|модерн/gi, 'модерно')
-                .replace(/мультиб|мультиблок|МВ|MB/gi, 'мультиблок');
+                .replace(/регулируемые|регулируемыми|регулируются/gi, 'регулируемые')
+                .replace(/нерегулируемые|нерегулируемыми|нерегулируются|не регулируемые|не регулируемыми|не регулируются/gi, 'нерегулируемые');             
 
             // Проверки на специальные фразы
             if (term.includes('высота не указана') || term.includes('h не указана')) {
@@ -1173,6 +1187,7 @@ function loadEditableHeaders() {
                 'регулируемый': ['нерегулируемый'],
                 'регулируемые': ['нерегулируемые'],
                 'регулируются': ['нерегулируются'],
+                'регулируемыми': ['нерегулируемыми'],
 
             };
 
@@ -1207,7 +1222,10 @@ function loadEditableHeaders() {
                 const objWords = getNormalizedWords(obj);
                 // Проверяем, содержит ли строка последовательность searchWords
                 // Например, ищем подмассив searchWords внутри objWords
-                return containsSequence(objWords, searchWords);
+                // return containsSequence(objWords, searchWords); //ищет последовательность слов
+                return searchWords.some(word => objWords.includes(word)); //ищет любое вхождение слова
+        //         const objText = normalizeSearchTerm(obj);
+        // return searchWords.some(word => new RegExp(`\\b${word}\\b`, 'i').test(objText));
             }
 
             // Для массивов
@@ -1281,6 +1299,66 @@ function loadEditableHeaders() {
         }
 
 
+//         function searchArmrestType(product, armrestType) {
+//     if (!product) return false;
+
+//     // Нормализуем поисковый термин
+//     const searchTerm = normalizeSearchTerm(armrestType);
+//     const searchWords = getNormalizedWords(searchTerm).filter(w => w);
+
+//     if (searchWords.length === 0) return false;
+
+//     // Поля, где может быть описание подлокотников
+//     const fieldsToSearch = [
+//         product.Подлокотники,
+//         product.full_describe,
+//         product.construction_and_materials?.[0]?.upholstery_materials?.[0],
+//         product.name,
+//         product.unique_name,
+//     ].filter(field => typeof field === 'string');
+
+//     // Ищем в каждом поле
+//     return fieldsToSearch.some(field => {
+//         const fieldWords = getNormalizedWords(field);
+//         return searchWords.some(word => fieldWords.includes(word));
+//     });
+// }
+
+function searchArmrestType(product, armrestType) {
+    if (!product) return false;
+
+    // Нормализуем поисковый термин
+    const searchTerm = normalizeSearchTerm(armrestType);
+    const searchWords = getNormalizedWords(searchTerm).filter(w => w);
+
+    if (searchWords.length === 0) return false;
+
+    // Рекурсивная функция поиска по объекту
+    function searchInObject(obj) {
+        if (!obj) return false;
+
+        // Для строк
+        if (typeof obj === 'string') {
+            const objWords = getNormalizedWords(obj);
+            return searchWords.some(word => objWords.includes(word));
+        }
+
+        // Для массивов
+        if (Array.isArray(obj)) {
+            return obj.some(item => searchInObject(item));
+        }
+
+        // Для объектов
+        if (typeof obj === 'object') {
+            return Object.values(obj).some(value => searchInObject(value));
+        }
+
+        return false;
+    }
+
+    // Ищем по всему объекту
+    return searchInObject(product);
+}
         // function searchInObject(obj, searchTerm) {
         //     if (!obj) return false;
         //     if (typeof obj === 'string') {
@@ -1795,6 +1873,7 @@ function loadEditableHeaders() {
             const armrestFilters = Array.from(document.querySelectorAll('.armrest-filter:checked')).map(el => el.value);
             const mechanismFilters = Array.from(document.querySelectorAll('.mechanism-filter:checked')).map(el => el.value);
             const karkasFilters = Array.from(document.querySelectorAll('.karkas-filter:checked')).map(el => el.value);
+            const armrestTypeFilters = Array.from(document.querySelectorAll('.armrest-type-filter:checked')).map(el => el.value);
             const otherFilters = Array.from(document.querySelectorAll('.other-filter:checked')).map(el => el.value);
             const podgolovnikFilters = Array.from(document.querySelectorAll('.podgolovnik-filter:checked')).map(el => el.value);
             const stolikFilters = Array.from(document.querySelectorAll('.stolik-filter:checked')).map(el => el.value);
@@ -1833,7 +1912,7 @@ function loadEditableHeaders() {
                 .map(input => input.value);
 
 
-            if (armrestFilters.length > 0 || mechanismFilters.length > 0 || karkasFilters.length > 0 || podgolovnikFilters.length > 0 || stolikFilters.length > 0 || otherFilters.length > 0 || skladnoyFilters.length > 0 || finishFilters.length > 0 || loadFilters.length > 0 || diameterFilters.length > 0) {
+            if (armrestFilters.length > 0 || mechanismFilters.length > 0 || karkasFilters.length > 0 ||  armrestTypeFilters.length > 0 || podgolovnikFilters.length > 0 || stolikFilters.length > 0 || otherFilters.length > 0 || skladnoyFilters.length > 0 || finishFilters.length > 0 || loadFilters.length > 0 || diameterFilters.length > 0) {
                 filtered = filtered.filter(product => {
                     const uniqueName = (Array.isArray(product.unique_name) ? product.unique_name[0] : product.unique_name).toLowerCase();
 
@@ -1862,6 +1941,8 @@ function loadEditableHeaders() {
 // Создаем объект с условиями и строками для поиска
 const filtersMap = {
   "<strong>Подлокотники</strong> пластиковые": armrestFilters.some(f => f.includes("пластиковые")),
+  "<strong>Подлокотники</strong> регулируемые": armrestFilters.some(f => f.includes("регулируемые")),
+  "<strong>Подлокотники</strong> нерегулируемые": armrestFilters.some(f => f.includes("нерегулируемые")),
   "<strong>Подлокотники</strong> металлические": armrestFilters.some(f => f.includes("металлические")),
   "Подлокотники алюминиевые": armrestFilters.some(f => f.includes("алюминиевые")),
   "деревянные": armrestFilters.some(f => f.includes("деревянные")),
@@ -1970,6 +2051,118 @@ for (const [searchTerm, condition] of Object.entries(filtersMap)) {
                             }
                         }
                     }
+
+// let armrestTypeMatch = true;
+// if (armrestTypeFilters.length > 0) {
+//     const isRegulSelected = armrestTypeFilters.some(f => f.includes("регулируемые"));
+//     const isNoneRegulSelected = armrestTypeFilters.some(f => f.includes("нерегулируемые"));
+
+//     // Функция для поиска слова в любом текстовом поле товара
+//     const searchInProduct = (product, word) => {
+//         // Поля, по которым будем искать
+//         const fieldsToSearch = [
+//             product.Подлокотники,    
+//             product.full_describe,
+//             // Добавьте сюда другие текстовые поля, если нужно
+//         ];
+
+//         // Приводим все поля к строке и ищем слово
+//         return fieldsToSearch.some(field => {
+//             if (!field) return false;
+//             const text = String(field).toLowerCase().trim();
+//             const words = text.split(/\s+/);
+//             return words.some(w => w === word);
+//         });
+//     };
+
+//     // Проверяем наличие слов
+//     const hasRegul = searchInProduct(product, "регулируемые") ||
+//                      searchInProduct(product, "регулируемыми");
+//                     //  ||
+//                     //  searchInProduct(product, "регулируются");
+
+//     const hasNoneRegul = searchInProduct(product, "нерегулируемые") ||
+//                         searchInProduct(product, "нерегулируемыми");
+//                         // ||
+//                         // searchInProduct(product, "нерегулируются");
+
+//     if (isRegulSelected && !isNoneRegulSelected) {
+//         armrestTypeMatch = hasRegul && !hasNoneRegul;
+//     }
+//     else if (isNoneRegulSelected && !isRegulSelected) {
+//         armrestTypeMatch = hasNoneRegul && !hasRegul;
+//     }
+//     else if (isRegulSelected && isNoneRegulSelected) {
+//         armrestTypeMatch = hasRegul || hasNoneRegul;
+//     }
+// }
+// Логика фильтрации
+let armrestTypeMatch = true;
+if (armrestTypeFilters.length > 0) {
+    const isRegulSelected = armrestTypeFilters.some(f =>
+        f.includes("регулируемые")
+    );
+    const isNoneRegulSelected = armrestTypeFilters.some(f =>
+        f.includes("нерегулируемые")
+    );
+
+    const hasRegul = searchArmrestType(product, "регулируемые");
+    const hasNoneRegul = searchArmrestType(product, "нерегулируемые");
+
+    if (isNoneRegulSelected) {
+        armrestTypeMatch = hasNoneRegul;
+    }
+    else if (isRegulSelected) {
+        armrestTypeMatch = hasRegul;
+    }
+   
+    else if (isRegulSelected && isNoneRegulSelected) {
+        armrestTypeMatch = hasRegul && hasNoneRegul;
+    }
+}
+// let armrestTypeMatch = true;
+// if (armrestTypeFilters.length > 0) {
+//     const isRegulSelected = armrestTypeFilters.some(f => f.includes("регулируемые"));
+//     const isNoneRegulSelected = armrestTypeFilters.some(f => f.includes("нерегулируемые"));
+
+//     // Функция для рекурсивного поиска слова в любом текстовом поле (включая массивы и HTML)
+//     const searchInProduct = (product, word) => {
+//         // Если это строка — ищем слово в ней
+//         if (typeof product === 'string') {
+//             const text = product.toLowerCase().replace(/<[^>]*>/g, ' '); // Удаляем HTML-теги
+//             const words = text.split(/\s+/);
+//             return words.some(w => w === word);
+//         }
+//         // Если это массив — проверяем каждый элемент
+//         else if (Array.isArray(product)) {
+//             return product.some(item => searchInProduct(item, word));
+//         }
+//         // Если это объект — проверяем все его значения
+//         else if (typeof product === 'object' && product !== null) {
+//             return Object.values(product).some(value => searchInProduct(value, word));
+//         }
+//         return false;
+//     };
+
+//     // Проверяем наличие всех форм слов
+//     const hasRegul = searchInProduct(product, "регулируемые") ||
+//                      searchInProduct(product, "регулируемыми") ||
+//                      searchInProduct(product, "регулируются");
+
+//     const hasNoneRegul = searchInProduct(product, "нерегулируемые") ||
+//                         searchInProduct(product, "нерегулируемыми") ||
+//                         searchInProduct(product, "нерегулируются");
+
+//     if (isRegulSelected && !isNoneRegulSelected) {
+//         armrestTypeMatch = hasRegul && !hasNoneRegul;
+//     }
+//     else if (isNoneRegulSelected && !isRegulSelected) {
+//         armrestTypeMatch = hasNoneRegul && !hasRegul;
+//     }
+//     else if (isRegulSelected && isNoneRegulSelected) {
+//         armrestTypeMatch = hasRegul || hasNoneRegul;
+//     }
+// }
 
 
 
@@ -2131,7 +2324,7 @@ for (const [searchTerm, condition] of Object.entries(filtersMap)) {
                         }
                     }
 
-                    return armrestMatch && mechanismMatch && podgolovnikMatch && stolikMatch && karkasMatch && otherMatch && skladnoyMatch && finishMatch && loadMatch && diameterMatch;
+                    return armrestMatch && mechanismMatch && podgolovnikMatch && stolikMatch && karkasMatch && otherMatch && armrestTypeMatch && skladnoyMatch && finishMatch && loadMatch && diameterMatch;
                 });
             }
 
@@ -4525,7 +4718,7 @@ loadEditableHeaders();
                 return;
             }
 
-            document.querySelectorAll('.armrest-filter, .mechanism-filter, .karkas-filter, .podgolovnik-filter, .stolik-filter, .skladnoy-filter, .other-filter, .finish-filter, .category-filter, .load-filter, .diameter-filter, .special-offer-filter').forEach(checkbox => {
+            document.querySelectorAll('.armrest-filter, .mechanism-filter, .karkas-filter, .armrest-type-filter, .podgolovnik-filter, .stolik-filter, .skladnoy-filter, .other-filter, .finish-filter, .category-filter, .load-filter, .diameter-filter, .special-offer-filter').forEach(checkbox => {
                 checkbox.addEventListener('change', () => {
                     if (!basketContainer.classList.contains('active')) {
                         recalculateSliderValues(filteredProducts);
