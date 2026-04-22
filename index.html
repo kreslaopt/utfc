@@ -1120,18 +1120,20 @@ function loadEditableHeaders() {
 
             // Приводим к строке, делаем нижний регистр и удаляем знаки препинания
             term = String(term).toLowerCase().trim();
-            term = term.replace(/[.,!?;:"'()\-]/g, ' '); // заменяем знаки препинания на пробелы
+            term = term.replace(/[.,!?;:«»"'()\-]/g, ' '); // заменяем знаки препинания на пробелы
             term = term.replace(/\s+/g, ' '); // убираем лишние пробелы
 
             // Заменяем вариации слов на стандартные термины
             term = term
                 .replace(/люкс|lux|LUX|Lyuks|Lyux|Liuks|Liux|люкc|ЛЮКС/gi, 'люкс')
                 .replace(/мультиблок|мульти-блок|мульти блок| mb| мв| МВ|Мультиблок|Мульти-Блок|Мульти Блок/gi, 'мультиблок')
+                .replace(/«Топ-ган»|«топ-ган»|топ ган|топган/gi, 'Топ-ган')
                 .replace(/полозья|Н_п|Нп|полоз/gi, 'полозья')
                 .replace(/велюр|велютто|velu|velur/gi, 'велюр')
                 .replace(/модерно|mod|moderno|модерн/gi, 'модерно')
                 .replace(/регулируемые|регулируемыми|регулируются/gi, 'регулируемые')
-                .replace(/нерегулируемые|нерегулируемыми|нерегулируются|не регулируемые|не регулируемыми|не регулируются/gi, 'нерегулируемые');             
+                .replace(/нерегулируемые|нерегулируемыми|нерегулируются|не регулируемые|не регулируемыми|не регулируются/gi, 'нерегулируемые')
+                .replace(/подголовника|подголовником/gi, 'подголовник');             
 
             // Проверки на специальные фразы
             if (term.includes('высота не указана') || term.includes('h не указана')) {
@@ -1966,51 +1968,73 @@ for (const [searchTerm, condition] of Object.entries(filtersMap)) {
 }
 
 
-                    let mechanismMatch = true;
-                    if (mechanismFilters.length > 0) {
-                        const expandedMechanismFilters = mechanismFilters.flatMap(filter => filter.split('|').map(item => item.trim()));
-                        const isMonolitSelected = expandedMechanismFilters.includes("монолит") || expandedMechanismFilters.includes("монолитный");
-                        const isNemMonolitSelected = expandedMechanismFilters.includes("немонолит") || expandedMechanismFilters.includes("немонолитный");
-                        const isFoldingSelected = expandedMechanismFilters.includes("складной");
+              let mechanismMatch = true;
+if (mechanismFilters.length > 0) {
+    const expandedMechanismFilters = mechanismFilters.flatMap(filter => filter.split('|').map(item => item.trim()));
+    const isMonolitSelected = expandedMechanismFilters.includes("монолит") || expandedMechanismFilters.includes("монолитный");
+    const isNemMonolitSelected = expandedMechanismFilters.includes("немонолит") || expandedMechanismFilters.includes("немонолитный");
+    const isFoldingSelected = expandedMechanismFilters.includes("складной");
 
-                        if (isMonolitSelected || isNemMonolitSelected || isFoldingSelected) {
-                            const productSkeleton = product.skeleton?.toLowerCase().trim();
-                            if (!productSkeleton) {
-                                mechanismMatch = false;
-                            } else {
-                                const selectedSkeletons = [];
-                                if (isMonolitSelected) selectedSkeletons.push("монолитный");
-                                if (isNemMonolitSelected) selectedSkeletons.push("немонолитный");
-                                if (isFoldingSelected) selectedSkeletons.push("складной");
-                                mechanismMatch = selectedSkeletons.includes(productSkeleton);
-                            }
-                        }
+    // Проверяем монолит/немонолит/складной
+    if (isMonolitSelected || isNemMonolitSelected || isFoldingSelected) {
+        const productSkeleton = product.skeleton?.toLowerCase().trim();
+        if (!productSkeleton) {
+            mechanismMatch = false;
+        } else {
+            const selectedSkeletons = [];
+            if (isMonolitSelected) selectedSkeletons.push("монолитный");
+            if (isNemMonolitSelected) selectedSkeletons.push("немонолитный");
+            if (isFoldingSelected) selectedSkeletons.push("складной");
+            mechanismMatch = selectedSkeletons.includes(productSkeleton);
+        }
+    }
 
-                        if (mechanismMatch && mechanismFilters.length > 0) {
-                            const otherMechanismFilters = mechanismFilters.filter(f =>
-                                !f.includes("подг") &&
-                                !f.includes("монолит") &&
-                                !f.includes("немонолит") &&
-                                !f.includes("складной")
-                            );
-                            if (otherMechanismFilters.length > 0) {
-                                const cleanedUniqueName = uniqueName
-                                    .replace(/\s*([мm]b|mb)[-\s]?\d*\s*/gi, ' ')
-                                    .trim()
-                                    .toLowerCase();
-                                mechanismMatch = otherMechanismFilters.every(filter => {
-                                    const patterns = filter.split('|');
-                                    return patterns.some(pattern => {
-                                        const lowerPattern = pattern.toLowerCase().trim();
-                                        const regex = new RegExp(`(^|\\s)(${lowerPattern})(\\s|$|-)`, 'i');
-                                        return regex.test(cleanedUniqueName);
-                                    });
-                                });
-                            }
-                        }
-                    }
+    // Проверяем остальные механизмы (Топ-ган, Пиастра, Мультиблок и т.д.)
+    if (mechanismMatch && mechanismFilters.length > 0) {
+        const otherMechanismFilters = mechanismFilters.filter(f =>
+            !f.includes("подг") &&
+            !f.includes("монолит") &&
+            !f.includes("немонолит") &&
+            !f.includes("складной")
+        );
 
-                        let karkasMatch = true;
+        if (otherMechanismFilters.length > 0) {
+            const cleanedUniqueName = uniqueName
+                .replace(/\s*([мm]b|mb)[-\s]?\d*\s*/gi, ' ')
+                .trim()
+                .toLowerCase();
+
+            // Ищем по имени файла
+            mechanismMatch = otherMechanismFilters.every(filter => {
+                const patterns = filter.split('|');
+                return patterns.some(pattern => {
+                    const lowerPattern = pattern.toLowerCase().trim();
+                    const regex = new RegExp(`(^|\\s|«|»)(${lowerPattern})(\\s|$|-|«|»)`, 'i');
+                    return regex.test(cleanedUniqueName);
+                });
+            });
+
+            // Если не нашли по имени — ищем в компонентах
+            if (!mechanismMatch) {
+                const components = product.construction_and_materials?.[0]?.components || [];
+                mechanismMatch = otherMechanismFilters.every(filter => {
+                    const patterns = filter.split('|');
+                    return patterns.some(pattern => {
+                        const lowerPattern = pattern.toLowerCase().trim();
+                        return components.some(component =>
+                            searchInObject(component, lowerPattern)
+                        );
+                    });
+                });
+            }
+        }
+    }
+}
+
+                        
+                    
+                    
+                    let karkasMatch = true;
                     if (karkasFilters.length > 0) {
                         const expandedKarkasFilters = karkasFilters.flatMap(filter => filter.split('|').map(item => item.trim()));
                         const isMonolitSelected = expandedKarkasFilters.includes("монолит") || expandedKarkasFilters.includes("монолитный");
