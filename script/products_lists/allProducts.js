@@ -1035,6 +1035,16 @@ const knownProductsAllFiles = [
     "is_archive": false
   },
   {
+    "name": "Парма пластик",
+    "category": "chair_visitors",
+    "is_archive": false
+  },
+  {
+    "name": "Парма хром",
+    "category": "chair_visitors",
+    "is_archive": false
+  },
+  {
     "name": "Пилот в пластик",
     "category": "armchair_rukovoditel",
     "is_archive": false
