@@ -741,29 +741,28 @@ function setupLoadImagesButtons() {
         });
     });
 }
-
+const CORS_PROXY = 'https://cors-anywhere.herokuapp.com/';
 // Функция для конвертации URL в base64 (с обработкой ошибок)
 async function urlToBase64(url) {
-    try {
-        if (url.startsWith('data:')) {
-            return url; // Уже в формате base64
-        }
-        if (url.startsWith('img/')) {
-            return null; // Локальные изображения не нуждаются в конвертации
-        }
-        const response = await fetch(url, { mode: 'no-cors' });
-        if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
-        const blob = await response.blob();
-        return new Promise((resolve) => {
-            const reader = new FileReader();
-            reader.onload = () => resolve(reader.result);
-            reader.onerror = () => resolve(null);
-            reader.readAsDataURL(blob);
-        });
-    } catch (e) {
-        console.error("Ошибка загрузки изображения:", url, e);
-        return null;
+  try {
+    // Добавляем прокси перед URL
+    const proxiedUrl = CORS_PROXY + url;
+    if (url.startsWith('data:')) {
+      return url; // Уже в формате base64
     }
+    const response = await fetch(proxiedUrl);
+    if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+    const blob = await response.blob();
+    return new Promise((resolve) => {
+      const reader = new FileReader();
+      reader.onload = () => resolve(reader.result);
+      reader.onerror = () => resolve(null);
+      reader.readAsDataURL(blob);
+    });
+  } catch (e) {
+    console.error("Ошибка загрузки изображения:", url, e);
+    return null;
+  }
 }
 
 // Замена всех изображений с utfc.ru на base64 или локальную заглушку
@@ -919,9 +918,9 @@ async function generateCommercialOffer() {
     const productPages = document.querySelectorAll('#commercial-products .a4-container');
     for (const productPage of productPages) {
         doc.addPage();
-        const productCanvas = await html2canvas(productPage, { scale: 2, useCORS: true, allowTaint: true });
-        const productImgData = productCanvas.toDataURL('image/jpeg', 1.0);
-        doc.addImage(productImgData, 'JPEG', 0, 0, 297, 210);
+        const productCanvas = await html2canvas(productPage, { scale: 2, useCORS: false, allowTaint: false });
+        const productImgData = productCanvas.toDataURL('image/png', 1.0);
+        doc.addImage(productImgData, 'PNG', 0, 0, 297, 210);
     }
 
     // 4. Завершающая страница
