@@ -3,6 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="
+    default-src 'self' https://via.placeholder.com https://utfc.ru;
+    script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdn.plot.ly https://cdnjs.cloudflare.com;
+    style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
+    font-src 'self' https://fonts.gstatic.com;
+    img-src 'self' data: https://utfc.ru https://via.placeholder.com https://chart.googleapis.com https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru https://*.selstorage.ru;
+    connect-src 'self' https://utfc.ru http://UTFC.pythonanywhere.com https://UTFC.pythonanywhere.com https://cdnjs.cloudflare.com;
+">
     <title>Коммерческое предложение</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
