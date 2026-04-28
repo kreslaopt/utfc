@@ -918,7 +918,7 @@ async function generateCommercialOffer() {
     const productPages = document.querySelectorAll('#commercial-products .a4-container');
     for (const productPage of productPages) {
         doc.addPage();
-        const productCanvas = await html2canvas(productPage, { scale: 2, useCORS: false, allowTaint: false });
+        const productCanvas = await html2canvas(productPage, { scale: 2, useCORS: true, allowTaint: false });
         const productImgData = productCanvas.toDataURL('image/png', 1.0);
         doc.addImage(productImgData, 'PNG', 0, 0, 297, 210);
     }
