@@ -1390,6 +1390,11 @@ const knownProductsAllFiles = [
     "is_archive": false
   },
   {
+    "name": "Стул кассира б_п",
+    "category": "armchair_personal",
+    "is_archive": false
+  },
+  {
     "name": "Стул кассира б_п eg со спинкой",
     "category": "armchair_personal",
     "is_archive": false
