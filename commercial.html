@@ -226,14 +226,17 @@
     <button id="generateOffer">Сформировать PDF</button>
     
 
-<div id="signature-buttons" style="display: flex; gap: 10px;">
-  <button data-signature="first" style="background-color: #555; color: #fff;">ООО Фест</button>
+<div id="signature-buttons"">
+  <button data-signature="first" style="background-color: #555; color: #fff;">Фест</button>
   <button data-signature="second" style="background-color: #555; color: #fff;">БМФ</button>
   <!-- <button data-signature="third" style="background-color: #555; color: #fff;">Поставщик 3</button> -->
   <button data-signature="fourth" style="background-color: #555; color: #fff;">Отсутствует</button>
 </div>
 
     <script>
+
+            let isBmfSelected = false; // по умолчанию "Фест"
+
 // Устанавливаем текущую дату для всех элементов с классом commercial-date
 document.querySelectorAll('.commercial-date span').forEach(el => {
     el.textContent = new Date().toLocaleDateString('ru-RU');
@@ -296,6 +299,8 @@ document.querySelectorAll('#signature-buttons button').forEach(btn => {
   btn.addEventListener('click', () => {
     const key = btn.getAttribute('data-signature');
     const data = signatures[key];
+
+    setBmfStyle();
 
     // Вставляем подпись
     document.getElementById('custom-signature').innerHTML = `<p>${data.signature}</p>`;
@@ -418,16 +423,69 @@ document.getElementById('file-input').addEventListener('change', (event) => {
     }
     handleContainer.style.display = 'none';
   });
+function updateAllPagesContacts(isBmf) {
+  // Обновляем все блоки с классом .commercial-company на странице
+  document.querySelectorAll('.commercial-company').forEach(block => {
+    if (isBmf) {
+      block.innerHTML = `
+        <p>ООО «БМФ»</p>
+        <p>Адрес</p>
+        <p>Телефон</p>
+        <p>kl@kreslaopt.ru</p>
+      `;
+    } else {
+      block.innerHTML = `
+        <p>ООО «ФЕСТ»</p>
+        <p>ЯРОСЛАВЛЬ, УЛИЦА РЕВОЛЮЦИОННАЯ, ДОМ 30, ОФИС 1</p>
+        <p>8 800 350 12 34</p>
+        <p>sale@utfc.ru</p>
+      `;
+    }
+  });
 
-  // Функция для вставки данных первой компании по умолчанию
-function setDefaultSignature() {
-  const defaultData = signatures['first'];
-  document.getElementById('custom-signature').innerHTML = `<p>${defaultData.signature}</p>`;
-  document.getElementById('custom-fax').innerHTML = `<img src="${defaultData.stamp}" style="max-width: 200px; position: absolute; bottom: 5px; left: 9px;">`;
-  document.getElementById('custom-dir').innerHTML = `<p>${defaultData.dir}</p>`;
-  document.getElementById('custom-name_dir').innerHTML = `<p>${defaultData.name_dir}</p>`;
+  // Обновляем логотипы и титулы на всех страницах
+  document.querySelectorAll('.commercial-logo img').forEach(img => {
+    img.src = isBmf ? 'img/logo_bmf_color.png' : 'img/logo_color.png';
+  });
+  document.querySelectorAll('.commercial-titul-site img').forEach(img => {
+    img.src = isBmf ? 'img/titul_commercial_site_2.png' : 'img/titul_commercial_site.png';
+  });
+  document.querySelectorAll('.commercial-titul-logo img').forEach(img => {
+    img.src = isBmf ? 'img/titul_commercial_2.png' : 'img/titul_commercial_1.png';
+  });
 }
 
+function setBmfBackgrounds(isBmf) {
+  // Меняем цвет фона page-number-box
+  document.querySelectorAll('.page-number-box').forEach(el => {
+    el.style.backgroundColor = isBmf ? '#45AAED' : '#96C22B'; // голубой или салатовый
+  });
+
+    document.querySelectorAll('.commercial-table tr:nth-child(odd)').forEach(el => {
+    el.style.backgroundColor = isBmf ? '#45AAED' : '#96C22B'; // голубой или салатовый
+  });
+
+  // Меняем цвет текста current-date
+  document.querySelectorAll('#current-date').forEach(el => {
+    el.style.color = isBmf ? '#45AAED' : '#96C22B';
+  });
+}
+
+function setLogosAndBackgrounds(isBmf) {
+  // Меняем логотип и титул
+  const logo = document.querySelector('.commercial-logo img');
+  const titolSite = document.querySelector('.commercial-titul-site img');
+
+  if (isBmf) {
+    if (logo) logo.src = 'img/logo_bmf_color.png.png';
+    if (titolSite) titolSite.src = 'img/titul_bmf.png';
+    setBmfBackgrounds(true);
+  } else {
+    if (logo) logo.src = 'img/logo_color.png';
+    if (titolSite) titolSite.src = 'img/titul_commercial_site.png';
+    setBmfBackgrounds(false);
+  }
+}
 
 
         // Функция для получения данных из localStorage
@@ -685,6 +743,79 @@ async function createCommercialProduct(product, index) {
 //     });
 // }
 
+let isSignatureBlocksVisible = true;
+
+function toggleSignatureBlocks(show) {
+  const blocks = [
+    document.getElementById('custom-fax'),
+    document.getElementById('custom-signature'),
+    document.getElementById('custom-dir'),
+    document.getElementById('custom-name_dir')
+  ];
+  blocks.forEach(el => {
+    if (el) el.style.display = show ? '' : 'none';
+  });
+  isSignatureBlocksVisible = show;
+}
+
+// Функция для установки содержимого из signatures
+function setSignatureContent(key) {
+  const data = signatures[key] || signatures['fourth']; // по умолчанию — "отсутствует"
+
+  // Обновляем содержимое блоков
+  document.getElementById('custom-signature').innerHTML = `<p>${data.signature}</p>`;
+  document.getElementById('custom-fax').innerHTML = `<img src="${data.stamp}" style="max-width: 200px;">`;
+  document.getElementById('custom-dir').innerHTML = `<p>${data.dir}</p>`;
+  document.getElementById('custom-name_dir').innerHTML = `<p>${data.name_dir}</p>`;
+}
+
+// Обработчики кнопок
+document.querySelector('button[data-signature="second"]').addEventListener('click', () => {
+    
+  toggleSignatureBlocks(true);
+  setSignatureContent('second');
+  setLogosAndBackgrounds(true);
+  updateSignatureAndLogos(true);
+  updateAllPagesContacts(true);
+  
+  // Меняем логотип и титул, если нужно
+  const logo = document.querySelector('.commercial-logo img');
+  if (logo) logo.src = 'img/logo_bmf_color.png';
+
+  const titolSite = document.querySelector('.commercial-titul-site img');
+  if (titolSite) titolSite.src = 'img/titul_commercial_site_2.png';
+
+  
+  const titolFon = document.querySelector('.commercial-titul-logo img');
+  if (titolFon) titolFon.src = 'img/titul_commercial_2.png';
+});
+
+
+
+document.querySelector('button[data-signature="first"]').addEventListener('click', () => {
+  toggleSignatureBlocks(true);
+  setSignatureContent('first');
+  setLogosAndBackgrounds(false);
+  updateSignatureAndLogos(false);
+  updateAllPagesContacts(false);
+  // Меняем логотип и титул обратно
+  const logo = document.querySelector('.commercial-logo img');
+  if (logo) logo.src = 'img/logo_color.png';
+
+  const titolSite = document.querySelector('.commercial-titul-site img');
+  if (titolSite) titolSite.src = 'img/titul_commercial_site.png';
+
+    const titolFon = document.querySelector('.commercial-titul-logo img');
+  if (titolFon) titolFon.src = 'img/titul_commercial_1.png';
+});
+
+document.querySelector('button[data-signature="fourth"]').addEventListener('click', () => {
+  toggleSignatureBlocks(false); // скрываем блоки
+  setLogosAndBackgrounds(false);
+  setSignatureContent('first');
+  updateSignatureAndLogos(false);
+  updateAllPagesContacts(false);
+});
 // Функция для загрузки изображений с диска
 function setupLoadImagesButtons() {
     document.querySelectorAll('.load-images-button').forEach(button => {
@@ -939,6 +1070,42 @@ async function generateCommercialOffer() {
         button.style.display = '';
     });
 }
+
+
+function updateSignatureAndLogos(isBmf) {
+  const companyBlock = document.querySelector('.commercial-company');
+  const logoImg = document.querySelector('.commercial-logo img');
+  const titulSiteImg = document.querySelector('.commercial-titul-site img');
+  const titulLogoImg = document.querySelector('.commercial-titul-logo img');
+
+  if (isBmf) {
+    // Обновляем содержание блока компании
+    companyBlock.innerHTML = `
+      <p>ООО «БМФ»</p>
+      <p>Адрес</p>
+      <p>Телефон</p>
+      <p>kl@kreslaopt.ru</p>
+    `;
+    // Меняем логотип и титул
+    if (logoImg) logoImg.src = 'img/logo_bmf_color.png';
+    if (titulSiteImg) titulSiteImg.src = 'img/titul_bmf.png';
+    if (titulLogoImg) titulLogoImg.src = 'img/titul_commercial_2.png';
+  } else {
+    // Обновляем содержание блока компании
+    companyBlock.innerHTML = `
+      <p>ООО «ФЕСТ»</p>
+      <p>ЯРОСЛАВЛЬ, УЛИЦА РЕВОЛЮЦИОННАЯ, ДОМ 30, ОФИС 1</p>
+      <p>8 800 350 12 34</p>
+      <p>sale@utfc.ru</p>
+    `;
+    // Меняем логотип и титул
+    if (logoImg) logoImg.src = 'img/logo_color.png';
+    if (titulSiteImg) titulSiteImg.src = 'img/titul_commercial_site.png';
+    if (titulLogoImg) titulLogoImg.src = 'img/titul_commercial_1.png';
+  }
+}
+
+
 function updatePageNumbers() {
     // Удаляем все существующие номера страниц
     document.querySelectorAll('.page-number-box').forEach(el => el.remove());
@@ -987,6 +1154,7 @@ async function loadAndDisplayProducts() {
                 <p>8 800 350 12 34</p>
                 <p>sale@utfc.ru</p>
             </div>
+            
         `;
 
         // Создаём таблицу для текущей страницы
@@ -1085,6 +1253,8 @@ window.onload = async () => {
     setDefaultSignature();
     // setupSaveImagesButtons();
     setupImageClickHandlers(); 
+    setSignatureContent('first');
+    setLogosAndBackgrounds(false);
 };
     </script>
 </body>
