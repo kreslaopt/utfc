@@ -228,8 +228,8 @@
 
 <div id="signature-buttons" style="display: flex; gap: 10px;">
   <button data-signature="first" style="background-color: #555; color: #fff;">ООО Фест</button>
-  <button data-signature="second" style="background-color: #555; color: #fff;">Поставщик 2</button>
-  <button data-signature="third" style="background-color: #555; color: #fff;">Поставщик 3</button>
+  <button data-signature="second" style="background-color: #555; color: #fff;">БМФ</button>
+  <!-- <button data-signature="third" style="background-color: #555; color: #fff;">Поставщик 3</button> -->
   <button data-signature="fourth" style="background-color: #555; color: #fff;">Отсутствует</button>
 </div>
 
@@ -261,11 +261,11 @@ document.getElementById('delete-icon-blocks').addEventListener('click', () => {
     email: 'sale@utfc.ru',
   },
   second: {
-    signature: 'Поставщик: ООО «Поставщик 2»',
-    dir: 'Директор',
-    name_dir: 'Иванов И.И.',
+    signature: 'Поставщик: ООО «БМФ»',
+    dir: 'Коммерческий директор',
+    name_dir: 'Ломакина Е.К.',
     stamp: 'img/fax2.png',
-    company: 'ООО «Поставщик 2»',
+    company: 'ООО «БМФ»',
     address: 'Адрес',
     phone: 'Телефон',
     email: 'E-mail',
@@ -423,7 +423,7 @@ document.getElementById('file-input').addEventListener('change', (event) => {
 function setDefaultSignature() {
   const defaultData = signatures['first'];
   document.getElementById('custom-signature').innerHTML = `<p>${defaultData.signature}</p>`;
-  document.getElementById('custom-fax').innerHTML = `<img src="${defaultData.stamp}" style="max-width: 200px; position: absolute; bottom: 35px; left: 9px;">`;
+  document.getElementById('custom-fax').innerHTML = `<img src="${defaultData.stamp}" style="max-width: 200px; position: absolute; bottom: 5px; left: 9px;">`;
   document.getElementById('custom-dir').innerHTML = `<p>${defaultData.dir}</p>`;
   document.getElementById('custom-name_dir').innerHTML = `<p>${defaultData.name_dir}</p>`;
 }

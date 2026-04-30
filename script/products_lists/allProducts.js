@@ -1480,6 +1480,11 @@ const knownProductsAllFiles = [
     "is_archive": false
   },
   {
+    "name": "Ультра т-02 н пластик pl660",
+    "category": "armchair_comfort",
+    "is_archive": false
+  },
+  {
     "name": "Фест к-11 н пластик",
     "category": "armchair_rukovoditel",
     "is_archive": false

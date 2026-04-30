@@ -69,7 +69,7 @@
     ],
     "dimensions": [
         {
-            "brutto": "",
+            "brutto": "11,8",
             "netto": "10,50",
             "volume": "0,16"
         }
@@ -198,11 +198,11 @@
                 "min": ""
             },
             "runners_width": {
-                "max": "450",
+                "max": "",
                 "min": ""
             },
             "runners_depth": {
-                "max": "700",
+                "max": "",
                 "min": ""
             },
             "seat_to_floor_height_upper": {

@@ -553,9 +553,9 @@
         <th contenteditable="true">Особенности</th>
         <th contenteditable="true">Ролики</th>
         <th colspan="3" contenteditable="true">Фото</th>
-        <th contenteditable="true">Цена 1</th>
-        <th contenteditable="true">Цена 2</th>
-        <th contenteditable="true">Цена 3</th>
+        <th contenteditable="true">Ярославль</th>
+        <th contenteditable="true">Храпуново</th>
+        <th contenteditable="true">Санкт-Петербург</th>
         <th contenteditable="true">Кол-во</th>
         <th contenteditable="true">QR-код</th>
                             </tr>
@@ -586,9 +586,9 @@
                                 <th>Особенности</th>
                                 <th>Ролики</th>
                                 <th colspan="3">Фото</th>
-                                <th>Цена 1</th>
-                                <th>Цена 2</th>
-                                <th>Цена 3</th>
+                                <th>Ярославль</th>
+                                <th>Храпуново</th>
+                                <th>Санкт-Петербург</th>
                                 <th>QR-код</th>
                             </tr>
                         </thead>
@@ -3384,19 +3384,19 @@ if (armrestTypeFilters.length > 0) {
                         childRow.appendChild(imgCell);
                     }
 
-                    // Цена 1
+                    // Ярославль
                     const price_1_Cell = document.createElement('td');
                     price_1_Cell.textContent = child.CV_PRICE_1 ? `${child.CV_PRICE_1} ${child.CV_CURRENCY_1 || 'RUB'}` : (parent.CV_PRICE_1 ? `${parent.CV_PRICE_1} ${parent.CV_CURRENCY_1 || 'RUB'}` : '—');
                     childRow.appendChild(price_1_Cell);
 
-                    // Цена 2
+                    // Храпуново
                     const price_2_Cell = document.createElement('td');
-                    price_2_Cell.textContent = child.CV_PRICE_2 ? `${child.CV_PRICE_2} ${child.CV_CURRENCY_2 || 'RUB'}` : (parent.CV_PRICE_2 ? `${parent.CV_PRICE_2} ${parent.CV_CURRENCY_2 || 'RUB'}` : '—');
+                    price_2_Cell.textContent = child.CV_PRICE_3 ? `${child.CV_PRICE_3} ${child.CV_CURRENCY_3 || 'RUB'}` : (parent.CV_PRICE_3 ? `${parent.CV_PRICE_3} ${parent.CV_CURRENCY_3 || 'RUB'}` : '—');
                     childRow.appendChild(price_2_Cell);
 
-                    // Цена 3
+                    // Санкт-Петербург
                     const price_3_Cell = document.createElement('td');
-                    price_3_Cell.textContent = child.CV_PRICE_3 ? `${child.CV_PRICE_3} ${child.CV_CURRENCY_3 || 'RUB'}` : (parent.CV_PRICE_3 ? `${parent.CV_PRICE_3} ${parent.CV_CURRENCY_3 || 'RUB'}` : '—');
+                    price_3_Cell.textContent = child.CV_PRICE_2 ? `${child.CV_PRICE_2} ${child.CV_CURRENCY_3 || 'RUB'}` : (parent.CV_PRICE_2 ? `${parent.CV_PRICE_2} ${parent.CV_CURRENCY_2 || 'RUB'}` : '—');
                     childRow.appendChild(price_3_Cell);
 
                     // Колонка "Действия" с кнопками +/-
@@ -3839,23 +3839,23 @@ if (armrestTypeFilters.length > 0) {
                     row.appendChild(imgCell);
                 }
 
-                // Цена 1
+                // Ярославль
                 const price1Cell = document.createElement('td');
                 price1Cell.textContent = data.CV_PRICE_1 ? `${data.CV_PRICE_1} ${data.CV_CURRENCY_1 || 'RUB'}` : '—';
                 price1Cell.contentEditable = true;
                 price1Cell.onblur = () => saveEditableField(name, 'CV_PRICE_1', price1Cell.textContent);
                 row.appendChild(price1Cell);
 
-                // Цена 2
+                // Храпуново
                 const price2Cell = document.createElement('td');
-                price2Cell.textContent = data.CV_PRICE_2 ? `${data.CV_PRICE_2} ${data.CV_CURRENCY_2 || 'RUB'}` : '—';
+                price2Cell.textContent = data.CV_PRICE_3 ? `${data.CV_PRICE_3} ${data.CV_CURRENCY_3 || 'RUB'}` : '—';
                 price2Cell.contentEditable = true;
                 price2Cell.onblur = () => saveEditableField(name, 'CV_PRICE_2', price2Cell.textContent);
                 row.appendChild(price2Cell);
 
-                // Цена 3
+                // Санкт-Петербург
                 const price3Cell = document.createElement('td');
-                price3Cell.textContent = data.CV_PRICE_3 ? `${data.CV_PRICE_3} ${data.CV_CURRENCY_3 || 'RUB'}` : '—';
+                price3Cell.textContent = data.CV_PRICE_2 ? `${data.CV_PRICE_2} ${data.CV_CURRENCY_2 || 'RUB'}` : '—';
                 price3Cell.contentEditable = true;
                 price3Cell.onblur = () => saveEditableField(name, 'CV_PRICE_3', price3Cell.textContent);
                 row.appendChild(price3Cell);

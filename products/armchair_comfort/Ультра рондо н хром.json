@@ -192,11 +192,11 @@
                 "min": ""
             },
             "runners_width": {
-                "max": "450",
+                "max": "",
                 "min": ""
             },
             "runners_depth": {
-                "max": "700",
+                "max": "",
                 "min": ""
             },
             "seat_to_floor_height_upper": {
