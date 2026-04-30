@@ -1310,22 +1310,22 @@ const knownProductsAllFiles = [
     "is_archive": false
   },
   {
-    "name": "Соло Макс Комби пластик",
+    "name": "Соло макс комби пластик",
     "category": "armchair_rukovoditel",
     "is_archive": false
   },
   {
-    "name": "Соло Макс Комби хром",
+    "name": "Соло макс комби хром",
     "category": "armchair_rukovoditel",
     "is_archive": false
   },
   {
-    "name": "Соло Макс СН-602 пластик",
+    "name": "Соло макс ch-602 пластик",
     "category": "armchair_rukovoditel",
     "is_archive": false
   },
   {
-    "name": "Соло Макс СН-602 хром",
+    "name": "Соло макс ch-602 хром",
     "category": "armchair_rukovoditel",
     "is_archive": false
   },
