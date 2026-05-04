@@ -1228,7 +1228,7 @@ function loadEditableHeaders() {
                 // Проверяем, содержит ли строка последовательность searchWords
                 // Например, ищем подмассив searchWords внутри objWords
                 // return containsSequence(objWords, searchWords); //ищет последовательность слов
-                return searchWords.some(word => objWords.includes(word)); //ищет любое вхождение слова
+                return searchWords.every(word => objWords.includes(word)); 
         //         const objText = normalizeSearchTerm(obj);
         // return searchWords.some(word => new RegExp(`\\b${word}\\b`, 'i').test(objText));
             }
