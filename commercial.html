@@ -122,7 +122,9 @@
     </div> 
 
     <!-- Блоки товаров -->
-    <div id="commercial-products"></div>
+    <div id="commercial-products">
+        
+    </div>
 
     <div class="a4-container">
         <!-- Завершающая страница -->
@@ -212,6 +214,7 @@
             <p>Директор</p>
         </div>
          <div class="fax" id="custom-fax">
+            <img src="img/fax.png" alt="Печать" style="max-width: 200px;">
         </div>
         <div class="name_dir" contenteditable="true" id="custom-name_dir">
             <p>Коротков А.Е.</p>
@@ -236,6 +239,12 @@
     <script>
 
             let isBmfSelected = false; // по умолчанию "Фест"
+            let pageNumberBgColor = '#96C22B';
+            let currentTitulSiteSrc = 'img/titul_commercial_site.png'; // по умолчанию - Фест
+            let bmfPhoneSrc = 'img/titul_commercial_site_2.png';
+            let festFaxSrc = 'img/fax.png';
+            let bmfTitulSiteSrc = 'img/titul_bmf.png';
+            let festTitulSiteSrc = 'img/titul_commercial_site.png';
 
 // Устанавливаем текущую дату для всех элементов с классом commercial-date
 document.querySelectorAll('.commercial-date span').forEach(el => {
@@ -269,8 +278,8 @@ document.getElementById('delete-icon-blocks').addEventListener('click', () => {
     name_dir: 'Ломакина Е.К.',
     stamp: 'img/fax2.png',
     company: 'ООО «БМФ»',
-    address: 'Адрес',
-    phone: 'Телефон',
+    address: '150062, ЯРОСЛАВСКАЯ ОБЛАСТЬ, ГОРОД ЯРОСЛАВЛЬ, УЛИЦА ЯКОВЛЕВСКАЯ 1-Я, Д. 10, ЛИТЕР В',
+    phone: '8 800 350 12 34',           
     email: 'kl@kreslaopt.ru',
   },
   third: {
@@ -299,8 +308,6 @@ document.querySelectorAll('#signature-buttons button').forEach(btn => {
   btn.addEventListener('click', () => {
     const key = btn.getAttribute('data-signature');
     const data = signatures[key];
-
-    setBmfStyle();
 
     // Вставляем подпись
     document.getElementById('custom-signature').innerHTML = `<p>${data.signature}</p>`;
@@ -429,8 +436,8 @@ function updateAllPagesContacts(isBmf) {
     if (isBmf) {
       block.innerHTML = `
         <p>ООО «БМФ»</p>
-        <p>Адрес</p>
-        <p>Телефон</p>
+        <p>150062, ЯРОСЛАВСКАЯ ОБЛАСТЬ, ГОРОД ЯРОСЛАВЛЬ, УЛИЦА ЯКОВЛЕВСКАЯ 1-Я, Д. 10, ЛИТЕР В</p>
+        <p>8 800 350 12 34</p>
         <p>kl@kreslaopt.ru</p>
       `;
     } else {
@@ -453,12 +460,18 @@ function updateAllPagesContacts(isBmf) {
   document.querySelectorAll('.commercial-titul-logo img').forEach(img => {
     img.src = isBmf ? 'img/titul_commercial_2.png' : 'img/titul_commercial_1.png';
   });
+  
 }
 
 function setBmfBackgrounds(isBmf) {
   // Меняем цвет фона page-number-box
   document.querySelectorAll('.page-number-box').forEach(el => {
     el.style.backgroundColor = isBmf ? '#45AAED' : '#96C22B'; // голубой или салатовый
+  });
+
+  pageNumberBgColor = isBmf ? '#45AAED' : '#96C22B'; // сохраняем актуальный цвет
+  document.querySelectorAll('.page-number-box').forEach(el => {
+    el.style.backgroundColor = pageNumberBgColor;
   });
 
     document.querySelectorAll('.commercial-table tr:nth-child(odd)').forEach(el => {
@@ -477,9 +490,10 @@ function setLogosAndBackgrounds(isBmf) {
   const titolSite = document.querySelector('.commercial-titul-site img');
 
   if (isBmf) {
-    if (logo) logo.src = 'img/logo_bmf_color.png.png';
-    if (titolSite) titolSite.src = 'img/titul_bmf.png';
+    if (logo) logo.src = 'img/logo_bmf_color.png';
+    if (titolSite) titolSite.src = 'img/titul_commercial_site_2.png';
     setBmfBackgrounds(true);
+    isBmfSelected = true;
   } else {
     if (logo) logo.src = 'img/logo_color.png';
     if (titolSite) titolSite.src = 'img/titul_commercial_site.png';
@@ -676,10 +690,11 @@ async function createCommercialProduct(product, index) {
         { label: 'Ролики', value: product.Ролики },
     ];
 
+    const imageSrc = isBmfSelected ? 'img/titul_commercial_site_2.png' : 'img/titul_commercial_site.png';
     let detailsHTML = `
-        <div class="commercial-titul-site">
-            <img src="img/titul_commercial_site.png" alt="Фоновое изображение">
-        </div>
+  <div class="commercial-titul-site">
+        <img src="${imageSrc}" alt="Фоновое изображение">
+    </div>
         <h3>${index + 1}. ${product.name}</h3>
         <div class="commercial-product-images">
             ${imagesHTML}
@@ -1015,7 +1030,6 @@ function setupImageClickHandlers() {
     });
 }
 
-  // Функция для генерации PDF
 // Функция для генерации PDF
 async function generateCommercialOffer() {
     // Скрываем все кнопки "Сохранить все изображения" внутри блоков товаров
@@ -1072,6 +1086,8 @@ async function generateCommercialOffer() {
 }
 
 
+
+// Функция обновления подписи, логотипов и титульных изображений
 function updateSignatureAndLogos(isBmf) {
   const companyBlock = document.querySelector('.commercial-company');
   const logoImg = document.querySelector('.commercial-logo img');
@@ -1079,28 +1095,39 @@ function updateSignatureAndLogos(isBmf) {
   const titulLogoImg = document.querySelector('.commercial-titul-logo img');
 
   if (isBmf) {
-    // Обновляем содержание блока компании
-    companyBlock.innerHTML = `
-      <p>ООО «БМФ»</p>
-      <p>Адрес</p>
-      <p>Телефон</p>
-      <p>kl@kreslaopt.ru</p>
-    `;
-    // Меняем логотип и титул
+    // Обновляем содержание блока компании для БМФ
+    if (companyBlock) {
+      companyBlock.innerHTML = `
+        <p>ООО «БМФ»</p>
+        <p>150062, ЯРОСЛАВСКАЯ ОБЛАСТЬ, ГОРОД ЯРОСЛАВЛЬ, УЛИЦА ЯКОВЛЕВСКАЯ 1-Я, Д. 10, ЛИТЕР В</p>
+        <p>8 800 350 12 34</p>
+        <p>kl@kreslaopt.ru</p>
+      `;
+    }
+    // Меняем логотип и титульное изображение
     if (logoImg) logoImg.src = 'img/logo_bmf_color.png';
-    if (titulSiteImg) titulSiteImg.src = 'img/titul_bmf.png';
+    if (titulSiteImg) {
+      titulSiteImg.src = 'img/titul_bmf.png';
+      currentTitulSiteSrc = 'img/titul_bmf.png'; // обновляем переменную
+    }
     if (titulLogoImg) titulLogoImg.src = 'img/titul_commercial_2.png';
+
   } else {
-    // Обновляем содержание блока компании
-    companyBlock.innerHTML = `
-      <p>ООО «ФЕСТ»</p>
-      <p>ЯРОСЛАВЛЬ, УЛИЦА РЕВОЛЮЦИОННАЯ, ДОМ 30, ОФИС 1</p>
-      <p>8 800 350 12 34</p>
-      <p>sale@utfc.ru</p>
-    `;
-    // Меняем логотип и титул
+    // Обновляем содержание блока компании для Фест
+    if (companyBlock) {
+      companyBlock.innerHTML = `
+        <p>ООО «ФЕСТ»</p>
+        <p>ЯРОСЛАВЛЬ, УЛИЦА РЕВОЛЮЦИОННАЯ, ДОМ 30, ОФИС 1</p>
+        <p>8 800 350 12 34</p>
+        <p>sale@utfc.ru</p>
+      `;
+    }
+    // Меняем логотип и титульное изображение
     if (logoImg) logoImg.src = 'img/logo_color.png';
-    if (titulSiteImg) titulSiteImg.src = 'img/titul_commercial_site.png';
+    if (titulSiteImg) {
+      titulSiteImg.src = 'img/titul_commercial_site.png';
+      currentTitulSiteSrc = 'img/titul_commercial_site.png'; // обновляем переменную
+    }
     if (titulLogoImg) titulLogoImg.src = 'img/titul_commercial_1.png';
   }
 }
@@ -1116,8 +1143,10 @@ function updatePageNumbers() {
         const pageNumberBox = document.createElement('div');
         pageNumberBox.className = 'page-number-box';
         pageNumberBox.innerHTML = `<span class="page-number-text">${index}</span>`;
+        pageNumberBox.style.backgroundColor = pageNumberBgColor; // используем сохраненный цвет
         page.appendChild(pageNumberBox);
     });
+    
 }
 // Загружаем данные из localStorage и отображаем их на странице
 async function loadAndDisplayProducts() {
@@ -1195,6 +1224,7 @@ async function loadAndDisplayProducts() {
 // Привязываем функцию к кнопке
 document.getElementById('generateOffer').addEventListener('click', async function() {
     try {
+        
         const data = getFinalSelectionData();
         if (data.length === 0) {
             alert("Нет товаров для формирования PDF!");
@@ -1235,12 +1265,15 @@ document.getElementById('generateOffer').addEventListener('click', async functio
 
         // Обновляем нумерацию страниц в HTML
         updatePageNumbers();
+        
 
         // Ждём 1 секунду на случай, если QR-коды ещё грузятся
         await new Promise(resolve => setTimeout(resolve, 1000));
 
         // Генерируем PDF
+        
         await generateCommercialOffer();
+        
     } catch (error) {
         console.error("Ошибка при генерации PDF:", error);
         alert("Не удалось сформировать PDF. Проверьте консоль для деталей.");
@@ -1255,6 +1288,7 @@ window.onload = async () => {
     setupImageClickHandlers(); 
     setSignatureContent('first');
     setLogosAndBackgrounds(false);
+        updateSignatureAndLogos(true);
 };
     </script>
 </body>
