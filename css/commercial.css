@@ -215,6 +215,9 @@ h3 {
   gap: 10px;
   margin-top: 5px;
   margin-left: 50px;
+  background: #96C22B;
+  color: white;
+  border-color: #96C22B;
 }
 
 .commercial-titul-logo {
