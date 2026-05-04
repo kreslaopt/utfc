@@ -88,7 +88,7 @@ def main():
                 unique_children = defaultdict(list)
                 for child in parent_to_children[parent_id]:
                     try:
-                        key = (child.get('IE_NAME'), child.get('IP_PROP35'))
+                        key = (child.get('IE_NAME'), child.get('IP_PROP34'))
                         unique_children[key].append(child)
                     except Exception as e:
                         logger.error(f"Ошибка группировки ребёнка: {e}")

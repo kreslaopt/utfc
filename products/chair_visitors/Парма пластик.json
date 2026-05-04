@@ -1,172 +1,297 @@
 {
-  "namefile": [
-    "Парма пластик"
-  ],
-  "name_all": [
-    "Парма хром",
-    "Парма пластик"
-  ],
-  "name": [
-    "Парма пластик"
-  ],
-  "unique_name": [
-    "Парма пластик"
-  ],
-  "vid": [
-    "кресло"
-  ],
-  "category": [
-    "кресло"
-  ],
-  "destiny": [
-    "ежедневной работы в офисных и домашних помещениях"
-  ],
-  "technical_requirements": [
-    [
-      "Кресло должно соответствовать требованиям:",
-      "ГОСТ 19917-2014 «Мебель для сидения и лежания. Общие технические условия»",
-      "ГОСТ 26800.3-86 «Мебель для административных помещений. Функциональные размеры»",
-      "настоящего технического описания",
-      "комплекта конструкторской документации",
-      "образцу-эталону, утвержденному в установленном порядке производителем"
-    ]
-  ],
-  "construction_and_materials": [
-    {
-      "upholstery_materials": [
-        "- материал облицовки спинки и сиденья: велюр (Velutto), ткань (Moderno)\n<br>- цвет материала и пластика - по каталогу"
-      ],
-      "components": [
-        "спинки, сиденья, пиастры, газ-лифта, пятилучья и 5-ти роликов",
-        "<strong>Спинка</strong> состоит из основания фанерного, вкладыша пенополиуретанового (жесткость - 60, плотность - 40 кг/м<sup>3</sup>) и обивочного элемента. Крепится к сиденью с помощью саморезов",
-        "<strong>Материал облицовки спинки и сиденья:</strong> велюр (Velutto), ткань (Moderno)",
-        "<strong>Пиастра</strong> крепится к основанию сиденья с помощью 4-х винтов, снабжена рычагом регулировки газ-лифта",
-        "<strong>Газ-лифт</strong> с высотой подъема 140 мм ± 10 мм позволяет плавно регулировать высоту сиденья относительно пола",
-        "<strong>Пятилучье</strong> пластиковое с узкими лучами d=660 мм с 5-тью роликами обеспечивает устойчивость и позволяет креслу легко поворачиваться и перемещаться по любому стандартному покрытию пола",
-        "<strong>Ролики</strong> с полиуретановым покрытием d=50 мм имеют узкий шток"
-      ]
-    }
-  ],
-  "transportation": [
-    {
-      "standard": "ГОСТ 16371-2014",
-      "packaging": {
-        "type": "5-слойный гофрокороб",
-        "size": {
-          "width": 570,
-          "depth": 510,
-          "height": 610
-        },
-        "box_size": "570х510х610",
-        "transportation": "удобства транспортировки и хранения кресло поставляется в разобранном виде<br>Каждое кресло упаковано в отдельный 5-слойный гофрокороб размером"
-      }
-    }
-  ],
-  "dimensions": [
-    {
-      "brutto": "10,25",
-      "netto": "8,75",
-      "volume": "0,18"
-    }
-  ],
-  "guarantee": [
-    {
-      "period": "12",
-      "max_load": "120",
-      "recommended_load": "90"
-    }
-  ],
-  "images": [
-    {
-      "vid_main": "img/chair_visitors/parma_pl_m02_01.png",
-      "chair_view": "img/chair_visitors/parma_pl_m02_02.png",
-      "dimensions": "img/chair_visitors/dimensions/parma_pl_m02_01.png",
-      "box": "img/box_UTFC.png"
-    }
-  ],
+    "namefile": [
+        "Парма пластик"
+    ],
+    "name_all": [
+        "Парма хром",
+        "Парма пластик"
+    ],
+    "name": [
+        "Парма пластик"
+    ],
+    "unique_name": [
+        "Парма пластик"
+    ],
+    "vid": [
+        "кресло"
+    ],
+    "category": [
+        "кресло"
+    ],
+    "destiny": [
+        "ежедневной работы в офисных и домашних помещениях"
+    ],
+    "technical_requirements": [
+        [
+            "Кресло должно соответствовать требованиям:",
+            "ГОСТ 19917-2014 «Мебель для сидения и лежания. Общие технические условия»",
+            "ГОСТ 26800.3-86 «Мебель для административных помещений. Функциональные размеры»",
+            "настоящего технического описания",
+            "комплекта конструкторской документации",
+            "образцу-эталону, утвержденному в установленном порядке производителем"
+        ]
+    ],
+    "construction_and_materials": [
+        {
+            "upholstery_materials": [
+                "- материал облицовки спинки и сиденья: велюр (Velutto), ткань (Moderno)\n<br>- цвет материала и пластика - по каталогу"
+            ],
+            "components": [
+                "спинки, сиденья, пиастры, газ-лифта, пятилучья и 5-ти роликов",
+                "<strong>Спинка</strong> состоит из основания фанерного, вкладыша пенополиуретанового (жесткость - 60, плотность - 40 кг/м<sup>3</sup>) и обивочного элемента. Крепится к сиденью с помощью саморезов",
+                "<strong>Материал облицовки спинки и сиденья:</strong> велюр (Velutto), ткань (Moderno)",
+                "<strong>Пиастра</strong> крепится к основанию сиденья с помощью 4-х винтов, снабжена рычагом регулировки газ-лифта",
+                "<strong>Газ-лифт</strong> с высотой подъема 140 мм ± 10 мм позволяет плавно регулировать высоту сиденья относительно пола",
+                "<strong>Пятилучье</strong> пластиковое с узкими лучами d=660 мм с 5-тью роликами обеспечивает устойчивость и позволяет креслу легко поворачиваться и перемещаться по любому стандартному покрытию пола",
+                "<strong>Ролики</strong> с полиуретановым покрытием d=50 мм имеют узкий шток"
+            ]
+        }
+    ],
+    "transportation": [
+        {
+            "standard": "ГОСТ 16371-2014",
+            "packaging": {
+                "type": "5-слойный гофрокороб",
+                "size": {
+                    "width": 570,
+                    "depth": 510,
+                    "height": 610
+                },
+                "box_size": "570х510х610",
+                "transportation": "удобства транспортировки и хранения кресло поставляется в разобранном виде<br>Каждое кресло упаковано в отдельный 5-слойный гофрокороб размером"
+            }
+        }
+    ],
+    "dimensions": [
+        {
+            "brutto": "10,25",
+            "netto": "8,75",
+            "volume": "0,18"
+        }
+    ],
+    "guarantee": [
+        {
+            "period": "12",
+            "max_load": "120",
+            "recommended_load": "90"
+        }
+    ],
+    "images": [
+        {
+            "vid_main": "img/chair_visitors/parma_pl_m02_01.png",
+            "chair_view": "img/chair_visitors/parma_pl_m02_02.png",
+            "dimensions": "img/chair_visitors/dimensions/parma_pl_m02_01.png",
+            "box": "img/box_UTFC.png",
+            "additional": [
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/uf/94b/291cco6tzr1fr12bcx6ytknw6pm4plyo.png",
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/4eb/4eb06b2dd648457967e2c44f2585cc09/9c0fe572cee1f5715283f15de2255b7f.png",
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/resize_cache/27528/f9a783e5b6ef0ba37f754dbaaffb7194/iblock/4eb/4eb06b2dd648457967e2c44f2585cc09/9c0fe572cee1f5715283f15de2255b7f.png",
+                "https://utfc.ru/upload/resize_cache/iblock/405/70_70_0/6az8ijq3kwo614y93g1tk5dxfw4xk8zx.png",
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/uf/365/jz72k44xuf7njrx7r16y8g4a6insl333.png",
+                "https://utfc.ru/local/templates/utfc/img/icon-4.png",
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/uf/cb1/th2r9a8a4dc4w87zerng51hbjt9062ai.png",
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/uf/785/78599280ecd367086205dacabe880579.png",
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/resize_cache/27530/f9a783e5b6ef0ba37f754dbaaffb7194/iblock/4ce/4cea07c670162d694e5ba1c1a0b09a89/343010645a43730ff941f7a3a309b09f.png",
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/bc2/bc2166b704579feb802cd10858a30bba.png",
+                "https://utfc.ru/upload/resize_cache/iblock/5f2/70_70_0/jtoqpoxf3v0ai54dthupo7bqv6dlhff8.png",
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/6fd/6fd34bb42edbcd9a72e1a2e4cf8e6070/015ec2f12ed0ea913b8fbaf53e97fb65.png",
+                "https://utfc.ru/local/templates/utfc/img/icon-2.png",
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/uf/0bd/0bdb46b69b016449943ecc987b42e113.png",
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/8fa/8fa3aa06462206bb02b168d2cc9eaedf/2b4b4a96b969b83aca3b404751b128dd.png",
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/resize_cache/27531/f9a783e5b6ef0ba37f754dbaaffb7194/iblock/ef2/ef2136ec79839469ba3c43dfa359a216/a913ad2df460809db2c9b689d1dbb80f.png",
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/ef2/ef2136ec79839469ba3c43dfa359a216/a913ad2df460809db2c9b689d1dbb80f.png",
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/4ce/4cea07c670162d694e5ba1c1a0b09a89/343010645a43730ff941f7a3a309b09f.png",
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/uf/10c/10c5a4d662d70084372d923fe7bec314.png",
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/b82/yrw2kqzjb7n4iz8h66e0id4zqe70gpso.png",
+                "https://utfc.ru/local/templates/utfc/img/sites/utfc/logo_down_2.png",
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/uf/e7e/ptsn7azj32k52zm7iut1g14jfche8edp.png",
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/25f/25fa9f0722d764d409c8efb2a8020408/9d0f47ff4831fd067fd95e888b3bb303.png",
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/uf/960/960e751f997c5d91d1d7b1b3ebedb5cd.png",
+                "https://utfc.ru/local/templates/.default/components/utfc/catalog.element/.default/images/no_photo.png",
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/uf/f9a/f9a42bd21ce2344eea1b9f061b63a18b.png",
+                "https://utfc.ru/upload/resize_cache/iblock/9dd/400_400_0/9dd0fa51152fb12ef8354b1f71aabe59.png",
+                "https://utfc.ru/local/templates/utfc/img/icon-1.png",
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/uf/db2/jxp02rwa2amxftrut0a3lvulz4u195ud.webp",
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/uf/ba4/b5si50vt41b6kyvl2vwoifidb0xr5af0.png",
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/uf/966/f04p7jf5mzfr1iww28fnvz0fu9kcxiuw.png",
+                "https://utfc.ru/local/templates/utfc/img/sites/utfc/logo_store_up_2x.png",
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/8b4/bx8muu1dc1xkhd3x6dagsufj9wc7aobi.png",
+                "https://utfc.ru/upload/resize_cache/iblock/f1e/70_70_0/w0ygriy5n0e2jfi6onf915j0a810dqrl.png",
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/5ad/5ad15f3888633325165c1363d3d6c0fa/f6835546bae58775a73347d691378646.png",
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/resize_cache/27529/f9a783e5b6ef0ba37f754dbaaffb7194/iblock/6fd/6fd34bb42edbcd9a72e1a2e4cf8e6070/015ec2f12ed0ea913b8fbaf53e97fb65.png",
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/uf/f37/3q1ohav4mrz2f102tvlys86d0nuxyyra.png",
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/uf/005/gq9dncaopgc6zza80ar3qu5yb1dq7az3.png",
+                "https://utfc.ru/local/templates/utfc/img/palette.png",
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/resize_cache/27532/f9a783e5b6ef0ba37f754dbaaffb7194/iblock/5ad/5ad15f3888633325165c1363d3d6c0fa/f6835546bae58775a73347d691378646.png",
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/uf/bc1/bc19ccc90baa8164a6f8de94c86f1b38.png",
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/resize_cache/27398/f9a783e5b6ef0ba37f754dbaaffb7194/iblock/feb/febab615914511035c1d643def5d5e5a/dc8575ae623a5dc14a032c12ecec0465.png",
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/22c/22c448e31099568c079a73a5446315c7/93ab47c553fe44e2a124c81425bbbe2e.png",
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/e32/e32a2e56e70fa34317f46e4fd322e07d/50aae9fb0b263c4d8ffe2b77a9221cca.png",
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/uf/bae/bae6ba79562f7a48c6e01810637328ed.png",
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/uf/e6f/e6fd18f4cb67c8f9c12adb9204886749.png",
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/resize_cache/27396/f9a783e5b6ef0ba37f754dbaaffb7194/iblock/22c/22c448e31099568c079a73a5446315c7/93ab47c553fe44e2a124c81425bbbe2e.png",
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/resize_cache/27497/f9a783e5b6ef0ba37f754dbaaffb7194/iblock/e32/e32a2e56e70fa34317f46e4fd322e07d/50aae9fb0b263c4d8ffe2b77a9221cca.png",
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/resize_cache/27397/f9a783e5b6ef0ba37f754dbaaffb7194/iblock/910/910b94f5d67f777187860491fb1b0032/e18d410d7bee7abe71bd38770d1ca023.png",
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/910/910b94f5d67f777187860491fb1b0032/e18d410d7bee7abe71bd38770d1ca023.png",
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/resize_cache/27399/f9a783e5b6ef0ba37f754dbaaffb7194/iblock/158/158f37e70b1f277f73e48b9d1101bb4e/21802cb8552034056753d5b39e17097c.png",
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/3d5/3d50c1eaebd66a0582b96ae888604074/3080b2ece2f269bf6689c5f7bda1822a.png",
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/feb/febab615914511035c1d643def5d5e5a/dc8575ae623a5dc14a032c12ecec0465.png",
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/158/158f37e70b1f277f73e48b9d1101bb4e/21802cb8552034056753d5b39e17097c.png",
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/683/6838f26bf130c836cc0a813bbfedbe5f/4b623a025e68be2b06505f579da0be0e.png",
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/838/8386b08cd5ca7a41f2ba1b8d56907e36/511c0f51c31a556b6c72e09b4585069b.png"
+            ]
+        }
+    ],
     "dimensions_details": [
-    {
-      "chair_height": {
-        "min": "810",
-        "max": "950"
-      },
-      "headrest_height": {
-        "min": "",
-        "max": ""
-      },
-      "seat_to_floor_height": {
-        "min": "440",
-        "max": "580"
-      },
-      "armrest_height_from_seat": {
-        "min": "250",
-        "max": ""
-      },
-      "chair_depth": {
-        "min": "550",
-        "max": null
-      },
-      "seat_depth": {
-        "min": "455",
-        "max": ""
-      },
-      "backrest_height": {
-        "max": "360",
-        "min": ""
-      },
-      "backrest_to_seat_height": {
-        "min": "",
-        "max": ""
-      },
-      "seat_width_with_armrests": {
-        "min": "540",
-        "max": ""
-      },
-      "seat_width": {
-        "max": "425",
-        "min": ""
-      },
-      "diameter_cross": {
-        "max": "660",
-        "min": ""
-      },
-      "runners_width": {
-        "max": "",
-        "min": ""
-      },
-      "runners_depth": {
-        "max": "",
-        "min": ""
-      },
-      "seat_to_floor_height_upper": {
-        "min": "370",
-        "max": "490"
-
-      },
-      "armrest_height_from_floor": {
-        "min": "300",
-        "max": ""
-      },
-      "armrest_width_support": {
-        "max": "55"
-      },
-      "armrest_length_support": {
-        "min": "260",
-        "max": ""
-      },
-      "seat_depth_km": {
-        "max": "455"
-      },
-      "backrest_height_external": {
-        "min": "420",
-        "max": ""
-      },
-      "backrest_width_narrow": {
-        "max": "350"
-      },
-      "backrest_width_wide": {
-        "max": "500"
-      }
-    }
-  ]
+        {
+            "chair_height": {
+                "min": "810",
+                "max": "950"
+            },
+            "headrest_height": {
+                "min": "",
+                "max": ""
+            },
+            "seat_to_floor_height": {
+                "min": "440",
+                "max": "580"
+            },
+            "armrest_height_from_seat": {
+                "min": "250",
+                "max": ""
+            },
+            "chair_depth": {
+                "min": "550",
+                "max": null
+            },
+            "seat_depth": {
+                "min": "455",
+                "max": ""
+            },
+            "backrest_height": {
+                "max": "360",
+                "min": ""
+            },
+            "backrest_to_seat_height": {
+                "min": "",
+                "max": ""
+            },
+            "seat_width_with_armrests": {
+                "min": "540",
+                "max": ""
+            },
+            "seat_width": {
+                "max": "425",
+                "min": ""
+            },
+            "diameter_cross": {
+                "max": "660",
+                "min": ""
+            },
+            "runners_width": {
+                "max": "",
+                "min": ""
+            },
+            "runners_depth": {
+                "max": "",
+                "min": ""
+            },
+            "seat_to_floor_height_upper": {
+                "min": "370",
+                "max": "490"
+            },
+            "armrest_height_from_floor": {
+                "min": "300",
+                "max": ""
+            },
+            "armrest_width_support": {
+                "max": "55"
+            },
+            "armrest_length_support": {
+                "min": "260",
+                "max": ""
+            },
+            "seat_depth_km": {
+                "max": "455"
+            },
+            "backrest_height_external": {
+                "min": "420",
+                "max": ""
+            },
+            "backrest_width_narrow": {
+                "max": "350"
+            },
+            "backrest_width_wide": {
+                "max": "500"
+            }
+        }
+    ],
+    "title": "Кресло Парма пластик производства компании UTFC",
+    "base_name": "Кресло Парма пластик",
+    "article_number": "ОК-00638",
+    "full_describe": "Кресло Парма - дизайн, вдохновлённый атмосферой итальянского пригорода. Это идеальное сочетание эстетики и практичности для вашей кухни, столовой или зоны отдыха.Мягкая обивка, слегка закруглённая спинка и удобное сиденье обеспечивают комфорт в каждой детали. Тонкие лучи крестовины в основании кресла придают стулу лёгкость и современный вид, который легко впишется в любой интерьер — от скандинавского до классического.",
+    "Link_arm": "https://utfc.ru/catalog/staff_chairs/parma_pl/?offers=13343",
+    "minpromtorg": "Минпромторг",
+    "madeinrf": "Сделано РФ",
+    "Основание": "Пятилучье Арктика пластиковое с узкими лучами, d=660 мм",
+    "Подлокотники": "",
+    "Газлифт": "Газ-лифт 2 категории по стандарту Germany DIN 4550, h=290 мм, длина штока 140 мм",
+    "Механизм": "Пиастра круглая — механизм регулировки высоты сиденья с помощью стальной ручки с пластиковой рукояткой",
+    "Особенности": "",
+    "Ролики": "Пластиковые ролики с полиуретановым покрытием, открытый чехол, d колеса 50 мм, d штока 11 мм. Стандарт BIFMA 5,1 (США).",
+    "finish_type": [
+        "Ткань Moderno",
+        "Ткань Velutto",
+        "-"
+    ],
+    "color": [
+        "Ткань Moderno 16 (черный)",
+        "Ткань Moderno 02 (серый)",
+        "Ткань Moderno 05 (терракотовый)",
+        "Ткань Moderno 07 (синий)",
+        "Ткань Moderno 11 (мокко)",
+        "Велюр 02 (светло-бежевый)",
+        "Велюр 03 (бежевый)",
+        "Велюр 06 (коричневый)",
+        "Велюр 20 (черный)",
+        "Велюр 18 (серый)"
+    ],
+    "finish_type_seat": [
+        ""
+    ],
+    "color_seat": [
+        ""
+    ],
+    "variant_name": [
+        "Кресло Парма хром (Ткань Moderno, Ткань Moderno 16 (черный),, )",
+        "Кресло Парма хром (Ткань Moderno, Ткань Moderno 02 (серый),, )",
+        "Кресло Парма хром (Ткань Moderno, Ткань Moderno 05 (терракотовый),, )",
+        "Кресло Парма хром (Ткань Moderno, Ткань Moderno 07 (синий),, )",
+        "Кресло Парма хром (Ткань Moderno, Ткань Moderno 11 (мокко),, )",
+        "Кресло Парма хром (Ткань Velutto, Ткань Moderno 16 (черный),, )",
+        "Кресло Парма хром (Ткань Velutto, Ткань Moderno 02 (серый),, )",
+        "Кресло Парма хром (Ткань Velutto, Ткань Moderno 05 (терракотовый),, )",
+        "Кресло Парма хром (Ткань Velutto, Ткань Moderno 07 (синий),, )",
+        "Кресло Парма хром (Ткань Velutto, Ткань Moderno 11 (мокко),, )",
+        "Кресло Парма хром (-, Ткань Moderno 16 (черный),, )",
+        "Кресло Парма хром (-, Ткань Moderno 02 (серый),, )",
+        "Кресло Парма хром (-, Ткань Moderno 05 (терракотовый),, )",
+        "Кресло Парма хром (-, Ткань Moderno 07 (синий),, )",
+        "Кресло Парма хром (-, Ткань Moderno 11 (мокко),, )",
+        "Кресло Парма пластик (Ткань Moderno, Велюр 02 (светло-бежевый),, )",
+        "Кресло Парма пластик (Ткань Moderno, Велюр 03 (бежевый),, )",
+        "Кресло Парма пластик (Ткань Moderno, Велюр 06 (коричневый),, )",
+        "Кресло Парма пластик (Ткань Moderno, Велюр 20 (черный),, )",
+        "Кресло Парма пластик (Ткань Moderno, Велюр 18 (серый),, )",
+        "Кресло Парма пластик (Ткань Velutto, Велюр 02 (светло-бежевый),, )",
+        "Кресло Парма пластик (Ткань Velutto, Велюр 03 (бежевый),, )",
+        "Кресло Парма пластик (Ткань Velutto, Велюр 06 (коричневый),, )",
+        "Кресло Парма пластик (Ткань Velutto, Велюр 20 (черный),, )",
+        "Кресло Парма пластик (Ткань Velutto, Велюр 18 (серый),, )",
+        "Кресло Парма пластик (-, Велюр 02 (светло-бежевый),, )",
+        "Кресло Парма пластик (-, Велюр 03 (бежевый),, )",
+        "Кресло Парма пластик (-, Велюр 06 (коричневый),, )",
+        "Кресло Парма пластик (-, Велюр 20 (черный),, )",
+        "Кресло Парма пластик (-, Велюр 18 (серый),, )"
+    ]
 }

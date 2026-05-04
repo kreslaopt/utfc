@@ -86,7 +86,42 @@
             "vid_main": "img/armchair_comfort/ultra_n_ch_t02_s0422_01.png",
             "chair_view": "img/armchair_comfort/ultra_n_ch_t02_s0422_02.png",
             "dimensions": "img/armchair_comfort/dimensions/ultra_n_ch_t02_s0422_01.png",
-            "box": "img/box_UTFC.png"
+            "box": "img/box_UTFC.png",
+            "additional": [
+                "https://utfc.ru/upload/resize_cache/iblock/3eb/400_400_0/frc0uah3vjpuzri3g8zdicq0t4amwbfb.png",
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/eeb/eeb24f24b1acd461bcba511b2d23f7f0/26d9c975e85e92a923d867e989c4aeaf.png",
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/resize_cache/27686/f9a783e5b6ef0ba37f754dbaaffb7194/iblock/fc0/fc0650597b4315a62e65ccc73dee89f7/a8ab3030681629bfc9badebad9df5993.png",
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/uf/a52/a52aa5a690d4881fc8805f83289394c6.png",
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/10f/10fe21480b5617c0055041f727b3b96e/f3295ed29450f108a62eb1150f7fd384.png",
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/fc0/fc0650597b4315a62e65ccc73dee89f7/a8ab3030681629bfc9badebad9df5993.png",
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/uf/bae/bae6ba79562f7a48c6e01810637328ed.png",
+                "https://utfc.ru/upload/resize_cache/iblock/405/70_70_0/6az8ijq3kwo614y93g1tk5dxfw4xk8zx.png",
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/uf/e6f/e6fd18f4cb67c8f9c12adb9204886749.png",
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/uf/8d0/8d0fc428274bc3dd435ab3736b873e89.jpg",
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/07b/07bbe99c3bacca85f3ab965ac349f5de/fe3d488d267e12ab605eb7bec93e8265.png",
+                "https://utfc.ru/local/templates/utfc/img/icon-4.png",
+                "https://utfc.ru/upload/resize_cache/iblock/5f2/70_70_0/jtoqpoxf3v0ai54dthupo7bqv6dlhff8.png",
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/resize_cache/27684/f9a783e5b6ef0ba37f754dbaaffb7194/iblock/10f/10fe21480b5617c0055041f727b3b96e/f3295ed29450f108a62eb1150f7fd384.png",
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/a05/a051d7208a7b006ff72158fd7ebcf7d8/c30fedb06016462b9146723fe19cf0ad.png",
+                "https://utfc.ru/local/templates/utfc/img/icon-2.png",
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/uf/85f/85fc44c4bd3892446bdcb047dd54e73e.png",
+                "https://utfc.ru/upload/resize_cache/iblock/5d1/400_400_0/5d1a7733c1332d593138c4b86b3f3e2b.png",
+                "https://utfc.ru/upload/resize_cache/iblock/4fe/400_400_0/sr786v8p7zl4dazdf55slu0eh21n5t05.png",
+                "https://utfc.ru/local/templates/utfc/img/sites/utfc/logo_down_2.png",
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/775/tplsrfn48o85zxqm9r7joni71y0ebeox.png",
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/6ac/6acba3e479bf246a666bd0074e75d7eb/9070b0edcc9564c20a9f4c37a1fa724f.jpg",
+                "https://utfc.ru/local/templates/.default/components/utfc/catalog.element/.default/images/no_photo.png",
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/resize_cache/27685/f9a783e5b6ef0ba37f754dbaaffb7194/iblock/07b/07bbe99c3bacca85f3ab965ac349f5de/fe3d488d267e12ab605eb7bec93e8265.png",
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/resize_cache/27687/f9a783e5b6ef0ba37f754dbaaffb7194/iblock/eeb/eeb24f24b1acd461bcba511b2d23f7f0/26d9c975e85e92a923d867e989c4aeaf.png",
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/2a0/2a074c573cf8e2f23e1a494f5a109e1e/5b303a05981714cda9fd0ee79595ca22.png",
+                "https://utfc.ru/local/templates/utfc/img/icon-1.png",
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/uf/017/0170d0f775c6624be53668116b9d9805.jpg",
+                "https://utfc.ru/local/templates/utfc/img/sites/utfc/logo_store_up_2x.png",
+                "https://utfc.ru/upload/resize_cache/iblock/f1e/70_70_0/w0ygriy5n0e2jfi6onf915j0a810dqrl.png",
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/uf/ed8/ed809c4302b8f61180ba2401fad216c5.png",
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/resize_cache/27683/f9a783e5b6ef0ba37f754dbaaffb7194/iblock/2a0/2a074c573cf8e2f23e1a494f5a109e1e/5b303a05981714cda9fd0ee79595ca22.png",
+                "https://utfc.ru/local/templates/utfc/img/palette.png"
+            ]
         }
     ],
     "dimensions_details": [
@@ -186,5 +221,36 @@
     ],
     "skeleton": "немонолитный",
     "minpromtorg": "Минпромторг",
-    "madeinrf": "Сделано РФ"
+    "madeinrf": "Сделано РФ",
+    "title": "Кресло Ультра Н Т-02 пластик Ср производства компании UTFC",
+    "base_name": "Кресло Ультра Н Т-02 пластик Ср",
+    "article_number": "УЛ-00128",
+    "full_describe": "Максимально комфортная и универсальная модель кресла по доступной цене! Подходит как для офиса, так и для дома. Широкая эргономичная спинка обтянута экокожей, а высокие пластиковые подлокотники обеспечивают комфорт за счет регулировки по высоте. Глубокое сиденье делает кресло идеальным для людей разного роста. Максимальная нагрузка 150 кг.",
+    "Link_arm": "https://utfc.ru/catalog/comfort_chairs/ultra_n_t02_pl_arkt/?offers=13374",
+    "Основание": "Пятилучье Арктика пластиковое с узкими лучами, d=660 мм",
+    "Подлокотники": "Т-образные регулируемые по высоте пластиковые подлокотники с мягкими накладками",
+    "Газлифт": "Газ-лифт 3 категории по стандарту Germany DIN 4550, h=230 мм, длина штока 100 мм",
+    "Механизм": "Однопозиционный механизм качания Топ-Ган регулирует высоту сиденья, обеспечивает режим свободного качания и фиксацию каркаса в рабочем положении.",
+    "Особенности": "",
+    "Ролики": "Пластиковые ролики с полиуретановым покрытием, открытый чехол, d колеса 50 мм, d штока 11 мм. Стандарт BIFMA 5,1 (США).",
+    "finish_type": [
+        "Экокожа Santorini",
+        "-"
+    ],
+    "color": [
+        "Экокожа Santorini S0401 (черный)",
+        "Экокожа Santorini S0422 (темно-серый)"
+    ],
+    "finish_type_seat": [
+        ""
+    ],
+    "color_seat": [
+        ""
+    ],
+    "variant_name": [
+        "Кресло Ультра Н Т-02 пластик Ср (Экокожа Santorini, Экокожа Santorini S0401 (черный),, )",
+        "Кресло Ультра Н Т-02 пластик Ср (Экокожа Santorini, Экокожа Santorini S0422 (темно-серый),, )",
+        "Кресло Ультра Н Т-02 пластик Ср (-, Экокожа Santorini S0401 (черный),, )",
+        "Кресло Ультра Н Т-02 пластик Ср (-, Экокожа Santorini S0422 (темно-серый),, )"
+    ]
 }

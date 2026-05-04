@@ -157,7 +157,8 @@
                 "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/uf/1d4/1d4602fd80132442365aa96095e71e91.jpg",
                 "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/0a4/0a45d59f76a27a24ead6bdb93ccb87af.png",
                 "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/uf/5c3/1qd5blk2l3pbxz63wiq3ufsjjekp1ogt.png",
-                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/930/zphu33f4fko5wi2ajqexlr3l2k4o56ao.png"
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/930/zphu33f4fko5wi2ajqexlr3l2k4o56ao.png",
+                "https://utfc.ru/upload/resize_cache/iblock/5f8/400_400_0/5f87deb598a64f6efb82c20f80096b81.png"
             ]
         }
     ],
@@ -758,12 +759,12 @@
             "CV_CURRENCY_3": "RUB"
         }
     ],
-    "title": "Стул Ванесса BL для кафе и дома производства компании UTFC",
-    "base_name": "Стул Ванесса BL",
-    "article_number": "ВанессаBL03",
-    "full_describe": "Воздушная модель стула имеет интересный дизайн спинки, представляющую собой крестообразное пресечение нескольких металлических нитей, образующих в центре маленькие ромбики. Каркас стула выполнен из металла.",
-    "Link_arm": "https://utfc.ru/catalog/pos_chair/vanessa_bl/?offers=9289",
-    "Основание": "Металлические опоры стула Ванесса, защитно-декоративное порошковое покрытие черного цвета (BL)",
+    "title": "Стул Ванесса СН для кафе и дома производства компании UTFC",
+    "base_name": "Стул Ванесса СН",
+    "article_number": "ВанессаСН59",
+    "full_describe": "Воздушная модель стула имеет интересный дизайн спинки, представляющую собой крестообразное пресечение нескольких металлических нитей, образующих в центре маленькие ромбики. Каркас стула выполнен из хромированного металла",
+    "Link_arm": "https://utfc.ru/catalog/pos_chair/vanessa_ch/?offers=9293",
+    "Основание": "Металлические опоры стула Ванесса, защитно-декоративное покрытие никель-хром (СН)",
     "Подлокотники": "Без подлокотников",
     "Газлифт": "",
     "Механизм": "",

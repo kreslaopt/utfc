@@ -174,7 +174,8 @@
                 "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/bcd/bcdf4b262cfce3793383d0781cf351f1.png",
                 "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/39d/x490i7idk5jrnz7miz0p33xy2gp2sh99.png",
                 "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/uf/d82/mp1mtq2mnf4mucw7kvqtma69u6jjgggt.png",
-                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/uf/1d4/1d4602fd80132442365aa96095e71e91.jpg"
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/uf/1d4/1d4602fd80132442365aa96095e71e91.jpg",
+                "https://utfc.ru/upload/resize_cache/iblock/5f8/400_400_0/5f87deb598a64f6efb82c20f80096b81.png"
             ]
         }
     ],
@@ -1510,12 +1511,12 @@
             "CV_CURRENCY_3": "RUB"
         }
     ],
-    "title": "Стул Венус СН для кафе и дома производства компании UTFC",
-    "base_name": "Стул Венус СН",
-    "article_number": "ВенусСН65",
+    "title": "Стул Венус BL для дома и кафе производства компании UTFC",
+    "base_name": "Стул Венус BL",
+    "article_number": "ВенусBLZ21",
     "full_describe": "Стул имеет изящный дизайн спинки, что позволяет ему сочетаться с разными интерьерами. Подходит как для домашнего использования, так и для мест общественного питания.",
-    "Link_arm": "https://utfc.ru/catalog/pos_chair/venus_ch/?offers=9325",
-    "Основание": "Металлические опоры стула Венус, защитно-декоративное покрытие никель-хром (СН)",
+    "Link_arm": "https://utfc.ru/catalog/pos_chair/venus_bl/?offers=9302",
+    "Основание": "Металлические опоры стула Венус, защитно-декоративное порошковое покрытие черного цвета (BL)",
     "Подлокотники": "Без подлокотников",
     "Газлифт": "",
     "Механизм": "",

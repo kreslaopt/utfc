@@ -183,7 +183,8 @@
                 "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/5e9/m2nszx5hcx8qi5nn4d8bso4vudve3o5r.png",
                 "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/uf/277/c9fbycy262ipf62vu6xngurhk6f1lwj0.png",
                 "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/7e9/bcye8t8936ne2ixcnqmlbmjj7li70qyl.png",
-                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/28b/tkxpdnzpsu41452lmffrzysee7qflm4w.png"
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/28b/tkxpdnzpsu41452lmffrzysee7qflm4w.png",
+                "https://utfc.ru/upload/resize_cache/iblock/5f8/400_400_0/5f87deb598a64f6efb82c20f80096b81.png"
             ]
         }
     ],
@@ -339,12 +340,12 @@
         "CV_PRICE_3": "1552.00",
         "CV_CURRENCY_3": "RUB"
     },
-    "title": "Стул Стандарт GR для посетителей в залах ожидания, работы и отдыха производства компании UTFC",
-    "base_name": "Стул Стандарт GR",
-    "article_number": "СтандартGR",
+    "title": "Стул Стандарт BL для посетителей учебных заведениях, а также помещений для ожидания производства компании UTFC.",
+    "base_name": "Стул Стандарт BL",
+    "article_number": "СтандартBL02",
     "full_describe": "Широкий ассортимент материалов обивки и цветовых решений позволяет выбрать идеальный вариант. Стул предназначен для использования в барах и кафе, учебных заведениях, а также в других помещениях для ожидания, работы и отдыха. Он оснащен широким сиденьем и удобной спинкой для максимального комфорта.",
-    "Link_arm": "https://utfc.ru/catalog/pos_chair/standart_gr/?offers=12493",
-    "Основание": "Металлические опоры стула Стандарт, защитно-декоративное порошковое покрытие серого цвета (GR)",
+    "Link_arm": "https://utfc.ru/catalog/pos_chair/standart_bl/?offers=8304",
+    "Основание": "Металлические опоры стула Стандарт, защитно-декоративное порошковое покрытие черного цвета (BL)",
     "Подлокотники": "Без подлокотников",
     "Газлифт": "",
     "Механизм": "",

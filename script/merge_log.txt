@@ -1,27 +1,2 @@
-2026-03-23 10:10:10,311 - INFO - Файл merged_result.json успешно сохранён
-2026-03-23 10:16:26,287 - INFO - Файл merged_result.json успешно сохранён
-2026-03-23 15:14:04,440 - INFO - Файл merged_result.json успешно сохранён
-2026-03-30 16:11:00,995 - ERROR - Ошибка загрузки файла export_file_tovar.json: Expecting value: line 1 column 1 (char 0)
-2026-03-30 16:11:00,997 - ERROR - Ошибка загрузки файла export_file_offer.json: Expecting value: line 1 column 1 (char 0)
-2026-03-30 16:11:00,997 - ERROR - Не удалось загрузить родителей или детей
-2026-03-30 16:12:02,108 - ERROR - Ошибка загрузки файла export_file_tovar.json: Expecting value: line 1 column 1 (char 0)
-2026-03-30 16:12:02,109 - ERROR - Ошибка загрузки файла export_file_offer.json: Expecting value: line 1 column 1 (char 0)
-2026-03-30 16:12:02,109 - ERROR - Не удалось загрузить родителей или детей
-2026-03-30 16:15:04,314 - ERROR - Ошибка загрузки файла export_file_tovar.json: [Errno 2] No such file or directory: 'export_file_tovar.json'
-2026-03-30 16:15:04,314 - ERROR - Ошибка загрузки файла export_file_offer.json: [Errno 2] No such file or directory: 'export_file_offer.json'
-2026-03-30 16:15:04,314 - ERROR - Не удалось загрузить родителей или детей
-2026-03-30 16:19:59,475 - INFO - Файл merged_result.json успешно сохранён
-2026-04-13 10:50:22,845 - INFO - Файл merged_result.json успешно сохранён
-2026-04-15 14:04:57,578 - INFO - Файл merged_result.json успешно сохранён
-2026-04-15 14:36:51,165 - INFO - Файл merged_result.json успешно сохранён
-2026-04-16 12:20:49,918 - INFO - Файл merged_result.json успешно сохранён
-2026-04-20 11:57:23,065 - INFO - Файл merged_result.json успешно сохранён
-2026-04-27 15:17:48,367 - INFO - Файл merged_result.json успешно сохранён
-2026-04-27 15:20:54,099 - INFO - Файл merged_result.json успешно сохранён
-2026-04-27 15:21:35,189 - INFO - Файл merged_result.json успешно сохранён
-2026-04-27 15:28:05,911 - INFO - Файл merged_result.json успешно сохранён
-2026-04-27 16:26:08,024 - INFO - Файл merged_result.json успешно сохранён
-2026-04-28 10:56:48,251 - INFO - Файл merged_result.json успешно сохранён
-2026-04-28 13:42:19,470 - INFO - Файл merged_result.json успешно сохранён
-2026-04-29 14:25:17,998 - INFO - Файл merged_result.json успешно сохранён
-2026-04-29 14:28:20,182 - INFO - Файл merged_result.json успешно сохранён
+2026-05-04 14:58:46,399 - INFO - Файл merged_result.json успешно сохранён
+2026-05-04 15:03:26,078 - INFO - Файл merged_result.json успешно сохранён

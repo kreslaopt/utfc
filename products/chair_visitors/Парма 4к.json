@@ -130,7 +130,13 @@
                 "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/cb6/dg0q4u612m8a8iktasl43mm0oh4vc4ha.png",
                 "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/d4c/d4cedfce22b1e44b200e945fbda3d3ab.png",
                 "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/46e/y8i7ghd5hksh5dq8ximjfd35e06ijbuc.png",
-                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/428/m4gg7kcyrw6ct8oav8e7r0pe6rimuize.png"
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/428/m4gg7kcyrw6ct8oav8e7r0pe6rimuize.png",
+                "https://utfc.ru/upload/resize_cache/iblock/5f8/400_400_0/5f87deb598a64f6efb82c20f80096b81.png",
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/uf/785/78599280ecd367086205dacabe880579.png",
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/uf/0bd/0bdb46b69b016449943ecc987b42e113.png",
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/uf/10c/10c5a4d662d70084372d923fe7bec314.png",
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/uf/db2/jxp02rwa2amxftrut0a3lvulz4u195ud.webp",
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/uf/966/f04p7jf5mzfr1iww28fnvz0fu9kcxiuw.png"
             ]
         }
     ],
@@ -605,7 +611,7 @@
             "CV_CURRENCY_3": "RUB"
         }
     ],
-    "title": "Новинка: Стул Парма 4К BL Ткань Velutto производства компании UTFC",
+    "title": "Новинка: Стул Парма 4К BL Ткань Velutto, Ткань Moderno производства компании UTFC",
     "base_name": "Стул Парма 4К BL",
     "article_number": "НКС-00024",
     "full_describe": "Современная мечта в стильном цвете — стул Парма, вдохновлённый атмосферой итальянского пригорода. Это идеальное сочетание эстетики и практичности для вашей кухни, столовой или зоны отдыха.Мягкая обивка, слегка закруглённая спинка и сиденье из мягкого велюра обеспечивают комфорт в каждой детали. Тонкие металлические ножки придают стулу лёгкость и современный вид, который легко впишется в любой интерьер — от скандинавского до классического.",
@@ -618,7 +624,8 @@
     "Ролики": "",
     "finish_type": [
         "Ткань Velutto",
-        "-"
+        "-",
+        "Ткань Moderno"
     ],
     "color": [
         "Велюр 02 (светло-бежевый)",
@@ -647,7 +654,12 @@
         "Стул Парма 4К BL (-, Велюр 03 (бежевый),, )",
         "Стул Парма 4К BL (-, Велюр 06 (коричневый),, )",
         "Стул Парма 4К BL (-, Велюр 20 (черный),, )",
-        "Стул Парма 4К BL (-, Велюр 18 (серый),, )"
+        "Стул Парма 4К BL (-, Велюр 18 (серый),, )",
+        "Стул Парма 4К BL (Ткань Moderno, Велюр 02 (светло-бежевый),, )",
+        "Стул Парма 4К BL (Ткань Moderno, Велюр 03 (бежевый),, )",
+        "Стул Парма 4К BL (Ткань Moderno, Велюр 06 (коричневый),, )",
+        "Стул Парма 4К BL (Ткань Moderno, Велюр 20 (черный),, )",
+        "Стул Парма 4К BL (Ткань Moderno, Велюр 18 (серый),, )"
     ],
     "finish_type_seat": [
         ""

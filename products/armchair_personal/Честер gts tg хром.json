@@ -82,7 +82,41 @@
             "vid_main": "img/armchair_personal/chester_gts_ch_tg_moderno02_01.png",
             "chair_view": "img/armchair_personal/chester_gts_ch_tg_moderno02_02.png",
             "dimensions": "img/armchair_personal/dimensions/chester_gts_ch_tg_01.png",
-            "box": "img/box_UTFC.png"
+            "box": "img/box_UTFC.png",
+            "additional": [
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/uf/a52/a52aa5a690d4881fc8805f83289394c6.png",
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/uf/a4e/a4e07d55ea695cea656285f8dcf3e9a8.png",
+                "https://utfc.ru/upload/resize_cache/iblock/405/70_70_0/6az8ijq3kwo614y93g1tk5dxfw4xk8zx.png",
+                "https://utfc.ru/local/templates/utfc/img/icon-4.png",
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/uf/785/78599280ecd367086205dacabe880579.png",
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/80c/80caff98b63246836e2e483a4f31cb27/932c074e591742293e74cdd7556e848e.png",
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/resize_cache/27350/f9a783e5b6ef0ba37f754dbaaffb7194/iblock/50e/50e523d94ab56f837f9a1489dca948c1/1fee51c3b75b4b08e5ca47c51600d01b.png",
+                "https://utfc.ru/upload/resize_cache/iblock/5f2/70_70_0/jtoqpoxf3v0ai54dthupo7bqv6dlhff8.png",
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/50e/50e523d94ab56f837f9a1489dca948c1/1fee51c3b75b4b08e5ca47c51600d01b.png",
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/fc0/fc056260ebc7c1966d42d28dde49ad9f/5958273c6a6ce59eaa99006cd96e2933.png",
+                "https://utfc.ru/local/templates/utfc/img/icon-2.png",
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/b82/yrw2kqzjb7n4iz8h66e0id4zqe70gpso.png",
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/resize_cache/27352/f9a783e5b6ef0ba37f754dbaaffb7194/iblock/86b/86b0f20022813ad5117e7a8203bd22a7/9051f42973942b3e95a8cdb0f5befe2a.png",
+                "https://utfc.ru/local/templates/utfc/img/sites/utfc/logo_down_2.png",
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/resize_cache/27349/f9a783e5b6ef0ba37f754dbaaffb7194/iblock/79b/79b54ec8afdcf2fc74eb63422ac890ee/2ab77db3d8db3d0c4890cae235a9443f.png",
+                "https://utfc.ru/local/templates/.default/components/utfc/catalog.element/.default/images/no_photo.png",
+                "https://utfc.ru/upload/resize_cache/iblock/9dd/400_400_0/9dd0fa51152fb12ef8354b1f71aabe59.png",
+                "https://utfc.ru/local/templates/utfc/img/icon-1.png",
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/3d5/3d50c1eaebd66a0582b96ae888604074/3080b2ece2f269bf6689c5f7bda1822a.png",
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/uf/db2/jxp02rwa2amxftrut0a3lvulz4u195ud.webp",
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/resize_cache/27348/f9a783e5b6ef0ba37f754dbaaffb7194/iblock/ba6/ba6e0566a912569950e3a4030016f9ca/0a2976d3c05a272675fd9e060eaa4c4d.png",
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/uf/ba4/b5si50vt41b6kyvl2vwoifidb0xr5af0.png",
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/uf/966/f04p7jf5mzfr1iww28fnvz0fu9kcxiuw.png",
+                "https://utfc.ru/local/templates/utfc/img/sites/utfc/logo_store_up_2x.png",
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/8b4/bx8muu1dc1xkhd3x6dagsufj9wc7aobi.png",
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/79b/79b54ec8afdcf2fc74eb63422ac890ee/2ab77db3d8db3d0c4890cae235a9443f.png",
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/86b/86b0f20022813ad5117e7a8203bd22a7/9051f42973942b3e95a8cdb0f5befe2a.png",
+                "https://utfc.ru/upload/resize_cache/iblock/f1e/70_70_0/w0ygriy5n0e2jfi6onf915j0a810dqrl.png",
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/resize_cache/27351/f9a783e5b6ef0ba37f754dbaaffb7194/iblock/80c/80caff98b63246836e2e483a4f31cb27/932c074e591742293e74cdd7556e848e.png",
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/378/3786d8c30073d717f6a91a8c060750c1/f15d31ce748f395adac2e612c09aac01.png",
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/ba6/ba6e0566a912569950e3a4030016f9ca/0a2976d3c05a272675fd9e060eaa4c4d.png",
+                "https://utfc.ru/local/templates/utfc/img/palette.png"
+            ]
         }
     ],
     "dimensions_details": [
@@ -175,6 +209,41 @@
         }
     ],
     "skeleton": "монолитный",
-    "minpromtorg": "+",
-    "addition": ""
+    "minpromtorg": "Минпромторг",
+    "addition": "",
+    "title": "Кресло Честер GTS TG хром в ткани Модерно производства компании UTFC",
+    "base_name": "Кресло Честер GTS TG хром",
+    "article_number": "КФ-00405",
+    "full_describe": "Уникальный каркас из металла придает конструкции прочность и визуальную легкость дизайна. Горизонтальные строчки на спинке подчеркивают элегантный и современный вид. Хромированная крестовина выдерживает до 120 кг.",
+    "Link_arm": "https://utfc.ru/catalog/staff_chairs/bde31b3f-2dc9-11f1-81de-1866daf6186c/?offers=13340",
+    "madeinrf": "Сделано РФ",
+    "Основание": "Пятилучье хромированное Альфа 640 мм",
+    "Подлокотники": "",
+    "Газлифт": "",
+    "Механизм": "Однопозиционный механизм качания Топ-Ган регулирует высоту сиденья, обеспечивает режим свободного качания и фиксацию каркаса в рабочем положении.",
+    "Особенности": "",
+    "Ролики": "Пластиковые ролики, открытый чехол, d колеса 50 мм, d штока 11 мм. Стандарт BIFMA 5,1 (США)",
+    "finish_type": [
+        "Ткань Moderno",
+        "-"
+    ],
+    "color": [
+        "Ткань Moderno 16 (черный)",
+        "Ткань Moderno 02 (серый)",
+        "Ткань Moderno 07 (синий)"
+    ],
+    "finish_type_seat": [
+        ""
+    ],
+    "color_seat": [
+        ""
+    ],
+    "variant_name": [
+        "Кресло Честер GTS TG хром (Ткань Moderno, Ткань Moderno 16 (черный),, )",
+        "Кресло Честер GTS TG хром (Ткань Moderno, Ткань Moderno 02 (серый),, )",
+        "Кресло Честер GTS TG хром (Ткань Moderno, Ткань Moderno 07 (синий),, )",
+        "Кресло Честер GTS TG хром (-, Ткань Moderno 16 (черный),, )",
+        "Кресло Честер GTS TG хром (-, Ткань Moderno 02 (серый),, )",
+        "Кресло Честер GTS TG хром (-, Ткань Moderno 07 (синий),, )"
+    ]
 }

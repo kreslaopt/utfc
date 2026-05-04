@@ -184,7 +184,8 @@
                 "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/654/ux4emhd9ha2d3i00ghnu4byfey0l1gb0.png",
                 "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/uf/d24/d1fg1y10ifaoa8krhri30qiutiwfkrdc.png",
                 "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/uf/e7e/e7e07310987904c68082855430874c7e.jpg",
-                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/d46/y072lsfczu94tzkxa06zwtz6h4n956pi.png"
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/d46/y072lsfczu94tzkxa06zwtz6h4n956pi.png",
+                "https://utfc.ru/upload/resize_cache/iblock/5f8/400_400_0/5f87deb598a64f6efb82c20f80096b81.png"
             ]
         }
     ],
@@ -1765,12 +1766,12 @@
             "CV_CURRENCY_3": "RUB"
         }
     ],
-    "title": "Кресло {Комфортный и функциональный стул для офиса Форум BL производства компании UTFC=this.Name} производства компании UTFC",
-    "base_name": "Форум BL",
-    "article_number": "ФорумBL35",
+    "title": "Комфортный и функциональный стул для офиса Форум СН производства компании UTFC",
+    "base_name": "Форум СН",
+    "article_number": "ФорумСН42",
     "full_describe": "Дизайн стула выполнен в строгом стиле, с удобными подлокотниками, оснащенными мягкими накладками. Это комфортный и функциональный стул для офиса, который также отлично подойдет для размещения гостей в приемной или холле.",
-    "Link_arm": "https://utfc.ru/catalog/pos_chair/forum_bl/?offers=12773",
-    "Основание": "Металлические опоры Форум, защитно-декоративное порошковое покрытие черного цвета (BL)",
+    "Link_arm": "https://utfc.ru/catalog/pos_chair/forum_ch/?offers=10819",
+    "Основание": "Металлические опоры Форум, защитно-декоративное покрытие никель-хром (СН)",
     "Подлокотники": "",
     "Газлифт": "",
     "Механизм": "",

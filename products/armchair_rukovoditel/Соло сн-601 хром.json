@@ -186,7 +186,14 @@
                 "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/uf/7f6/7f622a8a3c6d109774c96a627c14ece3.jpg",
                 "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/uf/db2/jxp02rwa2amxftrut0a3lvulz4u195ud.webp",
                 "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/uf/1d4/1d4602fd80132442365aa96095e71e91.jpg",
-                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/uf/791/791b522e509c64b45e53cb02e39f010e.jpg"
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/uf/791/791b522e509c64b45e53cb02e39f010e.jpg",
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/uf/94b/291cco6tzr1fr12bcx6ytknw6pm4plyo.png",
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/f71/f716b49c202ecda8e2a8f4d69c898e15/62212fb81e5d25578c7f38140d3da1dc.png",
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/41a/41aff22c5be1cb2df860389213d7ab28/581dc9da6117f8ae77fcc0ef1325642e.png",
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/uf/365/jz72k44xuf7njrx7r16y8g4a6insl333.png",
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/uf/cb1/th2r9a8a4dc4w87zerng51hbjt9062ai.png",
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/uf/f37/3q1ohav4mrz2f102tvlys86d0nuxyyra.png",
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/uf/005/gq9dncaopgc6zza80ar3qu5yb1dq7az3.png"
             ]
         }
     ],
@@ -1537,7 +1544,8 @@
         "Экокожа Santorini",
         "Комбинированный S/TW",
         "Ткань Moderno",
-        "-"
+        "-",
+        "Ткань Velutto"
     ],
     "color": [
         "Экокожа Santorini S0401 (черный)",
@@ -1617,7 +1625,13 @@
         "Кресло СН-601 Соло хром SoloCH Ср (-, Комбинированный S-0401/TW-01, -, Ткань Сетка Е11-к (черный))",
         "Кресло СН-601 Соло хром SoloCH Ср (-, Комбинированный S-0422/TW-72, Ткань Сетка Е, Ткань Сетка Е11-к (черный))",
         "Кресло СН-601 Соло хром SoloCH Ср (-, Комбинированный S-0422/TW-72, Экокожа Santorini, Ткань Сетка Е11-к (черный))",
-        "Кресло СН-601 Соло хром SoloCH Ср (-, Комбинированный S-0422/TW-72, -, Ткань Сетка Е11-к (черный))"
+        "Кресло СН-601 Соло хром SoloCH Ср (-, Комбинированный S-0422/TW-72, -, Ткань Сетка Е11-к (черный))",
+        "Кресло СН-601 Соло хром SoloCH Ср (Ткань Velutto, Комбинированный S-0401/TW-01, Ткань Сетка Е, Ткань Сетка Е11-к (черный))",
+        "Кресло СН-601 Соло хром SoloCH Ср (Ткань Velutto, Комбинированный S-0401/TW-01, Экокожа Santorini, Ткань Сетка Е11-к (черный))",
+        "Кресло СН-601 Соло хром SoloCH Ср (Ткань Velutto, Комбинированный S-0401/TW-01, -, Ткань Сетка Е11-к (черный))",
+        "Кресло СН-601 Соло хром SoloCH Ср (Ткань Velutto, Комбинированный S-0422/TW-72, Ткань Сетка Е, Ткань Сетка Е11-к (черный))",
+        "Кресло СН-601 Соло хром SoloCH Ср (Ткань Velutto, Комбинированный S-0422/TW-72, Экокожа Santorini, Ткань Сетка Е11-к (черный))",
+        "Кресло СН-601 Соло хром SoloCH Ср (Ткань Velutto, Комбинированный S-0422/TW-72, -, Ткань Сетка Е11-к (черный))"
     ],
     "finish_type_seat": [
         "Ткань Сетка Е",
