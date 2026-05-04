@@ -105,7 +105,7 @@
             <p>8 800 350 12 34</p>
             <p>sale@utfc.ru</p>
         </div>
-            <table class="commercial-table">
+            <table class="commercial-table" contenteditable="true">
                 <thead>
                     <tr>
                         <th>N</th>
@@ -115,7 +115,7 @@
                         <th>Сумма с НДС 22%</th>
                     </tr>
                 </thead>
-                <tbody id="commercial-table-body"></tbody>
+                <tbody id="commercial-table-body" contenteditable="true"></tbody>
             </table>
         </div>
 
@@ -695,7 +695,7 @@ async function createCommercialProduct(product, index) {
   <div class="commercial-titul-site">
         <img src="${imageSrc}" alt="Фоновое изображение">
     </div>
-        <h3>${index + 1}. ${product.name}</h3>
+        <h3  contenteditable="true">${index + 1}. ${product.name}</h3>
         <div class="commercial-product-images">
             ${imagesHTML}
             <div id="${qrId}" class="qr-code-container" style="display: inline-block; vertical-align: top;"></div>
@@ -1192,14 +1192,14 @@ async function loadAndDisplayProducts() {
         table.innerHTML = `
             <thead>
                 <tr>
-                    <th>№</th>
-                    <th>Наименование</th>
-                    <th>Кол-во</th>
-                    <th>Цена с НДС 22%</th>
-                    <th>Сумма с НДС 22%</th>
+                    <th contenteditable="true">№</th>
+                    <th contenteditable="true">Наименование</th>
+                    <th contenteditable="true">Кол-во</th>
+                    <th contenteditable="true">Цена с НДС 22%</th>
+                    <th contenteditable="true">Сумма с НДС 22%</th>
                 </tr>
             </thead>
-            <tbody></tbody>
+            <tbody contenteditable="true"></tbody>
         `;
 
         // Заполняем таблицу строками
