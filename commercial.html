@@ -1132,7 +1132,21 @@ function updateSignatureAndLogos(isBmf) {
   }
 }
 
-
+// Функция для установки значений подписи по умолчанию при загрузке
+function setDefaultSignature() {
+  // Устанавливаем подпись по умолчанию (например, "Фест")
+  setSignatureContent('first');
+  
+  // Устанавливаем логотипы и фоны по умолчанию (Фест)
+  setLogosAndBackgrounds(false);
+  
+  // Обновляем контактные данные по умолчанию
+  updateAllPagesContacts(false);
+  
+  // Обновляем цвета и номера страниц по умолчанию
+  setBmfBackgrounds(false);
+  updatePageNumbers();
+}
 function updatePageNumbers() {
     // Удаляем все существующие номера страниц
     document.querySelectorAll('.page-number-box').forEach(el => el.remove());
