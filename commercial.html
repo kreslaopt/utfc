@@ -243,7 +243,6 @@
             let currentTitulSiteSrc = 'img/titul_commercial_site.png'; // по умолчанию - Фест
             let bmfPhoneSrc = 'img/titul_commercial_site_2.png';
             let festFaxSrc = 'img/fax.png';
-            let bmfTitulSiteSrc = 'img/titul_bmf.png';
             let festTitulSiteSrc = 'img/titul_commercial_site.png';
 
 // Устанавливаем текущую дату для всех элементов с классом commercial-date
@@ -784,29 +783,6 @@ function setSignatureContent(key) {
   document.getElementById('custom-name_dir').innerHTML = `<p>${data.name_dir}</p>`;
 }
 
-// Обработчики кнопок
-document.querySelector('button[data-signature="second"]').addEventListener('click', () => {
-    
-  toggleSignatureBlocks(true);
-  setSignatureContent('second');
-  setLogosAndBackgrounds(true);
-  updateSignatureAndLogos(true);
-  updateAllPagesContacts(true);
-  
-  // Меняем логотип и титул, если нужно
-  const logo = document.querySelector('.commercial-logo img');
-  if (logo) logo.src = 'img/logo_bmf_color.png';
-
-  const titolSite = document.querySelector('.commercial-titul-site img');
-  if (titolSite) titolSite.src = 'img/titul_commercial_site_2.png';
-
-  
-  const titolFon = document.querySelector('.commercial-titul-logo img');
-  if (titolFon) titolFon.src = 'img/titul_commercial_2.png';
-});
-
-
-
 document.querySelector('button[data-signature="first"]').addEventListener('click', () => {
   toggleSignatureBlocks(true);
   setSignatureContent('first');
@@ -831,6 +807,29 @@ document.querySelector('button[data-signature="fourth"]').addEventListener('clic
   updateSignatureAndLogos(false);
   updateAllPagesContacts(false);
 });
+
+
+// Обработчики кнопок
+document.querySelector('button[data-signature="second"]').addEventListener('click', () => {
+    
+  toggleSignatureBlocks(true);
+  setSignatureContent('second');
+  setLogosAndBackgrounds(true);
+  updateSignatureAndLogos(true);
+  updateAllPagesContacts(true);
+  
+  // Меняем логотип и титул, если нужно
+  const logo = document.querySelector('.commercial-logo img');
+  if (logo) logo.src = 'img/logo_bmf_color.png';
+
+  const titolSite = document.querySelector('.commercial-titul-site img');
+  if (titolSite) titolSite.src = 'img/titul_commercial_site_2.png';
+
+  
+  const titolFon = document.querySelector('.commercial-titul-logo img');
+  if (titolFon) titolFon.src = 'img/titul_commercial_2.png';
+});
+
 // Функция для загрузки изображений с диска
 function setupLoadImagesButtons() {
     document.querySelectorAll('.load-images-button').forEach(button => {
@@ -1105,12 +1104,12 @@ function updateSignatureAndLogos(isBmf) {
       `;
     }
     // Меняем логотип и титульное изображение
-    if (logoImg) logoImg.src = 'img/logo_bmf_color.png';
+    if (logoImg) logoImg.src = 'img/logo_color.png';
     if (titulSiteImg) {
-      titulSiteImg.src = 'img/titul_bmf.png';
-      currentTitulSiteSrc = 'img/titul_bmf.png'; // обновляем переменную
+      titulSiteImg.src = 'img/titul_commercial_site.png';
+      currentTitulSiteSrc = 'img/titul_commercial_site.png'; // обновляем переменную
     }
-    if (titulLogoImg) titulLogoImg.src = 'img/titul_commercial_2.png';
+    if (titulLogoImg) titulLogoImg.src = 'img/titul_commercial_1.png';
 
   } else {
     // Обновляем содержание блока компании для Фест
