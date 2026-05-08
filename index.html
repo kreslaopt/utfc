@@ -3300,13 +3300,16 @@ if (armrestTypeFilters.length > 0) {
                     childRow.appendChild(articleCell);
 
                     // Тип оделки
+                    // const finishtypeCell = document.createElement('td');
+                    // finishtypeCell.textContent = parent.finish_type || '—';
+                    // childRow.appendChild(finishtypeCell);
                     const finishtypeCell = document.createElement('td');
-                    finishtypeCell.textContent = parent.finish_type || '—';
-                    childRow.appendChild(finishtypeCell);
+finishtypeCell.textContent = `${child.IP_PROP38 || ''}${child.IP_PROP38 && child.IP_PROP61 ? ', ' : ''}${child.IP_PROP61 || ''}` || '—';
+childRow.appendChild(finishtypeCell);
 
                     // Тип оделки сиденья
                     const finishtypeseatCell = document.createElement('td');
-                    finishtypeseatCell.textContent = parent.finish_type_seat || '—';
+                    finishtypeseatCell.textContent = child.IP_PROP40 || '—';
                     childRow.appendChild(finishtypeseatCell);
 
                     // Подлокотники
