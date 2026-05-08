@@ -608,6 +608,32 @@ function getFinalSelectionData() {
             }
         }
 
+        function loadImageToCanvas(src, canvas, callback) {
+    const ctx = canvas.getContext('2d');
+    const img = new Image();
+    // Если сервер поддерживает CORS
+    // img.crossOrigin = 'anonymous'; // отключите, если не нужно
+    img.onload = () => {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+        if (callback) callback();
+    };
+    img.onerror = () => {
+        console.error('Ошибка загрузки изображения:', src);
+        ctx.fillStyle = 'gray';
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+    };
+    img.src = src;
+}
+function refreshImages() {
+    document.querySelectorAll('img').forEach(img => {
+        const src = img.src;
+        // Добавляем или обновляем уникальный параметр
+        const newSrc = src.split('?')[0] + '?t=' + new Date().getTime();
+        img.src = newSrc;
+    });
+}
+
 // Функция для создания блока товара
 async function createCommercialProduct(product, index) {
     const productDiv = document.createElement('div');
@@ -1301,6 +1327,7 @@ document.getElementById('generateOffer').addEventListener('click', async functio
 // Загружаем и отображаем товары при загрузке страницы
 window.onload = async () => {
     await loadAndDisplayProducts();
+    refreshImages();
     setDefaultSignature();
     // setupSaveImagesButtons();
     setupImageClickHandlers(); 
