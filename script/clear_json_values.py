@@ -2,33 +2,43 @@ import json
 import os
 
 def clear_json_values(data):
+
+        # Очистка additional
+    if 'images' in data and isinstance(data['images'], list):
+        for image_obj in data['images']:
+            if 'additional' in image_obj and isinstance(image_obj['additional'], list):
+                for idx in range(len(image_obj['additional'])):
+                    image_obj['additional'][idx] = ""
+
+
+
     # Очистка dimensions_details
-    if 'dimensions_details' in data and len(data['dimensions_details']) > 0:
-        for key in data['dimensions_details'][0]:
-            if isinstance(data['dimensions_details'][0][key], dict):
-                for sub_key in data['dimensions_details'][0][key]:
-                    data['dimensions_details'][0][key][sub_key] = ""
-            else:
-                data['dimensions_details'][0][key] = ""
+    # if 'dimensions_details' in data and len(data['dimensions_details']) > 0:
+    #     for key in data['dimensions_details'][0]:
+    #         if isinstance(data['dimensions_details'][0][key], dict):
+    #             for sub_key in data['dimensions_details'][0][key]:
+    #                 data['dimensions_details'][0][key][sub_key] = ""
+    #         else:
+    #             data['dimensions_details'][0][key] = ""
 
     # Очистка dimensions
-    if 'dimensions' in data and len(data['dimensions']) > 0:
-        for key in data['dimensions'][0]:
-            data['dimensions'][0][key] = ""
+    # if 'dimensions' in data and len(data['dimensions']) > 0:
+    #     for key in data['dimensions'][0]:
+    #         data['dimensions'][0][key] = ""
 
     # Очистка guarantee
-    if 'guarantee' in data and len(data['guarantee']) > 0:
-        for key in data['guarantee'][0]:
-            data['guarantee'][0][key] = ""
+    # if 'guarantee' in data and len(data['guarantee']) > 0:
+    #     for key in data['guarantee'][0]:
+    #         data['guarantee'][0][key] = ""
 
     # Очистка transportation
-    if 'transportation' in data and len(data['transportation']) > 0:
-        if 'packaging' in data['transportation'][0]:
-            if 'size' in data['transportation'][0]['packaging']:
-                for key in data['transportation'][0]['packaging']['size']:
-                    data['transportation'][0]['packaging']['size'][key] = ""
-            if 'box_size' in data['transportation'][0]['packaging']:
-                data['transportation'][0]['packaging']['box_size'] = ""
+    # if 'transportation' in data and len(data['transportation']) > 0:
+    #     if 'packaging' in data['transportation'][0]:
+    #         if 'size' in data['transportation'][0]['packaging']:
+    #             for key in data['transportation'][0]['packaging']['size']:
+    #                 data['transportation'][0]['packaging']['size'][key] = ""
+    #         if 'box_size' in data['transportation'][0]['packaging']:
+    #             data['transportation'][0]['packaging']['box_size'] = ""
 
     return data
 

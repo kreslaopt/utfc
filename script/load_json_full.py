@@ -83,7 +83,7 @@ def main():
     result = []
     for parent in parents:
         try:
-            parent_id = parent.get('IE_XML_ID')
+            parent_id = parent.get('IE_ID')
             if parent_id in parent_to_children:
                 unique_children = defaultdict(list)
                 for child in parent_to_children[parent_id]:

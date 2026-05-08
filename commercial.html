@@ -648,7 +648,8 @@ async function createCommercialProduct(product, index) {
                          alt="Изображение ${i + 1}"
                          style="max-width: 280px; max-height: 280px; cursor: pointer;"
                          data-product-name="${product.name}"
-                         data-image-index="${imgIndex}">
+                         data-image-index="${imgIndex}"
+                         crossorigin="anonymous">
                 </div>
             `;
         }
@@ -660,7 +661,8 @@ async function createCommercialProduct(product, index) {
                      alt="Ошибка"
                      style="max-width: 280px; max-height: 280px; cursor: pointer;"
                      data-product-name="${product.name}"
-                     data-image-index="0">
+                     data-image-index="0"
+                     crossorigin="anonymous">
             </div>
         `;
     }
@@ -911,6 +913,8 @@ async function urlToBase64(url) {
     }
 }
 
+
+
 // Замена всех изображений с utfc.ru на base64 или локальную заглушку
 async function replaceImagesWithBase64() {
     const images = document.querySelectorAll('.commercial-product-images img[src^="https://utfc.ru"]');
@@ -998,6 +1002,7 @@ function setupImageClickHandlers() {
             const input = document.createElement('input');
             input.type = 'file';
             input.accept = 'image/*';
+            
 
             input.onchange = (event) => {
                 const file = event.target.files[0];
@@ -1041,7 +1046,7 @@ async function generateCommercialOffer() {
     const doc = new jsPDF({
         orientation: 'landscape',
         unit: 'mm',
-        format: 'a4',
+        format: 'a4',        
     });
 
     // 1. Титульный лист
