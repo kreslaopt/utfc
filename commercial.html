@@ -285,7 +285,7 @@ document.getElementById('delete-icon-blocks').addEventListener('click', () => {
 //         }
 //     }
 // });
-document.getElementById('add-dimensions-btn').addEventListener('click', () => {
+document.getElementById('add-dimensions-btn').addEventListener('click', (e) => {
   const selectedProductsStr = localStorage.getItem('selectedProducts');
   if (!selectedProductsStr) return;
 
@@ -293,16 +293,29 @@ document.getElementById('add-dimensions-btn').addEventListener('click', () => {
   
   // Обрабатываем все блоки товаров
   document.querySelectorAll('.commercial-product').forEach(productDiv => {
-    // Предполагаем, что внутри блока есть изображение с data-product-name
     const img = productDiv.querySelector('img[data-product-name]');
     if (!img) return;
 
     const productName = img.getAttribute('data-product-name');
 
-    // Ищем товар по имени файла или по имени
-    const product = selectedProducts.find(p => 
-      p.name && p.name[0] && productName.toLowerCase().includes(p.name[0].toLowerCase())
-    );
+    // Приводим к нижнему регистру и удаляем слеши
+    const productNameLower = productName.toLowerCase().replace(/\//g, '').trim();
+    const productWords = new Set(productNameLower.split(/\s+/)); // множество слов
+
+    const product = selectedProducts.find(p => {
+      if (p.name && p.name.length > 0) {
+        const pNameLower = p.name[0].toLowerCase().replace(/\//g, '').trim();
+        const pWords = new Set(pNameLower.split(/\s+/));
+        // Проверка, что все слова из pWords есть в productWords
+        for (let word of pWords) {
+          if (!productWords.has(word)) {
+            return false;
+          }
+        }
+        return true; // все слова совпадают
+      }
+      return false;
+    });
 
     if (product && product.images && product.images.length > 0) {
       const newSrc = product.images[0].dimensions || product.images[0];
@@ -310,13 +323,16 @@ document.getElementById('add-dimensions-btn').addEventListener('click', () => {
       // Находим все изображения внутри блока
       const imgs = productDiv.querySelectorAll('img');
 
-      // Заменяем третье изображение (индекс 2), если есть
-      if (imgs.length > 2) {
+      // Заменяем четвертое изображение (индекс 3), если есть
+      if (imgs.length > 3) {
         imgs[3].src = newSrc;
         imgs[3].style.maxWidth = '380px';
         imgs[3].style.height = 'auto';
 
-        console.log('Заменено третье изображение на:', newSrc);
+        console.log('Обрабатываем товар:', productName);
+        console.log('Найден товар:', product);
+        console.log('Изображения товара:', product.images);
+        console.log('Новое изображение:', newSrc);
       }
     }
   });
