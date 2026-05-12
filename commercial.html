@@ -227,6 +227,7 @@
     </div>
 
     <button id="generateOffer">Сформировать PDF</button>
+    <button id="add-dimensions-btn">Добавить эскиз с размерами</button>
     
 
 <div id="signature-buttons"">
@@ -259,6 +260,68 @@ document.getElementById('delete-icon-blocks').addEventListener('click', () => {
     // Удаляем все элементы с классом 'commercial-titul-site'
     document.querySelectorAll('.commercial-logo').forEach(elem => elem.remove());
   });
+
+//   document.getElementById('add-dimensions-btn').addEventListener('click', () => {
+//     const selectedProductsStr = localStorage.getItem('selectedProducts');
+//     if (selectedProductsStr) {
+//         const selectedProducts = JSON.parse(selectedProductsStr);
+//         if (selectedProducts.length > 0) {
+//             const product = selectedProducts[0];
+//             if (product && product.images && product.images.length > 0 && product.dimensions && product.dimensions.length > 0) {
+//                 const newSrc = product.images[0].dimensions; // ваше изображение
+//                 // Найдите все товары на странице
+//                 document.querySelectorAll('.commercial-product').forEach(productDiv => {
+//                     // Внутри каждого блока найдите нужное изображение
+//                     const imgs = productDiv.querySelectorAll('img');
+//                     // допустим, меняем третье изображение (индекс 2)
+//                     if (imgs.length > 2) {
+//                         imgs[3].src = newSrc;
+//                         imgs[3].style.maxWidth = '380px';
+//     imgs[0].style.height = 'auto';
+//                         console.log('Изменено изображение:', newSrc);
+//                     }
+//                 });
+//             }
+//         }
+//     }
+// });
+document.getElementById('add-dimensions-btn').addEventListener('click', () => {
+  const selectedProductsStr = localStorage.getItem('selectedProducts');
+  if (!selectedProductsStr) return;
+
+  const selectedProducts = JSON.parse(selectedProductsStr);
+  
+  // Обрабатываем все блоки товаров
+  document.querySelectorAll('.commercial-product').forEach(productDiv => {
+    // Предполагаем, что внутри блока есть изображение с data-product-name
+    const img = productDiv.querySelector('img[data-product-name]');
+    if (!img) return;
+
+    const productName = img.getAttribute('data-product-name');
+
+    // Ищем товар по имени файла или по имени
+    const product = selectedProducts.find(p => 
+      p.name && p.name[0] && productName.toLowerCase().includes(p.name[0].toLowerCase())
+    );
+
+    if (product && product.images && product.images.length > 0) {
+      const newSrc = product.images[0].dimensions || product.images[0];
+
+      // Находим все изображения внутри блока
+      const imgs = productDiv.querySelectorAll('img');
+
+      // Заменяем третье изображение (индекс 2), если есть
+      if (imgs.length > 2) {
+        imgs[3].src = newSrc;
+        imgs[3].style.maxWidth = '380px';
+        imgs[3].style.height = 'auto';
+
+        console.log('Заменено третье изображение на:', newSrc);
+      }
+    }
+  });
+});
+
 
   const signatures = {
  first: {
@@ -672,7 +735,6 @@ async function createCommercialProduct(product, index) {
                 <div class="product-image-container" style="display: inline-block; margin-right: 10px;">
                     <img src="${imgUrl}"
                          alt="Изображение ${i + 1}"
-                         style="max-width: 280px; max-height: 280px; cursor: pointer;"
                          data-product-name="${product.name}"
                          data-image-index="${imgIndex}"
                          crossorigin="anonymous">
@@ -685,7 +747,6 @@ async function createCommercialProduct(product, index) {
             <div class="product-image-container" style="display: inline-block; margin-right: 10px;">
                 <img src="img/no-photo.png"
                      alt="Ошибка"
-                     style="max-width: 280px; max-height: 280px; cursor: pointer;"
                      data-product-name="${product.name}"
                      data-image-index="0"
                      crossorigin="anonymous">
@@ -722,7 +783,7 @@ async function createCommercialProduct(product, index) {
   <div class="commercial-titul-site">
         <img src="${imageSrc}" alt="Фоновое изображение">
     </div>
-        <h3  contenteditable="true">${index + 1}. ${product.name}</h3>
+        <h3 contenteditable="true" data-product-name="${product.name}">${index + 1}. ${product.name}</h3>
         <div class="commercial-product-images">
             ${imagesHTML}
             <div id="${qrId}" class="qr-code-container" style="display: inline-block; vertical-align: top;"></div>

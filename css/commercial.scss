@@ -155,7 +155,7 @@
         }
         .commercial-product-images img {
             max-width: 280px;
-            max-height: 280px;
+            max-height: auto;
         }
         .qr-code-container {
             margin-left: 10px;
@@ -222,6 +222,18 @@
 #generateOffer {
                position: fixed;
            top: 20px;
+           right: 25px;
+           padding: 10px 20px;
+           background-color: $darkMainColorGrey;
+           color: white;
+           text-decoration: none;
+           border-radius: 5px;
+           z-index: 1000;
+}
+
+#add-dimensions-btn {
+               position: fixed;
+           top: 100px;
            right: 25px;
            padding: 10px 20px;
            background-color: $darkMainColorGrey;
