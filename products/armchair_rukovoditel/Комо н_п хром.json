@@ -69,7 +69,7 @@
     "dimensions": [
         {
             "brutto": "",
-            "netto": "",
+            "netto": "16,20",
             "volume": "0,36"
         }
     ],
@@ -170,7 +170,7 @@
             "max_load": "150",
             "skeleton": "монолитный",
             "minpromtorg": "+",
-            "netto": "+",
+            "netto": "16",
             "brutto": {},
             "package_width": "1100",
             "package_depth": "490",

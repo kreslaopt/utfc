@@ -62,7 +62,7 @@
     
     position: relative;
     flex-grow: 1;
-    height: 2px;
+    height: 2.2px;
     background: #545454;
     border-radius: 2px;
   }
@@ -181,4 +181,19 @@ input[type="number"]::-webkit-inner-spin-button {
 /* Для Firefox */
 input[type="number"] {
     -moz-appearance: textfield;
+}
+
+.width{
+ align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 11px;
+    color: $GreenMainColor;
+}
+.height_slider{
+ align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 11px;
+    color: $GreenMainColor;
 }
