@@ -285,7 +285,7 @@ document.getElementById('delete-icon-blocks').addEventListener('click', () => {
 //         }
 //     }
 // });
-document.getElementById('add-dimensions-btn').addEventListener('click', (e) => {
+document.getElementById('add-dimensions-btn').addEventListener('click', () => {
   const selectedProductsStr = localStorage.getItem('selectedProducts');
   if (!selectedProductsStr) return;
 
@@ -306,13 +306,12 @@ document.getElementById('add-dimensions-btn').addEventListener('click', (e) => {
       if (p.name && p.name.length > 0) {
         const pNameLower = p.name[0].toLowerCase().replace(/\//g, '').trim();
         const pWords = new Set(pNameLower.split(/\s+/));
-        // Проверка, что все слова из pWords есть в productWords
         for (let word of pWords) {
           if (!productWords.has(word)) {
             return false;
           }
         }
-        return true; // все слова совпадают
+        return true;
       }
       return false;
     });
@@ -320,24 +319,23 @@ document.getElementById('add-dimensions-btn').addEventListener('click', (e) => {
     if (product && product.images && product.images.length > 0) {
       const newSrc = product.images[0].dimensions || product.images[0];
 
-      // Находим все изображения внутри блока
-      const imgs = productDiv.querySelectorAll('img');
+      // Найти нужный элемент изображения для замены
+      const imgs = productDiv.querySelectorAll('img[data-product-name]');
+      
+      // Предположим, что заменяем изображение с index 3 (четвертое изображение)
+      const targetImg = Array.from(imgs).find(i => i.getAttribute('data-image-index') === '3');
+      
+      if (targetImg) {
+        targetImg.src = newSrc;
+        targetImg.style.maxWidth = '380px';
+        targetImg.style.height = 'auto';
 
-      // Заменяем четвертое изображение (индекс 3), если есть
-      if (imgs.length > 3) {
-        imgs[3].src = newSrc;
-        imgs[3].style.maxWidth = '380px';
-        imgs[3].style.height = 'auto';
-
-        console.log('Обрабатываем товар:', productName);
-        console.log('Найден товар:', product);
-        console.log('Изображения товара:', product.images);
-        console.log('Новое изображение:', newSrc);
+        // Обновляем localStorage
+        localStorage.setItem(`image_${productName}_image3`, newSrc);
       }
     }
   });
 });
-
 
   const signatures = {
  first: {
@@ -1125,7 +1123,8 @@ function setupImageClickHandlers() {
                             localStorage.setItem('finalSelection', JSON.stringify(finalSelection));
 
                             // Обновляем изображение на странице
-                            img.src = imageDataUrl;
+                            // img.src = imageDataUrl;
+                            e.target.src = imageDataUrl;
                         }
                     };
                     reader.readAsDataURL(file);
@@ -1135,6 +1134,25 @@ function setupImageClickHandlers() {
             input.click();
         });
     });
+}
+
+// Обновляем изображения товаров перед созданием страниц
+function updateProductImagesInDOM() {
+  document.querySelectorAll('.commercial-product').forEach(productDiv => {
+    const productName = productDiv.querySelector('h3')?.getAttribute('data-product-name');
+    if (!productName) return;
+
+    // Получаем актуальное изображение с localStorage
+    const imageUrl = localStorage.getItem(`image_${productName}_image3`) || '';
+
+    // Обновляем src
+    const img = productDiv.querySelector('img[data-product-name][data-image-index="3"]');
+    if (img) {
+      img.src = imageUrl;
+      img.style.maxWidth = '380px';
+        img.style.height = 'auto';
+    }
+  });
 }
 
 // Функция для генерации PDF
@@ -1151,6 +1169,9 @@ async function generateCommercialOffer() {
         unit: 'mm',
         format: 'a4',        
     });
+
+    updateProductImagesInDOM();
+    
 
     // 1. Титульный лист
     const titlePage = document.querySelector('.a4-container:first-of-type');
@@ -1169,6 +1190,9 @@ async function generateCommercialOffer() {
 
     // 3. Детальные страницы товаров
     const productPages = document.querySelectorAll('#commercial-products .a4-container');
+
+    
+
     for (const productPage of productPages) {
         doc.addPage();
         const productCanvas = await html2canvas(productPage, { scale: 2, useCORS: true, allowTaint: true });
@@ -1269,6 +1293,7 @@ function updatePageNumbers() {
     });
     
 }
+
 // Загружаем данные из localStorage и отображаем их на странице
 async function loadAndDisplayProducts() {
     const data = getFinalSelectionData();
@@ -1342,10 +1367,26 @@ async function loadAndDisplayProducts() {
         updatePageNumbers(); // <-- вызываем после добавления всех страниц
     });
 }
+
+function saveAllProductImages() {
+  document.querySelectorAll('.commercial-product').forEach(productDiv => {
+    const productName = productDiv.querySelector('h3')?.getAttribute('data-product-name');
+    if (!productName) return;
+
+    // Предполагаем, что 4-е изображение — это index 3
+    const imgs = productDiv.querySelectorAll('img[data-product-name]');
+    const img = Array.from(imgs).find(i => i.getAttribute('data-image-index') === '3');
+    if (img) {
+      const src = img.src;
+      localStorage.setItem(`product_${productName}_image3`, src);
+    }
+  });
+}
 // Привязываем функцию к кнопке
 document.getElementById('generateOffer').addEventListener('click', async function() {
     try {
-        
+
+               
         const data = getFinalSelectionData();
         if (data.length === 0) {
             alert("Нет товаров для формирования PDF!");
@@ -1387,6 +1428,7 @@ document.getElementById('generateOffer').addEventListener('click', async functio
         // Обновляем нумерацию страниц в HTML
         updatePageNumbers();
         
+        
 
         // Ждём 1 секунду на случай, если QR-коды ещё грузятся
         await new Promise(resolve => setTimeout(resolve, 1000));
@@ -1410,8 +1452,9 @@ window.onload = async () => {
     setupImageClickHandlers(); 
     setSignatureContent('first');
     setLogosAndBackgrounds(false);
-        updateSignatureAndLogos(true);
-};
+        updateSignatureAndLogos(true);        
+
+      };
     </script>
 </body>
 </html>
