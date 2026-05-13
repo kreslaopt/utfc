@@ -1296,8 +1296,7 @@ function setImageSizesForPDF() {
   });
   const thirdImg = document.querySelector('.commercial-product-images img[data-image-index="3"]');
   if (thirdImg) {
-    thirdImg.style.width = '335px';
-    thirdImg.style.maxWidth = 'none';
+    thirdImg.style.maxWidth = '335px';
   }
 
   document.querySelectorAll('.sketch-img').forEach(img => {
@@ -1611,7 +1610,8 @@ window.onload = async () => {
     setupImageClickHandlers(); 
     setSignatureContent('first');
     setLogosAndBackgrounds(false);
-        updateSignatureAndLogos(true);        
+        updateSignatureAndLogos(true);    
+        setImageSizesForPDF();    
 
       };
     </script>
