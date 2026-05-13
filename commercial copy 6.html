@@ -389,13 +389,13 @@ document.getElementById('add-dimensions-btn').addEventListener('click', () => {
       // Создаем изображение эскиза
       const sketchImg = document.createElement('img');
       sketchImg.src = newSrc;
-      sketchImg.className = 'sketch-img'; 
-sketchImg.setAttribute('data-isSketch', 'true');
+      sketchImg.className = 'sketch-img'; // добавьте стиль для размера
+
       // Вставляем изображение в отдельный контейнер
       sketchContainer.appendChild(sketchImg);
 
       // Сохраняем в localStorage
-      localStorage.setItem(`sketch_${productName}`, newSrc);
+      localStorage.setItem(`sketch_${product.name[0]}`, newSrc);
     }
   });
 });
@@ -752,7 +752,7 @@ function getFinalSelectionData() {
     const ctx = canvas.getContext('2d');
     const img = new Image();
     // Если сервер поддерживает CORS
-    // img.crossOrigin = 'anonymous'; // 
+    // img.crossOrigin = 'anonymous'; // отключите, если не нужно
     img.onload = () => {
         ctx.clearRect(0, 0, canvas.width, canvas.height);
         ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
@@ -765,29 +765,8 @@ function getFinalSelectionData() {
     };
     img.src = src;
 }
-
-// function saveAllSketchesToLocalStorage() {
-//   document.querySelectorAll('.commercial-product').forEach(productDiv => {
-//     const productName = productDiv.querySelector('h3')?.getAttribute('data-product-name');
-//     if (!productName) return;
-
-//     const sketchImg = productDiv.querySelector('.sketch-img');
-//     if (sketchImg && sketchImg.src && !sketchImg.src.startsWith('data:')) {
-//       // сохраняем изображение
-//       localStorage.setItem(`sketch_${productName}`, sketchImg.src);
-//     } else if (sketchImg && sketchImg.src.startsWith('data:')) {
-//       // уже base64, сохраняем
-//       localStorage.setItem(`sketch_${productName}`, sketchImg.src);
-//     }
-//   });
-// }
-
-
 function refreshImages() {
     document.querySelectorAll('img').forEach(img => {
-        // Исключить изображения, отмеченные как эскизы
-        // if (img.getAttribute('data-isSketch') === 'true') return;
-
         const src = img.src;
         img.setAttribute('crossorigin', 'anonymous');
       
@@ -844,7 +823,7 @@ async function createCommercialProduct(product, index) {
             }
 
             imagesHTML += `
-                <div class="product-image-container" style="display: inline-block;">
+                <div class="product-image-container" style="display: inline-block; margin-right: 10px;">
                     <img src="${imgUrl}"
                          alt="Изображение ${i + 1}"
                          data-product-name="${product.name}"
@@ -856,7 +835,7 @@ async function createCommercialProduct(product, index) {
     } catch (e) {
         console.error("Ошибка при формировании изображений:", e);
         imagesHTML = `
-            <div class="product-image-container" style="display: inline-block;">
+            <div class="product-image-container" style="display: inline-block; margin-right: 10px;">
                 <img src="img/no-photo.png"
                      alt="Ошибка"
                      data-product-name="${product.name}"
@@ -890,9 +869,9 @@ async function createCommercialProduct(product, index) {
         { label: 'Ролики', value: product.Ролики },
     ];
     
-    const productName = productDiv.querySelector('h3')?.getAttribute('data-product-name');
+
     const imageSrc = isBmfSelected ? 'img/titul_commercial_site_2.png' : 'img/titul_commercial_site.png';
-    const sketchSrc = localStorage.getItem(`sketch_${productName}`);
+    const sketchSrc = localStorage.getItem(`sketch_${product.name}`);
     let sketchHTML = '';
 if (sketchSrc) {
   sketchHTML = `
@@ -912,13 +891,14 @@ if (sketchSrc) {
             <div id="${qrId}" class="qr-code-container" style="display: inline-block; vertical-align: top;"></div>
         </div>
         
+        ${sketchHTML}
         <div class="commercial-product-details" contenteditable="true">
             <p><strong>Количество:</strong> ${product.count}</p>
             <p><strong>Цена:</strong> ${product.CV_PRICE_1} ${product.CV_CURRENCY_1 || 'RUB'}</p>
             <p><strong>Сумма:</strong> ${(parseFloat(product.CV_PRICE_1) * product.count).toFixed(2)} ${product.CV_CURRENCY_1 || 'RUB'}</p>
             
     `;
-detailsHTML += `${sketchHTML}`;
+
     // ${saveImagesButton}
 
     fields.forEach(field => {
@@ -1085,7 +1065,7 @@ function setupLoadImagesButtons() {
                             if (productDiv) {
                                 const imgContainer = productDiv.querySelector('.commercial-product-images div');
                                 if (imgContainer) {
-                                    imgContainer.innerHTML = `<img src="${imageDataUrl}" alt="Изображение ${i + 1}">`;
+                                    imgContainer.innerHTML = `<img src="${imageDataUrl}" alt="Изображение ${i + 1}" style="max-width: 280px; max-height: auto;">`;
                                 }
                             }
                         };
@@ -1149,63 +1129,61 @@ async function replaceExternalImagesWithBase64() {
     }
 }
 // Функция для обработки drag-and-drop
-// function setupDragAndDrop() {
-//     document.querySelectorAll('.commercial-product-images').forEach(container => {
-//         container.addEventListener('dragover', (e) => {
-//             e.preventDefault();
-//             container.style.borderColor = '#96C22B';
-//         });
+function setupDragAndDrop() {
+    document.querySelectorAll('.commercial-product-images').forEach(container => {
+        container.addEventListener('dragover', (e) => {
+            e.preventDefault();
+            container.style.borderColor = '#96C22B';
+        });
 
-//         container.addEventListener('dragleave', () => {
-//             container.style.borderColor = '#ccc';
-//         });
+        container.addEventListener('dragleave', () => {
+            container.style.borderColor = '#ccc';
+        });
 
-//         container.addEventListener('drop', (e) => {
-//             e.preventDefault();
-//             container.style.borderColor = '#ccc';
+        container.addEventListener('drop', (e) => {
+            e.preventDefault();
+            container.style.borderColor = '#ccc';
 
-//             const productName = container.getAttribute('data-product-name');
-//             const files = Array.from(e.dataTransfer.files);
-//             const finalSelection = JSON.parse(localStorage.getItem('finalSelection')) || {};
-//             const product = finalSelection[productName];
+            const productName = container.getAttribute('data-product-name');
+            const files = Array.from(e.dataTransfer.files);
+            const finalSelection = JSON.parse(localStorage.getItem('finalSelection')) || {};
+            const product = finalSelection[productName];
 
-//             if (!product) {
-//                 alert(`Товар "${productName}" не найден!`);
-//                 return;
-//             }
+            if (!product) {
+                alert(`Товар "${productName}" не найден!`);
+                return;
+            }
 
-//             if (!product.images) {
-//                 product.images = [];
-//             }
+            if (!product.images) {
+                product.images = [];
+            }
 
-//             // Очищаем текущие изображения
-//             product.images = Array(4).fill('');
+            // Очищаем текущие изображения
+            product.images = Array(4).fill('');
 
-//             // Сохраняем новые изображения в product.images и localStorage
-//             for (let i = 0; i < files.length && i < 4; i++) {
-//                 const file = files[i];
-//                 if (file.type.startsWith('image/')) {
-//                     const reader = new FileReader();
-//                     reader.onload = (event) => {
-//                         const imageDataUrl = event.target.result;
-//                         product.images[i] = imageDataUrl;
-//                         localStorage.setItem(`image_${productName}_${i}`, imageDataUrl);
-//                         localStorage.setItem('finalSelection', JSON.stringify(finalSelection));
+            // Сохраняем новые изображения в product.images и localStorage
+            for (let i = 0; i < files.length && i < 4; i++) {
+                const file = files[i];
+                if (file.type.startsWith('image/')) {
+                    const reader = new FileReader();
+                    reader.onload = (event) => {
+                        const imageDataUrl = event.target.result;
+                        product.images[i] = imageDataUrl;
+                        localStorage.setItem(`image_${productName}_${i}`, imageDataUrl);
+                        localStorage.setItem('finalSelection', JSON.stringify(finalSelection));
 
-//                         // Обновляем отображение товара
-//                         const imgContainer = container.querySelector('div');
-//                         if (imgContainer) {
-//                             imgContainer.innerHTML = `<img src="${imageDataUrl}" alt="Изображение ${i + 1}" style="max-width: 280px; max-height: auto;">`;
-//                         }
-//                     };
-//                     reader.readAsDataURL(file);
-//                 }
-//             }
-//         });
-//     });
-// }
-
-
+                        // Обновляем отображение товара
+                        const imgContainer = container.querySelector('div');
+                        if (imgContainer) {
+                            imgContainer.innerHTML = `<img src="${imageDataUrl}" alt="Изображение ${i + 1}" style="max-width: 280px; max-height: auto;">`;
+                        }
+                    };
+                    reader.readAsDataURL(file);
+                }
+            }
+        });
+    });
+}
 // Функция для настройки обработчиков кликов по изображениям
 function setupImageClickHandlers() {
     document.querySelectorAll('.commercial-product-images img[data-product-name]').forEach(img => {
@@ -1254,24 +1232,37 @@ function updateProductImagesInDOM() {
     const productName = productDiv.querySelector('h3')?.getAttribute('data-product-name');
     if (!productName) return;
 
+    // Получаем актуальное изображение с localStorage
+    const imageUrl = localStorage.getItem(`image_${productName}_3`) || '';
+
+    // Обновляем изображение
+    const img = productDiv.querySelector('img[data-product-name][data-image-index="3"]');
+    if (img) {
+      img.src = imageUrl;
+      img.style.maxWidth = '335px';
+      img.style.height = 'auto';
+    }
+
+    // Получаем эскиз из localStorage
     const sketchSrc = localStorage.getItem(`sketch_${productName}`);
     let sketchContainer = productDiv.querySelector('.sketch-container');
 
-if (sketchSrc) {
-  if (!sketchContainer) {
-    sketchContainer = document.createElement('div');
-    sketchContainer.className = 'sketch-container';
-
-    const imagesContainer = productDiv.querySelector('.commercial-product-images');
-    if (imagesContainer) {
-      imagesContainer.appendChild(sketchContainer);
+    if (sketchSrc) {
+      // Создаём или обновляем контейнер для эскиза
+      if (!sketchContainer) {
+        sketchContainer = document.createElement('div');
+        sketchContainer.className = 'sketch-container';
+        // Вставляем после изображений или в нужное место
+        productDiv.querySelector('.commercial-product-images').appendChild(sketchContainer);
+      }
+      // Обновляем содержимое контейнера
+      sketchContainer.innerHTML = `<img src="${sketchSrc}" class="sketch-img" style="max-width: 380px;">`;
+    } else {
+      // Если эскиз отсутствует, можно удалить контейнер
+      if (sketchContainer) {
+        sketchContainer.remove();
+      }
     }
-  } else {
-    sketchContainer.innerHTML = '';
-  }
-  // вставляем изображение эскиза
-  sketchContainer.innerHTML = `<img src="${sketchSrc}" class="sketch-img" style="max-width: 380px;" data-isSketch="true">`;
-}
   });
 }
 // function saveCurrentImagesToLocalStorage() {
@@ -1285,36 +1276,12 @@ if (sketchSrc) {
 //   });
 // }
 
-function setImageSizesForPDF() {
-  document.querySelectorAll('.commercial-product-images img').forEach(img => {
-    img.style.width = '';
-    img.style.maxWidth = '';
-  });
-  document.querySelectorAll('.commercial-product-images img[data-image-index="0"], .commercial-product-images img[data-image-index="1"]').forEach(img => {
-    img.style.width = '280px';
-    img.style.maxWidth = 'none';
-  });
-  const thirdImg = document.querySelector('.commercial-product-images img[data-image-index="3"]');
-  if (thirdImg) {
-    thirdImg.style.width = '335px';
-    thirdImg.style.maxWidth = 'none';
-  }
 
-  document.querySelectorAll('.sketch-img').forEach(img => {
-    img.style.width = '380px';
-  });
-}
 
 // Функция для генерации PDF
 async function generateCommercialOffer() {
-      
-updateProductImagesInDOM();
 
-document.querySelectorAll('.commercial-product img').forEach((img, index) => {
-    console.log(`Image ${index}: src=${img.src}, data-isSketch=${img.getAttribute('data-isSketch')}`);
-  });
-
-
+    // saveCurrentImagesToLocalStorage();
     // Скрываем все кнопки "Сохранить все изображения" внутри блоков товаров
     const saveButtons = document.querySelectorAll('.save-images-button');
     saveButtons.forEach(button => {
@@ -1346,9 +1313,11 @@ document.querySelectorAll('.commercial-product img').forEach((img, index) => {
     }
 
     // 3. Детальные страницы товаров
-    const productPages = document.querySelectorAll('#commercial-products .a4-container');         
+    const productPages = document.querySelectorAll('#commercial-products .a4-container');
 
-      
+            updateProductImagesInDOM();
+
+
     for (const productPage of productPages) {
         doc.addPage();
         const productCanvas = await html2canvas(productPage, { scale: 2, useCORS: true, allowTaint: true });
@@ -1588,12 +1557,13 @@ document.getElementById('generateOffer').addEventListener('click', async functio
         // Обновляем нумерацию страниц в HTML
         updatePageNumbers();
         updateProductImagesInDOM();
-        setImageSizesForPDF();
+        
 
         // Ждём 1 секунду на случай, если QR-коды ещё грузятся
         await new Promise(resolve => setTimeout(resolve, 1000));
 
         // Генерируем PDF
+        
         await generateCommercialOffer();
         
     } catch (error) {

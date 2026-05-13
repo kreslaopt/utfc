@@ -149,14 +149,28 @@
         .commercial-product-images {
             display: flex;
             justify-content: flex-start;
-            gap: 10px;
-            margin: 10px 0;
+            // margin: 10px 0;
             align-items: flex-start;
+                        z-index: 100;
+
         }
         .commercial-product-images img {
             max-width: 280px;
             max-height: auto;
         }
+
+        .commercial-product-images img:nth-child(3) {
+    max-width: 335px;
+}
+
+        .sketch-img {
+            position: absolute;
+    width: 380px; 
+    height: auto;
+    right: -15px;
+        top: 490px;
+
+}
         .qr-code-container {
             margin-left: 10px;
             position: absolute;
@@ -167,7 +181,7 @@
             position: absolute;
             bottom: 30px;
             line-height: 1.15;
-            width: 90%;
+            width: 62%;
         }
 
         .commercial-product-details p {
@@ -230,6 +244,9 @@
            border-radius: 5px;
            z-index: 1000;
 }
+
+
+
 
 #add-dimensions-btn {
                position: fixed;
