@@ -705,11 +705,7 @@ function getFinalSelectionData() {
 function refreshImages() {
     document.querySelectorAll('img').forEach(img => {
         const src = img.src;
-        if (src.startsWith('data:')) {
-            // Это data URI, не обновляем src
-            return;
-        }
-        // Для обычных URL добавляем параметр
+        // Добавляем или обновляем уникальный параметр
         const newSrc = src.split('?')[0] + '?t=' + new Date().getTime();
         img.src = newSrc;
     });
@@ -1127,8 +1123,8 @@ function setupImageClickHandlers() {
                             localStorage.setItem('finalSelection', JSON.stringify(finalSelection));
 
                             // Обновляем изображение на странице
-                            img.src = imageDataUrl;
-                            // e.target.src = imageDataUrl;
+                            // img.src = imageDataUrl;
+                            e.target.src = imageDataUrl;
                         }
                     };
                     reader.readAsDataURL(file);
@@ -1139,22 +1135,23 @@ function setupImageClickHandlers() {
         });
     });
 }
-
-// Обновляем изображения товаров перед созданием страниц
-function updateProductImagesInDOM() {
+// Обновить все изображения товаров из localStorage перед созданием страниц
+function updateAllProductImagesFromStorage() {
   document.querySelectorAll('.commercial-product').forEach(productDiv => {
     const productName = productDiv.querySelector('h3')?.getAttribute('data-product-name');
     if (!productName) return;
 
-    // Получаем актуальное изображение с localStorage
+    // Получить актуальное изображение из localStorage
     const imageUrl = localStorage.getItem(`image_${productName}_image3`) || '';
 
-    // Обновляем src
+    // Обновить src у соответствующего изображения
     const img = productDiv.querySelector('img[data-product-name][data-image-index="3"]');
-    if (img) {
+    if (img && imageUrl) {
       img.src = imageUrl;
       img.style.maxWidth = '380px';
-        img.style.height = 'auto';
+      img.style.height = 'auto';
+    } else {
+      // Можно оставить старое изображение или установить заглушку
     }
   });
 }
@@ -1174,7 +1171,8 @@ async function generateCommercialOffer() {
         format: 'a4',        
     });
 
-   
+// updateAllProductImagesFromStorage();
+          
 
     // 1. Титульный лист
     const titlePage = document.querySelector('.a4-container:first-of-type');
@@ -1192,10 +1190,7 @@ async function generateCommercialOffer() {
     }
 
     // 3. Детальные страницы товаров
-    const productPages = document.querySelectorAll('#commercial-products .a4-container');
-
-            updateProductImagesInDOM();
-
+    const productPages = document.querySelectorAll('#commercial-products .a4-container');    
 
     for (const productPage of productPages) {
         doc.addPage();
@@ -1295,8 +1290,6 @@ function updatePageNumbers() {
         pageNumberBox.style.backgroundColor = pageNumberBgColor; // используем сохраненный цвет
         page.appendChild(pageNumberBox);
     });
-
-
     
 }
 
@@ -1374,20 +1367,20 @@ async function loadAndDisplayProducts() {
     });
 }
 
-function saveAllProductImages() {
-  document.querySelectorAll('.commercial-product').forEach(productDiv => {
-    const productName = productDiv.querySelector('h3')?.getAttribute('data-product-name');
-    if (!productName) return;
+// function saveAllProductImages() {
+//   document.querySelectorAll('.commercial-product').forEach(productDiv => {
+//     const productName = productDiv.querySelector('h3')?.getAttribute('data-product-name');
+//     if (!productName) return;
 
-    // Предполагаем, что 4-е изображение — это index 3
-    const imgs = productDiv.querySelectorAll('img[data-product-name]');
-    const img = Array.from(imgs).find(i => i.getAttribute('data-image-index') === '3');
-    if (img) {
-      const src = img.src;
-      localStorage.setItem(`product_${productName}_image3`, src);
-    }
-  });
-}
+//     // Предполагаем, что 4-е изображение — это index 3
+//     const imgs = productDiv.querySelectorAll('img[data-product-name]');
+//     const img = Array.from(imgs).find(i => i.getAttribute('data-image-index') === '3');
+//     if (img) {
+//       const src = img.src;
+//       localStorage.setItem(`product_${productName}_image3`, src);
+//     }
+//   });
+// }
 // Привязываем функцию к кнопке
 document.getElementById('generateOffer').addEventListener('click', async function() {
     try {
@@ -1458,7 +1451,8 @@ window.onload = async () => {
     setupImageClickHandlers(); 
     setSignatureContent('first');
     setLogosAndBackgrounds(false);
-        updateSignatureAndLogos(true);        
+        updateSignatureAndLogos(true);     
+        // updateAllProductImagesFromStorage();   
 
       };
     </script>
