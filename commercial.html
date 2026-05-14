@@ -350,7 +350,7 @@ document.getElementById('add-dimensions-btn').addEventListener('click', () => {
   if (!selectedProductsStr) return;
 
   const selectedProducts = JSON.parse(selectedProductsStr);
-  
+
   // Обрабатываем все блоки товаров
   document.querySelectorAll('.commercial-product').forEach(productDiv => {
     const imgs = productDiv.querySelectorAll('img[data-product-name]');
@@ -359,60 +359,61 @@ document.getElementById('add-dimensions-btn').addEventListener('click', () => {
     const firstImg = imgs[0]; // предполагаем, что есть хотя бы одно изображение
     const productName = firstImg.getAttribute('data-product-name');
 
-    // Приводим к нижнему регистру и удаляем слеши
-    const productNameLower = productName.toLowerCase().replace(/\//g, ' ').trim();
-    const productWords = new Set(productNameLower.split(/\s+/));
-    
+    // Проверяем наличие эскиза
+    const sketchContainer = productDiv.querySelector('.sketch-container');
 
-    // Находим соответствующий продукт
-    const product = selectedProducts.find(p => {
-      if (p.name && p.name.length > 0) {
-        const pNameLower = p.name[0].toLowerCase().replace(/\//g, ' ').trim();
-        const pWords = new Set(pNameLower.split(/\s+/));
-        for (let word of pWords) {
-          if (!productWords.has(word)) {
-            return false;
+    if (sketchContainer && sketchContainer.children.length > 0) {
+      // Эскиз есть, удаляем его
+      sketchContainer.innerHTML = '';
+
+      // Обновляем текст кнопки на "Добавить эскиз с размерами"
+      document.getElementById('add-dimensions-btn').textContent = 'Добавить эскиз с размерами';
+
+    } else {
+      // Эскиза нет, добавляем
+      const product = selectedProducts.find(p => {
+        if (p.name && p.name.length > 0) {
+          const pNameLower = p.name[0].toLowerCase().replace(/\//g, ' ').trim();
+          const pWords = new Set(pNameLower.split(/\s+/));
+          const productNameLower = productName.toLowerCase().replace(/\//g, ' ').trim();
+          const productWords = new Set(productNameLower.split(/\s+/));
+          for (let word of pWords) {
+            if (!productWords.has(word)) {
+              return false;
+            }
           }
+          return true;
         }
-        return true;
+        return false;
+      });
+
+      if (product && product.images && product.images.length > 0) {
+        const newSrc = product.images[0].dimensions || product.images[0];
+
+        // Создаем или очищаем контейнер для эскиза
+        let newSketchContainer = productDiv.querySelector('.sketch-container');
+        if (!newSketchContainer) {
+          newSketchContainer = document.createElement('div');
+          newSketchContainer.className = 'sketch-container';
+          productDiv.appendChild(newSketchContainer);
+        } else {
+          newSketchContainer.innerHTML = '';
+        }
+
+        // Создаем изображение эскиза
+        const sketchImg = document.createElement('img');
+        sketchImg.src = newSrc;
+        sketchImg.className = 'sketch-img';
+        sketchImg.setAttribute('data-isSketch', 'true');
+
+        newSketchContainer.appendChild(sketchImg);
+
+        // Сохраняем в localStorage
+        localStorage.setItem(`sketch_${productName}`, newSrc);
+
+        // Обновляем текст кнопки на "Удалить эскиз с размерами"
+        document.getElementById('add-dimensions-btn').textContent = 'Удалить эскиз с размерами';
       }
-      return false;
-    });
-
-// console.log('Обрабатываем продукт:', firstImg.getAttribute('data-product-name'));
-// console.log('Названия после обработки:');
-// console.log('productNameLower:', productNameLower);
-// console.log('productWords:', Array.from(productWords));
-
-    if (product && product.images && product.images.length > 0) {
-      const newSrc = product.images[0].dimensions || product.images[0];
-
-      // Создаем или очищаем отдельный контейнер для эскиза
-      let sketchContainer = productDiv.querySelector('.sketch-container');
-      if (!sketchContainer) {
-        // Создаем новый контейнер, если его еще нет
-        sketchContainer = document.createElement('div');
-        sketchContainer.className = 'sketch-container';
-        // Можно вставить его в нужное место, например, в начало или в конец блока
-        productDiv.appendChild(sketchContainer);
-      } else {
-        // Очищаем содержимое контейнера перед добавлением нового изображения
-        sketchContainer.innerHTML = '';
-      }
-
-      // Создаем изображение эскиза
-      const sketchImg = document.createElement('img');
-      sketchImg.src = newSrc;
-      sketchImg.className = 'sketch-img'; 
-sketchImg.setAttribute('data-isSketch', 'true');
-      // Вставляем изображение в отдельный контейнер
-      sketchContainer.appendChild(sketchImg);
-
-      // Сохраняем в localStorage
-      localStorage.setItem(`sketch_${productName}`, newSrc);
-//       console.log(localStorage.getItem('selectedProducts'));
-//       console.log('Обрабатываем продукт:', productName);
-// console.log('Найденный товар:', product);
     }
   });
 });
@@ -1269,6 +1270,15 @@ function setupImageClickHandlers() {
     });
 }
 
+
+
+function removeAllSketches() {
+document.querySelectorAll('.sketch-container').forEach(container => {
+  container.style.display = 'none';
+
+  });
+}
+
 // Обновляем изображения товаров перед созданием страниц
 function updateProductImagesInDOM() {
   document.querySelectorAll('.commercial-product').forEach(productDiv => {
@@ -1324,6 +1334,8 @@ function setImageSizesForPDF() {
     img.style.width = '380px';
   });
 }
+
+
 
 // Функция для генерации PDF
 async function generateCommercialOffer() {
@@ -1613,7 +1625,15 @@ document.getElementById('generateOffer').addEventListener('click', async functio
         // Ждём 1 секунду на случай, если QR-коды ещё грузятся
         await new Promise(resolve => setTimeout(resolve, 1000));
 
-        // Генерируем PDF
+        // Проверяем состояние кнопки
+const btn = document.getElementById('add-dimensions-btn');
+
+if (btn && btn.textContent.trim() === 'Добавить эскиз с размерами') {
+  removeAllSketches();
+}
+
+        // Генерируем PDF        
+        
         await generateCommercialOffer();
         
     } catch (error) {
@@ -1633,6 +1653,8 @@ window.onload = async () => {
     setLogosAndBackgrounds(false);
         updateSignatureAndLogos(true);    
         setImageSizesForPDF();    
+        
+
 
       };
     </script>
