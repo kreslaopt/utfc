@@ -478,8 +478,10 @@ h3 {
 }
 
 #products {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 15px;
   margin-bottom: 70px;
 }

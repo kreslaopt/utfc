@@ -527,8 +527,13 @@
        }
 
        #products {
-              display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    //           display: grid;
+    // grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    width: 90%;
+    // margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 15px;
     margin-bottom: 70px;
        }
