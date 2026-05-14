@@ -171,7 +171,7 @@ input[type=number]::-webkit-inner-spin-button {
   align-items: center;
   justify-content: center;
   display: flex;
-  font-size: 11px;
+  font-size: 10px;
   color: #96C22B;
 }
 
