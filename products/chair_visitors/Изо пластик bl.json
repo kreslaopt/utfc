@@ -66,9 +66,9 @@
     ],
     "dimensions": [
         {
-            "brutto": "",
-            "netto": "",
-            "volume": "0,00"
+            "brutto": "5,53",
+            "netto": "4,60",
+            "volume": "0,03"
         }
     ],
     "guarantee": [
@@ -124,89 +124,54 @@
     "dimensions_details": [
         {
             "chair_height": {
-                "min": "760",
-                "max": ""
+                "min": "760"
             },
-            "headrest_height": {
-                "min": "",
-                "max": ""
-            },
+            "headrest_height": {},
             "seat_to_floor_height": {
-                "min": "450",
-                "max": ""
-            },
-            "armrest_height_from_seat": {
-                "min": "",
-                "max": ""
-            },
-            "chair_depth": {
-                "min": "580",
-                "max": null
-            },
-            "seat_depth": {
-                "min": "450",
-                "max": null
-            },
-            "backrest_height": {
-                "max": "340",
-                "min": ""
-            },
-            "backrest_to_seat_height": {
-                "min": "",
-                "max": ""
-            },
-            "seat_width_with_armrests": {
-                "min": "",
-                "max": null
-            },
-            "seat_width": {
-                "max": "460",
-                "min": ""
-            },
-            "diameter_cross": {
-                "max": "465",
-                "min": ""
-            },
-            "runners_width": {
-                "max": "550",
-                "min": ""
-            },
-            "runners_depth": {
-                "max": "400",
-                "min": ""
-            },
-            "seat_to_floor_height_upper": {
                 "min": "450"
             },
+            "seat_to_floor_height_upper": {},
             "armrest_height_from_floor": {},
+            "armrest_height_from_seat": {},
             "armrest_width_support": {},
             "armrest_length_support": {},
+            "chair_depth": {
+                "min": "580"
+            },
+            "seat_depth": {
+                "min": "450"
+            },
             "seat_depth_km": {},
+            "backrest_height": {
+                "max": "340"
+            },
+            "backrest_to_seat_height": {},
             "backrest_height_external": {},
+            "seat_width_with_armrests": {},
+            "seat_width": {
+                "max": "460"
+            },
             "backrest_width_narrow": {
                 "max": "465"
             },
             "backrest_width_wide": {
                 "max": "465"
             },
+            "diameter_cross": {},
+            "runners_width": {
+                "max": "550"
+            },
+            "runners_depth": {
+                "max": "400"
+            },
             "recommended_load": "90",
             "max_load": "120",
-            "skeleton": "монолитный",
             "minpromtorg": "+",
-            "netto": "+",
-            "brutto": {},
-            "package_width": {},
-            "package_depth": {},
-            "package_height": {},
-            "volume": "0",
-            "box_on_pallet": {},
-            "pallet_width": {},
-            "addition": {},
-            "typeofproduct": "монолитный"
+            "volume": "0"
         }
     ],
-    "skeleton": "монолитный",
-    "minpromtorg": "Минпромторг",
+    "skeleton": "немонолитный",
+    "minpromtorg": "",
     "addition": "",
     "parent": {
         "IE_XML_ID": "s8051",
@@ -905,5 +870,9 @@
         "Стул ИЗО BL пластик (-, Пластик синий,, )",
         "Стул ИЗО BL пластик (-, Пластик черный,, )"
     ],
-    "madeinrf": "Сделано РФ"
+    "madeinrf": "Сделано РФ",
+    "additional_info": {
+        "package_dimensions": {},
+        "volume": "0"
+    }
 }

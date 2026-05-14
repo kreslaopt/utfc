@@ -89,15 +89,15 @@
         {
             "chair_height": {
                 "min": "890",
-                "max": 890
+                "max": ""
             },
             "headrest_height": {
-                "min": null,
-                "max": null
+                "min": "",
+                "max": ""
             },
             "seat_to_floor_height": {
                 "min": "470",
-                "max": null
+                "max": ""
             },
             "armrest_height_from_seat": {
                 "min": "",
@@ -105,66 +105,100 @@
             },
             "chair_depth": {
                 "min": "515",
-                "max": null
+                "max": ""
             },
             "seat_depth": {
                 "min": "390",
-                "max": null
+                "max": ""
             },
             "backrest_height": {
-                "max": "440",
-                "min": ""
-            },
-            "backrest_to_seat_height": {
-                "min": "390",
+                "min": "",
                 "max": "440"
             },
+            "backrest_to_seat_height": {
+                "min": "",
+                "max": ""
+            },
             "seat_width_with_armrests": {
-                "min": null,
-                "max": null
+                "min": "",
+                "max": ""
             },
             "seat_width": {
-                "max": "360",
-                "min": ""
+                "min": "",
+                "max": "360"
             },
             "diameter_cross": {
-                "max": null,
-                "min": ""
+                "min": "",
+                "max": ""
             },
             "runners_width": {
-                "max": "340",
-                "min": ""
+                "min": "",
+                "max": "340"
             },
             "runners_depth": {
-                "max": "440",
-                "min": ""
+                "min": "",
+                "max": "440"
             },
             "seat_to_floor_height_upper": {
-                "min": "470"
+                "min": "",
+                "max": ""
             },
-            "armrest_height_from_floor": {},
-            "armrest_width_support": {},
-            "armrest_length_support": {},
+            "armrest_height_from_floor": {
+                "min": "",
+                "max": ""
+            },
+            "armrest_width_support": {
+                "min": "",
+                "max": ""
+            },
+            "armrest_length_support": {
+                "min": "",
+                "max": ""
+            },
             "seat_depth_km": {
+                "min": "",
                 "max": "390"
             },
-            "backrest_height_external": {},
-            "backrest_width_narrow": {},
-            "backrest_width_wide": {},
+            "backrest_height_external": {
+                "min": "",
+                "max": ""
+            },
+            "backrest_width_narrow": {
+                "min": "",
+                "max": ""
+            },
+            "backrest_width_wide": {
+                "min": "",
+                "max": ""
+            },
             "recommended_load": "90",
             "max_load": "120",
-            "skeleton": "монолитный",
+            "skeleton": {
+                "min": "",
+                "max": ""
+            },
             "minpromtorg": "+",
-            "netto": "+",
-            "brutto": {},
-            "package_width": {},
-            "package_depth": {},
-            "package_height": {},
-            "volume": "0",
-            "box_on_pallet": {},
-            "pallet_width": {},
-            "addition": {},
-            "typeofproduct": "монолитный"
+            "netto": {
+                "min": "",
+                "max": ""
+            },
+            "brutto": {
+                "min": "",
+                "max": ""
+            },
+            "package_width": {
+                "min": "",
+                "max": ""
+            },
+            "package_depth": {
+                "min": "",
+                "max": ""
+            },
+            "package_height": {
+                "min": "",
+                "max": ""
+            },
+            "volume": "0"
         }
     ],
     "skeleton": "",

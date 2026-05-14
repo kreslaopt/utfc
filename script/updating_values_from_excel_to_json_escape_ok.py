@@ -15,6 +15,7 @@ parents_mapping = {
     'табурет пр ch': 'табурет пр',
     'изо gr': 'изо',
     'изо bl': 'изо',
+    'изо со столиком bl': 'стул изо со столиком',
     'венус ch': 'венус',
     'венус gr': 'венус',
     'венус м bl': 'венус м',
@@ -39,6 +40,7 @@ parents_mapping = {
     'ванеccа bl':'ванеccа',
     'верcаль ch':'верcаль',
     'компакт люкc cкладной gr':'компакт люкc cкладной',
+    'компакт складной gr':'компакт складной',
     'неон gr':'неон',
     'неон bl':'неон',
     'cамба bl':'cамба',
@@ -54,9 +56,46 @@ parents_mapping = {
     'форум bl':'форум',
     'шелл c-07 bl':'шелл c-07',
     'шелл c-07 gr':'шелл c-07',
-    'шелл cофт bl':'шелл cофт',
-    'шелл cофт gr':'шелл cофт',
-    'Стул кассира':'Стул кассира б_п',
+    'шелл c-07':'шелл c-07',
+    'шелл cофт bl':'шелл c-07 софт',
+    'шелл cофт gr':'шелл c-07 софт',
+    'шелл cофт':'шелл c-07 софт',
+    'cтул кассира':'Стул кассира б_п',
+    'дэли сн-503 н/п хром':'дэли ch-503 white ch',
+    'дэли ch-503 белый пластик':'дэли сн-503 белый пластик',
+    'дэли сн-503 н/п хром':'дэли ch-503 н_п хром',
+    'ультра т-01 н пластик pl660':'ультра т-01 н пластик pl660',
+    'ультра т-02 н пластик pl660':'',
+    'epik e-201-g m021':'epik e-201-g',
+    'epik а-011-g 201':'кресло epik а-011-g',
+    'epik а-011-g 200':'кресло epik а-011-g',
+    'epik e-222-g':'epik e-222-g s001-115',
+    'epik a-155-g темно-синий':'epik a-155-g',
+    'epik а-007-g l170':'кресло epik а-007-g',
+    'epik а-007-g l200':'кресло epik а-007-g',
+    'epik а-001-mb l235-187':'кресло epik а-001-mb',
+    'epik а-001-mb l171-172':'кресло epik а-001-mb',
+    'epik а-001-mb 235-187':'кресло epik а-001-mb',
+    'epik а-001-mb 201-235':'кресло epik а-001-mb',
+    'epik а-001-gb l201-271':'кресло epik а-001-mb',
+    'epik p-700 plw tw69-128':'кресло epik р-700 ',
+    'epik p-700 pl tw69-128':'кресло epik р-700 ',
+    # 'epik p-521-sb m021':'кресло epik р-521-sb',   не получилось
+    'epik e-222-g s001-115':'кресло epik e-222-mb',
+    'epik a-181-g l200':'кресло epik a-181-g',
+    'epik a-112-g l113 кэмел':'кресло epik a-112-g',
+    '':'',
+    '':'',
+    'чико 4l bl':'чико 4l хром',
+    'стул кассира б_п':'стул кассира б/п',
+    'сн-710 айкью н_п':'айкью н/п сн-710',
+    'сн-710 айкью н_п bl':'айкью н/п сн-710',
+    'сн-710 айкью н пластик':'айкью н сн-710 пластик',    
+    'соло макс ch-602 пластик':'соло max сн-602 пластик',
+    'соло макс ch-602 хром':'соло max сн-602 хром',
+    'соло макс комби хром':'соло max сн-602 хром',
+    'соло макс комби пластик':'соло max сн-602 пластик',
+    'честер 4l bl':'честер 4l хром',
     '':'',
 
 }
@@ -67,34 +106,52 @@ new_parents_mapping = {
 }
 parents_mapping.update(new_parents_mapping)
 
+
+
 # Функция нормализации имени модели
 def normalize_model_name(name):
     if not isinstance(name, str):
         return ""
-    name = name.lower().strip()
-    name = re.sub(r'\bстул\b|\bкресло\b|Кресло UTFC\b', '', name, flags=re.IGNORECASE)
-    name = re.sub(r'сн\s*-?\s*710\s+айкью', 'айкью', name, flags=re.IGNORECASE)
-    name = re.sub(r'сн\s*-?\s*800\s+энжел', 'энжел', name, flags=re.IGNORECASE)
-    name = re.sub(r'н\/п|н_п', 'нп', name)
+    name = name.strip()
+
+    # Обработка SN-602 и подобных
+    name = re.sub(r'ch[-_]?(\d+)', r'ch-\1', name, flags=re.IGNORECASE)
+    # name = re.sub(r'max\s+сн[-_]?(\d+)', r'сн-\1', name, flags=re.IGNORECASE)
+    name = re.sub(r'сн\s*[-_]\s*(\d+)', r'сн-\1', name, flags=re.IGNORECASE)
+
+    # Теперь все вариации с сн-602 и ch-602 приводим к одинаковому виду
+
+    # Остальные ваши замены
+    name = name.replace('_', '/')
+    name = re.sub(r'стул|кресло|кресло utfc', '', name, flags=re.IGNORECASE)
+    name = re.sub(r'с\s*[-_]?\s*(\d+)', r'с-\1', name, flags=re.IGNORECASE)
+    name = re.sub(r'с\s*-?\s*800\s+энжел', 'энжел', name, flags=re.IGNORECASE)
+    name = re.sub(r'н\/п|н_п', 'н_п', name, flags=re.IGNORECASE)
+    name = re.sub(r'б\/п|б_п', 'б_п', name, flags=re.IGNORECASE)
     name = re.sub(r'[/\\]', ' ', name)
     name = re.sub(r'\s+', ' ', name)
     name = re.sub(r'[^\w\s+-]', '', name)
-    name = re.sub(r'пластик\/хром|пластик хром', 'пластикхром', name)
-    name = re.sub(r'хром\/хдп\/мб|хром хдп мб', 'хромхдпмб', name)
-    name = re.sub(r'дерево\/мб|дерево мб', 'деревомб', name)
-    name = re.sub(r'с', 'c', name)
-    name = re.sub(r'в\/п', 'вп', name)
-    name = re.sub(r'х\/дп', 'хдп', name)
-    name = re.sub(r'м\/б', 'мб', name)
-    name = re.sub(r'тг', 'tg', name)
-    name = re.sub(r'пвм', 'пвм', name)
-    name = re.sub(r'сн-(\d+)', 'сн\\1', name)
-    name = re.sub(r'^\s*сн710\s+', '', name)
-    name = re.sub(r'tg\s+столик', 'tgстолик', name)
-    name = re.sub(r'пиастра\s+столик', 'пиастрастолик', name)
-    name = re.sub(r'пластик\s+хром', 'пластикхром', name)
+    name = re.sub(r'пластик\/хром|пластик хром', 'пластикхром', name, flags=re.IGNORECASE)
+    name = re.sub(r'хром\/хдп\/мб|хром хдп мб', 'хромхдпмб', name, flags=re.IGNORECASE)
+    name = re.sub(r'дерево\/мб|дерево мб', 'деревомб', name, flags=re.IGNORECASE)
+    # Удаляем замену 'с' на 'c', чтобы сохранить оригинальные слова
+    # name = re.sub(r'с', 'c', name, flags=re.IGNORECASE)
+    name = re.sub(r'в\/п', 'вп', name, flags=re.IGNORECASE)
+    name = re.sub(r'х\/дп', 'хдп', name, flags=re.IGNORECASE)
+    name = re.sub(r'м\/б', 'мб', name, flags=re.IGNORECASE)
+    name = re.sub(r'тг', 'tg', name, flags=re.IGNORECASE)
+    name = re.sub(r'пвм', 'пвм', name, flags=re.IGNORECASE)    
+    name = re.sub(r'tg\s+столик', 'tgстолик', name, flags=re.IGNORECASE)
+    name = re.sub(r'пиастра\s+столик', 'пиастрастолик', name, flags=re.IGNORECASE)
+    name = re.sub(r'пластик\s+хром', 'пластикхром', name, flags=re.IGNORECASE)
     name = re.sub(r'\s+', ' ', name).strip()
-    return name
+
+    return name.lower()
+
+parents_mapping_normalized = {}
+for key, value in parents_mapping.items():
+    normalized_key = normalize_model_name(key)
+    parents_mapping_normalized[normalized_key] = value
 
 # Преобразование пустых значений
 def normalize_value(value):
@@ -472,3 +529,15 @@ with open('missing_parents.txt', 'w', encoding='utf-8') as f:
         f.write(f"    '{child}': '{parent}',  # <--- Уточните родительскую модель!\n")
     f.write("}\n")
 print("\nСписок сохранён в missing_parents.txt")
+
+test_strings = [
+    'сн-710 айкью н_п',
+    'соло max сн-602 пластик',
+    'соло макс ch-602 пластик',
+    'epik p-521-sb m021:кресло epik р-521-sb'
+]
+
+for s in test_strings:
+    print(f"Original: {s}")
+    print(f"Normalized: {normalize_model_name(s)}")
+    print()

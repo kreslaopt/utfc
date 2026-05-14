@@ -63,9 +63,9 @@
     ],
     "dimensions": [
         {
-            "brutto": "13,5",
-            "netto": "11,1",
-            "volume": "0,16"
+            "brutto": "",
+            "netto": "11,10",
+            "volume": "0,10"
         }
     ],
     "guarantee": [
@@ -120,68 +120,40 @@
     "dimensions_details": [
         {
             "chair_height": {
-                "min": "950",
-                "max": ""
+                "min": "950"
             },
-            "headrest_height": {
-                "min": null,
-                "max": null
-            },
+            "headrest_height": {},
             "seat_to_floor_height": {
-                "min": "480",
-                "max": ""
-            },
-            "armrest_height_from_seat": {
-                "min": "195",
-                "max": ""
-            },
-            "chair_depth": {
-                "min": "620",
-                "max": null
-            },
-            "seat_depth": {
-                "min": "470",
-                "max": null
-            },
-            "backrest_height": {
-                "max": "510",
-                "min": ""
-            },
-            "backrest_to_seat_height": {
-                "min": null,
-                "max": null
-            },
-            "seat_width_with_armrests": {
-                "min": "630",
-                "max": null
-            },
-            "seat_width": {
-                "max": "500",
-                "min": ""
-            },
-            "diameter_cross": {
-                "max": "",
-                "min": ""
-            },
-            "runners_width": {
-                "max": "460",
-                "min": ""
-            },
-            "runners_depth": {
-                "max": "585",
-                "min": ""
-            },
-            "seat_to_floor_height_upper": {
                 "min": "480"
             },
+            "seat_to_floor_height_upper": {},
             "armrest_height_from_floor": {
                 "min": "210"
             },
+            "armrest_height_from_seat": {
+                "min": "195"
+            },
             "armrest_width_support": {},
             "armrest_length_support": {},
+            "chair_depth": {
+                "min": "620"
+            },
+            "seat_depth": {
+                "min": "470"
+            },
             "seat_depth_km": {},
+            "backrest_height": {
+                "max": "510"
+            },
+            "backrest_to_seat_height": {},
             "backrest_height_external": {
                 "max": "550"
+            },
+            "seat_width_with_armrests": {
+                "min": "630"
+            },
+            "seat_width": {
+                "max": "500"
             },
             "backrest_width_narrow": {
                 "max": "420"
@@ -189,19 +161,23 @@
             "backrest_width_wide": {
                 "max": "480"
             },
+            "diameter_cross": {},
+            "runners_width": {
+                "max": "460"
+            },
+            "runners_depth": {
+                "max": "585"
+            },
             "recommended_load": "120",
             "max_load": "150",
             "skeleton": "немонолитный",
             "minpromtorg": "+",
-            "netto": "11,1",
-            "brutto": {},
-            "package_width": {},
-            "package_depth": {},
-            "package_height": {},
-            "volume": {},
-            "box_on_pallet": {},
-            "pallet_width": {},
-            "typeofproduct": {
+            "netto": "11",
+            "package_width": "630",
+            "package_depth": "290",
+            "package_height": "600",
+            "volume": "0",
+            "brutto": {
                 "min": "",
                 "max": ""
             }
@@ -742,6 +718,15 @@
     "color_seat": [
         ""
     ],
-    "minpromtorg": "Минпромторг",
-    "madeinrf": "Сделано РФ"
+    "minpromtorg": "+",
+    "madeinrf": "Сделано РФ",
+    "additional_info": {
+        "package_dimensions": {
+            "depth": "630",
+            "height": "290",
+            "width": "6"
+        },
+        "netto": "11",
+        "volume": "0"
+    }
 }

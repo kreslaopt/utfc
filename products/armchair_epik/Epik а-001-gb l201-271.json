@@ -66,9 +66,9 @@
     ],
     "dimensions": [
         {
-            "brutto": "32,00",
-            "netto": "25,00",
-            "volume": "0,45"
+            "brutto": "5,53",
+            "netto": "4,60",
+            "volume": "0,03"
         }
     ],
     "guarantee": [
@@ -125,66 +125,40 @@
                 "min": "1170",
                 "max": "1240"
             },
-            "headrest_height": {
-                "min": null,
-                "max": null
-            },
+            "headrest_height": {},
             "seat_to_floor_height": {
                 "min": "430",
                 "max": "500"
             },
-            "armrest_height_from_seat": {
-                "min": "220",
-                "max": ""
+            "seat_to_floor_height_upper": {},
+            "armrest_height_from_floor": {
+                "min": "330"
             },
+            "armrest_height_from_seat": {
+                "min": "220"
+            },
+            "armrest_width_support": {},
+            "armrest_length_support": {},
             "chair_depth": {
-                "min": "660",
-                "max": null
+                "min": "660"
             },
             "seat_depth": {
-                "min": "510",
-                "max": null
+                "min": "510"
             },
-            "backrest_height": {
-                "max": "",
-                "min": ""
-            },
+            "seat_depth_km": {},
+            "backrest_height": {},
             "backrest_to_seat_height": {
                 "min": "800",
                 "max": "840"
             },
-            "seat_width_with_armrests": {
-                "min": "690",
-                "max": null
-            },
-            "seat_width": {
-                "max": "530",
-                "min": ""
-            },
-            "diameter_cross": {
-                "max": "700",
-                "min": ""
-            },
-            "runners_width": {
-                "max": "560",
-                "min": ""
-            },
-            "runners_depth": {
-                "max": "700",
-                "min": ""
-            },
-            "seat_to_floor_height_upper": {
-                "min": "430",
-                "max": "500"
-            },
-            "armrest_height_from_floor": {
-                "min": "330"
-            },
-            "armrest_width_support": {},
-            "armrest_length_support": {},
-            "seat_depth_km": {},
             "backrest_height_external": {
                 "max": "720"
+            },
+            "seat_width_with_armrests": {
+                "min": "690"
+            },
+            "seat_width": {
+                "max": "530"
             },
             "backrest_width_narrow": {
                 "max": "440"
@@ -192,23 +166,23 @@
             "backrest_width_wide": {
                 "max": "560"
             },
+            "diameter_cross": {
+                "max": "700"
+            },
+            "runners_width": {},
+            "runners_depth": {},
             "recommended_load": "90",
             "max_load": "120",
-            "skeleton": "монолитный",
-            "minpromtorg": "120",
+            "skeleton": "немонолитный",
             "netto": "25",
             "brutto": "32",
             "package_width": "1065",
             "package_depth": "730",
             "package_height": "585",
-            "volume": "0",
-            "box_on_pallet": {},
-            "pallet_width": {},
-            "addition": {},
-            "typeofproduct": "монолитный"
+            "volume": "0"
         }
     ],
-    "skeleton": "монолитный",
+    "skeleton": "немонолитный",
     "minpromtorg": "",
     "addition": "",
     "parent": {
@@ -454,5 +428,15 @@
     "color_seat": [
         ""
     ],
-    "madeinrf": ""
+    "madeinrf": "",
+    "additional_info": {
+        "package_dimensions": {
+            "width": "32",
+            "depth": "1065",
+            "height": "730"
+        },
+        "netto": "25",
+        "brutto": "32",
+        "volume": "0"
+    }
 }

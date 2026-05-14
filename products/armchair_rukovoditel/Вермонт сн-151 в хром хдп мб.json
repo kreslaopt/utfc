@@ -143,63 +143,70 @@
             },
             "chair_depth": {
                 "min": "720",
-                "max": null
+                "max": ""
             },
             "seat_depth": {
                 "min": "470",
-                "max": null
+                "max": ""
             },
             "backrest_height": {
-                "max": "650",
-                "min": ""
+                "min": "",
+                "max": "650"
             },
             "backrest_to_seat_height": {
-                "min": "540",
-                "max": "650"
+                "min": "",
+                "max": ""
             },
             "seat_width_with_armrests": {
                 "min": "670",
-                "max": null
+                "max": ""
             },
             "seat_width": {
-                "max": "525",
-                "min": ""
+                "min": "",
+                "max": "525"
             },
             "diameter_cross": {
-                "max": "700",
-                "min": ""
+                "min": "",
+                "max": "700"
             },
             "runners_width": {
-                "max": "580",
-                "min": ""
+                "min": "",
+                "max": ""
             },
             "runners_depth": {
-                "max": "700",
-                "min": ""
+                "min": "",
+                "max": ""
             },
             "seat_to_floor_height_upper": {
                 "min": "445",
                 "max": "505"
             },
             "armrest_height_from_floor": {
-                "min": "315"
+                "min": "315",
+                "max": ""
             },
             "armrest_width_support": {
+                "min": "",
                 "max": "75"
             },
             "armrest_length_support": {
+                "min": "",
                 "max": "350"
             },
             "seat_depth_km": {
+                "min": "",
                 "max": "540"
             },
             "backrest_height_external": {
+                "min": "",
                 "max": "780"
             },
             "backrest_width_narrow": {
+                "min": "",
                 "max": "560"
             },
             "backrest_width_wide": {
+                "min": "",
                 "max": "580"
             },
             "recommended_load": "150",
@@ -207,15 +214,14 @@
             "skeleton": "немонолитный",
             "minpromtorg": "+",
             "netto": "18",
-            "brutto": "18,3",
+            "brutto": {
+                "min": "",
+                "max": ""
+            },
             "package_width": "760",
             "package_depth": "440",
             "package_height": "650",
-            "volume": "0",
-            "box_on_pallet": {},
-            "pallet_width": {},
-            "addition": {},
-            "typeofproduct": "немонолитный"
+            "volume": "0"
         }
     ],
     "addition": "",
@@ -995,7 +1001,7 @@
     "article_number": "ДКВермонт37",
     "full_describe": "Зеркальные хромированные элементы являются частью уникального стиля кресла руководителя. Высокая эргономичная спинка с поясничной поддержкой усилит комфорт использования кресла. Механизм качания -  мультиблок с регулировкой под вес пользователя и фиксацией в вертикальном положении спинки, возможность отклонения спинки назад в 5 положениях. Максимальная нагрузка 180 кг.",
     "Link_arm": "https://utfc.ru/catalog/boss_chairs/vermont_v_ch_mb/?offers=13184",
-    "minpromtorg": "Минпромторг",
+    "minpromtorg": "+",
     "madeinrf": "Сделано РФ",
     "Основание": "Пятилучье хромированное d=700 мм",
     "Подлокотники": "Подлокотники ХДП — 3-D хромированные подлокотники с мягкой накладкой",

@@ -126,8 +126,8 @@
                 "max": "1035"
             },
             "headrest_height": {
-                "min": null,
-                "max": null
+                "min": "",
+                "max": ""
             },
             "seat_to_floor_height": {
                 "min": "430",
@@ -135,67 +135,74 @@
             },
             "armrest_height_from_seat": {
                 "min": "240",
-                "max": null
+                "max": ""
             },
             "chair_depth": {
                 "min": "550",
-                "max": null
+                "max": ""
             },
             "seat_depth": {
                 "min": "400",
-                "max": null
+                "max": ""
             },
             "backrest_height": {
-                "max": "510",
-                "min": ""
+                "min": "",
+                "max": "510"
             },
             "backrest_to_seat_height": {
-                "min": "480",
-                "max": "510"
+                "min": "",
+                "max": ""
             },
             "seat_width_with_armrests": {
                 "min": "535",
-                "max": null
+                "max": ""
             },
             "seat_width": {
-                "max": "500",
-                "min": ""
+                "min": "",
+                "max": "500"
             },
             "diameter_cross": {
-                "max": "640",
-                "min": ""
+                "min": "",
+                "max": "640"
             },
             "runners_width": {
-                "max": "480",
-                "min": ""
+                "min": "",
+                "max": ""
             },
             "runners_depth": {
-                "max": "640",
-                "min": ""
+                "min": "",
+                "max": ""
             },
             "seat_to_floor_height_upper": {
                 "min": "400",
                 "max": "500"
             },
             "armrest_height_from_floor": {
-                "min": "260"
+                "min": "260",
+                "max": ""
             },
             "armrest_width_support": {
+                "min": "",
                 "max": "45"
             },
             "armrest_length_support": {
+                "min": "",
                 "max": "320"
             },
             "seat_depth_km": {
+                "min": "",
                 "max": "480"
             },
             "backrest_height_external": {
+                "min": "",
                 "max": "580"
             },
             "backrest_width_narrow": {
+                "min": "",
                 "max": "390"
             },
             "backrest_width_wide": {
+                "min": "",
                 "max": "480"
             },
             "recommended_load": "90",
@@ -203,15 +210,14 @@
             "skeleton": "немонолитный",
             "minpromtorg": "+",
             "netto": "9",
-            "brutto": "8,55",
+            "brutto": {
+                "min": "",
+                "max": ""
+            },
             "package_width": "630",
             "package_depth": "290",
             "package_height": "600",
-            "volume": "0",
-            "box_on_pallet": {},
-            "pallet_width": {},
-            "addition": {},
-            "typeofproduct": "немонолитный"
+            "volume": "0"
         }
     ],
     "lost": [
@@ -221,7 +227,7 @@
         }
     ],
     "skeleton": "немонолитный",
-    "minpromtorg": "Минпромторг",
+    "minpromtorg": "+",
     "addition": "",
     "title": "Кресло М-806 Хэнди/Handy greyPL хром Ср производства компании UTFC",
     "base_name": "Кресло М-806 Хэнди/Handy greyPL хром Ср",

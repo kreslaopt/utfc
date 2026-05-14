@@ -134,62 +134,75 @@
                 "max": "580"
             },
             "armrest_height_from_seat": {
-                "min": "245",
+                "min": "",
                 "max": ""
             },
             "chair_depth": {
                 "min": "580",
-                "max": null
+                "max": ""
             },
             "seat_depth": {
                 "min": "440",
                 "max": ""
             },
             "backrest_height": {
-                "max": "450",
-                "min": ""
-            },
-            "backrest_to_seat_height": {
-                "min": "440",
+                "min": "",
                 "max": "450"
             },
+            "backrest_to_seat_height": {
+                "min": "",
+                "max": ""
+            },
             "seat_width_with_armrests": {
-                "min": "510",
-                "max": null
+                "min": "",
+                "max": ""
             },
             "seat_width": {
-                "max": "450",
-                "min": ""
+                "min": "",
+                "max": "450"
             },
             "diameter_cross": {
-                "max": "640",
-                "min": ""
+                "min": "",
+                "max": "640"
             },
             "runners_width": {
-                "max": "450",
-                "min": ""
+                "min": "",
+                "max": ""
             },
             "runners_depth": {
-                "max": "640",
-                "min": ""
+                "min": "",
+                "max": ""
             },
             "seat_to_floor_height_upper": {
                 "min": "400",
                 "max": "520"
             },
-            "armrest_height_from_floor": {},
-            "armrest_width_support": {},
-            "armrest_length_support": {},
+            "armrest_height_from_floor": {
+                "min": "",
+                "max": ""
+            },
+            "armrest_width_support": {
+                "min": "",
+                "max": ""
+            },
+            "armrest_length_support": {
+                "min": "",
+                "max": ""
+            },
             "seat_depth_km": {
+                "min": "",
                 "max": "440"
             },
             "backrest_height_external": {
+                "min": "",
                 "max": "510"
             },
             "backrest_width_narrow": {
+                "min": "",
                 "max": "450"
             },
             "backrest_width_wide": {
+                "min": "",
                 "max": "450"
             },
             "recommended_load": "90",
@@ -197,19 +210,18 @@
             "skeleton": "монолитный",
             "minpromtorg": "+",
             "netto": "9",
-            "brutto": "8,9",
+            "brutto": {
+                "min": "",
+                "max": ""
+            },
             "package_width": "760",
             "package_depth": "440",
             "package_height": "650",
-            "volume": "0",
-            "box_on_pallet": {},
-            "pallet_width": {},
-            "addition": {},
-            "typeofproduct": "монолитный"
+            "volume": "0"
         }
     ],
     "skeleton": "монолитный",
-    "minpromtorg": "Минпромторг",
+    "minpromtorg": "+",
     "addition": "",
     "title": "Кресло Честер GTS TG хром в ткани Модерно производства компании UTFC",
     "base_name": "Кресло Честер GTS TG хром",

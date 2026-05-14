@@ -69,16 +69,16 @@
     ],
     "dimensions": [
         {
-            "brutto": "11,8",
-            "netto": "9,50",
-            "volume": "0,16"
+            "brutto": "5,53",
+            "netto": "4,60",
+            "volume": "0,03"
         }
     ],
     "guarantee": [
         {
             "period": "12",
-            "max_load": "150",
-            "recommended_load": "120"
+            "max_load": "120",
+            "recommended_load": "90"
         }
     ],
     "images": [
@@ -220,7 +220,7 @@
         }
     ],
     "skeleton": "немонолитный",
-    "minpromtorg": "Минпромторг",
+    "minpromtorg": "",
     "madeinrf": "Сделано РФ",
     "title": "Кресло Ультра Н Т-02 пластик Ср производства компании UTFC",
     "base_name": "Кресло Ультра Н Т-02 пластик Ср",

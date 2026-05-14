@@ -64,9 +64,9 @@
     ],
     "dimensions": [
         {
-            "brutto": "",
-            "netto": "",
-            "volume": "0,00"
+            "brutto": "5,53",
+            "netto": "4,60",
+            "volume": "0,03"
         }
     ],
     "guarantee": [
@@ -113,87 +113,52 @@
     "dimensions_details": [
         {
             "chair_height": {
-                "min": "890",
-                "max": 890
+                "min": "890"
             },
-            "headrest_height": {
-                "min": null,
-                "max": null
-            },
+            "headrest_height": {},
             "seat_to_floor_height": {
-                "min": "470",
-                "max": null
-            },
-            "armrest_height_from_seat": {
-                "min": "",
-                "max": ""
-            },
-            "chair_depth": {
-                "min": "515",
-                "max": null
-            },
-            "seat_depth": {
-                "min": "390",
-                "max": null
-            },
-            "backrest_height": {
-                "max": "440",
-                "min": ""
-            },
-            "backrest_to_seat_height": {
-                "min": "390",
-                "max": "440"
-            },
-            "seat_width_with_armrests": {
-                "min": null,
-                "max": null
-            },
-            "seat_width": {
-                "max": "360",
-                "min": ""
-            },
-            "diameter_cross": {
-                "max": null,
-                "min": ""
-            },
-            "runners_width": {
-                "max": "340",
-                "min": ""
-            },
-            "runners_depth": {
-                "max": "440",
-                "min": ""
-            },
-            "seat_to_floor_height_upper": {
                 "min": "470"
             },
+            "seat_to_floor_height_upper": {},
             "armrest_height_from_floor": {},
+            "armrest_height_from_seat": {},
             "armrest_width_support": {},
             "armrest_length_support": {},
+            "chair_depth": {
+                "min": "515"
+            },
+            "seat_depth": {
+                "min": "390"
+            },
             "seat_depth_km": {
                 "max": "390"
             },
+            "backrest_height": {
+                "max": "440"
+            },
+            "backrest_to_seat_height": {},
             "backrest_height_external": {},
+            "seat_width_with_armrests": {},
+            "seat_width": {
+                "max": "360"
+            },
             "backrest_width_narrow": {},
             "backrest_width_wide": {},
+            "diameter_cross": {},
+            "runners_width": {
+                "max": "340"
+            },
+            "runners_depth": {
+                "max": "440"
+            },
             "recommended_load": "90",
             "max_load": "120",
-            "skeleton": "монолитный",
             "minpromtorg": "+",
-            "netto": "+",
-            "brutto": {},
-            "package_width": {},
-            "package_depth": {},
-            "package_height": {},
-            "volume": "0",
-            "box_on_pallet": {},
-            "pallet_width": {},
-            "addition": {},
-            "typeofproduct": "монолитный"
+            "volume": "0"
         }
     ],
-    "skeleton": "монолитный",
-    "minpromtorg": "Минпромторг",
+    "skeleton": "немонолитный",
+    "minpromtorg": "",
     "addition": "",
     "parent": {
         "IE_XML_ID": "p_5215",
@@ -549,5 +514,9 @@
     "color_seat": [
         ""
     ],
-    "madeinrf": "Сделано РФ"
+    "madeinrf": "Сделано РФ",
+    "additional_info": {
+        "package_dimensions": {},
+        "volume": "0"
+    }
 }

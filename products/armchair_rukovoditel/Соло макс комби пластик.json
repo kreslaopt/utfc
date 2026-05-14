@@ -71,9 +71,9 @@
     ],
     "dimensions": [
         {
-            "brutto": "12,80",
-            "netto": "11",
-            "volume": "0,17"
+            "brutto": "5,53",
+            "netto": "4,60",
+            "volume": "0,03"
         }
     ],
     "guarantee": [
@@ -98,53 +98,10 @@
                 "min": "1200",
                 "max": "1300"
             },
-            "headrest_height": {
-                "min": "",
-                "max": ""
-            },
+            "headrest_height": {},
             "seat_to_floor_height": {
                 "min": "460",
                 "max": "560"
-            },
-            "armrest_height_from_seat": {
-                "min": "200",
-                "max": ""
-            },
-            "chair_depth": {
-                "min": "630",
-                "max": null
-            },
-            "seat_depth": {
-                "min": "500",
-                "max": null
-            },
-            "backrest_height": {
-                "max": "750",
-                "min": ""
-            },
-            "backrest_to_seat_height": {
-                "min": null,
-                "max": null
-            },
-            "seat_width_with_armrests": {
-                "min": "670",
-                "max": null
-            },
-            "seat_width": {
-                "max": "550",
-                "min": ""
-            },
-            "diameter_cross": {
-                "max": "660",
-                "min": ""
-            },
-            "runners_width": {
-                "max": "",
-                "min": ""
-            },
-            "runners_depth": {
-                "max": "",
-                "min": ""
             },
             "seat_to_floor_height_upper": {
                 "min": "380",
@@ -153,17 +110,36 @@
             "armrest_height_from_floor": {
                 "min": "270"
             },
+            "armrest_height_from_seat": {
+                "min": "200"
+            },
             "armrest_width_support": {
                 "max": "60"
             },
             "armrest_length_support": {
                 "max": "340"
             },
+            "chair_depth": {
+                "min": "630"
+            },
+            "seat_depth": {
+                "min": "500"
+            },
             "seat_depth_km": {
                 "max": "510"
             },
+            "backrest_height": {
+                "max": "750"
+            },
+            "backrest_to_seat_height": {},
             "backrest_height_external": {
                 "max": "840"
+            },
+            "seat_width_with_armrests": {
+                "min": "670"
+            },
+            "seat_width": {
+                "max": "550"
             },
             "backrest_width_narrow": {
                 "max": "440"
@@ -171,27 +147,24 @@
             "backrest_width_wide": {
                 "max": "500"
             },
+            "diameter_cross": {
+                "max": "660"
+            },
+            "runners_width": {},
+            "runners_depth": {},
             "recommended_load": "120",
             "max_load": "150",
             "skeleton": "немонолитный",
-            "minpromtorg": {},
             "netto": "11",
             "brutto": "13",
             "package_width": "910",
             "package_depth": "270",
             "package_height": "690",
-            "volume": "0",
-            "box_on_pallet": {},
-            "pallet_width": {},
-            "addition": {},
-            "typeofproduct": {
-                "min": "",
-                "max": ""
-            }
+            "volume": "0"
         }
     ],
     "skeleton": "немонолитный",
-    "minpromtorg": "Минпромторг",
+    "minpromtorg": "",
     "addition": "",
     "title": "Кресло СН-602 Соло Макс пластик SoloBL Ср производства компании UTFC",
     "base_name": "Кресло СН-602 Соло Макс пластик SoloBL Ср",
@@ -439,5 +412,15 @@
             "STORE_AMOUNT_6": "0"
         }
     ],
-    "madeinrf": "Сделано РФ"
+    "madeinrf": "Сделано РФ",
+    "additional_info": {
+        "package_dimensions": {
+            "width": "13",
+            "depth": "910",
+            "height": "270"
+        },
+        "netto": "11",
+        "brutto": "13",
+        "volume": "0"
+    }
 }
