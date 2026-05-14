@@ -1,3 +1,6 @@
+       $darkMainColorGrey: #3D4555;
+       $GreenMainColor: #96C22B;
+       $GreyColor: #5B5B5B;
 
   .chair-schema-container {
     position: relative;
@@ -179,9 +182,9 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 /* Для Firefox */
-input[type="number"] {
-    -moz-appearance: textfield;
-}
+// input[type="number"] {
+//     -moz-appearance: textfield;
+// }
 
 .width{
  align-items: center;
