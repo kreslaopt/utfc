@@ -230,7 +230,7 @@
     <button id="add-dimensions-btn">Добавить эскиз с размерами</button>
     
 
-<div id="signature-buttons"">
+<div id="signature-buttons">
   <button data-signature="first">Фест</button>
   <button data-signature="second">БМФ</button>
   <!-- <button data-signature="third" style="background-color: #555; color: #fff;">Поставщик 3</button> -->
@@ -337,6 +337,14 @@ document.getElementById('delete-icon-blocks').addEventListener('click', () => {
 //   });
 // });
 
+function normalizeProductName(name) {
+  return name.toLowerCase()
+    .replace(/[\/\-\.,()]/g, ' ')   // Заменяем / - , . ( ) на пробел
+    .replace(/\s+/g, ' ')          // Множественные пробелы в один
+    .trim()
+    .replace(/\baero\b/g, 'аэро'); // пример замены, при необходимости
+}
+
 document.getElementById('add-dimensions-btn').addEventListener('click', () => {
   const selectedProductsStr = localStorage.getItem('selectedProducts');
   if (!selectedProductsStr) return;
@@ -352,13 +360,14 @@ document.getElementById('add-dimensions-btn').addEventListener('click', () => {
     const productName = firstImg.getAttribute('data-product-name');
 
     // Приводим к нижнему регистру и удаляем слеши
-    const productNameLower = productName.toLowerCase().replace(/\//g, '').trim();
+    const productNameLower = productName.toLowerCase().replace(/\//g, ' ').trim();
     const productWords = new Set(productNameLower.split(/\s+/));
+    
 
     // Находим соответствующий продукт
     const product = selectedProducts.find(p => {
       if (p.name && p.name.length > 0) {
-        const pNameLower = p.name[0].toLowerCase().replace(/\//g, '').trim();
+        const pNameLower = p.name[0].toLowerCase().replace(/\//g, ' ').trim();
         const pWords = new Set(pNameLower.split(/\s+/));
         for (let word of pWords) {
           if (!productWords.has(word)) {
@@ -369,6 +378,11 @@ document.getElementById('add-dimensions-btn').addEventListener('click', () => {
       }
       return false;
     });
+
+// console.log('Обрабатываем продукт:', firstImg.getAttribute('data-product-name'));
+// console.log('Названия после обработки:');
+// console.log('productNameLower:', productNameLower);
+// console.log('productWords:', Array.from(productWords));
 
     if (product && product.images && product.images.length > 0) {
       const newSrc = product.images[0].dimensions || product.images[0];
@@ -396,6 +410,9 @@ sketchImg.setAttribute('data-isSketch', 'true');
 
       // Сохраняем в localStorage
       localStorage.setItem(`sketch_${productName}`, newSrc);
+//       console.log(localStorage.getItem('selectedProducts'));
+//       console.log('Обрабатываем продукт:', productName);
+// console.log('Найденный товар:', product);
     }
   });
 });

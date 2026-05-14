@@ -5192,6 +5192,7 @@ document.getElementById('clearButton').addEventListener('click', function() {
 
 window.onload = async () => {
     loadEditableHeaders();
+    toggleProductInCart();
     document.querySelectorAll('#finalSelectedProductsTable thead tr th[contenteditable="true"]').forEach(th => {
         th.addEventListener('blur', saveEditableHeaders);
     });
