@@ -679,6 +679,7 @@ function getFinalSelectionData() {
         result.push({
             name: name,
             article_number: data.article_number || '—',
+            full_describe: data.full_describe || '—',
             finish_type: data.finish_type || '—',
             finish_type_seat: data.finish_type_seat || '—',
             Подлокотники: data.Подлокотники || '—',
@@ -934,13 +935,16 @@ if (sketchSrc) {
             <p><strong>Цена:</strong> ${product.CV_PRICE_1} ${product.CV_CURRENCY_1 || 'RUB'}</p>
             <p><strong>Сумма:</strong> ${(parseFloat(product.CV_PRICE_1) * product.count).toFixed(2)} ${product.CV_CURRENCY_1 || 'RUB'}</p>
             
+            
     `;
 detailsHTML += `${sketchHTML}`;
     // ${saveImagesButton}
+    
 
     fields.forEach(field => {
         if (field.value && field.value !== '—' && field.value !== null) {
             detailsHTML += `<p><strong>${field.label}:</strong> ${field.value}</p>`;
+            
         }
     });
 
