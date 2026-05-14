@@ -83,9 +83,9 @@
     ],
     "images": [
         {
-            "vid_main": "img/armchair_personal/metro_t01_pvm_01.png",
-            "chair_view": "img/armchair_personal/metro_t01_pvm_02.png",
-            "dimensions": "img/armchair_personal/dimensions/metro_t01_pvm_01.png",
+            "vid_main": "img/armchair_personal/metro_t01_pl_pvm_c11_01.png",
+            "chair_view": "img/armchair_personal/metro_t01_pl_pvm_c11_02.png",
+            "dimensions": "img/armchair_personal/dimensions/metro_t01_pl_pvm_c11_01.png",
             "box": "img/box_UTFC.png",
             "additional": [
                 "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/647/647b7175d39c9552d5ef004d7fa6a255.png",

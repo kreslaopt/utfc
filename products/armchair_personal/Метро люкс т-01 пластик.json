@@ -82,9 +82,9 @@
     ],
     "images": [
         {
-            "vid_main": "img/armchair_personal/metro_lux_t01_e13k_01.png",
-            "chair_view": "img/armchair_personal/metro_lux_t01_e13k_02.png",
-            "dimensions": "img/armchair_personal/dimensions/metro_lux_t01_e13k_01.png",
+            "vid_main": "img/armchair_personal/metro_lux_t01_z19_01.png",
+            "chair_view": "img/armchair_personal/metro_lux_t01_z19_02.png",
+            "dimensions": "img/armchair_personal/dimensions/metro_lux_t01_z19_01.png",
             "box": "img/box_UTFC.png",
             "additional": [
                 "https://utfc.ru/upload/resize_cache/iblock/b77/140_140_0/6x3bmko9yj11wti0q1509lznvbcd1518.png",

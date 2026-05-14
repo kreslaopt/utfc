@@ -418,7 +418,7 @@
                     <div class="size-filter horizontal" data-param="seat_width_with_armrests"
                         data-coords="133,13,257,4">
                         <input type="number" class="min-value" min="300" max="1500" step="5" value="300">
-                        <div class="custom-slider horizontal"><span class="width">F</span>
+                        <div class="custom-slider horizontal"><span class="width">с подлокотниками</span>
                             <div class="slider-track"></div>
                             <div class="slider-thumb min-thumb"></div>
                             <div class="slider-thumb max-thumb"></div>
@@ -429,7 +429,7 @@
                     <!-- Ширина сиденья (горизонтальный ползунок) -->
                     <div class="size-filter horizontal" data-param="seat_width" data-coords="157,50,210,4">
                         <input type="number" class="min-value" min="300" max="1500" step="5" value="300">
-                        <div class="custom-slider horizontal"><span class="width">F1</span>
+                        <div class="custom-slider horizontal"><span class="width">сиденья</span>
                             <div class="slider-track"></div>
                             <div class="slider-thumb min-thumb"></div>
                             <div class="slider-thumb max-thumb"></div>
@@ -440,7 +440,7 @@
                                         <!-- Ширина спинки - широкая часть (горизонтальный ползунок) -->
                     <div class="size-filter horizontal" data-param="backrest_width_wide" data-coords="167,90,188,4">
                         <input type="number" class="min-value" min="300" max="1500" step="5" value="300">
-                        <div class="custom-slider horizontal"><span class="width">F3</span>
+                        <div class="custom-slider horizontal"><span class="width">спинки</span>
                             <div class="slider-track"></div>
                             
                             <div class="slider-thumb min-thumb"></div>
@@ -463,7 +463,7 @@
                     <!-- Глубина кресла (горизонтальный ползунок) -->
                     <div class="size-filter horizontal" data-param="chair_depth" data-coords="560,30,235,4">
                         <input type="number" class="min-value" min="300" max="1500" step="5" value="300">
-                        <div class="custom-slider horizontal"><span class="width">E</span>
+                        <div class="custom-slider horizontal"><span class="width">кресла</span>
                             <div class="slider-track"></div>
                             <div class="slider-thumb min-thumb"></div>
                             <div class="slider-thumb max-thumb"></div>
@@ -474,7 +474,7 @@
                     <!-- Глубина сиденья (горизонтальный ползунок) -->
                     <div class="size-filter horizontal" data-param="seat_depth" data-coords="560,225,160,4">
                         <input type="number" class="min-value" min="300" max="1500" step="5" value="300">
-                        <div class="custom-slider horizontal"><span class="width">E1</span>
+                        <div class="custom-slider horizontal"><span class="width">места</span>
                             <div class="slider-track"></div>
                             <div class="slider-thumb min-thumb"></div>
                             <div class="slider-thumb max-thumb"></div>
@@ -856,13 +856,33 @@ function loadEditableHeaders() {
     }
 }
 
-        function parseDimensionValue(value) {
-            if (value === "" || value === null || value === undefined) {
-                return null;
-            }
-            const parsed = parseFloat(value);
-            return isNaN(parsed) ? null : parsed;
+        // function parseDimensionValue(value) {
+        //     if (value === "" || value === null || value === undefined) {
+        //         return null;
+        //     }
+        //     const parsed = parseFloat(value);
+        //     return isNaN(parsed) ? null : parsed;
+        // }
+
+function parseDimensionValue(source) {
+    if (!source) return null;
+    if (typeof source === 'object') {
+        // Если есть max, вернуть его, иначе min
+        if (source.max !== undefined && source.max !== "") {
+            const maxVal = parseFloat(source.max);
+            return isNaN(maxVal) ? null : maxVal;
+        } else if (source.min !== undefined && source.min !== "") {
+            const minVal = parseFloat(source.min);
+            return isNaN(minVal) ? null : minVal;
+        } else {
+            return null;
         }
+    } else {
+        // Если это просто значение
+        const val = parseFloat(source);
+        return isNaN(val) ? null : val;
+    }
+}
 
         function getFinalSelectionData() {
             const result = [];
@@ -1651,55 +1671,44 @@ function searchArmrestType(product, armrestType) {
                 };
             }
 
-            function calculateMinMaxForAllDepth(products) {
-                let minPossible = Infinity; // Начнем с максимально возможного значения
-                let maxPossible = -Infinity; // Начнем с минимально возможного значения
+function calculateMinMaxForAllDepth(products) {
+    let minPossible = Infinity;
+    let maxPossible = -Infinity;
 
-                products.forEach(product => {
-                    const dimensions = product.dimensions_details?.[0] || {};
-                    const sources = [
-                        dimensions.chair_depth,
-                        dimensions.seat_depth,
-                        dimensions.runners_depth
-                    ];
+    products.forEach(product => {
+        const dimensions = product.dimensions_details?.[0] || {};
+        const sources = [
+            dimensions.chair_depth,
+            dimensions.seat_depth,
+            dimensions.runners_depth,
+            dimensions.diameter_cross
+        ];
 
-                    // Находим максимальное значение min для текущего товара
-                    let currentMaxMin = -Infinity;
-                    sources.forEach(source => {
-                        if (!source) return;
-                        const minVal = parseDimensionValue(source.min);
-                        if (minVal !== null && minVal > currentMaxMin) {
-                            currentMaxMin = minVal;
-                        }
-                    });
-
-                    // Находим минимальное значение из максимальных min всех товаров
-                    if (currentMaxMin !== -Infinity && currentMaxMin < minPossible) {
-                        minPossible = currentMaxMin;
-                    }
-
-                    // Находим максимальное значение max для текущего товара
-                    let currentMaxMax = -Infinity;
-                    sources.forEach(source => {
-                        if (!source) return;
-                        const maxVal = parseDimensionValue(source.max);
-                        if (maxVal !== null && maxVal > currentMaxMax) {
-                            currentMaxMax = maxVal;
-                        }
-                    });
-
-                    // Находим максимальное значение из максимальных max всех товаров
-                    if (currentMaxMax !== -Infinity && currentMaxMax > maxPossible) {
-                        maxPossible = currentMaxMax;
-                    }
-                });
-
-                return {
-                    min: minPossible !== Infinity ? minPossible : "", // Значение по умолчанию
-                    max: maxPossible !== -Infinity ? maxPossible : "" // Значение по умолчанию
-                };
+        // Находим максимальное значение для текущего продукта
+        let currentMaxDepth = -Infinity;
+        sources.forEach(source => {
+            const val = parseDimensionValue(source);
+            if (val !== null && val > currentMaxDepth) {
+                currentMaxDepth = val;
             }
+        });
 
+        // Обновляем глобальный минимум
+        if (currentMaxDepth !== -Infinity && currentMaxDepth < minPossible) {
+            minPossible = currentMaxDepth;
+        }
+
+        // Обновляем глобальный максимум
+        if (currentMaxDepth !== -Infinity && currentMaxDepth > maxPossible) {
+            maxPossible = currentMaxDepth;
+        }
+    });
+
+    return {
+        min: minPossible !== Infinity ? minPossible : "",
+        max: maxPossible !== -Infinity ? maxPossible : ""
+    };
+}
 
             function calculateMinMaxForParam(products, paramName) {
 
