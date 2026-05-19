@@ -2841,9 +2841,7 @@ if (armrestTypeFilters.length > 0) {
                     });
 
                     let detailedTooltipText = `
-        <strong>${productName}</strong><br><br>
-        ${upholstery ? `<strong>Обсуждается дополнительно:<br></strong> ${upholstery.replace('-', '').trim()}<br>` : ''}
-        <br>${addition ? `${addition}<br><br>` : ''}
+        <strong>${productName}</strong><br><br>        
         ${chairHeight?.min || chairHeight?.max ? (() => {
                             const minH = chairHeight.min ? parseInt(chairHeight.min) : null;
                             const maxH = chairHeight.max ? parseInt(chairHeight.max) : null;
@@ -2867,7 +2865,9 @@ ${backrestToSeatHeight?.min || backrestToSeatHeight?.max ? `<strong>Высота
         ${diameterCross?.min || diameterCross?.max ? `<strong>Диаметр крестовины:</strong> ${diameterCross.min || ''}${diameterCross.min && diameterCross.max ? ' - ' : ''}${diameterCross.max || ''} мм<br>` : ''}
         ${runnersWidth?.min || runnersWidth?.max ? `<strong>Ширина полозьев/ножек:</strong> ${runnersWidth.min || ''}${runnersWidth.min && runnersWidth.max ? ' - ' : ''}${runnersWidth.max || ''} мм<br>` : ''}
         ${runnersDepth?.min || runnersDepth?.max ? `<strong>Глубина полозьев/ножек:</strong> ${runnersDepth.min || ''}${runnersDepth.min && runnersDepth.max ? ' - ' : ''}${runnersDepth.max || ''} мм<br>` : ''}
-        ${boxSize ? `<strong>Размер коробки:</strong> ${boxSize}<br>` : ''}        
+        ${boxSize ? `<strong>Размер коробки:</strong> ${boxSize}<br>` : ''}
+        
+        
       `;
 
                     if (packagingData.length > 0) {
@@ -2888,8 +2888,13 @@ ${backrestToSeatHeight?.min || backrestToSeatHeight?.max ? `<strong>Высота
                     }
 
                     detailedTooltipText += `
-        ${maxLoad ? `<strong>Макс. нагрузка:</strong> ${maxLoad} кг<br>` : ''}
+        ${maxLoad ? `<strong>Макс. нагрузка:</strong> ${maxLoad} кг<br><br>` : ''}
+
+        ${upholstery ? `<strong>Обсуждается дополнительно:<br></strong> ${upholstery.replace('-', '').trim()}<br>` : ''}
+        <br>${addition ? `${addition}<br><br>` : ''}
       `;
+
+      
 
                     const productCard = document.createElement('div');
                     productCard.className = 'product-card';
