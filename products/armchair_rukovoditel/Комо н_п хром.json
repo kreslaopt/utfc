@@ -82,9 +82,9 @@
     ],
     "images": [
         {
-            "vid_main": "img/armchair_rukovoditel/komo_np_pl_727_lux_s0422_01.png",
-            "chair_view": "img/armchair_rukovoditel/",
-            "dimensions": "img/armchair_rukovoditel/dimensions/.png",
+            "vid_main": "img/armchair_rukovoditel/komo_np_ch_z71_01.png",
+            "chair_view": "img/armchair_rukovoditel/komo_np_ch_z71_02.png",
+            "dimensions": "img/armchair_rukovoditel/dimensions/komo_np_ch_z71_01.png",
             "box": "img/box_UTFC.png"
         }
     ],

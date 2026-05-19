@@ -173,6 +173,7 @@ input[type=number]::-webkit-inner-spin-button {
   display: flex;
   font-size: 10px;
   color: #96C22B;
+  font-weight: 600;
 }
 
 .height_slider {
@@ -180,5 +181,6 @@ input[type=number]::-webkit-inner-spin-button {
   justify-content: center;
   display: flex;
   font-size: 11px;
+  font-style: normal;
   color: #96C22B;
 }/*# sourceMappingURL=teh_style.css.map */
