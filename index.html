@@ -82,6 +82,7 @@
                 <label><input type="checkbox" class="armrest-filter" value="самба"> Самба</label>
                 <label><input type="checkbox" class="armrest-filter" value="соната"> Соната</label>
                 <label><input type="checkbox" class="armrest-filter" value="t-01|t01|T-01|т-01"> T-01</label>
+                <label><input type="checkbox" class="armrest-filter" value="t-02|t02|T-02|т-02"> T-02</label>
                 <label><input type="checkbox" class="armrest-filter" value="ХДП|хдп"> ХДП</label>
                 <label><input type="checkbox" class="armrest-filter" value="Пластиковые|пластиковые">
                     Пластиковые</label>
@@ -1533,6 +1534,8 @@ function searchArmrestType(product, armrestType) {
             setThumbPosition(maxThumb, parseInt(maxValue.value), false);
         }
 
+
+        
         function recalculateSliderValues(filteredProducts = []) {
 
             const isArchiveSelected = document.getElementById('archiveFilter').checked;
