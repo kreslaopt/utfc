@@ -2885,13 +2885,11 @@ ${backrestToSeatHeight?.min || backrestToSeatHeight?.max ? `<strong>Высота
                     }
 
                     detailedTooltipText += `
-        ${maxLoad ? `<strong>Макс. нагрузка:</strong> ${maxLoad} кг<br><br>` : ''}
-
-        ${upholstery ? `<strong>Обсуждается дополнительно:<br></strong> ${upholstery.replace('-', '').trim()}<br>` : ''}
-        <br>${addition ? `${addition}<br><br>` : ''}
+        ${maxLoad ? `<strong>Макс. нагрузка:</strong> ${maxLoad} кг<br><br>` : ''}     
       `;
 
-      
+        //  ${upholstery ? `<strong>Обсуждается дополнительно:<br></strong> ${upholstery.replace('-', '').trim()}<br>` : ''}
+        // <br>${addition ? `${addition}<br><br>` : ''}
 
                     const productCard = document.createElement('div');
                     productCard.className = 'product-card';
