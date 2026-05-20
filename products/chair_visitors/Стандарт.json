@@ -62,9 +62,9 @@
     ],
     "dimensions": [
         {
-            "brutto": "",
-            "netto": "",
-            "volume": "0"
+            "brutto": "4,6",
+            "netto": "4,60",
+            "volume": "0,05"
         }
     ],
     "guarantee": [
@@ -102,7 +102,7 @@
                 "max": ""
             },
             "chair_depth": {
-                "min": "560",
+                "min": "550",
                 "max": ""
             },
             "seat_depth": {
