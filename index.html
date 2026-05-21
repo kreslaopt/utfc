@@ -2881,8 +2881,8 @@ if (armrestTypeFilters.length > 0) {
         ${backrestwidthnarrow?.max ? `<strong>Ширина спинки</strong> (широкая ч.): ${backrestwidthnarrow.max} мм<br>` : ''}
 
         ${diameterCross?.min || diameterCross?.max ? `<strong>Диаметр крестовины:</strong> ${diameterCross.min || ''}${diameterCross.min && diameterCross.max ? ' - ' : ''}${diameterCross.max || ''} мм<br>` : ''}
-        ${runnersWidth?.min || runnersWidth?.max ? `<strong>Ширина полозьев/ножек:</strong> ${runnersWidth.min || ''}${runnersWidth.min && runnersWidth.max ? ' - ' : ''}${runnersWidth.max || ''} мм<br>` : ''}
-        ${runnersDepth?.min || runnersDepth?.max ? `<strong>Глубина полозьев/ножек:</strong> ${runnersDepth.min || ''}${runnersDepth.min && runnersDepth.max ? ' - ' : ''}${runnersDepth.max || ''} мм<br>` : ''}
+        ${runnersWidth?.min || runnersWidth?.max ? `<strong>Ширина полозьев/каркаса:</strong> ${runnersWidth.min || ''}${runnersWidth.min && runnersWidth.max ? ' - ' : ''}${runnersWidth.max || ''} мм<br>` : ''}
+        ${runnersDepth?.min || runnersDepth?.max ? `<strong>Глубина полозьев/каркаса:</strong> ${runnersDepth.min || ''}${runnersDepth.min && runnersDepth.max ? ' - ' : ''}${runnersDepth.max || ''} мм<br>` : ''}
         ${boxSize ? `<strong>Размер коробки:</strong> ${boxSize}<br>` : ''}
         
         
@@ -3056,8 +3056,8 @@ if (armrestTypeFilters.length > 0) {
                 { name: 'Ширина сиденья (мм)', key: 'seat_width' },
                 { name: 'Ширина спинки (широкая часть) (мм)', key: 'backrest_width_wide' },
                 { name: 'Диаметр крестовины (мм)', key: 'diameter_cross' },
-                { name: 'Ширина полозьев/ножек (мм)', key: 'runners_width' },
-                { name: 'Глубина полозьев/ножек (мм)', key: 'runners_depth' },
+                { name: 'Ширина полозьев/каркаса (мм)', key: 'runners_width' },
+                { name: 'Глубина полозьев/каркаса (мм)', key: 'runners_depth' },
                 { name: 'Макс. нагрузка (кг)', key: 'max_load', source: 'guarantee' },
                 { name: 'Рекоменд. нагрузка (кг)', key: 'recommended_load', source: 'guarantee' },
                 { name: 'Вес брутто (кг)', key: 'brutto', source: 'dimensions' },
