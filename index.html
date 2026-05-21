@@ -2847,7 +2847,7 @@ if (armrestTypeFilters.length > 0) {
                     });
 
                     let detailedTooltipText = `
-        <strong>${productName}</strong><br><br>        
+        <strong>${productName}</strong><br>        
         ${chairHeight?.min || chairHeight?.max ? (() => {
                             const minH = chairHeight.min ? parseInt(chairHeight.min) : null;
                             const maxH = chairHeight.max ? parseInt(chairHeight.max) : null;
@@ -2907,7 +2907,7 @@ if (armrestTypeFilters.length > 0) {
 
                     detailedTooltipText += `
                     ${recommendedLoad ? `<strong>Рекоменд. нагрузка:</strong> ${recommendedLoad} кг<br>` : ''}
-        ${maxLoad ? `<strong>Макс. нагрузка:</strong> ${maxLoad} кг<br><br>` : ''}     
+        ${maxLoad ? `<strong>Макс. нагрузка:</strong> ${maxLoad} кг` : ''}     
       `;
 
         //  ${upholstery ? `<strong>Обсуждается дополнительно:<br></strong> ${upholstery.replace('-', '').trim()}<br>` : ''}
