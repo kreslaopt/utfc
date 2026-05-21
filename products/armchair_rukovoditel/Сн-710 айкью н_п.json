@@ -187,7 +187,7 @@
     {
       "clean": false,
       "limit": false,
-      "del": true
+      "del": false
     }
   ],
   "parent": {
