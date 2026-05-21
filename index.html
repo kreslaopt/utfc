@@ -2817,6 +2817,7 @@ if (armrestTypeFilters.length > 0) {
                     const runnersWidth = product.dimensions_details?.[0]?.runners_width;
                     const runnersDepth = product.dimensions_details?.[0]?.runners_depth;
                     const maxLoad = product.guarantee?.[0]?.max_load;
+                    const recommendedLoad = product.guarantee?.[0]?.recommended_load;
                     const boxSize = product.transportation?.[0]?.packaging?.box_size;
                     const brutto = product.dimensions?.[0]?.brutto;
                     const netto = product.dimensions?.[0]?.netto;
@@ -2900,11 +2901,12 @@ if (armrestTypeFilters.length > 0) {
                         detailedTooltipText += `
           ${brutto ? `<strong>Вес брутто:</strong> ${brutto} кг<br>` : ''}
           ${netto ? `<strong>Вес нетто:</strong> ${netto} кг<br>` : ''}
-          ${volume ? `<strong>Объем:</strong> ${volume} м³<br>` : ''}
+          ${volume ? `<strong>Объем:</strong> ${volume} м³<br><br>` : ''}
         `;
                     }
 
                     detailedTooltipText += `
+                    ${recommendedLoad ? `<strong>Рекоменд. нагрузка:</strong> ${recommendedLoad} кг<br>` : ''}
         ${maxLoad ? `<strong>Макс. нагрузка:</strong> ${maxLoad} кг<br><br>` : ''}     
       `;
 
