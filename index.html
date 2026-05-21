@@ -2859,13 +2859,13 @@ if (armrestTypeFilters.length > 0) {
                         })() : ''}
         ${headrestHeight?.min || headrestHeight?.max ? `<strong>Высота подголовника:</strong> ${headrestHeight.min || ''}${headrestHeight.min && headrestHeight.max ? ' - ' : ''}${headrestHeight.max || ''} мм<br>` : ''}
         ${seatToFloorHeight?.min || seatToFloorHeight?.max ? `<strong>Высота сиденья от пола:</strong> ${seatToFloorHeight.min || ''}${seatToFloorHeight.min && seatToFloorHeight.max ? ' - ' : ''}${seatToFloorHeight.max || ''} мм<br>` : ''}
-        ${seatToFloorHeightUpper?.min || seatToFloorHeightUpper?.max ? `<strong>Bысота до сиденья (до нижн. ч.):<br></strong> ${seatToFloorHeightUpper.min || ''}${seatToFloorHeightUpper.min && seatToFloorHeightUpper.max ? ' - ' : ''}${seatToFloorHeightUpper.max || ''} мм<br>` : ''}
+        ${seatToFloorHeightUpper?.min || seatToFloorHeightUpper?.max ? `<strong>Bысота до сиденья</strong> (до нижн. ч.):  ${seatToFloorHeightUpper.min || ''}${seatToFloorHeightUpper.min && seatToFloorHeightUpper.max ? ' - ' : ''}${seatToFloorHeightUpper.max || ''} мм<br>` : ''}
         
-        ${armrestHeightFromFloor?.min || armrestHeightFromFloor?.max ? `<strong>Высота подлокотников (до нижн. ч.):<br></strong> ${armrestHeightFromFloor.min || ''}${armrestHeightFromFloor.min && armrestHeightFromFloor.max ? ' - ' : ''}${armrestHeightFromFloor.max || ''} мм<br>` : ''}
+        ${armrestHeightFromFloor?.min || armrestHeightFromFloor?.max ? `<strong>Высота подлокотников</strong> (до нижн. ч.):  ${armrestHeightFromFloor.min || ''}${armrestHeightFromFloor.min && armrestHeightFromFloor.max ? ' - ' : ''}${armrestHeightFromFloor.max || ''} мм<br>` : ''}
 
         ${armrestHeightFromSeat?.min || armrestHeightFromSeat?.max ? `<strong>Высота подлокотников от сиденья:</strong> ${armrestHeightFromSeat.min || ''}${armrestHeightFromSeat.min && armrestHeightFromSeat.max ? ' - ' : ''}${armrestHeightFromSeat.max || ''} мм<br>` : ''}
-        ${armrestWidthSupport?.min || armrestWidthSupport?.max ? `<strong>Ширина подлокотников опорной ч.:</strong> ${armrestWidthSupport.min || ''}${armrestWidthSupport.min && armrestWidthSupport.max ? ' - ' : ''}${armrestWidthSupport.max || ''} мм<br>` : ''}
-        ${armrestLengthSupport?.min || armrestLengthSupport?.max ? `<strong>Длина подлокотников опорной ч.:</strong> ${armrestLengthSupport.min || ''}${armrestLengthSupport.min && armrestLengthSupport.max ? ' - ' : ''}${armrestLengthSupport.max || ''} мм<br>` : ''}
+        ${armrestWidthSupport?.min || armrestWidthSupport?.max ? `<strong>Ширина подлокотников</strong> опорной ч.: ${armrestWidthSupport.min || ''}${armrestWidthSupport.min && armrestWidthSupport.max ? ' - ' : ''}${armrestWidthSupport.max || ''} мм<br>` : ''}
+        ${armrestLengthSupport?.min || armrestLengthSupport?.max ? `<strong>Длина подлокотников</strong> опорной ч.: ${armrestLengthSupport.min || ''}${armrestLengthSupport.min && armrestLengthSupport.max ? ' - ' : ''}${armrestLengthSupport.max || ''} мм<br>` : ''}
 
         ${chairDepth?.min || chairDepth?.max ? `<strong>Глубина кресла:</strong> ${chairDepth.min || ''}${chairDepth.min && chairDepth.max ? ' - ' : ''}${chairDepth.max || ''} мм<br>` : ''}
         ${seatDepth?.min || seatDepth?.max ? `<strong>Глубина сиденья:</strong> ${seatDepth.min || ''}${seatDepth.min && seatDepth.max ? ' - ' : ''}${seatDepth.max || ''} мм<br>` : ''}
@@ -2877,8 +2877,8 @@ if (armrestTypeFilters.length > 0) {
 
         ${chairWidth?.min || chairWidth?.max ? `<strong>Ширина сиденья с подлокотниками:</strong> ${chairWidth.min || ''}${chairWidth.min && chairWidth.max ? ' - ' : ''}${chairWidth.max || ''} мм<br>` : ''}
         ${seatWidth?.min || seatWidth?.max ? `<strong>Ширина сиденья:</strong> ${seatWidth.min || ''}${seatWidth.min && seatWidth.max ? ' - ' : ''}${seatWidth.max || ''} мм<br>` : ''}
-        ${backrestwidthexternal?.max ? `<strong>Ширина спинки (узкая часть):</strong> ${backrestwidthexternal.max} мм<br>` : ''}
-        ${backrestwidthnarrow?.max ? `<strong>Ширина спинки (широкая часть):</strong> ${backrestwidthnarrow.max} мм<br>` : ''}
+        ${backrestwidthexternal?.max ? `<strong>Ширина спинки</strong> (узкая ч.): ${backrestwidthexternal.max} мм<br>` : ''}
+        ${backrestwidthnarrow?.max ? `<strong>Ширина спинки</strong> (широкая ч.): ${backrestwidthnarrow.max} мм<br>` : ''}
 
         ${diameterCross?.min || diameterCross?.max ? `<strong>Диаметр крестовины:</strong> ${diameterCross.min || ''}${diameterCross.min && diameterCross.max ? ' - ' : ''}${diameterCross.max || ''} мм<br>` : ''}
         ${runnersWidth?.min || runnersWidth?.max ? `<strong>Ширина полозьев/ножек:</strong> ${runnersWidth.min || ''}${runnersWidth.min && runnersWidth.max ? ' - ' : ''}${runnersWidth.max || ''} мм<br>` : ''}
