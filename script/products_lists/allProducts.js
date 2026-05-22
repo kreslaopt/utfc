@@ -1955,7 +1955,7 @@ const knownProductsAllFiles = [
     "is_archive": false
   },
   {
-    "name": "Utfc онтарио ch-105 хром",
+    "name": "Utfc онтарио ch-105 пластик хром",
     "category": "armchair_rukovoditel",
     "is_archive": false
   },
