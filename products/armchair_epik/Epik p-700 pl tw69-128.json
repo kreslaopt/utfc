@@ -453,5 +453,15 @@
             "limit": false,
             "del": false
         }
-    ]
+    ],
+    "additional_info": {
+        "package_dimensions": {
+            "width": "15",
+            "depth": "700",
+            "height": "335"
+        },
+        "netto": "13",
+        "brutto": "15",
+        "volume": "0"
+    }
 }

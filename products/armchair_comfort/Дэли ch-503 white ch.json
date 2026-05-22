@@ -697,5 +697,12 @@
             "limit": false,
             "del": true
         }
-    ]
+    ],
+    "additional_info": {
+        "package_dimensions": {
+            "depth": "584",
+            "height": "262"
+        },
+        "volume": "0"
+    }
 }

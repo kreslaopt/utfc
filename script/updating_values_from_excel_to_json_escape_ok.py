@@ -19,6 +19,7 @@ parents_mapping = {
     # 'модель_дочерняя': 'модель_родитель',
     'кора ch': 'кора чёрный',
     'стандарт gr': 'стандарт',
+    'стандарт': 'стандарт',
     'неон bl': 'неон',
     'табурет кр bl': 'табурет кр',
     'табурет кр ch': 'табурет кр',
@@ -32,6 +33,7 @@ parents_mapping = {
     'венус м bl': 'венус м',
     'венус м gr': 'венус м',
     'изо пластик bl': 'изо пластик',
+    'изо пластик +': 'изо пластик +',
     'utfc киото м-250 cерый плаcтик': 'utfc киото м-250',
     'utfc мориока м-242 зеленый плаcтик': 'utfc мориока м-242',
     'utfc мориока м-242 краcный плаcтик': 'utfc мориока м-242',
@@ -52,32 +54,38 @@ parents_mapping = {
     'верcаль ch':'верcаль',
     'компакт люкc cкладной gr':'компакт люкc cкладной',
     'компакт складной gr':'компакт складной',
+    'компакт люкc 4н cкладной gr':'компакт люкc 4н cкладной',
+    'компакт 4н складной gr':'компакт 4н складной',
+    'неон':'неон',
     'неон gr':'неон',
     'неон bl':'неон',
     'cамба bl':'cамба',
+    'cамба':'cамба',
     'cамба gr':'cамба',
     'cамба soft bl':'cамба',
     'cамба soft ch':'cамба',
     'cамба soft gr':'cамба',
     'cамба cо cтоликом bl':'cамба cо cтоликом',
     'cамба cо cтоликом soft bl':'cамба cо cтоликом',
+    'самба со столиком':'самба со столиком',
     'самба люкс gtp tg столик':'самба люкс gtp tg/столик',
     'cофия bl':'cофия',
     'cофия cо cтоликом bl':'cофия cо cтоликом',
     'cтандарт gr':'cтандарт',
     'форум bl':'форум',
+    'форум':'форум',
     'шелл c-07 bl':'шелл c-07',
     'шелл c-07 gr':'шелл c-07',
     'шелл c-07':'шелл c-07',
-    'шелл cофт bl':'шелл c-07 софт',
-    'шелл cофт gr':'шелл c-07 софт',
-    'шелл cофт':'шелл c-07 софт',
+    'шелл c-07 cофт bl':'шелл c-07 софт',
+    'шелл c-07 cофт gr':'шелл c-07 софт',
+    'шелл c-07 cофт':'шелл c-07 софт',
     'cтул кассира':'Стул кассира б_п',
     'дэли ch-503 white ch':'дэли сн-503 н/п хром',
     'дэли ch-503 белый пластик':'дэли сн-503 белый пластик',
     'дэли сн-503 н/п хром':'дэли ch-503 н_п хром',
     'ультра т-01 н пластик pl660':'ультра т-01 н пластик pl660',
-    'ультра т-02 н пластик pl660':'',
+    'ультра т-02 н пластик pl660':'ультра т-02 н пластик pl660',
     'epik e-201-g m021':'epik e-201-g',
     'epik а-011-g 201':'кресло epik а-011-g',
     'epik а-011-g 200':'кресло epik а-011-g',
@@ -98,15 +106,21 @@ parents_mapping = {
     'epik a-112-g l113 кэмел':'кресло epik a-112-g',
     'чико 4l bl':'чико 4l хром',
     'стул кассира б_п':'стул кассира б/п',
-    'сн-710 айкью н_п':'айкью н/п сн-710',
-    'сн-710 айкью н_п bl':'айкью н/п сн-710',
-    'сн-710 айкью н пластик':'айкью н сн-710 пластик',    
+    'айкью сн-710 н_п':'айкью н/п сн-710',
+    'айкью сн-710 н_п bl':'айкью н/п сн-710',
+    'айкью н сн-710 пластик':'айкью н сн-710 пластик',
+    'айкью сн-710 пластик':'айкью сн-710 пластик',    
     'соло макс ch-602 пластик':'соло max сн-602 пластик',
     'соло макс ch-602 хром':'соло max сн-602 хром',
     'соло макс комби хром':'соло max сн-602 хром',
     'соло макс комби пластик':'соло max сн-602 пластик',
     'честер 4l bl':'честер 4l хром',
     'верона к-10 н_п дерево':'верона к-10 н/п дерево',
+    'честер хром':'честер хром',
+    'софия со столиком':'софия со столиком',
+    'софия со столиком bl':'софия со столиком',
+    'софия':'софия',
+    'софия bl':'софия',
     # 'кайман ch-300 н_п bl':'кайман сн-300 н/п хром',    не получилось
 
 }
@@ -344,6 +358,12 @@ moкаркасаs_only_in_json = all_json_moкаркасаs - set(excel_data.key
 print("Модели, которые есть в JSON, но отсутствуют в Excel:")
 for moкаркаса in sorted(moкаркасаs_only_in_json):
     print(f"  - {moкаркаса}")
+
+    # Находим модели, которые есть в Excel, но нет в JSON
+moкаркасаs_only_in_excel = set(excel_data.keys()) - all_json_moкаркасаs
+print("Модели, которые есть в Excel, но отсутствуют в JSON:")
+for moкаркаса in sorted(moкаркасаs_only_in_excel):
+    print(f"  - {moкаркаса}")
     
 
 # Функция для наследования параметров
@@ -528,6 +548,7 @@ print("Обновление завершено. Список неудачных 
 
 # Собираем список дочерних моделей, для которых нет родителя в Excel
 missing_parents = {}
+missing_json = {}
 
 for json_file in json_files:
     try:
@@ -557,7 +578,46 @@ for json_file in json_files:
         continue
 
 # Выводим список в формате для parents_mapping
-print("\nСписок дочерних моделей, для которых нет родителя в Excel (добавьте в parents_mapping):")
+
+      # Перед циклом для обработки JSON-файлов
+all_json_moкаркасаs = set()
+
+for json_file in json_files:
+    try:
+        with open(json_file, 'r', encoding='utf-8') as f:
+            data = json.load(f)
+        if not isinstance(data, dict):
+            print(f"Пропускаем {json_file}: неожиданный формат данных (ожидался словарь)")
+            continue
+        moкаркаса_name = data.get('namefile', [''])[0] if isinstance(data.get('namefile'), list) else data.get('namefile', '')
+        if not moкаркаса_name:
+            moкаркаса_name = data.get('name', [''])[0] if isinstance(data.get('name'), list) else data.get('name', '')
+        if not moкаркаса_name:
+            print(f"Пропускаем {json_file}: не удалось определить имя модели")
+            continue
+        normalized_name = normalize_moкаркаса_name(moкаркаса_name)
+        all_json_moкаркасаs.add(normalized_name)
+
+        # Проверка родителя
+        if normalized_name in parents_mapping:
+            parent_moкаркаса_name = normalize_moкаркаса_name(parents_mapping[normalized_name])
+            if parent_moкаркаса_name not in excel_data:
+                missing_parents[normalized_name] = parent_moкаркаса_name
+
+    except Exception as e:
+        print(f"Ошибка при обработке {json_file}: {e}")
+        continue
+
+# Теперь собираем все модели из Excel
+excel_models = set(excel_data.keys())
+
+# Модели, есть в Excel, но нет в JSON
+models_in_excel_not_in_json = excel_models - all_json_moкаркасаs
+
+print("\nМодели, есть в Excel, но отсутствуют в JSON (их нужно добавить):")
+for model in sorted(models_in_excel_not_in_json):
+    print(f"  - {model}")
+    #   моделей, для которых нет родителя в Excel (добавьте в parents_mapping):")
 print("parents_mapping = {")
 for child, parent in missing_parents.items():
     print(f"    '{child}': '{parent}',  # <--- Уточните родительскую модель!")
@@ -571,24 +631,24 @@ with open('missing_parents.txt', 'w', encoding='utf-8') as f:
     f.write("}\n")
 print("\nСписок сохранён в missing_parents.txt")
 
-test_strings = [
-    'сн-710 айкью н_п',
-    'соло max сн-602 пластик',
-    'соло макс ch-602 пластик',
-    'epik p-521-sb m021:кресло epik р-521-sb',
-    "самба люкс gtp tg столик",
-    "сн-710 айкью н пластик",
-    "сн-710 айкью н_п",
-    "соло макс ch-602 пластик",
-    "соло макс ch-602 хром",
-    "сильвия арм хром",
-    "сильвия хром"
-]
+# test_strings = [
+#     'сн-710 айкью н_п',
+#     'соло max сн-602 пластик',
+#     'соло макс ch-602 пластик',
+#     'epik p-521-sb m021:кресло epik р-521-sb',
+#     "самба люкс gtp tg столик",
+#     "сн-710 айкью н пластик",
+#     "сн-710 айкью н_п",
+#     "соло макс ch-602 пластик",
+#     "соло макс ch-602 хром",
+#     "сильвия арм хром",
+#     "сильвия хром"
+# ]
 
-for s in test_strings:
-    print(f"Original: {s}")
-    print(f"Normalized: {normalize_moкаркаса_name(s)}")
-    print(f"Normalized: {normalized_name}")
-    print(f"Is in exceptions: {normalized_name.lower() in [name.lower() for name in exceptions_del_false]}")
-    print()
+# for s in test_strings:
+#     print(f"Original: {s}")
+#     print(f"Normalized: {normalize_moкаркаса_name(s)}")
+#     print(f"Normalized: {normalized_name}")
+#     # print(f"Is in exceptions: {normalized_name.lower() in [name.lower() for name in exceptions_del_false]}")
+#     print()
 

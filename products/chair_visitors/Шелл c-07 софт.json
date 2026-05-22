@@ -1,0 +1,366 @@
+{
+    "namefile": [
+        "Шелл c-07 софт"
+    ],
+    "name_all": [
+        "Шелл",
+        "Шелл Софт"
+    ],
+    "name": [
+        "Шелл Софт"
+    ],
+    "unique_name": [
+        "Шелл C-07 софт"
+    ],
+    "vid": [
+        "стул"
+    ],
+    "category": [
+        "стул"
+    ],
+    "destiny": [
+        "работы и кратковременного отдыха сидя<br>Устанавливается в жилых и административных помещениях"
+    ],
+    "technical_requirements": [
+        [
+            "Стул должен соответствовать требованиям:",
+            "ГОСТ 19917-2014 «Мебель для сидения и лежания. Общие технические условия»",
+            "ГОСТ 26800.3-86 «Мебель для административных помещений. Функциональные размеры»",
+            "настоящего технического описания",
+            "комплекта конструкторской документации",
+            "образцу-эталону, утвержденному в установленном порядке производителем"
+        ]
+    ],
+    "construction_and_materials": [
+        {
+            "upholstery_materials": [
+                "- тип покрытия каркаса стула: CH, BL, GR где<br>\nCH - хромовое блестящее,<br>\nBL - окрашенный, цвет черный<br>\nGR - окрашенный, цвет серый<br>\n- цвет пластикового каркаса-ракушки - по каталогу<br>- цвет материала - по каталогу"
+            ],
+            "components": [
+                "металлического каркаса, пластикового каркаса-ракушки, сиденья, пластиковых заглушек и крепежных элементов. Нерегулируемый",
+                "<strong>Каркас</strong> стула сварной металлический с защитно-декоративным покрытием. Ножки изготовлены из стальной трубы круглого сечения Ф18х1,5 мм",
+                "<strong>Покрытие каркаса</strong>: термореактивная порошковая краска черного или серого цвета, хромовое блестящее",
+                "На опорную поверхность ножек каркаса устанавливаются заглушки",
+                "<strong>Каркас-ракушка</strong> пластиковый с мягким сиденьем, крепится к металлическому каркасу с помощью 4-х винтов",
+                "<strong>Сиденье</strong> состоит из фанерного основания, мягкого элемента (пенополиуретан, жесткость - 30, плотность — 20 кг/м<sup>3</sup>) и облицовки. Крепится к каркасу-ракушке с помощью 4-х винтов М6",
+                "<strong>Материал</strong> облицовки сиденья: экокожа (S,R)"
+            ]
+        }
+    ],
+    "transportation": [
+        {
+            "standard": "ГОСТ 16371-2014",
+            "packaging": {
+                "type": "5-слойный гофрокороб",
+                "size": {
+                    "width": "570",
+                    "depth": "510",
+                    "height": "610"
+                },
+                "box_size": "570х510х610",
+                "transportation": "Упаковка по 2 шт. в отдельный гофрокороб размером"
+            }
+        }
+    ],
+    "dimensions": [
+        {
+            "brutto": "5,53",
+            "netto": "4,60",
+            "volume": "0,03"
+        }
+    ],
+    "guarantee": [
+        {
+            "period": "12",
+            "max_load": "120",
+            "recommended_load": "90"
+        }
+    ],
+    "images": [
+        {
+            "vid_main": "img/chair_visitors/shell_soft_ch_4l_01.png",
+            "chair_view": "img/chair_visitors/shell_soft_ch_4l_02.png",
+            "dimensions": "img/chair_visitors/dimensions/shell_soft_ch_4l_01.png",
+            "box": "img/box_UTFC_2x.png"
+        }
+    ],
+    "dimensions_details": [
+        {
+            "chair_height": {
+                "min": "840"
+            },
+            "headrest_height": {},
+            "seat_to_floor_height": {
+                "min": "520"
+            },
+            "seat_to_floor_height_upper": {
+                "min": "445"
+            },
+            "armrest_height_from_floor": {},
+            "armrest_height_from_seat": {},
+            "armrest_width_support": {},
+            "armrest_length_support": {},
+            "chair_depth": {
+                "min": "540"
+            },
+            "seat_depth": {
+                "min": "420"
+            },
+            "seat_depth_km": {
+                "max": "375"
+            },
+            "backrest_height": {
+                "max": "420"
+            },
+            "backrest_to_seat_height": {},
+            "backrest_height_external": {},
+            "seat_width_with_armrests": {},
+            "seat_width": {
+                "max": "460"
+            },
+            "backrest_width_narrow": {
+                "max": "270"
+            },
+            "backrest_width_wide": {
+                "max": "350"
+            },
+            "diameter_cross": {},
+            "runners_width": {
+                "max": "450"
+            },
+            "runners_depth": {
+                "max": "460"
+            },
+            "recommended_load": "90",
+            "max_load": "120",
+            "skeleton": "монолитный",
+            "minpromtorg": "+",
+            "netto": "4",
+            "volume": "0"
+        }
+    ],
+    "parent": {
+        "IE_XML_ID": "13120",
+        "IE_NAME": "Стул С-07 Шелл Софт СН",
+        "IE_ACTIVE": "Y",
+        "IE_ACTIVE_FROM": "",
+        "IE_ACTIVE_TO": "",
+        "IE_SORT": "500",
+        "IE_PREVIEW_PICTURE": "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/0c3/jltzc1fyh52hykxfqyzz1ivgfj3wapen.png",
+        "IE_PREVIEW_TEXT": "Идеальное сочетание стиля и функциональности. Пластиковая ракушка обеспечивает комфорт и легкость, подпружинивающая конструкция и мягкое сиденье добавляют дополнительное удобство. Ножки хромированного цвета придают стулу современный стильный вид.",
+        "IE_PREVIEW_TEXT_TYPE": "text",
+        "IE_DETAIL_PICTURE": "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/d6b/p6pf3mbhfyl04hbudzynt91ftmgkwoqq.png",
+        "IE_DETAIL_TEXT": "Идеальное сочетание стиля и функциональности. Пластиковая ракушка обеспечивает комфорт и легкость, подпружинивающая конструкция и мягкое сиденье добавляют дополнительное удобство. Ножки хромированного цвета придают стулу современный стильный вид.",
+        "IE_DETAIL_TEXT_TYPE": "text",
+        "IE_CODE": "shell_soft_ch",
+        "IE_TAGS": "",
+        "IE_ID": "13120",
+        "IP_PROP2": "460",
+        "IP_PROP3": "840",
+        "IP_PROP4": "540",
+        "IP_PROP6": "",
+        "IP_PROP19": "120",
+        "IP_PROP25": "Монолитный",
+        "IP_PROP18": "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/2c5/la5q5j1dq4xkk7rjhqmcfd73xxh1zdp9.png",
+        "IP_PROP31": "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/d9b/o894cq5c1lkkv6pihuam2zc3z980h196.png",
+        "IP_PROP5": "570",
+        "IP_PROP26": "610",
+        "IP_PROP27": "510",
+        "IP_PROP28": "5,25",
+        "IP_PROP29": "Гофрокартон (2шт/уп)",
+        "IP_PROP30": "0,09",
+        "IP_PROP7": "",
+        "IP_PROP8": "",
+        "IP_PROP9": "shell_soft_ch",
+        "IP_PROP10": "",
+        "IP_PROP11": "",
+        "IP_PROP12": "",
+        "IP_PROP13": "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/4cf/ilq1wlvorzhxoybm2ttc0v4o1px7pnlp.png",
+        "IP_PROP14": "",
+        "IP_PROP15": "",
+        "IP_PROP16": "",
+        "IP_PROP17": "",
+        "IP_PROP22": "",
+        "IP_PROP41": "op_4m_ch",
+        "IP_PROP42": "wo",
+        "IP_PROP43": "",
+        "IP_PROP44": "",
+        "IP_PROP45": "",
+        "IP_PROP46": "",
+        "IP_PROP47": "",
+        "IP_PROP48": "fe5e0356bb238a2df15bb088a0b5adfd",
+        "IP_PROP49": "",
+        "IP_PROP50": "",
+        "IP_PROP51": "",
+        "IP_PROP52": "",
+        "IP_PROP54": "utfc",
+        "IP_PROP59": "Нет",
+        "IP_PROP60": "",
+        "IC_ID0": "27",
+        "IC_XML_ID0": "",
+        "IC_GROUP0": "Стулья",
+        "IC_ACTIVE0": "Y",
+        "IC_SORT0": "55",
+        "IC_DESCRIPTION0": "",
+        "IC_DESCRIPTION_TYPE0": "text",
+        "IC_CODE0": "pos_chair",
+        "IC_PICTURE0": "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/886/8861dc6234e3cb1dd2db61171cfb210c.png",
+        "IC_DETAIL_PICTURE0": "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/ccc/ccc8c3730415630646026bfc16547e7f.png",
+        "IC_ID1": "",
+        "IC_XML_ID1": "",
+        "IC_GROUP1": "",
+        "IC_ACTIVE1": "",
+        "IC_SORT1": "",
+        "IC_DESCRIPTION1": "",
+        "IC_DESCRIPTION_TYPE1": "",
+        "IC_CODE1": "",
+        "IC_PICTURE1": "",
+        "IC_DETAIL_PICTURE1": "",
+        "IC_ID2": "",
+        "IC_XML_ID2": "",
+        "IC_GROUP2": "",
+        "IC_ACTIVE2": "",
+        "IC_SORT2": "",
+        "IC_DESCRIPTION2": "",
+        "IC_DESCRIPTION_TYPE2": "",
+        "IC_CODE2": "",
+        "IC_PICTURE2": "",
+        "IC_DETAIL_PICTURE2": "",
+        "CP_QUANTITY": "0",
+        "CP_QUANTITY_TRACE": "N",
+        "CP_CAN_BUY_ZERO": "Y",
+        "CP_WEIGHT": "0",
+        "CP_WIDTH": "",
+        "CP_HEIGHT": "",
+        "CP_LENGTH": "",
+        "CP_PURCHASING_PRICE": "",
+        "CP_PURCHASING_CURRENCY": "",
+        "CP_PRICE_TYPE": "S",
+        "CP_RECUR_SCHEME_LENGTH": "",
+        "CP_RECUR_SCHEME_TYPE": "D",
+        "CP_TRIAL_PRICE_ID": "",
+        "CP_WITHOUT_ORDER": "N",
+        "CP_VAT_ID": "",
+        "CP_VAT_INCLUDED": "N",
+        "CP_MEASURE": "",
+        "STORE_AMOUNT_2": "",
+        "STORE_AMOUNT_3": "",
+        "CV_QUANTITY_FROM": "",
+        "CV_QUANTITY_TO": "",
+        "CV_PRICE_1": "2966.00",
+        "CV_CURRENCY_1": "RUB",
+        "CV_PRICE_2": "3055.00",
+        "CV_CURRENCY_2": "RUB",
+        "CV_PRICE_3": "2966.00",
+        "CV_CURRENCY_3": "RUB",
+        "STORE_AMOUNT_4": "",
+        "STORE_AMOUNT_5": "",
+        "STORE_AMOUNT_6": ""
+    },
+    "children": [
+        {
+            "IE_XML_ID": "13125",
+            "IE_NAME": "Стул С-07 Шелл Софт черный СН S-0422 (темно-серый) BOX2",
+            "IE_ACTIVE": "Y",
+            "IE_ACTIVE_FROM": "",
+            "IE_ACTIVE_TO": "",
+            "IE_SORT": "500",
+            "IE_PREVIEW_PICTURE": "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/534/bcp91hdflxjy5bz6174668rcmokq18mf.png",
+            "IE_PREVIEW_TEXT": "",
+            "IE_PREVIEW_TEXT_TYPE": "text",
+            "IE_DETAIL_PICTURE": "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/f54/vy4ct9ozk2um9h6ykz2ccf1ox8p5ejw8.png",
+            "IE_DETAIL_TEXT": "",
+            "IE_DETAIL_TEXT_TYPE": "text",
+            "IE_CODE": "",
+            "IE_TAGS": "",
+            "IE_ID": "13125",
+            "IP_PROP34": "13120",
+            "IP_PROP35": "КФ-00946",
+            "IP_PROP36": [
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/9d8/7aey8lwhbiditj30q32rq71ycn07wcm2.png",
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/953/mwc75ncb5gndz4w8b96zri3yotgg4a5v.png",
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/b4f/kp86ujk5vqe6v3tzxjuae44pcviwwiwp.png",
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/f8d/gy2kbf1w8n5n8a7wso7766dh5qpjkoah.png",
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/369/flqokk6cx11xq0u00xao1lb8vv0uh9to.png"
+            ],
+            "IP_PROP37": "m_39",
+            "IP_PROP38": "pl_shell_black",
+            "IP_PROP39": "m_11",
+            "IP_PROP40": "s_0422",
+            "IP_PROP55": "&nbsp;",
+            "IP_PROP61": "",
+            "IC_ID0": "",
+            "IC_XML_ID0": "",
+            "IC_GROUP0": "",
+            "IC_ACTIVE0": "",
+            "IC_SORT0": "",
+            "IC_DESCRIPTION0": "",
+            "IP_PROP122": [
+                "000000",
+                "808080",
+                "MULTICOLOR"
+            ],
+            "IC_DESCRIPTION_TYPE0": "",
+            "IC_CODE0": "",
+            "IC_PICTURE0": "",
+            "IC_DETAIL_PICTURE0": "",
+            "IC_ID1": "",
+            "IC_XML_ID1": "",
+            "IC_GROUP1": "",
+            "IC_ACTIVE1": "",
+            "IC_SORT1": "",
+            "IC_DESCRIPTION1": "",
+            "IC_DESCRIPTION_TYPE1": "",
+            "IC_CODE1": "",
+            "IC_PICTURE1": "",
+            "IC_DETAIL_PICTURE1": "",
+            "IC_ID2": "",
+            "IC_XML_ID2": "",
+            "IC_GROUP2": "",
+            "IC_ACTIVE2": "",
+            "IC_SORT2": "",
+            "IC_DESCRIPTION2": "",
+            "IC_DESCRIPTION_TYPE2": "",
+            "IC_CODE2": "",
+            "IC_PICTURE2": "",
+            "IC_DETAIL_PICTURE2": "",
+            "CP_QUANTITY": "0",
+            "CP_QUANTITY_TRACE": "D",
+            "CP_CAN_BUY_ZERO": "D",
+            "CP_WEIGHT": "0",
+            "CP_WIDTH": "",
+            "CP_HEIGHT": "",
+            "CP_LENGTH": "",
+            "CP_PURCHASING_PRICE": "",
+            "CP_PURCHASING_CURRENCY": "",
+            "CP_PRICE_TYPE": "S",
+            "CP_RECUR_SCHEME_LENGTH": "",
+            "CP_RECUR_SCHEME_TYPE": "D",
+            "CP_TRIAL_PRICE_ID": "",
+            "CP_WITHOUT_ORDER": "N",
+            "CP_VAT_ID": "",
+            "CP_VAT_INCLUDED": "N",
+            "CP_MEASURE": "5",
+            "STORE_AMOUNT_2": "0",
+            "STORE_AMOUNT_3": "0",
+            "CV_QUANTITY_FROM": "",
+            "CV_QUANTITY_TO": "",
+            "CV_PRICE_1": "2966.00",
+            "CV_CURRENCY_1": "RUB",
+            "CV_PRICE_2": "3055.00",
+            "CV_CURRENCY_2": "RUB",
+            "STORE_AMOUNT_4": "0",
+            "CV_PRICE_3": "2966.00",
+            "STORE_AMOUNT_5": "0",
+            "CV_CURRENCY_3": "RUB",
+            "STORE_AMOUNT_6": "0"
+        }
+    ],
+    "lost": [
+        {
+            "clean": false,
+            "limit": false,
+            "del": true
+        }
+    ]
+}

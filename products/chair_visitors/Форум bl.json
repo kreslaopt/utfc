@@ -2619,5 +2619,9 @@
             "limit": false,
             "del": true
         }
-    ]
+    ],
+    "additional_info": {
+        "package_dimensions": {},
+        "volume": "0"
+    }
 }

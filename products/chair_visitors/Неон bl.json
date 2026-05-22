@@ -1459,5 +1459,10 @@
             "limit": false,
             "del": true
         }
-    ]
+    ],
+    "additional_info": {
+        "package_dimensions": {},
+        "netto": "4",
+        "volume": "0"
+    }
 }

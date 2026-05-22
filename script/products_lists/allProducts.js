@@ -1,5 +1,20 @@
 const knownProductsAllFiles = [
   {
+    "name": "Айкью н сн-710 пластик",
+    "category": "armchair_rukovoditel",
+    "is_archive": false
+  },
+  {
+    "name": "Айкью сн-710 н_п",
+    "category": "armchair_rukovoditel",
+    "is_archive": false
+  },
+  {
+    "name": "Айкью сн-710 н_п bl",
+    "category": "armchair_rukovoditel",
+    "is_archive": false
+  },
+  {
     "name": "Айкью сн-710 пластик",
     "category": "armchair_rukovoditel",
     "is_archive": false
@@ -1315,21 +1330,6 @@ const knownProductsAllFiles = [
     "is_archive": false
   },
   {
-    "name": "Сн-710 айкью н пластик",
-    "category": "armchair_rukovoditel",
-    "is_archive": false
-  },
-  {
-    "name": "Сн-710 айкью н_п",
-    "category": "armchair_rukovoditel",
-    "is_archive": false
-  },
-  {
-    "name": "Сн-710 айкью н_п bl",
-    "category": "armchair_rukovoditel",
-    "is_archive": false
-  },
-  {
     "name": "Соло макс комби пластик",
     "category": "armchair_rukovoditel",
     "is_archive": false
@@ -1605,17 +1605,17 @@ const knownProductsAllFiles = [
     "is_archive": false
   },
   {
-    "name": "Шелл софт",
+    "name": "Шелл c-07 софт",
     "category": "chair_visitors",
     "is_archive": false
   },
   {
-    "name": "Шелл софт bl",
+    "name": "Шелл c-07 софт bl",
     "category": "chair_visitors",
     "is_archive": false
   },
   {
-    "name": "Шелл софт gr",
+    "name": "Шелл c-07 софт gr",
     "category": "chair_visitors",
     "is_archive": false
   },
