@@ -1067,5 +1067,13 @@
         ""
     ],
     "minpromtorg": "",
-    "madeinrf": "Сделано РФ"
+    "madeinrf": "Сделано РФ",
+    "additional_info": {
+        "package_dimensions": {
+            "depth": "760",
+            "height": "440"
+        },
+        "netto": "12",
+        "volume": "0,21"
+    }
 }
