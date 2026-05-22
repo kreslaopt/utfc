@@ -113,7 +113,9 @@
         "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/uf/f37/3q1ohav4mrz2f102tvlys86d0nuxyyra.png",
         "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/uf/005/gq9dncaopgc6zza80ar3qu5yb1dq7az3.png",
         "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/d4c/d4cedfce22b1e44b200e945fbda3d3ab.png",
-        "https://utfc.ru/local/templates/utfc/img/palette.png"
+        "https://utfc.ru/local/templates/utfc/img/palette.png",
+        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/resize_cache/27729/09667609493257e3dc4f183374d2fcb3/iblock/4d4/4d41990eb99704cb4917b701ae204ad5/3a325688235932695c2d5ab0314af8c2.png",
+        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/resize_cache/27742/09667609493257e3dc4f183374d2fcb3/iblock/959/959dd4bf748fc6175817aec58673daf9/da8cb3bce3fcf393969db44d9eb766b8.png"
       ]
     }
   ],
@@ -234,7 +236,7 @@
     }
   ],
   "skeleton": "",
-  "minpromtorg": "",
+  "minpromtorg": "Минпромторг",
   "addition": "",
   "parent": {
     "IE_XML_ID": "a_1065",
@@ -821,7 +823,7 @@
       "STORE_AMOUNT_6": "0"
     }
   ],
-  "title": "Новинка: Стул Кремона 4К BL Ткань Velutto производства компании UTFC",
+  "title": "Стул Кремона 4К BL Ткань Velutto для минималистичных и классических интерьеров производства компании UTFC",
   "base_name": "Стул Кремона 4К BL",
   "article_number": "НКС-00021",
   "full_describe": "Название стула Кремона отсылает к одному из самых изысканных итальянских пригородов, где сочетаются традиции и современность.Особенностью стула является его универсальность — он одинаково уместен как в минималистичном, так и в классическом интерьере. Благодаря нейтральным и благородным оттенкам велюра, стул легко вписывается в любую палитру и становится гармоничным акцентом в любом пространстве.",

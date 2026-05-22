@@ -113,7 +113,11 @@
         "https://utfc.ru/upload/resize_cache/iblock/f1e/70_70_0/w0ygriy5n0e2jfi6onf915j0a810dqrl.png",
         "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/uf/0c5/0c5eea6af3603d63b73b652d674a5eff.jpg",
         "https://utfc.ru/local/templates/utfc/img/palette.png",
-        "https://utfc.ru/upload/resize_cache/iblock/8c9/140_140_0/90umdjstycosl6fa0541v28hk4q6zs90.png"
+        "https://utfc.ru/upload/resize_cache/iblock/8c9/140_140_0/90umdjstycosl6fa0541v28hk4q6zs90.png",
+        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/uf/3a5/3a5d425d6688006b1768d11061e38317.jpg",
+        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/resize_cache/27729/09667609493257e3dc4f183374d2fcb3/iblock/4d4/4d41990eb99704cb4917b701ae204ad5/3a325688235932695c2d5ab0314af8c2.png",
+        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/resize_cache/27742/09667609493257e3dc4f183374d2fcb3/iblock/959/959dd4bf748fc6175817aec58673daf9/da8cb3bce3fcf393969db44d9eb766b8.png",
+        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/bc2/bc2166b704579feb802cd10858a30bba.png"
       ]
     }
   ],
@@ -222,7 +226,7 @@
     }
   ],
   "skeleton": "немонолитный",
-  "minpromtorg": "+",
+  "minpromtorg": "Минпромторг",
   "addition": "",
   "parent": {
     "IE_XML_ID": "p_5231",
@@ -531,7 +535,8 @@
   "Ролики": "Пластиковые ролики, открытый чехол, d колеса 50 мм, d штока 11 мм. Стандарт BIFMA 5,1 (США)",
   "finish_type": [
     "Ткань С",
-    "-"
+    "-",
+    "Кожзаменитель Z"
   ],
   "color": [
     "Ткань С06 (синий)"
@@ -540,7 +545,8 @@
     "Кресло Мартин б/п (Ткань С, Ткань С06 (синий))",
     "Кресло Мартин б/п (-, Ткань С06 (синий))",
     "Кресло Мартин б/п (Ткань С, Ткань С06 (синий),, )",
-    "Кресло Мартин б/п (-, Ткань С06 (синий),, )"
+    "Кресло Мартин б/п (-, Ткань С06 (синий),, )",
+    "Кресло Мартин б/п (Кожзаменитель Z, Ткань С06 (синий),, )"
   ],
   "finish_type_seat": [
     ""

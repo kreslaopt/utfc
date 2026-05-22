@@ -117,7 +117,9 @@
         "https://utfc.ru/upload/resize_cache/iblock/f1e/70_70_0/w0ygriy5n0e2jfi6onf915j0a810dqrl.png",
         "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/dbc/dbc89f78f74c6ee016d69f1fdc3e65f6.png",
         "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/uf/6b6/6b678dfc8d143b5c162d964c7f66b011.png",
-        "https://utfc.ru/local/templates/utfc/img/palette.png"
+        "https://utfc.ru/local/templates/utfc/img/palette.png",
+        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/resize_cache/27729/09667609493257e3dc4f183374d2fcb3/iblock/4d4/4d41990eb99704cb4917b701ae204ad5/3a325688235932695c2d5ab0314af8c2.png",
+        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/resize_cache/27742/09667609493257e3dc4f183374d2fcb3/iblock/959/959dd4bf748fc6175817aec58673daf9/da8cb3bce3fcf393969db44d9eb766b8.png"
       ]
     }
   ],
@@ -231,14 +233,8 @@
       "volume": "0"
     }
   ],
-  "lost": [
-    {
-      "clean": true,
-      "limit": false
-    }
-  ],
   "skeleton": "немонолитный",
-  "minpromtorg": "",
+  "minpromtorg": "Минпромторг",
   "addition": "",
   "parent": {
     "IE_XML_ID": "p_5006",

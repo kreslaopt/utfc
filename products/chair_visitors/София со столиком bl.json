@@ -119,7 +119,10 @@
         "https://utfc.ru/upload/resize_cache/iblock/838/140_140_0/mgw3zvth4kslcs3n215d8fccel0637pk.png",
         "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/4cd/up8y8t0oze8fh302tuzc6nrnnoq305k3.png",
         "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/d4c/d4cedfce22b1e44b200e945fbda3d3ab.png",
-        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/65c/0zir4475xfv7nxu64zeyif362ur6pt9d.png"
+        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/65c/0zir4475xfv7nxu64zeyif362ur6pt9d.png",
+        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/resize_cache/27729/09667609493257e3dc4f183374d2fcb3/iblock/4d4/4d41990eb99704cb4917b701ae204ad5/3a325688235932695c2d5ab0314af8c2.png",
+        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/resize_cache/27742/09667609493257e3dc4f183374d2fcb3/iblock/959/959dd4bf748fc6175817aec58673daf9/da8cb3bce3fcf393969db44d9eb766b8.png",
+        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/uf/017/0170d0f775c6624be53668116b9d9805.jpg"
       ]
     }
   ],
@@ -191,7 +194,7 @@
     }
   ],
   "skeleton": "немонолитный",
-  "minpromtorg": "",
+  "minpromtorg": "Минпромторг",
   "addition": "",
   "parent": {
     "IE_XML_ID": "a_1122",
@@ -1400,7 +1403,16 @@
     "Стул София BL со столиком (-, Кожзаменитель Z29 (красный),, )",
     "Стул София BL со столиком (-, Кожзаменитель Z34 (светло-зеленый),, )",
     "Стул София BL со столиком (-, Кожзаменитель Z71 (серый),, )",
-    "Стул София BL со столиком (-, Кожзаменитель Z01 (белый),, )"
+    "Стул София BL со столиком (-, Кожзаменитель Z01 (белый),, )",
+    "Стул София BL со столиком (Экокожа Santorini, Кожзаменитель Z06 (синий),, )",
+    "Стул София BL со столиком (Экокожа Santorini, Кожзаменитель Z10 (темно-коричневый),, )",
+    "Стул София BL со столиком (Экокожа Santorini, Кожзаменитель Z11 (черный),, )",
+    "Стул София BL со столиком (Экокожа Santorini, Кожзаменитель Z19 (темно-синий),, )",
+    "Стул София BL со столиком (Экокожа Santorini, Кожзаменитель Z21 (бежевый),, )",
+    "Стул София BL со столиком (Экокожа Santorini, Кожзаменитель Z29 (красный),, )",
+    "Стул София BL со столиком (Экокожа Santorini, Кожзаменитель Z34 (светло-зеленый),, )",
+    "Стул София BL со столиком (Экокожа Santorini, Кожзаменитель Z71 (серый),, )",
+    "Стул София BL со столиком (Экокожа Santorini, Кожзаменитель Z01 (белый),, )"
   ],
   "finish_type_seat": [
     ""
@@ -1409,13 +1421,11 @@
     ""
   ],
   "madeinrf": "Сделано РФ",
-  "additional_info": {
-    "package_dimensions": {
-      "width": "6",
-      "depth": "460",
-      "height": "185"
-    },
-    "netto": "9",
-    "volume": "0"
-  }
+  "lost": [
+    {
+      "clean": false,
+      "limit": false,
+      "del": true
+    }
+  ]
 }

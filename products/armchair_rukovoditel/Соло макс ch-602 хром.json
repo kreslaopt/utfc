@@ -124,7 +124,10 @@
         "https://utfc.ru/upload/resize_cache/iblock/f1e/70_70_0/w0ygriy5n0e2jfi6onf915j0a810dqrl.png",
         "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/ecb/ecbcf8d1689e246ad1ad803022658405/12c20d01d5c00251d233141bc130a640.png",
         "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/uf/ed8/ed809c4302b8f61180ba2401fad216c5.png",
-        "https://utfc.ru/local/templates/utfc/img/palette.png"
+        "https://utfc.ru/local/templates/utfc/img/palette.png",
+        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/resize_cache/27729/09667609493257e3dc4f183374d2fcb3/iblock/4d4/4d41990eb99704cb4917b701ae204ad5/3a325688235932695c2d5ab0314af8c2.png",
+        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/resize_cache/27742/09667609493257e3dc4f183374d2fcb3/iblock/959/959dd4bf748fc6175817aec58673daf9/da8cb3bce3fcf393969db44d9eb766b8.png",
+        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/1e8/1e82bfff62adac44f4dda0de5ac1aee2.png"
       ]
     }
   ],
@@ -200,9 +203,9 @@
     }
   ],
   "skeleton": "немонолитный",
-  "minpromtorg": "",
+  "minpromtorg": "Минпромторг",
   "addition": "",
-  "title": "Кресло СН-602 Соло Макс хром SoloСН Ср производства компании UTFC",
+  "title": "Кресло с высокой эргономичной воздухопроницаемой спинкой СН-602 Соло Макс хром SoloСН Ср производства компании UTFC",
   "base_name": "Кресло СН-602 Соло Макс хром SoloСН Ср",
   "article_number": "КК-01059",
   "full_describe": "Кресло повышенного комфорта с высокой эргономичной воздухопроницаемой спинкой, широким сиденьем и мягким большим подголовником подходит как сотрудникам, так и руководителям. Стильное хромированное пятилучье в основании кресла. Эта модель прекрасно дополнит интерьер открытого офиса или домашнего кабинета. Максимальная нагрузка 150 кг.",
@@ -551,14 +554,11 @@
     }
   ],
   "madeinrf": "Сделано РФ",
-  "additional_info": {
-    "package_dimensions": {
-      "width": "14",
-      "depth": "910",
-      "height": "270"
-    },
-    "netto": "12",
-    "brutto": "14",
-    "volume": "0"
-  }
+  "lost": [
+    {
+      "clean": false,
+      "limit": false,
+      "del": false
+    }
+  ]
 }

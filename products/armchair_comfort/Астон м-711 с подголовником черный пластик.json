@@ -188,12 +188,6 @@
       "volume": "0"
     }
   ],
-  "lost": [
-    {
-      "clean": true,
-      "limit": false
-    }
-  ],
   "skeleton": "немонолитный",
   "minpromtorg": "",
   "addition": "",

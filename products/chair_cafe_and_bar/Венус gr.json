@@ -106,7 +106,10 @@
         "https://utfc.ru/upload/resize_cache/iblock/f1e/70_70_0/w0ygriy5n0e2jfi6onf915j0a810dqrl.png",
         "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/uf/ca4/b3zdjjpvae713ko7kgkxl66sltaupb43.png",
         "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/d4c/d4cedfce22b1e44b200e945fbda3d3ab.png",
-        "https://utfc.ru/local/templates/utfc/img/palette.png"
+        "https://utfc.ru/local/templates/utfc/img/palette.png",
+        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/resize_cache/27729/09667609493257e3dc4f183374d2fcb3/iblock/4d4/4d41990eb99704cb4917b701ae204ad5/3a325688235932695c2d5ab0314af8c2.png",
+        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/uf/8d0/8d0fc428274bc3dd435ab3736b873e89.jpg",
+        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/resize_cache/27742/09667609493257e3dc4f183374d2fcb3/iblock/959/959dd4bf748fc6175817aec58673daf9/da8cb3bce3fcf393969db44d9eb766b8.png"
       ]
     }
   ],
@@ -158,7 +161,7 @@
     }
   ],
   "skeleton": "немонолитный",
-  "minpromtorg": "",
+  "minpromtorg": "Минпромторг",
   "addition": "",
   "parent": {
     "IE_XML_ID": "p_5215",
@@ -506,7 +509,8 @@
     "Стул Венус BL (-, Кожзаменитель Z34 (светло-зеленый))",
     "Стул Венус BL (-, Кожзаменитель Z71 (серый))",
     "Стул Венус GR (Кожзаменитель Z, Кожзаменитель Z71 (серый),, )",
-    "Стул Венус GR (-, Кожзаменитель Z71 (серый),, )"
+    "Стул Венус GR (-, Кожзаменитель Z71 (серый),, )",
+    "Стул Венус GR (Экокожа Santorini, Кожзаменитель Z71 (серый),, )"
   ],
   "finish_type_seat": [
     ""
@@ -515,8 +519,11 @@
     ""
   ],
   "madeinrf": "Сделано РФ",
-  "additional_info": {
-    "package_dimensions": {},
-    "volume": "0"
-  }
+  "lost": [
+    {
+      "clean": false,
+      "limit": false,
+      "del": true
+    }
+  ]
 }

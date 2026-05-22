@@ -113,7 +113,9 @@
         "https://utfc.ru/upload/resize_cache/iblock/70c/140_140_0/54n6ky5wn2766380dpy0ljiybylcvy9n.png",
         "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/24a/9qojabnbu9ye6mee3u3i7sd2044afsht.png",
         "https://utfc.ru/local/templates/utfc/img/palette.png",
-        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/3d5/3d50c1eaebd66a0582b96ae888604074/3080b2ece2f269bf6689c5f7bda1822a.png"
+        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/3d5/3d50c1eaebd66a0582b96ae888604074/3080b2ece2f269bf6689c5f7bda1822a.png",
+        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/resize_cache/27729/09667609493257e3dc4f183374d2fcb3/iblock/4d4/4d41990eb99704cb4917b701ae204ad5/3a325688235932695c2d5ab0314af8c2.png",
+        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/resize_cache/27742/09667609493257e3dc4f183374d2fcb3/iblock/959/959dd4bf748fc6175817aec58673daf9/da8cb3bce3fcf393969db44d9eb766b8.png"
       ]
     }
   ],
@@ -222,15 +224,8 @@
     }
   ],
   "skeleton": "монолитный",
-  "minpromtorg": "+",
+  "minpromtorg": "Минпромторг",
   "addition": "",
-  "lost": [
-    {
-      "clean": false,
-      "limit": false,
-      "del": true
-    }
-  ],
   "parent": {
     "IE_XML_ID": "a_1135",
     "IE_NAME": "С-21 Шелл GTS Софт хром Ср",
@@ -448,7 +443,7 @@
       "STORE_AMOUNT_6": "0"
     }
   ],
-  "title": "Кресло С-21 Шелл GTS Софт хром Ср производства компании UTFC",
+  "title": "Кресло С-21 Шелл GTS Софт хром Ср с мягким сиденьем из экокожи производства компании UTFC",
   "base_name": "Кресло С-21 Шелл GTS Софт хром Ср",
   "article_number": "КФ-00925",
   "full_describe": "Найдите свой идеальный баланс стиля и комфорта. Эта модель создана для жизни в ритме работы: эргономичная спинка повторяет изгибы тела, а мягкое сиденье из экокожи дарит приятное ощущение легкости даже после многочасовых встреч. Подпружинивающая конструкция гарантирует плавность движений. Выберите свой оттенок из всей палитры нашей экокожи.",

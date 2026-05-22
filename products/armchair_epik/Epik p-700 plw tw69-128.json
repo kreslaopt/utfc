@@ -113,7 +113,9 @@
         "https://utfc.ru/upload/resize_cache/iblock/6dd/140_140_0/dujg07ffw0v409egbvjhr4ysou92vb9u.png",
         "https://utfc.ru/upload/resize_cache/iblock/d78/140_140_0/g2wllx8x7d31t5l08lw9gifo4aj57wut.png",
         "https://utfc.ru/upload/resize_cache/iblock/fa9/140_140_0/2724xoc0d7ff6eigsy7kytdz135xop5f.png",
-        "https://utfc.ru/local/templates/utfc/img/palette.png"
+        "https://utfc.ru/local/templates/utfc/img/palette.png",
+        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/resize_cache/27729/09667609493257e3dc4f183374d2fcb3/iblock/4d4/4d41990eb99704cb4917b701ae204ad5/3a325688235932695c2d5ab0314af8c2.png",
+        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/resize_cache/27742/09667609493257e3dc4f183374d2fcb3/iblock/959/959dd4bf748fc6175817aec58673daf9/da8cb3bce3fcf393969db44d9eb766b8.png"
       ]
     }
   ],
@@ -398,7 +400,7 @@
       "STORE_AMOUNT_6": "0"
     }
   ],
-  "title": "Воздухопроницаемое офисное кресло с надежной конструкцией EPIK Р-700 PLW TW69-128 (серый) производства компании UTFC",
+  "title": "Офисное кресло с высокопрочным каркасом и технологичной воздухопроницаемой сеткой EPIK Р-700 PLW TW69-128 (серый) производства компании UTFC",
   "base_name": "Кресло EPIK Р-700 PLW TW69-128 (серый)",
   "article_number": "КИЕ-00029",
   "full_describe": "Легкая, надежная конструкция. Модель кресла отлично подойдет для персонала, подголовник регулируется по высоте, что позволит эксплуатировать кресло людям с разными габаритами. Отклоняющаяся спинка кресла является ключевой особенностью данной модели.",
@@ -434,14 +436,11 @@
     ""
   ],
   "madeinrf": "",
-  "additional_info": {
-    "package_dimensions": {
-      "width": "15",
-      "depth": "700",
-      "height": "335"
-    },
-    "netto": "13",
-    "brutto": "15",
-    "volume": "0"
-  }
+  "lost": [
+    {
+      "clean": false,
+      "limit": false,
+      "del": false
+    }
+  ]
 }

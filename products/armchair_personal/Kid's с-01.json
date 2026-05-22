@@ -113,7 +113,10 @@
         "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/8b4/bx8muu1dc1xkhd3x6dagsufj9wc7aobi.png",
         "https://utfc.ru/upload/resize_cache/iblock/f1e/70_70_0/w0ygriy5n0e2jfi6onf915j0a810dqrl.png",
         "https://utfc.ru/upload/resize_cache/iblock/784/140_140_0/784210207dc7f65bf36035e73319357a.png",
-        "https://utfc.ru/local/templates/utfc/img/palette.png"
+        "https://utfc.ru/local/templates/utfc/img/palette.png",
+        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/resize_cache/27729/09667609493257e3dc4f183374d2fcb3/iblock/4d4/4d41990eb99704cb4917b701ae204ad5/3a325688235932695c2d5ab0314af8c2.png",
+        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/resize_cache/27742/09667609493257e3dc4f183374d2fcb3/iblock/959/959dd4bf748fc6175817aec58673daf9/da8cb3bce3fcf393969db44d9eb766b8.png",
+        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/bc2/bc2166b704579feb802cd10858a30bba.png"
       ]
     }
   ],
@@ -218,14 +221,8 @@
       "volume": "0"
     }
   ],
-  "lost": [
-    {
-      "clean": true,
-      "limit": false
-    }
-  ],
   "skeleton": "немонолитный",
-  "minpromtorg": "",
+  "minpromtorg": "Минпромторг",
   "addition": "",
   "parent": {
     "IE_XML_ID": "p_5000",

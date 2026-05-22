@@ -145,7 +145,21 @@
         "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/dd6/dd6afcc7ffcb1332f989700bf8a873e6.png",
         "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/9f6/9f6bff535b7fa657820daa87c72a413f.png",
         "https://utfc.ru/local/templates/utfc/img/palette.png",
-        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/a5e/a5e9fd90ebf9506894eef0024a5d7238.png"
+        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/a5e/a5e9fd90ebf9506894eef0024a5d7238.png",
+        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/08a/08af2280374b30b47deadefd5fdd554a/61a56289fce2f3fa56631b984332a974.png",
+        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/resize_cache/27718/f9a783e5b6ef0ba37f754dbaaffb7194/iblock/788/78817efb0aea87a67366ed0d77314e01/cbfae0086f7039a58e2af069ac9ec2d9.png",
+        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/resize_cache/27719/f9a783e5b6ef0ba37f754dbaaffb7194/iblock/08a/08af2280374b30b47deadefd5fdd554a/61a56289fce2f3fa56631b984332a974.png",
+        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/resize_cache/27729/09667609493257e3dc4f183374d2fcb3/iblock/4d4/4d41990eb99704cb4917b701ae204ad5/3a325688235932695c2d5ab0314af8c2.png",
+        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/resize_cache/27720/f9a783e5b6ef0ba37f754dbaaffb7194/iblock/483/4838191c35fbbf2088e6e85977636c53/ad487fd3837320a7f45055480e1a7c5e.png",
+        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/505/505cf9fb44fe7d2c62b286e116a54b6e/b17d80d422d986104b7b28881a8ae42b.png",
+        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/483/4838191c35fbbf2088e6e85977636c53/ad487fd3837320a7f45055480e1a7c5e.png",
+        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/788/78817efb0aea87a67366ed0d77314e01/cbfae0086f7039a58e2af069ac9ec2d9.png",
+        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/resize_cache/27717/f9a783e5b6ef0ba37f754dbaaffb7194/iblock/72b/72b6c6f9f594fe246d1eff20ece4512b/b0e3bfaf5739fb9d840e7cba0c6ec0e2.png",
+        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/72b/72b6c6f9f594fe246d1eff20ece4512b/b0e3bfaf5739fb9d840e7cba0c6ec0e2.png",
+        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/uf/fc9/fc9d5521d7726f3dbfb57faf1dea62f5.jpg",
+        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/resize_cache/27742/09667609493257e3dc4f183374d2fcb3/iblock/959/959dd4bf748fc6175817aec58673daf9/da8cb3bce3fcf393969db44d9eb766b8.png",
+        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/resize_cache/27716/f9a783e5b6ef0ba37f754dbaaffb7194/iblock/505/505cf9fb44fe7d2c62b286e116a54b6e/b17d80d422d986104b7b28881a8ae42b.png",
+        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/bc2/bc2166b704579feb802cd10858a30bba.png"
       ]
     }
   ],
@@ -251,7 +265,7 @@
     }
   ],
   "skeleton": "немонолитный",
-  "minpromtorg": "+",
+  "minpromtorg": "Минпромторг",
   "addition": "",
   "parent": {
     "IE_XML_ID": "s8039",
@@ -2854,7 +2868,8 @@
     "Ткань С",
     "Кожзаменитель Z",
     "Ткань Moderno",
-    "-"
+    "-",
+    "Ткань D"
   ],
   "color": [
     "Кожзаменитель Z06 (синий)",
@@ -2930,7 +2945,15 @@
     "Кресло Метро Самба (-, Кожзаменитель Z21 (бежевый),, )",
     "Кресло Метро Самба (-, Кожзаменитель Z29 (красный),, )",
     "Кресло Метро Самба (-, Кожзаменитель Z34 (светло-зеленый),, )",
-    "Кресло Метро Самба (-, Кожзаменитель Z71 (серый),, )"
+    "Кресло Метро Самба (-, Кожзаменитель Z71 (серый),, )",
+    "Кресло Метро Самба (Ткань D, Кожзаменитель Z06 (синий),, )",
+    "Кресло Метро Самба (Ткань D, Кожзаменитель Z10 (темно-коричневый),, )",
+    "Кресло Метро Самба (Ткань D, Кожзаменитель Z11 (черный),, )",
+    "Кресло Метро Самба (Ткань D, Кожзаменитель Z19 (темно-синий),, )",
+    "Кресло Метро Самба (Ткань D, Кожзаменитель Z21 (бежевый),, )",
+    "Кресло Метро Самба (Ткань D, Кожзаменитель Z29 (красный),, )",
+    "Кресло Метро Самба (Ткань D, Кожзаменитель Z34 (светло-зеленый),, )",
+    "Кресло Метро Самба (Ткань D, Кожзаменитель Z71 (серый),, )"
   ],
   "finish_type_seat": [
     ""

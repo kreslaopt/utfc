@@ -120,7 +120,10 @@
                 "https://utfc.ru/upload/resize_cache/iblock/f1e/70_70_0/w0ygriy5n0e2jfi6onf915j0a810dqrl.png",
                 "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/cf8/l7mzvxhj95ad80m62k18vip0cc6r2dki.png",
                 "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/uf/6b6/6b678dfc8d143b5c162d964c7f66b011.png",
-                "https://utfc.ru/local/templates/utfc/img/palette.png"
+                "https://utfc.ru/local/templates/utfc/img/palette.png",
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/resize_cache/27729/09667609493257e3dc4f183374d2fcb3/iblock/4d4/4d41990eb99704cb4917b701ae204ad5/3a325688235932695c2d5ab0314af8c2.png",
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/resize_cache/27742/09667609493257e3dc4f183374d2fcb3/iblock/959/959dd4bf748fc6175817aec58673daf9/da8cb3bce3fcf393969db44d9eb766b8.png",
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/uf/017/0170d0f775c6624be53668116b9d9805.jpg"
             ]
         }
     ],
@@ -229,7 +232,7 @@
         }
     ],
     "skeleton": "немонолитный",
-    "minpromtorg": "+",
+    "minpromtorg": "Минпромторг",
     "addition": "",
     "parent": {
         "IE_XML_ID": "7809",
@@ -674,7 +677,8 @@
     "Ролики": "Пластиковые ролики с полиуретановым покрытием, открытый чехол, d колеса 50 мм, d штока 11 мм. Стандарт BIFMA 5,1 (США).",
     "finish_type": [
         "Ткань Moderno",
-        "-"
+        "-",
+        "Экокожа Santorini"
     ],
     "color": [
         "Ткань Moderno 02 (серый)",
@@ -706,7 +710,11 @@
         "Кресло М-903 Софт Люкс хром Ср (-, Ткань Moderno 02 (серый),, )",
         "Кресло М-903 Софт Люкс хром Ср (-, Ткань Moderno 05 (терракотовый),, )",
         "Кресло М-903 Софт Люкс хром Ср (-, Ткань Moderno 07 (синий),, )",
-        "Кресло М-903 Софт Люкс хром Ср (-, Ткань Moderno 11 (мокко),, )"
+        "Кресло М-903 Софт Люкс хром Ср (-, Ткань Moderno 11 (мокко),, )",
+        "Кресло М-903 Софт Люкс хром Ср (Экокожа Santorini, Ткань Moderno 02 (серый),, )",
+        "Кресло М-903 Софт Люкс хром Ср (Экокожа Santorini, Ткань Moderno 05 (терракотовый),, )",
+        "Кресло М-903 Софт Люкс хром Ср (Экокожа Santorini, Ткань Moderno 07 (синий),, )",
+        "Кресло М-903 Софт Люкс хром Ср (Экокожа Santorini, Ткань Moderno 11 (мокко),, )"
     ],
     "finish_type_seat": [
         ""

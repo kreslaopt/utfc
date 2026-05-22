@@ -217,13 +217,6 @@
       "volume": "0"
     }
   ],
-  "lost": [
-    {
-      "clean": false,
-      "limit": false,
-      "del": false
-    }
-  ],
   "addition": "",
   "parent": {
     "IE_XML_ID": "a_1033",

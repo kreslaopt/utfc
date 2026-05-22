@@ -122,7 +122,11 @@
         "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/e76/a386j62ztsn245bwuoqhs53uwunmhilt.png",
         "https://utfc.ru/upload/resize_cache/iblock/b3b/140_140_0/b3badf47379f2ce9377fea6b7d7983ee.png",
         "https://utfc.ru/upload/resize_cache/iblock/612/140_140_0/612aa37eeaca54e98619acf5c2eeaa01.png",
-        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/8b3/8b343438280f51c5eb1a78fff061af6d.png"
+        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/8b3/8b343438280f51c5eb1a78fff061af6d.png",
+        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/resize_cache/27729/09667609493257e3dc4f183374d2fcb3/iblock/4d4/4d41990eb99704cb4917b701ae204ad5/3a325688235932695c2d5ab0314af8c2.png",
+        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/resize_cache/27742/09667609493257e3dc4f183374d2fcb3/iblock/959/959dd4bf748fc6175817aec58673daf9/da8cb3bce3fcf393969db44d9eb766b8.png",
+        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/uf/017/0170d0f775c6624be53668116b9d9805.jpg",
+        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/bc2/bc2166b704579feb802cd10858a30bba.png"
       ]
     }
   ],
@@ -231,7 +235,7 @@
     }
   ],
   "skeleton": "немонолитный",
-  "minpromtorg": "+",
+  "minpromtorg": "Минпромторг",
   "addition": "",
   "parent": {
     "IE_XML_ID": "p_5162",
@@ -1062,7 +1066,8 @@
   "Ролики": "Глайдеры G — пластиковая опора, d штока 11 мм. Стандарт BIFMA 5,1 (США)",
   "finish_type": [
     "Кожзаменитель Z",
-    "-"
+    "-",
+    "Экокожа Santorini"
   ],
   "color": [
     "Кожзаменитель Z06 (синий)",
@@ -1101,7 +1106,14 @@
     "Кресло Стул кассира L (-, Кожзаменитель Z19 (темно-синий),, )",
     "Кресло Стул кассира L (-, Кожзаменитель Z21 (бежевый),, )",
     "Кресло Стул кассира L (-, Кожзаменитель Z29 (красный),, )",
-    "Кресло Стул кассира L (-, Кожзаменитель Z71 (серый),, )"
+    "Кресло Стул кассира L (-, Кожзаменитель Z71 (серый),, )",
+    "Кресло Стул кассира L (Экокожа Santorini, Кожзаменитель Z06 (синий),, )",
+    "Кресло Стул кассира L (Экокожа Santorini, Кожзаменитель Z10 (темно-коричневый),, )",
+    "Кресло Стул кассира L (Экокожа Santorini, Кожзаменитель Z11 (черный),, )",
+    "Кресло Стул кассира L (Экокожа Santorini, Кожзаменитель Z19 (темно-синий),, )",
+    "Кресло Стул кассира L (Экокожа Santorini, Кожзаменитель Z21 (бежевый),, )",
+    "Кресло Стул кассира L (Экокожа Santorini, Кожзаменитель Z29 (красный),, )",
+    "Кресло Стул кассира L (Экокожа Santorini, Кожзаменитель Z71 (серый),, )"
   ],
   "finish_type_seat": [
     ""

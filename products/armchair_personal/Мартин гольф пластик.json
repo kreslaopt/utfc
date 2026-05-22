@@ -132,7 +132,11 @@
         "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/f5c/gh359092zkuw0mzpszj3w3fd6khwbprn.png",
         "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/uf/0c5/0c5eea6af3603d63b73b652d674a5eff.jpg",
         "https://utfc.ru/upload/resize_cache/iblock/541/140_140_0/54169f079185b5c7dd01ee19114c725d.png",
-        "https://utfc.ru/upload/resize_cache/iblock/31d/140_140_0/31d783e267a2979bf36dd9b8232f3479.png"
+        "https://utfc.ru/upload/resize_cache/iblock/31d/140_140_0/31d783e267a2979bf36dd9b8232f3479.png",
+        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/resize_cache/27729/09667609493257e3dc4f183374d2fcb3/iblock/4d4/4d41990eb99704cb4917b701ae204ad5/3a325688235932695c2d5ab0314af8c2.png",
+        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/resize_cache/27742/09667609493257e3dc4f183374d2fcb3/iblock/959/959dd4bf748fc6175817aec58673daf9/da8cb3bce3fcf393969db44d9eb766b8.png",
+        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/uf/017/0170d0f775c6624be53668116b9d9805.jpg",
+        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/bc2/bc2166b704579feb802cd10858a30bba.png"
       ]
     }
   ],
@@ -241,7 +245,7 @@
     }
   ],
   "skeleton": "немонолитный",
-  "minpromtorg": "+",
+  "minpromtorg": "Минпромторг",
   "addition": "",
   "parent": {
     "IE_XML_ID": "s8032",
@@ -2204,7 +2208,8 @@
   "finish_type": [
     "Ткань С",
     "Кожзаменитель Z",
-    "-"
+    "-",
+    "Экокожа Santorini"
   ],
   "color": [
     "Кожзаменитель Z06 (синий)",
@@ -2257,7 +2262,14 @@
     "Кресло Мартин Гольф (-, Кожзаменитель Z19 (темно-синий),, )",
     "Кресло Мартин Гольф (-, Кожзаменитель Z21 (бежевый),, )",
     "Кресло Мартин Гольф (-, Кожзаменитель Z34 (светло-зеленый),, )",
-    "Кресло Мартин Гольф (-, Кожзаменитель Z71 (серый),, )"
+    "Кресло Мартин Гольф (-, Кожзаменитель Z71 (серый),, )",
+    "Кресло Мартин Гольф (Экокожа Santorini, Кожзаменитель Z06 (синий),, )",
+    "Кресло Мартин Гольф (Экокожа Santorini, Кожзаменитель Z10 (темно-коричневый),, )",
+    "Кресло Мартин Гольф (Экокожа Santorini, Кожзаменитель Z11 (черный),, )",
+    "Кресло Мартин Гольф (Экокожа Santorini, Кожзаменитель Z19 (темно-синий),, )",
+    "Кресло Мартин Гольф (Экокожа Santorini, Кожзаменитель Z21 (бежевый),, )",
+    "Кресло Мартин Гольф (Экокожа Santorini, Кожзаменитель Z34 (светло-зеленый),, )",
+    "Кресло Мартин Гольф (Экокожа Santorini, Кожзаменитель Z71 (серый),, )"
   ],
   "finish_type_seat": [
     ""

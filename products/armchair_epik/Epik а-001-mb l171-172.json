@@ -115,7 +115,9 @@
         "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/949/949fa5f7b7e9ae533dd4336e09608385/0d2251cd07e210b520934246cc9e3edf.png",
         "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/d90/d904b920d526b0594ad126a222e93334/f32390990e0487af18e24e0fc47065aa.png",
         "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/uf/224/b2it1j865km2nai120ep1i9k8004j63n.png",
-        "https://utfc.ru/local/templates/utfc/img/palette.png"
+        "https://utfc.ru/local/templates/utfc/img/palette.png",
+        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/resize_cache/27729/09667609493257e3dc4f183374d2fcb3/iblock/4d4/4d41990eb99704cb4917b701ae204ad5/3a325688235932695c2d5ab0314af8c2.png",
+        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/resize_cache/27742/09667609493257e3dc4f183374d2fcb3/iblock/959/959dd4bf748fc6175817aec58673daf9/da8cb3bce3fcf393969db44d9eb766b8.png"
       ]
     }
   ],
@@ -392,7 +394,7 @@
       "STORE_AMOUNT_6": "0"
     }
   ],
-  "title": "Стильное офисное кресло EPIK А-001-МВ L171-172 (темно-серый/ коричневый) производства компании UTFC",
+  "title": "Офисное кресло бизнес-класса с минималистичным силуэтом EPIK А-001-МВ L171-172 (темно-серый/ коричневый) производства компании UTFC",
   "base_name": "Кресло EPIK А-001-МВ L171-172 (темно-серый/ коричневый)",
   "article_number": "КИЕ-00006",
   "full_describe": "Современное кресло руководителя. Регулируемый подголовник имеет увеличенную мягкую подушку с уникальным рисунком. Механизм качания позволяет фиксировать наклон кресла в любом положении, что обеспечит полный комфорт и расслабление во время рабочего дня.",
@@ -428,14 +430,11 @@
     ""
   ],
   "madeinrf": "",
-  "additional_info": {
-    "package_dimensions": {
-      "width": "32",
-      "depth": "1065",
-      "height": "730"
-    },
-    "netto": "25",
-    "brutto": "32",
-    "volume": "0"
-  }
+  "lost": [
+    {
+      "clean": false,
+      "limit": false,
+      "del": false
+    }
+  ]
 }

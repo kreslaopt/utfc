@@ -143,7 +143,10 @@
         "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/uf/0c5/0c5eea6af3603d63b73b652d674a5eff.jpg",
         "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/uf/42e/42e6c4481d6e1825f4a2de223be6e640.jpg",
         "https://utfc.ru/local/templates/utfc/img/palette.png",
-        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/uf/10d/10d0587341e6b54c71f71cc811115d9c.jpg"
+        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/uf/10d/10d0587341e6b54c71f71cc811115d9c.jpg",
+        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/resize_cache/27729/09667609493257e3dc4f183374d2fcb3/iblock/4d4/4d41990eb99704cb4917b701ae204ad5/3a325688235932695c2d5ab0314af8c2.png",
+        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/uf/7fb/7fb5c0460d468bdc4627a98b77b53c2e.png",
+        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/resize_cache/27742/09667609493257e3dc4f183374d2fcb3/iblock/959/959dd4bf748fc6175817aec58673daf9/da8cb3bce3fcf393969db44d9eb766b8.png"
       ]
     }
   ],
@@ -201,7 +204,7 @@
     }
   ],
   "skeleton": "немонолитный",
-  "minpromtorg": "",
+  "minpromtorg": "Минпромторг",
   "addition": "",
   "parent": {
     "IE_XML_ID": "s8050",
@@ -3782,7 +3785,8 @@
     "Ткань С",
     "Кожзаменитель Z",
     "-",
-    "Экокожа Santorini"
+    "Экокожа Santorini",
+    "Ткань QH"
   ],
   "color": [
     "Кожзаменитель Z11 (черный)",
@@ -3923,7 +3927,21 @@
     "Стул ИЗО BL (-, Ткань С39 (бежевый),, )",
     "Стул ИЗО BL (-, Ткань С71 (меланж),, )",
     "Стул ИЗО BL (-, Ткань С72 (черно-стальной),, )",
-    "Стул ИЗО BL (-, Ткань С73 (серый),, )"
+    "Стул ИЗО BL (-, Ткань С73 (серый),, )",
+    "Стул ИЗО BL (Ткань QH, Ткань С02 (красный),, )",
+    "Стул ИЗО BL (Ткань QH, Ткань С06 (синий),, )",
+    "Стул ИЗО BL (Ткань QH, Ткань С08 (коричневый),, )",
+    "Стул ИЗО BL (Ткань QH, Ткань С11 (черный),, )",
+    "Стул ИЗО BL (Ткань QH, Ткань С13 (бордовый),, )",
+    "Стул ИЗО BL (Ткань QH, Ткань С15 (черно-синий),, )",
+    "Стул ИЗО BL (Ткань QH, Ткань С16 (черно-красный),, )",
+    "Стул ИЗО BL (Ткань QH, Ткань С24 (коричнево-бежевый),, )",
+    "Стул ИЗО BL (Ткань QH, Ткань С32 (черно-зеленый),, )",
+    "Стул ИЗО BL (Ткань QH, Ткань С34 (зеленый),, )",
+    "Стул ИЗО BL (Ткань QH, Ткань С39 (бежевый),, )",
+    "Стул ИЗО BL (Ткань QH, Ткань С71 (меланж),, )",
+    "Стул ИЗО BL (Ткань QH, Ткань С72 (черно-стальной),, )",
+    "Стул ИЗО BL (Ткань QH, Ткань С73 (серый),, )"
   ],
   "finish_type_seat": [
     ""
@@ -3932,12 +3950,11 @@
     ""
   ],
   "madeinrf": "Сделано РФ",
-  "additional_info": {
-    "package_dimensions": {
-      "width": "6",
-      "depth": "460",
-      "height": "185"
-    },
-    "volume": "0"
-  }
+  "lost": [
+    {
+      "clean": false,
+      "limit": false,
+      "del": true
+    }
+  ]
 }

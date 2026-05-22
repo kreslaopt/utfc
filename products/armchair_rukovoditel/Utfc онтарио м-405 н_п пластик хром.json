@@ -107,7 +107,9 @@
         "https://utfc.ru/upload/resize_cache/iblock/f1e/70_70_0/w0ygriy5n0e2jfi6onf915j0a810dqrl.png",
         "https://utfc.ru/upload/resize_cache/iblock/383/140_140_0/ottqd3ffku3ddy11y8i25foqz3bh97g4.png",
         "https://utfc.ru/local/templates/utfc/img/palette.png",
-        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/338/r7f1d2ydaxk2nwufhe3xyy14eyp085aq.png"
+        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/338/r7f1d2ydaxk2nwufhe3xyy14eyp085aq.png",
+        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/resize_cache/27729/09667609493257e3dc4f183374d2fcb3/iblock/4d4/4d41990eb99704cb4917b701ae204ad5/3a325688235932695c2d5ab0314af8c2.png",
+        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/resize_cache/27742/09667609493257e3dc4f183374d2fcb3/iblock/959/959dd4bf748fc6175817aec58673daf9/da8cb3bce3fcf393969db44d9eb766b8.png"
       ]
     }
   ],
@@ -210,13 +212,6 @@
       "package_depth": "390",
       "package_height": "670",
       "volume": "0"
-    }
-  ],
-  "lost": [
-    {
-      "clean": false,
-      "limit": false,
-      "del": false
     }
   ],
   "addition": "",
@@ -457,6 +452,6 @@
   "color_seat": [
     ""
   ],
-  "minpromtorg": "",
+  "minpromtorg": "Минпромторг",
   "madeinrf": "Сделано РФ"
 }

@@ -116,7 +116,9 @@
         "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/9f5/9f5d68f7fb9114c366ae2c397b5333fc.png",
         "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/8ac/8ac7015a945b12227ed5e8bdb72caec4.png",
         "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/9fd/9fd96d5e2b92a82e92ae75db6c4f4a7b.png",
-        "https://utfc.ru/local/templates/utfc/img/palette.png"
+        "https://utfc.ru/local/templates/utfc/img/palette.png",
+        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/resize_cache/27729/09667609493257e3dc4f183374d2fcb3/iblock/4d4/4d41990eb99704cb4917b701ae204ad5/3a325688235932695c2d5ab0314af8c2.png",
+        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/resize_cache/27742/09667609493257e3dc4f183374d2fcb3/iblock/959/959dd4bf748fc6175817aec58673daf9/da8cb3bce3fcf393969db44d9eb766b8.png"
       ]
     }
   ],
@@ -250,13 +252,6 @@
         "min": "",
         "max": ""
       }
-    }
-  ],
-  "lost": [
-    {
-      "clean": false,
-      "limit": false,
-      "del": true
     }
   ],
   "parent": {
@@ -565,10 +560,10 @@
       "STORE_AMOUNT_6": "0"
     }
   ],
-  "title": "Эргономичное комфортное кресло руководителя М-704 Ройс производства компании UTFC",
+  "title": "Кресло с характером: уникальный дизайн, эргономика и комфорт - М-704 Ройс производства компании UTFC",
   "base_name": "Кресло М-704 Ройс",
   "article_number": "ИКМРойс02",
-  "full_describe": "Кресло руководителя имитирует автомобильную прошивку, тем самым создавая уникальный дизайн. Ярко выраженная эргономика позволит удобно сидеть весь рабочий день. Максимальная нагрузка – 120 кг.",
+  "full_describe": "Дизайн кресла вдохновлен эстетикой спортивных автомобилей: характерная ромбовидная строчка придает модели динамику и особый характер. Ярко выраженная эргономика позволит удобно сидеть весь рабочий день. Максимальная нагрузка – 120 кг.",
   "Link_arm": "https://utfc.ru/catalog/boss_chairs/roys_m_704/?offers=9794",
   "Основание": "Пятилучье пластиковое для кресел Ройс",
   "Подлокотники": "Нерегулируемые подлокотники для кресла Ройс",
@@ -598,6 +593,13 @@
   "color_seat": [
     ""
   ],
-  "minpromtorg": "",
-  "madeinrf": "Сделано РФ"
+  "minpromtorg": "Минпромторг",
+  "madeinrf": "Сделано РФ",
+  "lost": [
+    {
+      "clean": false,
+      "limit": false,
+      "del": true
+    }
+  ]
 }

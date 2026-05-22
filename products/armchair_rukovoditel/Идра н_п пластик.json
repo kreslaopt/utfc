@@ -116,7 +116,10 @@
         "https://utfc.ru/upload/resize_cache/iblock/f1e/70_70_0/w0ygriy5n0e2jfi6onf915j0a810dqrl.png",
         "https://utfc.ru/upload/resize_cache/iblock/27e/140_140_0/jnvl3n0shm2irm0dafem7v196qjg2fq1.png",
         "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/uf/42e/42e6c4481d6e1825f4a2de223be6e640.jpg",
-        "https://utfc.ru/local/templates/utfc/img/palette.png"
+        "https://utfc.ru/local/templates/utfc/img/palette.png",
+        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/resize_cache/27729/09667609493257e3dc4f183374d2fcb3/iblock/4d4/4d41990eb99704cb4917b701ae204ad5/3a325688235932695c2d5ab0314af8c2.png",
+        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/uf/966/f04p7jf5mzfr1iww28fnvz0fu9kcxiuw.png",
+        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/resize_cache/27742/09667609493257e3dc4f183374d2fcb3/iblock/959/959dd4bf748fc6175817aec58673daf9/da8cb3bce3fcf393969db44d9eb766b8.png"
       ]
     }
   ],
@@ -225,7 +228,7 @@
     }
   ],
   "skeleton": "монолитный",
-  "minpromtorg": "+",
+  "minpromtorg": "Минпромторг",
   "addition": "",
   "parent": {
     "IE_XML_ID": "a_1005",
@@ -1099,7 +1102,8 @@
   "finish_type": [
     "Кожзаменитель Z",
     "Экокожа Santorini",
-    "-"
+    "-",
+    "Ткань Moderno"
   ],
   "color": [
     "Экокожа Santorini S0401 (черный)",
@@ -1131,7 +1135,11 @@
     "Кресло Идра Н/п пластик (-, Экокожа Santorini S0401 (черный),, )",
     "Кресло Идра Н/п пластик (-, Экокожа Santorini S0422 (темно-серый),, )",
     "Кресло Идра Н/п пластик (-, Экокожа Santorini S0428 (бежевый),, )",
-    "Кресло Идра Н/п пластик (-, Экокожа Santorini S0429 (шоколадный),, )"
+    "Кресло Идра Н/п пластик (-, Экокожа Santorini S0429 (шоколадный),, )",
+    "Кресло Идра Н/п пластик (Ткань Moderno, Экокожа Santorini S0401 (черный),, )",
+    "Кресло Идра Н/п пластик (Ткань Moderno, Экокожа Santorini S0422 (темно-серый),, )",
+    "Кресло Идра Н/п пластик (Ткань Moderno, Экокожа Santorini S0428 (бежевый),, )",
+    "Кресло Идра Н/п пластик (Ткань Moderno, Экокожа Santorini S0429 (шоколадный),, )"
   ],
   "finish_type_seat": [
     ""

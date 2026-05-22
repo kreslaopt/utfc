@@ -165,7 +165,9 @@
                 "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/uf/0c5/0c5eea6af3603d63b73b652d674a5eff.jpg",
                 "https://utfc.ru/upload/resize_cache/iblock/e7b/140_140_0/zg7d1acrmolvydp9fjmf24cahvox5wag.png",
                 "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/uf/42e/42e6c4481d6e1825f4a2de223be6e640.jpg",
-                "https://utfc.ru/upload/resize_cache/iblock/866/140_140_0/cfxszjanu1jy4c5hgaqaz9gpxis37dne.png"
+                "https://utfc.ru/upload/resize_cache/iblock/866/140_140_0/cfxszjanu1jy4c5hgaqaz9gpxis37dne.png",
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/resize_cache/27729/09667609493257e3dc4f183374d2fcb3/iblock/4d4/4d41990eb99704cb4917b701ae204ad5/3a325688235932695c2d5ab0314af8c2.png",
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/resize_cache/27742/09667609493257e3dc4f183374d2fcb3/iblock/959/959dd4bf748fc6175817aec58673daf9/da8cb3bce3fcf393969db44d9eb766b8.png"
             ]
         }
     ],
@@ -286,7 +288,7 @@
         }
     ],
     "skeleton": "",
-    "minpromtorg": "+",
+    "minpromtorg": "Минпромторг",
     "addition": "",
     "title": "Стул ИЗО СН для посетителей с большим выбором обивки производства компании UTFC",
     "base_name": "Стул ИЗО СН",

@@ -115,7 +115,9 @@
         "https://utfc.ru/upload/resize_cache/iblock/65f/140_140_0/ux9jkubulzf97x1x93j2y4tubgdsr90x.png",
         "https://utfc.ru/upload/resize_cache/iblock/f4d/140_140_0/3qk8f0gl3chccwl09unk0j1wxr3hjyfz.png",
         "https://utfc.ru/upload/resize_cache/iblock/03a/140_140_0/saa5y6j4c6a9scj9iyb0prgi7ytobsid.png",
-        "https://utfc.ru/local/templates/utfc/img/palette.png"
+        "https://utfc.ru/local/templates/utfc/img/palette.png",
+        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/resize_cache/27729/09667609493257e3dc4f183374d2fcb3/iblock/4d4/4d41990eb99704cb4917b701ae204ad5/3a325688235932695c2d5ab0314af8c2.png",
+        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/resize_cache/27742/09667609493257e3dc4f183374d2fcb3/iblock/959/959dd4bf748fc6175817aec58673daf9/da8cb3bce3fcf393969db44d9eb766b8.png"
       ]
     }
   ],
@@ -403,7 +405,7 @@
       "STORE_AMOUNT_6": "0"
     }
   ],
-  "title": "Эргономичное офисное кресло EPIK Е-222-G S001-115 (черный) производства компании UTFC",
+  "title": "Смарт-комфорт: офисное кресло с адаптивной системой поддержки EPIK Е-222-G S001-115 (черный) производства компании UTFC",
   "base_name": "Кресло EPIK Е-222-G S001-115 (черный)",
   "article_number": "КИЕ-00020",
   "full_describe": "Эргономичный дизайн сетчатой спинки идеально повторяет контуры спины сидящего, снижая давление на позвоночник. Уникальный баланс функциональности и дизайна делают кресло идеальным решением для любых потребностей пользователей. Алюминиевые 3D подлокотники регулируются  по высоте.",
@@ -436,14 +438,11 @@
     ""
   ],
   "madeinrf": "",
-  "additional_info": {
-    "package_dimensions": {
-      "width": "33",
-      "depth": "730",
-      "height": "520"
-    },
-    "netto": "26",
-    "brutto": "33",
-    "volume": "0"
-  }
+  "lost": [
+    {
+      "clean": false,
+      "limit": false,
+      "del": false
+    }
+  ]
 }

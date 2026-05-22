@@ -115,7 +115,10 @@
         "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/uf/f37/3q1ohav4mrz2f102tvlys86d0nuxyyra.png",
         "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/uf/005/gq9dncaopgc6zza80ar3qu5yb1dq7az3.png",
         "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/d4c/d4cedfce22b1e44b200e945fbda3d3ab.png",
-        "https://utfc.ru/local/templates/utfc/img/palette.png"
+        "https://utfc.ru/local/templates/utfc/img/palette.png",
+        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/uf/10c/10c5a4d662d70084372d923fe7bec314.png",
+        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/resize_cache/27729/09667609493257e3dc4f183374d2fcb3/iblock/4d4/4d41990eb99704cb4917b701ae204ad5/3a325688235932695c2d5ab0314af8c2.png",
+        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/resize_cache/27742/09667609493257e3dc4f183374d2fcb3/iblock/959/959dd4bf748fc6175817aec58673daf9/da8cb3bce3fcf393969db44d9eb766b8.png"
       ]
     }
   ],
@@ -174,7 +177,7 @@
     }
   ],
   "skeleton": "немонолитный",
-  "minpromtorg": "",
+  "minpromtorg": "Минпромторг",
   "addition": "",
   "parent": {
     "IE_XML_ID": "p_5222",
@@ -1109,7 +1112,7 @@
       "STORE_AMOUNT_6": "0"
     }
   ],
-  "title": "Стул Чико BL 4L производства компании UTFC",
+  "title": "Эффектный дизайнерский Стул Чико BL 4L производства компании UTFC",
   "base_name": "Стул Чико BL 4L",
   "article_number": "КФ-00177",
   "full_describe": "Стул Чико отличается простыми и мягкими формами, плавными линиями и компактным размером. Спинка и сиденье украшены квадратными прострочками. В обивочных материалах представлено множество цветовых решений. Стул Чико идеально подходит не только для офисов и залов ожидания, но и гармонично впишется в дизайн уютной кухни или столовой. Максимальная нагрузка составляет 120 кг.",
@@ -1168,7 +1171,10 @@
     "Стул Чико BL 4L (Ткань Velutto, Экокожа Santorini S0432 (оранжевый),, )",
     "Стул Чико BL 4L (-, Экокожа Santorini S0401 (черный),, )",
     "Стул Чико BL 4L (-, Экокожа Santorini S0419 (темно-синий),, )",
-    "Стул Чико BL 4L (-, Экокожа Santorini S0432 (оранжевый),, )"
+    "Стул Чико BL 4L (-, Экокожа Santorini S0432 (оранжевый),, )",
+    "Стул Чико BL 4L (Ткань Moderno, Экокожа Santorini S0401 (черный),, )",
+    "Стул Чико BL 4L (Ткань Moderno, Экокожа Santorini S0419 (темно-синий),, )",
+    "Стул Чико BL 4L (Ткань Moderno, Экокожа Santorini S0432 (оранжевый),, )"
   ],
   "finish_type_seat": [
     ""
@@ -1177,8 +1183,11 @@
     ""
   ],
   "madeinrf": "Сделано РФ",
-  "additional_info": {
-    "package_dimensions": {},
-    "volume": "0"
-  }
+  "lost": [
+    {
+      "clean": false,
+      "limit": false,
+      "del": true
+    }
+  ]
 }

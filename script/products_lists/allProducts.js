@@ -575,6 +575,11 @@ const knownProductsAllFiles = [
     "is_archive": false
   },
   {
+    "name": "Кайман трио ch-303 в soft2 хром",
+    "category": "armchair_rukovoditel",
+    "is_archive": false
+  },
+  {
     "name": "Кайман трио ch-303 н хром",
     "category": "armchair_rukovoditel",
     "is_archive": false
@@ -606,6 +611,11 @@ const knownProductsAllFiles = [
   },
   {
     "name": "Кайман ch-300 в bl",
+    "category": "armchair_rukovoditel",
+    "is_archive": false
+  },
+  {
+    "name": "Кайман ch-300 в soft хром",
     "category": "armchair_rukovoditel",
     "is_archive": false
   },
@@ -755,7 +765,17 @@ const knownProductsAllFiles = [
     "is_archive": false
   },
   {
+    "name": "Компакт 4н складной gr",
+    "category": "chair_visitors",
+    "is_archive": false
+  },
+  {
     "name": "Компакт люкс 4н складной",
+    "category": "chair_visitors",
+    "is_archive": false
+  },
+  {
+    "name": "Компакт люкс 4н складной gr",
     "category": "chair_visitors",
     "is_archive": false
   },
@@ -1931,6 +1951,11 @@ const knownProductsAllFiles = [
   },
   {
     "name": "Utfc онтарио м-405 н_п пластик хром",
+    "category": "armchair_rukovoditel",
+    "is_archive": false
+  },
+  {
+    "name": "Utfc онтарио ch-105 хром",
     "category": "armchair_rukovoditel",
     "is_archive": false
   },

@@ -117,7 +117,10 @@
                 "https://utfc.ru/upload/resize_cache/iblock/7bf/140_140_0/rqu07d823vddaj8q2bno3s47d1ox7ajj.png",
                 "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/uf/ed8/ed809c4302b8f61180ba2401fad216c5.png",
                 "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/uf/6b6/6b678dfc8d143b5c162d964c7f66b011.png",
-                "https://utfc.ru/local/templates/utfc/img/palette.png"
+                "https://utfc.ru/local/templates/utfc/img/palette.png",
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/resize_cache/27729/09667609493257e3dc4f183374d2fcb3/iblock/4d4/4d41990eb99704cb4917b701ae204ad5/3a325688235932695c2d5ab0314af8c2.png",
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/uf/eeb/eebd8f0779e4f7b49d9f225d2fa9accb.jpg",
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/resize_cache/27742/09667609493257e3dc4f183374d2fcb3/iblock/959/959dd4bf748fc6175817aec58673daf9/da8cb3bce3fcf393969db44d9eb766b8.png"
             ]
         }
     ],
@@ -226,7 +229,7 @@
         }
     ],
     "skeleton": "немонолитный",
-    "minpromtorg": "+",
+    "minpromtorg": "Минпромторг",
     "addition": "",
     "parent": {
         "IE_XML_ID": "a_1003",
@@ -382,11 +385,14 @@
         "Кресло СН-500 Гарвард хром Ср (Сетка TW, Сетка TW-01 (черный), Ткань Сетка Е, Ткань Сетка Е11-к (черный))",
         "Кресло СН-500 Гарвард хром Ср (Сетка TW, Сетка TW-01 (черный), -, Ткань Сетка Е11-к (черный))",
         "Кресло СН-500 Гарвард хром Ср (-, Сетка TW-01 (черный), Ткань Сетка Е, Ткань Сетка Е11-к (черный))",
-        "Кресло СН-500 Гарвард хром Ср (-, Сетка TW-01 (черный), -, Ткань Сетка Е11-к (черный))"
+        "Кресло СН-500 Гарвард хром Ср (-, Сетка TW-01 (черный), -, Ткань Сетка Е11-к (черный))",
+        "Кресло СН-500 Гарвард хром Ср (Сетка TW, Сетка TW-01 (черный), Ткань D, Ткань Сетка Е11-к (черный))",
+        "Кресло СН-500 Гарвард хром Ср (-, Сетка TW-01 (черный), Ткань D, Ткань Сетка Е11-к (черный))"
     ],
     "finish_type_seat": [
         "Ткань Сетка Е",
-        "-"
+        "-",
+        "Ткань D"
     ],
     "color_seat": [
         "Ткань Сетка Е11-к (черный)"

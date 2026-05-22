@@ -137,7 +137,9 @@
         "https://utfc.ru/upload/resize_cache/iblock/f5d/140_140_0/7x0gwug8ths7pddvct3a36bjfim09v81.png",
         "https://utfc.ru/upload/resize_cache/iblock/124/140_140_0/snk3f61g6ft56x49ximwospj6mu0yhrs.png",
         "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/d86/8p9ix9lsizlfynxidq5q7c0kzfjruwlm.png",
-        "https://utfc.ru/local/templates/utfc/img/palette.png"
+        "https://utfc.ru/local/templates/utfc/img/palette.png",
+        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/resize_cache/27729/09667609493257e3dc4f183374d2fcb3/iblock/4d4/4d41990eb99704cb4917b701ae204ad5/3a325688235932695c2d5ab0314af8c2.png",
+        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/resize_cache/27742/09667609493257e3dc4f183374d2fcb3/iblock/959/959dd4bf748fc6175817aec58673daf9/da8cb3bce3fcf393969db44d9eb766b8.png"
       ]
     }
   ],
@@ -203,7 +205,7 @@
     }
   ],
   "skeleton": "немонолитный",
-  "minpromtorg": "",
+  "minpromtorg": "Минпромторг",
   "addition": "",
   "parent": {
     "IE_XML_ID": "a_1036",
@@ -1312,7 +1314,7 @@
       "STORE_AMOUNT_6": "0"
     }
   ],
-  "title": "Стул складной Компакт GR с металлическим каркасом производства компании UTFC",
+  "title": "Стул складной Компакт GR универсальный с металлическим каркасом производства компании UTFC",
   "base_name": "Стул складной Компакт GR",
   "article_number": "ГС-00408",
   "full_describe": "Преимущества складного стула включают его компактность, легкость в транспортировке и хранении, а также универсальность в использовании. Он может быть использован в различных местах, таких как: офисы, малогабаритные квартиры, зоны отдыха, конференц-залы, кафе и рестораны, спортивные мероприятия, выставки и ярмарки, залы ожидания, учебные аудитории, выездные мероприятия и пр.",
@@ -1416,14 +1418,11 @@
     ""
   ],
   "madeinrf": "Сделано РФ",
-  "additional_info": {
-    "package_dimensions": {
-      "width": "5",
-      "depth": "1015",
-      "height": "475"
-    },
-    "netto": "5",
-    "brutto": "5",
-    "volume": "0"
-  }
+  "lost": [
+    {
+      "clean": false,
+      "limit": false,
+      "del": true
+    }
+  ]
 }

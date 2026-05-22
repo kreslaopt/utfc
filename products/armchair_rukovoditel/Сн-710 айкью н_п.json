@@ -113,7 +113,9 @@
         "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/uf/7fb/7fb5c0460d468bdc4627a98b77b53c2e.png",
         "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/uf/4be/4be25128a52f4c8df436380f5c3e3ecf.jpg",
         "https://utfc.ru/local/templates/utfc/img/palette.png",
-        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/826/olmfnr0d2sgjrlkrx8lhna1oul0stmxg.png"
+        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/826/olmfnr0d2sgjrlkrx8lhna1oul0stmxg.png",
+        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/resize_cache/27729/09667609493257e3dc4f183374d2fcb3/iblock/4d4/4d41990eb99704cb4917b701ae204ad5/3a325688235932695c2d5ab0314af8c2.png",
+        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/resize_cache/27742/09667609493257e3dc4f183374d2fcb3/iblock/959/959dd4bf748fc6175817aec58673daf9/da8cb3bce3fcf393969db44d9eb766b8.png"
       ]
     }
   ],
@@ -181,13 +183,6 @@
         "min": "",
         "max": ""
       }
-    }
-  ],
-  "lost": [
-    {
-      "clean": false,
-      "limit": false,
-      "del": false
     }
   ],
   "parent": {
@@ -682,7 +677,7 @@
       "STORE_AMOUNT_6": "0"
     }
   ],
-  "title": "Умное кресло для работы за компьютером СН-710 Айкью Н/п СН производства компании UTFC",
+  "title": "Прогрессивное решение для конференц-залов: безупречный силуэт в стиле хай-тек на прочном основании - СН-710 Айкью Н/п СН производства компании UTFC",
   "base_name": "Кресло СН-710 Айкью Н/п СН",
   "article_number": "КК-00216",
   "full_describe": "Современное конференц-кресло в стиле хай-тек. Мягкие элементы спинки кресла расположены в трех зонах, соприкасаясь с которыми спина сидящего человека находится в положении максимального комфорта. Изящные подлокотники идеально вписываются в общую конструкцию кресла. Модель отлично дополнит современный офис, открытие пространства и коворкинги. Изготавливается в любом цвете тканях D, QH и в экокоже Santorini. Максимальная нагрузка до 150 кг.",
@@ -718,15 +713,13 @@
   "color_seat": [
     ""
   ],
-  "minpromtorg": "+",
+  "minpromtorg": "Минпромторг",
   "madeinrf": "Сделано РФ",
-  "additional_info": {
-    "package_dimensions": {
-      "depth": "630",
-      "height": "290",
-      "width": "6"
-    },
-    "netto": "11",
-    "volume": "0"
-  }
+  "lost": [
+    {
+      "clean": false,
+      "limit": false,
+      "del": false
+    }
+  ]
 }

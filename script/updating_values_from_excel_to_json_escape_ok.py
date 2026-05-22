@@ -4,6 +4,17 @@ import os
 import re
 import math
 
+# exceptions_del_false = [
+#     "самба люкс gtp tg столик",
+#     "самба люкс gtp tg/столик",
+#     "сн-710 айкью н пластик",
+#     "сн-710 айкью н_п",
+#     "соло макс ch-602 пластик",
+#     "соло макс ch-602 хром",
+#     "сильвия арм хром",
+#     "сильвия хром"
+# ]
+
 parents_mapping = {
     # 'модель_дочерняя': 'модель_родитель',
     'кора ch': 'кора чёрный',
@@ -50,6 +61,7 @@ parents_mapping = {
     'cамба soft gr':'cамба',
     'cамба cо cтоликом bl':'cамба cо cтоликом',
     'cамба cо cтоликом soft bl':'cамба cо cтоликом',
+    'самба люкс gtp tg столик':'самба люкс gtp tg/столик',
     'cофия bl':'cофия',
     'cофия cо cтоликом bl':'cофия cо cтоликом',
     'cтандарт gr':'cтандарт',
@@ -61,7 +73,7 @@ parents_mapping = {
     'шелл cофт gr':'шелл c-07 софт',
     'шелл cофт':'шелл c-07 софт',
     'cтул кассира':'Стул кассира б_п',
-    'дэли сн-503 н/п хром':'дэли ch-503 white ch',
+    'дэли ch-503 white ch':'дэли сн-503 н/п хром',
     'дэли ch-503 белый пластик':'дэли сн-503 белый пластик',
     'дэли сн-503 н/п хром':'дэли ch-503 н_п хром',
     'ультра т-01 н пластик pl660':'ультра т-01 н пластик pl660',
@@ -84,8 +96,6 @@ parents_mapping = {
     'epik e-222-g s001-115':'кресло epik e-222-mb',
     'epik a-181-g l200':'кресло epik a-181-g',
     'epik a-112-g l113 кэмел':'кресло epik a-112-g',
-    '':'',
-    '':'',
     'чико 4l bl':'чико 4l хром',
     'стул кассира б_п':'стул кассира б/п',
     'сн-710 айкью н_п':'айкью н/п сн-710',
@@ -97,6 +107,7 @@ parents_mapping = {
     'соло макс комби пластик':'соло max сн-602 пластик',
     'честер 4l bl':'честер 4l хром',
     'верона к-10 н_п дерево':'верона к-10 н/п дерево',
+    # 'кайман ch-300 н_п bl':'кайман сн-300 н/п хром',    не получилось
 
 }
 # Пример: добавляем новые модели в parents_mapping
@@ -107,9 +118,20 @@ new_parents_mapping = {
 parents_mapping.update(new_parents_mapping)
 
 
+    # "lost": [
+    #     {
+    #         "clean": false,
+    #         "limit": false,
+    #         "del": false
+    #     }
+# НЕ СРАБАТЫВАЕТ ДЛЯ
+# "самба люкс gtp tg столик",
+    # "сильвия арм хром",
+    # "сильвия хром"
+    # ]
 
 # Функция нормализации имени модели
-def normalize_model_name(name):
+def normalize_moкаркаса_name(name):
     if not isinstance(name, str):
         return ""
     name = name.strip()
@@ -150,7 +172,7 @@ def normalize_model_name(name):
 
 parents_mapping_normalized = {}
 for key, value in parents_mapping.items():
-    normalized_key = normalize_model_name(key)
+    normalized_key = normalize_moкаркаса_name(key)
     parents_mapping_normalized[normalized_key] = value
 
 # Преобразование пустых значений
@@ -201,7 +223,7 @@ excel_path = r'C:\Users\UTFC\Documents\Downloads\Таблица с размер�
 df = pd.read_excel(excel_path, sheet_name='Размеры')
 
 excel_data = {}
-models_excel = df.iloc[3:, 1].dropna().tolist()
+moкаркасаs_excel = df.iloc[3:, 1].dropna().tolist()
 
 columns_mapping = {
     'Unnamed: 2': ('chair_height', 'min', 'max'),
@@ -239,34 +261,34 @@ columns_mapping = {
     'Unnamed: 46': ('pallet_width', None, None),
 }
 
-for i, model in enumerate(models_excel):
-    normalized_model = normalize_model_name(model)
-    model_data = {
-        "model": model,
-        "normalized": normalized_model,
+for i, moкаркаса in enumerate(moкаркасаs_excel):
+    normalized_moкаркаса = normalize_moкаркаса_name(moкаркаса)
+    moкаркаса_data = {
+        "moкаркаса": moкаркаса,
+        "normalized": normalized_moкаркаса,
         "dimensions_details": {},
         "additional_info": {}
     }
 
     for col, (key, min_key, max_key) in columns_mapping.items():
         if min_key is not None and max_key is not None:
-            model_data["dimensions_details"][key] = {
+            moкаркаса_data["dimensions_details"][key] = {
                 "min": format_number_whole(normalize_value(df.iloc[i + 3, df.columns.get_loc(col)])),
                 "max": format_number_whole(normalize_value(df.iloc[i + 3, df.columns.get_loc(col) + 1]))
             }
         elif min_key is not None:
-            model_data["dimensions_details"][key] = {
+            moкаркаса_data["dimensions_details"][key] = {
                 "min": format_number_whole(normalize_value(df.iloc[i + 3, df.columns.get_loc(col)])),
                 "max": None
             }
         elif max_key is not None:
-            model_data["dimensions_details"][key] = {
+            moкаркаса_data["dimensions_details"][key] = {
                 "max": format_number_whole(normalize_value(df.iloc[i + 3, df.columns.get_loc(col)]))
             }
         else:
-            model_data["dimensions_details"][key] = format_number_whole(normalize_value(df.iloc[i + 3, df.columns.get_loc(col)]))
+            moкаркаса_data["dimensions_details"][key] = format_number_whole(normalize_value(df.iloc[i + 3, df.columns.get_loc(col)]))
 
-    model_data["additional_info"] = {
+    moкаркаса_data["additional_info"] = {
         "package_dimensions": {
             "width": format_number_whole(normalize_value(df.iloc[i + 3, df.columns.get_loc('Unnamed: 40')])),
             "depth": format_number_whole(normalize_value(df.iloc[i + 3, df.columns.get_loc('Unnamed: 41')])),
@@ -277,7 +299,7 @@ for i, model in enumerate(models_excel):
         "volume": format_number(normalize_value(df.iloc[i + 3, df.columns.get_loc('Unnamed: 44')]))
     }
 
-    excel_data[normalized_model] = model_data
+    excel_data[normalized_moкаркаса] = moкаркаса_data
 
 products_dir = r'C:\Users\UTFC\Documents\БалтМебель\to\products'
 
@@ -304,24 +326,24 @@ failed_updates = []
 
 
 # Собираем все нормализованные имена моделей из JSON-файлов
-all_json_models = set()
+all_json_moкаркасаs = set()
 for json_file in json_files:
     try:
         with open(json_file, 'r', encoding='utf-8') as f:
             data = json.load(f)
-        model_name = data.get('namefile', [''])[0] if isinstance(data.get('namefile'), list) else data.get('namefile', '')
-        if not model_name:
-            model_name = data.get('name', [''])[0] if isinstance(data.get('name'), list) else data.get('name', '')
-        normalized_name = normalize_model_name(model_name)
-        all_json_models.add(normalized_name)
+        moкаркаса_name = data.get('namefile', [''])[0] if isinstance(data.get('namefile'), list) else data.get('namefile', '')
+        if not moкаркаса_name:
+            moкаркаса_name = data.get('name', [''])[0] if isinstance(data.get('name'), list) else data.get('name', '')
+        normalized_name = normalize_moкаркаса_name(moкаркаса_name)
+        all_json_moкаркасаs.add(normalized_name)
     except Exception as e:
         print(f"Ошибка при чтении {json_file}: {e}")
 
 # Находим модели, которые есть в JSON, но нет в Excel
-models_only_in_json = all_json_models - set(excel_data.keys())
+moкаркасаs_only_in_json = all_json_moкаркасаs - set(excel_data.keys())
 print("Модели, которые есть в JSON, но отсутствуют в Excel:")
-for model in sorted(models_only_in_json):
-    print(f"  - {model}")
+for moкаркаса in sorted(moкаркасаs_only_in_json):
+    print(f"  - {moкаркаса}")
     
 
 # Функция для наследования параметров
@@ -392,30 +414,30 @@ for json_file in json_files:
         with open(json_file, 'r', encoding='utf-8') as f:
             original_data = json.load(f)
 
-        model_name = original_data.get('namefile', [''])[0] if isinstance(original_data.get('namefile'), list) else original_data.get('namefile', '')
-        if not model_name:
-            model_name = original_data.get('name', [''])[0] if isinstance(original_data.get('name'), list) else original_data.get('name', '')
+        moкаркаса_name = original_data.get('namefile', [''])[0] if isinstance(original_data.get('namefile'), list) else original_data.get('namefile', '')
+        if not moкаркаса_name:
+            moкаркаса_name = original_data.get('name', [''])[0] if isinstance(original_data.get('name'), list) else original_data.get('name', '')
 
-        normalized_name = normalize_model_name(model_name)
-        print(f"Обрабатываем файл: {json_file}, модель: {model_name}, нормализованное: {normalized_name}")
+        normalized_name = normalize_moкаркаса_name(moкаркаса_name)
+        print(f"Обрабатываем файл: {json_file}, модель: {moкаркаса_name}, нормализованное: {normalized_name}")
 
         # Ищем родительскую модель
-        parent_model_name = parents_mapping.get(normalized_name)
-        if parent_model_name:
-            parent_model_name = normalize_model_name(parent_model_name)
-            print(f"Родительская модель для {normalized_name}: {parent_model_name}")
-            if parent_model_name in excel_data:
-                parent_data = excel_data[parent_model_name]
-                print(f"Наследование: {normalized_name} -> {parent_model_name}")
+        parent_moкаркаса_name = parents_mapping.get(normalized_name)
+        if parent_moкаркаса_name:
+            parent_moкаркаса_name = normalize_moкаркаса_name(parent_moкаркаса_name)
+            print(f"Родительская модель для {normalized_name}: {parent_moкаркаса_name}")
+            if parent_moкаркаса_name in excel_data:
+                parent_data = excel_data[parent_moкаркаса_name]
+                print(f"Наследование: {normalized_name} -> {parent_moкаркаса_name}")
                 inherit_parameters(original_data, parent_data)
             else:
-                print(f"ОШИБКА: Родительская модель {parent_model_name} отсутствует в Excel!")
+                print(f"ОШИБКА: Родительская модель {parent_moкаркаса_name} отсутствует в Excel!")
         else:
             print(f"Нет родительской модели для {normalized_name} в parents_mapping")
 
         # Прямое обновление из Excel, если модель есть в Excel
         if normalized_name in excel_data:
-            excel_model_data = excel_data[normalized_name]
+            excel_moкаркаса_data = excel_data[normalized_name]
             if 'dimensions_details' not in original_data or not original_data.get('dimensions_details'):
                 original_data['dimensions_details'] = [{}]
 
@@ -429,7 +451,7 @@ for json_file in json_files:
                 if param not in dimensions:
                     dimensions[param] = {"min": "", "max": ""}
 
-            for key, value in excel_model_data['dimensions_details'].items():
+            for key, value in excel_moкаркаса_data['dimensions_details'].items():
                 if key in dimensions:
                     if isinstance(value, dict):
                         for sub_key, sub_value in value.items():
@@ -443,31 +465,50 @@ for json_file in json_files:
 
             if 'additional_info' in original_data:
                 if 'package_dimensions' in original_data['additional_info']:
-                    for key, value in excel_model_data['additional_info']['package_dimensions'].items():
+                    for key, value in excel_moкаркаса_data['additional_info']['package_dimensions'].items():
                         if value is not None and value != "":
                             original_data['additional_info']['package_dimensions'][key] = value
                 if 'volume' in original_data['additional_info']:
-                    if excel_model_data['additional_info']['volume'] is not None:
-                        original_data['additional_info']['volume'] = excel_model_data['additional_info']['volume']
+                    if excel_moкаркаса_data['additional_info']['volume'] is not None:
+                        original_data['additional_info']['volume'] = excel_moкаркаса_data['additional_info']['volume']
 
-            if 'skeleton' in original_data and excel_model_data['dimensions_details'].get('skeleton') is not None:
-                original_data['skeleton'] = excel_model_data['dimensions_details'].get('skeleton')
-            if 'minpromtorg' in original_data and excel_model_data['dimensions_details'].get('minpromtorg') is not None:
-                original_data['minpromtorg'] = excel_model_data['dimensions_details'].get('minpromtorg')
+            if 'skeleton' in original_data and excel_moкаркаса_data['dimensions_details'].get('skeleton') is not None:
+                original_data['skeleton'] = excel_moкаркаса_data['dimensions_details'].get('skeleton')
+            if 'minpromtorg' in original_data and excel_moкаркаса_data['dimensions_details'].get('minpromtorg') is not None:
+                original_data['minpromtorg'] = excel_moкаркаса_data['dimensions_details'].get('minpromtorg')
 
             if 'guarantee' in original_data and len(original_data['guarantee']) > 0:
-                if 'max_load' in original_data['guarantee'][0] and excel_model_data['dimensions_details'].get('max_load') is not None:
-                    original_data['guarantee'][0]['max_load'] = format_number_whole(excel_model_data['dimensions_details'].get('max_load'))
-                if 'recommended_load' in original_data['guarantee'][0] and excel_model_data['dimensions_details'].get('recommended_load') is not None:
-                    original_data['guarantee'][0]['recommended_load'] = format_number_whole(excel_model_data['dimensions_details'].get('recommended_load'))
+                if 'max_load' in original_data['guarantee'][0] and excel_moкаркаса_data['dimensions_details'].get('max_load') is not None:
+                    original_data['guarantee'][0]['max_load'] = format_number_whole(excel_moкаркаса_data['dimensions_details'].get('max_load'))
+                if 'recommended_load' in original_data['guarantee'][0] and excel_moкаркаса_data['dimensions_details'].get('recommended_load') is not None:
+                    original_data['guarantee'][0]['recommended_load'] = format_number_whole(excel_moкаркаса_data['dimensions_details'].get('recommended_load'))
 
             if 'dimensions' in original_data and len(original_data['dimensions']) > 0:
-                if excel_model_data['additional_info'].get('netto') is not None:
-                    original_data['dimensions'][0]['netto'] = format_number(excel_model_data['additional_info'].get('netto'))
-                if excel_model_data['additional_info'].get('brutto') is not None:
-                    original_data['dimensions'][0]['brutto'] = format_number(excel_model_data['additional_info'].get('brutto'))
-                if excel_model_data['additional_info'].get('volume') is not None:
-                    original_data['dimensions'][0]['volume'] = format_number(excel_model_data['additional_info'].get('volume'))
+                if excel_moкаркаса_data['additional_info'].get('netto') is not None:
+                    original_data['dimensions'][0]['netto'] = format_number(excel_moкаркаса_data['additional_info'].get('netto'))
+                if excel_moкаркаса_data['additional_info'].get('brutto') is not None:
+                    original_data['dimensions'][0]['brutto'] = format_number(excel_moкаркаса_data['additional_info'].get('brutto'))
+                if excel_moкаркаса_data['additional_info'].get('volume') is not None:
+                    original_data['dimensions'][0]['volume'] = format_number(excel_moкаркаса_data['additional_info'].get('volume'))
+
+        # if normalized_name not in excel_data:
+        #     # Проверяем наличие блока 'lost'
+        #     if 'lost' in original_data and isinstance(original_data['lost'], list) and len(original_data['lost']) > 0:
+        #         # Обновляем только 'del' в первом элементе
+        #         original_data['lost'][0]['del'] = True
+            # else:
+                # Если блока нет или структура не та, создаем новый
+                # original_data['lost'] = [{
+                #     "clean": False,
+                #     "limit": False,
+                #     "del": False
+                # }]
+
+        # model_name_for_del = normalized_name.lower()
+        # if model_name_for_del in [name.lower() for name in exceptions_del_false]:
+        #     original_data['lost'][0]['del'] = False
+        # else:
+        #     original_data['lost'][0]['del'] = True
 
         with open(json_file, 'w', encoding='utf-8') as f:
             json.dump(original_data, f, ensure_ascii=False, indent=4)
@@ -480,8 +521,8 @@ with open('failed_updates.txt', 'w', encoding='utf-8') as f:
         f.write(f"{file}: {reason}\n")
 
 with open('missing_in_json.txt', 'w', encoding='utf-8') as f:
-    for model in missing_in_json:
-        f.write(f"{model}\n")
+    for moкаркаса in missing_in_json:
+        f.write(f"{moкаркаса}\n")
 
 print("Обновление завершено. Список неудачных обновлений в failed_updates.txt, отсутствующих моделей в missing_in_json.txt")
 
@@ -496,20 +537,20 @@ for json_file in json_files:
         if not isinstance(data, dict):
             print(f"Пропускаем {json_file}: неожиданный формат данных (ожидался словарь)")
             continue
-        model_name = data.get('namefile', [''])[0] if isinstance(data.get('namefile'), list) else data.get('namefile', '')
-        if not model_name:
-            model_name = data.get('name', [''])[0] if isinstance(data.get('name'), list) else data.get('name', '')
-        if not model_name:
+        moкаркаса_name = data.get('namefile', [''])[0] if isinstance(data.get('namefile'), list) else data.get('namefile', '')
+        if not moкаркаса_name:
+            moкаркаса_name = data.get('name', [''])[0] if isinstance(data.get('name'), list) else data.get('name', '')
+        if not moкаркаса_name:
             print(f"Пропускаем {json_file}: не удалось определить имя модели")
             continue
-        normalized_name = normalize_model_name(model_name)
+        normalized_name = normalize_moкаркаса_name(moкаркаса_name)
 
         # Проверяем, есть ли модель в parents_mapping
         if normalized_name in parents_mapping:
-            parent_model_name = normalize_model_name(parents_mapping[normalized_name])
+            parent_moкаркаса_name = normalize_moкаркаса_name(parents_mapping[normalized_name])
             # Проверяем, есть ли родитель в Excel
-            if parent_model_name not in excel_data:
-                missing_parents[normalized_name] = parent_model_name
+            if parent_moкаркаса_name not in excel_data:
+                missing_parents[normalized_name] = parent_moкаркаса_name
 
     except Exception as e:
         print(f"Ошибка при обработке {json_file}: {e}")
@@ -534,10 +575,20 @@ test_strings = [
     'сн-710 айкью н_п',
     'соло max сн-602 пластик',
     'соло макс ch-602 пластик',
-    'epik p-521-sb m021:кресло epik р-521-sb'
+    'epik p-521-sb m021:кресло epik р-521-sb',
+    "самба люкс gtp tg столик",
+    "сн-710 айкью н пластик",
+    "сн-710 айкью н_п",
+    "соло макс ch-602 пластик",
+    "соло макс ch-602 хром",
+    "сильвия арм хром",
+    "сильвия хром"
 ]
 
 for s in test_strings:
     print(f"Original: {s}")
-    print(f"Normalized: {normalize_model_name(s)}")
+    print(f"Normalized: {normalize_moкаркаса_name(s)}")
+    print(f"Normalized: {normalized_name}")
+    print(f"Is in exceptions: {normalized_name.lower() in [name.lower() for name in exceptions_del_false]}")
     print()
+

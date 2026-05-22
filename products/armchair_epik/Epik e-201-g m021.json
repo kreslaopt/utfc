@@ -115,7 +115,9 @@
         "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/1ca/t0djidjthkb5tkyo8s0jl83yutqjv677.png",
         "https://utfc.ru/upload/resize_cache/iblock/1ca/140_140_0/t0djidjthkb5tkyo8s0jl83yutqjv677.png",
         "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/099/mfbxr2zyc6g23epu2s3snzek0hho5j0l.png",
-        "https://utfc.ru/local/templates/utfc/img/palette.png"
+        "https://utfc.ru/local/templates/utfc/img/palette.png",
+        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/resize_cache/27729/09667609493257e3dc4f183374d2fcb3/iblock/4d4/4d41990eb99704cb4917b701ae204ad5/3a325688235932695c2d5ab0314af8c2.png",
+        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/resize_cache/27742/09667609493257e3dc4f183374d2fcb3/iblock/959/959dd4bf748fc6175817aec58673daf9/da8cb3bce3fcf393969db44d9eb766b8.png"
       ]
     }
   ],
@@ -394,7 +396,7 @@
       "STORE_AMOUNT_6": "0"
     }
   ],
-  "title": "Офисное кресло с поясничной поддержкой EPIK Е-201-G М021 (серый) производства компании UTFC",
+  "title": "Эстетика здоровой работы: офисное кресло с адаптивной поддержкой поясницы. EPIK Е-201-G М021 (серый) производства компании UTFC",
   "base_name": "Кресло EPIK Е-201-G М021 (серый)",
   "article_number": "КИЕ-00018",
   "full_describe": "Ультрасовременное эргономичное офисное кресло. Алюминиевый кронштейн по всей длине спинки обеспечивает целостность и долговечность конструкции. Прочная сетка отличается износостойкостью и воздухопроницаемостью, что позволяет комфортно работать в течение большого периода времени.Дополнительные функции и преимущества:✓ Подлокотники трансформеры 6D с мягкими полиуретановыми накладками регулируются по высоте и поворачиваются на 180 градусов в разные стороны.✓ Механизм регулировки одним рычагом - по высоте, по глубине, режим свободного качания и фиксация в любом положении.✓ Амортизация поясничной поддержки. Подголовник 2D регулируется по высоте и углу наклона.",
@@ -428,12 +430,11 @@
     ""
   ],
   "madeinrf": "",
-  "additional_info": {
-    "package_dimensions": {
-      "depth": "730",
-      "height": "660"
-    },
-    "netto": "20",
-    "volume": "0"
-  }
+  "lost": [
+    {
+      "clean": false,
+      "limit": false,
+      "del": false
+    }
+  ]
 }

@@ -137,7 +137,11 @@
         "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/uf/4be/4be25128a52f4c8df436380f5c3e3ecf.jpg",
         "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/uf/eeb/eebd8f0779e4f7b49d9f225d2fa9accb.jpg",
         "https://utfc.ru/local/templates/utfc/img/palette.png",
-        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/ee8/ee8a021cd7266592f4e80ce4ccac93db.png"
+        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/ee8/ee8a021cd7266592f4e80ce4ccac93db.png",
+        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/uf/10c/10c5a4d662d70084372d923fe7bec314.png",
+        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/resize_cache/27729/09667609493257e3dc4f183374d2fcb3/iblock/4d4/4d41990eb99704cb4917b701ae204ad5/3a325688235932695c2d5ab0314af8c2.png",
+        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/bc2/bc2166b704579feb802cd10858a30bba.png",
+        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/resize_cache/27742/09667609493257e3dc4f183374d2fcb3/iblock/959/959dd4bf748fc6175817aec58673daf9/da8cb3bce3fcf393969db44d9eb766b8.png"
       ]
     }
   ],
@@ -246,7 +250,7 @@
     }
   ],
   "skeleton": "немонолитный",
-  "minpromtorg": "+",
+  "minpromtorg": "Минпромторг",
   "addition": "",
   "parent": {
     "IE_XML_ID": "s8037",
@@ -3007,7 +3011,9 @@
     "Ткань Сетка Е",
     "Ткань D",
     "Ткань QH",
-    "-"
+    "-",
+    "Термопечать",
+    "Ткань Moderno"
   ],
   "color": [
     "Ткань D26-05 (красный)",
@@ -3076,7 +3082,17 @@
     "Кресло Стар б/п (-, Ткань D26-25 (серый),, )",
     "Кресло Стар б/п (-, Ткань D26-28 (черный),, )",
     "Кресло Стар б/п (-, Ткань D26-29 (оранжевый),, )",
-    "Кресло Стар б/п (-, Ткань D26-30 (голубой),, )"
+    "Кресло Стар б/п (-, Ткань D26-30 (голубой),, )",
+    "Кресло Стар б/п (Термопечать, Ткань D26-05 (красный),, )",
+    "Кресло Стар б/п (Термопечать, Ткань D26-25 (серый),, )",
+    "Кресло Стар б/п (Термопечать, Ткань D26-28 (черный),, )",
+    "Кресло Стар б/п (Термопечать, Ткань D26-29 (оранжевый),, )",
+    "Кресло Стар б/п (Термопечать, Ткань D26-30 (голубой),, )",
+    "Кресло Стар б/п (Ткань Moderno, Ткань D26-05 (красный),, )",
+    "Кресло Стар б/п (Ткань Moderno, Ткань D26-25 (серый),, )",
+    "Кресло Стар б/п (Ткань Moderno, Ткань D26-28 (черный),, )",
+    "Кресло Стар б/п (Ткань Moderno, Ткань D26-29 (оранжевый),, )",
+    "Кресло Стар б/п (Ткань Moderno, Ткань D26-30 (голубой),, )"
   ],
   "finish_type_seat": [
     ""

@@ -139,13 +139,6 @@
       "volume": "0"
     }
   ],
-  "lost": [
-    {
-      "clean": false,
-      "limit": false,
-      "del": true
-    }
-  ],
   "parent": {
     "IE_XML_ID": "13120",
     "IE_NAME": "Стул С-07 Шелл Софт СН",
@@ -363,13 +356,11 @@
       "STORE_AMOUNT_6": "0"
     }
   ],
-  "additional_info": {
-    "package_dimensions": {
-      "width": "6",
-      "depth": "460",
-      "height": "185"
-    },
-    "netto": "4",
-    "volume": "0"
-  }
+  "lost": [
+    {
+      "clean": false,
+      "limit": false,
+      "del": true
+    }
+  ]
 }

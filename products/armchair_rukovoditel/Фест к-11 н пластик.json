@@ -122,7 +122,10 @@
         "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/uf/22d/22ddf3bcabb4bd89b3efee3aafff7c7f.jpg",
         "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/uf/ed8/ed809c4302b8f61180ba2401fad216c5.png",
         "https://utfc.ru/local/templates/utfc/img/palette.png",
-        "https://utfc.ru/upload/resize_cache/iblock/22b/140_140_0/r6syxhvfkn7n2whvm6narp6rrh0lxblu.png"
+        "https://utfc.ru/upload/resize_cache/iblock/22b/140_140_0/r6syxhvfkn7n2whvm6narp6rrh0lxblu.png",
+        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/resize_cache/27729/09667609493257e3dc4f183374d2fcb3/iblock/4d4/4d41990eb99704cb4917b701ae204ad5/3a325688235932695c2d5ab0314af8c2.png",
+        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/uf/237/237ed762aaa92da554c421c0eb2f307a.jpg",
+        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/resize_cache/27742/09667609493257e3dc4f183374d2fcb3/iblock/959/959dd4bf748fc6175817aec58673daf9/da8cb3bce3fcf393969db44d9eb766b8.png"
       ]
     }
   ],
@@ -231,7 +234,7 @@
     }
   ],
   "skeleton": "немонолитный",
-  "minpromtorg": "+",
+  "minpromtorg": "Минпромторг",
   "addition": "",
   "parent": {
     "IE_XML_ID": "p_5205",
@@ -1570,7 +1573,8 @@
   "finish_type": [
     "Кожзаменитель Z",
     "Ткань Moderno",
-    "-"
+    "-",
+    "Ткань Сетка Е"
   ],
   "color": [
     "Ткань Moderno 16 (черный)",
@@ -1609,7 +1613,12 @@
     "Кресло Фест Н пластик (-, Ткань Moderno 02 (серый),, )",
     "Кресло Фест Н пластик (-, Ткань Moderno 05 (терракотовый),, )",
     "Кресло Фест Н пластик (-, Ткань Moderno 07 (синий),, )",
-    "Кресло Фест Н пластик (-, Ткань Moderno 11 (мокко),, )"
+    "Кресло Фест Н пластик (-, Ткань Moderno 11 (мокко),, )",
+    "Кресло Фест Н пластик (Ткань Сетка Е, Ткань Moderno 16 (черный),, )",
+    "Кресло Фест Н пластик (Ткань Сетка Е, Ткань Moderno 02 (серый),, )",
+    "Кресло Фест Н пластик (Ткань Сетка Е, Ткань Moderno 05 (терракотовый),, )",
+    "Кресло Фест Н пластик (Ткань Сетка Е, Ткань Moderno 07 (синий),, )",
+    "Кресло Фест Н пластик (Ткань Сетка Е, Ткань Moderno 11 (мокко),, )"
   ],
   "finish_type_seat": [
     ""

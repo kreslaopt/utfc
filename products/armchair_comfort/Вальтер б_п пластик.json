@@ -116,7 +116,10 @@
         "https://utfc.ru/local/templates/utfc/img/sites/utfc/logo_store_up_2x.png",
         "https://utfc.ru/upload/resize_cache/iblock/f1e/70_70_0/w0ygriy5n0e2jfi6onf915j0a810dqrl.png",
         "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/dff/gn3w6znot18jn7dao4gi48xok7vdwh3i.png",
-        "https://utfc.ru/local/templates/utfc/img/palette.png"
+        "https://utfc.ru/local/templates/utfc/img/palette.png",
+        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/uf/e5d/e5ddd9f27b9a4ebb6ca13665fb9ca042.jpg",
+        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/resize_cache/27729/09667609493257e3dc4f183374d2fcb3/iblock/4d4/4d41990eb99704cb4917b701ae204ad5/3a325688235932695c2d5ab0314af8c2.png",
+        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/resize_cache/27742/09667609493257e3dc4f183374d2fcb3/iblock/959/959dd4bf748fc6175817aec58673daf9/da8cb3bce3fcf393969db44d9eb766b8.png"
       ]
     }
   ],
@@ -222,7 +225,7 @@
     }
   ],
   "skeleton": "немонолитный",
-  "minpromtorg": "+",
+  "minpromtorg": "Минпромторг",
   "addition": "",
   "parent": {
     "IE_XML_ID": "p_5233",
@@ -546,11 +549,14 @@
     "Кресло Вальтер б/п (Сетка TW, Сетка TW-01 (черный), Кожзаменитель Z, Кожзаменитель Z71 (серый))",
     "Кресло Вальтер б/п (Сетка TW, Сетка TW-01 (черный), -, Кожзаменитель Z71 (серый))",
     "Кресло Вальтер б/п (-, Сетка TW-01 (черный), Кожзаменитель Z, Кожзаменитель Z71 (серый))",
-    "Кресло Вальтер б/п (-, Сетка TW-01 (черный), -, Кожзаменитель Z71 (серый))"
+    "Кресло Вальтер б/п (-, Сетка TW-01 (черный), -, Кожзаменитель Z71 (серый))",
+    "Кресло Вальтер б/п (Сетка TW, Сетка TW-01 (черный), Ткань С, Кожзаменитель Z71 (серый))",
+    "Кресло Вальтер б/п (-, Сетка TW-01 (черный), Ткань С, Кожзаменитель Z71 (серый))"
   ],
   "finish_type_seat": [
     "Кожзаменитель Z",
-    "-"
+    "-",
+    "Ткань С"
   ],
   "color_seat": [
     "Кожзаменитель Z71 (серый)"

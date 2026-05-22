@@ -117,7 +117,12 @@
         "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/4af/v599f09bq8lijfpahpvsh6e6uyzzgjqk.png",
         "https://utfc.ru/upload/resize_cache/iblock/433/140_140_0/ea0a27rxjabok2n92r69hv43vodi18a6.png",
         "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/03c/rsgg7so9ilu11vec5wq4bjmbt3hs99oc.png",
-        "https://utfc.ru/local/templates/utfc/img/palette.png"
+        "https://utfc.ru/local/templates/utfc/img/palette.png",
+        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/uf/e5d/e5ddd9f27b9a4ebb6ca13665fb9ca042.jpg",
+        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/resize_cache/27729/09667609493257e3dc4f183374d2fcb3/iblock/4d4/4d41990eb99704cb4917b701ae204ad5/3a325688235932695c2d5ab0314af8c2.png",
+        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/uf/e7e/e7e07310987904c68082855430874c7e.jpg",
+        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/resize_cache/27742/09667609493257e3dc4f183374d2fcb3/iblock/959/959dd4bf748fc6175817aec58673daf9/da8cb3bce3fcf393969db44d9eb766b8.png",
+        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/bc2/bc2166b704579feb802cd10858a30bba.png"
       ]
     }
   ],
@@ -226,7 +231,7 @@
     }
   ],
   "skeleton": "немонолитный",
-  "minpromtorg": "+",
+  "minpromtorg": "Минпромторг",
   "addition": "",
   "parent": {
     "IE_XML_ID": "a_1121",
@@ -1000,7 +1005,9 @@
   "Ролики": "Пластиковые ролики, открытый чехол, d колеса 50 мм, d штока 11 мм. Стандарт BIFMA 5,1 (США)",
   "finish_type": [
     "Ткань Moderno",
-    "-"
+    "-",
+    "Ткань С",
+    "Кожзаменитель Z"
   ],
   "color": [
     "Ткань Moderno 16 (черный)",
@@ -1029,7 +1036,17 @@
     "Кресло Мартин Люкс Т-01 (-, Ткань Moderno 02 (серый),, )",
     "Кресло Мартин Люкс Т-01 (-, Ткань Moderno 05 (терракотовый),, )",
     "Кресло Мартин Люкс Т-01 (-, Ткань Moderno 07 (синий),, )",
-    "Кресло Мартин Люкс Т-01 (-, Ткань Moderno 11 (мокко),, )"
+    "Кресло Мартин Люкс Т-01 (-, Ткань Moderno 11 (мокко),, )",
+    "Кресло Мартин Люкс Т-01 (Ткань С, Ткань Moderno 16 (черный),, )",
+    "Кресло Мартин Люкс Т-01 (Ткань С, Ткань Moderno 02 (серый),, )",
+    "Кресло Мартин Люкс Т-01 (Ткань С, Ткань Moderno 05 (терракотовый),, )",
+    "Кресло Мартин Люкс Т-01 (Ткань С, Ткань Moderno 07 (синий),, )",
+    "Кресло Мартин Люкс Т-01 (Ткань С, Ткань Moderno 11 (мокко),, )",
+    "Кресло Мартин Люкс Т-01 (Кожзаменитель Z, Ткань Moderno 16 (черный),, )",
+    "Кресло Мартин Люкс Т-01 (Кожзаменитель Z, Ткань Moderno 02 (серый),, )",
+    "Кресло Мартин Люкс Т-01 (Кожзаменитель Z, Ткань Moderno 05 (терракотовый),, )",
+    "Кресло Мартин Люкс Т-01 (Кожзаменитель Z, Ткань Moderno 07 (синий),, )",
+    "Кресло Мартин Люкс Т-01 (Кожзаменитель Z, Ткань Moderno 11 (мокко),, )"
   ],
   "finish_type_seat": [
     ""

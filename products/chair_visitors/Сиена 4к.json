@@ -112,7 +112,9 @@
         "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/f44/g30g2bup4pptmg05nbjh781b74mjzwfa.png",
         "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/uf/005/gq9dncaopgc6zza80ar3qu5yb1dq7az3.png",
         "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/d4c/d4cedfce22b1e44b200e945fbda3d3ab.png",
-        "https://utfc.ru/local/templates/utfc/img/palette.png"
+        "https://utfc.ru/local/templates/utfc/img/palette.png",
+        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/resize_cache/27729/09667609493257e3dc4f183374d2fcb3/iblock/4d4/4d41990eb99704cb4917b701ae204ad5/3a325688235932695c2d5ab0314af8c2.png",
+        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/resize_cache/27742/09667609493257e3dc4f183374d2fcb3/iblock/959/959dd4bf748fc6175817aec58673daf9/da8cb3bce3fcf393969db44d9eb766b8.png"
       ]
     }
   ],
@@ -233,7 +235,7 @@
     }
   ],
   "skeleton": "",
-  "minpromtorg": "",
+  "minpromtorg": "Минпромторг",
   "addition": "",
   "parent": {
     "IE_XML_ID": "a_1063",
@@ -820,7 +822,7 @@
       "STORE_AMOUNT_6": "0"
     }
   ],
-  "title": "Новинка:Стул Сиена 4К BL Ткань Velutto производства компании UTFC",
+  "title": "Стул Сиена 4К BL в мягкой обивке Ткань Velutto производства компании UTFC",
   "base_name": "Стул Сиена 4К BL",
   "article_number": "НКС-00023",
   "full_describe": "Стул Сиена — это сочетание элегантности и практичности. Его дизайн отражает дух европейской классики, но при этом остаётся актуальным и современным, что делает его идеальным выбором для самых разных помещений.Прострочка вдоль спинки придаёт креслу Сиена изысканный и аккуратный вид, напоминающий традиционную итальянскую мебель.Благородные оттенки велюра дают возможность подобрать кресло под любой современный интерьер.",

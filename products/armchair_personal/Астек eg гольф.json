@@ -121,7 +121,12 @@
         "https://utfc.ru/upload/resize_cache/iblock/f1e/70_70_0/w0ygriy5n0e2jfi6onf915j0a810dqrl.png",
         "https://utfc.ru/upload/resize_cache/iblock/aed/140_140_0/oz6aku6ibcjjw97c31l0pjwzpewx5pke.png",
         "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/c9a/eatr4jqpt3f4rseyn6p81ik9r6du97va.png",
-        "https://utfc.ru/local/templates/utfc/img/palette.png"
+        "https://utfc.ru/local/templates/utfc/img/palette.png",
+        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/uf/3a5/3a5d425d6688006b1768d11061e38317.jpg",
+        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/uf/e5d/e5ddd9f27b9a4ebb6ca13665fb9ca042.jpg",
+        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/resize_cache/27729/09667609493257e3dc4f183374d2fcb3/iblock/4d4/4d41990eb99704cb4917b701ae204ad5/3a325688235932695c2d5ab0314af8c2.png",
+        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/resize_cache/27742/09667609493257e3dc4f183374d2fcb3/iblock/959/959dd4bf748fc6175817aec58673daf9/da8cb3bce3fcf393969db44d9eb766b8.png",
+        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/bc2/bc2166b704579feb802cd10858a30bba.png"
       ]
     }
   ],
@@ -227,7 +232,7 @@
     }
   ],
   "skeleton": "немонолитный",
-  "minpromtorg": "+",
+  "minpromtorg": "Минпромторг",
   "addition": "",
   "parent": {
     "IE_XML_ID": "a_1117",
@@ -1060,7 +1065,17 @@
     "Кресло Астек Гольф EG (-, Ткань Moderno 02 (серый),, )",
     "Кресло Астек Гольф EG (-, Ткань Moderno 05 (терракотовый),, )",
     "Кресло Астек Гольф EG (-, Ткань Moderno 07 (синий),, )",
-    "Кресло Астек Гольф EG (-, Ткань Moderno 11 (мокко),, )"
+    "Кресло Астек Гольф EG (-, Ткань Moderno 11 (мокко),, )",
+    "Кресло Астек Гольф EG (Ткань С, Ткань Moderno 16 (черный),, )",
+    "Кресло Астек Гольф EG (Ткань С, Ткань Moderno 02 (серый),, )",
+    "Кресло Астек Гольф EG (Ткань С, Ткань Moderno 05 (терракотовый),, )",
+    "Кресло Астек Гольф EG (Ткань С, Ткань Moderno 07 (синий),, )",
+    "Кресло Астек Гольф EG (Ткань С, Ткань Moderno 11 (мокко),, )",
+    "Кресло Астек Гольф EG (Кожзаменитель Z, Ткань Moderno 16 (черный),, )",
+    "Кресло Астек Гольф EG (Кожзаменитель Z, Ткань Moderno 02 (серый),, )",
+    "Кресло Астек Гольф EG (Кожзаменитель Z, Ткань Moderno 05 (терракотовый),, )",
+    "Кресло Астек Гольф EG (Кожзаменитель Z, Ткань Moderno 07 (синий),, )",
+    "Кресло Астек Гольф EG (Кожзаменитель Z, Ткань Moderno 11 (мокко),, )"
   ],
   "finish_type_seat": [
     ""

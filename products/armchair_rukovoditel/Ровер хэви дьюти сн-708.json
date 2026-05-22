@@ -121,7 +121,10 @@
         "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/uf/b5c/b5c64c7c8c446f85b1355fad9aa4aa85.png",
         "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/943/jbazr3ddn4428ubsgc79dkzykd4xhpgc.png",
         "https://utfc.ru/local/templates/utfc/img/palette.png",
-        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/uf/c4f/c4f448f96e2c6e1c3554574d8a9ce549.png"
+        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/uf/c4f/c4f448f96e2c6e1c3554574d8a9ce549.png",
+        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/resize_cache/27729/09667609493257e3dc4f183374d2fcb3/iblock/4d4/4d41990eb99704cb4917b701ae204ad5/3a325688235932695c2d5ab0314af8c2.png",
+        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/resize_cache/27742/09667609493257e3dc4f183374d2fcb3/iblock/959/959dd4bf748fc6175817aec58673daf9/da8cb3bce3fcf393969db44d9eb766b8.png",
+        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/1e8/1e82bfff62adac44f4dda0de5ac1aee2.png"
       ]
     }
   ],
@@ -230,7 +233,7 @@
     }
   ],
   "skeleton": "немонолитный",
-  "minpromtorg": "+",
+  "minpromtorg": "Минпромторг",
   "addition": "",
   "parent": {
     "IE_XML_ID": "p_5200",
@@ -910,7 +913,7 @@
       "STORE_AMOUNT_6": "0"
     }
   ],
-  "title": "Элегантное кресло для руководителя СН-708 Ровер Хэви Дьюти МБ производства компании UTFC",
+  "title": "Роскошное кресло для руководителя с широкой посадкой и высокой спинкой СН-708 Ровер Хэви Дьюти МБ производства компании UTFC",
   "base_name": "Кресло СН-708 Ровер Хэви Дьюти МБ",
   "article_number": "ДКРовер05",
   "full_describe": "Массивное кресло руководителя с эргономичной спинкой и поясничной поддержкой. Увеличенные подушки и выраженный подголовник обеспечивают комфорт. Металлическая рама усиливает каркас. Механизм качания мультиблок с регулировкой под вес пользователя фиксирует спинку вертикально и позволяет отклонять её назад в 5 положениях. Жесткость отклонения регулируется пружинным блоком. Кресло выдерживает нагрузку до 210 кг.",

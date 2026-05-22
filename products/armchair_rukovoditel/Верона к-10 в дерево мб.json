@@ -117,7 +117,10 @@
         "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/7bb/xowlb9yahnw1bhd35me81ycgu2j1wk3h.png",
         "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/e1f/1pyn3wt25fpwvzyubq4zdufrrj022p4n.png",
         "https://utfc.ru/local/templates/utfc/img/palette.png",
-        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/uf/c4f/c4f448f96e2c6e1c3554574d8a9ce549.png"
+        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/uf/c4f/c4f448f96e2c6e1c3554574d8a9ce549.png",
+        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/resize_cache/27729/09667609493257e3dc4f183374d2fcb3/iblock/4d4/4d41990eb99704cb4917b701ae204ad5/3a325688235932695c2d5ab0314af8c2.png",
+        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/resize_cache/27742/09667609493257e3dc4f183374d2fcb3/iblock/959/959dd4bf748fc6175817aec58673daf9/da8cb3bce3fcf393969db44d9eb766b8.png",
+        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/uf/823/krt15pzm0xnf0pq4ubb26s9rs32hiifv.webp"
       ]
     }
   ],
@@ -223,7 +226,7 @@
     }
   ],
   "skeleton": "монолитный",
-  "minpromtorg": "+",
+  "minpromtorg": "Минпромторг",
   "addition": "",
   "parent": {
     "IE_XML_ID": "a_1051",
@@ -551,7 +554,8 @@
     "Кресло К-10 Верона В дерево МБ (Экокожа Santorini, Экокожа Santorini S0422 (темно-серый))",
     "Кресло К-10 Верона В дерево МБ (-, Экокожа Santorini S0422 (темно-серый))",
     "Кресло К-10 Верона В дерево МБ (Экокожа Santorini, Экокожа Santorini S0422 (темно-серый),, )",
-    "Кресло К-10 Верона В дерево МБ (-, Экокожа Santorini S0422 (темно-серый),, )"
+    "Кресло К-10 Верона В дерево МБ (-, Экокожа Santorini S0422 (темно-серый),, )",
+    "Кресло К-10 Верона В дерево МБ (Натуральная кожа К, Экокожа Santorini S0422 (темно-серый),, )"
   ],
   "finish_type_seat": [
     ""

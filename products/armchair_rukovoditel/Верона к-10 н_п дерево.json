@@ -113,7 +113,9 @@
         "https://utfc.ru/upload/resize_cache/iblock/412/140_140_0/6e8c5c2pu2x2myea3bo5f2s6ql9jqs56.png",
         "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/9c3/58vkep5p4uff8o2i0xllmdaq4uqqr1dw.png",
         "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/uf/42e/42e6c4481d6e1825f4a2de223be6e640.jpg",
-        "https://utfc.ru/local/templates/utfc/img/palette.png"
+        "https://utfc.ru/local/templates/utfc/img/palette.png",
+        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/resize_cache/27729/09667609493257e3dc4f183374d2fcb3/iblock/4d4/4d41990eb99704cb4917b701ae204ad5/3a325688235932695c2d5ab0314af8c2.png",
+        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/resize_cache/27742/09667609493257e3dc4f183374d2fcb3/iblock/959/959dd4bf748fc6175817aec58673daf9/da8cb3bce3fcf393969db44d9eb766b8.png"
       ]
     }
   ],
@@ -219,7 +221,7 @@
     }
   ],
   "skeleton": "монолитный",
-  "minpromtorg": "+",
+  "minpromtorg": "Минпромторг",
   "addition": "",
   "parent": {
     "IE_XML_ID": "a_1008",
@@ -946,13 +948,5 @@
   "color_seat": [
     ""
   ],
-  "madeinrf": "Сделано РФ",
-  "additional_info": {
-    "package_dimensions": {
-      "depth": "900",
-      "height": "490"
-    },
-    "netto": "13",
-    "volume": "0,29"
-  }
+  "madeinrf": "Сделано РФ"
 }

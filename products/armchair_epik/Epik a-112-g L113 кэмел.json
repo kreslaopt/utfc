@@ -114,7 +114,9 @@
         "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/uf/b75/xgv8zddyo0fk49f6oxun4e5da5cqf9r0.png",
         "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/uf/56d/fzkyjcku7c02i3k27lby1bzi1l4ey9sc.png",
         "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/8ba/jy4yvokuxknp4cbr7b3z9vfb92rez08v.png",
-        "https://utfc.ru/local/templates/utfc/img/palette.png"
+        "https://utfc.ru/local/templates/utfc/img/palette.png",
+        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/resize_cache/27729/09667609493257e3dc4f183374d2fcb3/iblock/4d4/4d41990eb99704cb4917b701ae204ad5/3a325688235932695c2d5ab0314af8c2.png",
+        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/resize_cache/27742/09667609493257e3dc4f183374d2fcb3/iblock/959/959dd4bf748fc6175817aec58673daf9/da8cb3bce3fcf393969db44d9eb766b8.png"
       ]
     }
   ],
@@ -396,7 +398,7 @@
       "STORE_AMOUNT_6": "0"
     }
   ],
-  "title": "Современное кресло для руководителя из натуральной кожи EPIK А-112-G L113 (кэмел) от ведущего производителя офисных стульев и кресел на территории России компании UTFC.",
+  "title": "Когда современный дизайн встречается с благородством натуральной кожи - кресло EPIK А-112-G L113 (кэмел) от ведущего производителя офисных стульев и кресел на территории России компании UTFC.",
   "base_name": "Кресло EPIK А-112-G L113 (кэмел)",
   "article_number": "80725180",
   "full_describe": "Современное кресло для руководителя изготовлено из натуральной кожи. Алюминиевые подлокотники с мягкими накладками обеспечивают комфорт, а плавный изгиб спинки и удобный подголовник позволяют расслабиться в течение рабочего дня. Кресло оснащено синхронным механизмом с возможностью фиксации в четырех положениях и выдерживает нагрузку до 120 кг.",
@@ -430,14 +432,11 @@
     ""
   ],
   "madeinrf": "",
-  "additional_info": {
-    "package_dimensions": {
-      "width": "26",
-      "depth": "920",
-      "height": "340"
-    },
-    "netto": "23",
-    "brutto": "26",
-    "volume": "0"
-  }
+  "lost": [
+    {
+      "clean": false,
+      "limit": false,
+      "del": false
+    }
+  ]
 }

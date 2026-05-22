@@ -93,7 +93,7 @@
     "lost": [
         {
             "clean": false,
-            "limit": true,
+            "limit": false,
             "del": true
         }
     ]

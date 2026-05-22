@@ -132,7 +132,11 @@
         "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/aa2/aa2a52c5e0ed426d39ffdb4cc583bbc4.png",
         "https://utfc.ru/upload/resize_cache/iblock/f8c/140_140_0/s1inpbol3ulzlvn6kzpsv60qsrh1wo3o.png",
         "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/42c/pfqvgjyuyiu4pp3bkijc5667vzmk0abh.png",
-        "https://utfc.ru/local/templates/utfc/img/palette.png"
+        "https://utfc.ru/local/templates/utfc/img/palette.png",
+        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/resize_cache/27729/09667609493257e3dc4f183374d2fcb3/iblock/4d4/4d41990eb99704cb4917b701ae204ad5/3a325688235932695c2d5ab0314af8c2.png",
+        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/uf/ba2/ba26cad27d0d08152e55229efdd0ed9b.jpg",
+        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/resize_cache/27742/09667609493257e3dc4f183374d2fcb3/iblock/959/959dd4bf748fc6175817aec58673daf9/da8cb3bce3fcf393969db44d9eb766b8.png",
+        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/bc2/bc2166b704579feb802cd10858a30bba.png"
       ]
     }
   ],
@@ -238,7 +242,7 @@
     }
   ],
   "skeleton": "немонолитный",
-  "minpromtorg": "+",
+  "minpromtorg": "Минпромторг",
   "addition": "",
   "parent": {
     "IE_XML_ID": "p_5090",
@@ -1820,7 +1824,8 @@
   "finish_type": [
     "Ткань С",
     "Кожзаменитель Z",
-    "-"
+    "-",
+    "Экокожа Santorini"
   ],
   "color": [
     "Кожзаменитель Z06 (синий)",
@@ -1887,7 +1892,16 @@
     "Кресло Метро Люкс Т-01 (-, Кожзаменитель Z29 (красный),, )",
     "Кресло Метро Люкс Т-01 (-, Кожзаменитель Z34 (светло-зеленый),, )",
     "Кресло Метро Люкс Т-01 (-, Кожзаменитель Z71 (серый),, )",
-    "Кресло Метро Люкс Т-01 (-, Кожзаменитель Z01 (белый),, )"
+    "Кресло Метро Люкс Т-01 (-, Кожзаменитель Z01 (белый),, )",
+    "Кресло Метро Люкс Т-01 (Экокожа Santorini, Кожзаменитель Z06 (синий),, )",
+    "Кресло Метро Люкс Т-01 (Экокожа Santorini, Кожзаменитель Z10 (темно-коричневый),, )",
+    "Кресло Метро Люкс Т-01 (Экокожа Santorini, Кожзаменитель Z11 (черный),, )",
+    "Кресло Метро Люкс Т-01 (Экокожа Santorini, Кожзаменитель Z19 (темно-синий),, )",
+    "Кресло Метро Люкс Т-01 (Экокожа Santorini, Кожзаменитель Z21 (бежевый),, )",
+    "Кресло Метро Люкс Т-01 (Экокожа Santorini, Кожзаменитель Z29 (красный),, )",
+    "Кресло Метро Люкс Т-01 (Экокожа Santorini, Кожзаменитель Z34 (светло-зеленый),, )",
+    "Кресло Метро Люкс Т-01 (Экокожа Santorini, Кожзаменитель Z71 (серый),, )",
+    "Кресло Метро Люкс Т-01 (Экокожа Santorini, Кожзаменитель Z01 (белый),, )"
   ],
   "finish_type_seat": [
     ""

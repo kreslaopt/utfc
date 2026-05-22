@@ -124,7 +124,10 @@
         "https://utfc.ru/upload/resize_cache/iblock/e1c/140_140_0/n7g819fkjp26sfpj9vrnk4u1f4bpm665.png",
         "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/5e1/oywdv5fkjd15xzoqti30q39fzn85w4og.png",
         "https://utfc.ru/local/templates/utfc/img/palette.png",
-        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/uf/b30/ocwd75xcze6h3qha3b8sdwb2ixj0f25p.png"
+        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/uf/b30/ocwd75xcze6h3qha3b8sdwb2ixj0f25p.png",
+        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/resize_cache/27729/09667609493257e3dc4f183374d2fcb3/iblock/4d4/4d41990eb99704cb4917b701ae204ad5/3a325688235932695c2d5ab0314af8c2.png",
+        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/resize_cache/27742/09667609493257e3dc4f183374d2fcb3/iblock/959/959dd4bf748fc6175817aec58673daf9/da8cb3bce3fcf393969db44d9eb766b8.png",
+        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/bc2/bc2166b704579feb802cd10858a30bba.png"
       ]
     }
   ],
@@ -230,7 +233,7 @@
     }
   ],
   "skeleton": "монолитный",
-  "minpromtorg": "+",
+  "minpromtorg": "Минпромторг",
   "addition": "",
   "parent": {
     "IE_XML_ID": "p_5212",
@@ -1369,7 +1372,7 @@
       "STORE_AMOUNT_6": "0"
     }
   ],
-  "title": "Легкое универсальное кресло С-21 Шелл GTS хром Ср производства компании UTFC",
+  "title": "Легкое универсальное кресло с хромированным основанием С-21 Шелл GTS хром Ср производства компании UTFC",
   "base_name": "Кресло С-21 Шелл GTS хром Ср",
   "article_number": "КФ-00516",
   "full_describe": "Универсальная модель кресла, которая отлично подойдет как для уютного домашнего кабинета, так и для стильного офисного пространства.  Пластиковая ракушка обеспечивает комфорт и легкость, а подпружинивающая конструкция добавляет дополнительное удобство.Цветной пластик доступен при заказе от 200 штук (за исключением белого, серого и чёрного).",

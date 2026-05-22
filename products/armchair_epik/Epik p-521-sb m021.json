@@ -115,7 +115,9 @@
                 "https://utfc.ru/upload/resize_cache/iblock/496/400_400_0/ek9kv3n02izh63bntwg0mfoflewbwvya.png",
                 "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/uf/9a9/c6iacbd5cezxtcdt9lwg2nvgw2g2ft3v.png",
                 "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/uf/bb6/vddq7sj3wp65scbxp4sfy7uc8y7ne9ib.png",
-                "https://utfc.ru/local/templates/utfc/img/palette.png"
+                "https://utfc.ru/local/templates/utfc/img/palette.png",
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/resize_cache/27729/09667609493257e3dc4f183374d2fcb3/iblock/4d4/4d41990eb99704cb4917b701ae204ad5/3a325688235932695c2d5ab0314af8c2.png",
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/resize_cache/27742/09667609493257e3dc4f183374d2fcb3/iblock/959/959dd4bf748fc6175817aec58673daf9/da8cb3bce3fcf393969db44d9eb766b8.png"
             ]
         }
     ],
@@ -334,7 +336,7 @@
             "CV_CURRENCY_3": "RUB"
         }
     ],
-    "title": "Высокоэргономичное функциональное офисное кресло EPIK Р-521-SB М021 (серый) производства компании UTFC",
+    "title": "Зона максимальной эффективности: кресло, которое снимает нагрузку и позволяет полностью сфокусироваться на задачах EPIK Р-521-SB М021 (серый) производства компании UTFC",
     "base_name": "Кресло EPIK Р-521-SB М021 (серый)",
     "article_number": "КИЕ-00026",
     "full_describe": "Стильный металлический каркас кресла изготовлен по оригинальному дизайну. Конструкция кресла предусматривает регулируемые по высоте подлокотники с мягкими полиуретановыми накладками, которые двигаются вперед-назад. Анатомическая поддержка обеспечивается регулируемым по высоте подголовником и адаптивной поясничной опорой (что снижает нагрузку при длительном использовании).Дополнительные функции и преимущества:✓ Слайдер для регулировки глубины сиденья.",
@@ -367,5 +369,12 @@
     "color_seat": [
         ""
     ],
-    "madeinrf": ""
+    "madeinrf": "",
+    "lost": [
+        {
+            "clean": false,
+            "limit": false,
+            "del": false
+        }
+    ]
 }

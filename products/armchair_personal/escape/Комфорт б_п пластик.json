@@ -83,13 +83,6 @@
     "dimensions_details": [
         {}
     ],
-    "lost": [
-        {
-            "clean": false,
-            "limit": false,
-            "del": true
-        }
-    ],
     "parent": {
         "IE_XML_ID": "s8030",
         "IE_NAME": "Комфорт",
@@ -942,6 +935,13 @@
             "CV_CURRENCY_2": "RUB",
             "CV_PRICE_3": "2672.00",
             "CV_CURRENCY_3": "RUB"
+        }
+    ],
+    "lost": [
+        {
+            "clean": false,
+            "limit": false,
+            "del": true
         }
     ]
 }

@@ -114,7 +114,9 @@
         "https://utfc.ru/upload/resize_cache/iblock/496/400_400_0/ek9kv3n02izh63bntwg0mfoflewbwvya.png",
         "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/uf/6ff/cq1dwiujkap4m3iolsldnnvphshfle5k.png",
         "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/ab6/p3v0devi2mti3yob6tun8o465iglqidn.png",
-        "https://utfc.ru/local/templates/utfc/img/palette.png"
+        "https://utfc.ru/local/templates/utfc/img/palette.png",
+        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/resize_cache/27729/09667609493257e3dc4f183374d2fcb3/iblock/4d4/4d41990eb99704cb4917b701ae204ad5/3a325688235932695c2d5ab0314af8c2.png",
+        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/resize_cache/27742/09667609493257e3dc4f183374d2fcb3/iblock/959/959dd4bf748fc6175817aec58673daf9/da8cb3bce3fcf393969db44d9eb766b8.png"
       ]
     }
   ],
@@ -392,7 +394,7 @@
       "STORE_AMOUNT_6": "0"
     }
   ],
-  "title": "Концептуальное офисное кресло EPIK А-011-G 200 (коричневый) производства компании UTFC",
+  "title": "Концептуальный минимализм в каждой линии вашего комфорта - кресло EPIK А-011-G 200 (коричневый) производства компании UTFC",
   "base_name": "Кресло EPIK А-011-G 200 (коричневый)",
   "article_number": "КИЕ-00012",
   "full_describe": "Эргономичное кресло руководителя с высокой спинкой и широким сиденьем. Уникальная особенность кресла - подлокотники регулируются при использовании механизма отклонения спинки и сиденья. Максимальная нагрузка 120 кг.",
@@ -426,14 +428,11 @@
     ""
   ],
   "madeinrf": "",
-  "additional_info": {
-    "package_dimensions": {
-      "width": "34",
-      "depth": "645",
-      "height": "470"
-    },
-    "netto": "29",
-    "brutto": "34",
-    "volume": "0"
-  }
+  "lost": [
+    {
+      "clean": false,
+      "limit": false,
+      "del": false
+    }
+  ]
 }

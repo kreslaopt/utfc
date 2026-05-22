@@ -120,7 +120,9 @@
         "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/adb/pzsem28n3nzbt86bxcx5unfl7gqgsl91.png",
         "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/uf/ed8/ed809c4302b8f61180ba2401fad216c5.png",
         "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/uf/eeb/eebd8f0779e4f7b49d9f225d2fa9accb.jpg",
-        "https://utfc.ru/local/templates/utfc/img/palette.png"
+        "https://utfc.ru/local/templates/utfc/img/palette.png",
+        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/resize_cache/27729/09667609493257e3dc4f183374d2fcb3/iblock/4d4/4d41990eb99704cb4917b701ae204ad5/3a325688235932695c2d5ab0314af8c2.png",
+        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/resize_cache/27742/09667609493257e3dc4f183374d2fcb3/iblock/959/959dd4bf748fc6175817aec58673daf9/da8cb3bce3fcf393969db44d9eb766b8.png"
       ]
     }
   ],
@@ -226,13 +228,6 @@
       "package_depth": "290",
       "package_height": "600",
       "volume": "0"
-    }
-  ],
-  "lost": [
-    {
-      "clean": false,
-      "limit": false,
-      "del": false
     }
   ],
   "parent": {
@@ -820,7 +815,7 @@
       "STORE_AMOUNT_6": "0"
     }
   ],
-  "title": "Умное кресло для работы за компьютером СН-710 Айкью Н Ср производства компании UTFC",
+  "title": "Кресло, которое думает о вашей осанке, пока вы думаете о проектах СН-710 Айкью Н Ср производства компании UTFC",
   "base_name": "Кресло СН-710 Айкью Н Ср",
   "article_number": "КК-00304",
   "full_describe": "Современное кресло в стиле хай-тек. Мягкие элементы спинки кресла расположены в трех зонах, соприкасаясь с которыми спина сидящего человека находится в положении максимального комфорта. Изящные подлокотники идеально вписываются в общую конструкцию кресла. Кресло изготавливается в любом цвете тканях D, QH и в экокоже Santorini. Максимальная нагрузка до 150 кг.",
@@ -856,13 +851,13 @@
   "color_seat": [
     ""
   ],
-  "minpromtorg": "+",
+  "minpromtorg": "Минпромторг",
   "madeinrf": "Сделано РФ",
-  "additional_info": {
-    "package_dimensions": {
-      "depth": "630",
-      "height": "290"
-    },
-    "volume": "0"
-  }
+  "lost": [
+    {
+      "clean": false,
+      "limit": false,
+      "del": false
+    }
+  ]
 }

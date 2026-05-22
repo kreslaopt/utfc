@@ -133,7 +133,10 @@
         "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/uf/ed8/ed809c4302b8f61180ba2401fad216c5.png",
         "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/uf/0c5/0c5eea6af3603d63b73b652d674a5eff.jpg",
         "https://utfc.ru/local/templates/utfc/img/palette.png",
-        "https://utfc.ru/upload/resize_cache/iblock/7ab/140_140_0/5ur4zpx60y45lkuof8e6puimovc1wykn.png"
+        "https://utfc.ru/upload/resize_cache/iblock/7ab/140_140_0/5ur4zpx60y45lkuof8e6puimovc1wykn.png",
+        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/uf/9b9/c40gohl039rnsxbkj6ycnq94fqxq1bz4.webp",
+        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/resize_cache/27729/09667609493257e3dc4f183374d2fcb3/iblock/4d4/4d41990eb99704cb4917b701ae204ad5/3a325688235932695c2d5ab0314af8c2.png",
+        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/resize_cache/27742/09667609493257e3dc4f183374d2fcb3/iblock/959/959dd4bf748fc6175817aec58673daf9/da8cb3bce3fcf393969db44d9eb766b8.png"
       ]
     }
   ],
@@ -239,7 +242,7 @@
     }
   ],
   "skeleton": "немонолитный",
-  "minpromtorg": "+",
+  "minpromtorg": "Минпромторг",
   "addition": "",
   "parent": {
     "IE_XML_ID": "p_5142",
@@ -2194,7 +2197,8 @@
     "Ткань С",
     "Кожзаменитель Z",
     "Ткань Moderno",
-    "-"
+    "-",
+    "Ткань Сетка Е"
   ],
   "color": [
     "Кожзаменитель Z11 (черный)",
@@ -2234,7 +2238,11 @@
     "Кресло Эльф В пластик 727 (-, Кожзаменитель Z11 (черный),, )",
     "Кресло Эльф В пластик 727 (-, Кожзаменитель Z21 (бежевый),, )",
     "Кресло Эльф В пластик 727 (-, Кожзаменитель Z71 (серый),, )",
-    "Кресло Эльф В пластик 727 (-, Кожзаменитель Z01 (белый),, )"
+    "Кресло Эльф В пластик 727 (-, Кожзаменитель Z01 (белый),, )",
+    "Кресло Эльф В пластик 727 (Ткань Сетка Е, Кожзаменитель Z11 (черный),, )",
+    "Кресло Эльф В пластик 727 (Ткань Сетка Е, Кожзаменитель Z21 (бежевый),, )",
+    "Кресло Эльф В пластик 727 (Ткань Сетка Е, Кожзаменитель Z71 (серый),, )",
+    "Кресло Эльф В пластик 727 (Ткань Сетка Е, Кожзаменитель Z01 (белый),, )"
   ],
   "finish_type_seat": [
     ""

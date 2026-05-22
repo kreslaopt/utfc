@@ -78,7 +78,7 @@
   "images": [
     {
       "vid_main": "img/armchair_comfort/tesla_ch_709_pl_wt_e11_d47_01.png",
-      "chair_view": "img/armchair_comfort/tesla_ch_709_pl_wt_e11_d47_01.png",
+      "chair_view": "img/armchair_comfort/tesla_ch_709_pl_wt_e11_d47_02.png",
       "dimensions": "img/armchair_comfort/dimensions/tesla_ch_709_pl_wt_e11_d47_01.png",
       "box": "img/box_UTFC.png",
       "additional": [
@@ -114,7 +114,9 @@
         "https://utfc.ru/upload/resize_cache/iblock/f94/140_140_0/f949f6b4ea0098db006f34db32723360.png",
         "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/uf/ed8/ed809c4302b8f61180ba2401fad216c5.png",
         "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/uf/c0a/c0a4c392dc59b07409e67bd854c22ebd.png",
-        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/uf/4c4/4c43e99d8b3c7315b35cfc9bc9cb7868.png"
+        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/uf/4c4/4c43e99d8b3c7315b35cfc9bc9cb7868.png",
+        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/resize_cache/27729/09667609493257e3dc4f183374d2fcb3/iblock/4d4/4d41990eb99704cb4917b701ae204ad5/3a325688235932695c2d5ab0314af8c2.png",
+        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/resize_cache/27742/09667609493257e3dc4f183374d2fcb3/iblock/959/959dd4bf748fc6175817aec58673daf9/da8cb3bce3fcf393969db44d9eb766b8.png"
       ]
     }
   ],
@@ -231,14 +233,8 @@
       "volume": "0"
     }
   ],
-  "lost": [
-    {
-      "clean": true,
-      "limit": false
-    }
-  ],
   "skeleton": "немонолитный",
-  "minpromtorg": "+",
+  "minpromtorg": "Минпромторг",
   "addition": "",
   "parent": {
     "IE_XML_ID": "p_5179",

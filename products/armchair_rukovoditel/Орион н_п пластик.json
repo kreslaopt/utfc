@@ -112,7 +112,10 @@
         "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/2b3/2b395510cf4717e38ac19ffc2a92cacd.png",
         "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/bcb/ki1jle0wxbp8fj6taxyavb3xk8awdl9w.png",
         "https://utfc.ru/local/templates/utfc/img/palette.png",
-        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/1bb/5314dl56hdgdk5tblycup8172pb6ucu3.png"
+        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/1bb/5314dl56hdgdk5tblycup8172pb6ucu3.png",
+        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/resize_cache/27729/09667609493257e3dc4f183374d2fcb3/iblock/4d4/4d41990eb99704cb4917b701ae204ad5/3a325688235932695c2d5ab0314af8c2.png",
+        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/uf/12e/12eac4cbc8e29ff91e60f48774f510e1.jpg",
+        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/resize_cache/27742/09667609493257e3dc4f183374d2fcb3/iblock/959/959dd4bf748fc6175817aec58673daf9/da8cb3bce3fcf393969db44d9eb766b8.png"
       ]
     }
   ],
@@ -221,7 +224,7 @@
     }
   ],
   "skeleton": "монолитный",
-  "minpromtorg": "+",
+  "minpromtorg": "Минпромторг",
   "addition": "",
   "parent": {
     "IE_XML_ID": "p_5073",
@@ -617,7 +620,8 @@
   "Ролики": "",
   "finish_type": [
     "Экокожа Santorini",
-    "-"
+    "-",
+    "Кожзаменитель Z"
   ],
   "color": [
     "Экокожа Santorini S0401 (черный)",
@@ -631,7 +635,9 @@
     "Кресло Орион Н/п пластик (Экокожа Santorini, Экокожа Santorini S0401 (черный),, )",
     "Кресло Орион Н/п пластик (Экокожа Santorini, Экокожа Santorini S0422 (темно-серый),, )",
     "Кресло Орион Н/п пластик (-, Экокожа Santorini S0401 (черный),, )",
-    "Кресло Орион Н/п пластик (-, Экокожа Santorini S0422 (темно-серый),, )"
+    "Кресло Орион Н/п пластик (-, Экокожа Santorini S0422 (темно-серый),, )",
+    "Кресло Орион Н/п пластик (Кожзаменитель Z, Экокожа Santorini S0401 (черный),, )",
+    "Кресло Орион Н/п пластик (Кожзаменитель Z, Экокожа Santorini S0422 (темно-серый),, )"
   ],
   "finish_type_seat": [
     ""

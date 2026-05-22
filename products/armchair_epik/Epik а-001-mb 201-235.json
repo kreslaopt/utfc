@@ -117,7 +117,9 @@
         "https://utfc.ru/upload/resize_cache/iblock/6f9/140_140_0/68u8084xe2mmykatz0kkxfrml6y6qzlc.png",
         "https://utfc.ru/upload/resize_cache/iblock/496/400_400_0/ek9kv3n02izh63bntwg0mfoflewbwvya.png",
         "https://utfc.ru/local/templates/utfc/img/palette.png",
-        "https://utfc.ru/upload/resize_cache/iblock/1f4/140_140_0/tipaee64cw539ixplgffnq7qr21wbvwa.png"
+        "https://utfc.ru/upload/resize_cache/iblock/1f4/140_140_0/tipaee64cw539ixplgffnq7qr21wbvwa.png",
+        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/resize_cache/27729/09667609493257e3dc4f183374d2fcb3/iblock/4d4/4d41990eb99704cb4917b701ae204ad5/3a325688235932695c2d5ab0314af8c2.png",
+        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/resize_cache/27742/09667609493257e3dc4f183374d2fcb3/iblock/959/959dd4bf748fc6175817aec58673daf9/da8cb3bce3fcf393969db44d9eb766b8.png"
       ]
     }
   ],
@@ -394,7 +396,7 @@
       "STORE_AMOUNT_6": "0"
     }
   ],
-  "title": "Дизайнерское кресло для современного офиса с механизмом качания EPIK А-001-МВ 201-235 (темно-синий/ кремовый) производства компании UTFC",
+  "title": "Изысканный акцент в кабинете руководителя - кресло EPIK А-001-МВ 201-235 (темно-синий/ кремовый) производства компании UTFC",
   "base_name": "Кресло EPIK А-001-МВ 201-235 (темно-синий/ кремовый)",
   "article_number": "КИЕ-00004",
   "full_describe": "Современное кресло руководителя. Регулируемый подголовник имеет увеличенную мягкую подушку с уникальным рисунком. Механизм качания позволяет фиксировать наклон кресла в любом положении, что обеспечит полный комфорт и расслабление во время рабочего дня.",
@@ -435,14 +437,11 @@
     ""
   ],
   "madeinrf": "",
-  "additional_info": {
-    "package_dimensions": {
-      "width": "32",
-      "depth": "1065",
-      "height": "730"
-    },
-    "netto": "25",
-    "brutto": "32",
-    "volume": "0"
-  }
+  "lost": [
+    {
+      "clean": false,
+      "limit": false,
+      "del": false
+    }
+  ]
 }
