@@ -1,433 +1,433 @@
 {
-    "namefile": [
-        "Соло макс комби пластик"
-    ],
-    "name_all": [
-        "Соло Макс хром",
-        "Соло Макс Комби хром",
-        "Соло Макс пластик",
-        "Соло Макс Комби пластик"
-    ],
-    "name": [
-        "Соло Макс Комби пластик"
-    ],
-    "unique_name": [
-        "Соло Макс Комби пластик"
-    ],
-    "vid": [
-        "кресло"
-    ],
-    "category": [
-        "поворотное кресло для руководителя"
-    ],
-    "destiny": [
-        "ежедневной работы в офисных и домашних помещениях"
-    ],
-    "technical_requirements": [
-        [
-            "Кресло должно соответствовать требованиям:",
-            "ГОСТ 19917-2014 «Мебель для сидения и лежания. Общие технические условия»",
-            "ГОСТ 26800.3-86 «Мебель для административных помещений. Функциональные размеры»",
-            "настоящего технического описания",
-            "комплекта конструкторской документации",
-            "образцу-эталону, утвержденному в установленном порядке производителем"
-        ]
-    ],
-    "construction_and_materials": [
-        {
-            "upholstery_materials": [
-                "- материал облицовки подголовника и подлокотников кресла:\nткань (Moderno), экокожа (S,R)<br>\n- материал облицовки спинки кресла:\nсетка (TW), ткань (Moderno)<br>\n- материал облицовки сиденья кресла:\nткань-сетка (Е), экокожа (S,R)<br>\n- цвет материала - по каталогу"
-            ],
-            "components": [
-                "спинки, сиденья, подлокотников, механизма качания, газ-лифта, пятилучья и 5-ти роликов",
-                "<strong>Спинка</strong> состоит из металлического каркаса и облицовки. Имеет подголовник и внутреннюю поясничную поддержку. Каркас спинки сварной металлический с защитно-декоративным покрытием. Изготовлен из стальной трубы овального сечения 30х15х1,4 мм. Покрытие каркаса: термореактивная порошковая краска черного цвета",
-                "<strong>Материал</strong> облицовки спинки: сетка (TW), ткань (Moderno)",
-                "<strong>Подголовник</strong> состоит из пенополиуретанового вкладыша (жесткость - 25, плотность - 18 кг/м<sup>3</sup>) и облицовочного материала (ткань (Moderno), экокожа (S,R))",
-                "<strong>Сиденье</strong> состоит из фанерного основания, мягкого элемента (пенополиуретан, жесткость - 40, плотность - 22 кг/м<sup>3</sup>) и облицовки",
-                "<strong>Материал</strong> облицовки сиденья: ткань-сетка (Е), экокожа (S,R)",
-                "<strong>Подлокотники</strong> состоят из металлического каркаса, накладок и заглушек. Каркас подлокотника сварной металлический с защитно-декоративным покрытием. Изготовлен из стального прутка Ф8 мм и из стальной трубы круглого сечения Ф18х1,1 мм. Покрытие каркаса подлокотников: термореактивная порошковая краска черного цвета",
-                "<strong>Материал</strong> облицовки подголовника и подлокотников: ткань (Moderno), экокожа (S,R)",
-                "<strong>Механизм качания</strong> «Топ-ган» обеспечивает регулировку высоты сиденья, регулировку силы отклонения спинки под вес пользователя в режиме качания и фиксацию в вертикальном положении",
-                "<strong>Газ-лифт</strong> хром с высотой подъема 100 мм ± 10 мм позволяет плавно регулировать высоту сиденья относительно пола, подпружинивает сиденье и демпфирует нагрузку на позвоночник в момент посадки",
-                "<strong>Пятилучье</strong> «Арктика» пластиковое d=660 мм с 5-тью роликами обеспечивает устойчивость и позволяет креслу легко поворачиваться и перемещаться по любому стандартному покрытию пола",
-                "<strong>Ролики</strong> черные d=50 мм с серым полиуретановым покрытием имеют узкий шток"
-            ]
-        }
-    ],
-    "transportation": [
-        {
-            "standard": "ГОСТ 16371-2014",
-            "packaging": {
-                "type": "5-слойный гофрокороб",
-                "size": {
-                    "width": "910",
-                    "depth": "270",
-                    "height": "690"
-                },
-                "box_size": "910х270х690",
-                "transportation": "удобства транспортировки и хранения кресло поставляется в разобранном виде. Каждое кресло упаковано в отдельный 5-слойный гофрокороб размером"
-            }
-        }
-    ],
-    "dimensions": [
-        {
-            "brutto": "5,53",
-            "netto": "4,60",
-            "volume": "0,03"
-        }
-    ],
-    "guarantee": [
-        {
-            "period": "12",
-            "max_load": "150",
-            "recommended_load": "120"
-        }
-    ],
-    "images": [
-        {
-            "vid_main": "img/armchair_rukovoditel/solo ch-601 pl_01.png",
-            "chair_view": "img/armchair_rukovoditel/solo ch-601 pl_02.png",
-            "dimensions": "img/armchair_rukovoditel/dimensions/solo ch-601 pl_01.png",
-            "box": "img/box_UTFC.png",
-            "additional": []
-        }
-    ],
-    "dimensions_details": [
-        {
-            "chair_height": {
-                "min": "1200",
-                "max": "1300"
-            },
-            "headrest_height": {},
-            "seat_to_floor_height": {
-                "min": "460",
-                "max": "560"
-            },
-            "seat_to_floor_height_upper": {
-                "min": "380",
-                "max": "480"
-            },
-            "armrest_height_from_floor": {
-                "min": "270"
-            },
-            "armrest_height_from_seat": {
-                "min": "200"
-            },
-            "armrest_width_support": {
-                "max": "60"
-            },
-            "armrest_length_support": {
-                "max": "340"
-            },
-            "chair_depth": {
-                "min": "630"
-            },
-            "seat_depth": {
-                "min": "500"
-            },
-            "seat_depth_km": {
-                "max": "510"
-            },
-            "backrest_height": {
-                "max": "750"
-            },
-            "backrest_to_seat_height": {},
-            "backrest_height_external": {
-                "max": "840"
-            },
-            "seat_width_with_armrests": {
-                "min": "670"
-            },
-            "seat_width": {
-                "max": "550"
-            },
-            "backrest_width_narrow": {
-                "max": "440"
-            },
-            "backrest_width_wide": {
-                "max": "500"
-            },
-            "diameter_cross": {
-                "max": "660"
-            },
-            "runners_width": {},
-            "runners_depth": {},
-            "recommended_load": "120",
-            "max_load": "150",
-            "skeleton": "немонолитный",
-            "netto": "11",
-            "brutto": "13",
-            "package_width": "910",
-            "package_depth": "270",
-            "package_height": "690",
-            "volume": "0"
-        }
-    ],
-    "skeleton": "немонолитный",
-    "minpromtorg": "",
-    "addition": "",
-    "title": "Кресло СН-602 Соло Макс пластик SoloBL Ср производства компании UTFC",
-    "base_name": "Кресло СН-602 Соло Макс пластик SoloBL Ср",
-    "article_number": "КК-01030",
-    "full_describe": "Кресло повышенного комфорта с высокой эргономичной воздухопроницаемой спинкой, широким сиденьем и мягким большим подголовником подходит как сотрудникам, так и руководителям. Стильное пластиковое пятилучье с узкими лучами в основании кресла. Эта модель прекрасно дополнит интерьер открытого офиса или домашнего кабинета. Максимальная нагрузка 150 кг.",
-    "Link_arm": "https://utfc.ru/catalog/boss_chairs/ch602_solo_max_pl/?offers=13105",
-    "Основание": "Пятилучье Арктика пластиковое с узкими лучами, d=660 мм",
-    "Подлокотники": "Подлокотники крашеные с мягкими накладками",
-    "Газлифт": "",
-    "Механизм": "Однопозиционный механизм качания Топ-Ган регулирует высоту сиденья, обеспечивает режим свободного качания и фиксацию каркаса в рабочем положении.",
-    "Особенности": "",
-    "Ролики": "Пластиковые ролики с полиуретановым покрытием, открытый чехол, d колеса 50 мм, d штока 11 мм. Стандарт BIFMA 5,1 (США).",
-    "finish_type": [
-        "Комбинированный S/TW",
-        "-"
-    ],
-    "color": [
-        "Комбинированный S-0422/TW-72"
-    ],
-    "variant_name": [
-        "Кресло СН-602 Соло Макс пластик SoloBL Ср (Комбинированный S/TW, Комбинированный S-0422/TW-72)",
-        "Кресло СН-602 Соло Макс пластик SoloBL Ср (-, Комбинированный S-0422/TW-72)",
-        "Кресло СН-602 Соло Макс пластик SoloBL Ср (Комбинированный S/TW, Комбинированный S-0422/TW-72, Комбинированный S/Е, Комбинированный S-0422/Е72-к)",
-        "Кресло СН-602 Соло Макс пластик SoloBL Ср (Комбинированный S/TW, Комбинированный S-0422/TW-72, -, Комбинированный S-0422/Е72-к)",
-        "Кресло СН-602 Соло Макс пластик SoloBL Ср (-, Комбинированный S-0422/TW-72, Комбинированный S/Е, Комбинированный S-0422/Е72-к)",
-        "Кресло СН-602 Соло Макс пластик SoloBL Ср (-, Комбинированный S-0422/TW-72, -, Комбинированный S-0422/Е72-к)"
-    ],
-    "finish_type_seat": [
-        "Комбинированный S/Е",
-        "-"
-    ],
-    "color_seat": [
-        "Комбинированный S-0422/Е72-к"
-    ],
-    "parent": {
-        "IE_XML_ID": "13376",
-        "IE_NAME": "СН-602 Соло Макс Комби пластик SoloBL Ср",
-        "IE_ACTIVE": "Y",
-        "IE_ACTIVE_FROM": "",
-        "IE_ACTIVE_TO": "",
-        "IE_SORT": "500",
-        "IE_PREVIEW_PICTURE": "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/bdb/bdb288f43587e4f87b2ddf56b952e6b4/2e50d0e5976463285df15165766d0689.png",
-        "IE_PREVIEW_TEXT": "Кресло повышенного комфорта с высокой эргономичной воздухопроницаемой спинкой и комбинированным широким сиденьем подходит как сотрудникам, так и руководителям. Стильное и прочное пластиковое пятилучье в основании кресла. Эта модель прекрасно дополнит интерьер открытого офиса или домашнего кабинета. Максимальная нагрузка 150 кг.",
-        "IE_PREVIEW_TEXT_TYPE": "text",
-        "IE_DETAIL_PICTURE": "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/f5e/f5e9b39af962840bc89d094c6ef8233d/2f87f5622ee92e6bbf2261246431758c.png",
-        "IE_DETAIL_TEXT": "Кресло повышенного комфорта с высокой эргономичной воздухопроницаемой спинкой и комбинированным широким сиденьем подходит как сотрудникам, так и руководителям.  Стильное и прочное пластиковое пятилучье в основании кресла. Эта модель прекрасно дополнит интерьер открытого офиса или домашнего кабинета. Максимальная нагрузка 150 кг.",
-        "IE_DETAIL_TEXT_TYPE": "text",
-        "IE_CODE": "ch602_solo_max_combi_pl",
-        "IE_TAGS": "",
-        "IE_ID": "13376",
-        "IP_PROP2": "670",
-        "IP_PROP3": "1200-1300",
-        "IP_PROP4": "630",
-        "IP_PROP6": "",
-        "IP_PROP19": "150",
-        "IP_PROP25": "Немонолитный",
-        "IP_PROP18": "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/aa6/aa6ae473ff42c5b65e2fa575d23ad5c8/934adb762da0718d1651f94f79ce284a.png",
-        "IP_PROP31": "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/f5c/f5c8e313e666138bcda5e2c3458cf3af/3717a5f2f44316232d982556ca22314f.png",
-        "IP_PROP5": "910",
-        "IP_PROP26": "690",
-        "IP_PROP27": "270",
-        "IP_PROP28": "12,8",
-        "IP_PROP29": "Гофрокартон",
-        "IP_PROP30": "0,17",
-        "IP_PROP7": "",
-        "IP_PROP8": "",
-        "IP_PROP9": "ch602_solo_max_combi_pl",
-        "IP_PROP10": "",
-        "IP_PROP11": "",
-        "IP_PROP12": "",
-        "IP_PROP13": "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/4df/4df06ea2ac263c73abbf3f2a81a4d3fd/5e169cdfa3248f8dd5dcbe4e53c88768.png",
-        "IP_PROP14": "",
-        "IP_PROP15": "",
-        "IP_PROP16": "",
-        "IP_PROP17": "",
-        "IP_PROP22": "",
-        "IP_PROP41": "pch_660_arkt_pl",
-        "IP_PROP42": "pl_solo_bl",
-        "IP_PROP43": "gl_230",
-        "IP_PROP44": "m_tg",
-        "IP_PROP45": "",
-        "IP_PROP46": "r_60_o_pu",
-        "IP_PROP47": "",
-        "IP_PROP48": "5060793906ac14749248e1f5b64e4f39",
-        "IP_PROP49": "",
-        "IP_PROP50": "",
-        "IP_PROP51": "",
-        "IP_PROP52": "",
-        "IP_PROP54": "&nbsp;",
-        "IP_PROP59": "Нет",
-        "IP_PROP60": "",
-        "IC_ID0": "18",
-        "IC_XML_ID0": "",
-        "IC_GROUP0": "Кресла для руководителя",
-        "IC_ACTIVE0": "Y",
-        "IC_SORT0": "40",
-        "IC_DESCRIPTION0": "",
-        "IC_DESCRIPTION_TYPE0": "text",
-        "IC_CODE0": "boss_chairs",
-        "IC_PICTURE0": "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/a0b/a0b55a5b53a8bb142b4f32200f79ac62.png",
-        "IC_DETAIL_PICTURE0": "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/8da/8da00c4d975d7fd70a1438b5a1b523fe.png",
-        "IC_ID1": "",
-        "IC_XML_ID1": "",
-        "IC_GROUP1": "",
-        "IC_ACTIVE1": "",
-        "IC_SORT1": "",
-        "IC_DESCRIPTION1": "",
-        "IC_DESCRIPTION_TYPE1": "",
-        "IC_CODE1": "",
-        "IC_PICTURE1": "",
-        "IC_DETAIL_PICTURE1": "",
-        "IC_ID2": "",
-        "IC_XML_ID2": "",
-        "IC_GROUP2": "",
-        "IC_ACTIVE2": "",
-        "IC_SORT2": "",
-        "IC_DESCRIPTION2": "",
-        "IC_DESCRIPTION_TYPE2": "",
-        "IC_CODE2": "",
-        "IC_PICTURE2": "",
-        "IC_DETAIL_PICTURE2": "",
-        "CP_QUANTITY": "0",
-        "CP_QUANTITY_TRACE": "N",
-        "CP_CAN_BUY_ZERO": "Y",
-        "CP_WEIGHT": "0",
-        "CP_WIDTH": "",
-        "CP_HEIGHT": "",
-        "CP_LENGTH": "",
-        "CP_PURCHASING_PRICE": "",
-        "CP_PURCHASING_CURRENCY": "",
-        "CP_PRICE_TYPE": "S",
-        "CP_RECUR_SCHEME_LENGTH": "",
-        "CP_RECUR_SCHEME_TYPE": "D",
-        "CP_TRIAL_PRICE_ID": "",
-        "CP_WITHOUT_ORDER": "N",
-        "CP_VAT_ID": "",
-        "CP_VAT_INCLUDED": "N",
-        "CP_MEASURE": "",
-        "STORE_AMOUNT_2": "",
-        "STORE_AMOUNT_3": "",
-        "CV_QUANTITY_FROM": "",
-        "CV_QUANTITY_TO": "",
-        "CV_PRICE_1": "8693.00",
-        "CV_CURRENCY_1": "RUB",
-        "CV_PRICE_2": "8954.00",
-        "CV_CURRENCY_2": "RUB",
-        "CV_PRICE_3": "8693.00",
-        "CV_CURRENCY_3": "RUB",
-        "STORE_AMOUNT_4": "",
-        "STORE_AMOUNT_5": "",
-        "STORE_AMOUNT_6": ""
-    },
-    "children": [
-        {
-            "IE_XML_ID": "13105",
-            "IE_NAME": "Кресло СН-602 Соло Макс Комби пластик SoloBL Ср S-0422/TW-72/Е72-к/S-0422 (темно-серый/серый)",
-            "IE_ACTIVE": "Y",
-            "IE_ACTIVE_FROM": "",
-            "IE_ACTIVE_TO": "",
-            "IE_SORT": "500",
-            "IE_PREVIEW_PICTURE": "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/875/8752587c46d91dae2a4ca5304cc1506c/8d02a5d1ffd63e63ca580790499acaa4.png",
-            "IE_PREVIEW_TEXT": "",
-            "IE_PREVIEW_TEXT_TYPE": "text",
-            "IE_DETAIL_PICTURE": "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/aea/aea0a62e8613fa6c5cdf6f3de9129ad4/8f37d8a996d60cf445c3637a2de3d17f.png",
-            "IE_DETAIL_TEXT": "",
-            "IE_DETAIL_TEXT_TYPE": "text",
-            "IE_CODE": "",
-            "IE_TAGS": "",
-            "IE_ID": "13105",
-            "IP_PROP34": "13376",
-            "IP_PROP35": "КК-01030",
-            "IP_PROP36": [
-                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/d72/d72ff88079e46ee9fea665cabbf22a20/417e515034c4927ab8f747e6d19b366f.png",
-                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/d9d/d9dbc109b2590063ceca5839a67007f2/3aeb017473f3c4187b5264816f73e176.png",
-                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/f83/f83c14567d2b1c0f11db7ed3dae88850/a860f9f45d7b9fad5839af911b4a9dac.png",
-                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/9da/9da9206ecbf94c4d65db7a1481ac945f/23959575522fd3cc6117caf9b01efc32.png",
-                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/d14/d14a9a3bde5f10e8366b0f6677deff7a/f34405e187ac71d7e4126407dc502c24.png"
-            ],
-            "IP_PROP37": "m_32",
-            "IP_PROP38": "s0422_tw72",
-            "IP_PROP39": "m_35",
-            "IP_PROP40": "s0422_e72k",
-            "IP_PROP55": "&nbsp;",
-            "IP_PROP61": "",
-            "IC_ID0": "",
-            "IC_XML_ID0": "",
-            "IC_GROUP0": "",
-            "IC_ACTIVE0": "",
-            "IC_SORT0": "",
-            "IC_DESCRIPTION0": "",
-            "IP_PROP122": "808080",
-            "IC_DESCRIPTION_TYPE0": "",
-            "IC_CODE0": "",
-            "IC_PICTURE0": "",
-            "IC_DETAIL_PICTURE0": "",
-            "IC_ID1": "",
-            "IC_XML_ID1": "",
-            "IC_GROUP1": "",
-            "IC_ACTIVE1": "",
-            "IC_SORT1": "",
-            "IC_DESCRIPTION1": "",
-            "IC_DESCRIPTION_TYPE1": "",
-            "IC_CODE1": "",
-            "IC_PICTURE1": "",
-            "IC_DETAIL_PICTURE1": "",
-            "IC_ID2": "",
-            "IC_XML_ID2": "",
-            "IC_GROUP2": "",
-            "IC_ACTIVE2": "",
-            "IC_SORT2": "",
-            "IC_DESCRIPTION2": "",
-            "IC_DESCRIPTION_TYPE2": "",
-            "IC_CODE2": "",
-            "IC_PICTURE2": "",
-            "IC_DETAIL_PICTURE2": "",
-            "CP_QUANTITY": "0",
-            "CP_QUANTITY_TRACE": "D",
-            "CP_CAN_BUY_ZERO": "D",
-            "CP_WEIGHT": "0",
-            "CP_WIDTH": "",
-            "CP_HEIGHT": "",
-            "CP_LENGTH": "",
-            "CP_PURCHASING_PRICE": "",
-            "CP_PURCHASING_CURRENCY": "",
-            "CP_PRICE_TYPE": "S",
-            "CP_RECUR_SCHEME_LENGTH": "",
-            "CP_RECUR_SCHEME_TYPE": "D",
-            "CP_TRIAL_PRICE_ID": "",
-            "CP_WITHOUT_ORDER": "N",
-            "CP_VAT_ID": "",
-            "CP_VAT_INCLUDED": "N",
-            "CP_MEASURE": "5",
-            "STORE_AMOUNT_2": "0",
-            "STORE_AMOUNT_3": "0",
-            "CV_QUANTITY_FROM": "",
-            "CV_QUANTITY_TO": "",
-            "CV_PRICE_1": "8693.00",
-            "CV_CURRENCY_1": "RUB",
-            "CV_PRICE_2": "8954.00",
-            "CV_CURRENCY_2": "RUB",
-            "STORE_AMOUNT_4": "0",
-            "CV_PRICE_3": "8693.00",
-            "STORE_AMOUNT_5": "0",
-            "CV_CURRENCY_3": "RUB",
-            "STORE_AMOUNT_6": "0"
-        }
-    ],
-    "madeinrf": "Сделано РФ",
-    "lost": [
-        {
-            "clean": false,
-            "limit": false,
-            "del": true
-        }
-    ],
-    "additional_info": {
-        "package_dimensions": {
-            "width": "13",
-            "depth": "910",
-            "height": "270"
-        },
-        "netto": "11",
-        "brutto": "13",
-        "volume": "0"
+  "namefile": [
+    "Соло макс комби пластик"
+  ],
+  "name_all": [
+    "Соло Макс хром",
+    "Соло Макс Комби хром",
+    "Соло Макс пластик",
+    "Соло Макс Комби пластик"
+  ],
+  "name": [
+    "Соло Макс Комби пластик"
+  ],
+  "unique_name": [
+    "Соло Макс Комби пластик"
+  ],
+  "vid": [
+    "кресло"
+  ],
+  "category": [
+    "поворотное кресло для руководителя"
+  ],
+  "destiny": [
+    "ежедневной работы в офисных и домашних помещениях"
+  ],
+  "technical_requirements": [
+    [
+      "Кресло должно соответствовать требованиям:",
+      "ГОСТ 19917-2014 «Мебель для сидения и лежания. Общие технические условия»",
+      "ГОСТ 26800.3-86 «Мебель для административных помещений. Функциональные размеры»",
+      "настоящего технического описания",
+      "комплекта конструкторской документации",
+      "образцу-эталону, утвержденному в установленном порядке производителем"
+    ]
+  ],
+  "construction_and_materials": [
+    {
+      "upholstery_materials": [
+        "- материал облицовки подголовника и подлокотников кресла:\nткань (Moderno), экокожа (S,R)<br>\n- материал облицовки спинки кресла:\nсетка (TW), ткань (Moderno)<br>\n- материал облицовки сиденья кресла:\nткань-сетка (Е), экокожа (S,R)<br>\n- цвет материала - по каталогу"
+      ],
+      "components": [
+        "спинки, сиденья, подлокотников, механизма качания, газ-лифта, пятилучья и 5-ти роликов",
+        "<strong>Спинка</strong> состоит из металлического каркаса и облицовки. Имеет подголовник и внутреннюю поясничную поддержку. Каркас спинки сварной металлический с защитно-декоративным покрытием. Изготовлен из стальной трубы овального сечения 30х15х1,4 мм. Покрытие каркаса: термореактивная порошковая краска черного цвета",
+        "<strong>Материал</strong> облицовки спинки: сетка (TW), ткань (Moderno)",
+        "<strong>Подголовник</strong> состоит из пенополиуретанового вкладыша (жесткость - 25, плотность - 18 кг/м<sup>3</sup>) и облицовочного материала (ткань (Moderno), экокожа (S,R))",
+        "<strong>Сиденье</strong> состоит из фанерного основания, мягкого элемента (пенополиуретан, жесткость - 40, плотность - 22 кг/м<sup>3</sup>) и облицовки",
+        "<strong>Материал</strong> облицовки сиденья: ткань-сетка (Е), экокожа (S,R)",
+        "<strong>Подлокотники</strong> состоят из металлического каркаса, накладок и заглушек. Каркас подлокотника сварной металлический с защитно-декоративным покрытием. Изготовлен из стального прутка Ф8 мм и из стальной трубы круглого сечения Ф18х1,1 мм. Покрытие каркаса подлокотников: термореактивная порошковая краска черного цвета",
+        "<strong>Материал</strong> облицовки подголовника и подлокотников: ткань (Moderno), экокожа (S,R)",
+        "<strong>Механизм качания</strong> «Топ-ган» обеспечивает регулировку высоты сиденья, регулировку силы отклонения спинки под вес пользователя в режиме качания и фиксацию в вертикальном положении",
+        "<strong>Газ-лифт</strong> хром с высотой подъема 100 мм ± 10 мм позволяет плавно регулировать высоту сиденья относительно пола, подпружинивает сиденье и демпфирует нагрузку на позвоночник в момент посадки",
+        "<strong>Пятилучье</strong> «Арктика» пластиковое d=660 мм с 5-тью роликами обеспечивает устойчивость и позволяет креслу легко поворачиваться и перемещаться по любому стандартному покрытию пола",
+        "<strong>Ролики</strong> черные d=50 мм с серым полиуретановым покрытием имеют узкий шток"
+      ]
     }
+  ],
+  "transportation": [
+    {
+      "standard": "ГОСТ 16371-2014",
+      "packaging": {
+        "type": "5-слойный гофрокороб",
+        "size": {
+          "width": "910",
+          "depth": "270",
+          "height": "690"
+        },
+        "box_size": "910х270х690",
+        "transportation": "удобства транспортировки и хранения кресло поставляется в разобранном виде. Каждое кресло упаковано в отдельный 5-слойный гофрокороб размером"
+      }
+    }
+  ],
+  "dimensions": [
+    {
+      "brutto": "5,53",
+      "netto": "4,60",
+      "volume": "0,03"
+    }
+  ],
+  "guarantee": [
+    {
+      "period": "12",
+      "max_load": "150",
+      "recommended_load": "120"
+    }
+  ],
+  "images": [
+    {
+      "vid_main": "img/armchair_rukovoditel/solo ch-601 pl_01.png",
+      "chair_view": "img/armchair_rukovoditel/solo ch-601 pl_02.png",
+      "dimensions": "img/armchair_rukovoditel/dimensions/solo ch-601 pl_01.png",
+      "box": "img/box_UTFC.png",
+      "additional": []
+    }
+  ],
+  "dimensions_details": [
+    {
+      "chair_height": {
+        "min": "1200",
+        "max": "1300"
+      },
+      "headrest_height": {},
+      "seat_to_floor_height": {
+        "min": "460",
+        "max": "560"
+      },
+      "seat_to_floor_height_upper": {
+        "min": "380",
+        "max": "480"
+      },
+      "armrest_height_from_floor": {
+        "min": "270"
+      },
+      "armrest_height_from_seat": {
+        "min": "200"
+      },
+      "armrest_width_support": {
+        "max": "60"
+      },
+      "armrest_length_support": {
+        "max": "340"
+      },
+      "chair_depth": {
+        "min": "630"
+      },
+      "seat_depth": {
+        "min": "500"
+      },
+      "seat_depth_km": {
+        "max": "510"
+      },
+      "backrest_height": {
+        "max": "750"
+      },
+      "backrest_to_seat_height": {},
+      "backrest_height_external": {
+        "max": "840"
+      },
+      "seat_width_with_armrests": {
+        "min": "670"
+      },
+      "seat_width": {
+        "max": "550"
+      },
+      "backrest_width_narrow": {
+        "max": "440"
+      },
+      "backrest_width_wide": {
+        "max": "500"
+      },
+      "diameter_cross": {
+        "max": "660"
+      },
+      "runners_width": {},
+      "runners_depth": {},
+      "recommended_load": "120",
+      "max_load": "150",
+      "skeleton": "немонолитный",
+      "netto": "11",
+      "brutto": "13",
+      "package_width": "910",
+      "package_depth": "270",
+      "package_height": "690",
+      "volume": "0"
+    }
+  ],
+  "skeleton": "немонолитный",
+  "minpromtorg": "",
+  "addition": "",
+  "title": "Кресло СН-602 Соло Макс пластик SoloBL Ср производства компании UTFC",
+  "base_name": "Кресло СН-602 Соло Макс пластик SoloBL Ср",
+  "article_number": "КК-01030",
+  "full_describe": "Кресло повышенного комфорта с высокой эргономичной воздухопроницаемой спинкой, широким сиденьем и мягким большим подголовником подходит как сотрудникам, так и руководителям. Стильное пластиковое пятилучье с узкими лучами в основании кресла. Эта модель прекрасно дополнит интерьер открытого офиса или домашнего кабинета. Максимальная нагрузка 150 кг.",
+  "Link_arm": "https://utfc.ru/catalog/boss_chairs/ch602_solo_max_pl/?offers=13105",
+  "Основание": "Пятилучье Арктика пластиковое с узкими лучами, d=660 мм",
+  "Подлокотники": "Подлокотники крашеные с мягкими накладками",
+  "Газлифт": "",
+  "Механизм": "Однопозиционный механизм качания Топ-Ган регулирует высоту сиденья, обеспечивает режим свободного качания и фиксацию каркаса в рабочем положении.",
+  "Особенности": "",
+  "Ролики": "Пластиковые ролики с полиуретановым покрытием, открытый чехол, d колеса 50 мм, d штока 11 мм. Стандарт BIFMA 5,1 (США).",
+  "finish_type": [
+    "Комбинированный S/TW",
+    "-"
+  ],
+  "color": [
+    "Комбинированный S-0422/TW-72"
+  ],
+  "variant_name": [
+    "Кресло СН-602 Соло Макс пластик SoloBL Ср (Комбинированный S/TW, Комбинированный S-0422/TW-72)",
+    "Кресло СН-602 Соло Макс пластик SoloBL Ср (-, Комбинированный S-0422/TW-72)",
+    "Кресло СН-602 Соло Макс пластик SoloBL Ср (Комбинированный S/TW, Комбинированный S-0422/TW-72, Комбинированный S/Е, Комбинированный S-0422/Е72-к)",
+    "Кресло СН-602 Соло Макс пластик SoloBL Ср (Комбинированный S/TW, Комбинированный S-0422/TW-72, -, Комбинированный S-0422/Е72-к)",
+    "Кресло СН-602 Соло Макс пластик SoloBL Ср (-, Комбинированный S-0422/TW-72, Комбинированный S/Е, Комбинированный S-0422/Е72-к)",
+    "Кресло СН-602 Соло Макс пластик SoloBL Ср (-, Комбинированный S-0422/TW-72, -, Комбинированный S-0422/Е72-к)"
+  ],
+  "finish_type_seat": [
+    "Комбинированный S/Е",
+    "-"
+  ],
+  "color_seat": [
+    "Комбинированный S-0422/Е72-к"
+  ],
+  "parent": {
+    "IE_XML_ID": "13376",
+    "IE_NAME": "СН-602 Соло Макс Комби пластик SoloBL Ср",
+    "IE_ACTIVE": "Y",
+    "IE_ACTIVE_FROM": "",
+    "IE_ACTIVE_TO": "",
+    "IE_SORT": "500",
+    "IE_PREVIEW_PICTURE": "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/bdb/bdb288f43587e4f87b2ddf56b952e6b4/2e50d0e5976463285df15165766d0689.png",
+    "IE_PREVIEW_TEXT": "Кресло повышенного комфорта с высокой эргономичной воздухопроницаемой спинкой и комбинированным широким сиденьем подходит как сотрудникам, так и руководителям. Стильное и прочное пластиковое пятилучье в основании кресла. Эта модель прекрасно дополнит интерьер открытого офиса или домашнего кабинета. Максимальная нагрузка 150 кг.",
+    "IE_PREVIEW_TEXT_TYPE": "text",
+    "IE_DETAIL_PICTURE": "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/f5e/f5e9b39af962840bc89d094c6ef8233d/2f87f5622ee92e6bbf2261246431758c.png",
+    "IE_DETAIL_TEXT": "Кресло повышенного комфорта с высокой эргономичной воздухопроницаемой спинкой и комбинированным широким сиденьем подходит как сотрудникам, так и руководителям.  Стильное и прочное пластиковое пятилучье в основании кресла. Эта модель прекрасно дополнит интерьер открытого офиса или домашнего кабинета. Максимальная нагрузка 150 кг.",
+    "IE_DETAIL_TEXT_TYPE": "text",
+    "IE_CODE": "ch602_solo_max_combi_pl",
+    "IE_TAGS": "",
+    "IE_ID": "13376",
+    "IP_PROP2": "670",
+    "IP_PROP3": "1200-1300",
+    "IP_PROP4": "630",
+    "IP_PROP6": "",
+    "IP_PROP19": "150",
+    "IP_PROP25": "Немонолитный",
+    "IP_PROP18": "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/aa6/aa6ae473ff42c5b65e2fa575d23ad5c8/934adb762da0718d1651f94f79ce284a.png",
+    "IP_PROP31": "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/f5c/f5c8e313e666138bcda5e2c3458cf3af/3717a5f2f44316232d982556ca22314f.png",
+    "IP_PROP5": "910",
+    "IP_PROP26": "690",
+    "IP_PROP27": "270",
+    "IP_PROP28": "12,8",
+    "IP_PROP29": "Гофрокартон",
+    "IP_PROP30": "0,17",
+    "IP_PROP7": "",
+    "IP_PROP8": "",
+    "IP_PROP9": "ch602_solo_max_combi_pl",
+    "IP_PROP10": "",
+    "IP_PROP11": "",
+    "IP_PROP12": "",
+    "IP_PROP13": "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/4df/4df06ea2ac263c73abbf3f2a81a4d3fd/5e169cdfa3248f8dd5dcbe4e53c88768.png",
+    "IP_PROP14": "",
+    "IP_PROP15": "",
+    "IP_PROP16": "",
+    "IP_PROP17": "",
+    "IP_PROP22": "",
+    "IP_PROP41": "pch_660_arkt_pl",
+    "IP_PROP42": "pl_solo_bl",
+    "IP_PROP43": "gl_230",
+    "IP_PROP44": "m_tg",
+    "IP_PROP45": "",
+    "IP_PROP46": "r_60_o_pu",
+    "IP_PROP47": "",
+    "IP_PROP48": "5060793906ac14749248e1f5b64e4f39",
+    "IP_PROP49": "",
+    "IP_PROP50": "",
+    "IP_PROP51": "",
+    "IP_PROP52": "",
+    "IP_PROP54": "&nbsp;",
+    "IP_PROP59": "Нет",
+    "IP_PROP60": "",
+    "IC_ID0": "18",
+    "IC_XML_ID0": "",
+    "IC_GROUP0": "Кресла для руководителя",
+    "IC_ACTIVE0": "Y",
+    "IC_SORT0": "40",
+    "IC_DESCRIPTION0": "",
+    "IC_DESCRIPTION_TYPE0": "text",
+    "IC_CODE0": "boss_chairs",
+    "IC_PICTURE0": "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/a0b/a0b55a5b53a8bb142b4f32200f79ac62.png",
+    "IC_DETAIL_PICTURE0": "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/8da/8da00c4d975d7fd70a1438b5a1b523fe.png",
+    "IC_ID1": "",
+    "IC_XML_ID1": "",
+    "IC_GROUP1": "",
+    "IC_ACTIVE1": "",
+    "IC_SORT1": "",
+    "IC_DESCRIPTION1": "",
+    "IC_DESCRIPTION_TYPE1": "",
+    "IC_CODE1": "",
+    "IC_PICTURE1": "",
+    "IC_DETAIL_PICTURE1": "",
+    "IC_ID2": "",
+    "IC_XML_ID2": "",
+    "IC_GROUP2": "",
+    "IC_ACTIVE2": "",
+    "IC_SORT2": "",
+    "IC_DESCRIPTION2": "",
+    "IC_DESCRIPTION_TYPE2": "",
+    "IC_CODE2": "",
+    "IC_PICTURE2": "",
+    "IC_DETAIL_PICTURE2": "",
+    "CP_QUANTITY": "0",
+    "CP_QUANTITY_TRACE": "N",
+    "CP_CAN_BUY_ZERO": "Y",
+    "CP_WEIGHT": "0",
+    "CP_WIDTH": "",
+    "CP_HEIGHT": "",
+    "CP_LENGTH": "",
+    "CP_PURCHASING_PRICE": "",
+    "CP_PURCHASING_CURRENCY": "",
+    "CP_PRICE_TYPE": "S",
+    "CP_RECUR_SCHEME_LENGTH": "",
+    "CP_RECUR_SCHEME_TYPE": "D",
+    "CP_TRIAL_PRICE_ID": "",
+    "CP_WITHOUT_ORDER": "N",
+    "CP_VAT_ID": "",
+    "CP_VAT_INCLUDED": "N",
+    "CP_MEASURE": "",
+    "STORE_AMOUNT_2": "",
+    "STORE_AMOUNT_3": "",
+    "CV_QUANTITY_FROM": "",
+    "CV_QUANTITY_TO": "",
+    "CV_PRICE_1": "8693.00",
+    "CV_CURRENCY_1": "RUB",
+    "CV_PRICE_2": "8954.00",
+    "CV_CURRENCY_2": "RUB",
+    "CV_PRICE_3": "8693.00",
+    "CV_CURRENCY_3": "RUB",
+    "STORE_AMOUNT_4": "",
+    "STORE_AMOUNT_5": "",
+    "STORE_AMOUNT_6": ""
+  },
+  "children": [
+    {
+      "IE_XML_ID": "13105",
+      "IE_NAME": "Кресло СН-602 Соло Макс Комби пластик SoloBL Ср S-0422/TW-72/Е72-к/S-0422 (темно-серый/серый)",
+      "IE_ACTIVE": "Y",
+      "IE_ACTIVE_FROM": "",
+      "IE_ACTIVE_TO": "",
+      "IE_SORT": "500",
+      "IE_PREVIEW_PICTURE": "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/875/8752587c46d91dae2a4ca5304cc1506c/8d02a5d1ffd63e63ca580790499acaa4.png",
+      "IE_PREVIEW_TEXT": "",
+      "IE_PREVIEW_TEXT_TYPE": "text",
+      "IE_DETAIL_PICTURE": "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/aea/aea0a62e8613fa6c5cdf6f3de9129ad4/8f37d8a996d60cf445c3637a2de3d17f.png",
+      "IE_DETAIL_TEXT": "",
+      "IE_DETAIL_TEXT_TYPE": "text",
+      "IE_CODE": "",
+      "IE_TAGS": "",
+      "IE_ID": "13105",
+      "IP_PROP34": "13376",
+      "IP_PROP35": "КК-01030",
+      "IP_PROP36": [
+        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/d72/d72ff88079e46ee9fea665cabbf22a20/417e515034c4927ab8f747e6d19b366f.png",
+        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/d9d/d9dbc109b2590063ceca5839a67007f2/3aeb017473f3c4187b5264816f73e176.png",
+        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/f83/f83c14567d2b1c0f11db7ed3dae88850/a860f9f45d7b9fad5839af911b4a9dac.png",
+        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/9da/9da9206ecbf94c4d65db7a1481ac945f/23959575522fd3cc6117caf9b01efc32.png",
+        "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/d14/d14a9a3bde5f10e8366b0f6677deff7a/f34405e187ac71d7e4126407dc502c24.png"
+      ],
+      "IP_PROP37": "m_32",
+      "IP_PROP38": "s0422_tw72",
+      "IP_PROP39": "m_35",
+      "IP_PROP40": "s0422_e72k",
+      "IP_PROP55": "&nbsp;",
+      "IP_PROP61": "",
+      "IC_ID0": "",
+      "IC_XML_ID0": "",
+      "IC_GROUP0": "",
+      "IC_ACTIVE0": "",
+      "IC_SORT0": "",
+      "IC_DESCRIPTION0": "",
+      "IP_PROP122": "808080",
+      "IC_DESCRIPTION_TYPE0": "",
+      "IC_CODE0": "",
+      "IC_PICTURE0": "",
+      "IC_DETAIL_PICTURE0": "",
+      "IC_ID1": "",
+      "IC_XML_ID1": "",
+      "IC_GROUP1": "",
+      "IC_ACTIVE1": "",
+      "IC_SORT1": "",
+      "IC_DESCRIPTION1": "",
+      "IC_DESCRIPTION_TYPE1": "",
+      "IC_CODE1": "",
+      "IC_PICTURE1": "",
+      "IC_DETAIL_PICTURE1": "",
+      "IC_ID2": "",
+      "IC_XML_ID2": "",
+      "IC_GROUP2": "",
+      "IC_ACTIVE2": "",
+      "IC_SORT2": "",
+      "IC_DESCRIPTION2": "",
+      "IC_DESCRIPTION_TYPE2": "",
+      "IC_CODE2": "",
+      "IC_PICTURE2": "",
+      "IC_DETAIL_PICTURE2": "",
+      "CP_QUANTITY": "0",
+      "CP_QUANTITY_TRACE": "D",
+      "CP_CAN_BUY_ZERO": "D",
+      "CP_WEIGHT": "0",
+      "CP_WIDTH": "",
+      "CP_HEIGHT": "",
+      "CP_LENGTH": "",
+      "CP_PURCHASING_PRICE": "",
+      "CP_PURCHASING_CURRENCY": "",
+      "CP_PRICE_TYPE": "S",
+      "CP_RECUR_SCHEME_LENGTH": "",
+      "CP_RECUR_SCHEME_TYPE": "D",
+      "CP_TRIAL_PRICE_ID": "",
+      "CP_WITHOUT_ORDER": "N",
+      "CP_VAT_ID": "",
+      "CP_VAT_INCLUDED": "N",
+      "CP_MEASURE": "5",
+      "STORE_AMOUNT_2": "0",
+      "STORE_AMOUNT_3": "0",
+      "CV_QUANTITY_FROM": "",
+      "CV_QUANTITY_TO": "",
+      "CV_PRICE_1": "8693.00",
+      "CV_CURRENCY_1": "RUB",
+      "CV_PRICE_2": "8954.00",
+      "CV_CURRENCY_2": "RUB",
+      "STORE_AMOUNT_4": "0",
+      "CV_PRICE_3": "8693.00",
+      "STORE_AMOUNT_5": "0",
+      "CV_CURRENCY_3": "RUB",
+      "STORE_AMOUNT_6": "0"
+    }
+  ],
+  "madeinrf": "Сделано РФ",
+  "lost": [
+    {
+      "clean": false,
+      "limit": false,
+      "del": true
+    }
+  ],
+  "additional_info": {
+    "package_dimensions": {
+      "width": "13",
+      "depth": "910",
+      "height": "270"
+    },
+    "netto": "11",
+    "brutto": "13",
+    "volume": "0"
+  }
 }

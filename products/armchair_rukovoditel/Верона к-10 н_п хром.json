@@ -115,7 +115,27 @@
                 "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/uf/42e/42e6c4481d6e1825f4a2de223be6e640.jpg",
                 "https://utfc.ru/local/templates/utfc/img/palette.png",
                 "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/resize_cache/27729/09667609493257e3dc4f183374d2fcb3/iblock/4d4/4d41990eb99704cb4917b701ae204ad5/3a325688235932695c2d5ab0314af8c2.png",
-                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/resize_cache/27742/09667609493257e3dc4f183374d2fcb3/iblock/959/959dd4bf748fc6175817aec58673daf9/da8cb3bce3fcf393969db44d9eb766b8.png"
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/resize_cache/27742/09667609493257e3dc4f183374d2fcb3/iblock/959/959dd4bf748fc6175817aec58673daf9/da8cb3bce3fcf393969db44d9eb766b8.png",
+                "https://cdn.utfc-store.ru/iblock/069/06935e75651ef9f20d94a93ab9f6eff5.png",
+                "https://cdn.utfc-store.ru/iblock/3c5/3c5cb5322622a84e947d9675a65702d5.png",
+                "https://cdn.utfc-store.ru/iblock/896/340qwc0fq402sus3c1ffksyes8botb6o.png",
+                "https://cdn.utfc-store.ru/iblock/2a6/et32xujxkuklrx20yzazrcrav7rztk8e.png",
+                "https://cdn.utfc-store.ru/iblock/f8b/qxew6nsdn7phfz6bh57ic3a42pa39zbh.png",
+                "https://cdn.utfc-store.ru/iblock/f71/f716b49c202ecda8e2a8f4d69c898e15/62212fb81e5d25578c7f38140d3da1dc.png",
+                "https://cdn.utfc-store.ru/resize_cache/27742/09667609493257e3dc4f183374d2fcb3/iblock/959/959dd4bf748fc6175817aec58673daf9/da8cb3bce3fcf393969db44d9eb766b8.png",
+                "https://cdn.utfc-store.ru/uf/df9/1971ilsxvotcmr5wlcu1aqcpy7ck2kt7.webp",
+                "https://cdn.utfc-store.ru/iblock/9eb/xibtegety1jo9wvrk7ykw3i2pjti7hck.png",
+                "https://cdn.utfc-store.ru/iblock/814/814befedade04b8b4fe7d8ae4c0925fe.png",
+                "https://cdn.utfc-store.ru/uf/c02/c0234fe65f3fd3518f0179cfb6fd89bd.png",
+                "https://cdn.utfc-store.ru/uf/017/0170d0f775c6624be53668116b9d9805.jpg",
+                "https://cdn.utfc-store.ru/uf/8d0/8d0fc428274bc3dd435ab3736b873e89.jpg",
+                "https://cdn.utfc-store.ru/uf/966/f04p7jf5mzfr1iww28fnvz0fu9kcxiuw.png",
+                "https://cdn.utfc-store.ru/iblock/df9/df9f916836e5f98f08155ebd9c4f7037.png",
+                "https://cdn.utfc-store.ru/iblock/a94/a94b136193f46a050fbea5f6c64adf01.png",
+                "https://cdn.utfc-store.ru/uf/8d9/8d92fbd325f9a2e2167242de10bc4bad.png",
+                "https://cdn.utfc-store.ru/resize_cache/27729/09667609493257e3dc4f183374d2fcb3/iblock/4d4/4d41990eb99704cb4917b701ae204ad5/3a325688235932695c2d5ab0314af8c2.png",
+                "https://cdn.utfc-store.ru/uf/42e/42e6c4481d6e1825f4a2de223be6e640.jpg",
+                "https://cdn.utfc-store.ru/iblock/261/3oe78xol2ycy0zc3vhtnk9i7yrd8o1hh.png"
             ]
         }
     ],
@@ -224,7 +244,7 @@
         }
     ],
     "skeleton": "монолитный",
-    "minpromtorg": "+",
+    "minpromtorg": "Минпромторг",
     "addition": "",
     "parent": {
         "IE_XML_ID": "p_5081",
@@ -708,7 +728,8 @@
     "finish_type": [
         "Натуральная кожа К",
         "Экокожа Santorini",
-        "-"
+        "-",
+        "Ткань Moderno"
     ],
     "color": [
         "Экокожа Santorini S0401 (черный)",
@@ -733,7 +754,10 @@
         "Кресло К-10 Верона Н/п хром (Экокожа Santorini, Экокожа Santorini S0428 (бежевый),, )",
         "Кресло К-10 Верона Н/п хром (-, Экокожа Santorini S0401 (черный),, )",
         "Кресло К-10 Верона Н/п хром (-, Экокожа Santorini S0422 (темно-серый),, )",
-        "Кресло К-10 Верона Н/п хром (-, Экокожа Santorini S0428 (бежевый),, )"
+        "Кресло К-10 Верона Н/п хром (-, Экокожа Santorini S0428 (бежевый),, )",
+        "Кресло К-10 Верона Н/п хром (Ткань Moderno, Экокожа Santorini S0401 (черный),, )",
+        "Кресло К-10 Верона Н/п хром (Ткань Moderno, Экокожа Santorini S0422 (темно-серый),, )",
+        "Кресло К-10 Верона Н/п хром (Ткань Moderno, Экокожа Santorini S0428 (бежевый),, )"
     ],
     "finish_type_seat": [
         ""

@@ -130,7 +130,22 @@
                 "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/d4c/d4cedfce22b1e44b200e945fbda3d3ab.png",
                 "https://utfc.ru/local/templates/utfc/img/palette.png",
                 "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/resize_cache/27729/09667609493257e3dc4f183374d2fcb3/iblock/4d4/4d41990eb99704cb4917b701ae204ad5/3a325688235932695c2d5ab0314af8c2.png",
-                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/resize_cache/27742/09667609493257e3dc4f183374d2fcb3/iblock/959/959dd4bf748fc6175817aec58673daf9/da8cb3bce3fcf393969db44d9eb766b8.png"
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/resize_cache/27742/09667609493257e3dc4f183374d2fcb3/iblock/959/959dd4bf748fc6175817aec58673daf9/da8cb3bce3fcf393969db44d9eb766b8.png",
+                "https://cdn.utfc-store.ru/uf/a11/kz1o18iqwa2pghqvyesk8woze8bjz250.png",
+                "https://cdn.utfc-store.ru/iblock/d4c/d4cedfce22b1e44b200e945fbda3d3ab.png",
+                "https://cdn.utfc-store.ru/iblock/f9a/2nphc6481zkusfit7s0z4aoy0jkwp8t6.png",
+                "https://cdn.utfc-store.ru/iblock/d64/m5nhh2oao4aaur9iv7wcw02phv2krcez.png",
+                "https://cdn.utfc-store.ru/resize_cache/27742/09667609493257e3dc4f183374d2fcb3/iblock/959/959dd4bf748fc6175817aec58673daf9/da8cb3bce3fcf393969db44d9eb766b8.png",
+                "https://cdn.utfc-store.ru/iblock/02c/ce5lrii9dhhezgazuhih4urohhfskgki.png",
+                "https://cdn.utfc-store.ru/uf/766/766c72d058e3535b67624ec955aaa19d.png",
+                "https://cdn.utfc-store.ru/iblock/baf/vefibv5lt9axfmeacvyvg73qtnnzfzde.png",
+                "https://cdn.utfc-store.ru/iblock/66f/lmg0evm325ajoofy0lk5mu0pkykn1z6s.png",
+                "https://cdn.utfc-store.ru/uf/3a5/3a5d425d6688006b1768d11061e38317.jpg",
+                "https://cdn.utfc-store.ru/iblock/cb6/dg0q4u612m8a8iktasl43mm0oh4vc4ha.png",
+                "https://cdn.utfc-store.ru/iblock/856/qn63tqxc8jzly7slabdr16urnogy7i4k.png",
+                "https://cdn.utfc-store.ru/uf/94b/291cco6tzr1fr12bcx6ytknw6pm4plyo.png",
+                "https://cdn.utfc-store.ru/iblock/5b4/2ysdpy3bfwz7dhx32zdtrru0k6es2lo0.png",
+                "https://cdn.utfc-store.ru/resize_cache/27729/09667609493257e3dc4f183374d2fcb3/iblock/4d4/4d41990eb99704cb4917b701ae204ad5/3a325688235932695c2d5ab0314af8c2.png"
             ]
         }
     ],
@@ -233,7 +248,7 @@
         }
     ],
     "skeleton": "складной",
-    "minpromtorg": "+",
+    "minpromtorg": "Минпромторг",
     "addition": "",
     "title": "Стул складной Компакт 4Н BL для универсального использования производства компании UTFC",
     "base_name": "Стул складной Компакт 4Н BL",

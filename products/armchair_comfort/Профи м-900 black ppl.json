@@ -117,7 +117,22 @@
                 "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/8bc/8bcaed7c45d1c7ed69b125d943ac60ef.png",
                 "https://utfc.ru/local/templates/utfc/img/palette.png",
                 "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/resize_cache/27729/09667609493257e3dc4f183374d2fcb3/iblock/4d4/4d41990eb99704cb4917b701ae204ad5/3a325688235932695c2d5ab0314af8c2.png",
-                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/resize_cache/27742/09667609493257e3dc4f183374d2fcb3/iblock/959/959dd4bf748fc6175817aec58673daf9/da8cb3bce3fcf393969db44d9eb766b8.png"
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/resize_cache/27742/09667609493257e3dc4f183374d2fcb3/iblock/959/959dd4bf748fc6175817aec58673daf9/da8cb3bce3fcf393969db44d9eb766b8.png",
+                "https://cdn.utfc-store.ru/uf/da6/da637d52b150b58ad4779880584c606a.png",
+                "https://cdn.utfc-store.ru/iblock/915/915a037c3b5e993f1dce317bdb407762.png",
+                "https://cdn.utfc-store.ru/iblock/b55/b55912737a6d2bc1b37c28cbc84cda0b.png",
+                "https://cdn.utfc-store.ru/iblock/84a/84a1d23e09544e0aadf47d292659eeef.png",
+                "https://cdn.utfc-store.ru/resize_cache/27742/09667609493257e3dc4f183374d2fcb3/iblock/959/959dd4bf748fc6175817aec58673daf9/da8cb3bce3fcf393969db44d9eb766b8.png",
+                "https://cdn.utfc-store.ru/uf/412/412effd463286cca36b4bbcf38aa2997.png",
+                "https://cdn.utfc-store.ru/iblock/8bc/8bcaed7c45d1c7ed69b125d943ac60ef.png",
+                "https://cdn.utfc-store.ru/iblock/a88/y3l83x3hdghiykphqbll3qnyxi6lw3ue.png",
+                "https://cdn.utfc-store.ru/iblock/fc5/fc5947cca80bf07697a87dbeb1bb5f73.png",
+                "https://cdn.utfc-store.ru/uf/3db/3dbacdf84adbda88edd95c591453c527.png",
+                "https://cdn.utfc-store.ru/uf/cc5/cc5bbdde92046768f4cf03fc43494d4e.png",
+                "https://cdn.utfc-store.ru/iblock/0ad/rdrsul8z1gannau2lk16e3z58dkyqosx.png",
+                "https://cdn.utfc-store.ru/uf/6e0/6e0113b0abd9fee5d2f3828e3468628d.png",
+                "https://cdn.utfc-store.ru/iblock/775/tplsrfn48o85zxqm9r7joni71y0ebeox.png",
+                "https://cdn.utfc-store.ru/resize_cache/27729/09667609493257e3dc4f183374d2fcb3/iblock/4d4/4d41990eb99704cb4917b701ae204ad5/3a325688235932695c2d5ab0314af8c2.png"
             ]
         }
     ],
@@ -235,7 +250,7 @@
         }
     ],
     "skeleton": "немонолитный",
-    "minpromtorg": "",
+    "minpromtorg": "Минпромторг",
     "addition": "",
     "parent": {
         "IE_XML_ID": "p_5004",

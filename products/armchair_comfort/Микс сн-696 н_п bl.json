@@ -115,7 +115,23 @@
                 "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/resize_cache/27729/09667609493257e3dc4f183374d2fcb3/iblock/4d4/4d41990eb99704cb4917b701ae204ad5/3a325688235932695c2d5ab0314af8c2.png",
                 "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/uf/12e/12eac4cbc8e29ff91e60f48774f510e1.jpg",
                 "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/uf/754/754a02bbebb313b7ef2558e795a28ba6.jpg",
-                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/resize_cache/27742/09667609493257e3dc4f183374d2fcb3/iblock/959/959dd4bf748fc6175817aec58673daf9/da8cb3bce3fcf393969db44d9eb766b8.png"
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/resize_cache/27742/09667609493257e3dc4f183374d2fcb3/iblock/959/959dd4bf748fc6175817aec58673daf9/da8cb3bce3fcf393969db44d9eb766b8.png",
+                "https://cdn.utfc-store.ru/iblock/d50/z1knolvid0iwb3a2b09rg650691s0kl7.png",
+                "https://cdn.utfc-store.ru/uf/4a1/4a1b72db96a3a32a24b6d9d416e888f2.png",
+                "https://cdn.utfc-store.ru/iblock/1af/zn05ky77lvdniro67tm2mp9rypk8vhr0.png",
+                "https://cdn.utfc-store.ru/resize_cache/27742/09667609493257e3dc4f183374d2fcb3/iblock/959/959dd4bf748fc6175817aec58673daf9/da8cb3bce3fcf393969db44d9eb766b8.png",
+                "https://cdn.utfc-store.ru/uf/9b9/c40gohl039rnsxbkj6ycnq94fqxq1bz4.webp",
+                "https://cdn.utfc-store.ru/uf/754/754a02bbebb313b7ef2558e795a28ba6.jpg",
+                "https://cdn.utfc-store.ru/iblock/9d9/mzhtb5w7xw0x4ow9lty37ianbwm28qgj.png",
+                "https://cdn.utfc-store.ru/iblock/476/l6ltof8q4t59ojaoeekmsvw22elwbmth.png",
+                "https://cdn.utfc-store.ru/uf/5b2/7t0meovm5ej1vo8oxwoook7ng0him9gw.png",
+                "https://cdn.utfc-store.ru/uf/12e/12eac4cbc8e29ff91e60f48774f510e1.jpg",
+                "https://cdn.utfc-store.ru/iblock/ad0/a1vux4n1ho2p5yq3r07p99afj87qhphj.png",
+                "https://cdn.utfc-store.ru/uf/164/1642cc9560c18c50c8c334f8afa14f6b.jpg",
+                "https://cdn.utfc-store.ru/iblock/775/tplsrfn48o85zxqm9r7joni71y0ebeox.png",
+                "https://cdn.utfc-store.ru/iblock/b34/szpfs7ph1v7nttqcsuaftc7fcyvvtf4r.png",
+                "https://cdn.utfc-store.ru/iblock/d99/w5a024xhbbmo93t2881gx96vac3cawdl.png",
+                "https://cdn.utfc-store.ru/resize_cache/27729/09667609493257e3dc4f183374d2fcb3/iblock/4d4/4d41990eb99704cb4917b701ae204ad5/3a325688235932695c2d5ab0314af8c2.png"
             ]
         }
     ],
@@ -221,7 +237,7 @@
         }
     ],
     "skeleton": "немонолитный",
-    "minpromtorg": "+",
+    "minpromtorg": "Минпромторг",
     "addition": "",
     "parent": {
         "IE_XML_ID": "a_1062",
@@ -540,7 +556,8 @@
         "Комбинированный Z/TW"
     ],
     "color": [
-        "Сетка TW-72 (серый)"
+        "Сетка TW-72 (серый)",
+        "Сетка TW-01 (черный)"
     ],
     "variant_name": [
         "Кресло СН-696 Микс Н/п Нео BL (Сетка TW, Сетка TW-72 (серый))",
@@ -553,7 +570,13 @@
         "Кресло СН-696 Микс Н/п Нео BL (Комбинированный Z/TW, Сетка TW-72 (серый), Кожзаменитель Z, Ткань Сетка Е72-к (серый))",
         "Кресло СН-696 Микс Н/п Нео BL (Комбинированный Z/TW, Сетка TW-72 (серый), Ткань Сетка Е, Ткань Сетка Е72-к (серый))",
         "Кресло СН-696 Микс Н/п Нео BL (Комбинированный Z/TW, Сетка TW-72 (серый), -, Ткань Сетка Е72-к (серый))",
-        "Кресло СН-696 Микс Н/п Нео BL (-, Сетка TW-72 (серый), Кожзаменитель Z, Ткань Сетка Е72-к (серый))"
+        "Кресло СН-696 Микс Н/п Нео BL (-, Сетка TW-72 (серый), Кожзаменитель Z, Ткань Сетка Е72-к (серый))",
+        "Кресло СН-696 Микс Н/п Нео BL (Сетка TW, Сетка TW-01 (черный), Кожзаменитель Z, Ткань Сетка Е72-к (серый))",
+        "Кресло СН-696 Микс Н/п Нео BL (Сетка TW, Сетка TW-01 (черный), Ткань Сетка Е, Ткань Сетка Е72-к (серый))",
+        "Кресло СН-696 Микс Н/п Нео BL (Сетка TW, Сетка TW-01 (черный), -, Ткань Сетка Е72-к (серый))",
+        "Кресло СН-696 Микс Н/п Нео BL (-, Сетка TW-01 (черный), Кожзаменитель Z, Ткань Сетка Е72-к (серый))",
+        "Кресло СН-696 Микс Н/п Нео BL (-, Сетка TW-01 (черный), Ткань Сетка Е, Ткань Сетка Е72-к (серый))",
+        "Кресло СН-696 Микс Н/п Нео BL (-, Сетка TW-01 (черный), -, Ткань Сетка Е72-к (серый))"
     ],
     "finish_type_seat": [
         "Ткань Сетка Е",

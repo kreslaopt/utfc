@@ -119,7 +119,31 @@
                 "https://utfc.ru/local/templates/utfc/img/palette.png",
                 "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/resize_cache/27729/09667609493257e3dc4f183374d2fcb3/iblock/4d4/4d41990eb99704cb4917b701ae204ad5/3a325688235932695c2d5ab0314af8c2.png",
                 "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/uf/966/f04p7jf5mzfr1iww28fnvz0fu9kcxiuw.png",
-                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/resize_cache/27742/09667609493257e3dc4f183374d2fcb3/iblock/959/959dd4bf748fc6175817aec58673daf9/da8cb3bce3fcf393969db44d9eb766b8.png"
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/resize_cache/27742/09667609493257e3dc4f183374d2fcb3/iblock/959/959dd4bf748fc6175817aec58673daf9/da8cb3bce3fcf393969db44d9eb766b8.png",
+                "https://cdn.utfc-store.ru/uf/4b2/yoqw8h3xmraol4nykhl9mzhkusrtja3a.webp",
+                "https://cdn.utfc-store.ru/iblock/1de/ujld1bbjuwwvmrdw3m3c5jngbshs3tat.png",
+                "https://cdn.utfc-store.ru/iblock/b9b/4dhn494apv5csmxp7kf04g10l6v4helo.png",
+                "https://cdn.utfc-store.ru/iblock/2a6/et32xujxkuklrx20yzazrcrav7rztk8e.png",
+                "https://cdn.utfc-store.ru/iblock/ba6/mv2qxunhf0uh6ggg6c79jg7snghl3k2z.png",
+                "https://cdn.utfc-store.ru/iblock/66c/1akz0xeqpuoy1dnk7z3qqrpd6bm3pyd5.png",
+                "https://cdn.utfc-store.ru/iblock/f8b/qxew6nsdn7phfz6bh57ic3a42pa39zbh.png",
+                "https://cdn.utfc-store.ru/iblock/f71/f716b49c202ecda8e2a8f4d69c898e15/62212fb81e5d25578c7f38140d3da1dc.png",
+                "https://cdn.utfc-store.ru/resize_cache/27742/09667609493257e3dc4f183374d2fcb3/iblock/959/959dd4bf748fc6175817aec58673daf9/da8cb3bce3fcf393969db44d9eb766b8.png",
+                "https://cdn.utfc-store.ru/uf/9a7/9a75e057bc09495b4ea3beb5aec8402b.png",
+                "https://cdn.utfc-store.ru/iblock/9eb/xibtegety1jo9wvrk7ykw3i2pjti7hck.png",
+                "https://cdn.utfc-store.ru/iblock/8cf/1wel2aj9cjta6j52idn1c7ykmqsqztpq.png",
+                "https://cdn.utfc-store.ru/uf/f95/f9515a0ee80f3570696a7c4698b9879c.png",
+                "https://cdn.utfc-store.ru/iblock/27e/jnvl3n0shm2irm0dafem7v196qjg2fq1.png",
+                "https://cdn.utfc-store.ru/iblock/582/0pf09espzbrqz9raog53tdgch81gdn3l.png",
+                "https://cdn.utfc-store.ru/uf/ccb/ccb62e3bc40a804259f1514d3bc58182.jpg",
+                "https://cdn.utfc-store.ru/uf/3a5/3a5d425d6688006b1768d11061e38317.jpg",
+                "https://cdn.utfc-store.ru/uf/12e/12eac4cbc8e29ff91e60f48774f510e1.jpg",
+                "https://cdn.utfc-store.ru/uf/017/0170d0f775c6624be53668116b9d9805.jpg",
+                "https://cdn.utfc-store.ru/uf/8d0/8d0fc428274bc3dd435ab3736b873e89.jpg",
+                "https://cdn.utfc-store.ru/uf/966/f04p7jf5mzfr1iww28fnvz0fu9kcxiuw.png",
+                "https://cdn.utfc-store.ru/uf/79d/79de729e01a00f3c79268a1bfba110da.jpg",
+                "https://cdn.utfc-store.ru/resize_cache/27729/09667609493257e3dc4f183374d2fcb3/iblock/4d4/4d41990eb99704cb4917b701ae204ad5/3a325688235932695c2d5ab0314af8c2.png",
+                "https://cdn.utfc-store.ru/uf/42e/42e6c4481d6e1825f4a2de223be6e640.jpg"
             ]
         }
     ],
@@ -228,7 +252,7 @@
         }
     ],
     "skeleton": "монолитный",
-    "minpromtorg": "+",
+    "minpromtorg": "Минпромторг",
     "addition": "",
     "parent": {
         "IE_XML_ID": "a_1005",
@@ -1103,7 +1127,8 @@
         "Кожзаменитель Z",
         "Экокожа Santorini",
         "-",
-        "Ткань Moderno"
+        "Ткань Moderno",
+        "Натуральная кожа К"
     ],
     "color": [
         "Экокожа Santorini S0401 (черный)",
@@ -1139,7 +1164,11 @@
         "Кресло Идра Н/п пластик (Ткань Moderno, Экокожа Santorini S0401 (черный),, )",
         "Кресло Идра Н/п пластик (Ткань Moderno, Экокожа Santorini S0422 (темно-серый),, )",
         "Кресло Идра Н/п пластик (Ткань Moderno, Экокожа Santorini S0428 (бежевый),, )",
-        "Кресло Идра Н/п пластик (Ткань Moderno, Экокожа Santorini S0429 (шоколадный),, )"
+        "Кресло Идра Н/п пластик (Ткань Moderno, Экокожа Santorini S0429 (шоколадный),, )",
+        "Кресло Идра Н/п пластик (Натуральная кожа К, Экокожа Santorini S0401 (черный),, )",
+        "Кресло Идра Н/п пластик (Натуральная кожа К, Экокожа Santorini S0422 (темно-серый),, )",
+        "Кресло Идра Н/п пластик (Натуральная кожа К, Экокожа Santorini S0428 (бежевый),, )",
+        "Кресло Идра Н/п пластик (Натуральная кожа К, Экокожа Santorini S0429 (шоколадный),, )"
     ],
     "finish_type_seat": [
         ""

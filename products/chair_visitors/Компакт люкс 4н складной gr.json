@@ -98,7 +98,36 @@
             "chair_view": "img/chair_visitors/kompakt_lux_4h_gr_velutto02_02.png",
             "dimensions": "img/chair_visitors/dimensions/kompakt_lux_4h_gr_velutto02_01.png",
             "box": "img/box_UTFC_4x.png",
-            "additional": []
+            "additional": [
+                "https://cdn.utfc-store.ru/iblock/d4c/d4cedfce22b1e44b200e945fbda3d3ab.png",
+                "https://utfc.ru/local/templates/.default/components/utfc/catalog.element/.default/images/no_photo.png",
+                "https://utfc.ru/upload/resize_cache/iblock/825/400_400_0/825222ae0487adaa00d3d37ee994e01f.png",
+                "https://cdn.utfc-store.ru/resize_cache/27742/09667609493257e3dc4f183374d2fcb3/iblock/959/959dd4bf748fc6175817aec58673daf9/da8cb3bce3fcf393969db44d9eb766b8.png",
+                "https://cdn.utfc-store.ru/resize_cache/27846/f9a783e5b6ef0ba37f754dbaaffb7194/iblock/ebf/ebf5edfa4aa9f9e1c46be532919f12a4/091ddb1a36f30bdec89ad5c00a0ec472.png",
+                "https://utfc.ru/local/templates/utfc/img/icon-2.png",
+                "https://utfc.ru/local/templates/utfc/img/sites/utfc/logo_down_2.png",
+                "https://cdn.utfc-store.ru/resize_cache/27848/f9a783e5b6ef0ba37f754dbaaffb7194/iblock/660/660cbde27175e3cc3aa724c63c78ce49/30af2aa5b9329ab3cedde0a4cec6e16c.png",
+                "https://cdn.utfc-store.ru/iblock/660/660cbde27175e3cc3aa724c63c78ce49/30af2aa5b9329ab3cedde0a4cec6e16c.png",
+                "https://cdn.utfc-store.ru/resize_cache/27844/f9a783e5b6ef0ba37f754dbaaffb7194/iblock/028/02885f36a1b443cbf23697946fe54ef2/7e41588d66276ac9520d91704cf8997b.png",
+                "https://utfc.ru/local/templates/utfc/img/sites/utfc/logo_store_up_2x.png",
+                "https://cdn.utfc-store.ru/iblock/ebf/ebf5edfa4aa9f9e1c46be532919f12a4/091ddb1a36f30bdec89ad5c00a0ec472.png",
+                "https://cdn.utfc-store.ru/iblock/c82/c822993f1fa2439f137d74d11bd3442a/ddc5d945010c219a38b83d8667c1bde5.png",
+                "https://cdn.utfc-store.ru/iblock/ebe/ebee52b01abce79a72d66418413a8368/09aae05ffd075435d1e0edb7d774c055.png",
+                "https://utfc.ru/local/templates/utfc/img/palette.png",
+                "https://cdn.utfc-store.ru/resize_cache/27847/f9a783e5b6ef0ba37f754dbaaffb7194/iblock/44a/44ab6a3e4aba0e5d2e6588b7161a2f3e/c2b6969c8a96c47837e8a9b8eda43451.png",
+                "https://cdn.utfc-store.ru/iblock/44a/44ab6a3e4aba0e5d2e6588b7161a2f3e/c2b6969c8a96c47837e8a9b8eda43451.png",
+                "https://cdn.utfc-store.ru/resize_cache/27845/f9a783e5b6ef0ba37f754dbaaffb7194/iblock/ebe/ebee52b01abce79a72d66418413a8368/09aae05ffd075435d1e0edb7d774c055.png",
+                "https://cdn.utfc-store.ru/iblock/cb6/dg0q4u612m8a8iktasl43mm0oh4vc4ha.png",
+                "https://utfc.ru/local/templates/utfc/img/icon-4.png",
+                "https://utfc.ru/local/templates/utfc/img/icon-1.png",
+                "https://utfc.ru/upload/resize_cache/iblock/405/70_70_0/6az8ijq3kwo614y93g1tk5dxfw4xk8zx.png",
+                "https://cdn.utfc-store.ru/iblock/028/02885f36a1b443cbf23697946fe54ef2/7e41588d66276ac9520d91704cf8997b.png",
+                "https://utfc.ru/upload/resize_cache/iblock/5f8/400_400_0/5f87deb598a64f6efb82c20f80096b81.png",
+                "https://cdn.utfc-store.ru/iblock/fbc/fbc930030146260a5507e0f685ea510c/465e012a49192fe1285d700d59966c55.png",
+                "https://cdn.utfc-store.ru/uf/94b/291cco6tzr1fr12bcx6ytknw6pm4plyo.png",
+                "https://cdn.utfc-store.ru/uf/3ab/3ab63479a963e0c3138812b7b8aeaab3/8ce76d31da58b2ec565c1b5c6ebd1663.png",
+                "https://cdn.utfc-store.ru/resize_cache/27729/09667609493257e3dc4f183374d2fcb3/iblock/4d4/4d41990eb99704cb4917b701ae204ad5/3a325688235932695c2d5ab0314af8c2.png"
+            ]
         }
     ],
     "dimensions_details": [
@@ -202,13 +231,13 @@
     "skeleton": "складной",
     "minpromtorg": "Минпромторг",
     "addition": "",
-    "title": "Стул складной Компакт Люкс 4Н BL с мягким сиденьем производства компании UTFC",
-    "base_name": "Стул складной Компакт Люкс 4Н BL",
-    "article_number": "НКС-00037",
-    "full_describe": "Благодаря эргономичному дизайну, мягкому сиденью и металлическому каркасу складной стул является компактным, прочным и универсальным в использовании. Он может быть использован в различных местах, таких как: офисы, малогабаритные квартиры, зоны отдыха, конференц-залы, кафе и рестораны, спортивные мероприятия, выставки и ярмарки, залы ожидания, учебные аудитории, выездные мероприятия и пр.",
-    "Link_arm": "https://utfc.ru/catalog/pos_chair/kompakt_lux_4n_bl/?offers=13103",
-    "Основание": "Металлические опоры складного стула Компакт, защитно-декоративное порошковое покрытие черного цвета (BL)",
-    "Подлокотники": "Без подлокотников",
+    "title": "Стул складной Компакт Люкс 4Н GR производства компании UTFC",
+    "base_name": "Стул складной Компакт Люкс 4Н GR",
+    "article_number": "ГС-00825",
+    "full_describe": "Благодаря эргономичному дизайну, увеличенному мягкому сиденью и металлическому каркасу складной стул является компактным, прочным и универсальным в использовании. Он может быть использован в различных местах, таких как: офисы, малогабаритные квартиры, зоны отдыха, конференц-залы, кафе и рестораны, спортивные мероприятия, выставки и ярмарки, залы ожидания, учебные аудитории, выездные мероприятия и пр.",
+    "Link_arm": "https://utfc.ru/catalog/pos_chair/kompakt_lux_4n_gr/?offers=13541",
+    "Основание": "Металлические опоры складного стула Компакт, защитно-декоративное порошковое покрытие серого цвета (GR)",
+    "Подлокотники": "",
     "Газлифт": "",
     "Механизм": "",
     "Особенности": "",
@@ -219,9 +248,13 @@
         "Ткань Velutto"
     ],
     "color": [
-        "Кожзаменитель Z71 (серый)"
+        "Кожзаменитель Z71 (серый)",
+        "Велюр 03 (бежевый)"
     ],
-    "variant_name": [],
+    "variant_name": [
+        "Стул складной Компакт Люкс 4Н GR (Ткань Velutto, Велюр 03 (бежевый),, )",
+        "Стул складной Компакт Люкс 4Н GR (-, Велюр 03 (бежевый),, )"
+    ],
     "finish_type_seat": [
         ""
     ],
