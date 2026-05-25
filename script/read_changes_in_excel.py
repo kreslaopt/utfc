@@ -133,42 +133,39 @@ df = pd.read_excel(excel_path, sheet_name='Размеры')
 
 # Определение отображения колонок
 columns_mapping = {
-    'Unnamed: 1': ('chair_height', 'min', 'max'),
-    'Unnamed: 3': ('headrest_height', 'min', 'max'),
-    'Unnamed: 5': ('seat_to_floor_height', 'min', 'max'),
-
-    'Unnamed: 11': ('armrest_height_from_seat', 'min', 'max'),
-
-    'Unnamed: 16': ('chair_depth', 'min', None),
-
-    'Unnamed: 18': ('seat_depth', 'min', 'max'),
-
-    'Unnamed: 21': ('backrest_height', None, 'max'),
-
-    'Unnamed: 22': ('backrest_to_seat_height', 'min', 'max'),
-
-    'Unnamed: 26': ('seat_width_with_armrests', 'min', 'max'),
-
-    'Unnamed: 28': ('seat_width', None, 'max'),
-
-    'Unnamed: 31': ('diameter_cross', None, 'max'),
-
-    'Unnamed: 32': ('runners_width', None, 'max'),
-    'Unnamed: 33': ('runners_depth', None, 'max'),
-
-    'Unnamed: 34': ('recommended_load', None, 'max'),
-    'Unnamed: 35': ('max_load', None, 'max'),
-
-    'Unnamed: 36': ('skeleton', None, None),
-    'Unnamed: 37': ('minpromtorg', None, None),
-    'Unnamed: 38': ('typeofproduct', None, None),
-
+'Unnamed: 2': ('chair_height', 'min', 'max'),
+    'Unnamed: 4': ('headrest_height', 'min', 'max'),
+    'Unnamed: 6': ('seat_to_floor_height', 'min', 'max'),
+    'Unnamed: 8': ('seat_to_floor_height_upper', 'min', 'max'),
+    'Unnamed: 10': ('armrest_height_from_floor', 'min', 'max'),
+    'Unnamed: 12': ('armrest_height_from_seat', 'min', 'max'),
+    'Unnamed: 14': ('armrest_width_support', None, 'max'),
+    'Unnamed: 15': ('armrest_length_support', None, 'max'),
+    'Unnamed: 17': ('chair_depth', 'min', None),
+    'Unnamed: 19': ('seat_depth', 'min', 'max'),
+    'Unnamed: 21': ('seat_depth_km', None, 'max'),
+    'Unnamed: 22': ('backrest_height', None, 'max'),
+    'Unnamed: 23': ('backrest_to_seat_height', 'min', 'max'),
+    'Unnamed: 25': ('backrest_height_external', None, 'max'),
+    'Unnamed: 27': ('seat_width_with_armrests', 'min', 'max'),
+    'Unnamed: 29': ('seat_width', None, 'max'),
+    'Unnamed: 30': ('backrest_width_narrow', None, 'max'),
+    'Unnamed: 31': ('backrest_width_wide', None, 'max'),
+    'Unnamed: 32': ('diameter_cross', None, 'max'),
+    'Unnamed: 33': ('runners_width', None, 'max'),
+    'Unnamed: 34': ('runners_depth', None, 'max'),
+    'Unnamed: 35': ('recommended_load', None, None),
+    'Unnamed: 36': ('max_load', None, None),
+    'Unnamed: 37': ('skeleton', None, None),
+    'Unnamed: 38': ('minpromtorg', None, None),
     'Unnamed: 39': ('netto', None, None),
     'Unnamed: 40': ('brutto', None, None),
     'Unnamed: 41': ('package_width', None, None),
     'Unnamed: 42': ('package_depth', None, None),
     'Unnamed: 43': ('package_height', None, None),
-    'Unnamed: 44': ('volume', None, None)
+    'Unnamed: 44': ('volume', None, None),
+    'Unnamed: 45': ('box_on_pallet', None, None),
+    'Unnamed: 46': ('pallet_width', None, None),
 }
 
 # Создание словаря с данными из Excel
