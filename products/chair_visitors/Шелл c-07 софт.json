@@ -81,7 +81,39 @@
       "vid_main": "img/chair_visitors/shell_soft_ch_4l_01.png",
       "chair_view": "img/chair_visitors/shell_soft_ch_4l_02.png",
       "dimensions": "img/chair_visitors/dimensions/shell_soft_ch_4l_01.png",
-      "box": "img/box_UTFC_2x.png"
+      "box": "img/box_UTFC_2x.png",
+      "additional": [
+        "https://cdn.utfc-store.ru/iblock/d4c/d4cedfce22b1e44b200e945fbda3d3ab.png",
+        "https://cdn.utfc-store.ru/uf/3dd/szcwy7gjsbqsjqa3udxlmi0o94n3k3y6.png",
+        "https://utfc.ru/upload/resize_cache/iblock/9d8/140_140_0/7aey8lwhbiditj30q32rq71ycn07wcm2.png",
+        "https://utfc.ru/upload/resize_cache/iblock/b4f/140_140_0/kp86ujk5vqe6v3tzxjuae44pcviwwiwp.png",
+        "https://utfc.ru/local/templates/.default/components/utfc/catalog.element/.default/images/no_photo.png",
+        "https://utfc.ru/upload/resize_cache/iblock/825/400_400_0/825222ae0487adaa00d3d37ee994e01f.png",
+        "https://cdn.utfc-store.ru/resize_cache/27742/09667609493257e3dc4f183374d2fcb3/iblock/959/959dd4bf748fc6175817aec58673daf9/da8cb3bce3fcf393969db44d9eb766b8.png",
+        "https://utfc.ru/local/templates/utfc/img/icon-2.png",
+        "https://cdn.utfc-store.ru/uf/766/766c72d058e3535b67624ec955aaa19d.png",
+        "https://utfc.ru/local/templates/utfc/img/sites/utfc/logo_down_2.png",
+        "https://cdn.utfc-store.ru/iblock/369/flqokk6cx11xq0u00xao1lb8vv0uh9to.png",
+        "https://utfc.ru/upload/resize_cache/iblock/f8d/140_140_0/gy2kbf1w8n5n8a7wso7766dh5qpjkoah.png",
+        "https://cdn.utfc-store.ru/iblock/b4f/kp86ujk5vqe6v3tzxjuae44pcviwwiwp.png",
+        "https://utfc.ru/local/templates/utfc/img/sites/utfc/logo_store_up_2x.png",
+        "https://cdn.utfc-store.ru/uf/8d0/8d0fc428274bc3dd435ab3736b873e89.jpg",
+        "https://cdn.utfc-store.ru/iblock/f8d/gy2kbf1w8n5n8a7wso7766dh5qpjkoah.png",
+        "https://utfc.ru/upload/resize_cache/iblock/369/140_140_0/flqokk6cx11xq0u00xao1lb8vv0uh9to.png",
+        "https://utfc.ru/local/templates/utfc/img/palette.png",
+        "https://cdn.utfc-store.ru/iblock/d9b/o894cq5c1lkkv6pihuam2zc3z980h196.png",
+        "https://cdn.utfc-store.ru/iblock/cb6/dg0q4u612m8a8iktasl43mm0oh4vc4ha.png",
+        "https://utfc.ru/local/templates/utfc/img/icon-4.png",
+        "https://utfc.ru/local/templates/utfc/img/icon-1.png",
+        "https://utfc.ru/upload/resize_cache/iblock/405/70_70_0/6az8ijq3kwo614y93g1tk5dxfw4xk8zx.png",
+        "https://cdn.utfc-store.ru/iblock/953/mwc75ncb5gndz4w8b96zri3yotgg4a5v.png",
+        "https://utfc.ru/upload/resize_cache/iblock/953/140_140_0/mwc75ncb5gndz4w8b96zri3yotgg4a5v.png",
+        "https://utfc.ru/upload/resize_cache/iblock/5f8/400_400_0/5f87deb598a64f6efb82c20f80096b81.png",
+        "https://cdn.utfc-store.ru/uf/239/8x82kda0qf27pwob6oovhdbi34xkwa6h.png",
+        "https://cdn.utfc-store.ru/resize_cache/27729/09667609493257e3dc4f183374d2fcb3/iblock/4d4/4d41990eb99704cb4917b701ae204ad5/3a325688235932695c2d5ab0314af8c2.png",
+        "https://cdn.utfc-store.ru/iblock/2c5/la5q5j1dq4xkk7rjhqmcfd73xxh1zdp9.png",
+        "https://cdn.utfc-store.ru/iblock/9d8/7aey8lwhbiditj30q32rq71ycn07wcm2.png"
+      ]
     }
   ],
   "dimensions_details": [
@@ -362,5 +394,38 @@
       "limit": false,
       "del": true
     }
+  ],
+  "title": "Стул С-07 Шелл Софт СН производства компании UTFC",
+  "base_name": "Стул С-07 Шелл Софт СН",
+  "article_number": "КФ-00946",
+  "full_describe": "Идеальное сочетание стиля и функциональности. Пластиковая ракушка обеспечивает комфорт и легкость, подпружинивающая конструкция и мягкое сиденье добавляют дополнительное удобство. Ножки хромированного цвета придают стулу современный стильный вид.",
+  "Link_arm": "https://utfc.ru/catalog/pos_chair/shell_soft_ch/?offers=13125",
+  "minpromtorg": "Минпромторг",
+  "madeinrf": "Сделано РФ",
+  "Основание": "Металлические опоры, защитно-декоративное покрытие никель-хром (СН)",
+  "Подлокотники": "Без подлокотников",
+  "Газлифт": "",
+  "Механизм": "",
+  "Особенности": "",
+  "Ролики": "",
+  "finish_type": [
+    "Пластик Шелл",
+    "-"
+  ],
+  "color": [
+    "Пластик Шелл (черный)"
+  ],
+  "finish_type_seat": [
+    "Экокожа Santorini",
+    "-"
+  ],
+  "color_seat": [
+    "Экокожа Santorini S0422 (темно-серый)"
+  ],
+  "variant_name": [
+    "Стул С-07 Шелл Софт СН (Пластик Шелл, Пластик Шелл (черный), Экокожа Santorini, Экокожа Santorini S0422 (темно-серый))",
+    "Стул С-07 Шелл Софт СН (Пластик Шелл, Пластик Шелл (черный), -, Экокожа Santorini S0422 (темно-серый))",
+    "Стул С-07 Шелл Софт СН (-, Пластик Шелл (черный), Экокожа Santorini, Экокожа Santorini S0422 (темно-серый))",
+    "Стул С-07 Шелл Софт СН (-, Пластик Шелл (черный), -, Экокожа Santorini S0422 (темно-серый))"
   ]
 }
