@@ -1595,27 +1595,27 @@ const knownProductsAllFiles = [
     "is_archive": false
   },
   {
+    "name": "Шелл с-07 софт",
+    "category": "chair_visitors",
+    "is_archive": false
+  },
+  {
+    "name": "Шелл с-07 софт bl",
+    "category": "chair_visitors",
+    "is_archive": false
+  },
+  {
+    "name": "Шелл с-07 софт gr",
+    "category": "chair_visitors",
+    "is_archive": false
+  },
+  {
     "name": "Шелл с-07 bl",
     "category": "chair_visitors",
     "is_archive": false
   },
   {
     "name": "Шелл с-07 gr",
-    "category": "chair_visitors",
-    "is_archive": false
-  },
-  {
-    "name": "Шелл c-07 софт",
-    "category": "chair_visitors",
-    "is_archive": false
-  },
-  {
-    "name": "Шелл c-07 софт bl",
-    "category": "chair_visitors",
-    "is_archive": false
-  },
-  {
-    "name": "Шелл c-07 софт gr",
     "category": "chair_visitors",
     "is_archive": false
   },

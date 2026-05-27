@@ -280,13 +280,15 @@
             <b>ТО есть, фото заменить:</b><br><br>
             Самба Люкс GTP пиастра<br><br>
             <b>В каталоге отсутствуют<br>(нет фото/ТО):</b><br><br>
-           Изо пластик +<br>
-Престиж нептун хром<br>
-Самба gtp tg столик<br>
-Самба gtp пиастра столик<br>
-Шелл gts с-21 софт белый<br>
-Шелл gts с-21 софт черный<br>
-Энжел сн-800 чёрный н_п нео сн
+            Изо пластик +<br>
+            Престиж нептун хром<br>
+            Самба gtp tg столик<br>
+            Самба gtp пиастра столик<br>
+            Шелл gts с-21 софт белый<br>
+            Шелл gts с-21 софт черный<br>
+            Шелл gts с-21 софт белый<br>
+            Шелл gts с-21 софт черный<br>
+            Энжел сн-800 чёрный н_п нео сн
 
             <div class="filtering_results">
                 <div class="passed_filtering">
@@ -2925,7 +2927,7 @@ if (armrestTypeFilters.length > 0) {
             </div>
  <div class="product-tooltip">${tooltipTextWidth}<br>${tooltipTextWidthSit}<br>${tooltipTextDepth}<br>${tooltipText}</div>
         <div class="product-tooltip-detailed">${detailedTooltipText}</div>
-        <img src="${product.images?.[0]?.vid_main || ''}" alt="${uniqueName}">
+        <img src="${product.images?.[0]?.chair_view || ''}" alt="${uniqueName}">
         <button class="open-card-modal" data-category="${product.category}" data-name="${productName}" data-unique-name="${uniqueName}">
           ${uniqueName}
         </button>        `;
@@ -2933,7 +2935,7 @@ if (armrestTypeFilters.length > 0) {
                         productCard.innerHTML = `
              <div class="product-tooltip">${tooltipTextWidth}<br>${tooltipTextWidthSit}<br>${tooltipTextDepth}<br>${tooltipText}</div>
         <div class="product-tooltip-detailed">${detailedTooltipText}</div>
-        <img src="${product.images?.[0]?.vid_main || ''}" alt="${uniqueName}">
+        <img src="${product.images?.[0]?.chair_view || ''}" alt="${uniqueName}">
         <button class="open-card-modal" data-category="${product.category}" data-name="${productName}" data-unique-name="${uniqueName}">
           ${uniqueName}
         </button>
@@ -2965,7 +2967,7 @@ if (armrestTypeFilters.length > 0) {
 
                     productCard.addEventListener('mouseenter', function () {
                         const imgElement = this.querySelector('img');
-                        const chairViewUrl = product.images?.[0]?.chair_view;
+                        const chairViewUrl = product.images?.[0]?.vid_main;
                         if (chairViewUrl && imgElement) {
                             imgElement.src = chairViewUrl;
                         }
@@ -2973,7 +2975,7 @@ if (armrestTypeFilters.length > 0) {
 
                     productCard.addEventListener('mouseleave', function () {
                         const imgElement = this.querySelector('img');
-                        const vidMainUrl = product.images?.[0]?.vid_main;
+                        const vidMainUrl = product.images?.[0]?.chair_view;
                         if (vidMainUrl && imgElement) {
                             imgElement.src = vidMainUrl;
                         }
@@ -3435,12 +3437,12 @@ childRow.appendChild(finishtypeCell);
                             imgUrl = child.IP_PROP36[imgIndex];
                         } else if (parent.IP_PROP36 && parent.IP_PROP36[i]) {
                             imgUrl = parent.IP_PROP36[i];
-                        } else if (i === 0 && parent.images?.[0]?.vid_main) {
-                            imgUrl = parent.images[0].vid_main;
-                        } else if (i === 1 && parent.images?.[0]?.chair_view) {
+                        } else if (i === 0 && parent.images?.[0]?.chair_view) {
                             imgUrl = parent.images[0].chair_view;
-                        } else if (i === 2 && parent.images?.[0]?.dimensions) {
+                        } else if (i === 1 && parent.images?.[0]?.vid_main) {
                             imgUrl = parent.images[0].vid_main;
+                        } else if (i === 2 && parent.images?.[0]?.dimensions) {
+                            imgUrl = parent.images[0].chair_view;
                         }
 
                         if (imgUrl) {

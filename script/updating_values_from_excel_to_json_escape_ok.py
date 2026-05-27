@@ -75,12 +75,12 @@ parents_mapping = {
     'cтандарт gr':'cтандарт',
     'форум bl':'форум',
     'форум':'форум',
-    'шелл c-07 bl':'шелл c-07',
-    'шелл c-07 gr':'шелл c-07',
-    'шелл c-07':'шелл c-07',
-    'шелл c-07 cофт bl':'шелл c-07 софт',
-    'шелл c-07 cофт gr':'шелл c-07 софт',
-    'шелл c-07 cофт':'шелл c-07 софт',
+    'шелл с-07 софт':'шелл с-07 софт',
+    'шелл с-07 софт bl':'шелл с-07 софт',
+    'шелл с-07 софт gr':'шелл с-07 софт',
+    'шелл с-07':'шелл с-07',
+    'шелл с-07 bl':'шелл с-07',
+    'шелл с-07 gr':'шелл с-07',
     'cтул кассира':'Стул кассира б_п',
     'дэли ch-503 white ch':'дэли сн-503 н/п хром',
     'дэли ch-503 белый пластик':'дэли сн-503 белый пластик',
@@ -121,7 +121,7 @@ parents_mapping = {
     'софия со столиком':'софия со столиком',
     'софия со столиком bl':'софия со столиком',
     'софия':'софия',
-    'софия bl':'софия',
+    'софия bl':'софия'
     # 'кайман ch-300 н_п bl':'кайман сн-300 н/п хром',    не получилось
 
 }
@@ -632,24 +632,25 @@ with open('missing_parents.txt', 'w', encoding='utf-8') as f:
     f.write("}\n")
 print("\nСписок сохранён в missing_parents.txt")
 
-# test_strings = [
-#     'сн-710 айкью н_п',
-#     'соло max сн-602 пластик',
-#     'соло макс ch-602 пластик',
-#     'epik p-521-sb m021:кресло epik р-521-sb',
-#     "самба люкс gtp tg столик",
-#     "сн-710 айкью н пластик",
-#     "сн-710 айкью н_п",
-#     "соло макс ch-602 пластик",
-#     "соло макс ch-602 хром",
-#     "сильвия арм хром",
-#     "сильвия хром"
-# ]
+test_strings = [
+    "шелл c-07 софт"
+    # 'сн-710 айкью н_п',
+    # 'соло max сн-602 пластик',
+    # 'соло макс ch-602 пластик',
+    # 'epik p-521-sb m021:кресло epik р-521-sb',
+    # "самба люкс gtp tg столик",
+    # "сн-710 айкью н пластик",
+    # "сн-710 айкью н_п",
+    # "соло макс ch-602 пластик",
+    # "соло макс ch-602 хром",
+    # "сильвия арм хром",
+    # "сильвия хром"
+]
 
-# for s in test_strings:
-#     print(f"Original: {s}")
-#     print(f"Normalized: {normalize_moкаркаса_name(s)}")
-#     print(f"Normalized: {normalized_name}")
-#     # print(f"Is in exceptions: {normalized_name.lower() in [name.lower() for name in exceptions_del_false]}")
-#     print()
+for s in test_strings:
+    print(f"Original: {s}")
+    print(f"Normalized: {normalize_moкаркаса_name(s)}")
+    print(f"Normalized: {normalized_name}")
+    # print(f"Is in exceptions: {normalized_name.lower() in [name.lower() for name in exceptions_del_false]}")
+    print()
 
