@@ -234,8 +234,8 @@
 <div id="signature-buttons">
   <button data-signature="first">Фест</button>
   <button data-signature="second">БМФ</button>
-  <!-- <button data-signature="third" style="background-color: #555; color: #fff;">Поставщик 3</button> -->
-  <button data-signature="fourth">Отсутствует</button>
+  <button data-signature="third">Без титула и контактов</button>
+  <button data-signature="fourth">Без печати и подписи</button>
 </div>
 
     <script>
@@ -441,14 +441,14 @@ document.getElementById('add-dimensions-btn').addEventListener('click', () => {
     email: 'kl@kreslaopt.ru',
   },
   third: {
-    signature: 'Поставщик: ООО «Поставщик 3»',
-    dir: 'Руководитель',
-    name_dir: 'Петров П.П.',
-    stamp: 'img/fax3.png',
-    company: 'ООО «Поставщик 3»',
-    address: 'Адрес',
-    phone: 'Телефон',
-    email: 'E-mail',
+    signature: '',
+    dir: '',
+    name_dir: '',
+    stamp: '',
+    company: '',
+    address: '',
+    phone: '',
+    email: '',
   },
   fourth: {
     signature: '',
@@ -1019,6 +1019,26 @@ function setSignatureContent(key) {
   document.getElementById('custom-name_dir').innerHTML = `<p>${data.name_dir}</p>`;
 }
 
+function removeTitleAndContacts() {
+  // Удаляем титульный лист
+  const header = document.querySelector('.commercial-header');
+  if (header) {
+    header.remove();
+
+    // После добавления титульного листа
+// Удаляем или скрываем элемент, который его содержит
+const titlePage = document.querySelector('.a4-container');
+if (titlePage) {
+  titlePage.remove();
+}
+  }
+
+  // Удаляем блоки с контактами и логотипами
+  document.querySelectorAll('.commercial-company, .commercial-titul-site, .commercial-titul-logo').forEach(el => el.remove());
+
+  // Можно дополнительно убрать любые другие элементы, связанные с титульным листом или контактами
+}
+
 document.querySelector('button[data-signature="first"]').addEventListener('click', () => {
   toggleSignatureBlocks(true);
   setSignatureContent('first');
@@ -1042,6 +1062,32 @@ document.querySelector('button[data-signature="fourth"]').addEventListener('clic
   setSignatureContent('first');
   updateSignatureAndLogos(false);
   updateAllPagesContacts(false);
+});
+
+document.querySelector('button[data-signature="third"]').addEventListener('click', () => {
+  toggleSignatureBlocks(false); // скрываем блоки
+  setLogosAndBackgrounds(false);
+  setSignatureContent('first');
+  updateSignatureAndLogos(false);
+  updateAllPagesContacts(false);
+
+  removeTitleAndContacts();
+
+   // скрываем титульный лист
+  // const titlePage = document.querySelector('.commercial-header');
+  // if (titlePage) {
+  //   titlePage.style.display = 'none';
+  // }
+
+// const header = document.querySelector('.commercial-header');
+// if (header) {
+//   header.style.display = 'none';
+// }
+
+// const logonone = document.querySelector('.commercial-titul-site');
+// if (logonone) {
+//   logonone.style.display = 'none';
+// }
 });
 
 
