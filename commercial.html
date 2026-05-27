@@ -352,6 +352,19 @@ document.getElementById('add-dimensions-btn').addEventListener('click', () => {
 
   const selectedProducts = JSON.parse(selectedProductsStr);
 
+  // Функция для поиска продукта по названию с учетом сложных названий
+  function findProductByName(products, name) {
+    const lowerName = name.toLowerCase().replace(/\//g, ' ').trim();
+    return products.find(p => {
+      if (p.name && p.name.length > 0) {
+        const productName = p.name[0].toLowerCase().replace(/\//g, ' ').trim();
+        // Используем includes для поиска
+        return productName.includes(lowerName) || lowerName.includes(productName);
+      }
+      return false;
+    });
+  }
+
   // Обрабатываем все блоки товаров
   document.querySelectorAll('.commercial-product').forEach(productDiv => {
     const imgs = productDiv.querySelectorAll('img[data-product-name]');
@@ -371,22 +384,8 @@ document.getElementById('add-dimensions-btn').addEventListener('click', () => {
       document.getElementById('add-dimensions-btn').textContent = 'Добавить эскиз с размерами';
 
     } else {
-      // Эскиза нет, добавляем
-      const product = selectedProducts.find(p => {
-        if (p.name && p.name.length > 0) {
-          const pNameLower = p.name[0].toLowerCase().replace(/\//g, ' ').trim();
-          const pWords = new Set(pNameLower.split(/\s+/));
-          const productNameLower = productName.toLowerCase().replace(/\//g, ' ').trim();
-          const productWords = new Set(productNameLower.split(/\s+/));
-          for (let word of pWords) {
-            if (!productWords.has(word)) {
-              return false;
-            }
-          }
-          return true;
-        }
-        return false;
-      });
+      // Эскиза нет, ищем продукт по названию
+      const product = findProductByName(selectedProducts, productName);
 
       if (product && product.images && product.images.length > 0) {
         const newSrc = product.images[0].dimensions || product.images[0];
@@ -418,7 +417,6 @@ document.getElementById('add-dimensions-btn').addEventListener('click', () => {
     }
   });
 });
-
   const signatures = {
  first: {
     signature: 'Поставщик: ООО «ФЕСТ»',
