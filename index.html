@@ -285,9 +285,7 @@
             Самба gtp tg столик<br>
             Самба gtp пиастра столик<br>
             Шелл gts с-21 софт белый<br>
-            Шелл gts с-21 софт черный<br>
-            Шелл gts с-21 софт белый<br>
-            Шелл gts с-21 софт черный<br>
+            Шелл gts с-21 софт черный<br>  
             Энжел сн-800 чёрный н_п нео сн
 
             <div class="filtering_results">
@@ -3802,7 +3800,8 @@ childRow.appendChild(finishtypeCell);
                 finishTypeCell.textContent = data.finish_type || '—';
                 finishTypeCell.contentEditable = true;
                 finishTypeCell.onblur = () => saveEditableField(name, 'finish_type', finishTypeCell.textContent);
-                row.appendChild(finishTypeCell);
+                row.appendChild(finishTypeCell);                
+    
 
                 // Тип отделки сиденья
                 const finishTypeSeatCell = document.createElement('td');
