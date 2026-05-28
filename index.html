@@ -96,6 +96,8 @@
                 <label><input type="checkbox" class="armrest-filter" value="Деревянные|деревянные"> Деревянные</label>
                 <label><input type="checkbox" class="armrest-filter" value="С мягкими накладками|с мягкими накладками">
                     С мягкими накладками</label>
+                      <label><input type="checkbox" class="armrest-filter" value="soft|soft2">
+                    Soft и Soft2</label>
             </div>
         </div>
 
@@ -1986,7 +1988,8 @@ const filtersMap = {
   "<strong>Подлокотники</strong> металлические": armrestFilters.some(f => f.includes("металлические")),
   "Подлокотники алюминиевые": armrestFilters.some(f => f.includes("алюминиевые")),
   "деревянные": armrestFilters.some(f => f.includes("деревянные")),
-  "с мягкими накладками": armrestFilters.some(f => f.includes("с мягкими накладками"))
+  "с мягкими накладками": armrestFilters.some(f => f.includes("с мягкими накладками")),
+  "soft": armrestFilters.some(f => f.includes("soft"))
 };
 
 const productName = Array.isArray(product.unique_name) ? product.unique_name[0] : product.unique_name;
