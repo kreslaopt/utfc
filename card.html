@@ -635,7 +635,7 @@
             </div>
             <div class="description">
                 Транспортирование и хранение по ${product.transportation?.[variantIndex]?.standard || 'ГОСТ'}<br>
-                ${product.transportation?.[variantIndex]?.packaging?.transportation || ''}${product.transportation?.[variantIndex]?.packaging?.box_size
+                Для ${product.transportation?.[variantIndex]?.packaging?.transportation || ''}${product.transportation?.[variantIndex]?.packaging?.box_size
                     ? ` <strong>${product.transportation[variantIndex].packaging.box_size} мм</strong>`
                     : ''
                 }
@@ -824,7 +824,7 @@
                     if (transportationElement) {
                         transportationElement.innerHTML = `
                             Транспортирование и хранение по ${product.transportation?.[0]?.standard || 'ГОСТ'}<br>
-                            ${product.transportation?.[0]?.packaging?.transportation || ''}${product.transportation?.[0]?.packaging?.box_size
+                            Для ${product.transportation?.[0]?.packaging?.transportation || ''}${product.transportation?.[0]?.packaging?.box_size
                                 ? ` <strong>${product.transportation[0].packaging.box_size} мм</strong>`
                                 : ''
                             }
