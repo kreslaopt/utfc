@@ -2965,7 +2965,7 @@ if (armrestTypeFilters.length > 0) {
 
                     productCard.addEventListener('mouseenter', function () {
                         const imgElement = this.querySelector('img');
-                        const chairViewUrl = product.images?.[0]?.vid_main;
+                        const chairViewUrl = product.images?.[0]?.chair_view;
                         if (chairViewUrl && imgElement) {
                             imgElement.src = chairViewUrl;
                         }
