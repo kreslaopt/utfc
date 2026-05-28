@@ -17,12 +17,14 @@
     <link rel="stylesheet" href="css/style_menu_main.css">
     <link rel="stylesheet" href="css/card.css">
     <link rel="stylesheet" href="css/teh_style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script> -->
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script> -->
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/qr.js/0.0.0/qr.min.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+
 
     <script src="https://cdn.plot.ly/plotly-2.24.1.min.js"></script>
     <script src="script/products_lists/allProducts.js"></script>
@@ -570,6 +572,7 @@
         <th contenteditable="true">Ярославль</th>
         <th contenteditable="true">Храпуново</th>
         <th contenteditable="true">Санкт-Петербург</th>
+        <!-- <th contenteditable="true">Впишите цену</th> -->
         <th contenteditable="true">Кол-во</th>
         <th contenteditable="true">QR-код</th>
                             </tr>
@@ -821,8 +824,6 @@ async function updateFinalSelectionTable() {
         console.error('Ошибка загрузки QRCode:', error);
         return;
     }
-
-    // ... (существующий код создания таблицы) ...
 
     // После создания таблицы:
     loadEditableHeaders();
@@ -3139,6 +3140,7 @@ if (armrestTypeFilters.length > 0) {
         }
 
 
+        
         // Функция для обновления таблицы избранных
         // function updateSelectedProductsTable() {
         //     selectedProducts = JSON.parse(localStorage.getItem('selectedProducts')) || [];
@@ -3942,6 +3944,18 @@ childRow.appendChild(finishtypeCell);
                 price3Cell.contentEditable = true;
                 price3Cell.onblur = () => saveEditableField(name, 'CV_PRICE_3', price3Cell.textContent);
                 row.appendChild(price3Cell);
+
+                // const priceCell = document.createElement('td');
+                // priceCell.textContent = ''; // Изначально показывать дефолтное значение
+                // priceCell.contentEditable = true;
+
+                // // Обработчик для сохранения данных, введённых пользователем
+                // priceCell.onblur = () => {
+                //     const userInput = priceCell.textContent.trim();
+                //     saveEditableField(name, '', userInput);
+                // };
+
+                // row.appendChild(priceCell);
 
                 // Количество
                 const countCell = document.createElement('td');
@@ -5228,33 +5242,84 @@ document.getElementById('clearButton').addEventListener('click', function() {
 // `;
 // document.head.appendChild(style);
 
-document.getElementById("downloadBtn").addEventListener("click", function() {
-    const element = document.getElementById("products");
-   // Временно добавляем стиль для избегания разрывов внутри элементов
-    element.style.pageBreakInside = "avoid";
-    // Также можно добавить это для всех внутренних элементов
-    Array.from(element.children).forEach(child => {
-        child.style.pageBreakInside = "avoid";
-    });
+// document.getElementById("downloadBtn").addEventListener("click", function() {
+//     const element = document.getElementById("products");
+//    // Временно добавляем стиль для избегания разрывов внутри элементов
+//     element.style.pageBreakInside = "avoid";
+//     // Также можно добавить это для всех внутренних элементов
+//     Array.from(element.children).forEach(child => {
+//         child.style.pageBreakInside = "avoid";
+//     });
 
-    const widthInInches = 1800 / 96;
-    const heightInInches = 1000 / 96;
+//     const widthInInches = 1800 / 96;
+//     const heightInInches = 1000 / 96;
 
-    html2pdf().set({
-        filename: 'products.pdf',
-        image: { type: 'jpeg', quality: 0.98 },
-        html2canvas: { scale: 1.5, backgroundColor: '#FFFFFF' },
-        jsPDF: {
-            unit: 'in',
-            format: [widthInInches, heightInInches],
-            orientation: 'landscape',
-            backgroundColor: '#FFFFFF',
-            margins: { top: 5, bottom: 0, left: 0, right: 0 },
-            paddings: { top: 0, bottom: 0, left: 0, right: 0 }
-        }
-    }).from(element).save().then(() => {
-        // Восстановим стиль после генерации
-        element.style.pageBreakInside = "";
+//     html2pdf().set({
+//         filename: 'products.pdf',
+//         image: { type: 'jpeg', quality: 0.98 },
+//         html2canvas: { scale: 1.5, backgroundColor: '#FFFFFF' },
+//         jsPDF: {
+//             unit: 'in',
+//             format: [widthInInches, heightInInches],
+//             orientation: 'landscape',
+//             backgroundColor: '#FFFFFF',
+//             margins: { top: 5, bottom: 0, left: 0, right: 0 },
+//             paddings: { top: 0, bottom: 0, left: 0, right: 0 }
+//         }
+//     }).from(element).save().then(() => {
+//         // Восстановим стиль после генерации
+//         element.style.pageBreakInside = "";
+//     });
+// });
+
+
+
+//  document.addEventListener("DOMContentLoaded", function() {
+//             document.getElementById("downloadBtn").addEventListener("click", function() {
+//                 const element = document.getElementById("products");
+//                 element.style.pageBreakInside = "avoid";
+//                 Array.from(element.children).forEach(child => {
+//                     child.style.pageBreakInside = "avoid";
+//                 });
+//                 const width = element.offsetWidth;
+//                 const height = element.offsetHeight;
+
+//                 html2canvas(element, {
+//                     scale: 1.5,
+//                     backgroundColor: '#FFFFFF',
+//                     width: width,
+//                     height: height,
+//                     windowWidth: width,
+//                     windowHeight: height
+//                 }).then(canvas => {
+//                     const imgData = canvas.toDataURL('image/jpeg', 0.98);
+//                     const link = document.createElement('a');
+//                     link.href = imgData;
+//                     link.download = 'products.jpg';
+//                     document.body.appendChild(link);
+//                     link.click();
+//                     document.body.removeChild(link);
+//                     // Восстановим стиль
+//                     element.style.pageBreakInside = "";
+//                 });
+//             });
+//         });
+
+document.getElementById('downloadBtn').addEventListener('click', function() {
+    html2canvas(document.getElementById('products'), {
+        backgroundColor: '#fff',
+        scale: 1.5,
+        logging: false, // отключаем вывод логов
+        allowTaint: true, // безопасность от кэширования
+        removeWhitespace: true // удаление переносов строк
+    }).then(canvas => {
+        document.body.appendChild(canvas);
+        
+        // Затем инициируем скачивание PNG-изображения
+        const link = document.createElement('a');
+        link.download = 'select_products.png';
+        link.href = canvas.toDataURL();
+        link.click();
     });
 });
 
