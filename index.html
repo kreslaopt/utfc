@@ -6,11 +6,10 @@
 <meta http-equiv="Content-Security-Policy" content="
     default-src 'self' https://via.placeholder.com https://utfc.ru https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru https://*.selstorage.ru;
     script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdn.plot.ly https://cdnjs.cloudflare.com;
-    style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
-    font-src 'self' https://fonts.gstatic.com;
-
+    style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com https://utfc.pythonanywhere.com;
+    font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com;
     img-src 'self' data: https://utfc.ru https://via.placeholder.com https://chart.googleapis.com https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru;
-    connect-src 'self' https://utfc.ru http://UTFC.pythonanywhere.com https://UTFC.pythonanywhere.com;
+    connect-src 'self' https://utfc.ru http://utfc.pythonanywhere.com https://utfc.pythonanywhere.com https://cdnjs.cloudflare.com;
 ">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
@@ -3537,7 +3536,10 @@ childRow.appendChild(finishtypeCell);
         }
 
 
-
+function getUniqueName(product) {
+    if (!product || !product.unique_name) return null;
+    return Array.isArray(product.unique_name) ? product.unique_name[0] : product.unique_name;
+}
 
         // function toggleProductInCart(product) {
         //     const productName = Array.isArray(product.unique_name) ? product.unique_name[0] : product.unique_name;
@@ -3566,7 +3568,11 @@ childRow.appendChild(finishtypeCell);
         // ----------------------------
 
         function toggleProductInCart(product) {
-            const productName = Array.isArray(product.unique_name) ? product.unique_name[0] : product.unique_name;
+           const productName = getUniqueName(product);
+if (!productName) {
+    console.warn('Отсутствует unique_name для продукта', product);
+    return;
+}
             const index = selectedProducts.findIndex(p => {
                 const pName = Array.isArray(p.unique_name) ? p.unique_name[0] : p.unique_name;
                 return pName === productName;
