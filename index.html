@@ -21,6 +21,8 @@
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script> -->
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/qr.js/0.0.0/qr.min.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <script src="https://cdn.plot.ly/plotly-2.24.1.min.js"></script>
     <script src="script/products_lists/allProducts.js"></script>
@@ -528,7 +530,12 @@
                     style="color: #96C22B; font-size: 14px;">●</span> — минимальный заказ от... | <span
                     style="color: #652bc2; font-size: 14px;">●</span> — отсутствует в таблице...
             </div>
-
+<button id="downloadBtn" title="скачать только карточки">
+  <svg width="12" height="18" viewBox="10 0 5 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M12 16L12 8" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M6 12L12 18L18 12" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
+</button>
             <div id="products"></div>
 
             
@@ -5212,6 +5219,44 @@ document.getElementById('clearButton').addEventListener('click', function() {
     // alert('Все данные очищены!');
   });
         });
+        
+// const style = document.createElement('style');
+// style.innerHTML = `
+//   #products, #products * {
+//     page-break-inside: avoid !important;
+//   }
+// `;
+// document.head.appendChild(style);
+
+document.getElementById("downloadBtn").addEventListener("click", function() {
+    const element = document.getElementById("products");
+   // Временно добавляем стиль для избегания разрывов внутри элементов
+    element.style.pageBreakInside = "avoid";
+    // Также можно добавить это для всех внутренних элементов
+    Array.from(element.children).forEach(child => {
+        child.style.pageBreakInside = "avoid";
+    });
+
+    const widthInInches = 1800 / 96;
+    const heightInInches = 1000 / 96;
+
+    html2pdf().set({
+        filename: 'products.pdf',
+        image: { type: 'jpeg', quality: 0.98 },
+        html2canvas: { scale: 1.5, backgroundColor: '#FFFFFF' },
+        jsPDF: {
+            unit: 'in',
+            format: [widthInInches, heightInInches],
+            orientation: 'landscape',
+            backgroundColor: '#FFFFFF',
+            margins: { top: 5, bottom: 0, left: 0, right: 0 },
+            paddings: { top: 0, bottom: 0, left: 0, right: 0 }
+        }
+    }).from(element).save().then(() => {
+        // Восстановим стиль после генерации
+        element.style.pageBreakInside = "";
+    });
+});
 
 window.onload = async () => {
     loadEditableHeaders();

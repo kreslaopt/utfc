@@ -888,6 +888,12 @@ td[contenteditable="true"]:focus {
   background-color: #fff;
 }
 
+#downloadBtn {
+  border: none;      /* Убирает границу */
+  background: none;  /* Убирает фон */
+  padding: 0;        /* Убирает внутренние отступы, если нужно */
+  cursor: pointer;   /* Меняет курсор на указатель при наведении */
+}
 
 
        // .edit-controls {

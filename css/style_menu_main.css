@@ -827,4 +827,11 @@ td[contenteditable=true]:hover {
 td[contenteditable=true]:focus {
   outline: 1px solid #96C22B;
   background-color: #fff;
+}
+
+#downloadBtn {
+  border: none; /* Убирает границу */
+  background: none; /* Убирает фон */
+  padding: 0; /* Убирает внутренние отступы, если нужно */
+  cursor: pointer; /* Меняет курсор на указатель при наведении */
 }/*# sourceMappingURL=style_menu_main.css.map */
