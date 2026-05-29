@@ -841,7 +841,6 @@ async function updateFinalSelectionTable() {
 
 // В DOMContentLoaded:
 document.addEventListener('DOMContentLoaded', function () {
-    // ... (существующий код) ...
 
     // Загружаем заголовки при старте
     loadEditableHeaders();
@@ -3322,13 +3321,15 @@ if (armrestTypeFilters.length > 0) {
             tableBody.innerHTML = '';
 
             // Группируем товары: родители и их дети
-            const parents = selectedProducts.filter(p => !p.isChild);
+            const parents = selectedProducts.filter(p => p && !p.isChild);
             const childrenMap = new Map();
 
-            parents.forEach(parent => {
-                const parentName = Array.isArray(parent.unique_name) ? parent.unique_name[0] : parent.unique_name;
-                childrenMap.set(parentName, selectedProducts.filter(p => p.isChild && p.parentName === parentName));
-            });
+parents.forEach(parent => {
+    const parentName = Array.isArray(parent.unique_name) ? parent.unique_name[0] : parent.unique_name;
+    // фильтруем только существующие объекты
+    const filteredChildren = selectedProducts.filter(p => p && p.isChild && p.parentName === parentName);
+    childrenMap.set(parentName, filteredChildren);
+});
 
             // Отрисовка родителей и их детей
             parents.forEach(parent => {
@@ -3533,7 +3534,7 @@ childRow.appendChild(finishtypeCell);
 
             // Обновляем счётчик
             const parentsCount = parents.length;
-            const childrenCount = selectedProducts.filter(p => p.isChild).length;
+            const childrenCount = selectedProducts.filter(p => p && p.isChild).length;
             document.getElementById('productsCountValue').textContent = `${parentsCount} (база) + ${childrenCount} (варианты)`;
             updateFinalSelectionTable();
         }
@@ -4398,11 +4399,17 @@ loadEditableHeaders();
             const childName = child.IE_NAME;
 
             // Ищем родителя
-            const parent = selectedProducts.find(p => !p.isChild && p.unique_name && p.unique_name[0] === child.parentName);
-            if (!parent) {
-                console.warn(`Родитель для ${childName} не найден!`);
-                return;
-            }
+       const parent = selectedProducts.find(p => {
+    if (!p || p.isChild || !p.unique_name || !Array.isArray(p.unique_name) || typeof p.unique_name[0] !== 'string') {
+        return false;
+    }
+    return p.unique_name[0] === child.parentName;
+});
+
+if (!parent) {
+    console.warn(`Родитель для ${childName} не найден!`);
+    return;
+}
 
             if (isAdd) {
                 // Если строка уже существует — увеличиваем count
@@ -4514,7 +4521,8 @@ loadEditableHeaders();
             document.querySelectorAll('.cart-icon').forEach(icon => {
                 const productName = icon.getAttribute('data-product-name');
                 const isInCart = selectedProducts.some(p => {
-                    const pName = Array.isArray(p.unique_name) ? p.unique_name[0] : p.unique_name;
+                    // const pName = Array.isArray(p.unique_name) ? p.unique_name[0] : p.unique_name;
+                    const pName = getUniqueName(p);
                     return pName === productName;
                 });
                 icon.classList.toggle('in-cart', isInCart);
@@ -4690,10 +4698,14 @@ loadEditableHeaders();
             // Получаем список избранных родителей из localStorage
             const selectedProducts = JSON.parse(localStorage.getItem('selectedProducts')) || [];
             const selectedParentNames = selectedProducts
-                .filter(p => !p.isChild)
-                .map(p => {
-                    return Array.isArray(p.unique_name) ? p.unique_name[0].toLowerCase().trim() : p.unique_name.toLowerCase().trim();
-                });
+    .filter(p => p && !p.isChild)
+    .map(p => {
+        if (!p || !p.unique_name) return ''; // или пропускаем такие случаи
+        const name = Array.isArray(p.unique_name) ? p.unique_name[0] : p.unique_name;
+        if (typeof name !== 'string') return '';
+        return name.toLowerCase().trim();
+    })
+    .filter(name => name !== ''); // если исключить пустые строки
 
             // Скрываем все карточки товаров
             document.querySelectorAll('.product-card').forEach(card => {
@@ -4719,6 +4731,7 @@ loadEditableHeaders();
 
 
         document.addEventListener('DOMContentLoaded', function () {
+            updateSelectedProductsTable();
             document.querySelectorAll('.size-filter[data-coords]').forEach((filter) => {
                 const param = filter.getAttribute('data-param');
                 const uniqueClass = `${param}-filter`;
@@ -5063,9 +5076,14 @@ loadEditableHeaders();
                 // });
 
                 // Показываем только выбранные товары
-                const selectedParentNames = selectedProducts
-                    .filter(p => !p.isChild)
-                    .map(p => Array.isArray(p.unique_name) ? p.unique_name[0].toLowerCase().trim() : p.unique_name.toLowerCase().trim());
+               const selectedParentNames = selectedProducts
+    .filter(p => p && !p.isChild)
+    .map(p => {
+        if (!p || !p.unique_name) return ''; // пропускаем или возвращаем пустую строку
+        const name = Array.isArray(p.unique_name) ? p.unique_name[0] : p.unique_name;
+        if (typeof name !== 'string') return '';
+        return name.toLowerCase().trim();
+    });
 
                 document.querySelectorAll('.product-card').forEach(card => {
                     const cardProductName = card.querySelector('.open-card-modal').getAttribute('data-unique-name').toLowerCase().trim();

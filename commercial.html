@@ -347,23 +347,24 @@ function normalizeProductName(name) {
 }
 
 document.getElementById('add-dimensions-btn').addEventListener('click', () => {
+  console.log('Кнопка нажата');
   const selectedProductsStr = localStorage.getItem('selectedProducts');
   if (!selectedProductsStr) return;
 
   const selectedProducts = JSON.parse(selectedProductsStr);
 
   // Функция для поиска продукта по названию с учетом сложных названий
-  function findProductByName(products, name) {
+function findProductByName(products, name) {
     const lowerName = name.toLowerCase().replace(/\//g, ' ').trim();
     return products.find(p => {
-      if (p.name && p.name.length > 0) {
-        const productName = p.name[0].toLowerCase().replace(/\//g, ' ').trim();
-        // Используем includes для поиска
-        return productName.includes(lowerName) || lowerName.includes(productName);
-      }
-      return false;
+        if (p && p.name && p.name.length > 0) {
+            const productName = p.name[0].toLowerCase().replace(/\//g, ' ').trim();
+            // Используем includes для поиска
+            return productName.includes(lowerName) || lowerName.includes(productName);
+        }
+        return false;
     });
-  }
+}
 
   // Обрабатываем все блоки товаров
   document.querySelectorAll('.commercial-product').forEach(productDiv => {
