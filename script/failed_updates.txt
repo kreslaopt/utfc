@@ -1,6 +1,0 @@
-C:\Users\UTFC\Documents\БалтМебель\to\products\armchair_comfort.json: 'list' object has no attribute 'get'
-C:\Users\UTFC\Documents\БалтМебель\to\products\armchair_epik.json: 'list' object has no attribute 'get'
-C:\Users\UTFC\Documents\БалтМебель\to\products\armchair_personal.json: 'list' object has no attribute 'get'
-C:\Users\UTFC\Documents\БалтМебель\to\products\armchair_rukovoditel.json: 'list' object has no attribute 'get'
-C:\Users\UTFC\Documents\БалтМебель\to\products\chair_cafe_and_bar.json: 'list' object has no attribute 'get'
-C:\Users\UTFC\Documents\БалтМебель\to\products\chair_visitors.json: 'list' object has no attribute 'get'
