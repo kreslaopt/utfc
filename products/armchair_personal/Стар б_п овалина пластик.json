@@ -187,7 +187,9 @@
                 "https://cdn.utfc-store.ru/uf/d56/d56a51713891d4b17ee655d114e98c4e.jpg",
                 "https://cdn.utfc-store.ru/uf/be1/be1e6a3b1b4deb2bfc39c20415df68d4.jpg",
                 "https://cdn.utfc-store.ru/uf/6f6/6f6c3d0797fa50a5c9c570b603c7dc28.jpg",
-                "https://cdn.utfc-store.ru/uf/237/237ed762aaa92da554c421c0eb2f307a.jpg"
+                "https://cdn.utfc-store.ru/uf/237/237ed762aaa92da554c421c0eb2f307a.jpg",
+                "https://cdn.utfc-store.ru/iblock/cf6/cf6abbffd43c3a02191738c933263d2a/9474eb5adeb09acc74f26066dc3cb63b.jpg",
+                "https://cdn.utfc-store.ru/resize_cache/28141/f9a783e5b6ef0ba37f754dbaaffb7194/iblock/cf6/cf6abbffd43c3a02191738c933263d2a/9474eb5adeb09acc74f26066dc3cb63b.jpg"
             ]
         }
     ],
@@ -296,7 +298,7 @@
         }
     ],
     "skeleton": "немонолитный",
-    "minpromtorg": "+",
+    "minpromtorg": "Минпромторг",
     "addition": "",
     "parent": {
         "IE_XML_ID": "s8037",
@@ -3044,7 +3046,7 @@
     "base_name": "Кресло Стар б/п",
     "article_number": "ЦБ-00013633",
     "full_describe": "Кресло имеет эргономичную спинку с боковой поддержкой спины, фиксируется в любом положении и позволяет сохранить правильное положение при использовании.",
-    "Link_arm": "https://utfc.ru/catalog/staff_chairs/00038941/?offers=8044",
+    "Link_arm": "https://utfc.ru/catalog/staff_chairs/star_bp/?offers=8044",
     "Основание": "Пятилучье пластиковое d=580 мм",
     "Подлокотники": "Без подлокотников",
     "Газлифт": "Газ-лифт 2 категории по стандарту Germany DIN 4550, h=290 мм, длина штока 140 мм",

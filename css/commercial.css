@@ -288,7 +288,10 @@ h3 {
 }
 
 #listContainer {
+  position: absolute;
   display: flex;
+  right: 10px;
   text-align: right;
   justify-content: flex-end;
+  width: 50%;
 }/*# sourceMappingURL=commercial.css.map */
