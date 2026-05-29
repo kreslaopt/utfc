@@ -65,6 +65,8 @@ h3 {
 .adressant {
   font-size: 14px;
   text-transform: uppercase;
+  font-weight: bold;
+  color: #3D4555;
 }
 
 .commercial-date {
@@ -283,4 +285,10 @@ h3 {
   color: #666;
   border: 1px solid #ccc;
   box-sizing: border-box;
+}
+
+#listContainer {
+  display: flex;
+  text-align: right;
+  justify-content: flex-end;
 }/*# sourceMappingURL=commercial.css.map */
