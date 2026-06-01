@@ -138,8 +138,8 @@
         <div class="filter-content" id="karkas-filter-content">
             <div class="checkbox-group">            
                 <label><input type="checkbox" class="karkas-filter" value="монолит|монолитный"> Монолитный</label>
-                <label><input type="checkbox" class="karkas-filter" value="немонолит|немонолитный">
-                    Немонолитный</label>
+                <label><input type="checkbox" class="karkas-filter" value="немонолит|немонолитный">Немонолитный</label>
+                <label><input type="checkbox" class="karkas-filter" value="металлическ|металлический|металлическом|металлического">Металлический</label>
             </div>
         </div>
 
@@ -2073,48 +2073,68 @@ if (mechanismFilters.length > 0) {
                         
                     
                     
-                    let karkasMatch = true;
-                    if (karkasFilters.length > 0) {
-                        const expandedKarkasFilters = karkasFilters.flatMap(filter => filter.split('|').map(item => item.trim()));
-                        const isMonolitSelected = expandedKarkasFilters.includes("монолит") || expandedKarkasFilters.includes("монолитный");
-                        const isNemMonolitSelected = expandedKarkasFilters.includes("немонолит") || expandedKarkasFilters.includes("немонолитный");
-                        const isFoldingSelected = expandedKarkasFilters.includes("складной");
+        let karkasMatch = true;
+if (karkasFilters.length > 0) {
+    const expandedKarkasFilters = karkasFilters.flatMap(filter => filter.split('|').map(item => item.trim()));
+    const isMonolitSelected = expandedKarkasFilters.includes("монолит") || expandedKarkasFilters.includes("монолитный");
+    const isNemMonolitSelected = expandedKarkasFilters.includes("немонолит") || expandedKarkasFilters.includes("немонолитный");
+    const isFoldingSelected = expandedKarkasFilters.includes("складной");
+    const isMetallicSelected = expandedKarkasFilters.some(item =>
+        ["металлическ", "металлический", "металлическом", "металлического"].includes(item)
+    );
 
-                        if (isMonolitSelected || isNemMonolitSelected || isFoldingSelected) {
-                            const productSkeleton = product.skeleton?.toLowerCase().trim();
-                            if (!productSkeleton) {
-                                karkasMatch = false;
-                            } else {
-                                const selectedSkeletons = [];
-                                if (isMonolitSelected) selectedSkeletons.push("монолитный");
-                                if (isNemMonolitSelected) selectedSkeletons.push("немонолитный");
-                                if (isFoldingSelected) selectedSkeletons.push("складной");
-                                karkasMatch = selectedSkeletons.includes(productSkeleton);
-                            }
-                        }
+    // Проверка для "металлический" — в фильтрах и компонентах
+    if (isMetallicSelected && karkasMatch) {
+        const components = product.construction_and_materials?.[0]?.components || [];
+        const lowerComponents = components.map(c => c.toLowerCase());
+        const foundMetallic = lowerComponents.some(c => c.includes("металлический"));
+        if (!foundMetallic) {
+            karkasMatch = false;
+        }
+    }
 
-                        if (karkasMatch && karkasFilters.length > 0) {
-                            const otherKarkasFilters = karkasFilters.filter(f =>
-                                
-                                !f.includes("монолит") &&
-                                !f.includes("немонолит")
-                            );
-                            if (otherKarkasFilters.length > 0) {
-                                const cleanedUniqueName = uniqueName
-                                    .replace(/\s*([мm]b|mb)[-\s]?\d*\s*/gi, ' ')
-                                    .trim()
-                                    .toLowerCase();
-                                karkasMatch = otherKarkasFilters.every(filter => {
-                                    const patterns = filter.split('|');
-                                    return patterns.some(pattern => {
-                                        const lowerPattern = pattern.toLowerCase().trim();
-                                        const regex = new RegExp(`(^|\\s)(${lowerPattern})(\\s|$|-)`, 'i');
-                                        return regex.test(cleanedUniqueName);
-                                    });
-                                });
-                            }
-                        }
-                    }
+    // Проверка на остальные типы
+    if (karkasMatch && karkasFilters.length > 0) {
+        const otherKarkasFilters = karkasFilters.filter(f =>
+            !f.includes("монолит") &&
+            !f.includes("немонолит") &&
+            !f.includes("металлическ") && // исключая вариации "металлический"
+            !f.includes("металлический") &&
+            !f.includes("металлическом") &&
+            !f.includes("металлического")
+        );
+
+        if (isMonolitSelected || isNemMonolitSelected || isFoldingSelected) {
+            const productSkeleton = product.skeleton?.toLowerCase().trim();
+            if (!productSkeleton) {
+                karkasMatch = false;
+            } else {
+                const selectedSkeletons = [];
+                if (isMonolitSelected) selectedSkeletons.push("монолитный");
+                if (isNemMonolitSelected) selectedSkeletons.push("немонолитный");
+                if (isFoldingSelected) selectedSkeletons.push("складной");
+                // Проверка соответствия skeleton
+                karkasMatch = selectedSkeletons.includes(productSkeleton);
+            }
+        }
+
+        // Проверка фильтров, если есть
+        if (karkasMatch && otherKarkasFilters.length > 0) {
+            const cleanedUniqueName = uniqueName
+                .replace(/\s*([мm]b|mb)[-\s]?\d*\s*/gi, ' ')
+                .trim()
+                .toLowerCase();
+            karkasMatch = otherKarkasFilters.every(filter => {
+                const patterns = filter.split('|');
+                return patterns.some(pattern => {
+                    const lowerPattern = pattern.toLowerCase().trim();
+                    const regex = new RegExp(`(^|\\s)(${lowerPattern})(\\s|$|-)`, 'i');
+                    return regex.test(cleanedUniqueName);
+                });
+            });
+        }
+    }
+}
 
 // let armrestTypeMatch = true;
 // if (armrestTypeFilters.length > 0) {
