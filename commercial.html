@@ -365,53 +365,37 @@ let pricesRemoved = false;
         .trim()
         .replace(/\baero\b/g, 'аэро'); // пример замены, при необходимости
     }
+    
 
-    document.getElementById('delete-price-btn').addEventListener('click', () => {
-  // Находим таблицу по id или классу
+document.getElementById('delete-price-btn').addEventListener('click', () => {
+  // Удаление цен из таблицы
   const tbody = document.querySelector('#commercial-table-body');
   if (tbody) {
-    // Обнуляем содержимое всех строк таблицы
     tbody.innerHTML = '';
   }
 
-  // очистить заголовки колонок
-  const headerCells = document.querySelectorAll('.commercial-table thead th');
-  headerCells.forEach(th => {
+  // Очистка заголовков колонок, связанных с ценами
+  document.querySelectorAll('.commercial-table thead th').forEach(th => {
     if (th.textContent.trim().toLowerCase().includes('цена') || th.textContent.trim().toLowerCase().includes('сумма')) {
       th.textContent = '';
     }
   });
 
-  // очистить конкретные ячейки в каждой строке таблицы
+  // Очистка цен и сумм в строках таблицы
   document.querySelectorAll('.commercial-table tbody tr').forEach(row => {
-    //  4-й и 5-й столбцы — это "Цена с НДС 22%" и "Сумма с НДС 22%"
     row.children[3].textContent = '';
     row.children[4].textContent = '';
   });
-  // Находим все такие блоки на странице
-  const productDetailsDivs = document.querySelectorAll('.commercial-product-details');
 
-  productDetailsDivs.forEach(div => {
-    // Получаем содержимое блока как HTML
-    let htmlContent = div.innerHTML;
-
-    // Создаём временный DOM-элемент для парсинга
-    const tempDiv = document.createElement('div');
-    tempDiv.innerHTML = htmlContent;
-
-    // Ищем все <p> элементы внутри
-    const paragraphs = tempDiv.querySelectorAll('p');
-
-    paragraphs.forEach(p => {
-      const text = p.textContent.trim().toLowerCase();
-      if (text.includes('цена') || text.includes('сумма')) {
-        p.remove(); // удаляем строку
-      }
-    });
-
-    // Обновляем содержимое блока
-    div.innerHTML = tempDiv.innerHTML;
+  // Удаление цен внутри блоков товаров
+  document.querySelectorAll('.commercial-product-details').forEach(div => {
+    // Удаляем строки с ценой и суммой
+    div.innerHTML = div.innerHTML.replace(/<p><strong>Цена:<\/strong>.*?<\/p>/, '');
+    div.innerHTML = div.innerHTML.replace(/<p><strong>Сумма:<\/strong>.*?<\/p>/, '');
   });
+
+  // Устанавливаем статус, что цены удалены
+  pricesRemoved = true;
 });
 
     document.getElementById('add-dimensions-btn').addEventListener('click', () => {
@@ -1468,6 +1452,22 @@ let pricesRemoved = false;
 
     // Функция для генерации PDF
     async function generateCommercialOffer() {
+      if (pricesRemoved) {
+    // Повторно удаляем цены из DOM, чтобы гарантировать
+    document.querySelectorAll('.commercial-table tbody tr').forEach(row => {
+      row.children[3].textContent = '';
+      row.children[4].textContent = '';
+    });
+    document.querySelectorAll('.commercial-table thead th').forEach(th => {
+      if (th.textContent.trim().toLowerCase().includes('цена') || th.textContent.trim().toLowerCase().includes('сумма')) {
+        th.textContent = '';
+      }
+    });
+    document.querySelectorAll('.commercial-product-details').forEach(div => {
+      div.innerHTML = div.innerHTML.replace(/<p><strong>Цена:<\/strong>.*?<\/p>/, '');
+      div.innerHTML = div.innerHTML.replace(/<p><strong>Сумма:<\/strong>.*?<\/p>/, '');
+    });
+  }
 
       updateProductImagesInDOM();
 
