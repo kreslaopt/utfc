@@ -42,6 +42,7 @@ parents_mapping = {
     'utfc оcака м-201 черный плаcтик':'utfc оcака м-201',
     'utfc cанда м-207 черный плаcтик':'utfc cанда м-207',
     'utfc онтарио ch-105 пластик хром':'онтарио сн-105 в пластик/хром',
+    'utfc онтарио ch-105 пластик хром':'онтарио сн-105 в пластик хром',
     'epik a-130-g brown':'epik a-130-g',
     'epik a-130-g gr':'epik a-130-g',
     'epik a-155-g темно-cиний':'epik a-155-g',
@@ -633,7 +634,7 @@ with open('missing_parents.txt', 'w', encoding='utf-8') as f:
 print("\nСписок сохранён в missing_parents.txt")
 
 test_strings = [
-    "шелл c-07 софт"
+    "utfc онтарио ch-105 пластик хром"
     # 'сн-710 айкью н_п',
     # 'соло max сн-602 пластик',
     # 'соло макс ch-602 пластик',
