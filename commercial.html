@@ -374,7 +374,7 @@ let pricesRemoved = false;
     tbody.innerHTML = '';
   }
 
-  // Также можно очистить заголовки колонок, если нужно
+  // очистить заголовки колонок
   const headerCells = document.querySelectorAll('.commercial-table thead th');
   headerCells.forEach(th => {
     if (th.textContent.trim().toLowerCase().includes('цена') || th.textContent.trim().toLowerCase().includes('сумма')) {
@@ -382,11 +382,35 @@ let pricesRemoved = false;
     }
   });
 
-  // Или очистить конкретные ячейки в каждой строке таблицы
+  // очистить конкретные ячейки в каждой строке таблицы
   document.querySelectorAll('.commercial-table tbody tr').forEach(row => {
-    // Предположим, что 4-й и 5-й столбцы — это "Цена с НДС 22%" и "Сумма с НДС 22%"
+    //  4-й и 5-й столбцы — это "Цена с НДС 22%" и "Сумма с НДС 22%"
     row.children[3].textContent = '';
     row.children[4].textContent = '';
+  });
+  // Находим все такие блоки на странице
+  const productDetailsDivs = document.querySelectorAll('.commercial-product-details');
+
+  productDetailsDivs.forEach(div => {
+    // Получаем содержимое блока как HTML
+    let htmlContent = div.innerHTML;
+
+    // Создаём временный DOM-элемент для парсинга
+    const tempDiv = document.createElement('div');
+    tempDiv.innerHTML = htmlContent;
+
+    // Ищем все <p> элементы внутри
+    const paragraphs = tempDiv.querySelectorAll('p');
+
+    paragraphs.forEach(p => {
+      const text = p.textContent.trim().toLowerCase();
+      if (text.includes('цена') || text.includes('сумма')) {
+        p.remove(); // удаляем строку
+      }
+    });
+
+    // Обновляем содержимое блока
+    div.innerHTML = tempDiv.innerHTML;
   });
 });
 
