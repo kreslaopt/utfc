@@ -2088,10 +2088,40 @@ if (karkasFilters.length > 0) {
         const components = product.construction_and_materials?.[0]?.components || [];
         const lowerComponents = components.map(c => c.toLowerCase());
         const foundMetallic = lowerComponents.some(c => c.includes("металлический"));
-        if (!foundMetallic) {
-            karkasMatch = false;
-        }
+
+        const excludePhrases = [
+        "эрго б/п овалина пластик",
+        "эрго б_п овалина пластик",
+        "престиж б/п овалина/пластик",
+        "престиж гольф овалина/пластик",
+        "престиж нептун овалина/хром",
+        "престиж самба овалина/пластик",
+        "престиж соната овалина/пластик",
+        "стар б/п овалина пластик",
+        "престиж б_п овалина пластик",
+        "престиж гольф овалина пластик",
+        "престиж нептун овалина хром",
+        "престиж самба овалина пластик",
+        "престиж соната овалина пластик",
+        "стар б_п овалина пластик",
+
+
+    ];
+
+    const productFields = [
+        ...product.namefile || [],
+        ...product.name || [],
+        ...product.unique_name || []
+    ].map(field => field.toLowerCase());
+
+    const containsExcludedPhrase = productFields.some(field =>
+        excludePhrases.some(phrase => field.includes(phrase))
+    );
+
+    if (!foundMetallic || containsExcludedPhrase) {
+        karkasMatch = false;
     }
+}
 
     // Проверка на остальные типы
     if (karkasMatch && karkasFilters.length > 0) {
