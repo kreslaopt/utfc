@@ -182,7 +182,7 @@ input[type=number]::-webkit-inner-spin-button {
   font-weight: 600;
   writing-mode: vertical-rl; /* или vertical-lr */
   line-height: 0.8;
-  margin: 8px 5px 5px 5px;
+  margin: 8px 0px 0px 5px;
 }
 
 .height_slider {
