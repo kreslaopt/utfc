@@ -408,7 +408,7 @@
         {
             "clean": false,
             "limit": false,
-            "del": true
+            "del": false
         }
     ],
     "title": "Стул С-07 Шелл Софт СН производства компании UTFC",
