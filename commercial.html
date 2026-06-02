@@ -939,7 +939,7 @@
       if (sketchSrc) {
         sketchHTML = `
     <div class="sketch-container">
-      <img src="${sketchSrc}" class="sketch-img" style="max-width: 380px;">
+      <img src="${sketchSrc}" data-issketch="true" class="sketch-img" style="max-width: 380px;">
     </div>
   `;
       }
@@ -952,12 +952,13 @@
         <div class="commercial-product-images">
             ${imagesHTML}
             <div id="${qrId}" class="qr-code-container" style="display: inline-block; vertical-align: top;"></div>
-        </div>
+        </div>        
         
         <div class="commercial-product-details" contenteditable="true">
             <p><strong>Количество:</strong> ${product.count}</p>
             <p><strong>Цена:</strong> ${product.CV_PRICE_1} ${product.CV_CURRENCY_1 || 'RUB'}</p>
-            <p><strong>Сумма:</strong> ${(parseFloat(product.CV_PRICE_1) * product.count).toFixed(2)} ${product.CV_CURRENCY_1 || 'RUB'}</p>            
+            <p><strong>Сумма:</strong> ${(parseFloat(product.CV_PRICE_1) * product.count).toFixed(2)} ${product.CV_CURRENCY_1 || 'RUB'}</p>               
+            
     `;
       detailsHTML += `${sketchHTML}`;
       // ${saveImagesButton}
@@ -1717,9 +1718,12 @@ function updateProductImagesInDOM() {
     // }
 
 // document.body.addEventListener('click', handleAnyClickOnSketchArea);
-// document.querySelectorAll('.sketch-container').forEach(container => {
-//   container.addEventListener('click', handleAnyClickOnSketchArea);
-// });
+// Обработчик для всех кликов по контейнерам
+document.querySelectorAll('.sketch-container').forEach(container => {
+  container.addEventListener('click', handleAnyClickOnSketchArea);
+});
+
+// Обработчик для всех кликов по странице
 document.addEventListener('click', (e) => {
   const viewportWidth = window.innerWidth;
   const viewportHeight = window.innerHeight;
@@ -1727,7 +1731,7 @@ document.addEventListener('click', (e) => {
   const x = e.clientX;
   const y = e.clientY;
 
-  // Проверяем, попадает ли клик в правую нижнюю 30%
+  // Проверяем, что клик в нижних 40% и правых 40%
   if (x > viewportWidth * 0.6 && y > viewportHeight * 0.6) {
     handleAnyClickOnSketchArea(e);
   }
