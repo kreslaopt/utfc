@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="Content-Security-Policy" content="
+  <meta http-equiv="Content-Security-Policy" content="
     default-src 'self' https://via.placeholder.com https://utfc.ru https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru https://example.com https://*.selstorage.ru;
     script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdn.plot.ly https://cdnjs.cloudflare.com;
     style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com https://utfc.pythonanywhere.com;
@@ -12,12 +12,11 @@
     img-src 'self' data: https://utfc.ru https://via.placeholder.com https://chart.googleapis.com https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru https://cdn.utfc-store.ru https://example.com;
     connect-src 'self' https://utfc.ru http://utfc.pythonanywhere.com https://utfc.pythonanywhere.com https://cdnjs.cloudflare.com;
 ">
-  <title>Коммерческое предложение</title>  
+  <title>Коммерческое предложение</title>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
   <link rel="stylesheet" href="css/commercial.css">
-
 </head>
 
 <body>
@@ -78,7 +77,6 @@
             d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
         </svg>
       </div>
-
       <div class="commercial-titul-site">
         <img src="img/titul_commercial_site.png" alt="Фоновое изображение">
       </div>
@@ -90,23 +88,16 @@
       <p>8 800 350 12 34</p>
       <p>sale@utfc.ru</p>
     </div>
-
-
     <div class="commercial-titul-logo">
       <img src="img/titul_commercial_1.png" alt="Фоновое изображение">
     </div>
-
-
   </div>
 
-       <!-- Таблица товаров -->
-
+  <!-- Таблица товаров -->
   <div class="commercial-table-container">
-            
     <div class="commercial-titul-site">
       <img src="img/titul_commercial_site.png" alt="Фоновое изображение">
     </div>
-
     <div class="commercial-company" contenteditable="true" id="custom-company">
       <!-- <p>UTFC.RU / 8 800 350 1234</p> -->
       <p>ООО «ФЕСТ»</p>
@@ -114,7 +105,6 @@
       <p>8 800 350 12 34</p>
       <p>sale@utfc.ru</p>
     </div>
-
     <table class="commercial-table" contenteditable="true">
       <thead>
         <tr>
@@ -128,19 +118,12 @@
       <tbody id="commercial-table-body" contenteditable="true"></tbody>
     </table>
   </div>
-
-
-
   </div>
-
   <!-- Блоки товаров -->
   <div id="commercial-products">
-
   </div>
-
   <div class="a4-container">
     <!-- Завершающая страница -->
-
     <div class="commercial-date" contenteditable="true">
       <span id="current-date"></span>
     </div>
@@ -148,7 +131,6 @@
       <div class="commercial-titul-site">
         <img src="img/titul_commercial_site.png" alt="Фоновое изображение">
       </div>
-
       <div class="commercial-company" contenteditable="true" id="custom-company">
         <!-- <p>UTFC.RU / 8 800 350 1234</p> -->
         <p>ООО «ФЕСТ»</p>
@@ -156,7 +138,6 @@
         <p>8 800 350 12 34</p>
         <p>sale@utfc.ru</p>
       </div>
-
       <div class="conditions" contenteditable="true" id="custom-conditions">
         <p>- Доставка, сборка, погрузо-разгрузочные работы, вывоз мусора включены в стоимость изделия.</p>
         <p>- Вся мебель новая, не бывшая в употреблении.</p>
@@ -165,8 +146,6 @@
         <p>- Условия оплаты: в безналичной форме, в российских рублях на основании счета.</p>
         <p>- Срок доставки товара: в течение 3-х рабочих дней с момента оплаты счета.</p>
       </div>
-
-
     </div>
     <!-- <div class="fax" style="position: relative;">
   <img id="fax-image" src="img/fax.png" alt="Фоновое изображение" style="position: absolute; bottom: -700px; left:-30px; width: 200px; height: auto; cursor: move;">
@@ -189,7 +168,6 @@
     display: flex; 
     align-items: center; 
     gap: 8px;"> <!-- Расстояние между иконками -->
-
         <!-- Иконка изменения размера -->
         <div id="resize-handle" style="
       width: 24px; 
@@ -204,7 +182,6 @@
               d="M5.828 10.172a.5.5 0 0 0-.707 0l-4.096 4.096V11.5a.5.5 0 0 0-1 0v3.975a.5.5 0 0 0 .5.5H4.5a.5.5 0 0 0 0-1H1.732l4.096-4.096a.5.5 0 0 0 0-.707zm4.344 0a.5.5 0 0 1 .707 0l4.096 4.096V11.5a.5.5 0 1 1 1 0v3.975a.5.5 0 0 1-.5.5H11.5a.5.5 0 0 1 0-1h2.768l-4.096-4.096a.5.5 0 0 1 0-.707zm0-4.344a.5.5 0 0 0 .707 0l4.096-4.096V4.5a.5.5 0 1 0 1 0V.525a.5.5 0 0 0-.5-.5H11.5a.5.5 0 0 0 0 1h2.768l-4.096 4.096a.5.5 0 0 0 0 .707zm-4.344 0a.5.5 0 0 1-.707 0L1.025 1.732V4.5a.5.5 0 0 1-1 0V.525a.5.5 0 0 1 .5-.5H4.5a.5.5 0 0 1 0 1H1.732l4.096 4.096a.5.5 0 0 1 0 .707z" />
           </svg>
         </div>
-
         <!-- Иконка удаления -->
         <div id="delete-icon" style="
       width: 24px; 
@@ -223,8 +200,6 @@
         </div>
       </div>
     </div>
-
-
     <div class="commercial-signature" contenteditable="true" id="custom-signature">
       <p>Поставщик: ООО «ФЕСТ»</p>
     </div>
@@ -264,8 +239,8 @@
     let bmfPhoneSrc = 'img/titul_commercial_site_2.png';
     let festFaxSrc = 'img/fax.png';
     let festTitulSiteSrc = 'img/titul_commercial_site.png';
-let originalPriceData = [];
-let pricesRemoved = false; 
+    let originalPriceData = [];
+    let pricesRemoved = false;
 
     // Устанавливаем текущую дату для всех элементов с классом commercial-date
     document.querySelectorAll('.commercial-date span').forEach(el => {
@@ -365,38 +340,37 @@ let pricesRemoved = false;
         .trim()
         .replace(/\baero\b/g, 'аэро'); // пример замены, при необходимости
     }
-    
 
-document.getElementById('delete-price-btn').addEventListener('click', () => {
-  // Удаление цен из таблицы
-  const tbody = document.querySelector('#commercial-table-body');
-  if (tbody) {
-    tbody.innerHTML = '';
-  }
+    document.getElementById('delete-price-btn').addEventListener('click', () => {
+      // Удаление цен из таблицы
+      const tbody = document.querySelector('#commercial-table-body');
+      if (tbody) {
+        tbody.innerHTML = '';
+      }
 
-  // Очистка заголовков колонок, связанных с ценами
-  document.querySelectorAll('.commercial-table thead th').forEach(th => {
-    if (th.textContent.trim().toLowerCase().includes('цена') || th.textContent.trim().toLowerCase().includes('сумма')) {
-      th.textContent = '';
-    }
-  });
+      // Очистка заголовков колонок, связанных с ценами
+      document.querySelectorAll('.commercial-table thead th').forEach(th => {
+        if (th.textContent.trim().toLowerCase().includes('цена') || th.textContent.trim().toLowerCase().includes('сумма')) {
+          th.textContent = '';
+        }
+      });
 
-  // Очистка цен и сумм в строках таблицы
-  document.querySelectorAll('.commercial-table tbody tr').forEach(row => {
-    row.children[3].textContent = '';
-    row.children[4].textContent = '';
-  });
+      // Очистка цен и сумм в строках таблицы
+      document.querySelectorAll('.commercial-table tbody tr').forEach(row => {
+        row.children[3].textContent = '';
+        row.children[4].textContent = '';
+      });
 
-  // Удаление цен внутри блоков товаров
-  document.querySelectorAll('.commercial-product-details').forEach(div => {
-    // Удаляем строки с ценой и суммой
-    div.innerHTML = div.innerHTML.replace(/<p><strong>Цена:<\/strong>.*?<\/p>/, '');
-    div.innerHTML = div.innerHTML.replace(/<p><strong>Сумма:<\/strong>.*?<\/p>/, '');
-  });
+      // Удаление цен внутри блоков товаров
+      document.querySelectorAll('.commercial-product-details').forEach(div => {
+        // Удаляем строки с ценой и суммой
+        div.innerHTML = div.innerHTML.replace(/<p><strong>Цена:<\/strong>.*?<\/p>/, '');
+        div.innerHTML = div.innerHTML.replace(/<p><strong>Сумма:<\/strong>.*?<\/p>/, '');
+      });
 
-  // Устанавливаем статус, что цены удалены
-  pricesRemoved = true;
-});
+      // Устанавливаем статус, что цены удалены
+      pricesRemoved = true;
+    });
 
     document.getElementById('add-dimensions-btn').addEventListener('click', () => {
       console.log('Кнопка нажата');
@@ -669,7 +643,6 @@ document.getElementById('delete-price-btn').addEventListener('click', () => {
       document.querySelectorAll('.commercial-titul-logo img').forEach(img => {
         img.src = isBmf ? 'img/titul_commercial_2.png' : 'img/titul_commercial_1.png';
       });
-
     }
 
     function setBmfBackgrounds(isBmf) {
@@ -709,7 +682,6 @@ document.getElementById('delete-price-btn').addEventListener('click', () => {
         setBmfBackgrounds(false);
       }
     }
-
 
     // Функция для получения данных из localStorage
     function getFinalSelectionData() {
@@ -752,7 +724,6 @@ document.getElementById('delete-price-btn').addEventListener('click', () => {
           Link_arm: data.Link_arm || '#',
         });
       });
-
       return result;
     }
 
@@ -986,9 +957,7 @@ document.getElementById('delete-price-btn').addEventListener('click', () => {
         <div class="commercial-product-details" contenteditable="true">
             <p><strong>Количество:</strong> ${product.count}</p>
             <p><strong>Цена:</strong> ${product.CV_PRICE_1} ${product.CV_CURRENCY_1 || 'RUB'}</p>
-            <p><strong>Сумма:</strong> ${(parseFloat(product.CV_PRICE_1) * product.count).toFixed(2)} ${product.CV_CURRENCY_1 || 'RUB'}</p>
-            
-            
+            <p><strong>Сумма:</strong> ${(parseFloat(product.CV_PRICE_1) * product.count).toFixed(2)} ${product.CV_CURRENCY_1 || 'RUB'}</p>            
     `;
       detailsHTML += `${sketchHTML}`;
       // ${saveImagesButton}
@@ -1138,7 +1107,6 @@ document.getElementById('delete-price-btn').addEventListener('click', () => {
         container.appendChild(adresantParagraph);
       }
 
-
       // скрываем титульный лист
       // const titlePage = document.querySelector('.commercial-header');
       // if (titlePage) {
@@ -1155,7 +1123,6 @@ document.getElementById('delete-price-btn').addEventListener('click', () => {
       //   logonone.style.display = 'none';
       // }
     });
-
 
     // Обработчики кнопок
     document.querySelector('button[data-signature="second"]').addEventListener('click', () => {
@@ -1258,8 +1225,6 @@ document.getElementById('delete-price-btn').addEventListener('click', () => {
         return null;
       }
     }
-
-
 
     // Замена всех изображений с utfc.ru на base64 или локальную заглушку
     async function replaceImagesWithBase64() {
@@ -1383,8 +1348,6 @@ document.getElementById('delete-price-btn').addEventListener('click', () => {
       });
     }
 
-
-
     function removeAllSketches() {
       document.querySelectorAll('.sketch-container').forEach(container => {
         container.style.display = 'none';
@@ -1393,31 +1356,34 @@ document.getElementById('delete-price-btn').addEventListener('click', () => {
     }
 
     // Обновляем изображения товаров перед созданием страниц
-    function updateProductImagesInDOM() {
-      document.querySelectorAll('.commercial-product').forEach(productDiv => {
-        const productName = productDiv.querySelector('h3')?.getAttribute('data-product-name');
-        if (!productName) return;
+function updateProductImagesInDOM() {
+  document.querySelectorAll('.commercial-product').forEach(productDiv => {
+    const productName = productDiv.querySelector('h3')?.getAttribute('data-product-name');
+    if (!productName) return;
 
-        const sketchSrc = localStorage.getItem(`sketch_${productName}`);
-        let sketchContainer = productDiv.querySelector('.sketch-container');
+    const sketchSrc = localStorage.getItem(`sketch_${productName}`);
+    let sketchContainer = productDiv.querySelector('.sketch-container');
 
-        if (sketchSrc) {
-          if (!sketchContainer) {
-            sketchContainer = document.createElement('div');
-            sketchContainer.className = 'sketch-container';
+    if (sketchSrc) {
+      if (!sketchContainer) {
+        // Создаем контейнер, если его нет
+        sketchContainer = document.createElement('div');
+        sketchContainer.className = 'sketch-container';
 
-            const imagesContainer = productDiv.querySelector('.commercial-product-images');
-            if (imagesContainer) {
-              imagesContainer.appendChild(sketchContainer);
-            }
-          } else {
-            sketchContainer.innerHTML = '';
-          }
-          // вставляем изображение эскиза
-          sketchContainer.innerHTML = `<img src="${sketchSrc}" class="sketch-img" style="max-width: 380px;" data-isSketch="true">`;
+        // Находим контейнер для изображений продукта
+        const imagesContainer = productDiv.querySelector('.commercial-product-images');
+        if (imagesContainer) {
+          imagesContainer.appendChild(sketchContainer);
         }
-      });
+      } else {
+        // Очищаем существующий контейнер
+        sketchContainer.innerHTML = '';
+      }
+      // Вставляем изображение из localStorage
+      sketchContainer.innerHTML = `<img src="${sketchSrc}" class="sketch-img" style="max-width: 380px;" data-isSketch="true">`;
     }
+  });
+}
     // function saveCurrentImagesToLocalStorage() {
     //   document.querySelectorAll('.commercial-product').forEach(productDiv => {
     //     const productName = productDiv.querySelector('h3')?.getAttribute('data-product-name');
@@ -1448,33 +1414,33 @@ document.getElementById('delete-price-btn').addEventListener('click', () => {
       });
     }
 
-
+    function delPrice() {
+      if (pricesRemoved) {
+        // Повторно удаляем цены из DOM, чтобы гарантировать
+        document.querySelectorAll('.commercial-table tbody tr').forEach(row => {
+          row.children[3].textContent = '';
+          row.children[4].textContent = '';
+        });
+        document.querySelectorAll('.commercial-table thead th').forEach(th => {
+          if (th.textContent.trim().toLowerCase().includes('цена') || th.textContent.trim().toLowerCase().includes('сумма')) {
+            th.textContent = '';
+          }
+        });
+        document.querySelectorAll('.commercial-product-details').forEach(div => {
+          div.innerHTML = div.innerHTML.replace(/<p><strong>Цена:<\/strong>.*?<\/p>/, '');
+          div.innerHTML = div.innerHTML.replace(/<p><strong>Сумма:<\/strong>.*?<\/p>/, '');
+        });
+      }
+    }
 
     // Функция для генерации PDF
     async function generateCommercialOffer() {
-      if (pricesRemoved) {
-    // Повторно удаляем цены из DOM, чтобы гарантировать
-    document.querySelectorAll('.commercial-table tbody tr').forEach(row => {
-      row.children[3].textContent = '';
-      row.children[4].textContent = '';
-    });
-    document.querySelectorAll('.commercial-table thead th').forEach(th => {
-      if (th.textContent.trim().toLowerCase().includes('цена') || th.textContent.trim().toLowerCase().includes('сумма')) {
-        th.textContent = '';
-      }
-    });
-    document.querySelectorAll('.commercial-product-details').forEach(div => {
-      div.innerHTML = div.innerHTML.replace(/<p><strong>Цена:<\/strong>.*?<\/p>/, '');
-      div.innerHTML = div.innerHTML.replace(/<p><strong>Сумма:<\/strong>.*?<\/p>/, '');
-    });
-  }
-
+      delPrice();
       updateProductImagesInDOM();
 
       document.querySelectorAll('.commercial-product img').forEach((img, index) => {
         console.log(`Image ${index}: src=${img.src}, data-isSketch=${img.getAttribute('data-isSketch')}`);
       });
-
 
       // Скрываем все кнопки "Сохранить все изображения" внутри блоков товаров
       const saveButtons = document.querySelectorAll('.save-images-button');
@@ -1488,8 +1454,6 @@ document.getElementById('delete-price-btn').addEventListener('click', () => {
         unit: 'mm',
         format: 'a4',
       });
-
-
 
       // 1. Титульный лист
       const titlePage = document.querySelector('.a4-container:first-of-type');
@@ -1532,8 +1496,6 @@ document.getElementById('delete-price-btn').addEventListener('click', () => {
         button.style.display = '';
       });
     }
-
-
 
     // Функция обновления подписи, логотипов и титульных изображений
     function updateSignatureAndLogos(isBmf) {
@@ -1608,10 +1570,60 @@ document.getElementById('delete-price-btn').addEventListener('click', () => {
         pageNumberBox.style.backgroundColor = pageNumberBgColor; // используем сохраненный цвет
         page.appendChild(pageNumberBox);
       });
-
-
-
     }
+
+    function handleAnyClickOnSketchArea(e) {
+  // Определяем, где кликнули
+    if (!e) return; 
+  const target = e.target;
+  if (!target) return;
+
+  // Проверяем, что клик внутри блока с эскизом или внутри блока товара
+  const container = target.closest('.commercial-product');
+  if (!container) return;
+
+  // Ищем или создаем sketch-container
+  let sketchContainer = container.querySelector('.sketch-container');
+  if (!sketchContainer) {
+    // Создаем и вставляем
+    sketchContainer = document.createElement('div');
+    sketchContainer.className = 'sketch-container';
+    container.appendChild(sketchContainer);
+  }
+
+  // Создаем или обновляем изображение
+  let sketchImg = sketchContainer.querySelector('img.sketch-img');
+  if (!sketchImg) {
+    sketchImg = document.createElement('img');
+    sketchImg.className = 'sketch-img';
+    sketchContainer.appendChild(sketchImg);
+  }
+
+  // Открываем диалог выбора файла
+  const inputFile = document.createElement('input');
+  inputFile.type = 'file';
+  inputFile.accept = 'image/*';
+
+  inputFile.onchange = (event) => {
+    const file = event.target.files[0];
+    if (file && file.type.startsWith('image/')) {
+      const reader = new FileReader();
+      reader.onload = () => {
+        // Обновляем изображение
+        sketchImg.src = reader.result;
+
+        // Сохраняем в localStorage
+        const productName = container.querySelector('h3')?.getAttribute('data-product-name');
+        if (productName) {
+          localStorage.setItem(`sketch_${productName}`, reader.result);
+        }
+      };
+      reader.readAsDataURL(file);
+    }
+  };
+
+  inputFile.click();
+}
 
     // Загружаем данные из localStorage и отображаем их на странице
     async function loadAndDisplayProducts() {
@@ -1704,11 +1716,10 @@ document.getElementById('delete-price-btn').addEventListener('click', () => {
     //   });
     // }
 
-
+document.body.addEventListener('click', handleAnyClickOnSketchArea);
     // Привязываем функцию к кнопке
     document.getElementById('generateOffer').addEventListener('click', async function () {
       try {
-
 
         const data = getFinalSelectionData();
         if (data.length === 0) {
@@ -1750,7 +1761,7 @@ document.getElementById('delete-price-btn').addEventListener('click', () => {
 
         // Обновляем нумерацию страниц в HTML
         updatePageNumbers();
-        updateProductImagesInDOM();
+        
         setImageSizesForPDF();
 
         // Ждём 1 секунду на случай, если QR-коды ещё грузятся
@@ -1762,7 +1773,8 @@ document.getElementById('delete-price-btn').addEventListener('click', () => {
         if (btn && btn.textContent.trim() === 'Добавить эскиз с размерами') {
           removeAllSketches();
         }
-
+        
+        updateProductImagesInDOM();
         // Генерируем PDF        
 
         await generateCommercialOffer();
@@ -1772,6 +1784,9 @@ document.getElementById('delete-price-btn').addEventListener('click', () => {
         alert("Не удалось сформировать PDF. Проверьте консоль для деталей.");
       }
     });
+    window.addEventListener('load', () => {
+  updateProductImagesInDOM();
+});
 
     // Загружаем и отображаем товары при загрузке страницы
     window.onload = async () => {
@@ -1784,9 +1799,6 @@ document.getElementById('delete-price-btn').addEventListener('click', () => {
       setLogosAndBackgrounds(false);
       updateSignatureAndLogos(true);
       setImageSizesForPDF();
-
-
-
     };
   </script>
 </body>
