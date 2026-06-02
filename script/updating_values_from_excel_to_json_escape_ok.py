@@ -122,7 +122,10 @@ parents_mapping = {
     'софия со столиком':'софия со столиком',
     'софия со столиком bl':'софия со столиком',
     'софия':'софия',
-    'софия bl':'софия'
+    'софия bl':'софия',
+    'сильвия арм хром':'сильвия арм хром',
+    'сильвия хром':'сильвия хром'
+    
     # 'кайман ch-300 н_п bl':'кайман сн-300 н/п хром',    не получилось
 
 }
@@ -142,12 +145,11 @@ parents_mapping.update(new_parents_mapping)
     #     }
 # НЕ СРАБАТЫВАЕТ ДЛЯ
 # "самба люкс gtp tg столик",
-    # "сильвия арм хром",
-    # "сильвия хром"
+
     # ]
 
 # Функция нормализации имени модели
-def normalize_moкаркаса_name(name):
+def normalize_karkas_name(name):
     if not isinstance(name, str):
         return ""
     name = name.strip()
@@ -159,7 +161,7 @@ def normalize_moкаркаса_name(name):
 
     # Теперь все вариации с сн-602 и ch-602 приводим к одинаковому виду
 
-    # Остальные ваши замены
+    # Остальные замены
     name = name.replace('_', '/')
     name = re.sub(r'стул|кресло|кресло utfc', '', name, flags=re.IGNORECASE)
     name = re.sub(r'с\s*[-_]?\s*(\d+)', r'с-\1', name, flags=re.IGNORECASE)
@@ -185,10 +187,11 @@ def normalize_moкаркаса_name(name):
     name = re.sub(r'\s+', ' ', name).strip()
 
     return name.lower()
+    
 
 parents_mapping_normalized = {}
 for key, value in parents_mapping.items():
-    normalized_key = normalize_moкаркаса_name(key)
+    normalized_key = normalize_karkas_name(key)
     parents_mapping_normalized[normalized_key] = value
 
 # Преобразование пустых значений
@@ -239,7 +242,7 @@ excel_path = r'C:\Users\UTFC\Documents\Downloads\Таблица с размер�
 df = pd.read_excel(excel_path, sheet_name='Размеры')
 
 excel_data = {}
-moкаркасаs_excel = df.iloc[3:, 1].dropna().tolist()
+karkass_excel = df.iloc[3:, 1].dropna().tolist()
 
 columns_mapping = {
     'Unnamed: 2': ('chair_height', 'min', 'max'),
@@ -277,34 +280,34 @@ columns_mapping = {
     'Unnamed: 46': ('pallet_width', None, None),
 }
 
-for i, moкаркаса in enumerate(moкаркасаs_excel):
-    normalized_moкаркаса = normalize_moкаркаса_name(moкаркаса)
-    moкаркаса_data = {
-        "moкаркаса": moкаркаса,
-        "normalized": normalized_moкаркаса,
+for i, karkas in enumerate(karkass_excel):
+    normalized_karkas = normalize_karkas_name(karkas)
+    karkas_data = {
+        "karkas": karkas,
+        "normalized": normalized_karkas,
         "dimensions_details": {},
         "additional_info": {}
     }
 
     for col, (key, min_key, max_key) in columns_mapping.items():
         if min_key is not None and max_key is not None:
-            moкаркаса_data["dimensions_details"][key] = {
+            karkas_data["dimensions_details"][key] = {
                 "min": format_number_whole(normalize_value(df.iloc[i + 3, df.columns.get_loc(col)])),
                 "max": format_number_whole(normalize_value(df.iloc[i + 3, df.columns.get_loc(col) + 1]))
             }
         elif min_key is not None:
-            moкаркаса_data["dimensions_details"][key] = {
+            karkas_data["dimensions_details"][key] = {
                 "min": format_number_whole(normalize_value(df.iloc[i + 3, df.columns.get_loc(col)])),
                 "max": None
             }
         elif max_key is not None:
-            moкаркаса_data["dimensions_details"][key] = {
+            karkas_data["dimensions_details"][key] = {
                 "max": format_number_whole(normalize_value(df.iloc[i + 3, df.columns.get_loc(col)]))
             }
         else:
-            moкаркаса_data["dimensions_details"][key] = format_number_whole(normalize_value(df.iloc[i + 3, df.columns.get_loc(col)]))
+            karkas_data["dimensions_details"][key] = format_number_whole(normalize_value(df.iloc[i + 3, df.columns.get_loc(col)]))
 
-    moкаркаса_data["additional_info"] = {
+    karkas_data["additional_info"] = {
         "package_dimensions": {
             "width": format_number_whole(normalize_value(df.iloc[i + 3, df.columns.get_loc('Unnamed: 40')])),
             "depth": format_number_whole(normalize_value(df.iloc[i + 3, df.columns.get_loc('Unnamed: 41')])),
@@ -315,7 +318,7 @@ for i, moкаркаса in enumerate(moкаркасаs_excel):
         "volume": format_number(normalize_value(df.iloc[i + 3, df.columns.get_loc('Unnamed: 44')]))
     }
 
-    excel_data[normalized_moкаркаса] = moкаркаса_data
+    excel_data[normalized_karkas] = karkas_data
 
 products_dir = r'C:\Users\UTFC\Documents\БалтМебель\to\products'
 
@@ -342,30 +345,30 @@ failed_updates = []
 
 
 # Собираем все нормализованные имена моделей из JSON-файлов
-all_json_moкаркасаs = set()
+all_json_karkass = set()
 for json_file in json_files:
     try:
         with open(json_file, 'r', encoding='utf-8') as f:
             data = json.load(f)
-        moкаркаса_name = data.get('namefile', [''])[0] if isinstance(data.get('namefile'), list) else data.get('namefile', '')
-        if not moкаркаса_name:
-            moкаркаса_name = data.get('name', [''])[0] if isinstance(data.get('name'), list) else data.get('name', '')
-        normalized_name = normalize_moкаркаса_name(moкаркаса_name)
-        all_json_moкаркасаs.add(normalized_name)
+        karkas_name = data.get('namefile', [''])[0] if isinstance(data.get('namefile'), list) else data.get('namefile', '')
+        if not karkas_name:
+            karkas_name = data.get('name', [''])[0] if isinstance(data.get('name'), list) else data.get('name', '')
+        normalized_name = normalize_karkas_name(karkas_name)
+        all_json_karkass.add(normalized_name)
     except Exception as e:
         print(f"Ошибка при чтении {json_file}: {e}")
 
 # Находим модели, которые есть в JSON, но нет в Excel
-moкаркасаs_only_in_json = all_json_moкаркасаs - set(excel_data.keys())
+karkass_only_in_json = all_json_karkass - set(excel_data.keys())
 print("Модели, которые есть в JSON, но отсутствуют в Excel:")
-for moкаркаса in sorted(moкаркасаs_only_in_json):
-    print(f"  - {moкаркаса}")
+for karkas in sorted(karkass_only_in_json):
+    print(f"  - {karkas}")
 
     # Находим модели, которые есть в Excel, но нет в JSON
-moкаркасаs_only_in_excel = set(excel_data.keys()) - all_json_moкаркасаs
+karkass_only_in_excel = set(excel_data.keys()) - all_json_karkass
 print("Модели, которые есть в Excel, но отсутствуют в JSON:")
-for moкаркаса in sorted(moкаркасаs_only_in_excel):
-    print(f"  - {moкаркаса}")
+for karkas in sorted(karkass_only_in_excel):
+    print(f"  - {karkas}")
     
 
 # Функция для наследования параметров
@@ -436,30 +439,30 @@ for json_file in json_files:
         with open(json_file, 'r', encoding='utf-8') as f:
             original_data = json.load(f)
 
-        moкаркаса_name = original_data.get('namefile', [''])[0] if isinstance(original_data.get('namefile'), list) else original_data.get('namefile', '')
-        if not moкаркаса_name:
-            moкаркаса_name = original_data.get('name', [''])[0] if isinstance(original_data.get('name'), list) else original_data.get('name', '')
+        karkas_name = original_data.get('namefile', [''])[0] if isinstance(original_data.get('namefile'), list) else original_data.get('namefile', '')
+        if not karkas_name:
+            karkas_name = original_data.get('name', [''])[0] if isinstance(original_data.get('name'), list) else original_data.get('name', '')
 
-        normalized_name = normalize_moкаркаса_name(moкаркаса_name)
-        print(f"Обрабатываем файл: {json_file}, модель: {moкаркаса_name}, нормализованное: {normalized_name}")
+        normalized_name = normalize_karkas_name(karkas_name)
+        print(f"Обрабатываем файл: {json_file}, модель: {karkas_name}, нормализованное: {normalized_name}")
 
         # Ищем родительскую модель
-        parent_moкаркаса_name = parents_mapping.get(normalized_name)
-        if parent_moкаркаса_name:
-            parent_moкаркаса_name = normalize_moкаркаса_name(parent_moкаркаса_name)
-            print(f"Родительская модель для {normalized_name}: {parent_moкаркаса_name}")
-            if parent_moкаркаса_name in excel_data:
-                parent_data = excel_data[parent_moкаркаса_name]
-                print(f"Наследование: {normalized_name} -> {parent_moкаркаса_name}")
+        parent_karkas_name = parents_mapping.get(normalized_name)
+        if parent_karkas_name:
+            parent_karkas_name = normalize_karkas_name(parent_karkas_name)
+            print(f"Родительская модель для {normalized_name}: {parent_karkas_name}")
+            if parent_karkas_name in excel_data:
+                parent_data = excel_data[parent_karkas_name]
+                print(f"Наследование: {normalized_name} -> {parent_karkas_name}")
                 inherit_parameters(original_data, parent_data)
             else:
-                print(f"ОШИБКА: Родительская модель {parent_moкаркаса_name} отсутствует в Excel!")
+                print(f"ОШИБКА: Родительская модель {parent_karkas_name} отсутствует в Excel!")
         else:
             print(f"Нет родительской модели для {normalized_name} в parents_mapping")
 
         # Прямое обновление из Excel, если модель есть в Excel
         if normalized_name in excel_data:
-            excel_moкаркаса_data = excel_data[normalized_name]
+            excel_karkas_data = excel_data[normalized_name]
             if 'dimensions_details' not in original_data or not original_data.get('dimensions_details'):
                 original_data['dimensions_details'] = [{}]
 
@@ -473,7 +476,7 @@ for json_file in json_files:
                 if param not in dimensions:
                     dimensions[param] = {"min": "", "max": ""}
 
-            for key, value in excel_moкаркаса_data['dimensions_details'].items():
+            for key, value in excel_karkas_data['dimensions_details'].items():
                 if key in dimensions:
                     if isinstance(value, dict):
                         for sub_key, sub_value in value.items():
@@ -487,31 +490,31 @@ for json_file in json_files:
 
             if 'additional_info' in original_data:
                 if 'package_dimensions' in original_data['additional_info']:
-                    for key, value in excel_moкаркаса_data['additional_info']['package_dimensions'].items():
+                    for key, value in excel_karkas_data['additional_info']['package_dimensions'].items():
                         if value is not None and value != "":
                             original_data['additional_info']['package_dimensions'][key] = value
                 if 'volume' in original_data['additional_info']:
-                    if excel_moкаркаса_data['additional_info']['volume'] is not None:
-                        original_data['additional_info']['volume'] = excel_moкаркаса_data['additional_info']['volume']
+                    if excel_karkas_data['additional_info']['volume'] is not None:
+                        original_data['additional_info']['volume'] = excel_karkas_data['additional_info']['volume']
 
-            if 'skeleton' in original_data and excel_moкаркаса_data['dimensions_details'].get('skeleton') is not None:
-                original_data['skeleton'] = excel_moкаркаса_data['dimensions_details'].get('skeleton')
-            if 'minpromtorg' in original_data and excel_moкаркаса_data['dimensions_details'].get('minpromtorg') is not None:
-                original_data['minpromtorg'] = excel_moкаркаса_data['dimensions_details'].get('minpromtorg')
+            if 'skeleton' in original_data and excel_karkas_data['dimensions_details'].get('skeleton') is not None:
+                original_data['skeleton'] = excel_karkas_data['dimensions_details'].get('skeleton')
+            if 'minpromtorg' in original_data and excel_karkas_data['dimensions_details'].get('minpromtorg') is not None:
+                original_data['minpromtorg'] = excel_karkas_data['dimensions_details'].get('minpromtorg')
 
             if 'guarantee' in original_data and len(original_data['guarantee']) > 0:
-                if 'max_load' in original_data['guarantee'][0] and excel_moкаркаса_data['dimensions_details'].get('max_load') is not None:
-                    original_data['guarantee'][0]['max_load'] = format_number_whole(excel_moкаркаса_data['dimensions_details'].get('max_load'))
-                if 'recommended_load' in original_data['guarantee'][0] and excel_moкаркаса_data['dimensions_details'].get('recommended_load') is not None:
-                    original_data['guarantee'][0]['recommended_load'] = format_number_whole(excel_moкаркаса_data['dimensions_details'].get('recommended_load'))
+                if 'max_load' in original_data['guarantee'][0] and excel_karkas_data['dimensions_details'].get('max_load') is not None:
+                    original_data['guarantee'][0]['max_load'] = format_number_whole(excel_karkas_data['dimensions_details'].get('max_load'))
+                if 'recommended_load' in original_data['guarantee'][0] and excel_karkas_data['dimensions_details'].get('recommended_load') is not None:
+                    original_data['guarantee'][0]['recommended_load'] = format_number_whole(excel_karkas_data['dimensions_details'].get('recommended_load'))
 
             if 'dimensions' in original_data and len(original_data['dimensions']) > 0:
-                if excel_moкаркаса_data['additional_info'].get('netto') is not None:
-                    original_data['dimensions'][0]['netto'] = format_number(excel_moкаркаса_data['additional_info'].get('netto'))
-                if excel_moкаркаса_data['additional_info'].get('brutto') is not None:
-                    original_data['dimensions'][0]['brutto'] = format_number(excel_moкаркаса_data['additional_info'].get('brutto'))
-                if excel_moкаркаса_data['additional_info'].get('volume') is not None:
-                    original_data['dimensions'][0]['volume'] = format_number(excel_moкаркаса_data['additional_info'].get('volume'))
+                if excel_karkas_data['additional_info'].get('netto') is not None:
+                    original_data['dimensions'][0]['netto'] = format_number(excel_karkas_data['additional_info'].get('netto'))
+                if excel_karkas_data['additional_info'].get('brutto') is not None:
+                    original_data['dimensions'][0]['brutto'] = format_number(excel_karkas_data['additional_info'].get('brutto'))
+                if excel_karkas_data['additional_info'].get('volume') is not None:
+                    original_data['dimensions'][0]['volume'] = format_number(excel_karkas_data['additional_info'].get('volume'))
 
         # if normalized_name not in excel_data:
         #     # Проверяем наличие блока 'lost'
@@ -543,8 +546,8 @@ with open('failed_updates.txt', 'w', encoding='utf-8') as f:
         f.write(f"{file}: {reason}\n")
 
 with open('missing_in_json.txt', 'w', encoding='utf-8') as f:
-    for moкаркаса in missing_in_json:
-        f.write(f"{moкаркаса}\n")
+    for karkas in missing_in_json:
+        f.write(f"{karkas}\n")
 
 print("Обновление завершено. Список неудачных обновлений в failed_updates.txt, отсутствующих моделей в missing_in_json.txt")
 
@@ -560,20 +563,20 @@ for json_file in json_files:
         if not isinstance(data, dict):
             print(f"Пропускаем {json_file}: неожиданный формат данных (ожидался словарь)")
             continue
-        moкаркаса_name = data.get('namefile', [''])[0] if isinstance(data.get('namefile'), list) else data.get('namefile', '')
-        if not moкаркаса_name:
-            moкаркаса_name = data.get('name', [''])[0] if isinstance(data.get('name'), list) else data.get('name', '')
-        if not moкаркаса_name:
+        karkas_name = data.get('namefile', [''])[0] if isinstance(data.get('namefile'), list) else data.get('namefile', '')
+        if not karkas_name:
+            karkas_name = data.get('name', [''])[0] if isinstance(data.get('name'), list) else data.get('name', '')
+        if not karkas_name:
             print(f"Пропускаем {json_file}: не удалось определить имя модели")
             continue
-        normalized_name = normalize_moкаркаса_name(moкаркаса_name)
+        normalized_name = normalize_karkas_name(karkas_name)
 
         # Проверяем, есть ли модель в parents_mapping
         if normalized_name in parents_mapping:
-            parent_moкаркаса_name = normalize_moкаркаса_name(parents_mapping[normalized_name])
+            parent_karkas_name = normalize_karkas_name(parents_mapping[normalized_name])
             # Проверяем, есть ли родитель в Excel
-            if parent_moкаркаса_name not in excel_data:
-                missing_parents[normalized_name] = parent_moкаркаса_name
+            if parent_karkas_name not in excel_data:
+                missing_parents[normalized_name] = parent_karkas_name
 
     except Exception as e:
         print(f"Ошибка при обработке {json_file}: {e}")
@@ -582,7 +585,7 @@ for json_file in json_files:
 # Выводим список в формате для parents_mapping
 
       # Перед циклом для обработки JSON-файлов
-all_json_moкаркасаs = set()
+all_json_karkass = set()
 
 for json_file in json_files:
     try:
@@ -591,20 +594,20 @@ for json_file in json_files:
         if not isinstance(data, dict):
             print(f"Пропускаем {json_file}: неожиданный формат данных (ожидался словарь)")
             continue
-        moкаркаса_name = data.get('namefile', [''])[0] if isinstance(data.get('namefile'), list) else data.get('namefile', '')
-        if not moкаркаса_name:
-            moкаркаса_name = data.get('name', [''])[0] if isinstance(data.get('name'), list) else data.get('name', '')
-        if not moкаркаса_name:
+        karkas_name = data.get('namefile', [''])[0] if isinstance(data.get('namefile'), list) else data.get('namefile', '')
+        if not karkas_name:
+            karkas_name = data.get('name', [''])[0] if isinstance(data.get('name'), list) else data.get('name', '')
+        if not karkas_name:
             print(f"Пропускаем {json_file}: не удалось определить имя модели")
             continue
-        normalized_name = normalize_moкаркаса_name(moкаркаса_name)
-        all_json_moкаркасаs.add(normalized_name)
+        normalized_name = normalize_karkas_name(karkas_name)
+        all_json_karkass.add(normalized_name)
 
         # Проверка родителя
         if normalized_name in parents_mapping:
-            parent_moкаркаса_name = normalize_moкаркаса_name(parents_mapping[normalized_name])
-            if parent_moкаркаса_name not in excel_data:
-                missing_parents[normalized_name] = parent_moкаркаса_name
+            parent_karkas_name = normalize_karkas_name(parents_mapping[normalized_name])
+            if parent_karkas_name not in excel_data:
+                missing_parents[normalized_name] = parent_karkas_name
 
     except Exception as e:
         print(f"Ошибка при обработке {json_file}: {e}")
@@ -614,7 +617,7 @@ for json_file in json_files:
 excel_models = set(excel_data.keys())
 
 # Модели, есть в Excel, но нет в JSON
-models_in_excel_not_in_json = excel_models - all_json_moкаркасаs
+models_in_excel_not_in_json = excel_models - all_json_karkass
 
 print("\nМодели, есть в Excel, но отсутствуют в JSON (их нужно добавить):")
 for model in sorted(models_in_excel_not_in_json):
@@ -634,7 +637,7 @@ with open('missing_parents.txt', 'w', encoding='utf-8') as f:
 print("\nСписок сохранён в missing_parents.txt")
 
 test_strings = [
-    "utfc онтарио ch-105 пластик хром"
+    "utfc онтарио ch-105 пластик хром",
     # 'сн-710 айкью н_п',
     # 'соло max сн-602 пластик',
     # 'соло макс ch-602 пластик',
@@ -644,14 +647,12 @@ test_strings = [
     # "сн-710 айкью н_п",
     # "соло макс ch-602 пластик",
     # "соло макс ch-602 хром",
-    # "сильвия арм хром",
-    # "сильвия хром"
+    "Cильвия арм хром",
+    "сильвия хром"
 ]
 
 for s in test_strings:
     print(f"Original: {s}")
-    print(f"Normalized: {normalize_moкаркаса_name(s)}")
-    print(f"Normalized: {normalized_name}")
-    # print(f"Is in exceptions: {normalized_name.lower() in [name.lower() for name in exceptions_del_false]}")
-    print()
-
+    print(f"Before normalization: {s}")
+    normalized = normalize_karkas_name(s)
+    print(f"After normalization: {normalized}")
