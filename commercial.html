@@ -1717,7 +1717,21 @@ function updateProductImagesInDOM() {
     // }
 
 // document.body.addEventListener('click', handleAnyClickOnSketchArea);
+// document.querySelectorAll('.sketch-container').forEach(container => {
+//   container.addEventListener('click', handleAnyClickOnSketchArea);
+// });
+document.addEventListener('click', (e) => {
+  const viewportWidth = window.innerWidth;
+  const viewportHeight = window.innerHeight;
 
+  const x = e.clientX;
+  const y = e.clientY;
+
+  // Проверяем, попадает ли клик в правую нижнюю 30%
+  if (x > viewportWidth * 0.6 && y > viewportHeight * 0.6) {
+    handleAnyClickOnSketchArea(e);
+  }
+});
     // Привязываем функцию к кнопке
     document.getElementById('generateOffer').addEventListener('click', async function () {
       try {
