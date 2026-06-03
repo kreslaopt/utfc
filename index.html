@@ -1153,6 +1153,7 @@ function parseDimensionValue(source) {
                 return null;
             }
             const numValue = parseFloat(strValue.replace(',', '.'));
+            console.log(`Parsing value: "${value}" -> ${numValue}`);
             return isNaN(numValue) ? null : numValue;
         }
 
@@ -3171,6 +3172,7 @@ if (armrestTypeFilters.length > 0) {
                     }
                     return null;
                 });
+                // console.log(`Parameter: ${param.name}`, data);
                 if (data.some(val => val !== null)) {
                     traces.push({
                         x: productNames,
@@ -5416,20 +5418,32 @@ window.onload = async () => {
 };
 
 // Функция для преобразования текста с английской раскладки в русскую
-function engToRus(str) {
-    const engChars = "qwertyuiop[]asdfghjkl;'zxcvbnm,./`QWERTYUIOP{}ASDFGHJKL:\"ZXCVBNM<>?~";
-    const rusChars = "йцукенгшщзхъфывапролджэячсмитьбю.ёЙЦУКЕНГШЩЗХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮ,Ё";
+function convertToRussianLayout(str) {
+    const engToRusMap = {
+        'q': 'й', 'w': 'ц', 'e': 'у', 'r': 'к', 't': 'е', 'y': 'н', 'u': 'г', 'i': 'ш', 'o': 'щ', 'p': 'з',
+        '[': 'х', ']': 'ъ', 'a': 'ф', 's': 'ы', 'd': 'в', 'f': 'а', 'g': 'п', 'h': 'р', 'j': 'о', 'k': 'л',
+        'l': 'д', ';': 'ж', '\'': 'э', 'z': 'я', 'x': 'ч', 'c': 'с', 'v': 'м', 'b': 'и', 'n': 'т', 'm': 'ь',
+        ',': 'б', '.': 'ю', '/': '.', '`': 'ё', '~': 'Ё', '@': '"', '#': '№', '$': ';', '%': '%', '^': ':', '&': '?',
+        '{': 'Х', '}': 'Ъ', ':': 'ж', '"': 'э'
+    };
 
     let result = '';
     for (let char of str) {
-        const index = engChars.indexOf(char);
-        if (index !== -1) {
-            result += rusChars[index];
+        if (char === ',') {
+            result += ',';
+        } else if (engToRusMap[char]) {
+            result += engToRusMap[char];
         } else {
             result += char;
         }
     }
     return result;
+}
+
+function convertInput() {
+    const input = document.getElementById('inputField').value;
+    const output = convertToRussianLayout(input);
+    document.getElementById('output').textContent = output;
 }
 
 // Обработчик события для поля поиска
@@ -5438,10 +5452,9 @@ const searchInput = document.getElementById('searchInput');
 searchInput.addEventListener('input', () => {
     const cursorPosition = searchInput.selectionStart;
     const originalValue = searchInput.value;
-    const transformedValue = engToRus(originalValue);
+    const transformedValue = convertToRussianLayout(originalValue);
     if (originalValue !== transformedValue) {
         searchInput.value = transformedValue;
-        // Возврат курсора в правильную позицию
         searchInput.setSelectionRange(cursorPosition, cursorPosition);
     }
 });
