@@ -5415,7 +5415,36 @@ window.onload = async () => {
     });
 };
 
+// Функция для преобразования текста с английской раскладки в русскую
+function engToRus(str) {
+    const engChars = "qwertyuiop[]asdfghjkl;'zxcvbnm,./`QWERTYUIOP{}ASDFGHJKL:\"ZXCVBNM<>?~";
+    const rusChars = "йцукенгшщзхъфывапролджэячсмитьбю.ёЙЦУКЕНГШЩЗХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮ,Ё";
 
+    let result = '';
+    for (let char of str) {
+        const index = engChars.indexOf(char);
+        if (index !== -1) {
+            result += rusChars[index];
+        } else {
+            result += char;
+        }
+    }
+    return result;
+}
+
+// Обработчик события для поля поиска
+const searchInput = document.getElementById('searchInput');
+
+searchInput.addEventListener('input', () => {
+    const cursorPosition = searchInput.selectionStart;
+    const originalValue = searchInput.value;
+    const transformedValue = engToRus(originalValue);
+    if (originalValue !== transformedValue) {
+        searchInput.value = transformedValue;
+        // Возврат курсора в правильную позицию
+        searchInput.setSelectionRange(cursorPosition, cursorPosition);
+    }
+});
     </script>
 </body>
 
