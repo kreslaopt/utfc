@@ -62,9 +62,9 @@
     ],
     "dimensions": [
         {
-            "brutto": "23,30",
-            "netto": "20,40",
-            "volume": "0,20"
+            "brutto": "23,10",
+            "netto": "20,90",
+            "volume": "0,24"
         }
     ],
     "guarantee": [
@@ -234,7 +234,11 @@
             "package_width": "910",
             "package_depth": "400",
             "package_height": "680",
-            "volume": "0"
+            "volume": "0",
+            "minpromtorg": {
+                "min": "",
+                "max": ""
+            }
         }
     ],
     "addition": "",
@@ -316,7 +320,7 @@
     "color_seat": [
         ""
     ],
-    "minpromtorg": "Минпромторг",
+    "minpromtorg": "",
     "madeinrf": "Сделано РФ",
     "additional_info": {
         "package_dimensions": {

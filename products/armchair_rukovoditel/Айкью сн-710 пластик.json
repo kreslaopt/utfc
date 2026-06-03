@@ -69,7 +69,7 @@
         {
             "brutto": "",
             "netto": "",
-            "volume": "0,10"
+            "volume": "0,11"
         }
     ],
     "guarantee": [
@@ -1943,6 +1943,6 @@
             "depth": "630",
             "height": "290"
         },
-        "volume": "0,10"
+        "volume": "0,11"
     }
 }

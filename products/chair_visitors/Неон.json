@@ -65,7 +65,7 @@
         {
             "brutto": "",
             "netto": "4,30",
-            "volume": "0"
+            "volume": "0,00"
         }
     ],
     "guarantee": [
@@ -2342,6 +2342,6 @@
     "additional_info": {
         "package_dimensions": {},
         "netto": "4",
-        "volume": "0"
+        "volume": "0,00"
     }
 }

@@ -42,7 +42,6 @@ parents_mapping = {
     'utfc оcака м-201 черный плаcтик':'utfc оcака м-201',
     'utfc cанда м-207 черный плаcтик':'utfc cанда м-207',
     'utfc онтарио ch-105 пластик хром':'онтарио сн-105 в пластик/хром',
-    'utfc онтарио ch-105 пластик хром':'онтарио сн-105 в пластик хром',
     'epik a-130-g brown':'epik a-130-g',
     'epik a-130-g gr':'epik a-130-g',
     'epik a-155-g темно-cиний':'epik a-155-g',
@@ -155,7 +154,7 @@ def normalize_karkas_name(name):
     name = name.strip()
 
     # Обработка SN-602 и подобных
-    name = re.sub(r'ch[-_]?(\d+)', r'ch-\1', name, flags=re.IGNORECASE)
+    # name = re.sub(r'ch[-_]?(\d+)', r'ch-\1', name, flags=re.IGNORECASE)
     # name = re.sub(r'max\s+сн[-_]?(\d+)', r'сн-\1', name, flags=re.IGNORECASE)
     name = re.sub(r'сн\s*[-_]\s*(\d+)', r'сн-\1', name, flags=re.IGNORECASE)
 
@@ -208,23 +207,14 @@ def format_number(value):
     if isinstance(value, str):
         try:
             num = float(value.replace(',', '.'))
-            if num == int(num):
-                return str(int(num))
-            else:
-                s = f"{num:.10f}"
-                integer_part, fractional_part = s.split('.')
-                truncated_fractional = fractional_part[:2]
-                return f"{integer_part},{truncated_fractional}"
+            rounded_num = round(num, 2)
+            # Возвращаем в виде строки с двумя знаками
+            return f"{rounded_num:.2f}".replace('.', ',')
         except:
             return value
     elif isinstance(value, (int, float)):
-        if value == int(value):
-            return str(int(value))
-        else:
-            s = f"{value:.10f}"
-            integer_part, fractional_part = s.split('.')
-            truncated_fractional = fractional_part[:3]
-            return f"{integer_part},{truncated_fractional}"
+        rounded_num = round(value, 2)
+        return f"{rounded_num:.2f}".replace('.', ',')
     return value
 
 def format_number_whole(value):
@@ -508,14 +498,32 @@ for json_file in json_files:
                 if 'recommended_load' in original_data['guarantee'][0] and excel_karkas_data['dimensions_details'].get('recommended_load') is not None:
                     original_data['guarantee'][0]['recommended_load'] = format_number_whole(excel_karkas_data['dimensions_details'].get('recommended_load'))
 
-            if 'dimensions' in original_data and len(original_data['dimensions']) > 0:
-                if excel_karkas_data['additional_info'].get('netto') is not None:
-                    original_data['dimensions'][0]['netto'] = format_number(excel_karkas_data['additional_info'].get('netto'))
-                if excel_karkas_data['additional_info'].get('brutto') is not None:
-                    original_data['dimensions'][0]['brutto'] = format_number(excel_karkas_data['additional_info'].get('brutto'))
-                if excel_karkas_data['additional_info'].get('volume') is not None:
-                    original_data['dimensions'][0]['volume'] = format_number(excel_karkas_data['additional_info'].get('volume'))
+        # Проверяем наличие 'dimensions' и его структуру
+            if 'dimensions' in original_data:
+                dims = original_data['dimensions']
+                # Если dims — список, берем первый элемент
+                if isinstance(dims, list):
+                    if len(dims) == 0:
+                        original_data['dimensions'] = [{}]
+                        dims = original_data['dimensions'][0]
+                    else:
+                        dims = dims[0]
+                # Если dims — не словарь, создаем список с одним словарем
+                elif not isinstance(dims, dict):
+                    original_data['dimensions'] = [{}]
+                    dims = original_data['dimensions'][0]
+            else:
+                # Если 'dimensions' нет, создаем список с одним словарем
+                original_data['dimensions'] = [{}]
+                dims = original_data['dimensions'][0]
 
+            # Теперь можно безопасно обновлять
+            if excel_karkas_data['additional_info'].get('netto') is not None:
+                dims['netto'] = format_number(excel_karkas_data['additional_info'].get('netto'))
+            if excel_karkas_data['additional_info'].get('brutto') is not None:
+                dims['brutto'] = format_number(excel_karkas_data['additional_info'].get('brutto'))
+            if excel_karkas_data['additional_info'].get('volume') is not None:
+                dims['volume'] = format_number(excel_karkas_data['additional_info'].get('volume'))
         # if normalized_name not in excel_data:
         #     # Проверяем наличие блока 'lost'
         #     if 'lost' in original_data and isinstance(original_data['lost'], list) and len(original_data['lost']) > 0:
@@ -637,7 +645,7 @@ with open('missing_parents.txt', 'w', encoding='utf-8') as f:
 print("\nСписок сохранён в missing_parents.txt")
 
 test_strings = [
-    "utfc онтарио ch-105 пластик хром",
+    "Онтарио СН-105 В пластик/хром",
     # 'сн-710 айкью н_п',
     # 'соло max сн-602 пластик',
     # 'соло макс ch-602 пластик',
@@ -646,9 +654,7 @@ test_strings = [
     # "сн-710 айкью н пластик",
     # "сн-710 айкью н_п",
     # "соло макс ch-602 пластик",
-    # "соло макс ch-602 хром",
-    "Cильвия арм хром",
-    "сильвия хром"
+    # "соло макс ch-602 хром"
 ]
 
 for s in test_strings:

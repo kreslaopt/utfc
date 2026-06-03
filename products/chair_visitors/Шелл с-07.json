@@ -65,7 +65,7 @@
         {
             "brutto": "",
             "netto": "",
-            "volume": "0"
+            "volume": "0,00"
         }
     ],
     "guarantee": [
@@ -1447,6 +1447,6 @@
     "madeinrf": "Сделано РФ",
     "additional_info": {
         "package_dimensions": {},
-        "volume": "0"
+        "volume": "0,00"
     }
 }
