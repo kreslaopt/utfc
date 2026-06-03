@@ -195,6 +195,22 @@
             </div>
         </div>
 
+        <!-- Фильтр по рекомендуемой нагрузке -->
+        <h3 class="filter-header">
+            Нагрузка рекоменд.
+            <button class="toggle-filter" data-target="recomend-load-filter-content">+</button>
+        </h3>
+        <div class="filter-content" id="recomend-load-filter-content">
+            <div class="checkbox-group">
+                <label><input type="checkbox" class="recomend-load-filter" value="90"> 90 кг</label>
+                <label><input type="checkbox" class="recomend-load-filter" value="100"> 100 кг</label>
+                <label><input type="checkbox" class="recomend-load-filter" value="120"> 120 кг</label>
+                <label><input type="checkbox" class="recomend-load-filter" value="150"> 150 кг</label>
+                <label><input type="checkbox" class="recomend-load-filter" value="other"> Другие варианты</label>
+            </div>
+        </div>
+
+        
         <!-- Фильтр по нагрузке -->
         <h3 class="filter-header">
             Нагрузка max
@@ -210,6 +226,8 @@
                 <label><input type="checkbox" class="load-filter" value="other"> Другие варианты</label>
             </div>
         </div>
+
+        
 
         <!-- Фильтр по пятилучьям -->
         <h3 class="filter-header">
@@ -1922,6 +1940,7 @@ function calculateMinMaxForAllDepth(products) {
             const skladnoyFilters = Array.from(document.querySelectorAll('.skladnoy-filter:checked')).map(el => el.value);
             const finishFilters = Array.from(document.querySelectorAll('.finish-filter:checked')).map(el => el.value);
             const loadFilters = Array.from(document.querySelectorAll('.load-filter:checked')).map(el => el.value);
+            const recomendloadFilters = Array.from(document.querySelectorAll('.recomend-load-filter:checked')).map(el => el.value);
             const diameterFilters = Array.from(document.querySelectorAll('.diameter-filter:checked')).map(el => el.value);
             const selectedCategories = Array.from(document.querySelectorAll('.category-filter:checked')).map(el => el.value);
             const isArchiveSelected = document.getElementById('archiveFilter').checked;
@@ -1954,7 +1973,7 @@ function calculateMinMaxForAllDepth(products) {
                 .map(input => input.value);
 
 
-            if (armrestFilters.length > 0 || mechanismFilters.length > 0 || karkasFilters.length > 0 ||  armrestTypeFilters.length > 0 || podgolovnikFilters.length > 0 || stolikFilters.length > 0 || otherFilters.length > 0 || skladnoyFilters.length > 0 || finishFilters.length > 0 || loadFilters.length > 0 || diameterFilters.length > 0) {
+            if (armrestFilters.length > 0 || mechanismFilters.length > 0 || karkasFilters.length > 0 ||  armrestTypeFilters.length > 0 || podgolovnikFilters.length > 0 || stolikFilters.length > 0 || otherFilters.length > 0 || skladnoyFilters.length > 0 || finishFilters.length > 0 || loadFilters.length > 0 || recomendloadFilters.length > 0 || diameterFilters.length > 0) {
                 filtered = filtered.filter(product => {
                     const uniqueName = (Array.isArray(product.unique_name) ? product.unique_name[0] : product.unique_name).toLowerCase();
 
@@ -2400,6 +2419,28 @@ if (armrestTypeFilters.length > 0) {
                         });
                     }
 
+
+                    let recomendloadMatch = true;
+                    if (recomendloadFilters.length > 0) {
+                        const recomendLoad = product.guarantee?.[0]?.recommended_load;
+                        if (!recomendLoad) {
+                            recomendloadMatch = false;
+                        } else {
+                            const standardrecomendLoads = ["90", "100", "120", "150"];
+                            const isOtherrecomendSelected = recomendloadFilters.includes("other");
+                            const isStandardrecomendLoad = standardrecomendLoads.includes(String(recomendLoad));
+
+                            if (isOtherrecomendSelected && !isStandardrecomendLoad) {
+                                recomendloadMatch = true;
+                            } else if (!isOtherrecomendSelected && isStandardrecomendLoad) {
+                                recomendloadMatch = recomendloadFilters.some(load => String(recomendLoad) === load);
+                            } else {
+                                recomendloadMatch = false;
+                            }
+                        }
+                    }
+
+
                     let loadMatch = true;
                     if (loadFilters.length > 0) {
                         const maxLoad = product.guarantee?.[0]?.max_load;
@@ -2442,7 +2483,7 @@ if (armrestTypeFilters.length > 0) {
                         }
                     }
 
-                    return armrestMatch && mechanismMatch && podgolovnikMatch && stolikMatch && karkasMatch && otherMatch && armrestTypeMatch && skladnoyMatch && finishMatch && loadMatch && diameterMatch;
+                    return armrestMatch && mechanismMatch && podgolovnikMatch && stolikMatch && karkasMatch && otherMatch && armrestTypeMatch && skladnoyMatch && finishMatch && loadMatch && recomendloadMatch && diameterMatch;
                 });
             }
 
@@ -3153,7 +3194,8 @@ if (armrestTypeFilters.length > 0) {
                     if (param.source === 'dimensions' || !param.source) {
                         let value;
                         if (param.source === 'guarantee') {
-                            value = p.guarantee?.[0]?.[param.key];
+                            value = p.guarantee?.[0]?.[param.key]; 
+                            // console.log(`Guarantee parameter ${param.name} for product ${p.unique_name[0]}:`, value);
                         } else {
                             value = p.dimensions?.[0]?.[param.key];
                             if (value === undefined) {
@@ -4926,7 +4968,7 @@ if (!parent) {
                 return;
             }
 
-            document.querySelectorAll('.armrest-filter, .mechanism-filter, .karkas-filter, .armrest-type-filter, .podgolovnik-filter, .stolik-filter, .skladnoy-filter, .other-filter, .finish-filter, .category-filter, .load-filter, .diameter-filter, .special-offer-filter').forEach(checkbox => {
+            document.querySelectorAll('.armrest-filter, .mechanism-filter, .karkas-filter, .armrest-type-filter, .podgolovnik-filter, .stolik-filter, .skladnoy-filter, .other-filter, .finish-filter, .category-filter, .load-filter, .recomend-load-filter, .diameter-filter, .special-offer-filter').forEach(checkbox => {
                 checkbox.addEventListener('change', () => {
                     if (!basketContainer.classList.contains('active')) {
                         recalculateSliderValues(filteredProducts);
@@ -5297,7 +5339,7 @@ if (!parent) {
 
             window.addEventListener('pageshow', function (event) {
                 document.getElementById('searchInput').value = '';
-                document.querySelectorAll('.armrest-filter, .mechanism-filter, .podgolovnik-filter, .stolik-filter, .skladnoy-filter, .finish-filter, .load-filter, .diameter-filter, .special-offer-filter').forEach(checkbox => {
+                document.querySelectorAll('.armrest-filter, .mechanism-filter, .podgolovnik-filter, .stolik-filter, .skladnoy-filter, .finish-filter, .load-filter, .recomend-load-filter, .diameter-filter, .special-offer-filter').forEach(checkbox => {
                     checkbox.checked = false;
                 });
                 sliderParams.forEach(({ param, minId, maxId, minValueId, maxValueId }) => {
