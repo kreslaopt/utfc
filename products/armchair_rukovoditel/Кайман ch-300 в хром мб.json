@@ -260,7 +260,7 @@
         }
     ],
     "skeleton": "монолитный",
-    "minpromtorg": "+",
+    "minpromtorg": "Минпромторг",
     "addition": "",
     "parent": {
         "IE_XML_ID": "p_5180",
@@ -667,10 +667,10 @@
             "IE_ACTIVE_FROM": "",
             "IE_ACTIVE_TO": "",
             "IE_SORT": "500",
-            "IE_PREVIEW_PICTURE": "",
+            "IE_PREVIEW_PICTURE": "https://cdn.utfc-store.ru/iblock/160/16027995876867a7b9b027569ea9321b/0354ce3ad64e30c3e82c4abc38a96de6.png",
             "IE_PREVIEW_TEXT": "",
             "IE_PREVIEW_TEXT_TYPE": "text",
-            "IE_DETAIL_PICTURE": "",
+            "IE_DETAIL_PICTURE": "https://cdn.utfc-store.ru/iblock/a10/a1063d2c3266df91f13bb153614024d5/2ef3aa8448f257f5fd2bddc36193d1e4.png",
             "IE_DETAIL_TEXT": "",
             "IE_DETAIL_TEXT_TYPE": "text",
             "IE_CODE": "",

@@ -143,7 +143,9 @@
                 "https://cdn.utfc-store.ru/iblock/775/tplsrfn48o85zxqm9r7joni71y0ebeox.png",
                 "https://cdn.utfc-store.ru/uf/e6f/e6fd18f4cb67c8f9c12adb9204886749.png",
                 "https://cdn.utfc-store.ru/uf/237/237ed762aaa92da554c421c0eb2f307a.jpg",
-                "https://cdn.utfc-store.ru/iblock/48f/48fcfe6192a47c7e30ad0aaa069c5a81.png"
+                "https://cdn.utfc-store.ru/iblock/48f/48fcfe6192a47c7e30ad0aaa069c5a81.png",
+                "https://cdn.utfc-store.ru/iblock/e0d/e0d9842a02eaee7d94d242a0789be65f/a4d87ec359d7000327d9313ef9ec0824.png",
+                "https://cdn.utfc-store.ru/iblock/5d9/5d9e639b65104face4aaa582f11e1639/83e2717f494c01b2a5d92394855e1ada.png"
             ]
         }
     ],
@@ -252,7 +254,7 @@
         }
     ],
     "skeleton": "немонолитный",
-    "minpromtorg": "+",
+    "minpromtorg": "Минпромторг",
     "addition": "",
     "parent": {
         "IE_XML_ID": "7569",
@@ -920,10 +922,10 @@
             "IE_ACTIVE_FROM": "",
             "IE_ACTIVE_TO": "",
             "IE_SORT": "500",
-            "IE_PREVIEW_PICTURE": "",
+            "IE_PREVIEW_PICTURE": "https://cdn.utfc-store.ru/iblock/d43/d43f4fb6225e4c29284f147c792b7380/1bd4d48fbf0232b9198866dc93efccf4.png",
             "IE_PREVIEW_TEXT": "",
             "IE_PREVIEW_TEXT_TYPE": "text",
-            "IE_DETAIL_PICTURE": "",
+            "IE_DETAIL_PICTURE": "https://cdn.utfc-store.ru/iblock/82d/82d457d010b32414d987cf233a834750/48e277aa07682d97bbaafcc83f281c1d.png",
             "IE_DETAIL_TEXT": "",
             "IE_DETAIL_TEXT_TYPE": "text",
             "IE_CODE": "",
@@ -931,7 +933,13 @@
             "IE_ID": "13476",
             "IP_PROP34": "7569",
             "IP_PROP35": "ЦБ-00011196",
-            "IP_PROP36": "",
+            "IP_PROP36": [
+                "https://cdn.utfc-store.ru/iblock/ad0/ad0e9012d92edca95a929d2244b1e97f/8dce409dcde69bf20739b1dbd45bce30.png",
+                "https://cdn.utfc-store.ru/iblock/c5a/c5a06d55c32c0a2928e69f0e5e39e94a/93be10a5a31e27464225a22793b078aa.png",
+                "https://cdn.utfc-store.ru/iblock/29f/29f527bbd816f0084a53e85a23bed04c/99c6859566f7c05b46e41132af6f6e46.png",
+                "https://cdn.utfc-store.ru/iblock/ad4/ad40a5c092e53a5f999073dd59d19aef/abe41362c2622c366865b90d1e2cb635.png",
+                "https://cdn.utfc-store.ru/iblock/80a/80a855eecc20c04f5546d87fad44e479/3ef9abe03edf648f7abaa1a472686c60.png"
+            ],
             "IP_PROP37": "m_09",
             "IP_PROP38": "tw_01",
             "IP_PROP39": "m_13",
@@ -989,7 +997,7 @@
             "CP_WITHOUT_ORDER": "N",
             "CP_VAT_ID": "",
             "CP_VAT_INCLUDED": "N",
-            "CP_MEASURE": "",
+            "CP_MEASURE": "5",
             "STORE_AMOUNT_2": "0",
             "STORE_AMOUNT_3": "0",
             "CV_QUANTITY_FROM": "",

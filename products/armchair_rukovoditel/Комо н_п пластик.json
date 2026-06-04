@@ -252,7 +252,7 @@
         }
     ],
     "skeleton": "монолитный",
-    "minpromtorg": "+",
+    "minpromtorg": "Минпромторг",
     "addition": "",
     "parent": {
         "IE_XML_ID": "a_1009",
@@ -662,7 +662,7 @@
             "IE_PREVIEW_PICTURE": "https://cdn.utfc-store.ru/iblock/498/vo94d6d8ttye925ri9auwfoau1s7u4ut.png",
             "IE_PREVIEW_TEXT": "",
             "IE_PREVIEW_TEXT_TYPE": "text",
-            "IE_DETAIL_PICTURE": "",
+            "IE_DETAIL_PICTURE": "https://cdn.utfc-store.ru/iblock/b1b/b1b460ee9dcae450dd759f8d7ec55873/1e5407a70dde7c14ec18f424680ac1e3.png",
             "IE_DETAIL_TEXT": "",
             "IE_DETAIL_TEXT_TYPE": "text",
             "IE_CODE": "",

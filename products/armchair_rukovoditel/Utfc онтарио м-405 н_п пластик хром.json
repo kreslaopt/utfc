@@ -408,7 +408,7 @@
             "IC_CODE2": "",
             "IC_PICTURE2": "",
             "IC_DETAIL_PICTURE2": "",
-            "CP_QUANTITY": "47",
+            "CP_QUANTITY": "51",
             "CP_QUANTITY_TRACE": "D",
             "CP_CAN_BUY_ZERO": "D",
             "CP_WEIGHT": "0",
@@ -433,7 +433,7 @@
             "CV_CURRENCY_1": "RUB",
             "CV_PRICE_2": "13804.00",
             "CV_CURRENCY_2": "RUB",
-            "STORE_AMOUNT_4": "46",
+            "STORE_AMOUNT_4": "50",
             "CV_PRICE_3": "13401.00",
             "STORE_AMOUNT_5": "0",
             "CV_CURRENCY_3": "RUB",
@@ -470,6 +470,6 @@
     "color_seat": [
         ""
     ],
-    "minpromtorg": "",
+    "minpromtorg": "Минпромторг",
     "madeinrf": "Сделано РФ"
 }

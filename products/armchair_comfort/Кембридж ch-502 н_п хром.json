@@ -125,7 +125,19 @@
                 "https://cdn.utfc-store.ru/uf/164/1642cc9560c18c50c8c334f8afa14f6b.jpg",
                 "https://cdn.utfc-store.ru/iblock/775/tplsrfn48o85zxqm9r7joni71y0ebeox.png",
                 "https://cdn.utfc-store.ru/resize_cache/27729/09667609493257e3dc4f183374d2fcb3/iblock/4d4/4d41990eb99704cb4917b701ae204ad5/3a325688235932695c2d5ab0314af8c2.png",
-                "https://cdn.utfc-store.ru/iblock/382/2e3cqwku0isv4dcinysife6laizz0m6x.png"
+                "https://cdn.utfc-store.ru/iblock/382/2e3cqwku0isv4dcinysife6laizz0m6x.png",
+                "https://cdn.utfc-store.ru/iblock/77b/77bbe650380bed8fa2286d77e8040720/4776bb505525beab4d7ed779700795c6.png",
+                "https://cdn.utfc-store.ru/iblock/24a/24a4d221c995fe5c1b3e13bd11479ddb/648133903dee994e80c53e42e7829d69.png",
+                "https://cdn.utfc-store.ru/resize_cache/28565/f9a783e5b6ef0ba37f754dbaaffb7194/iblock/735/735d6047c0f986116591fa5a0a45836f/6dcd8daecf87a8c3808929ff9c8af1c9.png",
+                "https://cdn.utfc-store.ru/resize_cache/28566/f9a783e5b6ef0ba37f754dbaaffb7194/iblock/f63/f63db5108a7a545b4a0e0161e26b4384/3755d1acd4c8462704b1984b8d0f4f90.png",
+                "https://cdn.utfc-store.ru/iblock/f63/f63db5108a7a545b4a0e0161e26b4384/3755d1acd4c8462704b1984b8d0f4f90.png",
+                "https://cdn.utfc-store.ru/resize_cache/28567/f9a783e5b6ef0ba37f754dbaaffb7194/iblock/24a/24a4d221c995fe5c1b3e13bd11479ddb/648133903dee994e80c53e42e7829d69.png",
+                "https://cdn.utfc-store.ru/resize_cache/28568/f9a783e5b6ef0ba37f754dbaaffb7194/iblock/e93/e93de04b0f7c07d3fbf23a34a450d384/2a1c7fa1ab0bbf1a7dfd683ff13bfe34.png",
+                "https://cdn.utfc-store.ru/iblock/e93/e93de04b0f7c07d3fbf23a34a450d384/2a1c7fa1ab0bbf1a7dfd683ff13bfe34.png",
+                "https://cdn.utfc-store.ru/iblock/e0d/e0d9842a02eaee7d94d242a0789be65f/a4d87ec359d7000327d9313ef9ec0824.png",
+                "https://cdn.utfc-store.ru/iblock/5d9/5d9e639b65104face4aaa582f11e1639/83e2717f494c01b2a5d92394855e1ada.png",
+                "https://cdn.utfc-store.ru/iblock/735/735d6047c0f986116591fa5a0a45836f/6dcd8daecf87a8c3808929ff9c8af1c9.png",
+                "https://cdn.utfc-store.ru/resize_cache/28569/f9a783e5b6ef0ba37f754dbaaffb7194/iblock/77b/77bbe650380bed8fa2286d77e8040720/4776bb505525beab4d7ed779700795c6.png"
             ]
         }
     ],
@@ -234,7 +246,7 @@
         }
     ],
     "skeleton": "немонолитный",
-    "minpromtorg": "+",
+    "minpromtorg": "Минпромторг",
     "addition": "",
     "parent": {
         "IE_XML_ID": "a_1011",
@@ -362,10 +374,10 @@
             "IE_ACTIVE_FROM": "",
             "IE_ACTIVE_TO": "",
             "IE_SORT": "500",
-            "IE_PREVIEW_PICTURE": "",
+            "IE_PREVIEW_PICTURE": "https://cdn.utfc-store.ru/iblock/d19/d1908ab1e3fde6a8f78dc6909a81398f/10277d745860ea38cecb2152c3a32ed8.png",
             "IE_PREVIEW_TEXT": "",
             "IE_PREVIEW_TEXT_TYPE": "text",
-            "IE_DETAIL_PICTURE": "",
+            "IE_DETAIL_PICTURE": "https://cdn.utfc-store.ru/iblock/2a1/2a126f30c976ce68d42d4ab85dc6f83c/901082ab4d1c0cb6080d88f456851b99.png",
             "IE_DETAIL_TEXT": "",
             "IE_DETAIL_TEXT_TYPE": "text",
             "IE_CODE": "",
@@ -373,7 +385,13 @@
             "IE_ID": "12019",
             "IP_PROP34": "12010",
             "IP_PROP35": "ПУ-00035085",
-            "IP_PROP36": "",
+            "IP_PROP36": [
+                "https://cdn.utfc-store.ru/iblock/735/735d6047c0f986116591fa5a0a45836f/6dcd8daecf87a8c3808929ff9c8af1c9.png",
+                "https://cdn.utfc-store.ru/iblock/f63/f63db5108a7a545b4a0e0161e26b4384/3755d1acd4c8462704b1984b8d0f4f90.png",
+                "https://cdn.utfc-store.ru/iblock/24a/24a4d221c995fe5c1b3e13bd11479ddb/648133903dee994e80c53e42e7829d69.png",
+                "https://cdn.utfc-store.ru/iblock/e93/e93de04b0f7c07d3fbf23a34a450d384/2a1c7fa1ab0bbf1a7dfd683ff13bfe34.png",
+                "https://cdn.utfc-store.ru/iblock/77b/77bbe650380bed8fa2286d77e8040720/4776bb505525beab4d7ed779700795c6.png"
+            ],
             "IP_PROP37": "m_09",
             "IP_PROP38": "tw_72",
             "IP_PROP39": "m_08",

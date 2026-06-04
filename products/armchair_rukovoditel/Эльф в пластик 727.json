@@ -281,7 +281,7 @@
         }
     ],
     "skeleton": "немонолитный",
-    "minpromtorg": "+",
+    "minpromtorg": "Минпромторг",
     "addition": "",
     "parent": {
         "IE_XML_ID": "p_5142",
@@ -1010,7 +1010,7 @@
             "IC_CODE2": "",
             "IC_PICTURE2": "",
             "IC_DETAIL_PICTURE2": "",
-            "CP_QUANTITY": "150",
+            "CP_QUANTITY": "140",
             "CP_QUANTITY_TRACE": "D",
             "CP_CAN_BUY_ZERO": "D",
             "CP_WEIGHT": "0",
@@ -1028,7 +1028,7 @@
             "CP_VAT_INCLUDED": "Y",
             "CP_MEASURE": "5",
             "STORE_AMOUNT_2": "0",
-            "STORE_AMOUNT_3": "0",
+            "STORE_AMOUNT_3": "-20",
             "CV_QUANTITY_FROM": "",
             "CV_QUANTITY_TO": "",
             "CV_PRICE_1": "6811.00",
@@ -1039,7 +1039,7 @@
             "CV_PRICE_3": "6811.00",
             "STORE_AMOUNT_5": "150",
             "CV_CURRENCY_3": "RUB",
-            "STORE_AMOUNT_6": "0"
+            "STORE_AMOUNT_6": "10"
         },
         {
             "IE_XML_ID": "17066",
@@ -2047,10 +2047,10 @@
             "IE_ACTIVE_FROM": "",
             "IE_ACTIVE_TO": "",
             "IE_SORT": "500",
-            "IE_PREVIEW_PICTURE": "",
+            "IE_PREVIEW_PICTURE": "https://cdn.utfc-store.ru/iblock/2cf/2cfb5414f29b33d42a1a6d1cd057bff0/e88ba98f5dbf14cd164d4f368926f433.png",
             "IE_PREVIEW_TEXT": "",
             "IE_PREVIEW_TEXT_TYPE": "text",
-            "IE_DETAIL_PICTURE": "",
+            "IE_DETAIL_PICTURE": "https://cdn.utfc-store.ru/iblock/f6a/f6a4fd74d45c40806366be3a8cdc5ce7/aa6ca531ec03ce2416d5acf9b6db64d3.png",
             "IE_DETAIL_TEXT": "",
             "IE_DETAIL_TEXT_TYPE": "text",
             "IE_CODE": "",

@@ -189,7 +189,8 @@
                 "https://cdn.utfc-store.ru/uf/6f6/6f6c3d0797fa50a5c9c570b603c7dc28.jpg",
                 "https://cdn.utfc-store.ru/uf/237/237ed762aaa92da554c421c0eb2f307a.jpg",
                 "https://cdn.utfc-store.ru/iblock/cf6/cf6abbffd43c3a02191738c933263d2a/9474eb5adeb09acc74f26066dc3cb63b.jpg",
-                "https://cdn.utfc-store.ru/resize_cache/28141/f9a783e5b6ef0ba37f754dbaaffb7194/iblock/cf6/cf6abbffd43c3a02191738c933263d2a/9474eb5adeb09acc74f26066dc3cb63b.jpg"
+                "https://cdn.utfc-store.ru/resize_cache/28141/f9a783e5b6ef0ba37f754dbaaffb7194/iblock/cf6/cf6abbffd43c3a02191738c933263d2a/9474eb5adeb09acc74f26066dc3cb63b.jpg",
+                "https://cdn.utfc-store.ru/uf/8a3/8a3fcd31c7487ce62d6179d86524b226.jpg"
             ]
         }
     ],
@@ -298,7 +299,7 @@
         }
     ],
     "skeleton": "немонолитный",
-    "minpromtorg": "+",
+    "minpromtorg": "Минпромторг",
     "addition": "",
     "parent": {
         "IE_XML_ID": "s8037",
@@ -2874,10 +2875,10 @@
             "IE_ACTIVE_FROM": "",
             "IE_ACTIVE_TO": "",
             "IE_SORT": "500",
-            "IE_PREVIEW_PICTURE": "",
+            "IE_PREVIEW_PICTURE": "https://cdn.utfc-store.ru/iblock/ebc/ebc62f6dd9c6813cd0104cacf00bd6e1/dbab8788fec19a0988c92c5450b8c0a2.jpg",
             "IE_PREVIEW_TEXT": "",
             "IE_PREVIEW_TEXT_TYPE": "text",
-            "IE_DETAIL_PICTURE": "",
+            "IE_DETAIL_PICTURE": "https://cdn.utfc-store.ru/iblock/954/954d70caf98fbbd424d73f51462d5d07/9fa0e1e270afb285518e4934b4741c76.jpg",
             "IE_DETAIL_TEXT": "",
             "IE_DETAIL_TEXT_TYPE": "text",
             "IE_CODE": "",
@@ -2885,9 +2886,9 @@
             "IE_ID": "13482",
             "IP_PROP34": "8043",
             "IP_PROP35": "ЦБ-00013646",
-            "IP_PROP36": "",
+            "IP_PROP36": "https://cdn.utfc-store.ru/iblock/cf2/cf213ef2af838969c728dcd6442528d5/0ae78929b325603019bdc2ee59ca9ab2.jpg",
             "IP_PROP37": "m_19",
-            "IP_PROP38": "d0dc9c2bbda7c9a17d9f70be60f879e4",
+            "IP_PROP38": "t_12",
             "IP_PROP39": "",
             "IP_PROP40": "",
             "IP_PROP55": "&nbsp;",
@@ -2939,7 +2940,7 @@
             "CP_WITHOUT_ORDER": "N",
             "CP_VAT_ID": "",
             "CP_VAT_INCLUDED": "N",
-            "CP_MEASURE": "",
+            "CP_MEASURE": "5",
             "STORE_AMOUNT_2": "23",
             "STORE_AMOUNT_3": "21",
             "CV_QUANTITY_FROM": "",

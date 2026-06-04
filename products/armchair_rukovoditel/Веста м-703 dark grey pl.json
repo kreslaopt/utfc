@@ -257,7 +257,7 @@
         }
     ],
     "skeleton": "немонолитный",
-    "minpromtorg": "",
+    "minpromtorg": "Минпромторг",
     "addition": "",
     "parent": {
         "IE_XML_ID": "7503",
@@ -439,7 +439,7 @@
             "IC_CODE2": "",
             "IC_PICTURE2": "",
             "IC_DETAIL_PICTURE2": "",
-            "CP_QUANTITY": "9",
+            "CP_QUANTITY": "11",
             "CP_QUANTITY_TRACE": "D",
             "CP_CAN_BUY_ZERO": "D",
             "CP_WEIGHT": "0",
@@ -456,7 +456,7 @@
             "CP_VAT_ID": "1",
             "CP_VAT_INCLUDED": "Y",
             "CP_MEASURE": "5",
-            "STORE_AMOUNT_2": "2",
+            "STORE_AMOUNT_2": "4",
             "STORE_AMOUNT_3": "7",
             "CV_QUANTITY_FROM": "",
             "CV_QUANTITY_TO": "",

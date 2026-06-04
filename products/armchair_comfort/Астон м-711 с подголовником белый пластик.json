@@ -172,7 +172,9 @@
                 "https://cdn.utfc-store.ru/uf/94f/94f1b18a374f22f320699e10cd53b516.png",
                 "https://cdn.utfc-store.ru/iblock/439/439ac71a18bf4e5de17d0d2915d6b7ef.png",
                 "https://cdn.utfc-store.ru/iblock/8f2/8f2d5cd9e4b40474fbe90eef54894ebc.png",
-                "https://cdn.utfc-store.ru/uf/e50/e501874d6b7931759466b15a45743af7.png"
+                "https://cdn.utfc-store.ru/uf/e50/e501874d6b7931759466b15a45743af7.png",
+                "https://cdn.utfc-store.ru/iblock/e0d/e0d9842a02eaee7d94d242a0789be65f/a4d87ec359d7000327d9313ef9ec0824.png",
+                "https://cdn.utfc-store.ru/iblock/5d9/5d9e639b65104face4aaa582f11e1639/83e2717f494c01b2a5d92394855e1ada.png"
             ]
         }
     ],
@@ -278,7 +280,7 @@
         }
     ],
     "skeleton": "немонолитный",
-    "minpromtorg": "",
+    "minpromtorg": "Минпромторг",
     "addition": "",
     "parent": {
         "IE_XML_ID": "p_5003",
@@ -461,7 +463,7 @@
             "IC_CODE2": "",
             "IC_PICTURE2": "",
             "IC_DETAIL_PICTURE2": "",
-            "CP_QUANTITY": "79",
+            "CP_QUANTITY": "80",
             "CP_QUANTITY_TRACE": "D",
             "CP_CAN_BUY_ZERO": "D",
             "CP_WEIGHT": "0",
@@ -478,7 +480,7 @@
             "CP_VAT_ID": "1",
             "CP_VAT_INCLUDED": "Y",
             "CP_MEASURE": "5",
-            "STORE_AMOUNT_2": "0",
+            "STORE_AMOUNT_2": "1",
             "STORE_AMOUNT_3": "10",
             "CV_QUANTITY_FROM": "",
             "CV_QUANTITY_TO": "",

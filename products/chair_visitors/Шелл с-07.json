@@ -148,7 +148,17 @@
                 "https://cdn.utfc-store.ru/uf/00e/e1fphri05oqe8ro626unn4ots975wpgc.png",
                 "https://cdn.utfc-store.ru/uf/096/c5w4s5snuib9cl1s8f1xnlh56rp2c8ww.png",
                 "https://cdn.utfc-store.ru/uf/239/8x82kda0qf27pwob6oovhdbi34xkwa6h.png",
-                "https://cdn.utfc-store.ru/uf/756/y2x2fw1cqiuc308vsgvm05b6ue5z024e.png"
+                "https://cdn.utfc-store.ru/uf/756/y2x2fw1cqiuc308vsgvm05b6ue5z024e.png",
+                "https://cdn.utfc-store.ru/iblock/1ba/1ba1d0e533a119bb0b7762f4855ec77f/1ebe858917f8cc7806c033f1c2666927.png",
+                "https://cdn.utfc-store.ru/resize_cache/28446/f9a783e5b6ef0ba37f754dbaaffb7194/iblock/a9c/a9c81665b4e32b5b1f47298eefd5bd26/e289fd56cd119231fc74cdc4b15b7288.png",
+                "https://cdn.utfc-store.ru/iblock/a9c/a9c81665b4e32b5b1f47298eefd5bd26/e289fd56cd119231fc74cdc4b15b7288.png",
+                "https://cdn.utfc-store.ru/resize_cache/28447/f9a783e5b6ef0ba37f754dbaaffb7194/iblock/244/244ff56d4c511d708b74060dafe0bae7/0bc4e5c40585fe62305c3e3f438be625.png",
+                "https://cdn.utfc-store.ru/iblock/244/244ff56d4c511d708b74060dafe0bae7/0bc4e5c40585fe62305c3e3f438be625.png",
+                "https://cdn.utfc-store.ru/iblock/fdf/fdf3fb8a3ad954f23ba928a664637646/d217fbfc45adb57f12251dda6ce01ce5.png",
+                "https://cdn.utfc-store.ru/resize_cache/28448/f9a783e5b6ef0ba37f754dbaaffb7194/iblock/fdf/fdf3fb8a3ad954f23ba928a664637646/d217fbfc45adb57f12251dda6ce01ce5.png",
+                "https://cdn.utfc-store.ru/iblock/5d6/5d6c0296b1e215ab4fae5e8b89387c31/1649d39577029c07cfd69d0dd31e009b.png",
+                "https://cdn.utfc-store.ru/resize_cache/28444/f9a783e5b6ef0ba37f754dbaaffb7194/iblock/5d6/5d6c0296b1e215ab4fae5e8b89387c31/1649d39577029c07cfd69d0dd31e009b.png",
+                "https://cdn.utfc-store.ru/resize_cache/28445/f9a783e5b6ef0ba37f754dbaaffb7194/iblock/1ba/1ba1d0e533a119bb0b7762f4855ec77f/1ebe858917f8cc7806c033f1c2666927.png"
             ]
         }
     ],
@@ -225,7 +235,7 @@
         }
     ],
     "skeleton": "монолитный",
-    "minpromtorg": "+",
+    "minpromtorg": "Минпромторг",
     "addition": "",
     "parent": {
         "IE_XML_ID": "p_5213",
@@ -353,10 +363,10 @@
             "IE_ACTIVE_FROM": "",
             "IE_ACTIVE_TO": "",
             "IE_SORT": "500",
-            "IE_PREVIEW_PICTURE": "",
+            "IE_PREVIEW_PICTURE": "https://cdn.utfc-store.ru/iblock/2a3/2a34c84ecd4d79c56c0ba1f07ac0fb40/3fbf22db54bddc3d2603421a1ec67d71.png",
             "IE_PREVIEW_TEXT": "",
             "IE_PREVIEW_TEXT_TYPE": "text",
-            "IE_DETAIL_PICTURE": "",
+            "IE_DETAIL_PICTURE": "https://cdn.utfc-store.ru/iblock/7a1/7a10790cb542d953ab1693ff6c3cced0/e19490d3aafdd8f4558de31d5a3cc684.png",
             "IE_DETAIL_TEXT": "",
             "IE_DETAIL_TEXT_TYPE": "text",
             "IE_CODE": "",
@@ -364,7 +374,13 @@
             "IE_ID": "11264",
             "IP_PROP34": "11261",
             "IP_PROP35": "ПУ-00034737",
-            "IP_PROP36": "",
+            "IP_PROP36": [
+                "https://cdn.utfc-store.ru/iblock/5d6/5d6c0296b1e215ab4fae5e8b89387c31/1649d39577029c07cfd69d0dd31e009b.png",
+                "https://cdn.utfc-store.ru/iblock/1ba/1ba1d0e533a119bb0b7762f4855ec77f/1ebe858917f8cc7806c033f1c2666927.png",
+                "https://cdn.utfc-store.ru/iblock/a9c/a9c81665b4e32b5b1f47298eefd5bd26/e289fd56cd119231fc74cdc4b15b7288.png",
+                "https://cdn.utfc-store.ru/iblock/244/244ff56d4c511d708b74060dafe0bae7/0bc4e5c40585fe62305c3e3f438be625.png",
+                "https://cdn.utfc-store.ru/iblock/fdf/fdf3fb8a3ad954f23ba928a664637646/d217fbfc45adb57f12251dda6ce01ce5.png"
+            ],
             "IP_PROP37": "m_39",
             "IP_PROP38": "pl_shell_white",
             "IP_PROP39": "",

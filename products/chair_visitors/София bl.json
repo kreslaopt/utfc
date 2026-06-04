@@ -209,7 +209,9 @@
                 "https://cdn.utfc-store.ru/iblock/22b/kac7zrma94y9t0kumtkhzyce5ql38czl.png",
                 "https://cdn.utfc-store.ru/iblock/3b4/3b474c383e521087cab0ab7d3f4de90b.png",
                 "https://cdn.utfc-store.ru/iblock/dfa/dfadf3fb29464889fcf1db60aec6b0ac.png",
-                "https://cdn.utfc-store.ru/iblock/088/hmp3b4zhurfgshug530u7ra8495jnqii.png"
+                "https://cdn.utfc-store.ru/iblock/088/hmp3b4zhurfgshug530u7ra8495jnqii.png",
+                "https://cdn.utfc-store.ru/resize_cache/28175/f9a783e5b6ef0ba37f754dbaaffb7194/iblock/0f2/0f2d4349c8a530bea50969257d0bde9e/0fdd115e7996206df530cd093063370a.png",
+                "https://cdn.utfc-store.ru/iblock/0f2/0f2d4349c8a530bea50969257d0bde9e/0fdd115e7996206df530cd093063370a.png"
             ]
         }
     ],
@@ -2542,11 +2544,11 @@
             "STORE_AMOUNT_6": "0"
         }
     ],
-    "title": "Стул София СН для посетителей с мягкими подлокотниками производства компании UTFC",
-    "base_name": "Стул София СН",
-    "article_number": "ЦБ-00009492",
-    "full_describe": "Элегантное кресло для посетителей имеет широкий выбор расцветки обивки кресла, мягкие подлокотники с накладками люкс и хромированный каркас. Максимальная нагрузка - 120 кг.",
-    "Link_arm": "https://utfc.ru/catalog/pos_chair/sofia_ch/?offers=8379",
+    "title": "Стул София СН со столиком и мягкими подлокотниками производства компании UTFC",
+    "base_name": "Стул София СН со столиком",
+    "article_number": "ПУ-00023413",
+    "full_describe": "Элегантное кресло для посетителей имеет широкий выбор расцветки обивки кресла, мягкие подлокотники с накладками люкс и хромированный каркас. К креслу прилагается столик, выполненный из пластика. Модель отлично подойдет для конференц-залов, переговорных, актовых залов.",
+    "Link_arm": "https://utfc.ru/catalog/pos_chair/sofia_ch_stolik/?offers=9255",
     "Основание": "Металлический изогнутый каркас стула София, защитно-декоративное покрытие никель-хром (СН)",
     "Подлокотники": "",
     "Газлифт": "",
