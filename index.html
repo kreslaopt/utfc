@@ -244,6 +244,7 @@
                 <label><input type="checkbox" class="diameter-filter" value="660"> 660</label>
                 <label><input type="checkbox" class="diameter-filter" value="680"> 680</label>
                 <label><input type="checkbox" class="diameter-filter" value="700"> 700</label>
+                <label><input type="checkbox" class="diameter-filter" value="710"> 710</label>
                 <label><input type="checkbox" class="diameter-filter" value="720"> 720</label>
                 <label><input type="checkbox" class="diameter-filter" value="740"> 740</label>
                 <label><input type="checkbox" class="diameter-filter" value="760"> 760</label>
@@ -2470,7 +2471,7 @@ if (armrestTypeFilters.length > 0) {
                             diameterMatch = isOtherSelected;
                         } else {
                             const diameterValue = typeof diameter === 'object' ? (diameter.max || diameter.min) : diameter;
-                            const standardDiameters = ["480", "580", "600", "630", "640", "660", "680", "700", "720", "740", "760"];
+                            const standardDiameters = ["480", "580", "600", "630", "640", "660", "680", "700", "710", "720", "740", "760"];
                             const isStandardDiameter = standardDiameters.includes(String(diameterValue));
 
                             if (isOtherSelected && !isStandardDiameter) {
