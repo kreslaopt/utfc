@@ -184,7 +184,7 @@
             },
             "diameter_cross": {
                 "min": "",
-                "max": ""
+                "max": "710"
             },
             "runners_width": {
                 "min": "",
