@@ -1439,6 +1439,12 @@ function updateProductImagesInDOM() {
       delPrice();
       updateProductImagesInDOM();
 
+              const btn = document.getElementById('add-dimensions-btn');
+
+        if (btn && btn.textContent.trim() === 'Добавить эскиз с размерами') {
+          removeAllSketches();
+        }
+
       document.querySelectorAll('.commercial-product img').forEach((img, index) => {
         console.log(`Image ${index}: src=${img.src}, data-isSketch=${img.getAttribute('data-isSketch')}`);
       });
