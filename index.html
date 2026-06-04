@@ -2079,7 +2079,7 @@ if (mechanismFilters.length > 0) {
 
             // Если не нашли по имени — ищем в компонентах
             if (!mechanismMatch) {
-                const components = product.construction_and_materials?.[0]?.components || [];
+                const components = product.construction_and_materials?.[0]?.components || product.full_describe || [];
                 mechanismMatch = otherMechanismFilters.every(filter => {
                     const patterns = filter.split('|');
                     return patterns.some(pattern => {
