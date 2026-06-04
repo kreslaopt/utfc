@@ -68,7 +68,7 @@
         {
             "brutto": "16,00",
             "netto": "14,00",
-            "volume": "0,00"
+            "volume": ""
         }
     ],
     "guarantee": [
@@ -253,7 +253,7 @@
         }
     ],
     "skeleton": "немонолитный",
-    "minpromtorg": "Минпромторг",
+    "minpromtorg": "",
     "addition": "",
     "parent": {
         "IE_XML_ID": "p_5006",

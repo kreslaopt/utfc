@@ -313,6 +313,7 @@ for i, karkas in enumerate(karkass_excel):
         "brutto": format_number(normalize_value(df.iloc[i + 3, df.columns.get_loc('Unnamed: 40')])),
         "volume": format_number(normalize_value(df.iloc[i + 3, df.columns.get_loc('Unnamed: 44')]))
     }
+    
 
     excel_data[normalized_karkas] = karkas_data
 
@@ -528,8 +529,14 @@ for json_file in json_files:
                 dims['netto'] = format_number(excel_karkas_data['additional_info'].get('netto'))
             if excel_karkas_data['additional_info'].get('brutto') is not None:
                 dims['brutto'] = format_number(excel_karkas_data['additional_info'].get('brutto'))
-            if excel_karkas_data['additional_info'].get('volume') is not None:
-                dims['volume'] = format_number(excel_karkas_data['additional_info'].get('volume'))
+            volume_value = excel_karkas_data['additional_info'].get('volume')
+            if volume_value is not None:
+                if volume_value == "0,00":
+                    dims['volume'] = ""
+                else:
+                    dims['volume'] = format_number(volume_value)
+
+                
         # if normalized_name not in excel_data:
         #     # Проверяем наличие блока 'lost'
         #     if 'lost' in original_data and isinstance(original_data['lost'], list) and len(original_data['lost']) > 0:
@@ -598,8 +605,8 @@ for json_file in json_files:
 
 # Выводим список в формате для parents_mapping
 
-      # Перед циклом для обработки JSON-файлов
 all_json_karkass = set()
+
 
 for json_file in json_files:
     try:

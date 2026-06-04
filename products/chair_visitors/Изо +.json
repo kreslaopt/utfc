@@ -72,7 +72,7 @@
         {
             "brutto": "",
             "netto": "",
-            "volume": "0,00"
+            "volume": ""
         }
     ],
     "guarantee": [
@@ -344,7 +344,7 @@
         }
     ],
     "skeleton": "",
-    "minpromtorg": "Минпромторг",
+    "minpromtorg": "+",
     "addition": "",
     "title": "Стул ИЗО СН для посетителей с большим выбором обивки производства компании UTFC",
     "base_name": "Стул ИЗО СН",
