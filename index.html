@@ -2405,23 +2405,45 @@ if (armrestTypeFilters.length > 0) {
                     // return stolikMatch;
                     
 
+let finishMatch = true;
 
-                    let finishMatch = true;
-                    if (finishFilters.length > 0) {
-                        const cleanedUniqueName = uniqueName.toLowerCase();
-                        finishMatch = finishFilters.every(filter => {
-                            const patterns = filter.split('|');
-                            return patterns.some(pattern => {
-                                const lowerPattern = pattern.toLowerCase().trim();
-                                if (lowerPattern === 'хром' || lowerPattern === 'ch') {
-                                    const regex = /(^|\s)(ch|хром)(\s|$)/i;
-                                    return regex.test(cleanedUniqueName);
-                                }
-                                const regex = new RegExp(`(^|\\s)(${lowerPattern})(\\s|$|-)`, 'i');
-                                return regex.test(cleanedUniqueName);
-                            });
-                        });
-                    }
+if (finishFilters.length > 0) {
+    const cleanedUniqueName = uniqueName.toLowerCase();
+
+    // Попытка найти совпадения по имени
+    finishMatch = finishFilters.every(filter => {
+        const patterns = filter.split('|');
+        return patterns.some(pattern => {
+            const lowerPattern = pattern.toLowerCase().trim();
+
+            // Специальная обработка для 'хром' и 'ch'
+            if (lowerPattern === 'хром' || lowerPattern === 'ch') {
+                const regex = /(^|\s)(ch|хром)(\s|$)/i;
+                return regex.test(cleanedUniqueName);
+            }
+
+            // Общий случай с регулярным выражением
+            const regex = new RegExp(`(^|\\s)(${lowerPattern})(\\s|$|-)`, 'i');
+            return regex.test(cleanedUniqueName);
+        });
+    });
+
+    // Если не нашли совпадение по имени, ищем в full_describe или компонентах
+    if (!finishMatch) {
+        // Получаем массив компонентов или full_describe
+        const components = product.construction_and_materials?.[0]?.components || product.full_describe || [];
+
+        finishMatch = finishFilters.every(filter => {
+            const patterns = filter.split('|');
+            return patterns.some(pattern => {
+                const lowerPattern = pattern.toLowerCase().trim();
+                return components.some(component =>
+                    searchInObject(component, lowerPattern)
+                );
+            });
+        });
+    }
+}
 
 
                     let recomendloadMatch = true;
