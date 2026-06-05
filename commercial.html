@@ -796,7 +796,7 @@
       const ctx = canvas.getContext('2d');
       const img = new Image();
       // Если сервер поддерживает CORS
-      img.crossOrigin = 'anonymous';  
+      // img.crossOrigin = 'anonymous';  
       img.onload = () => {
         ctx.clearRect(0, 0, canvas.width, canvas.height);
         ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
@@ -893,7 +893,7 @@
                          alt="Изображение ${i + 1} &nbsp"
                          data-product-name="${product.name}"
                          data-image-index="${imgIndex}"
-                         crossorigin="anonymous">
+                         >
                 </div>
             `;
         }
@@ -1816,7 +1816,9 @@ document.addEventListener('click', (e) => {
 });
 
     // Загружаем и отображаем товары при загрузке страницы
-    window.onload = async () => {
+    window.onload = async () => {     
+      
+
       await loadAndDisplayProducts();
       refreshImages();
       setDefaultSignature();
