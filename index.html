@@ -3973,7 +3973,7 @@ if (!productName) {
 
                 // Тип отделки сиденья
                 const finishTypeSeatCell = document.createElement('td');
-                finishTypeSeatCell.textContent = (data.finish_type_seat ?? '') !== '' ? data.finish_type_seat : data.finish_type;
+                finishTypeSeatCell.textContent = data.finish_type_seat || data.finish_type;
                 finishTypeSeatCell.contentEditable = true;
                 finishTypeSeatCell.onblur = () => saveEditableField(name, 'finish_type_seat', finishTypeSeatCell.textContent);
                 row.appendChild(finishTypeSeatCell);
@@ -4589,7 +4589,7 @@ if (isAdd) {
         const articleNumber = child.IP_PROP35 ? child.IP_PROP35 : (parent.article_number || '—');
         const finishType = (child.IP_PROP38 || parent.finish_type || '—') + 
                    (child.IP_PROP61 || parent.IP_PROP61 ? ', ' + (child.IP_PROP61 || parent.IP_PROP61) : '');
-        const finishTypeSeat = child.IP_PROP40 ? child.IP_PROP40 : (parent.finish_type_seat || parent.finish_type);
+        const finishTypeSeat = child.IP_PROP40 ? child.IP_PROP40 : (parent.finish_type_seat || '—');
 
         finalSelection[childName] = {
             count: 1,
