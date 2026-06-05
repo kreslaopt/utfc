@@ -3483,7 +3483,7 @@ parents.forEach(parent => {
                 parentRow.appendChild(finishCell);
 
                                    const finishSeatCell = document.createElement('td');
-                finishSeatCell.textContent = parent.finish_type_seat || '—';
+                finishSeatCell.textContent = parent.finish_type_seat || parent.finish_type;
                 finishSeatCell.contentEditable = true;
                 finishSeatCell.onblur = () => saveEditableField(name, 'finish_type_seat', finishSeatCell.textContent);
                 finishSeatCell.setAttribute('colspan', '1');
@@ -3541,7 +3541,7 @@ childRow.appendChild(finishtypeCell);
 
                     // Тип оделки сиденья
                     const finishtypeseatCell = document.createElement('td');
-                    finishtypeseatCell.textContent = child.IP_PROP40 || '—';
+                    finishtypeseatCell.textContent = child.IP_PROP40 || child.IP_PROP38;
                     childRow.appendChild(finishtypeseatCell);
 
                     // Подлокотники
@@ -3973,7 +3973,7 @@ if (!productName) {
 
                 // Тип отделки сиденья
                 const finishTypeSeatCell = document.createElement('td');
-                finishTypeSeatCell.textContent = data.finish_type_seat || '—';
+                finishTypeSeatCell.textContent = data.finish_type_seat || data.finish_type;
                 finishTypeSeatCell.contentEditable = true;
                 finishTypeSeatCell.onblur = () => saveEditableField(name, 'finish_type_seat', finishTypeSeatCell.textContent);
                 row.appendChild(finishTypeSeatCell);
