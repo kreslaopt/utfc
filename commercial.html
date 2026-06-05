@@ -920,7 +920,7 @@
         { label: 'Артикул', value: product.article_number },
         { label: 'Описание', value: product.full_describe },
         { label: 'Тип отделки', value: product.finish_type },
-        { label: 'Тип отделки сиденья', value: product.finish_type_seat },
+        { label: 'Тип отделки сиденья', value: product.finish_type_seat || product.finish_type },
         { label: 'Подлокотники', value: product.Подлокотники },
         { label: 'Каркас', value: product.skeleton },
         { label: 'Нагрузка (рекомендуемая)', value: product.recommended_load ? `${product.recommended_load} кг` : null },
