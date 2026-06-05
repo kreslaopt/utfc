@@ -913,51 +913,54 @@ function parseDimensionValue(source) {
     }
 }
 
-        function getFinalSelectionData() {
-            const result = [];
+function getFinalSelectionData() {
+    const result = [];
 
-            Object.entries(finalSelection).forEach(([name, data]) => {
-                // Инициализируем массив images, если его нет
-                if (!data.images) {
-                    data.images = [];
-                }
-
-                // Загружаем изображения из localStorage
-                for (let i = 0; i < 4; i++) {
-                    const imageKey = `image_${name}_${i}`;
-                    const cachedImage = localStorage.getItem(imageKey);
-                    if (cachedImage) {
-                        data.images[i] = cachedImage;
-                    } else if (!data.images[i]) {
-                        data.images[i] = "";
-                    }
-                }
-
-                result.push({
-                    name: name,
-                    article_number: data.article_number || '—',
-                    finish_type: data.finish_type || '—',
-                    finish_type_seat: data.finish_type_seat || '—',
-                    Подлокотники: data.Подлокотники || '—',
-                    skeleton: data.skeleton || '—',
-                    max_load: data.max_load || '—',
-                    recommended_load: data.recommended_load || '—',
-                    Основание: data.Основание || '—',
-                    Газлифт: data.Газлифт || '—',
-                    Механизм: data.Механизм || '—',
-                    Особенности: data.Особенности || '—',
-                    Ролики: data.Ролики || '—',
-                    images: data.images,
-                    count: data.count || 1,
-                    CV_PRICE_1: data.CV_PRICE_1 || '—',
-                    CV_PRICE_2: data.CV_PRICE_2 || '—',
-                    CV_PRICE_3: data.CV_PRICE_3 || '—',
-                    Link_arm: data.Link_arm || '#',
-                });
-            });
-
-            return result;
+    Object.entries(finalSelection).forEach(([name, data]) => {
+        // Инициализируем массив images, если его нет
+        if (!data.images) {
+            data.images = [];
         }
+
+        // Загружаем изображения из localStorage
+        for (let i = 0; i < 4; i++) {
+            const imageKey = `image_${name}_${i}`;
+            const cachedImage = localStorage.getItem(imageKey);
+            if (cachedImage) {
+                data.images[i] = cachedImage;
+            } else if (!data.images[i]) {
+                data.images[i] = "";
+            }
+        }
+
+        result.push({
+            name: name,
+            article_number: data.article_number || '—',
+            finish_type: data.finish_type || '—',
+            finish_type_seat: data.finish_type_seat || '—',
+            Подлокотники: data.Подлокотники || '—',
+            skeleton: data.skeleton || '—',
+            max_load: data.max_load || '—',
+            recommended_load: data.recommended_load || '—',
+            Основание: data.Основание || '—',
+            Газлифт: data.Газлифт || '—',
+            Механизм: data.Механизм || '—',
+            Особенности: data.Особенности || '—',
+            Ролики: data.Ролики || '—',
+            images: data.images,
+            count: data.count || 1,
+            CV_PRICE_1: data.CV_PRICE_1 || '—',
+            CV_PRICE_2: data.CV_PRICE_2 || '—',
+            CV_PRICE_3: data.CV_PRICE_3 || '—',
+            Link_arm: data.Link_arm || '#',
+        });
+    });
+
+    return result;
+}
+
+
+
         function updateSliderFromInput(minInput, maxInput, minThumb, maxThumb, track, isVertical, isMin) {
             if (!minInput || !maxInput || !minThumb || !maxThumb || !track) {
                 console.warn("Отсутствуют необходимые элементы для обновления слайдера");
@@ -3472,10 +3475,24 @@ parents.forEach(parent => {
                 nameCell.setAttribute('colspan', '2');
                 parentRow.appendChild(nameCell);
 
+                                const finishCell = document.createElement('td');
+                finishCell.textContent = parent.finish_type || '—';
+                finishCell.contentEditable = true;
+                finishCell.onblur = () => saveEditableField(name, 'finish_type', finishCell.textContent);
+                finishCell.setAttribute('colspan', '1');
+                parentRow.appendChild(finishCell);
+
+                                   const finishSeatCell = document.createElement('td');
+                finishSeatCell.textContent = parent.finish_type_seat || '—';
+                finishSeatCell.contentEditable = true;
+                finishSeatCell.onblur = () => saveEditableField(name, 'finish_type_seat', finishSeatCell.textContent);
+                finishSeatCell.setAttribute('colspan', '1');
+                parentRow.appendChild(finishSeatCell);
+
                 // Столбец с описанием
                 const describeCell = document.createElement('td');
                 describeCell.textContent = parent.full_describe || '—';
-                describeCell.setAttribute('colspan', '16');
+                describeCell.setAttribute('colspan', '14');
                 parentRow.appendChild(describeCell);
 
                 const parentQRCell = document.createElement('td');
@@ -3511,7 +3528,7 @@ parents.forEach(parent => {
 
                     // Артикул
                     const articleCell = document.createElement('td');
-                    articleCell.textContent = parent.article_number || '—';
+                    articleCell.textContent = `${child.IP_PROP35}` || '—';
                     childRow.appendChild(articleCell);
 
                     // Тип оделки
@@ -3920,6 +3937,7 @@ if (!productName) {
                 nameCell.setAttribute('colspan', '2');
                 nameRow.appendChild(nameCell);
 
+
                 const describeCell = document.createElement('td');
                 describeCell.textContent = data.full_describe || '—';
                 describeCell.contentEditable = true;
@@ -4315,7 +4333,7 @@ loadEditableHeaders();
                 count: 1,
                 images: ['', '', ''],
                 article_number: prompt("Введите артикул:") || '—',
-                article_number: prompt("Введите описание:") || '—',
+                title: prompt("Введите описание:") || '—',
                 finish_type: prompt("Введите тип отделки:") || '—',
                 finish_type_seat: prompt("Введите тип отделки сиденья:") || '—',
                 Подлокотники: prompt("Введите тип подлокотников:") || '—',
@@ -4538,64 +4556,67 @@ if (!parent) {
     return;
 }
 
-            if (isAdd) {
-                // Если строка уже существует — увеличиваем count
-                if (finalSelection[childName]) {
-                    finalSelection[childName].count = (finalSelection[childName].count || 0) + 1;
-                }
-                // Если строки нет — создаём новую с полными данными
-                else {
-                    // Загружаем фото из localStorage
-                    let images = [];
-                    const productName = Array.isArray(parent.unique_name) ? parent.unique_name[0] : parent.unique_name;
-                    for (let i = 0; i < 4; i++) {
-                        const imageKey = `image_${productName}_${i}`;
-                        const cachedImage = localStorage.getItem(imageKey);
-                        if (cachedImage) {
-                            images[i] = cachedImage;
-                        } else {
-                            images[i] = "";
-                        }
-                    }
+// Внутри блока, где создается новый элемент в finalSelection
+if (isAdd) {
+    // Если строка уже существует — увеличиваем count
+    if (finalSelection[childName]) {
+        finalSelection[childName].count = (finalSelection[childName].count || 0) + 1;
+    }
+    // Если строки нет — создаём новую с полными данными
+    else {
+        // Загружаем фото из localStorage
+        let images = [];
+        const productName = Array.isArray(parent.unique_name) ? parent.unique_name[0] : parent.unique_name;
+        for (let i = 0; i < 4; i++) {
+            const imageKey = `image_${productName}_${i}`;
+            const cachedImage = localStorage.getItem(imageKey);
+            images[i] = cachedImage || "";
+        }
 
-                    // Если у ребёнка есть свои изображения (например, IP_PROP36), используем их
-                    if (child.IP_PROP36 && child.IP_PROP36.length > 0) {
-                        for (let i = 0; i < 4; i++) {
-                            if (child.IP_PROP36[i]) {
-                                images[i] = child.IP_PROP36[i];
-                                // Сохраняем в localStorage под уникальным ключом для ребёнка
-                                const childImageKey = `image_${childName}_${i}`;
-                                localStorage.setItem(childImageKey, child.IP_PROP36[i]);
-                            }
-                        }
-                    }
-
-                    finalSelection[childName] = {
-                        count: 1,
-                        images: images,
-                        article_number: parent.article_number || '—',
-                        finish_type: parent.finish_type || '—',
-                        finish_type_seat: parent.finish_type_seat || '—',
-                        Подлокотники: parent.Подлокотники || '—',
-                        skeleton: parent.skeleton || '—',
-                        max_load: parent.guarantee?.[0]?.max_load || '—',
-                        recommended_load: parent.guarantee?.[0]?.recommended_load || '—',
-                        Основание: parent.Основание || '—',
-                        Газлифт: parent.Газлифт || '—',
-                        Механизм: parent.Механизм || '—',
-                        Особенности: parent.Особенности || '—',
-                        Ролики: parent.Ролики || '—',
-                        CV_PRICE_1: child.CV_PRICE_1 || parent.CV_PRICE_1 || '—',
-                        CV_CURRENCY_1: child.CV_CURRENCY_1 || parent.CV_CURRENCY_1 || 'RUB',
-                        CV_PRICE_2: child.CV_PRICE_2 || parent.CV_PRICE_2 || '—',
-                        CV_CURRENCY_2: child.CV_CURRENCY_2 || parent.CV_CURRENCY_2 || 'RUB',
-                        CV_PRICE_3: child.CV_PRICE_3 || parent.CV_PRICE_3 || '—',
-                        CV_CURRENCY_3: child.CV_CURRENCY_3 || parent.CV_CURRENCY_3 || 'RUB',
-                        Link_arm: parent.Link_arm || '#',
-                        full_describe: parent.full_describe || '—',
-                    };
+        // Если у ребёнка есть свои изображения (например, IP_PROP36), используем их
+        if (child.IP_PROP36 && child.IP_PROP36.length > 0) {
+            for (let i = 0; i < 4; i++) {
+                if (child.IP_PROP36[i]) {
+                    images[i] = child.IP_PROP36[i];
+                    // Сохраняем в localStorage под уникальным ключом для ребёнка
+                    const childImageKey = `image_${childName}_${i}`;
+                    localStorage.setItem(childImageKey, child.IP_PROP36[i]);
                 }
-            } else {
+            }
+        }
+
+        // Определяем артикул
+        const articleNumber = child.IP_PROP35 ? child.IP_PROP35 : (parent.article_number || '—');
+        const finishType = (child.IP_PROP38 || parent.finish_type || '—') + 
+                   (child.IP_PROP61 || parent.IP_PROP61 ? ', ' + (child.IP_PROP61 || parent.IP_PROP61) : '');
+        const finishTypeSeat = child.IP_PROP40 ? child.IP_PROP40 : (parent.finish_type_seat || '—');
+
+        finalSelection[childName] = {
+            count: 1,
+            images: images,
+            article_number: articleNumber,
+            finish_type: finishType,
+            finish_type_seat: finishTypeSeat,
+            Подлокотники: parent.Подлокотники || '—',
+            skeleton: parent.skeleton || '—',
+            max_load: parent.guarantee?.[0]?.max_load || '—',
+            recommended_load: parent.guarantee?.[0]?.recommended_load || '—',
+            Основание: parent.Основание || '—',
+            Газлифт: parent.Газлифт || '—',
+            Механизм: parent.Механизм || '—',
+            Особенности: parent.Особенности || '—',
+            Ролики: parent.Ролики || '—',
+            CV_PRICE_1: child.CV_PRICE_1 || parent.CV_PRICE_1 || '—',
+            CV_CURRENCY_1: child.CV_CURRENCY_1 || parent.CV_CURRENCY_1 || 'RUB',
+            CV_PRICE_2: child.CV_PRICE_2 || parent.CV_PRICE_2 || '—',
+            CV_CURRENCY_2: child.CV_CURRENCY_2 || parent.CV_CURRENCY_2 || 'RUB',
+            CV_PRICE_3: child.CV_PRICE_3 || parent.CV_PRICE_3 || '—',
+            CV_CURRENCY_3: child.CV_CURRENCY_3 || parent.CV_CURRENCY_3 || 'RUB',
+            Link_arm: parent.Link_arm || '#',
+            full_describe: parent.full_describe || '—',
+        };
+    }
+} else {
                 if (finalSelection[childName]) {
                     finalSelection[childName].count -= 1;
                     if (finalSelection[childName].count <= 0) {
