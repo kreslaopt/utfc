@@ -5512,46 +5512,46 @@ window.onload = async () => {
 
 
 // Функция для преобразования текста с английской раскладки в русскую
-function convertToRussianLayout(str) {
-    const engToRusMap = {
-        'q': 'й', 'w': 'ц', 'e': 'у', 'r': 'к', 't': 'е', 'y': 'н', 'u': 'г', 'i': 'ш', 'o': 'щ', 'p': 'з',
-        '[': 'х', ']': 'ъ', 'a': 'ф', 's': 'ы', 'd': 'в', 'f': 'а', 'g': 'п', 'h': 'р', 'j': 'о', 'k': 'л',
-        'l': 'д', ';': 'ж', '\'': 'э', 'z': 'я', 'x': 'ч', 'c': 'с', 'v': 'м', 'b': 'и', 'n': 'т', 'm': 'ь',
-        ',': 'б', '.': 'ю', '/': '.', '`': 'ё', '~': 'Ё', '@': '"', '#': '№', '$': ';', '%': '%', '^': ':', '&': '?',
-        '{': 'Х', '}': 'Ъ', ':': 'ж', '"': 'э'
-    };
+// function convertToRussianLayout(str) {
+//     const engToRusMap = {
+//         'q': 'й', 'w': 'ц', 'e': 'у', 'r': 'к', 't': 'е', 'y': 'н', 'u': 'г', 'i': 'ш', 'o': 'щ', 'p': 'з',
+//         '[': 'х', ']': 'ъ', 'a': 'ф', 's': 'ы', 'd': 'в', 'f': 'а', 'g': 'п', 'h': 'р', 'j': 'о', 'k': 'л',
+//         'l': 'д', ';': 'ж', '\'': 'э', 'z': 'я', 'x': 'ч', 'c': 'с', 'v': 'м', 'b': 'и', 'n': 'т', 'm': 'ь',
+//         ',': 'б', '.': 'ю', '/': '.', '`': 'ё', '~': 'Ё', '@': '"', '#': '№', '$': ';', '%': '%', '^': ':', '&': '?',
+//         '{': 'Х', '}': 'Ъ', ':': 'ж', '"': 'э'
+//     };
 
-    let result = '';
-    for (let char of str) {
-        if (char === ',') {
-            result += ',';
-        } else if (engToRusMap[char]) {
-            result += engToRusMap[char];
-        } else {
-            result += char;
-        }
-    }
-    return result;
-}
+//     let result = '';
+//     for (let char of str) {
+//         if (char === ',') {
+//             result += ',';
+//         } else if (engToRusMap[char]) {
+//             result += engToRusMap[char];
+//         } else {
+//             result += char;
+//         }
+//     }
+//     return result;
+// }
 
-function convertInput() {
-    const input = document.getElementById('inputField').value;
-    const output = convertToRussianLayout(input);
-    document.getElementById('output').textContent = output;
-}
+// function convertInput() {
+//     const input = document.getElementById('inputField').value;
+//     const output = convertToRussianLayout(input);
+//     document.getElementById('output').textContent = output;
+// }
 
-// Обработчик события для поля поиска
-const searchInput = document.getElementById('searchInput');
+// // Обработчик события для поля поиска
+// const searchInput = document.getElementById('searchInput');
 
-searchInput.addEventListener('input', () => {
-    const cursorPosition = searchInput.selectionStart;
-    const originalValue = searchInput.value;
-    const transformedValue = convertToRussianLayout(originalValue);
-    if (originalValue !== transformedValue) {
-        searchInput.value = transformedValue;
-        searchInput.setSelectionRange(cursorPosition, cursorPosition);
-    }
-});
+// searchInput.addEventListener('input', () => {
+//     const cursorPosition = searchInput.selectionStart;
+//     const originalValue = searchInput.value;
+//     const transformedValue = convertToRussianLayout(originalValue);
+//     if (originalValue !== transformedValue) {
+//         searchInput.value = transformedValue;
+//         searchInput.setSelectionRange(cursorPosition, cursorPosition);
+//     }
+// });
 
     </script>
 </body>
