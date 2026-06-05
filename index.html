@@ -3475,24 +3475,24 @@ parents.forEach(parent => {
                 nameCell.setAttribute('colspan', '2');
                 parentRow.appendChild(nameCell);
 
-                //                 const finishCell = document.createElement('td');
-                // finishCell.textContent = parent.finish_type || '—';
-                // finishCell.contentEditable = true;
-                // finishCell.onblur = () => saveEditableField(name, 'finish_type', finishCell.textContent);
-                // finishCell.setAttribute('colspan', '1');
-                // parentRow.appendChild(finishCell);
+                                const finishCell = document.createElement('td');
+                finishCell.textContent = parent.finish_type || '—';
+                finishCell.contentEditable = true;
+                finishCell.onblur = () => saveEditableField(name, 'finish_type', finishCell.textContent);
+                finishCell.setAttribute('colspan', '1');
+                parentRow.appendChild(finishCell);
 
-                //                    const finishSeatCell = document.createElement('td');
-                // finishSeatCell.textContent = parent.finish_type_seat || '—';
-                // finishSeatCell.contentEditable = true;
-                // finishSeatCell.onblur = () => saveEditableField(name, 'finish_type_seat', finishSeatCell.textContent);
-                // finishSeatCell.setAttribute('colspan', '1');
-                // parentRow.appendChild(finishSeatCell);
+                                   const finishSeatCell = document.createElement('td');
+                finishSeatCell.textContent = parent.finish_type_seat || '—';
+                finishSeatCell.contentEditable = true;
+                finishSeatCell.onblur = () => saveEditableField(name, 'finish_type_seat', finishSeatCell.textContent);
+                finishSeatCell.setAttribute('colspan', '1');
+                parentRow.appendChild(finishSeatCell);
 
                 // Столбец с описанием
                 const describeCell = document.createElement('td');
                 describeCell.textContent = parent.full_describe || '—';
-                describeCell.setAttribute('colspan', '16');
+                describeCell.setAttribute('colspan', '14');
                 parentRow.appendChild(describeCell);
 
                 const parentQRCell = document.createElement('td');
