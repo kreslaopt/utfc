@@ -97,8 +97,7 @@
                 <label><input type="checkbox" class="armrest-filter" value="Деревянные|деревянные"> Деревянные</label>
                 <label><input type="checkbox" class="armrest-filter" value="С мягкими накладками|с мягкими накладками">
                     С мягкими накладками</label>
-                      <label><input type="checkbox" class="armrest-filter" value="soft|soft2">
-                    Soft и Soft2</label>
+                      <label><input type="checkbox" class="armrest-filter" value="soft|soft2">Soft и Soft2</label>     
             </div>
         </div>
 
@@ -114,6 +113,21 @@
             </div>
         </div>
 
+        <!-- Регулировка подлокотников -->
+        <h3 class="filter-header">
+            Регулировка подлокотников
+            <button class="toggle-filter" data-target="armrest-regul-filter-content">+</button>
+        </h3>
+        <div class="filter-content" id="armrest-regul-filter-content">
+            <div class="checkbox-group">           
+                    <label><input type="checkbox" class="armrest-regul-filter" value="2D">2D</label>
+                    <label><input type="checkbox" class="armrest-regul-filter" value="3D|3D-подлокотник|Подлокотники 3D|3D-подлокотники">3D</label>
+                     <label><input type="checkbox" class="armrest-regul-filter" value="в 6-ти плоскостях|в 6 плоскостях|6D">6D</label>
+                     <label><input type="checkbox" class="armrest-regul-filter" value="трансформируемые">Трансформируемые</label>
+                     <label><input type="checkbox" class="armrest-regul-filter" value="по высоте">По высоте</label>
+            </div>
+        </div>
+
         <!-- Конструктив -->
         <h3 class="filter-header">
             Механизм
@@ -125,8 +139,8 @@
                 <label><input type="checkbox" class="mechanism-filter" value="TG|tg|тг|топ-ган|Топ-ган"> Топ-ган</label>
                 <label><input type="checkbox" class="mechanism-filter" value="Топ-ган с синхроплатой"> Топ-ган с синхроплатой</label>                
                 <label><input type="checkbox" class="mechanism-filter" value="мультиблок|mb|MB|Mb| мб|MB"> Мультиблок</label>
-                    <label><input type="checkbox" class="mechanism-filter" value="Мультиблок с синхроплатой"> Мультиблок с синхроплатой</label>
-                <label><input type="checkbox" class="mechanism-filter" value="синхромеханизма|Синхромеханизм|синхромеханизм|синхронно|Синхронный"> Синхромеханизм</label>                
+                <label><input type="checkbox" class="mechanism-filter" value="Мультиблок с синхроплатой"> Мультиблок с синхроплатой</label>
+                <label><input type="checkbox" class="mechanism-filter" value="синхромеханизма|синхромеханизм|синхронно|синхронный|синхроплатой"> Синхронный</label>                
                 <label><input type="checkbox" class="mechanism-filter" value="ПВМ|пвм"> ПВМ</label>
                 <label><input type="checkbox" class="mechanism-filter" value="CPT|срт"> CPT</label>
                 <label><input type="checkbox" class="mechanism-filter" value=" О | O | о | o |_о_|овалина"> Овалина</label>
@@ -1309,6 +1323,7 @@ function getFinalSelectionData() {
             if (typeof obj === 'object') {
                 return Object.values(obj).some(value => searchInObject(value, searchTerm));
             }
+            
 
              // Для объектов
     // if (typeof obj === 'object') {
@@ -1941,6 +1956,7 @@ function calculateMinMaxForAllDepth(products) {
             const mechanismFilters = Array.from(document.querySelectorAll('.mechanism-filter:checked')).map(el => el.value);
             const karkasFilters = Array.from(document.querySelectorAll('.karkas-filter:checked')).map(el => el.value);
             const armrestTypeFilters = Array.from(document.querySelectorAll('.armrest-type-filter:checked')).map(el => el.value);
+            const armrestRegulFilters = Array.from(document.querySelectorAll('.armrest-regul-filter:checked')).map(el => el.value);
             const otherFilters = Array.from(document.querySelectorAll('.other-filter:checked')).map(el => el.value);
             const podgolovnikFilters = Array.from(document.querySelectorAll('.podgolovnik-filter:checked')).map(el => el.value);
             const stolikFilters = Array.from(document.querySelectorAll('.stolik-filter:checked')).map(el => el.value);
@@ -1980,7 +1996,7 @@ function calculateMinMaxForAllDepth(products) {
                 .map(input => input.value);
 
 
-            if (armrestFilters.length > 0 || mechanismFilters.length > 0 || karkasFilters.length > 0 ||  armrestTypeFilters.length > 0 || podgolovnikFilters.length > 0 || stolikFilters.length > 0 || otherFilters.length > 0 || skladnoyFilters.length > 0 || finishFilters.length > 0 || loadFilters.length > 0 || recomendloadFilters.length > 0 || diameterFilters.length > 0) {
+            if (armrestFilters.length > 0 || mechanismFilters.length > 0 || karkasFilters.length > 0 ||  armrestTypeFilters.length > 0 ||  armrestRegulFilters.length > 0 || podgolovnikFilters.length > 0 || stolikFilters.length > 0 || otherFilters.length > 0 || skladnoyFilters.length > 0 || finishFilters.length > 0 || loadFilters.length > 0 || recomendloadFilters.length > 0 || diameterFilters.length > 0) {
                 filtered = filtered.filter(product => {
                     const uniqueName = (Array.isArray(product.unique_name) ? product.unique_name[0] : product.unique_name).toLowerCase();
 
@@ -2017,7 +2033,7 @@ const filtersMap = {
   "Подлокотники алюминиевые": armrestFilters.some(f => f.includes("алюминиевые")),
   "деревянные": armrestFilters.some(f => f.includes("деревянные")),
   "с мягкими накладками": armrestFilters.some(f => f.includes("с мягкими накладками")),
-  "soft": armrestFilters.some(f => f.includes("soft"))
+  "soft": armrestFilters.some(f => f.includes("soft")),
 };
 
 const productName = Array.isArray(product.unique_name) ? product.unique_name[0] : product.unique_name;
@@ -2029,6 +2045,8 @@ for (const [searchTerm, condition] of Object.entries(filtersMap)) {
   // Пропускаем этот продукт
   continue; // если внутри цикла
 }
+
+
     armrestMatch = searchInObject(product, searchTerm);
     // Если достаточно первого совпадения, можно прервать цикл
     // break;
@@ -2084,7 +2102,7 @@ if (mechanismFilters.length > 0) {
 
             // Если не нашли по имени — ищем в компонентах
             if (!mechanismMatch) {
-                const components = product.construction_and_materials?.[0]?.components || product.full_describe || product.Механизм || [];
+                const components = product.construction_and_materials?.[0]?.components || product.full_describe || product.parent || product.parent?.[0]?.IE_PREVIEW_TEXT || [];
                 mechanismMatch = otherMechanismFilters.every(filter => {
                     const patterns = filter.split('|');
                     return patterns.some(pattern => {
@@ -2268,6 +2286,8 @@ if (armrestTypeFilters.length > 0) {
         armrestTypeMatch = hasRegul && hasNoneRegul;
     }
 }
+
+
 // let armrestTypeMatch = true;
 // if (armrestTypeFilters.length > 0) {
 //     const isRegulSelected = armrestTypeFilters.some(f => f.includes("регулируемые"));
@@ -2311,6 +2331,43 @@ if (armrestTypeFilters.length > 0) {
 //         armrestTypeMatch = hasRegul || hasNoneRegul;
 //     }
 // }
+
+let armrestRegulMatch = true;
+
+if (armrestRegulFilters.length > 0) {
+    let components = product.Подлокотники;
+
+    // Оборачиваем строку в массив, если это строка
+    if (typeof components === 'string') {
+        components = [components];
+    }
+
+    // Проверяем, что components — массив
+    if (Array.isArray(components)) {
+        armrestRegulMatch = armrestRegulFilters.every((filter) => {
+            const patterns = filter.split('|').map(p => p.toLowerCase().trim());
+            return patterns.some(pattern => {
+                return components.some(component => {
+                    if (typeof component === 'string') {
+                        return component.toLowerCase().includes(pattern);
+                    }
+                    if (typeof component === 'object' && component !== null) {
+                        return Object.values(component).some(value =>
+                            typeof value === 'string' && value.toLowerCase().includes(pattern)
+                        );
+                    }
+                    return false;
+                });
+            });
+        });
+    } else {
+        // Если components не массив после обработки, присваиваем false
+        armrestRegulMatch = false;
+        console.log('Тип:', typeof product.Подлокотники);
+console.log('Значение:', product.Подлокотники);
+    }
+}
+
 
 
 
@@ -2516,7 +2573,7 @@ if (finishFilters.length > 0) {
                         }
                     }
 
-                    return armrestMatch && mechanismMatch && podgolovnikMatch && stolikMatch && karkasMatch && otherMatch && armrestTypeMatch && skladnoyMatch && finishMatch && loadMatch && recomendloadMatch && diameterMatch;
+                    return armrestMatch && mechanismMatch && podgolovnikMatch && stolikMatch && karkasMatch && otherMatch && armrestTypeMatch && armrestRegulMatch && skladnoyMatch && finishMatch && loadMatch && recomendloadMatch && diameterMatch;
                 });
             }
 
@@ -5019,7 +5076,7 @@ if (isAdd) {
                 return;
             }
 
-            document.querySelectorAll('.armrest-filter, .mechanism-filter, .karkas-filter, .armrest-type-filter, .podgolovnik-filter, .stolik-filter, .skladnoy-filter, .other-filter, .finish-filter, .category-filter, .load-filter, .recomend-load-filter, .diameter-filter, .special-offer-filter').forEach(checkbox => {
+            document.querySelectorAll('.armrest-filter, .mechanism-filter, .karkas-filter, .armrest-type-filter, .armrest-regul-filter, .podgolovnik-filter, .stolik-filter, .skladnoy-filter, .other-filter, .finish-filter, .category-filter, .load-filter, .recomend-load-filter, .diameter-filter, .special-offer-filter').forEach(checkbox => {
                 checkbox.addEventListener('change', () => {
                     if (!basketContainer.classList.contains('active')) {
                         recalculateSliderValues(filteredProducts);
