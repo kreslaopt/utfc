@@ -406,6 +406,9 @@
 
                 </span></span>
 
+                <label class="checkbox-label">
+  <input type="checkbox" id="strictRangeFilter"><span class="checkbox-text">Строго в диапазоне</span></label>
+
             <div class="top_block">
                 <div class="chair-schema-container" id="schemaBlock">
                     <img src="img/chair-schema_clean.gif" alt="Схема кресла" class="chair-schema-image">
@@ -1921,6 +1924,7 @@ function calculateMinMaxForAllDepth(products) {
         }
 
         function filterProducts() {
+            const isStrictRange = document.getElementById('strictRangeFilter').checked;
 
             if (basketContainer.classList.contains('active')) {
                 return;
@@ -2691,12 +2695,24 @@ if (finishFilters.length > 0) {
                 }
             }
 
-            if (paramChangeFlags.chair_height) {
-                filtered = filtered.filter(product => {
-                    const chairHeight = product.dimensions_details?.[0]?.chair_height;
-                    return isValueInRange(chairHeight, minHeight, maxHeight);
-                });
-            }
+if (paramChangeFlags.chair_height) {
+    filtered = filtered.filter(product => {
+        const chairHeight = product.dimensions_details?.[0]?.chair_height;
+
+        if (!chairHeight) return false;
+
+        const minVal = parseDimensionValue(chairHeight.min);
+        const maxVal = parseDimensionValue(chairHeight.max);
+
+        if (isStrictRange) {
+            return minVal !== null && maxVal !== null &&
+                   minVal >= minHeight && minVal <= maxHeight &&
+                   maxVal >= minHeight && maxVal <= maxHeight;
+        } else {
+            return isValueInRange(chairHeight, minHeight, maxHeight);
+        }
+    });
+}
 
             // if (paramChangeFlags.chair_height) {
             //     console.log("Фильтрация по высоте кресла:");
@@ -2746,147 +2762,202 @@ if (finishFilters.length > 0) {
             //         return inRange;
             //     });
             // }
-            if (paramChangeFlags.headrest_height) {
-                filtered = filtered.filter(product => {
-                    const headrestHeight = product.dimensions_details?.[0]?.headrest_height;
-                    return isValueInRange(headrestHeight, minHeadrestHeight, maxHeadrestHeight);
-                });
-            }
-            if (paramChangeFlags.armrest_height_from_seat) {
-                filtered = filtered.filter(product => {
-                    const armrestHeight = product.dimensions_details?.[0]?.armrest_height_from_seat;
-                    return isValueInRange(armrestHeight, minArmrestsToSeatWidthWith, maxArmrestsToSeatWidthWith);
-                });
-            }
-            if (paramChangeFlags.backrest_height) {
-                filtered = filtered.filter(product => {
-                    const backrestHeight = product.dimensions_details?.[0]?.backrest_height;
-                    return isValueInRange(backrestHeight, minBackrestHeight, maxBackrestHeight);
-                });
-            }
-            if (paramChangeFlags.backrest_to_seat_height) {
-                filtered = filtered.filter(product => {
-                    const backrestToSeatHeight = product.dimensions_details?.[0]?.backrest_to_seat_height;
-                    return isValueInRange(backrestToSeatHeight, minBackrestToSeatHeight, maxBackrestToSeatHeight);
-                });
-            }
-            if (paramChangeFlags.seat_width_with_armrests) {
-                filtered = filtered.filter(product => {
-                    const seatWidthWithArmrests = product.dimensions_details?.[0]?.seat_width_with_armrests;
-                    return isValueInRange(seatWidthWithArmrests, minSeatWidthWithArmrests, maxSeatWidthWithArmrests);
-                });
-            }
-            if (paramChangeFlags.all_width) {
-                filtered = filtered.filter(product => {
-                    const dimensions = product.dimensions_details?.[0] || {};
-                    const sources = [
-                        dimensions.seat_width_with_armrests,
-                        dimensions.seat_width,
-                        dimensions.backrest_width_wide,
-                        dimensions.diameter_cross,
-                        dimensions.runners_width
-                    ];
+  if (paramChangeFlags.headrest_height) {
+    filtered = filtered.filter(product => {
+        const headrestHeight = product.dimensions_details?.[0]?.headrest_height;
+        if (isStrictRange) {
+            return headrestHeight !== null && headrestHeight !== undefined &&
+                isValueInRange(headrestHeight, minHeadrestHeight, maxHeadrestHeight);
+        } else {
+            return isValueInRange(headrestHeight, minHeadrestHeight, maxHeadrestHeight);
+        }
+    });
+}
 
-                    let allMins = [];
-                    let allMaxs = [];
+if (paramChangeFlags.armrest_height_from_seat) {
+    filtered = filtered.filter(product => {
+        const armrestHeight = product.dimensions_details?.[0]?.armrest_height_from_seat;
+        if (isStrictRange) {
+            return armrestHeight !== null && armrestHeight !== undefined &&
+                isValueInRange(armrestHeight, minArmrestsToSeatWidthWith, maxArmrestsToSeatWidthWith);
+        } else {
+            return isValueInRange(armrestHeight, minArmrestsToSeatWidthWith, maxArmrestsToSeatWidthWith);
+        }
+    });
+}
 
-                    sources.forEach(source => {
-                        if (!source) return;
-                        const min = parseDimensionValue(source.min);
-                        const max = parseDimensionValue(source.max);
+if (paramChangeFlags.backrest_height) {
+    filtered = filtered.filter(product => {
+        const backrestHeight = product.dimensions_details?.[0]?.backrest_height;
+        if (isStrictRange) {
+            return backrestHeight !== null && backrestHeight !== undefined &&
+                isValueInRange(backrestHeight, minBackrestHeight, maxBackrestHeight);
+        } else {
+            return isValueInRange(backrestHeight, minBackrestHeight, maxBackrestHeight);
+        }
+    });
+}
 
-                        if (min !== null) allMins.push(min);
-                        if (max !== null) allMaxs.push(max);
-                    });
+if (paramChangeFlags.backrest_to_seat_height) {
+    filtered = filtered.filter(product => {
+        const backrestToSeatHeight = product.dimensions_details?.[0]?.backrest_to_seat_height;
+        if (isStrictRange) {
+            return backrestToSeatHeight !== null && backrestToSeatHeight !== undefined &&
+                isValueInRange(backrestToSeatHeight, minBackrestToSeatHeight, maxBackrestToSeatHeight);
+        } else {
+            return isValueInRange(backrestToSeatHeight, minBackrestToSeatHeight, maxBackrestToSeatHeight);
+        }
+    });
+}
 
-                    if (allMins.length === 0 && allMaxs.length === 0) {
-                        return false;
-                    }
+if (paramChangeFlags.seat_width_with_armrests) {
+    filtered = filtered.filter(product => {
+        const seatWidthWithArmrests = product.dimensions_details?.[0]?.seat_width_with_armrests;
+        if (isStrictRange) {
+            return seatWidthWithArmrests !== null && seatWidthWithArmrests !== undefined &&
+                isValueInRange(seatWidthWithArmrests, minSeatWidthWithArmrests, maxSeatWidthWithArmrests);
+        } else {
+            return isValueInRange(seatWidthWithArmrests, minSeatWidthWithArmrests, maxSeatWidthWithArmrests);
+        }
+    });
+}
 
-                    const globalMin = allMins.length > 0 ? Math.min(...allMins) : null;
-                    const globalMax = allMaxs.length > 0 ? Math.max(...allMaxs) : null;
+if (paramChangeFlags.all_width) {
+    filtered = filtered.filter(product => {
+        const dimensions = product.dimensions_details?.[0] || {};
+        const sources = [
+            dimensions.seat_width_with_armrests,
+            dimensions.seat_width,
+            dimensions.backrest_width_wide,
+            dimensions.diameter_cross,
+            dimensions.runners_width
+        ];
 
-                    return isValueInRange(
-                        { min: globalMin, max: globalMax },
-                        minAllWidth,
-                        maxAllWidth
-                    );
-                });
-            }
+        let allMins = [];
+        let allMaxs = [];
 
-            if (paramChangeFlags.all_depth) {
-                filtered = filtered.filter(product => {
-                    const dimensions = product.dimensions_details?.[0] || {};
-                    const sources = [
-                        dimensions.chair_depth,
-                        dimensions.seat_depth,
-                        dimensions.runners_depth,
-                        dimensions.diameter_cross
-                    ];
+        sources.forEach(source => {
+            if (!source) return;
+            const min = parseDimensionValue(source.min);
+            const max = parseDimensionValue(source.max);
 
-                    let allMins = [];
-                    let allMaxs = [];
+            if (min !== null) allMins.push(min);
+            if (max !== null) allMaxs.push(max);
+        });
 
-                    sources.forEach(source => {
-                        if (!source) return;
-                        const min = parseDimensionValue(source.min);
-                        const max = parseDimensionValue(source.max);
+        if (allMins.length === 0 && allMaxs.length === 0) {
+            return false;
+        }
 
-                        if (min !== null) allMins.push(min);
-                        if (max !== null) allMaxs.push(max);
-                    });
+        const globalMin = allMins.length > 0 ? Math.min(...allMins) : null;
+        const globalMax = allMaxs.length > 0 ? Math.max(...allMaxs) : null;
 
-                    if (allMins.length === 0 && allMaxs.length === 0) {
-                        return false;
-                    }
+        if (isStrictRange) {
+            return globalMin !== null && globalMax !== null &&
+                isValueInRange({ min: globalMin, max: globalMax }, minAllWidth, maxAllWidth);
+        } else {
+            return isValueInRange({ min: globalMin, max: globalMax }, minAllWidth, maxAllWidth);
+        }
+    });
+}
 
-                    const globalMin = allMins.length > 0 ? Math.min(...allMins) : null;
-                    const globalMax = allMaxs.length > 0 ? Math.max(...allMaxs) : null;
+if (paramChangeFlags.all_depth) {
+    filtered = filtered.filter(product => {
+        const dimensions = product.dimensions_details?.[0] || {};
+        const sources = [
+            dimensions.chair_depth,
+            dimensions.seat_depth,
+            dimensions.runners_depth,
+            dimensions.diameter_cross
+        ];
 
-                    return isValueInRange(
-                        { min: globalMin, max: globalMax },
-                        minAllDepth,
-                        maxAllDepth
-                    );
-                });
-            }
+        let allMins = [];
+        let allMaxs = [];
 
+        sources.forEach(source => {
+            if (!source) return;
+            const min = parseDimensionValue(source.min);
+            const max = parseDimensionValue(source.max);
 
-            if (paramChangeFlags.chair_depth) {
-                filtered = filtered.filter(product => {
-                    const chairDepth = product.dimensions_details?.[0]?.chair_depth;
-                    return isValueInRange(chairDepth, minChairDepth, maxChairDepth);
-                });
-            }
+            if (min !== null) allMins.push(min);
+            if (max !== null) allMaxs.push(max);
+        });
 
+        if (allMins.length === 0 && allMaxs.length === 0) {
+            return false;
+        }
 
-            if (paramChangeFlags.seat_depth) {
-                filtered = filtered.filter(product => {
-                    const seatDepth = product.dimensions_details?.[0]?.seat_depth;
-                    return isValueInRange(seatDepth, minSeatDepth, maxSeatDepth);
-                });
-            }
+        const globalMin = allMins.length > 0 ? Math.min(...allMins) : null;
+        const globalMax = allMaxs.length > 0 ? Math.max(...allMaxs) : null;
 
-            if (paramChangeFlags.seat_width) {
-                filtered = filtered.filter(product => {
-                    const seatWidth = product.dimensions_details?.[0]?.seat_width;
-                    return isValueInRange(seatWidth, minSeatWidth, maxSeatWidth);
-                });
-            }
+        if (isStrictRange) {
+            return globalMin !== null && globalMax !== null &&
+                isValueInRange({ min: globalMin, max: globalMax }, minAllDepth, maxAllDepth);
+        } else {
+            return isValueInRange({ min: globalMin, max: globalMax }, minAllDepth, maxAllDepth);
+        }
+    });
+}
 
-            if (paramChangeFlags.backrest_width_wide) {
-                filtered = filtered.filter(product => {
-                    const backrestWidthWide = product.dimensions_details?.[0]?.backrest_width_wide;
-                    return isValueInRange(backrestWidthWide, minBackrestWidthWide, maxBackrestWidthWide);
-                });
-            }
+if (paramChangeFlags.chair_depth) {
+    filtered = filtered.filter(product => {
+        const chairDepth = product.dimensions_details?.[0]?.chair_depth;
+        if (isStrictRange) {
+            return chairDepth !== null && chairDepth !== undefined &&
+                isValueInRange(chairDepth, minChairDepth, maxChairDepth);
+        } else {
+            return isValueInRange(chairDepth, minChairDepth, maxChairDepth);
+        }
+    });
+}
 
-            if (paramChangeFlags.seat_to_floor_height) {
-                filtered = filtered.filter(product => {
-                    const seatToFloorHeight = product.dimensions_details?.[0]?.seat_to_floor_height;
-                    return isValueInRange(seatToFloorHeight, minSeatToFloorHeight, maxSeatToFloorHeight);
-                });
-            }
+if (paramChangeFlags.seat_depth) {
+    filtered = filtered.filter(product => {
+        const seatDepth = product.dimensions_details?.[0]?.seat_depth;
+        if (isStrictRange) {
+            return seatDepth !== null && seatDepth !== undefined &&
+                isValueInRange(seatDepth, minSeatDepth, maxSeatDepth);
+        } else {
+            return isValueInRange(seatDepth, minSeatDepth, maxSeatDepth);
+        }
+    });
+}
+
+if (paramChangeFlags.seat_width) {
+    filtered = filtered.filter(product => {
+        const seatWidth = product.dimensions_details?.[0]?.seat_width;
+        if (isStrictRange) {
+            return seatWidth !== null && seatWidth !== undefined &&
+                isValueInRange(seatWidth, minSeatWidth, maxSeatWidth);
+        } else {
+            return isValueInRange(seatWidth, minSeatWidth, maxSeatWidth);
+        }
+    });
+}
+
+if (paramChangeFlags.backrest_width_wide) {
+    filtered = filtered.filter(product => {
+        const backrestWidthWide = product.dimensions_details?.[0]?.backrest_width_wide;
+        if (isStrictRange) {
+            return backrestWidthWide !== null && backrestWidthWide !== undefined &&
+                isValueInRange(backrestWidthWide, minBackrestWidthWide, maxBackrestWidthWide);
+        } else {
+            return isValueInRange(backrestWidthWide, minBackrestWidthWide, maxBackrestWidthWide);
+        }
+    });
+}
+
+if (paramChangeFlags.seat_to_floor_height) {
+    filtered = filtered.filter(product => {
+        const seatToFloorHeight = product.dimensions_details?.[0]?.seat_to_floor_height;
+        if (isStrictRange) {
+            return seatToFloorHeight !== null && seatToFloorHeight !== undefined &&
+                isValueInRange(seatToFloorHeight, minSeatToFloorHeight, maxSeatToFloorHeight);
+        } else {
+            return isValueInRange(seatToFloorHeight, minSeatToFloorHeight, maxSeatToFloorHeight);
+        }
+    });
+}
 
             // Обновляем списки прошедших и непрошедших товаров
             filteredProducts = filtered;
@@ -4944,6 +5015,36 @@ if (isAdd) {
 
         document.addEventListener('DOMContentLoaded', function () {
             updateSelectedProductsTable();
+
+  const strictRangeCheckbox = document.getElementById('strictRangeFilter');
+
+    if (strictRangeCheckbox) {
+        // Восстановление состояния галочки из URL
+        const params = new URLSearchParams(window.location.search);
+        if (params.get('strictRange') === 'true') {
+            strictRangeCheckbox.checked = true;
+        } else {
+            strictRangeCheckbox.checked = false;
+        }
+
+        // Обработчик изменения состояния галочки
+        strictRangeCheckbox.addEventListener('change', () => {
+            const url = new URL(window.location);
+            if (strictRangeCheckbox.checked) {
+                // Включить режим фильтра
+                url.searchParams.set('strictRange', 'true');
+                // Можно сразу запускать фильтр или перезагружать страницу
+                window.location.href = url.toString();
+            } else {
+                // Отключить режим фильтра
+                url.searchParams.delete('strictRange');
+                window.location.href = url.toString();
+            }
+        });
+    } else {
+        console.error("Элемент с id 'strictRangeFilter' не найден");
+    }
+            
             document.querySelectorAll('.size-filter[data-coords]').forEach((filter) => {
                 const param = filter.getAttribute('data-param');
                 const uniqueClass = `${param}-filter`;
@@ -5231,6 +5332,8 @@ if (isAdd) {
                 showAnalyticsButton.classList.remove('active');
                 showSelectedButton.classList.remove('active');
                 showSchemaButton.classList.add('active');
+document.querySelector('#strictRangeFilter').style.display = 'block';
+document.querySelector('.checkbox-text').style.display = 'inline'; // или 'block'
                 document.querySelector('.final-selection-container').style.display = 'none';
                 document.querySelector('.final-selection-container').classList.remove('active'); // Скрываем блок
 
@@ -5244,6 +5347,8 @@ if (isAdd) {
 
             });
 
+            
+
             // Обработчик для вкладки "Аналитика"
             showAnalyticsButton.addEventListener('click', () => {
                 analyticsBlock.classList.add('active');
@@ -5253,6 +5358,8 @@ if (isAdd) {
                 showSelectedButton.classList.remove('active');
                 showSchemaButton.classList.remove('active');
                 document.querySelector('.final-selection-container').style.display = 'none';
+                document.querySelector('#strictRangeFilter').style.display = 'none';
+                document.querySelector('.checkbox-text').style.display = 'none';
                 document.querySelector('.final-selection-container').classList.remove('active'); // Скрываем блок
                 buildOverallChart(filteredProducts);
                 recalculateSliderValues(filteredProducts);
@@ -5276,6 +5383,8 @@ if (isAdd) {
                 showAnalyticsButton.classList.remove('active');
                 showSchemaButton.classList.remove('active');
                 showSelectedButton.classList.add('active');
+                                document.querySelector('#strictRangeFilter').style.display = 'none';
+                document.querySelector('.checkbox-text').style.display = 'none';
                 document.querySelector('.final-selection-container').style.display = 'block';
                 document.querySelector('.final-selection-container').classList.add('active');
                 updateSelectedProductsTable();
