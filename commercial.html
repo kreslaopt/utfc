@@ -975,7 +975,16 @@
 
       detailsHTML += `</div>`;
       productDiv.innerHTML = detailsHTML;
-
+// Обработчик для сохранения содержимого при потере фокуса
+const detailsDiv = productDiv.querySelector('.commercial-product-details');
+if (detailsDiv) {
+  detailsDiv.addEventListener('blur', () => {
+    const productName = productDiv.querySelector('h3')?.getAttribute('data-product-name');
+    if (productName) {
+      localStorage.setItem(`productDetails_${productName}`, detailsDiv.innerHTML);
+    }
+  });
+}
 
       
       setTimeout(() => {
@@ -1828,7 +1837,6 @@ document.addEventListener('click', (e) => {
       }
     });
     window.addEventListener('load', () => {
-      restoreAllProductDetails();
   updateProductImagesInDOM();
 });
 
