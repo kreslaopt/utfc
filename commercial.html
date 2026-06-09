@@ -1860,6 +1860,13 @@
       restoreAllProductDetails();
     };
 
+    // Запросить разрешение на доступ к хранилищу
+document.requestStorageAccess().then(function() {
+    console.log("Доступ к storage разрешен");
+}).catch(function() {
+    console.log("Доступ к storage запрещен");
+});
+
   </script>
 </body>
 
