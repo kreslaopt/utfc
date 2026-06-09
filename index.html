@@ -4861,32 +4861,32 @@ if (isAdd) {
         // }
 
 
-        async function convertImagesToDataURLs(product) {
-            // Обработка массива изображений
-            for (let i = 0; i < product.images.length; i++) {
-                const url = product.images[i];
-                // Проверка, если уже DataURL (например, начинается с 'data:')
-                if (url.startsWith('data:')) {
-                    continue; // Уже встроено
-                }
-                // Если ссылка внешняя, скачиваем и преобразуем
-                try {
-                    const response = await fetch(url);
-                    const blob = await response.blob();
-                    const dataUrl = await new Promise((resolve, reject) => {
-                        const reader = new FileReader();
-                        reader.onloadend = () => resolve(reader.result);
-                        reader.onerror = reject;
-                        reader.readAsDataURL(blob);
-                    });
-                    product.images[i] = dataUrl; // заменяем ссылку на DataURL
-                } catch (e) {
-                    console.error(`Ошибка при обработке изображения ${url}`, e);
-                    // Можно оставить оригинальную ссылку или поставить пустую строку
-                    product.images[i] = "";
-                }
-            }
-        }
+        // async function convertImagesToDataURLs(product) {
+        //     // Обработка массива изображений
+        //     for (let i = 0; i < product.images.length; i++) {
+        //         const url = product.images[i];
+        //         // Проверка, если уже DataURL (например, начинается с 'data:')
+        //         if (url.startsWith('data:')) {
+        //             continue; // Уже встроено
+        //         }
+        //         // Если ссылка внешняя, скачиваем и преобразуем
+        //         try {
+        //             const response = await fetch(url);
+        //             const blob = await response.blob();
+        //             const dataUrl = await new Promise((resolve, reject) => {
+        //                 const reader = new FileReader();
+        //                 reader.onloadend = () => resolve(reader.result);
+        //                 reader.onerror = reject;
+        //                 reader.readAsDataURL(blob);
+        //             });
+        //             product.images[i] = dataUrl; // заменяем ссылку на DataURL
+        //         } catch (e) {
+        //             console.error(`Ошибка при обработке изображения ${url}`, e);
+        //             // Можно оставить оригинальную ссылку или поставить пустую строку
+        //             product.images[i] = "";
+        //         }
+        //     }
+        // }
 
         async function generateOfferData() {
             const finalSelection = JSON.parse(localStorage.getItem('finalSelection')) || {};
@@ -5497,7 +5497,7 @@ document.querySelector('.checkbox-text').style.display = 'inline'; // или 'bl
                     validProducts.forEach(product => {
                         if (product.is_archive) {
                             archiveProducts.push(product);
-                            console.log("Добавлен архивный товар:", product.unique_name);
+                            // console.log("Добавлен архивный товар:", product.unique_name);
                         } else {
                             activeProducts.push(product);
                         }
@@ -5526,7 +5526,7 @@ document.querySelector('.checkbox-text').style.display = 'inline'; // или 'bl
                     // Логирование архивных товаров
                     archiveProducts.forEach(product => {
                         const dimensions = product.dimensions_details?.[0] || {};
-                        console.log("--- Архивный товар:", product.unique_name[0], "---");
+                        // console.log("--- Архивный товар:", product.unique_name[0], "---");
 
                         Object.entries(dimensions).forEach(([paramName, valueObj]) => {
                             if (valueObj && (valueObj.min !== undefined || valueObj.max !== undefined)) {
