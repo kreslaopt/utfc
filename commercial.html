@@ -1656,7 +1656,28 @@ function restoreAllProductDetails() {
 
   inputFile.click();
 }
+function saveImageToLocalStorage(key, dataUrl) {
+  try {
+    // Оценка размера base64 (примерно, в байтах)
+    const dataSizeBytes = Math.ceil((dataUrl.length * 3) / 4);
+    const MAX_SIZE = 2 * 1024 * 1024; // 2 МБ
 
+    if (dataSizeBytes > MAX_SIZE) {
+      console.warn(`Изображение слишком большое: ${dataSizeBytes} байт. Не сохраняется в localStorage.`);
+      return false;
+    }
+
+    localStorage.setItem(key, dataUrl);
+    return true;
+  } catch (e) {
+    if (e.name === 'QuotaExceededError') {
+      alert('Достигнут лимит памяти для хранения изображений. Попробуйте загрузить меньшие изображения или используйте серверное хранилище.');
+    } else {
+      console.error('Ошибка при сохранении изображения:', e);
+    }
+    return false;
+  }
+}
     // Загружаем данные из localStorage и отображаем их на странице
     async function loadAndDisplayProducts() {
       const data = getFinalSelectionData();
@@ -1840,6 +1861,8 @@ document.addEventListener('click', (e) => {
   updateProductImagesInDOM();
 });
 
+
+
     // Загружаем и отображаем товары при загрузке страницы
     window.onload = async () => {     
       
@@ -1856,6 +1879,8 @@ document.addEventListener('click', (e) => {
        restoreAllProductDetails();
        delPrice
     };
+
+
   </script>
 </body>
 
