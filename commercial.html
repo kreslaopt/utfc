@@ -1588,6 +1588,7 @@ function restoreAllProductDetails() {
       // Обновляем цвета и номера страниц по умолчанию
       setBmfBackgrounds(false);
       updatePageNumbers();
+      refreshImages();
     }
     function updatePageNumbers() {
       // Удаляем все существующие номера страниц
@@ -1729,7 +1730,8 @@ function restoreAllProductDetails() {
         const productDiv = await createCommercialProduct(product, index);
         productsContainer.appendChild(productDiv);
       })).then(() => {
-        updatePageNumbers(); // <-- вызываем после добавления всех страниц
+        updatePageNumbers(); 
+        refreshImages();
       });
     }
 
