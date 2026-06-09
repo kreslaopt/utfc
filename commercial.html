@@ -4,13 +4,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="Content-Security-Policy" content="
-    default-src 'self' https://via.placeholder.com https://utfc.ru https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru https://*.selstorage.ru  https://cdn.utfc-store.ru;
+  <meta http-equiv="Content-Security-Policy" content="
+    default-src 'self' https://via.placeholder.com https://utfc.ru https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru https://*.selstorage.ru https://cdn.utfc-store.ru;
     script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdn.plot.ly https://cdnjs.cloudflare.com;
     style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com https://utfc.pythonanywhere.com;
     font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com;
     img-src 'self' data: https://utfc.ru https://via.placeholder.com https://chart.googleapis.com https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru https://cdn.utfc-store.ru;
     connect-src 'self' https://utfc.ru http://utfc.pythonanywhere.com https://utfc.pythonanywhere.com https://cdnjs.cloudflare.com https://cdn.utfc-store.ru;
+    storage-access *; 
 ">
   <title>Коммерческое предложение</title>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
@@ -796,7 +797,7 @@
       const ctx = canvas.getContext('2d');
       const img = new Image();
       // Если сервер поддерживает CORS
-      img.crossOrigin = 'anonymous';  
+      img.crossOrigin = 'anonymous';
       img.onload = () => {
         ctx.clearRect(0, 0, canvas.width, canvas.height);
         ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
@@ -975,18 +976,18 @@
 
       detailsHTML += `</div>`;
       productDiv.innerHTML = detailsHTML;
-// Обработчик для сохранения содержимого при потере фокуса
-const detailsDiv = productDiv.querySelector('.commercial-product-details');
-if (detailsDiv) {
-  detailsDiv.addEventListener('blur', () => {
-    const productName = productDiv.querySelector('h3')?.getAttribute('data-product-name');
-    if (productName) {
-      localStorage.setItem(`productDetails_${productName}`, detailsDiv.innerHTML);
-    }
-  });
-}
+      // Обработчик для сохранения содержимого при потере фокуса
+      const detailsDiv = productDiv.querySelector('.commercial-product-details');
+      if (detailsDiv) {
+        detailsDiv.addEventListener('blur', () => {
+          const productName = productDiv.querySelector('h3')?.getAttribute('data-product-name');
+          if (productName) {
+            localStorage.setItem(`productDetails_${productName}`, detailsDiv.innerHTML);
+          }
+        });
+      }
 
-      
+
       setTimeout(() => {
         generateQRCode(product.Link_arm, qrId);
       }, 100);
@@ -1370,34 +1371,34 @@ if (detailsDiv) {
     }
 
     // Обновляем изображения товаров перед созданием страниц
-function updateProductImagesInDOM() {
-  document.querySelectorAll('.commercial-product').forEach(productDiv => {
-    const productName = productDiv.querySelector('h3')?.getAttribute('data-product-name');
-    if (!productName) return;
+    function updateProductImagesInDOM() {
+      document.querySelectorAll('.commercial-product').forEach(productDiv => {
+        const productName = productDiv.querySelector('h3')?.getAttribute('data-product-name');
+        if (!productName) return;
 
-    const sketchSrc = localStorage.getItem(`sketch_${productName}`);
-    let sketchContainer = productDiv.querySelector('.sketch-container');
+        const sketchSrc = localStorage.getItem(`sketch_${productName}`);
+        let sketchContainer = productDiv.querySelector('.sketch-container');
 
-    if (sketchSrc) {
-      if (!sketchContainer) {
-        // Создаем контейнер, если его нет
-        sketchContainer = document.createElement('div');
-        sketchContainer.className = 'sketch-container';
+        if (sketchSrc) {
+          if (!sketchContainer) {
+            // Создаем контейнер, если его нет
+            sketchContainer = document.createElement('div');
+            sketchContainer.className = 'sketch-container';
 
-        // Находим контейнер для изображений продукта
-        const imagesContainer = productDiv.querySelector('.commercial-product-images');
-        if (imagesContainer) {
-          imagesContainer.appendChild(sketchContainer);
+            // Находим контейнер для изображений продукта
+            const imagesContainer = productDiv.querySelector('.commercial-product-images');
+            if (imagesContainer) {
+              imagesContainer.appendChild(sketchContainer);
+            }
+          } else {
+            // Очищаем существующий контейнер
+            sketchContainer.innerHTML = '';
+          }
+          // Вставляем изображение из localStorage
+          sketchContainer.innerHTML = `<img src="${sketchSrc}" class="sketch-img" style="max-width: 380px;" data-isSketch="true">`;
         }
-      } else {
-        // Очищаем существующий контейнер
-        sketchContainer.innerHTML = '';
-      }
-      // Вставляем изображение из localStorage
-      sketchContainer.innerHTML = `<img src="${sketchSrc}" class="sketch-img" style="max-width: 380px;" data-isSketch="true">`;
+      });
     }
-  });
-}
     // function saveCurrentImagesToLocalStorage() {
     //   document.querySelectorAll('.commercial-product').forEach(productDiv => {
     //     const productName = productDiv.querySelector('h3')?.getAttribute('data-product-name');
@@ -1446,29 +1447,29 @@ function updateProductImagesInDOM() {
         });
       }
     }
-function restoreAllProductDetails() {
-  document.querySelectorAll('.commercial-product').forEach(productDiv => {
-    const productName = productDiv.querySelector('h3')?.getAttribute('data-product-name');
-    if (productName) {
-      const savedHTML = localStorage.getItem(`productDetails_${productName}`);
-      const detailsDiv = productDiv.querySelector('.commercial-product-details');
-      if (savedHTML && detailsDiv) {
-        detailsDiv.innerHTML = savedHTML;
-      }
+    function restoreAllProductDetails() {
+      document.querySelectorAll('.commercial-product').forEach(productDiv => {
+        const productName = productDiv.querySelector('h3')?.getAttribute('data-product-name');
+        if (productName) {
+          const savedHTML = localStorage.getItem(`productDetails_${productName}`);
+          const detailsDiv = productDiv.querySelector('.commercial-product-details');
+          if (savedHTML && detailsDiv) {
+            detailsDiv.innerHTML = savedHTML;
+          }
+        }
+      });
     }
-  });
-}
     // Функция для генерации PDF
     async function generateCommercialOffer() {
       restoreAllProductDetails();
       delPrice();
       updateProductImagesInDOM();
 
-              const btn = document.getElementById('add-dimensions-btn');
+      const btn = document.getElementById('add-dimensions-btn');
 
-        if (btn && btn.textContent.trim() === 'Добавить эскиз с размерами') {
-          removeAllSketches();
-        }
+      if (btn && btn.textContent.trim() === 'Добавить эскиз с размерами') {
+        removeAllSketches();
+      }
 
       document.querySelectorAll('.commercial-product img').forEach((img, index) => {
         console.log(`Image ${index}: src=${img.src}, data-isSketch=${img.getAttribute('data-isSketch')}`);
@@ -1606,57 +1607,57 @@ function restoreAllProductDetails() {
     }
 
     function handleAnyClickOnSketchArea(e) {
-  // Определяем, где кликнули
-    if (!e) return; 
-  const target = e.target;
-  if (!target) return;
+      // Определяем, где кликнули
+      if (!e) return;
+      const target = e.target;
+      if (!target) return;
 
-  // Проверяем, что клик внутри блока с эскизом или внутри блока товара
-  const container = target.closest('.commercial-product');
-  if (!container) return;
+      // Проверяем, что клик внутри блока с эскизом или внутри блока товара
+      const container = target.closest('.commercial-product');
+      if (!container) return;
 
-  // Ищем или создаем sketch-container
-  let sketchContainer = container.querySelector('.sketch-container');
-  if (!sketchContainer) {
-    // Создаем и вставляем
-    sketchContainer = document.createElement('div');
-    sketchContainer.className = 'sketch-container';
-    container.appendChild(sketchContainer);
-  }
+      // Ищем или создаем sketch-container
+      let sketchContainer = container.querySelector('.sketch-container');
+      if (!sketchContainer) {
+        // Создаем и вставляем
+        sketchContainer = document.createElement('div');
+        sketchContainer.className = 'sketch-container';
+        container.appendChild(sketchContainer);
+      }
 
-  // Создаем или обновляем изображение
-  let sketchImg = sketchContainer.querySelector('img.sketch-img');
-  if (!sketchImg) {
-    sketchImg = document.createElement('img');
-    sketchImg.className = 'sketch-img';
-    sketchContainer.appendChild(sketchImg);
-  }
+      // Создаем или обновляем изображение
+      let sketchImg = sketchContainer.querySelector('img.sketch-img');
+      if (!sketchImg) {
+        sketchImg = document.createElement('img');
+        sketchImg.className = 'sketch-img';
+        sketchContainer.appendChild(sketchImg);
+      }
 
-  // Открываем диалог выбора файла
-  const inputFile = document.createElement('input');
-  inputFile.type = 'file';
-  inputFile.accept = 'image/*';
+      // Открываем диалог выбора файла
+      const inputFile = document.createElement('input');
+      inputFile.type = 'file';
+      inputFile.accept = 'image/*';
 
-  inputFile.onchange = (event) => {
-    const file = event.target.files[0];
-    if (file && file.type.startsWith('image/')) {
-      const reader = new FileReader();
-      reader.onload = () => {
-        // Обновляем изображение
-        sketchImg.src = reader.result;
+      inputFile.onchange = (event) => {
+        const file = event.target.files[0];
+        if (file && file.type.startsWith('image/')) {
+          const reader = new FileReader();
+          reader.onload = () => {
+            // Обновляем изображение
+            sketchImg.src = reader.result;
 
-        // Сохраняем в localStorage
-        const productName = container.querySelector('h3')?.getAttribute('data-product-name');
-        if (productName) {
-          localStorage.setItem(`sketch_${productName}`, reader.result);
+            // Сохраняем в localStorage
+            const productName = container.querySelector('h3')?.getAttribute('data-product-name');
+            if (productName) {
+              localStorage.setItem(`sketch_${productName}`, reader.result);
+            }
+          };
+          reader.readAsDataURL(file);
         }
       };
-      reader.readAsDataURL(file);
-    }
-  };
 
-  inputFile.click();
-}
+      inputFile.click();
+    }
 
     // Загружаем данные из localStorage и отображаем их на странице
     async function loadAndDisplayProducts() {
@@ -1730,7 +1731,7 @@ function restoreAllProductDetails() {
         const productDiv = await createCommercialProduct(product, index);
         productsContainer.appendChild(productDiv);
       })).then(() => {
-        updatePageNumbers(); 
+        updatePageNumbers();
         refreshImages();
       });
     }
@@ -1750,25 +1751,25 @@ function restoreAllProductDetails() {
     //   });
     // }
 
-// document.body.addEventListener('click', handleAnyClickOnSketchArea);
-// Обработчик для всех кликов по контейнерам
-document.querySelectorAll('.sketch-container').forEach(container => {
-  container.addEventListener('click', handleAnyClickOnSketchArea);
-});
+    // document.body.addEventListener('click', handleAnyClickOnSketchArea);
+    // Обработчик для всех кликов по контейнерам
+    document.querySelectorAll('.sketch-container').forEach(container => {
+      container.addEventListener('click', handleAnyClickOnSketchArea);
+    });
 
-// Обработчик для всех кликов по странице
-document.addEventListener('click', (e) => {
-  const viewportWidth = window.innerWidth;
-  const viewportHeight = window.innerHeight;
+    // Обработчик для всех кликов по странице
+    document.addEventListener('click', (e) => {
+      const viewportWidth = window.innerWidth;
+      const viewportHeight = window.innerHeight;
 
-  const x = e.clientX;
-  const y = e.clientY;
+      const x = e.clientX;
+      const y = e.clientY;
 
-  // Проверяем, что клик в нижних 40% и правых 40%
-  if (x > viewportWidth * 0.6 && y > viewportHeight * 0.6) {
-    handleAnyClickOnSketchArea(e);
-  }
-});
+      // Проверяем, что клик в нижних 40% и правых 40%
+      if (x > viewportWidth * 0.6 && y > viewportHeight * 0.6) {
+        handleAnyClickOnSketchArea(e);
+      }
+    });
 
     // Привязываем функцию к кнопке
     document.getElementById('generateOffer').addEventListener('click', async function () {
@@ -1816,7 +1817,7 @@ document.addEventListener('click', (e) => {
         updatePageNumbers();
         refreshImages();
         setImageSizesForPDF();
-        
+
 
         // Ждём 1 секунду на случай, если QR-коды ещё грузятся
         await new Promise(resolve => setTimeout(resolve, 1000));
@@ -1827,7 +1828,7 @@ document.addEventListener('click', (e) => {
         if (btn && btn.textContent.trim() === 'Добавить эскиз с размерами') {
           removeAllSketches();
         }
-        
+
         updateProductImagesInDOM();
         // Генерируем PDF        
 
@@ -1839,14 +1840,13 @@ document.addEventListener('click', (e) => {
       }
     });
     window.addEventListener('load', () => {
-  updateProductImagesInDOM();
-});
+      updateProductImagesInDOM();
+    });
 
 
 
     // Загружаем и отображаем товары при загрузке страницы
-    window.onload = async () => {     
-      
+    window.onload = async () => {
 
       await loadAndDisplayProducts();
       refreshImages();
@@ -1857,9 +1857,9 @@ document.addEventListener('click', (e) => {
       setLogosAndBackgrounds(false);
       updateSignatureAndLogos(true);
       setImageSizesForPDF();
-       restoreAllProductDetails();
+      restoreAllProductDetails();
     };
-    
+
   </script>
 </body>
 
