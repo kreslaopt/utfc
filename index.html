@@ -87,9 +87,11 @@
                 <label><input type="checkbox" class="armrest-filter" value="t-01|t01|T-01|т-01"> T-01</label>
                 <label><input type="checkbox" class="armrest-filter" value="t-02|t02|T-02|т-02"> T-02</label>
                 <label><input type="checkbox" class="armrest-filter" value="ХДП|хдп"> ХДП</label>
-                <label><input type="checkbox" class="armrest-filter" value="Айрон-хром"> Айрон-хром</label>
-                <label><input type="checkbox" class="armrest-filter" value="Пластиковые|пластиковые">
+                <label><input type="checkbox" class="armrest-filter" value="Айрон-хром|айрон-хром|айрон|«Айрон-хром»"> Айрон-хром</label>
+                <label><input type="checkbox" class="armrest-filter" value="Айс хром|Айс-хром|айс хром|айс"> Айс хром</label>
+                <label><input type="checkbox" class="armrest-filter" value="Пластиковые|пластиковые|пластиковый">
                     Пластиковые</label>
+                    <label><input type="checkbox" class="armrest-filter" value="под хром"> Со вставками "под хром"</label>
                 <label><input type="checkbox" class="armrest-filter" value="Металлические|металлические">
                     Металлические</label>
                 <label><input type="checkbox" class="armrest-filter" value="Алюминиевые|алюминиевые">
@@ -120,8 +122,8 @@
         </h3>
         <div class="filter-content" id="armrest-regul-filter-content">
             <div class="checkbox-group">           
-                    <label><input type="checkbox" class="armrest-regul-filter" value="2D">2D</label>
-                    <label><input type="checkbox" class="armrest-regul-filter" value="3D|3D-подлокотник|Подлокотники 3D|3D-подлокотники">3D</label>
+                    <label><input type="checkbox" class="armrest-regul-filter" value="2D|2-D">2D</label>
+                    <label><input type="checkbox" class="armrest-regul-filter" value="3D|3-D|3D-подлокотник|Подлокотники 3D|3D-подлокотники">3D</label>
                      <label><input type="checkbox" class="armrest-regul-filter" value="в 6-ти плоскостях|в 6 плоскостях|6D">6D</label>
                      <label><input type="checkbox" class="armrest-regul-filter" value="трансформируемые">Трансформируемые</label>
                      <label><input type="checkbox" class="armrest-regul-filter" value="по высоте">По высоте</label>
@@ -2033,7 +2035,10 @@ const filtersMap = {
   "Подлокотники алюминиевые": armrestFilters.some(f => f.includes("алюминиевые")),
   "деревянные": armrestFilters.some(f => f.includes("деревянные")),
   "с мягкими накладками": armrestFilters.some(f => f.includes("с мягкими накладками")),
-  "soft": armrestFilters.some(f => f.includes("soft")),
+  "Айрон-хром": armrestFilters.some(f => f.includes("Айрон-хром")),
+  "айрон": armrestFilters.some(f => f.includes("айрон")),
+  "айс": armrestFilters.some(f => f.includes("айс")),
+  "под хром": armrestFilters.some(f => f.includes("под хром")),
 };
 
 const productName = Array.isArray(product.unique_name) ? product.unique_name[0] : product.unique_name;
