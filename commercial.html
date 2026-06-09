@@ -976,6 +976,8 @@
       detailsHTML += `</div>`;
       productDiv.innerHTML = detailsHTML;
 
+
+      
       setTimeout(() => {
         generateQRCode(product.Link_arm, qrId);
       }, 100);
@@ -1435,9 +1437,21 @@ function updateProductImagesInDOM() {
         });
       }
     }
-
+function restoreAllProductDetails() {
+  document.querySelectorAll('.commercial-product').forEach(productDiv => {
+    const productName = productDiv.querySelector('h3')?.getAttribute('data-product-name');
+    if (productName) {
+      const savedHTML = localStorage.getItem(`productDetails_${productName}`);
+      const detailsDiv = productDiv.querySelector('.commercial-product-details');
+      if (savedHTML && detailsDiv) {
+        detailsDiv.innerHTML = savedHTML;
+      }
+    }
+  });
+}
     // Функция для генерации PDF
     async function generateCommercialOffer() {
+      restoreAllProductDetails();
       delPrice();
       updateProductImagesInDOM();
 
@@ -1744,6 +1758,7 @@ document.addEventListener('click', (e) => {
     handleAnyClickOnSketchArea(e);
   }
 });
+
     // Привязываем функцию к кнопке
     document.getElementById('generateOffer').addEventListener('click', async function () {
       try {
