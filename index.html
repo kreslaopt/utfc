@@ -774,7 +774,7 @@ function getEditableHeaders() {
 
         async function saveImageToLocalStorage(url, key) {
             try {
-                console.log(`Пытаюсь сохранить изображение по ключу: ${key}, URL: ${url}`);
+                // console.log(`Пытаюсь сохранить изображение по ключу: ${key}, URL: ${url}`);
                 const response = await fetch(url);
                 if (!response.ok) {
                     throw new Error(`Ошибка загрузки изображения: ${response.status}`);
@@ -783,7 +783,7 @@ function getEditableHeaders() {
                 const reader = new FileReader();
                 reader.onload = () => {
                     localStorage.setItem(key, reader.result);
-                    console.log(`Изображение успешно сохранено в localStorage по ключу: ${key}`);
+                    // console.log(`Изображение успешно сохранено в localStorage по ключу: ${key}`);
                 };
                 reader.onerror = () => {
                     console.error("Ошибка чтения изображения:", url);
@@ -1199,7 +1199,7 @@ function getFinalSelectionData() {
                 return null;
             }
             const numValue = parseFloat(strValue.replace(',', '.'));
-            console.log(`Parsing value: "${value}" -> ${numValue}`);
+            // console.log(`Parsing value: "${value}" -> ${numValue}`);
             return isNaN(numValue) ? null : numValue;
         }
 
@@ -2374,8 +2374,8 @@ if (armrestRegulFilters.length > 0) {
     } else {
         // Если components не массив после обработки, присваиваем false
         armrestRegulMatch = false;
-        console.log('Тип:', typeof product.Подлокотники);
-console.log('Значение:', product.Подлокотники);
+//         console.log('Тип:', typeof product.Подлокотники);
+// console.log('Значение:', product.Подлокотники);
     }
 }
 
@@ -5532,7 +5532,7 @@ document.querySelector('.checkbox-text').style.display = 'inline'; // или 'bl
                             if (valueObj && (valueObj.min !== undefined || valueObj.max !== undefined)) {
                                 const minVal = valueObj.min !== undefined ? valueObj.min : "нет";
                                 const maxVal = valueObj.max !== undefined ? valueObj.max : "нет";
-                                console.log(`  ${paramName}: min=${minVal}, max=${maxVal}`);
+                                // console.log(`  ${paramName}: min=${minVal}, max=${maxVal}`);
                             }
                         });
                     });

@@ -375,7 +375,7 @@
     });
 
     document.getElementById('add-dimensions-btn').addEventListener('click', () => {
-      console.log('Кнопка нажата');
+      // console.log('Кнопка нажата');
       const selectedProductsStr = localStorage.getItem('selectedProducts');
       if (!selectedProductsStr) return;
 
@@ -827,7 +827,7 @@
     // }
 
 
-    function refreshImages() {
+    async function refreshImages() {
       document.querySelectorAll('img').forEach(img => {
         // Исключить изображения, отмеченные как эскизы
         // if (img.getAttribute('data-isSketch') === 'true') return;
