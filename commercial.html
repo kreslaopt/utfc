@@ -1346,6 +1346,7 @@ if (detailsDiv) {
                   }
                   product.images[imageIndex] = imageDataUrl;
                   localStorage.setItem(`image_${productName}_${imageIndex}`, imageDataUrl);
+                  saveImageToLocalStorage();
                   localStorage.setItem('finalSelection', JSON.stringify(finalSelection));
 
                   // Обновляем изображение на странице
