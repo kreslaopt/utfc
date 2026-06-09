@@ -172,7 +172,7 @@ h3 {
 }
 
 .commercial-product-images img {
-  max-width: 335px;
+  max-width: 333px;
   max-height: auto;
 }
 
@@ -182,7 +182,7 @@ h3 {
 
 .sketch-img {
   position: absolute;
-  width: 380px;
+  width: 372px;
   height: auto;
   right: -15px;
   top: 490px;
