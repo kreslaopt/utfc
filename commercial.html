@@ -1830,7 +1830,6 @@ document.addEventListener('click', (e) => {
         // Генерируем PDF        
 
         await generateCommercialOffer();
-        restoreAllProductDetails();
 
       } catch (error) {
         console.error("Ошибка при генерации PDF:", error);
@@ -1854,6 +1853,7 @@ document.addEventListener('click', (e) => {
       setLogosAndBackgrounds(false);
       updateSignatureAndLogos(true);
       setImageSizesForPDF();
+       restoreAllProductDetails();
     };
   </script>
 </body>
