@@ -2040,6 +2040,7 @@ const filtersMap = {
   "айрон": armrestFilters.some(f => f.includes("айрон")),
   "айс": armrestFilters.some(f => f.includes("айс")),
   "под хром": armrestFilters.some(f => f.includes("под хром")),
+  "металлические «ХДП» ": armrestFilters.some(f => f.includes("ХДП")),
 };
 
 const productName = Array.isArray(product.unique_name) ? product.unique_name[0] : product.unique_name;
@@ -5202,8 +5203,16 @@ if (isAdd) {
 
                         let minVal = parseInt(minInput.value) || 0;
                         let maxVal = parseInt(maxInput.value) || 0;
+                        console.log('После чтения input:', minVal, maxVal);
+                       
                         const minLimit = parseInt(minInput.min);
                         const maxLimit = parseInt(maxInput.max);
+                        console.log('Limits:', minLimit, maxLimit);
+                         console.log('initial minVal:', minVal, 'maxVal:', maxVal);
+console.log('Limits:', minLimit, maxLimit);
+console.log('Обновленные input значения:', minInput.value, maxInput.value);
+
+
 
                         if (isMin) {
                             if (minInput.value !== '' && !isNaN(minVal)) {
@@ -5245,6 +5254,7 @@ if (isAdd) {
                             track.style.left = `${minPercent}%`;
                             track.style.width = `${maxPercent - minPercent}%`;
                         }
+                        
 
                         // Обновляем флаг и фильтруем
                         const param = slider.getAttribute('data-param');
@@ -5254,9 +5264,9 @@ if (isAdd) {
                         filterProducts();
                         isManualInput = false;
                         
-                        console.log(maxLimit);
-                            console.log(minLimit)
+                 
                     }
+                    
                 });
                 
                 
