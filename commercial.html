@@ -797,7 +797,7 @@
       const ctx = canvas.getContext('2d');
       const img = new Image();
       // Если сервер поддерживает CORS
-      img.crossOrigin = 'anonymous';
+      // img.crossOrigin = 'anonymous';
       img.onload = () => {
         ctx.clearRect(0, 0, canvas.width, canvas.height);
         ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
@@ -834,7 +834,7 @@
         // if (img.getAttribute('data-isSketch') === 'true') return;
 
         const src = img.src;
-        img.setAttribute('crossorigin', 'anonymous');
+        // img.setAttribute('crossorigin', 'anonymous');
 
         if (src.startsWith('data:')) {
           // Это data URI, не обновляем src
@@ -1242,27 +1242,31 @@
     }
 
     // Замена всех изображений с utfc.ru на base64 или локальную заглушку
-    async function replaceImagesWithBase64() {
-      const images = document.querySelectorAll('.commercial-product-images img[src^="https://utfc.ru"]');
-      const placeholderUrl = 'img/no-photo.png'; // Локальная заглушка
+    // async function replaceImagesWithBase64() {
+    //   const images = document.querySelectorAll('.commercial-product-images img[src^="https://utfc.ru"]');
+    //   const placeholderUrl = 'img/no-photo.png'; // Локальная заглушка
 
-      for (const img of images) {
-        const base64 = await urlToBase64(img.src);
-        img.src = base64 || placeholderUrl; // Используем base64 или заглушку
-      }
-    }
+    //   for (const img of images) {
+    //     const base64 = await urlToBase64(img.src);
+    //     img.src = base64 || placeholderUrl; // Используем base64 или заглушку
+    //   }
+    // }
 
-    async function replaceExternalImagesWithBase64() {
-      const images = document.querySelectorAll('img[src^="https://"], img[src^="http://"]');
-      for (const img of images) {
-        const base64 = await urlToBase64(img.src);
-        if (base64) {
-          img.src = base64;
-        } else {
-          img.src = 'img/no-photo.png';
-        }
-      }
-    }
+    // async function replaceExternalImagesWithBase64() {
+    //   const images = document.querySelectorAll('img[src^="https://"], img[src^="http://"]');
+    //   for (const img of images) {
+    //     const base64 = await urlToBase64(img.src);
+    //     if (base64) {
+    //       img.src = base64;
+    //     } else {
+    //       img.src = 'img/no-photo.png';
+    //     }
+    //   }
+    // }
+
+
+
+
     // Функция для обработки drag-and-drop
     // function setupDragAndDrop() {
     //     document.querySelectorAll('.commercial-product-images').forEach(container => {
