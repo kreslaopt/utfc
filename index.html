@@ -982,52 +982,53 @@ function getFinalSelectionData() {
 
 
 
-        function updateSliderFromInput(minInput, maxInput, minThumb, maxThumb, track, isVertical, isMin) {
-            if (!minInput || !maxInput || !minThumb || !maxThumb || !track) {
-                console.warn("Отсутствуют необходимые элементы для обновления слайдера");
-                return;
-            }
-            const minVal = parseInt(minInput.value);
-            const maxVal = parseInt(maxInput.value);
-            const minLimit = parseInt(minInput.min);
-            const maxLimit = parseInt(maxInput.max);
+   function updateSliderFromInput(slider, minInput, maxInput, minThumb, maxThumb, track, isVertical, isMin) {
+    if (!minInput || !maxInput || !minThumb || !maxThumb || !track || !slider) {
+        console.warn("Отсутствуют необходимые элементы для обновления слайдера");
+        return;
+    }
 
-            // Проверяем корректность введённых значений
-            if (isMin) {
-                if (minVal < minLimit) minInput.value = minLimit;
-                if (minVal > maxVal) minInput.value = maxVal;
-            } else {
-                if (maxVal > maxLimit) maxInput.value = maxLimit;
-                if (maxVal < minVal) maxInput.value = minVal;
-            }
+    const minVal = parseInt(minInput.value);
+    const maxVal = parseInt(maxInput.value);
+    const minLimit = parseInt(minInput.min);
+    const maxLimit = parseInt(maxInput.max);
 
-            // Обновляем значения
-            const minValue = parseInt(minInput.value);
-            const maxValue = parseInt(maxInput.value);
+    // Проверка корректности введённых значений
+    if (isMin) {
+        if (minVal < minLimit) minInput.value = minLimit;
+        if (minVal > maxVal) minInput.value = maxVal;
+    } else {
+        if (maxVal > maxLimit) maxInput.value = maxLimit;
+        if (maxVal < minVal) maxInput.value = minVal;
+    }
 
-            // Обновляем позиции ползунков
-            const minPercent = ((minValue - minLimit) / (maxLimit - minLimit)) * 100;
-            const maxPercent = ((maxValue - minLimit) / (maxLimit - minLimit)) * 100;
+    // Обновляем значения после ограничения
+    const minValue = parseInt(minInput.value);
+    const maxValue = parseInt(maxInput.value);
 
-            if (isVertical) {
-                minThumb.style.bottom = `${100 - minPercent}%`;
-                maxThumb.style.bottom = `${100 - maxPercent}%`;
-                track.style.bottom = `${100 - maxPercent}%`;
-                track.style.height = `${maxPercent - minPercent}%`;
-            } else {
-                minThumb.style.left = `${minPercent}%`;
-                maxThumb.style.left = `${maxPercent}%`;
-                track.style.left = `${minPercent}%`;
-                track.style.width = `${maxPercent - minPercent}%`;
-            }
+    // Обновляем позиции ползунков
+    const minPercent = ((minValue - minLimit) / (maxLimit - minLimit)) * 100;
+    const maxPercent = ((maxValue - minLimit) / (maxLimit - minLimit)) * 100;
 
-            // Обновляем фильтрацию
-            const param = slider.closest('.size-filter').getAttribute('data-param');
-            if (param) {
-                paramChangeFlags[param] = true;
-            }
-            filterProducts();
-        }
+    if (isVertical) {
+        minThumb.style.bottom = `${100 - minPercent}%`;
+        maxThumb.style.bottom = `${100 - maxPercent}%`;
+        track.style.bottom = `${100 - maxPercent}%`;
+        track.style.height = `${maxPercent - minPercent}%`;
+    } else {
+        minThumb.style.left = `${minPercent}%`;
+        maxThumb.style.left = `${maxPercent}%`;
+        track.style.left = `${minPercent}%`;
+        track.style.width = `${maxPercent - minPercent}%`;
+    }
+
+    // Обновляем фильтрацию
+    const param = slider.closest('.size-filter').getAttribute('data-param');
+    if (param) {
+        paramChangeFlags[param] = true;
+    }
+    filterProducts();
+}
 
 
         // function isValueInRange(dimension, filterMin, filterMax) {
@@ -1553,8 +1554,6 @@ function searchArmrestType(product, armrestType) {
                     if (param) {
                         paramChangeFlags[param] = true;
                     }
-
-
                     filterProducts();
                 });
 
@@ -1564,7 +1563,6 @@ function searchArmrestType(product, armrestType) {
             }
 
             function updateSlider() {
-
                 if (isVertical) {
                     minThumb.style.bottom = `${minPos}%`;
                     maxThumb.style.bottom = `${maxPos}%`;
@@ -1588,15 +1586,12 @@ function searchArmrestType(product, armrestType) {
             setThumbPosition(minThumb, parseInt(minValue.value), true);
             setThumbPosition(maxThumb, parseInt(maxValue.value), false);
         }
-
-
         
         function recalculateSliderValues(filteredProducts = []) {
-
             const isArchiveSelected = document.getElementById('archiveFilter').checked;
             let productsToUse = isArchiveSelected ? archiveProducts : activeProducts;
 
-            if (isManualInput) return;
+            // if (isManualInput) return;
 
             if (filteredProducts.length > 0) {
                 productsToUse = filteredProducts;
@@ -3786,7 +3781,6 @@ childRow.appendChild(finishtypeCell);
                     minusButton.addEventListener('click', (e) => {
                         e.stopPropagation();
                         toggleChildInFinalSelection(child, false);
-
                         const finalSelection = JSON.parse(localStorage.getItem('finalSelection')) || {};
                         if (finalSelection[name]) {
                             finalSelection[name].count = (finalSelection[name].count || 0) - 1;
@@ -3802,11 +3796,9 @@ childRow.appendChild(finishtypeCell);
                             updateFinalSelectionTable();
                         }
                     });
-
                     actionsCell.appendChild(plusButton);
                     actionsCell.appendChild(minusButton);
                     childRow.appendChild(actionsCell);
-
                     tableBody.appendChild(childRow);
                 });
             });
@@ -3817,7 +3809,6 @@ childRow.appendChild(finishtypeCell);
             document.getElementById('productsCountValue').textContent = `${parentsCount} (база) + ${childrenCount} (варианты)`;
             updateFinalSelectionTable();
         }
-
 
 function getUniqueName(product) {
     if (!product || !product.unique_name) return null;
@@ -5263,7 +5254,14 @@ if (isAdd) {
                         isManualInput = false;
                     }
                 });
+                
+                
             });
+            
+            
+            
+            
+            
             // При изменении фильтра категории или архива
             document.querySelectorAll('.category-filter, #archiveFilter').forEach(checkbox => {
                 checkbox.addEventListener('change', () => {
@@ -5276,11 +5274,12 @@ if (isAdd) {
                             product.category && selectedCategories.includes(product.category)
                         );
                     }
-
-                    recalculateSliderValues(productsToUse);
+                    recalculateSliderValues(productsToUse);                    
                     filterProducts();
                 });
             });
+
+            
 
             document.getElementById('archiveFilter').addEventListener('change', function () {
                 const isArchiveSelected = this.checked;
@@ -5303,10 +5302,6 @@ if (isAdd) {
                 buildOverallChart(filteredProducts);
                 filterProducts();
             });
-
-
-
-
 
             document.getElementById('searchInput').addEventListener('input', () => {
                 if (!basketContainer.classList.contains('active')) {
@@ -5383,7 +5378,7 @@ document.querySelector('.checkbox-text').style.display = 'inline'; // или 'bl
                 showAnalyticsButton.classList.remove('active');
                 showSchemaButton.classList.remove('active');
                 showSelectedButton.classList.add('active');
-                                document.querySelector('#strictRangeFilter').style.display = 'none';
+                document.querySelector('#strictRangeFilter').style.display = 'none';
                 document.querySelector('.checkbox-text').style.display = 'none';
                 document.querySelector('.final-selection-container').style.display = 'block';
                 document.querySelector('.final-selection-container').classList.add('active');
