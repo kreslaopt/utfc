@@ -1591,7 +1591,7 @@ function searchArmrestType(product, armrestType) {
             const isArchiveSelected = document.getElementById('archiveFilter').checked;
             let productsToUse = isArchiveSelected ? archiveProducts : activeProducts;
 
-            // if (isManualInput) return;
+            if (isManualInput) return;
 
             if (filteredProducts.length > 0) {
                 productsToUse = filteredProducts;
