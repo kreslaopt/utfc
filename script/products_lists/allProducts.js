@@ -1015,7 +1015,7 @@ const knownProductsAllFiles = [
     "is_archive": false
   },
   {
-    "name": "онтарио в пластик хром",
+    "name": "Онтарио в пластик хром",
     "category": "armchair_rukovoditel",
     "is_archive": false
   },
