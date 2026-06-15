@@ -1710,6 +1710,11 @@ const knownProductsAllFiles = [
     "is_archive": false
   },
   {
+    "name": "ch-105 онтарио в пластик хром",
+    "category": "armchair_rukovoditel",
+    "is_archive": false
+  },
+  {
     "name": "Epik а-001-gb l201-271",
     "category": "armchair_epik",
     "is_archive": false
@@ -1951,11 +1956,6 @@ const knownProductsAllFiles = [
   },
   {
     "name": "Utfc онтарио м-405 н_п пластик хром",
-    "category": "armchair_rukovoditel",
-    "is_archive": false
-  },
-  {
-    "name": "Utfc онтарио ch-105 пластик хром",
     "category": "armchair_rukovoditel",
     "is_archive": false
   },
