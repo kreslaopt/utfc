@@ -1158,7 +1158,6 @@ function getFinalSelectionData() {
 
             const min = parseDimensionValue(dimension.min);
             const max = parseDimensionValue(dimension.max);
-            
 
             // Если оба значения отсутствуют — товар не подходит
             if (min === null && max === null) {
@@ -2862,9 +2861,9 @@ if (paramChangeFlags.all_depth) {
         const dimensions = product.dimensions_details?.[0] || {};
         const sources = [
             dimensions.chair_depth,
+            dimensions.diameter_cross,
             dimensions.seat_depth,
-            dimensions.runners_depth,
-            dimensions.diameter_cross
+            dimensions.runners_depth
         ];
 
         let allMins = [];
