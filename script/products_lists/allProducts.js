@@ -1015,11 +1015,6 @@ const knownProductsAllFiles = [
     "is_archive": false
   },
   {
-    "name": "Онтарио в пластик хром",
-    "category": "armchair_rukovoditel",
-    "is_archive": false
-  },
-  {
     "name": "Оптима м-901 с подголовником черный пластик",
     "category": "armchair_comfort",
     "is_archive": false
@@ -1712,6 +1707,11 @@ const knownProductsAllFiles = [
   {
     "name": "Cильвия хром",
     "category": "chair_visitors",
+    "is_archive": false
+  },
+  {
+    "name": "Ch-105 онтарио в пластик хром",
+    "category": "armchair_rukovoditel",
     "is_archive": false
   },
   {
