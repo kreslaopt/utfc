@@ -128,12 +128,12 @@
                 "min": "",
                 "max": ""
             },
-            "runners_width": {
-                "min": "",
+                "runners_width": {
+                "min": "330",
                 "max": "330"
             },
             "runners_depth": {
-                "min": "",
+                "min": "330",
                 "max": "330"
             },
             "seat_to_floor_height_upper": {

@@ -1158,6 +1158,7 @@ function getFinalSelectionData() {
 
             const min = parseDimensionValue(dimension.min);
             const max = parseDimensionValue(dimension.max);
+            
 
             // Если оба значения отсутствуют — товар не подходит
             if (min === null && max === null) {
@@ -1590,7 +1591,6 @@ function searchArmrestType(product, armrestType) {
         function recalculateSliderValues(filteredProducts = []) {
             const isArchiveSelected = document.getElementById('archiveFilter').checked;
             let productsToUse = isArchiveSelected ? archiveProducts : activeProducts;
-
             if (isManualInput) return;
 
             if (filteredProducts.length > 0) {
@@ -2848,7 +2848,7 @@ if (paramChangeFlags.all_width) {
         const globalMin = allMins.length > 0 ? Math.min(...allMins) : null;
         const globalMax = allMaxs.length > 0 ? Math.max(...allMaxs) : null;
 
-        if (isStrictRange) {
+ if (isStrictRange) {           
             return globalMin !== null && globalMax !== null &&
                 isValueInRange({ min: globalMin, max: globalMax }, minAllWidth, maxAllWidth);
         } else {
@@ -5188,91 +5188,70 @@ if (isAdd) {
 
             // Обработчик для ручного ввода
 
-            document.querySelectorAll('.size-filter .min-value, .size-filter .max-value').forEach(input => {
-                input.addEventListener('change', function () {
-                    if (!basketContainer.classList.contains('active')) {
-                        isManualInput = true;
-                        const isMin = this.classList.contains('min-value');
-                        const slider = this.closest('.size-filter');
-                        const minInput = slider.querySelector('.min-value');
-                        const maxInput = slider.querySelector('.max-value');
-                        const minThumb = slider.querySelector('.min-thumb');
-                        const maxThumb = slider.querySelector('.max-thumb');
-                        const track = slider.querySelector('.slider-track');
-                        const isVertical = slider.classList.contains('vertical');
+      document.querySelectorAll('.size-filter .min-value, .size-filter .max-value').forEach(input => {
+    input.addEventListener('change', function () {
+        if (!basketContainer.classList.contains('active')) {
+            isManualInput = true;
+            const isMin = this.classList.contains('min-value');
+            const slider = this.closest('.size-filter');
+            const minInput = slider.querySelector('.min-value');
+            const maxInput = slider.querySelector('.max-value');
+            const minThumb = slider.querySelector('.min-thumb');
+            const maxThumb = slider.querySelector('.max-thumb');
+            const track = slider.querySelector('.slider-track');
+            const isVertical = slider.classList.contains('vertical');
 
-                        let minVal = parseInt(minInput.value) || 0;
-                        let maxVal = parseInt(maxInput.value) || 0;
-                        console.log('После чтения input:', minVal, maxVal);
-                       
-                        const minLimit = parseInt(minInput.min);
-                        const maxLimit = parseInt(maxInput.max);
-                        console.log('Limits:', minLimit, maxLimit);
-                         console.log('initial minVal:', minVal, 'maxVal:', maxVal);
-console.log('Limits:', minLimit, maxLimit);
-console.log('Обновленные input значения:', minInput.value, maxInput.value);
+            let minVal = parseInt(minInput.value) || 0;
+            let maxVal = parseInt(maxInput.value) || 0;
 
+            const minLimit = parseInt(minInput.min);
+            const maxLimit = parseInt(maxInput.max);
 
+            // Гарантируем, что значения не выходят за пределы
+            minVal = Math.max(minVal, minLimit);
+            maxVal = Math.min(maxVal, maxLimit);
 
-                        if (isMin) {
-                            if (minInput.value !== '' && !isNaN(minVal)) {
-                                if (minVal < minLimit) {
-                                    minInput.value = minLimit;
-                                    minVal = minLimit;
-                                }
-                                if (minVal > maxVal) {
-                                    minInput.value = maxVal;
-                                    minVal = maxVal;
-                                }
-                            }
-                        } else {
-                            if (maxInput.value !== '' && !isNaN(maxVal)) {
-                                if (maxVal > maxLimit) {
-                                    maxInput.value = maxLimit;
-                                    maxVal = maxLimit;
-                                }
-                                if (maxVal < minVal) {
-                                    maxInput.value = minVal;
-                                    maxVal = minVal;
-                                }
-                            }
-                         
-                        }
+            // Обеспечиваем, чтобы min не был больше max
+            if (minVal > maxVal) {
+                if (isMin) {
+                    minVal = maxVal;
+                } else {
+                    maxVal = minVal;
+                }
+            }
 
-                        // Обновляем позиции ползунков
-                        const minPercent = ((minVal - minLimit) / (maxLimit - minLimit)) * 100;
-                        const maxPercent = ((maxVal - minLimit) / (maxLimit - minLimit)) * 100;
+            // Обновляем значения input
+            minInput.value = minVal;
+            maxInput.value = maxVal;
 
-                        if (isVertical) {
-                            minThumb.style.bottom = `${minPercent}%`;
-                            maxThumb.style.bottom = `${maxPercent}%`;
-                            track.style.bottom = `${100 - maxPercent}%`;
-                            track.style.height = `${maxPercent - minPercent}%`;
-                        } else {
-                            minThumb.style.left = `${minPercent}%`;
-                            maxThumb.style.left = `${maxPercent}%`;
-                            track.style.left = `${minPercent}%`;
-                            track.style.width = `${maxPercent - minPercent}%`;
-                        }
-                        
-
-                        // Обновляем флаг и фильтруем
-                        const param = slider.getAttribute('data-param');
-                        if (param) {
-                            paramChangeFlags[param] = true;
-                        }
-                        filterProducts();
-                        isManualInput = false;
-                        
-                 
-                    }
-                    
-                });
-                
-                
-            });
             
-            
+
+            // Обновляем позиции ползунков
+            const minPercent = ((minVal - minLimit) / (maxLimit - minLimit)) * 100;
+            const maxPercent = ((maxVal - minLimit) / (maxLimit - minLimit)) * 100;
+
+            if (isVertical) {
+                minThumb.style.bottom = `${minPercent}%`;
+                maxThumb.style.bottom = `${maxPercent}%`;
+                track.style.bottom = `${100 - maxPercent}%`;
+                track.style.height = `${maxPercent - minPercent}%`;
+            } else {
+                minThumb.style.left = `${minPercent}%`;
+                maxThumb.style.left = `${maxPercent}%`;
+                track.style.left = `${minPercent}%`;
+                track.style.width = `${maxPercent - minPercent}%`;
+            }
+
+            // Обновляем флаг и фильтруем
+            const param = slider.getAttribute('data-param');
+            if (param) {
+                paramChangeFlags[param] = true;
+            }
+            filterProducts();
+            isManualInput = false;
+        }
+    });
+});
             
             
             

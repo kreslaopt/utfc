@@ -183,10 +183,12 @@
             "backrest_width_narrow": {},
             "backrest_width_wide": {},
             "diameter_cross": {},
-            "runners_width": {
+             "runners_width": {
+                "min": "330",
                 "max": "330"
             },
             "runners_depth": {
+                "min": "330",
                 "max": "330"
             },
             "recommended_load": "90",
