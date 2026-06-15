@@ -1710,7 +1710,7 @@ const knownProductsAllFiles = [
     "is_archive": false
   },
   {
-    "name": "ch-105 онтарио в пластик хром",
+    "name": "Ch-105 онтарио в пластик хром",
     "category": "armchair_rukovoditel",
     "is_archive": false
   },
