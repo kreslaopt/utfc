@@ -2861,9 +2861,9 @@ if (paramChangeFlags.all_depth) {
         const dimensions = product.dimensions_details?.[0] || {};
         const sources = [
             dimensions.chair_depth,
-            dimensions.diameter_cross,
             dimensions.seat_depth,
-            dimensions.runners_depth
+            dimensions.runners_depth,
+            dimensions.diameter_cross
         ];
 
         let allMins = [];
