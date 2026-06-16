@@ -3750,20 +3750,22 @@ childRow.appendChild(finishtypeCell);
                         }
                         childRow.appendChild(imgCell);
                     }
-
+                    const roundPrice_1_Cell = (parseFloat(child.CV_PRICE_1)).toFixed(0);
+                    const roundPrice_2_Cell = (parseFloat(child.CV_PRICE_2)).toFixed(0);
+                    const roundPrice_3_Cell = (parseFloat(child.CV_PRICE_3)).toFixed(0);
                     // Ярославль
                     const price_1_Cell = document.createElement('td');
-                    price_1_Cell.textContent = child.CV_PRICE_1 ? `${child.CV_PRICE_1} ${child.CV_CURRENCY_1 || 'RUB'}` : (parent.CV_PRICE_1 ? `${parent.CV_PRICE_1} ${parent.CV_CURRENCY_1 || 'RUB'}` : '—');
+                    price_1_Cell.textContent = roundPrice_1_Cell ? `${roundPrice_1_Cell} ${child.CV_CURRENCY_1 || 'RUB'}` : (parent.CV_PRICE_1 ? `${parent.CV_PRICE_1} ${parent.CV_CURRENCY_1 || 'RUB'}` : '—');
                     childRow.appendChild(price_1_Cell);
 
                     // Храпуново
                     const price_2_Cell = document.createElement('td');
-                    price_2_Cell.textContent = child.CV_PRICE_3 ? `${child.CV_PRICE_3} ${child.CV_CURRENCY_3 || 'RUB'}` : (parent.CV_PRICE_3 ? `${parent.CV_PRICE_3} ${parent.CV_CURRENCY_3 || 'RUB'}` : '—');
+                    price_2_Cell.textContent = roundPrice_3_Cell ? `${roundPrice_2_Cell} ${child.CV_CURRENCY_3 || 'RUB'}` : (parent.CV_PRICE_3 ? `${parent.CV_PRICE_3} ${parent.CV_CURRENCY_3 || 'RUB'}` : '—');
                     childRow.appendChild(price_2_Cell);
 
                     // Санкт-Петербург
                     const price_3_Cell = document.createElement('td');
-                    price_3_Cell.textContent = child.CV_PRICE_2 ? `${child.CV_PRICE_2} ${child.CV_CURRENCY_3 || 'RUB'}` : (parent.CV_PRICE_2 ? `${parent.CV_PRICE_2} ${parent.CV_CURRENCY_2 || 'RUB'}` : '—');
+                    price_3_Cell.textContent = roundPrice_2_Cell ? `${roundPrice_2_Cell} ${child.CV_CURRENCY_3 || 'RUB'}` : (parent.CV_PRICE_2 ? `${parent.CV_PRICE_2} ${parent.CV_CURRENCY_2 || 'RUB'}` : '—');
                     childRow.appendChild(price_3_Cell);
 
                     // Колонка "Действия" с кнопками +/-
@@ -4101,9 +4103,9 @@ if (!productName) {
 
                 // Тип отделки сиденья
                 const finishTypeSeatCell = document.createElement('td');
-                finishTypeSeatCell.textContent = data.finish_type_seat || data.finish_type;
-                finishTypeSeatCell.contentEditable = true;
-                finishTypeSeatCell.onblur = () => saveEditableField(name, 'finish_type_seat', finishTypeSeatCell.textContent);
+                finishTypeSeatCell.setAttribute('contenteditable', 'true'); // finishTypeSeatCell.contentEditable = true;
+                const value = data.finish_type_seat === "" || data.finish_type ? '—' : (data.finish_type_seat || data.finish_type || '—');
+                finishTypeSeatCell.textContent = value;
                 row.appendChild(finishTypeSeatCell);
 
                 // Подлокотники
@@ -4210,24 +4212,26 @@ if (!productName) {
 
                     row.appendChild(imgCell);
                 }
-
+                    const roundPrice1Cell = (parseFloat(data.CV_PRICE_1)).toFixed(0);
+                    const roundPrice2Cell = (parseFloat(data.CV_PRICE_2)).toFixed(0);
+                    const roundPrice3Cell = (parseFloat(data.CV_PRICE_3)).toFixed(0);
                 // Ярославль
                 const price1Cell = document.createElement('td');
-                price1Cell.textContent = data.CV_PRICE_1 ? `${data.CV_PRICE_1} ${data.CV_CURRENCY_1 || 'RUB'}` : '—';
+                price1Cell.textContent = roundPrice1Cell ? `${roundPrice1Cell} ${data.CV_CURRENCY_1 || 'RUB'}` : '—';
                 price1Cell.contentEditable = true;
                 price1Cell.onblur = () => saveEditableField(name, 'CV_PRICE_1', price1Cell.textContent);
                 row.appendChild(price1Cell);
 
                 // Храпуново
                 const price2Cell = document.createElement('td');
-                price2Cell.textContent = data.CV_PRICE_3 ? `${data.CV_PRICE_3} ${data.CV_CURRENCY_3 || 'RUB'}` : '—';
+                price2Cell.textContent = roundPrice3Cell ? `${roundPrice3Cell} ${data.CV_CURRENCY_3 || 'RUB'}` : '—';
                 price2Cell.contentEditable = true;
                 price2Cell.onblur = () => saveEditableField(name, 'CV_PRICE_2', price2Cell.textContent);
                 row.appendChild(price2Cell);
 
                 // Санкт-Петербург
                 const price3Cell = document.createElement('td');
-                price3Cell.textContent = data.CV_PRICE_2 ? `${data.CV_PRICE_2} ${data.CV_CURRENCY_2 || 'RUB'}` : '—';
+                price3Cell.textContent = roundPrice2Cell ? `${roundPrice2Cell} ${data.CV_CURRENCY_2 || 'RUB'}` : '—';
                 price3Cell.contentEditable = true;
                 price3Cell.onblur = () => saveEditableField(name, 'CV_PRICE_3', price3Cell.textContent);
                 row.appendChild(price3Cell);

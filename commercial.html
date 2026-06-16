@@ -709,7 +709,7 @@
           article_number: data.article_number || '—',
           full_describe: data.full_describe || '—',
           finish_type: data.finish_type || '—',
-          finish_type_seat: data.finish_type_seat || '—',
+          finish_type_seat: data.finish_type_seat || data.finish_type_seat || '—',
           Подлокотники: data.Подлокотники || '—',
           skeleton: data.skeleton || '—',
           max_load: data.max_load || '—',
@@ -733,12 +733,12 @@
     // Функция для создания строки таблицы
     function createTableRow(product, index) {
       const row = document.createElement('tr');
-      const totalPrice = (parseFloat(product.CV_PRICE_1) * product.count).toFixed(2);
+      const totalPrice = (parseFloat(product.CV_PRICE_1) * product.count).toFixed(0);
       row.innerHTML = `
                 <td>${index + 1}</td>
                 <td>${product.name}</td>
                 <td>${product.count}</td>
-                <td>${product.CV_PRICE_1} ${product.CV_CURRENCY_1 || 'RUB'}</td>
+                <td>${(parseFloat(product.CV_PRICE_1)).toFixed(0)} ${product.CV_CURRENCY_1 || 'RUB'}</td>
                 <td>${totalPrice} ${product.CV_CURRENCY_1 || 'RUB'}</td>
             `;
       return row;
@@ -923,7 +923,7 @@
         { label: 'Артикул', value: product.article_number },
         { label: 'Описание', value: product.full_describe },
         { label: 'Тип отделки', value: product.finish_type },
-        { label: 'Тип отделки сиденья', value: product.finish_type_seat || product.finish_type },
+        { label: 'Тип отделки сиденья', value: (product.finish_type_seat || product.finish_type || '') === '' ? '—' : (product.finish_type_seat || product.finish_type) },
         { label: 'Подлокотники', value: product.Подлокотники },
         { label: 'Каркас', value: product.skeleton },
         { label: 'Нагрузка (рекомендуемая)', value: product.recommended_load ? `${product.recommended_load} кг` : null },
@@ -959,8 +959,8 @@
         
         <div class="commercial-product-details" contenteditable="true">
             <p><strong>Количество:</strong> ${product.count}</p>
-            <p><strong>Цена:</strong> ${product.CV_PRICE_1} ${product.CV_CURRENCY_1 || 'RUB'}</p>
-            <p><strong>Сумма:</strong> ${(parseFloat(product.CV_PRICE_1) * product.count).toFixed(2)} ${product.CV_CURRENCY_1 || 'RUB'}</p>               
+            <p><strong>Цена:</strong> ${(parseFloat(product.CV_PRICE_1)).toFixed(0)} ${product.CV_CURRENCY_1 || 'RUB'}</p>
+            <p><strong>Сумма:</strong> ${(parseFloat(product.CV_PRICE_1) * product.count).toFixed(0)} ${product.CV_CURRENCY_1 || 'RUB'}</p>               
             
     `;
       detailsHTML += `${sketchHTML}`;
