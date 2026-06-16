@@ -918,12 +918,17 @@
       //         Сохранить все изображения
       //     </button>
       // `;
-
+const finishTypeSeatValue = (typeof product.finish_type_seat === 'string' && product.finish_type_seat.trim() !== '') 
+  ? product.finish_type_seat 
+  : (typeof product.finish_type === 'string' && product.finish_type.trim() !== '') 
+    ? product.finish_type 
+    : '—';
+    console.log('finishTypeSeatValue:', finishTypeSeatValue);
       const fields = [
         { label: 'Артикул', value: product.article_number },
         { label: 'Описание', value: product.full_describe },
-        { label: 'Тип отделки', value: product.finish_type },
-        { label: 'Тип отделки сиденья', value: (product.finish_type_seat || product.finish_type || '') === '' ? '—' : (product.finish_type_seat || product.finish_type) },
+        { label: 'Тип отделки', value: product.finish_type},
+        { label: 'Тип отделки сиденья', value: finishTypeSeatValue},
         { label: 'Подлокотники', value: product.Подлокотники },
         { label: 'Каркас', value: product.skeleton },
         { label: 'Нагрузка (рекомендуемая)', value: product.recommended_load ? `${product.recommended_load} кг` : null },
@@ -934,6 +939,9 @@
         { label: 'Особенности', value: product.Особенности },
         { label: 'Ролики', value: product.Ролики },
       ];
+// console.log('finish_type_seat:', product.finish_type_seat);
+// console.log('finish_type:', product.finish_type);
+// console.log('Computed finishTypeSeatValue:', finishTypeSeatValue);
 
       const productName = productDiv.querySelector('h3')?.getAttribute('data-product-name');
       const imageSrc = isBmfSelected ? 'img/titul_commercial_site_2.png' : 'img/titul_commercial_site.png';
@@ -970,7 +978,7 @@
       fields.forEach(field => {
         if (field.value && field.value !== '—' && field.value !== null) {
           detailsHTML += `<p><strong>${field.label}:</strong> ${field.value}</p>`;
-
+          
         }
       });
 

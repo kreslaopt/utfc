@@ -4104,7 +4104,11 @@ if (!productName) {
                 // Тип отделки сиденья
                 const finishTypeSeatCell = document.createElement('td');
                 finishTypeSeatCell.setAttribute('contenteditable', 'true'); // finishTypeSeatCell.contentEditable = true;
-                const value = data.finish_type_seat === "" || data.finish_type ? '—' : (data.finish_type_seat || data.finish_type || '—');
+                const value = (typeof data.finish_type_seat === 'string' && data.finish_type_seat.trim() !== '') 
+  ? data.finish_type_seat 
+  : (typeof data.finish_type === 'string' && data.finish_type.trim() !== '') 
+    ? data.finish_type 
+    : '—';
                 finishTypeSeatCell.textContent = value;
                 row.appendChild(finishTypeSeatCell);
 
