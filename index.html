@@ -347,6 +347,7 @@
 
     </div>
 
+
     <!-- Основной контент -->
     <div class="center">
         <div class="content">
@@ -2142,8 +2143,6 @@ if (mechanismFilters.length > 0) {
 
             // Если не нашли по имени — ищем в компонентах
             if (!mechanismMatch) {
-                const loadingMessage = document.getElementById('loading-message');
-loadingMessage.style.display = 'block';
                 const components = product.construction_and_materials?.[0]?.components || product.full_describe || product.Механизм || product.parent || product.parent?.[0]?.IE_PREVIEW_TEXT || [];
                 mechanismMatch = otherMechanismFilters.every(filter => {
                     const patterns = filter.split('|');
