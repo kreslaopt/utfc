@@ -142,7 +142,7 @@
                 <label><input type="checkbox" class="mechanism-filter" value="Топ-ган с синхроплатой"> Топ-ган с синхроплатой</label>                
                 <label><input type="checkbox" class="mechanism-filter" value="мультиблок|mb|MB|Mb| мб|MB"> Мультиблок</label>
                 <label><input type="checkbox" class="mechanism-filter" value="Мультиблок с синхроплатой"> Мультиблок с синхроплатой</label>
-                <label><input type="checkbox" class="mechanism-filter" value="синхромеханизма|синхромеханизм|синхронно|синхронный|синхроплатой"> Синхронный</label>                
+                <label><input type="checkbox" class="mechanism-filter" value="синхромеханизма|синхромеханизм|синхронно|синхронный|Синхронный|синхроплатой"> Синхронный</label>                
                 <label><input type="checkbox" class="mechanism-filter" value="ПВМ|пвм"> ПВМ</label>
                 <label><input type="checkbox" class="mechanism-filter" value="CPT|срт"> CPT</label>
                 <label><input type="checkbox" class="mechanism-filter" value=" О | O | о | o |_о_|овалина"> Овалина</label>
@@ -1302,6 +1302,37 @@ function getFinalSelectionData() {
             return normalizeSearchTerm(str).split(/\s+/);
         }
 
+        // Функция для удаления HTML-тегов
+function stripHtml(html) {
+  const tmp = document.createElement("div");
+  tmp.innerHTML = html;
+  return tmp.textContent || tmp.innerText || "";
+}
+
+// Рекурсивная функция для поиска в любом объекте или массиве
+function searchInEntireObject(obj, searchTerm) {
+  if (!obj) return false;
+
+  // Для строк
+  if (typeof obj === 'string') {
+    const text = stripHtml(obj); // удаляем HTML
+    const words = getNormalizedWords(text);
+    return getNormalizedWords(searchTerm).every(word => words.includes(word));
+  }
+
+  // Для массивов
+  if (Array.isArray(obj)) {
+    return obj.some(item => searchInEntireObject(item, searchTerm));
+  }
+
+  // Для объектов
+  if (typeof obj === 'object') {
+    return Object.values(obj).some(value => searchInEntireObject(value, searchTerm));
+  }
+
+  return false;
+}
+
         // Обновленная функция поиска, ищет целую фразу или слова
         function searchInObject(obj, searchTerm) {
             if (!obj) return false;
@@ -1344,6 +1375,7 @@ function getFinalSelectionData() {
 
             return false;
         }
+        
 
 //         function searchInObject(obj, searchTerm) {
 //     if (!obj) return false;
@@ -2110,14 +2142,15 @@ if (mechanismFilters.length > 0) {
 
             // Если не нашли по имени — ищем в компонентах
             if (!mechanismMatch) {
-                const components = product.construction_and_materials?.[0]?.components || product.full_describe || product.parent || product.parent?.[0]?.IE_PREVIEW_TEXT || [];
+                const components = product.construction_and_materials?.[0]?.components || product.full_describe || product.Механизм || product.parent || product.parent?.[0]?.IE_PREVIEW_TEXT || [];
                 mechanismMatch = otherMechanismFilters.every(filter => {
                     const patterns = filter.split('|');
                     return patterns.some(pattern => {
                         const lowerPattern = pattern.toLowerCase().trim();
-                        return components.some(component =>
-                            searchInObject(component, lowerPattern)
-                        );
+                        // return components.some(component =>
+                        //     searchInObject(component, lowerPattern)
+                        // );
+                        return searchInEntireObject(product, lowerPattern);
                     });
                 });
             }
