@@ -2151,8 +2151,7 @@ if (mechanismFilters.length > 0) {
                         // return components.some(component =>
                         //     searchInObject(component, lowerPattern)
                         // );
-                        return searchInEntireObject(product, lowerPattern);
-                        
+                        return searchInEntireObject(product, lowerPattern);                        
                     });
                 });
             }
@@ -2160,9 +2159,6 @@ if (mechanismFilters.length > 0) {
     }
 }
 
-                        
-                    
-                    
         let karkasMatch = true;
 if (karkasFilters.length > 0) {
     const expandedKarkasFilters = karkasFilters.flatMap(filter => filter.split('|').map(item => item.trim()));
