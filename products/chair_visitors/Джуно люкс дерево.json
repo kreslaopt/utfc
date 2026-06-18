@@ -152,7 +152,8 @@
         "https://cdn.utfc.ru/uf/10c/p38pdc6kyx25t23p8y3qgryp1iq6rvjn.png",
         "https://cdn.utfc.ru/uf/8d0/8d0fc428274bc3dd435ab3736b873e89.jpg",
         "https://cdn.utfc.ru/iblock/cb6/dg0q4u612m8a8iktasl43mm0oh4vc4ha.png",
-        "https://cdn.utfc.ru/iblock/94a/2u98sdehazn7f6vi2en17p5qzeabvbml.png"
+        "https://cdn.utfc.ru/iblock/94a/2u98sdehazn7f6vi2en17p5qzeabvbml.png",
+        "https://cdn.utfc.ru/iblock/e49/e49ef734279064b5b9be4cafd2926b1d/e5b8b54948ab237d14fbd1f59e1ba258.png"
       ]
     }
   ],
@@ -374,11 +375,11 @@
     "STORE_AMOUNT_3": "",
     "CV_QUANTITY_FROM": "",
     "CV_QUANTITY_TO": "",
-    "CV_PRICE_1": "9511.00",
+    "CV_PRICE_1": "9511.00000000",
     "CV_CURRENCY_1": "RUB",
-    "CV_PRICE_2": "9797.00",
+    "CV_PRICE_2": "9797.00000000",
     "CV_CURRENCY_2": "RUB",
-    "CV_PRICE_3": "9511.00",
+    "CV_PRICE_3": "9511.00000000",
     "CV_CURRENCY_3": "RUB",
     "STORE_AMOUNT_4": "",
     "STORE_AMOUNT_5": "",
@@ -468,12 +469,12 @@
       "STORE_AMOUNT_3": "0",
       "CV_QUANTITY_FROM": "",
       "CV_QUANTITY_TO": "",
-      "CV_PRICE_1": "9511.00",
+      "CV_PRICE_1": "9511.00000000",
       "CV_CURRENCY_1": "RUB",
-      "CV_PRICE_2": "9797.00",
+      "CV_PRICE_2": "9797.00000000",
       "CV_CURRENCY_2": "RUB",
       "STORE_AMOUNT_4": "0",
-      "CV_PRICE_3": "9511.00",
+      "CV_PRICE_3": "9511.00000000",
       "STORE_AMOUNT_5": "0",
       "CV_CURRENCY_3": "RUB",
       "STORE_AMOUNT_6": "0"
