@@ -627,7 +627,7 @@
   "madeinrf": "Сделано РФ",
   "lost": [
     {
-      "clean": false,
+      "clean": true,
       "limit": false,
       "del": true
     }
