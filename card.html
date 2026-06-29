@@ -719,7 +719,7 @@
                     <p><span>${product.dimensions?.[variantIndex]?.brutto || 'не указан'}</span> </p>
                     <div class="box-info-line"></div>
                     <img src="img/netto.png" alt="Вес нетто">
-                    <p><span>${product.dimensions?.[variantIndex]?.netto || 'не указан'}</span></p>
+                    <p><span>${product.dimensions?.[variantIndex]?.netto || product.additional_info?.netto || 'не указан'}</span></p>
                     <div class="box-info-line"></div>
                     <img src="img/v.png" alt="Объем">
                     <p><span>${product.dimensions?.[variantIndex]?.volume || 'не указан'}</span> м³</p>
@@ -911,17 +911,17 @@
 
                         const bruttoElement = document.getElementById('brutto');
                         if (bruttoElement) {
-                            bruttoElement.textContent = product.dimensions?.[0]?.brutto || 'не указан';
+                            bruttoElement.textContent = product.dimensions?.[0]?.brutto || product.sizes?.['Вес брутто:'] || 'не указан';
                         }
 
                         const nettoElement = document.getElementById('netto');
                         if (nettoElement) {
-                            nettoElement.textContent = product.dimensions?.[0]?.netto || 'не указан';
+                            nettoElement.textContent = product.dimensions?.[0]?.netto || product.additional_info?.netto || 'не указан';
                         }
 
                         const volumeElement = document.getElementById('volume');
                         if (volumeElement) {
-                            volumeElement.textContent = product.dimensions?.[0]?.volume || 'не указан';
+                            volumeElement.textContent = product.dimensions?.[0]?.volume || product.sizes?.['Объём:'] || 'не указан';
                         }
                     }
 
@@ -929,17 +929,17 @@
                     // Заполнение весов и объема
                     const bruttoElement = document.getElementById('brutto');
                     if (bruttoElement) {
-                        bruttoElement.textContent = product.dimensions?.[0]?.brutto || 'не указан';
+                        bruttoElement.textContent = product.dimensions?.[0]?.brutto || product.sizes?.['Вес брутто:'] || 'не указан';
                     }
 
                     const nettoElement = document.getElementById('netto');
                     if (nettoElement) {
-                        nettoElement.textContent = product.dimensions?.[0]?.netto || 'не указан';
+                        nettoElement.textContent = product.dimensions?.[0]?.netto || product.additional_info?.netto || 'не указан';
                     }
 
                     const volumeElement = document.getElementById('volume');
                     if (volumeElement) {
-                        volumeElement.textContent = product.dimensions?.[0]?.volume || 'не указан';
+                        volumeElement.textContent = product.dimensions?.[0]?.volume || product.sizes?.['Объём:'] || 'не указан';
                     }
 
                     

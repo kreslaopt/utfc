@@ -1,6 +1,8 @@
 import os
 import json
 from pathlib import Path
+import re
+
 
 # Пути
 PRODUCTS_DIR = Path(r"C:\Users\UTFC\Documents\БалтМебель\to\products")
@@ -507,14 +509,48 @@ def scan_parent_files(directory):
                         log(f"Ошибка чтения файла: {file_path}")
     return parent_files
 
+def extract_numbers(value):
+    # Проверяем, есть ли в строке хотя бы одно число или диапазон
+    if not re.search(r"\d", value):
+        return value  # возвращаем как есть, без изменений
+    
+    # Ищем все числа, диапазоны и числа с запятой
+    pattern = r"(\d[\d,\.]*(-\d[\d,\.]*)?)"
+    matches = re.findall(pattern, value)
+    results = [match[0] for match in matches]
+    return ", ".join(results)
+
 # Обогащение родительского файла
 def enrich_parent(parent_data, variant):
     updated_fields = []
     direct_fields = [
         "title", "base_name", "article_number", "full_describe", "Link_arm", "minpromtorg", "madeinrf",
-        "Основание", "Подлокотники", "Газлифт", "Механизм", "Особенности", "Ролики"
+        "Основание", "Подлокотники", "Газлифт", "Механизм", "Особенности", "Ролики", "sizes", "package_sizes"
     ]
     for field in direct_fields:
+        if field in variant:
+            if field in ["sizes", "package_sizes"]:
+                try:
+                    parsed_value = json.loads(variant[field])
+                    if not isinstance(parsed_value, dict):
+                        continue
+                    # Обработка значений
+                    for k in parsed_value:
+                        parsed_value[k] = extract_numbers(parsed_value[k])
+                    if not isinstance(parent_data.get(field), dict) or parent_data.get(field) != parsed_value:
+                        parent_data[field] = parsed_value
+                        updated_fields.append(field)
+                except json.JSONDecodeError:
+                    continue
+                if field not in parent_data or parent_data[field] != parsed_value:
+                    parent_data[field] = parsed_value
+                    updated_fields.append(field)
+            else:
+                if field not in parent_data or parent_data[field] != variant[field]:
+                    parent_data[field] = variant[field]
+                    updated_fields.append(field)
+    array_fields = ["finish_type", "color", "finish_type_seat", "color_seat", "variant_name"]
+    for field in array_fields:
         if field in variant:
             if field not in parent_data or parent_data[field] != variant[field]:
                 parent_data[field] = variant[field]

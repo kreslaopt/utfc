@@ -2573,6 +2573,7 @@ if (finishFilters.length > 0) {
                     let loadMatch = true;
                     if (loadFilters.length > 0) {
                         const maxLoad = product.guarantee?.[0]?.max_load;
+                        
                         if (!maxLoad) {
                             loadMatch = false;
                         } else {
@@ -3122,7 +3123,7 @@ if (paramChangeFlags.seat_to_floor_height) {
                     const recommendedLoad = product.guarantee?.[0]?.recommended_load;
                     const boxSize = product.transportation?.[0]?.packaging?.box_size;
                     const brutto = product.dimensions?.[0]?.brutto;
-                    const netto = product.dimensions?.[0]?.netto;
+                    const netto = (product.dimensions?.[0]?.netto != null) ? product.dimensions?.[0]?.netto : (product.additional_info?.netto ?? 'не указан');
                     const volume = product.dimensions?.[0]?.volume;
                     const upholstery = product.construction_and_materials?.[0]?.upholstery_materials?.[0];
                     const addition = product.addition;

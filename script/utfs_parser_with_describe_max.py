@@ -783,7 +783,9 @@ def get_product_data_with_selenium(product_url):
                         "article_number": article_number,
                         "full_describe": full_describe,
                         "images": '; '.join(all_images) if all_images else None,
-                        "Link_arm": product_url
+                        "Link_arm": product_url,
+                        "sizes": json.dumps(sizes, ensure_ascii=False) if sizes else None,
+    "package_sizes": json.dumps(package_sizes, ensure_ascii=False) if package_sizes else None,
                     }
                     product_data.update(descriptions)
                     product_data['sizes'] = json.dumps(sizes, ensure_ascii=False) if sizes else None
@@ -828,8 +830,8 @@ def main():
   "title", "base_name", "finish_type", "color", "finish_type_seat", "color_seat",
     "variant_name", "fullname", "minpromtorg", "madeinrf", "category", "article_number", "full_describe", "images",
     "Основание", "Подлокотники", "Газлифт", "Механизм", "Особенности", "Ролики",
-    "sizes", "package_sizes", "Specifications", "Link_arm"
-    ]
+    "sizes", "package_sizes", "Specifications", "Link_arm", "sizes", "package_sizes"
+    ] 
 
     # Для отладки: ограничиваем количество подкатегорий
     # subcategory_links = subcategory_links[:2]
