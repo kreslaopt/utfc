@@ -306,11 +306,11 @@
     "STORE_AMOUNT_3": "",
     "CV_QUANTITY_FROM": "",
     "CV_QUANTITY_TO": "",
-    "CV_PRICE_1": "0.00000000",
+    "CV_PRICE_1": "6372.00000000",
     "CV_CURRENCY_1": "RUB",
-    "CV_PRICE_2": "0.00000000",
+    "CV_PRICE_2": "6564.00000000",
     "CV_CURRENCY_2": "RUB",
-    "CV_PRICE_3": "0.00000000",
+    "CV_PRICE_3": "6372.00000000",
     "CV_CURRENCY_3": "RUB",
     "STORE_AMOUNT_4": "",
     "STORE_AMOUNT_5": "",
@@ -343,7 +343,7 @@
         "https://cdn.utfc.ru/iblock/1ca/1cad4769fca6b2962da619a55d96329d/149c8c59b87649bc1502787d404762e9.png"
       ],
       "IP_PROP37": "m_11",
-      "IP_PROP38": "s_0401",
+      "IP_PROP38": "8742d3fa-cc61-11f0-81dd-1866daf6186c",
       "IP_PROP39": "",
       "IP_PROP40": "",
       "IP_PROP55": "&nbsp;",
@@ -436,7 +436,7 @@
         "https://cdn.utfc.ru/iblock/c19/c19ece750d7508690ed9401e6cdcae88/cff99038c57b7bc89d94503c894cb09a.png"
       ],
       "IP_PROP37": "m_11",
-      "IP_PROP38": "s_0402",
+      "IP_PROP38": "8742d41a-cc61-11f0-81dd-1866daf6186c",
       "IP_PROP39": "",
       "IP_PROP40": "",
       "IP_PROP55": "&nbsp;",
@@ -529,7 +529,7 @@
         "https://cdn.utfc.ru/iblock/6b5/6b5498cd30682ccfaef9a5570fe27ed1/7fe2f4df838bddd98119a4249065f4de.png"
       ],
       "IP_PROP37": "m_11",
-      "IP_PROP38": "s_0413",
+      "IP_PROP38": "8742d41d-cc61-11f0-81dd-1866daf6186c",
       "IP_PROP39": "",
       "IP_PROP40": "",
       "IP_PROP55": "&nbsp;",
@@ -622,7 +622,7 @@
         "https://cdn.utfc.ru/iblock/737/7375f8fe21a67a182be55aad3d9dd188/630fd691ab73ee8429f86dcb102440dc.png"
       ],
       "IP_PROP37": "m_11",
-      "IP_PROP38": "s_0422",
+      "IP_PROP38": "8742d417-cc61-11f0-81dd-1866daf6186c",
       "IP_PROP39": "",
       "IP_PROP40": "",
       "IP_PROP55": "&nbsp;",
@@ -715,7 +715,7 @@
         "https://cdn.utfc.ru/iblock/899/899f50243709956028a5776ed5be6981/26d19ce6f6a06241380e6690473416f4.png"
       ],
       "IP_PROP37": "m_11",
-      "IP_PROP38": "s_0427",
+      "IP_PROP38": "8742d411-cc61-11f0-81dd-1866daf6186c",
       "IP_PROP39": "",
       "IP_PROP40": "",
       "IP_PROP55": "&nbsp;",
@@ -808,7 +808,7 @@
         "https://cdn.utfc.ru/iblock/6ca/6ca0251e778ddaa7f270ff6705c2be13/2868110fed463ddd4321f98657e2f2a0.png"
       ],
       "IP_PROP37": "m_11",
-      "IP_PROP38": "s_0428",
+      "IP_PROP38": "8742d412-cc61-11f0-81dd-1866daf6186c",
       "IP_PROP39": "",
       "IP_PROP40": "",
       "IP_PROP55": "&nbsp;",
@@ -901,7 +901,7 @@
         "https://cdn.utfc.ru/iblock/dc0/dc015ca20183a464332cd95ae86225b7/0f588d7d99d677bc358df5c4506a11b3.png"
       ],
       "IP_PROP37": "m_11",
-      "IP_PROP38": "s_0429",
+      "IP_PROP38": "8742d416-cc61-11f0-81dd-1866daf6186c",
       "IP_PROP39": "",
       "IP_PROP40": "",
       "IP_PROP55": "&nbsp;",
@@ -994,7 +994,7 @@
         "https://cdn.utfc.ru/iblock/6ed/6ed0073c3052d6ff08d0c8a4f6759e21/cfbb886eeef96649575d8268808f9971.png"
       ],
       "IP_PROP37": "m_11",
-      "IP_PROP38": "s_0432",
+      "IP_PROP38": "8742d422-cc61-11f0-81dd-1866daf6186c",
       "IP_PROP39": "",
       "IP_PROP40": "",
       "IP_PROP55": "&nbsp;",
@@ -1087,7 +1087,7 @@
         "https://cdn.utfc.ru/iblock/aed/aeda1f57333c771c5545b57456037793/0b2d98139d66002bc23857a8f0d9fd52.png"
       ],
       "IP_PROP37": "m_02",
-      "IP_PROP38": "z_06",
+      "IP_PROP38": "8742d3fb-cc61-11f0-81dd-1866daf6186c",
       "IP_PROP39": "",
       "IP_PROP40": "",
       "IP_PROP55": "&nbsp;",
@@ -1180,7 +1180,7 @@
         "https://cdn.utfc.ru/iblock/71f/71f0f640c8b16611a03f6dfdfd3ed4a4/2096767a9c9c19c2e55af5c411297d34.png"
       ],
       "IP_PROP37": "m_02",
-      "IP_PROP38": "z_11",
+      "IP_PROP38": "8742d3fd-cc61-11f0-81dd-1866daf6186c",
       "IP_PROP39": "",
       "IP_PROP40": "",
       "IP_PROP55": "&nbsp;",
@@ -1273,7 +1273,7 @@
         "https://cdn.utfc.ru/iblock/9ff/9ff695a2efd0dcf2cfa586354ec32f5c/2bf857f9af07222418f88b910a3a4709.png"
       ],
       "IP_PROP37": "m_02",
-      "IP_PROP38": "z_21",
+      "IP_PROP38": "8742d3ff-cc61-11f0-81dd-1866daf6186c",
       "IP_PROP39": "",
       "IP_PROP40": "",
       "IP_PROP55": "&nbsp;",
@@ -1366,7 +1366,7 @@
         "https://cdn.utfc.ru/iblock/88b/88b11c1ccd6a3655762fe1721b57734e/b4c42bf3e7dd54ae8a7eee39cf7d4bf2.png"
       ],
       "IP_PROP37": "m_02",
-      "IP_PROP38": "z_71",
+      "IP_PROP38": "8742d402-cc61-11f0-81dd-1866daf6186c",
       "IP_PROP39": "",
       "IP_PROP40": "",
       "IP_PROP55": "&nbsp;",
@@ -1459,7 +1459,7 @@
         "https://cdn.utfc.ru/iblock/8da/8da2e69772237f4bce29f6456c2436ce/3fceb33ddc942e1791772b5b44d542e8.png"
       ],
       "IP_PROP37": "m_11",
-      "IP_PROP38": "s_0419",
+      "IP_PROP38": "8742d41e-cc61-11f0-81dd-1866daf6186c",
       "IP_PROP39": "",
       "IP_PROP40": "",
       "IP_PROP55": "&nbsp;",
@@ -1552,7 +1552,7 @@
         "https://cdn.utfc.ru/iblock/2d6/2d65a402c6187e799b2f2880c51f688a/f4ea05b71b03508bf1fe174c0c33767b.png"
       ],
       "IP_PROP37": "m_11",
-      "IP_PROP38": "s_0421",
+      "IP_PROP38": "8742d420-cc61-11f0-81dd-1866daf6186c",
       "IP_PROP39": "",
       "IP_PROP40": "",
       "IP_PROP55": "&nbsp;",
@@ -1645,7 +1645,7 @@
         "https://cdn.utfc.ru/iblock/34f/34f61f9ecb0b09b17ef700b3d77a282d/c401735569a4726a12f47c997f79ad36.png"
       ],
       "IP_PROP37": "m_02",
-      "IP_PROP38": "z_01",
+      "IP_PROP38": "8742d403-cc61-11f0-81dd-1866daf6186c",
       "IP_PROP39": "",
       "IP_PROP40": "",
       "IP_PROP55": "&nbsp;",
@@ -1738,7 +1738,7 @@
         "https://cdn.utfc.ru/iblock/a5c/a5c190edbb4aecdb76d6896cf296b7f7/aefc2173c9fa8cefc0f933ee9002acc3.png"
       ],
       "IP_PROP37": "m_02",
-      "IP_PROP38": "z_29",
+      "IP_PROP38": "8742d400-cc61-11f0-81dd-1866daf6186c",
       "IP_PROP39": "",
       "IP_PROP40": "",
       "IP_PROP55": "&nbsp;",
@@ -1831,7 +1831,7 @@
         "https://cdn.utfc.ru/iblock/b97/b973c6ab4f70bc1070f0e59a40dbb69c/71bee822b5965b26cffec450b2d743b3.png"
       ],
       "IP_PROP37": "m_11",
-      "IP_PROP38": "s_0406",
+      "IP_PROP38": "8742d41b-cc61-11f0-81dd-1866daf6186c",
       "IP_PROP39": "",
       "IP_PROP40": "",
       "IP_PROP55": "&nbsp;",
@@ -1888,12 +1888,12 @@
       "STORE_AMOUNT_3": "0",
       "CV_QUANTITY_FROM": "",
       "CV_QUANTITY_TO": "",
-      "CV_PRICE_1": "0.00000000",
+      "CV_PRICE_1": "6806.00000000",
       "CV_CURRENCY_1": "RUB",
-      "CV_PRICE_2": "0.00000000",
+      "CV_PRICE_2": "7011.00000000",
       "CV_CURRENCY_2": "RUB",
       "STORE_AMOUNT_4": "0",
-      "CV_PRICE_3": "0.00000000",
+      "CV_PRICE_3": "6806.00000000",
       "STORE_AMOUNT_5": "0",
       "CV_CURRENCY_3": "RUB",
       "STORE_AMOUNT_6": "0"
@@ -1924,7 +1924,7 @@
         "https://cdn.utfc.ru/iblock/b7e/b7e40d2effad3856c31c610ec27d3503/c54221b619e8dcb392487caecf95c85e.png"
       ],
       "IP_PROP37": "m_02",
-      "IP_PROP38": "z_19",
+      "IP_PROP38": "8742d3fe-cc61-11f0-81dd-1866daf6186c",
       "IP_PROP39": "",
       "IP_PROP40": "",
       "IP_PROP55": "&nbsp;",
@@ -2017,7 +2017,7 @@
         "https://cdn.utfc.ru/iblock/269/269d05f107185b7081972c61532a8ca3/6fd963ab75864ed0256dd8ef00e5ee78.png"
       ],
       "IP_PROP37": "m_11",
-      "IP_PROP38": "s_0420",
+      "IP_PROP38": "8742d41f-cc61-11f0-81dd-1866daf6186c",
       "IP_PROP39": "",
       "IP_PROP40": "",
       "IP_PROP55": "&nbsp;",
@@ -2110,7 +2110,7 @@
         "https://cdn.utfc.ru/iblock/4ec/4ec5ddc10f20e970b61b537e321821b1/7b9a88a9b7be71674230d3e4b4736f5c.png"
       ],
       "IP_PROP37": "m_02",
-      "IP_PROP38": "z_34",
+      "IP_PROP38": "8742d401-cc61-11f0-81dd-1866daf6186c",
       "IP_PROP39": "",
       "IP_PROP40": "",
       "IP_PROP55": "&nbsp;",

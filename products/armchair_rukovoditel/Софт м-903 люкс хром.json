@@ -174,7 +174,8 @@
                 "https://cdn.utfc.ru/iblock/bb0/bb0b682ca7b3cc7f6076683e5ebc7e37/0502c18dc8cb7b73ea0c7f68a69dc265.png",
                 "https://cdn.utfc.ru/uf/785/78599280ecd367086205dacabe880579.png",
                 "https://cdn.utfc.ru/iblock/277/277228a0ae4d298178881a1883f6bad3/7378a2c20b53e3af651f77ac309cf692.png",
-                "https://cdn.utfc.ru/iblock/e49/e49ef734279064b5b9be4cafd2926b1d/e5b8b54948ab237d14fbd1f59e1ba258.png"
+                "https://cdn.utfc.ru/iblock/e49/e49ef734279064b5b9be4cafd2926b1d/e5b8b54948ab237d14fbd1f59e1ba258.png",
+                "https://cdn.utfc.ru/iblock/175/lzek5k9nvnc35w5kzt1ebwocw3ngrcki.png"
             ]
         }
     ],
@@ -735,7 +736,8 @@
         "Ткань Moderno 02 (серый)",
         "Ткань Moderno 05 (терракотовый)",
         "Ткань Moderno 07 (синий)",
-        "Ткань Moderno 11 (мокко)"
+        "Ткань Moderno 11 (мокко)",
+        "Ткань Moderno 05 (терракот)"
     ],
     "variant_name": [
         "Кресло М-903 Софт хром люкс (Ткань Moderno, Ткань Moderno 02 (серый))",
@@ -765,7 +767,10 @@
         "Кресло М-903 Софт Люкс хром Ср (Экокожа Santorini, Ткань Moderno 02 (серый),, )",
         "Кресло М-903 Софт Люкс хром Ср (Экокожа Santorini, Ткань Moderno 05 (терракотовый),, )",
         "Кресло М-903 Софт Люкс хром Ср (Экокожа Santorini, Ткань Moderno 07 (синий),, )",
-        "Кресло М-903 Софт Люкс хром Ср (Экокожа Santorini, Ткань Moderno 11 (мокко),, )"
+        "Кресло М-903 Софт Люкс хром Ср (Экокожа Santorini, Ткань Moderno 11 (мокко),, )",
+        "Кресло М-903 Софт Люкс хром Ср (Экокожа Santorini, Ткань Moderno 05 (терракот),, )",
+        "Кресло М-903 Софт Люкс хром Ср (Ткань Moderno, Ткань Moderno 05 (терракот),, )",
+        "Кресло М-903 Софт Люкс хром Ср (-, Ткань Moderno 05 (терракот),, )"
     ],
     "finish_type_seat": [
         ""
