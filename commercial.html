@@ -394,25 +394,33 @@ document.getElementById('add-dimensions-btn').addEventListener('click', () => {
     console.log('Парсинг выполнен успешно. Количество продуктов:', selectedProducts.length);
 
     // Функция для поиска продукта по названию с учетом сложных названий
-    function findProductByName(products, name) {
-      const lowerName = name.toLowerCase().replace(/\//g, ' ').trim();
-      console.log('Ищем продукт по названию:', lowerName);
-      const product = products.find(p => {
-        if (p && p.name && p.name.length > 0) {
-          const productName = p.name[0].toLowerCase().replace(/\//g, ' ').trim();
-          console.log('Сравниваем с продуктом:', productName);
-          if (productName.includes(lowerName) || lowerName.includes(productName)) {
-            console.log('Продукт найден:', p);
-            return true;
-          }
+function normalizeString(str) {
+  return str.toLowerCase()
+            .replace(/[\/\\\(\)\[\]\{\}\-\_\s]+/g, ' ') // заменяем спецсимволы и дефисы пробелами
+            .replace(/\s+/g, ' ') // убираем лишние пробелы
+            .trim();
+}
+
+function findProductByName(products, name) {
+  const normalizedName = normalizeString(name);
+  const keyWords = normalizedName.split(' ').filter(word => word.length > 2); // исключить очень короткие слова
+  console.log('Ключевые слова для поиска:', keyWords);
+
+  for (const p of products) {
+    if (p && p.name && p.name.length > 0) {
+      for (const n of p.name) {
+        const normalizedProductName = normalizeString(n);
+        // Проверяем, содержит ли название хотя бы одно ключевое слово
+        if (keyWords.some(word => normalizedProductName.includes(word))) {
+          console.log('Продукт найден:', n);
+          return p;
         }
-        return false;
-      });
-      if (!product) {
-        console.warn(`Продукт с названием "${name}" не найден`);
       }
-      return product;
     }
+  }
+  console.warn(`Продукт с названием "${name}" не найден`);
+  return null;
+}
 
     // Обрабатываем все блоки товаров
     document.querySelectorAll('.commercial-product').forEach(productDiv => {
