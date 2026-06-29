@@ -376,22 +376,22 @@
     });
 
 document.getElementById('add-dimensions-btn').addEventListener('click', () => {
-  console.log('Кнопка нажата');
+  // console.log('Кнопка нажата');
 
   try {
     const selectedProductsStr = localStorage.getItem('selectedProducts');
     if (!selectedProductsStr) {
-      console.warn('Нет данных о выбранных продуктах в localStorage');
+      // console.warn('Нет данных о выбранных продуктах в localStorage');
       return;
     }
-    console.log('Полученные данные из localStorage:', selectedProductsStr);
+    // console.log('Полученные данные из localStorage:', selectedProductsStr);
 
     const selectedProducts = JSON.parse(selectedProductsStr);
     if (!Array.isArray(selectedProducts)) {
-      console.error('Данные о продуктах не являются массивом:', selectedProducts);
+      // console.error('Данные о продуктах не являются массивом:', selectedProducts);
       return;
     }
-    console.log('Парсинг выполнен успешно. Количество продуктов:', selectedProducts.length);
+    // console.log('Парсинг выполнен успешно. Количество продуктов:', selectedProducts.length);
 
     // Функция для поиска продукта по названию с учетом сложных названий
 function normalizeString(str) {
@@ -404,7 +404,7 @@ function normalizeString(str) {
 function findProductByName(products, name) {
   const normalizedName = normalizeString(name);
   const keyWords = normalizedName.split(' ').filter(word => word.length > 2); // исключить очень короткие слова
-  console.log('Ключевые слова для поиска:', keyWords);
+  // console.log('Ключевые слова для поиска:', keyWords);
 
   for (const p of products) {
     if (p && p.name && p.name.length > 0) {
@@ -412,13 +412,13 @@ function findProductByName(products, name) {
         const normalizedProductName = normalizeString(n);
         // Проверяем, содержит ли название хотя бы одно ключевое слово
         if (keyWords.some(word => normalizedProductName.includes(word))) {
-          console.log('Продукт найден:', n);
+          // console.log('Продукт найден:', n);
           return p;
         }
       }
     }
   }
-  console.warn(`Продукт с названием "${name}" не найден`);
+  // console.warn(`Продукт с названием "${name}" не найден`);
   return null;
 }
 
@@ -427,13 +427,13 @@ function findProductByName(products, name) {
       try {
         const imgs = productDiv.querySelectorAll('img[data-product-name]');
         if (!imgs || imgs.length === 0) {
-          console.warn('Нет изображений с data-product-name внутри блока', productDiv);
+          // console.warn('Нет изображений с data-product-name внутри блока', productDiv);
           return;
         }
 
         const firstImg = imgs[0]; // предполагаем, что есть хотя бы одно изображение
         const productName = firstImg.getAttribute('data-product-name');
-        console.log('Обрабатываем товар:', productName);
+        // console.log('Обрабатываем товар:', productName);
 
         // Проверяем наличие эскиза
         const sketchContainer = productDiv.querySelector('.sketch-container');
@@ -445,14 +445,14 @@ function findProductByName(products, name) {
 
           // Обновляем текст кнопки на "Добавить эскиз с размерами"
           document.getElementById('add-dimensions-btn').textContent = 'Добавить эскиз с размерами';
-          console.log('Кнопка обновлена: Добавить эскиз с размерами');
+          // console.log('Кнопка обновлена: Добавить эскиз с размерами');
 
         } else {
           // Эскиза нет, ищем продукт по названию
           const product = findProductByName(selectedProducts, productName);
           if (product && product.images && product.images.length > 0) {
             const newSrc = product.images[0].dimensions || product.images[0];
-            console.log('Добавляем эскиз:', newSrc);
+            // console.log('Добавляем эскиз:', newSrc);
 
             // Создаем или очищаем контейнер для эскиза
             let newSketchContainer = productDiv.querySelector('.sketch-container');
@@ -460,10 +460,10 @@ function findProductByName(products, name) {
               newSketchContainer = document.createElement('div');
               newSketchContainer.className = 'sketch-container';
               productDiv.appendChild(newSketchContainer);
-              console.log('Создан новый контейнер для эскиза');
+              // console.log('Создан новый контейнер для эскиза');
             } else {
               newSketchContainer.innerHTML = '';
-              console.log('Очищен существующий контейнер для эскиза');
+              // console.log('Очищен существующий контейнер для эскиза');
             }
 
             // Создаем изображение эскиза
@@ -473,11 +473,11 @@ function findProductByName(products, name) {
             sketchImg.setAttribute('data-isSketch', 'true');
 
             newSketchContainer.appendChild(sketchImg);
-            console.log('Добавлено изображение эскиза:', sketchImg);
+            // console.log('Добавлено изображение эскиза:', sketchImg);
 
             // Сохраняем в localStorage
             localStorage.setItem(`sketch_${productName}`, newSrc);
-            console.log(`Сохранено в localStorage: sketch_${productName} = ${newSrc}`);
+            // console.log(`Сохранено в localStorage: sketch_${productName} = ${newSrc}`);
 
             // Обновляем текст кнопки на "Удалить эскиз с размерами"
             document.getElementById('add-dimensions-btn').textContent = 'Удалить эскиз с размерами';
