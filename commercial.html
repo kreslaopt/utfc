@@ -375,50 +375,76 @@
       pricesRemoved = true;
     });
 
-    document.getElementById('add-dimensions-btn').addEventListener('click', () => {
-      // console.log('Кнопка нажата');
-      const selectedProductsStr = localStorage.getItem('selectedProducts');
-      if (!selectedProductsStr) return;
+document.getElementById('add-dimensions-btn').addEventListener('click', () => {
+  console.log('Кнопка нажата');
 
-      const selectedProducts = JSON.parse(selectedProductsStr);
+  try {
+    const selectedProductsStr = localStorage.getItem('selectedProducts');
+    if (!selectedProductsStr) {
+      console.warn('Нет данных о выбранных продуктах в localStorage');
+      return;
+    }
+    console.log('Полученные данные из localStorage:', selectedProductsStr);
 
-      // Функция для поиска продукта по названию с учетом сложных названий
-      function findProductByName(products, name) {
-        const lowerName = name.toLowerCase().replace(/\//g, ' ').trim();
-        return products.find(p => {
-          if (p && p.name && p.name.length > 0) {
-            const productName = p.name[0].toLowerCase().replace(/\//g, ' ').trim();
-            // Используем includes для поиска
-            return productName.includes(lowerName) || lowerName.includes(productName);
+    const selectedProducts = JSON.parse(selectedProductsStr);
+    if (!Array.isArray(selectedProducts)) {
+      console.error('Данные о продуктах не являются массивом:', selectedProducts);
+      return;
+    }
+    console.log('Парсинг выполнен успешно. Количество продуктов:', selectedProducts.length);
+
+    // Функция для поиска продукта по названию с учетом сложных названий
+    function findProductByName(products, name) {
+      const lowerName = name.toLowerCase().replace(/\//g, ' ').trim();
+      console.log('Ищем продукт по названию:', lowerName);
+      const product = products.find(p => {
+        if (p && p.name && p.name.length > 0) {
+          const productName = p.name[0].toLowerCase().replace(/\//g, ' ').trim();
+          console.log('Сравниваем с продуктом:', productName);
+          if (productName.includes(lowerName) || lowerName.includes(productName)) {
+            console.log('Продукт найден:', p);
+            return true;
           }
-          return false;
-        });
+        }
+        return false;
+      });
+      if (!product) {
+        console.warn(`Продукт с названием "${name}" не найден`);
       }
+      return product;
+    }
 
-      // Обрабатываем все блоки товаров
-      document.querySelectorAll('.commercial-product').forEach(productDiv => {
+    // Обрабатываем все блоки товаров
+    document.querySelectorAll('.commercial-product').forEach(productDiv => {
+      try {
         const imgs = productDiv.querySelectorAll('img[data-product-name]');
-        if (!imgs || imgs.length === 0) return;
+        if (!imgs || imgs.length === 0) {
+          console.warn('Нет изображений с data-product-name внутри блока', productDiv);
+          return;
+        }
 
         const firstImg = imgs[0]; // предполагаем, что есть хотя бы одно изображение
         const productName = firstImg.getAttribute('data-product-name');
+        console.log('Обрабатываем товар:', productName);
 
         // Проверяем наличие эскиза
         const sketchContainer = productDiv.querySelector('.sketch-container');
 
         if (sketchContainer && sketchContainer.children.length > 0) {
           // Эскиз есть, удаляем его
+          console.log('Эскиз найден, удаляем:', sketchContainer);
           sketchContainer.innerHTML = '';
 
           // Обновляем текст кнопки на "Добавить эскиз с размерами"
           document.getElementById('add-dimensions-btn').textContent = 'Добавить эскиз с размерами';
+          console.log('Кнопка обновлена: Добавить эскиз с размерами');
 
         } else {
           // Эскиза нет, ищем продукт по названию
           const product = findProductByName(selectedProducts, productName);
-
           if (product && product.images && product.images.length > 0) {
             const newSrc = product.images[0].dimensions || product.images[0];
+            console.log('Добавляем эскиз:', newSrc);
 
             // Создаем или очищаем контейнер для эскиза
             let newSketchContainer = productDiv.querySelector('.sketch-container');
@@ -426,8 +452,10 @@
               newSketchContainer = document.createElement('div');
               newSketchContainer.className = 'sketch-container';
               productDiv.appendChild(newSketchContainer);
+              console.log('Создан новый контейнер для эскиза');
             } else {
               newSketchContainer.innerHTML = '';
+              console.log('Очищен существующий контейнер для эскиза');
             }
 
             // Создаем изображение эскиза
@@ -437,16 +465,29 @@
             sketchImg.setAttribute('data-isSketch', 'true');
 
             newSketchContainer.appendChild(sketchImg);
+            console.log('Добавлено изображение эскиза:', sketchImg);
 
             // Сохраняем в localStorage
             localStorage.setItem(`sketch_${productName}`, newSrc);
+            console.log(`Сохранено в localStorage: sketch_${productName} = ${newSrc}`);
 
             // Обновляем текст кнопки на "Удалить эскиз с размерами"
             document.getElementById('add-dimensions-btn').textContent = 'Удалить эскиз с размерами';
+            console.log('Кнопка обновлена: Удалить эскиз с размерами');
+          } else {
+            console.warn('Нет данных о изображениях для продукта:', product);
           }
         }
-      });
+      } catch (innerError) {
+        console.error('Ошибка при обработке блока товара:', innerError);
+      }
     });
+  } catch (error) {
+    console.error('Общая ошибка обработки:', error);
+  }
+});
+
+
     const signatures = {
       first: {
         signature: 'Поставщик: ООО «ФЕСТ»',
@@ -1660,9 +1701,18 @@ const finishTypeSeatValue = (typeof product.finish_type_seat === 'string' && pro
 
             // Сохраняем в localStorage
             const productName = container.querySelector('h3')?.getAttribute('data-product-name');
-            if (productName) {
-              localStorage.setItem(`sketch_${productName}`, reader.result);
-            }
+try {
+  if (productName) {
+    localStorage.setItem(`sketch_${productName}`, reader.result);
+    console.log('Эскиз успешно сохранен:', `sketch_${productName}`);
+  }
+} catch (e) {
+  if (e.name === 'QuotaExceededError' || e.code === 22) {
+    console.warn('Достигнут лимит localStorage. Не удалось сохранить:', `sketch_${productName}`);
+  } else {
+    console.error('Ошибка при сохранении в localStorage:', e);
+  }
+}
           };
           reader.readAsDataURL(file);
         }
