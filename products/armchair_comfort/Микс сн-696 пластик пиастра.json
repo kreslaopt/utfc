@@ -178,44 +178,44 @@
   "dimensions_details": [
     {
       "chair_height": {
-        "min": "900",
-        "max": "1040"
+        "min": "880",
+        "max": "980"
       },
       "headrest_height": {
         "min": "",
         "max": ""
       },
       "seat_to_floor_height": {
-        "min": "430",
-        "max": "570"
+        "min": "415",
+        "max": "515"
       },
       "armrest_height_from_seat": {
-        "min": "185",
+        "min": "195",
         "max": ""
       },
       "chair_depth": {
-        "min": "600",
+        "min": "545",
         "max": ""
       },
       "seat_depth": {
-        "min": "430",
+        "min": "420",
         "max": ""
       },
       "backrest_height": {
         "min": "",
-        "max": "500"
+        "max": "520"
       },
       "backrest_to_seat_height": {
         "min": "",
         "max": ""
       },
       "seat_width_with_armrests": {
-        "min": "570",
+        "min": "590",
         "max": ""
       },
       "seat_width": {
         "min": "",
-        "max": "495"
+        "max": "490"
       },
       "diameter_cross": {
         "min": "",
@@ -230,36 +230,36 @@
         "max": ""
       },
       "seat_to_floor_height_upper": {
-        "min": "375",
-        "max": "515"
+        "min": "",
+        "max": ""
       },
       "armrest_height_from_floor": {
-        "min": "240",
+        "min": "",
         "max": ""
       },
       "armrest_width_support": {
         "min": "",
-        "max": "50"
+        "max": ""
       },
       "armrest_length_support": {
         "min": "",
-        "max": "250"
+        "max": ""
       },
       "seat_depth_km": {
         "min": "",
-        "max": "480"
+        "max": ""
       },
       "backrest_height_external": {
         "min": "",
-        "max": "435"
+        "max": ""
       },
       "backrest_width_narrow": {
         "min": "",
-        "max": "410"
+        "max": ""
       },
       "backrest_width_wide": {
         "min": "",
-        "max": "440"
+        "max": ""
       },
       "recommended_load": "90",
       "max_load": "120",
