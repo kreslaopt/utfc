@@ -288,11 +288,13 @@ NAME_MAPPING = {
     'СН-301 Кайман Комфорт Н/п BL': 'Кайман комфорт ch-301 н_п bl',
     'СН-303 Кайман Трио Н BL Ср': 'Кайман трио сн-303 н bl',
     'СН-303 Кайман Трио В BL Ср': 'Кайман трио сн-303 в bl',
-    'Комо Бюджет В пластик 727': 'Комо бюджет в пластик 727',
+    'Комо Н/п дерево': 'Комо н_п дерево',
+    'Комо Н/п пластик-люкс 727': 'Комо н_п пластик-люкс 727',
+    'Комо В хром': 'Комо в хром',
+    'Кресло Комо Бюджет В пластик 727': 'Комо бюджет в пластик 727',
     'Комо В дерево': 'Комо в дерево',
     'Комо В пластик-люкс 727': 'Комо в пластик-люкс 727',
     'Комо В пластик': 'Комо в пластик',
-    'Комо В хром': 'Комо в хром',
     'Комо Н/п пластик': 'Комо н_п пластик',
     'СН-701 Куба В хром ХДП Ср': 'Куба сн-701',
     'СН-686 Орегон В пластик 727': 'Орегон сн-686 в пластик 727',
@@ -386,8 +388,6 @@ NAME_MAPPING = {
     # '': 'Бостон сн-277 хром топ-ган люкс',
     'СН-151 Вермонт В хром ХДП Ср': 'Вермонт ch-151 в хром хдп',
     # '': 'Кайман в топ-ган lux',
-    'Комо Н/п дерево': 'Комо н_п дерево',
-    'Комо Н/п пластик-люкс 727': 'Комо н_п пластик-люкс 727',
     # '': 'Комо н_п хром',
     'Орион В дерево': 'Орион в дерево',
     'Пилот В пластик-люкс 727': 'Пилот в пластик-люкс 727',
@@ -465,17 +465,23 @@ def find_parent_file(mapped_name, parent_files):
     for parent_file_path, parent_data in parent_files.items():
         # Проверяем IE_NAME
         if "parent" in parent_data and "IE_NAME" in parent_data["parent"]:
-            if normalize_name_for_mapping(parent_data["parent"]["IE_NAME"]) == normalized_mapped_name:
+            ie_name_norm = normalize_name_for_mapping(parent_data["parent"]["IE_NAME"])
+            # print(f"Comparing {normalized_mapped_name} to {ie_name_norm}")
+            if ie_name_norm == normalized_mapped_name:
                 return parent_file_path, parent_data
         # Проверяем другие поля
-        for field in ["namefile", "name_all", "name", "unique_name", "title", "base_name", "article_number", "full_describe", "variant_name"]:
+        for field in ["namefile", "name", "unique_name", "title", "base_name", "article_number", "full_describe"]:
             if field in parent_data:
                 if isinstance(parent_data[field], list):
                     for name in parent_data[field]:
-                        if isinstance(name, str) and normalize_name_for_mapping(name) == normalized_mapped_name:
-                            return parent_file_path, parent_data
-                elif isinstance(parent_data[field], str) and normalize_name_for_mapping(parent_data[field]) == normalized_mapped_name:
-                    return parent_file_path, parent_data
+                        if isinstance(name, str):
+                            # print(f"Comparing {normalize_name_for_mapping(name)} to {normalized_mapped_name}")
+                            if normalize_name_for_mapping(name) == normalized_mapped_name:
+                                return parent_file_path, parent_data
+                elif isinstance(parent_data[field], str):
+                    # print(f"Comparing {normalize_name_for_mapping(parent_data[field])} to {normalized_mapped_name}")
+                    if normalize_name_for_mapping(parent_data[field]) == normalized_mapped_name:
+                        return parent_file_path, parent_data
     return None, None
 
 def find_merged_item_by_ie_name(merged_data, ie_name):
