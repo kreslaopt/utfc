@@ -88,7 +88,7 @@
     {
       "vid_main": "img/armchair_rukovoditel/kayman_trio_v_bl_s0401_01.png",
       "chair_view": "img/armchair_rukovoditel/kayman_trio_v_bl_s0401_02.png",
-      "dimensions": "img/armchair_rukovoditel/dimensions/kayman_trio_v_s0401_01.png",
+      "dimensions": "img/armchair_rukovoditel/dimensions/kayman_trio_v_bl_s0422_01.png",
       "box": "img/box_UTFC.png",
       "additional": [
         "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/7ba/dm0216r2ywqdnjeej78hwuxbxbn465hc.png",
@@ -239,7 +239,7 @@
         "max": "460"
       },
       "diameter_cross": {
-        "max": "700"
+        "max": "660"
       },
       "runners_width": {},
       "runners_depth": {},

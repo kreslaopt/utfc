@@ -1217,7 +1217,7 @@ const knownProductsAllFiles = [
   {
     "name": "Ройс м-704",
     "category": "armchair_rukovoditel",
-    "is_archive": false
+    "is_archive": true
   },
   {
     "name": "Самба",

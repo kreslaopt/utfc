@@ -88,7 +88,7 @@
     {
       "vid_main": "img/armchair_rukovoditel/kayman_comfort_n_bl_s0401_01.png",
       "chair_view": "img/armchair_rukovoditel/kayman_comfort_n_bl_s0401_02.png",
-      "dimensions": "img/armchair_rukovoditel/dimensions/kayman_comfort_n_s0401_01.png",
+      "dimensions": "img/armchair_rukovoditel/dimensions/kayman_comfort_n_bl_s0401_01.png",
       "box": "img/box_UTFC.png",
       "additional": [
         "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/9eb/xibtegety1jo9wvrk7ykw3i2pjti7hck.png",
@@ -236,7 +236,7 @@
       },
       "diameter_cross": {
         "min": "",
-        "max": "640"
+        "max": "660"
       },
       "runners_width": {
         "min": "",
