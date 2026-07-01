@@ -206,9 +206,9 @@
         </h3>
         <div class="filter-content" id="finish-filter-content">
             <div class="checkbox-group">
-                <label><input type="checkbox" class="finish-filter" value="хром| ch| CH| Ch|хромированное|хром"> Хром</label>
-                <label><input type="checkbox" class="finish-filter" value="пластик|пластик-люкс|pl|ppl|пластиковое|пластик"> Пластик</label>
-                <label><input type="checkbox" class="finish-filter" value="дерев|дерево|деревянными|дерева"> Дерево</label>
+                <label><input type="checkbox" class="finish-filter" value="хром| ch| CH| Ch|хромированное"> Хром</label>
+                <label><input type="checkbox" class="finish-filter" value="пластик|пластик-люкс|pl|ppl|пластиковое"> Пластик</label>
+                <label><input type="checkbox" class="finish-filter" value="дерев|дерево|деревянными|дерева|деревянные"> Дерево</label>
                 <label><input type="checkbox" class="finish-filter" value="бел|белый|white"> Белый</label>
                 <label><input type="checkbox" class="finish-filter" value="черн|черный|black|bl"> Черный</label>
                 <label><input type="checkbox" class="finish-filter" value="сер|серый|grey|gray"> Серый</label>
@@ -2534,7 +2534,7 @@ if (finishFilters.length > 0) {
 
     // Если не нашли совпадение по имени, ищем в full_describe или компонентах
     if (!finishMatch) {
-                const components = product.construction_and_materials?.[0]?.components || product.full_describe || product.Основание || product.parent || product.parent?.[0]?.IE_PREVIEW_TEXT || [];
+                const components = product.construction_and_materials?.[0]?.upholstery_materials || product.construction_and_materials?.[0]?.components || product.full_describe || product.Основание || product.parent || product.parent?.[0]?.IE_PREVIEW_TEXT || [];
 
         finishMatch = finishFilters.every(filter => {
             const patterns = filter.split('|');
