@@ -163,6 +163,19 @@
             </div>
         </div>
 
+                        <!-- Основание -->
+        <h3 class="filter-header">
+            Основание
+            <button class="toggle-filter" data-target="osnovanie-filter-content">+</button>
+        </h3>
+        <div class="filter-content" id="osnovanie-filter-content">
+            <div class="checkbox-group">            
+                <label><input type="checkbox" class="osnovanie-filter" value="хром|хромированное"> Хром</label>
+                <label><input type="checkbox" class="osnovanie-filter" value="пластик|пластик-люкс|pl|ppl|пластиковое"> Пластик</label>
+                <label><input type="checkbox" class="osnovanie-filter" value="дерев|дерево|деревянными|дерева|деревянные"> Дерево</label>
+            </div>
+        </div>
+
         <!-- Подголовник -->
         <h3 class="filter-header">
             Подголовник
@@ -1990,6 +2003,7 @@ function calculateMinMaxForAllDepth(products) {
             const specialOfferFilters = Array.from(document.querySelectorAll('.special-offer-filter:checked')).map(el => el.value);
             const armrestFilters = Array.from(document.querySelectorAll('.armrest-filter:checked')).map(el => el.value);
             const mechanismFilters = Array.from(document.querySelectorAll('.mechanism-filter:checked')).map(el => el.value);
+            const osnovanieFilters = Array.from(document.querySelectorAll('.osnovanie-filter:checked')).map(el => el.value);
             const karkasFilters = Array.from(document.querySelectorAll('.karkas-filter:checked')).map(el => el.value);
             const armrestTypeFilters = Array.from(document.querySelectorAll('.armrest-type-filter:checked')).map(el => el.value);
             const armrestRegulFilters = Array.from(document.querySelectorAll('.armrest-regul-filter:checked')).map(el => el.value);
@@ -2032,7 +2046,7 @@ function calculateMinMaxForAllDepth(products) {
                 .map(input => input.value);
 
 
-            if (armrestFilters.length > 0 || mechanismFilters.length > 0 || karkasFilters.length > 0 ||  armrestTypeFilters.length > 0 ||  armrestRegulFilters.length > 0 || podgolovnikFilters.length > 0 || stolikFilters.length > 0 || otherFilters.length > 0 || skladnoyFilters.length > 0 || finishFilters.length > 0 || loadFilters.length > 0 || recomendloadFilters.length > 0 || diameterFilters.length > 0) {
+            if (armrestFilters.length > 0 || mechanismFilters.length > 0 || osnovanieFilters.length > 0 || karkasFilters.length > 0 ||  armrestTypeFilters.length > 0 ||  armrestRegulFilters.length > 0 || podgolovnikFilters.length > 0 || stolikFilters.length > 0 || otherFilters.length > 0 || skladnoyFilters.length > 0 || finishFilters.length > 0 || loadFilters.length > 0 || recomendloadFilters.length > 0 || diameterFilters.length > 0) {
                 filtered = filtered.filter(product => {
                     const uniqueName = (Array.isArray(product.unique_name) ? product.unique_name[0] : product.unique_name).toLowerCase();
 
@@ -2409,8 +2423,6 @@ if (armrestRegulFilters.length > 0) {
 }
 
 
-
-
                     let otherMatch = true;
                     if (otherFilters.length > 0) {
                         const expandedMechanismFilters = otherFilters.flatMap(filter => filter.split('|').map(item => item.trim()));
@@ -2442,9 +2454,6 @@ if (armrestRegulFilters.length > 0) {
                             }
                         }
                     }
-
-               
-
 
                     let podgolovnikMatch = true;
                     if (podgolovnikFilters.length > 0) {
@@ -2613,7 +2622,61 @@ if (finishFilters.length > 0) {
                         }
                     }
 
-                    return armrestMatch && mechanismMatch && podgolovnikMatch && stolikMatch && karkasMatch && otherMatch && armrestTypeMatch && armrestRegulMatch && skladnoyMatch && finishMatch && loadMatch && recomendloadMatch && diameterMatch;
+                    
+
+let osnovanieMatch = true;
+
+if (osnovanieFilters.length > 0) {
+    let components = product.Основание;
+
+    // Оборачиваем строку в массив, если это строка
+    if (typeof components === 'string') {
+        // console.log('Оборачиваем строку в массив:', components);
+        components = [components];
+    }
+
+    // Проверяем, что components — массив
+    if (Array.isArray(components)) {
+        // console.log('components — массив:', components);
+        osnovanieMatch = osnovanieFilters.every((filter) => {
+            const patterns = filter.split('|').map(p => p.toLowerCase().trim());
+            // console.log('Обрабатываем фильтр:', filter);
+            // console.log('Разбитые паттерны:', patterns);
+            return patterns.some(pattern => {
+                // console.log('Обрабатываем паттерн:', pattern);
+                return components.some(component => {
+                    if (typeof component === 'string') {
+                        const result = component.toLowerCase().includes(pattern);
+                        // console.log(`Проверка компонента (строка): "${component}" на паттерн "${pattern}" — ${result}`);
+                        return result;
+                    }
+                    if (typeof component === 'object' && component !== null) {
+                        const values = Object.values(component);
+                        const result = values.some(value =>
+                            typeof value === 'string' && value.toLowerCase().includes(pattern)
+                        );
+                        // console.log(`Проверка компонента (объект):`, component, `на паттерн "${pattern}" — ${result}`);
+                        return result;
+                    }
+                    // console.log('Компонент не строка и не объект:', component);
+                    return false;
+                });
+            });
+        });
+    } else {
+        // Если components не массив после обработки, присваиваем false
+        osnovanieMatch = false;
+        // console.log('Тип:', typeof product.Основание);
+        // console.log('Значение:', product.Основание);
+    }
+}
+// console.log('Результат проверки osnovanieMatch:', osnovanieMatch);
+// console.log('Выбранные фильтры по основанию:', osnovanieFilters);
+// console.log('Все чекбоксы osnovanie:', document.querySelectorAll('.osnovanie-filter'));
+
+
+
+                    return armrestMatch && mechanismMatch && podgolovnikMatch && stolikMatch && osnovanieMatch && karkasMatch && otherMatch && armrestTypeMatch && armrestRegulMatch && skladnoyMatch && finishMatch && loadMatch && recomendloadMatch && diameterMatch;
                 });
             }
 
@@ -3299,7 +3362,9 @@ if (paramChangeFlags.seat_to_floor_height) {
 
 
 
-
+document.querySelectorAll('.osnovanie-filter').forEach(el => {
+    el.addEventListener('change', filterProducts);
+});
 
             document.querySelectorAll('.open-card-modal').forEach(button => {
                 button.addEventListener('click', async function () {
@@ -5217,7 +5282,7 @@ if (isAdd) {
                 return;
             }
 
-            document.querySelectorAll('.armrest-filter, .mechanism-filter, .karkas-filter, .armrest-type-filter, .armrest-regul-filter, .podgolovnik-filter, .stolik-filter, .skladnoy-filter, .other-filter, .finish-filter, .category-filter, .load-filter, .recomend-load-filter, .diameter-filter, .special-offer-filter').forEach(checkbox => {
+            document.querySelectorAll('.armrest-filter, .mechanism-filter, .osnovanieFilters, .karkas-filter, .armrest-type-filter, .armrest-regul-filter, .podgolovnik-filter, .stolik-filter, .skladnoy-filter, .other-filter, .finish-filter, .category-filter, .load-filter, .recomend-load-filter, .diameter-filter, .special-offer-filter').forEach(checkbox => {
                 checkbox.addEventListener('change', () => {
                     if (!basketContainer.classList.contains('active')) {
                         recalculateSliderValues(filteredProducts);

@@ -67,7 +67,7 @@ NAME_MAPPING = {
     'Эрго б/п': 'Эрго б_п овалина пластик',
     'Стул ИЗО СН': 'Изо',
     'Стул ИЗО GR': 'Изо gr',
-    'Стул ИЗО BL': 'Изо bl',
+    'ИЗО BL': 'Изо bl',
     'Стул КОРА BL': 'Кора чёрный',
     'Стул КОРА СН': 'Кора ch',
     'Стул София СН': 'София',
@@ -448,15 +448,20 @@ def normalize_name_for_mapping(name):
     name_lower = " ".join(name_lower.split())
     return name_lower.strip()
 
+# Создаём вспомогательный словарь с нормализованными ключами
+NORMALIZED_NAME_MAPPING = {
+    normalize_name_for_mapping(k): v for k, v in NAME_MAPPING.items()
+}
+
 
 def find_mapped_name(file_base_name):
-    # Сначала ищем строгое совпадение по ключу NAME_MAPPING
-    if file_base_name in NAME_MAPPING:
-        return NAME_MAPPING[file_base_name]
-    # Если не нашли, пробуем нормализовать и искать
-    normalized_file_name = normalize_name_for_mapping(file_base_name)
+    normalized_name = normalize_name_for_mapping(file_base_name)
+    print(f"Normalized '{file_base_name}' -> '{normalized_name}'")
+    if normalized_name in NORMALIZED_NAME_MAPPING:
+        print(f"Found in normalized map: {NORMALIZED_NAME_MAPPING[normalized_name]}")
+        return NORMALIZED_NAME_MAPPING[normalized_name]
     for original_name, mapped_name in NAME_MAPPING.items():
-        if normalize_name_for_mapping(original_name) == normalized_file_name:
+        if normalize_name_for_mapping(original_name) == normalized_name:
             return mapped_name
     return file_base_name
 
@@ -632,3 +637,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+name = "Стул ИЗО BL"
+normalized_name = normalize_name_for_mapping(name)
+print(f"Normalized '{name}' -> '{normalized_name}'")
