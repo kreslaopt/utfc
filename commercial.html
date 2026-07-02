@@ -552,6 +552,8 @@ function findProductByName(products, name) {
             localStorage.setItem(`sketch_${productName}`, newSrc);
             // console.log(`Сохранено в localStorage: sketch_${productName} = ${newSrc}`);
 
+            
+
             // Обновляем текст кнопки на "Удалить эскиз с размерами"
             document.getElementById('add-dimensions-btn').textContent = 'Удалить эскиз с размерами';
             // console.log('Кнопка обновлена: Удалить эскиз с размерами');
@@ -566,6 +568,7 @@ function findProductByName(products, name) {
   } catch (error) {
     // console.error('Общая ошибка обработки:', error);
   }
+  
 });
 
 
@@ -1753,6 +1756,7 @@ const finishTypeSeatValue = (typeof product.finish_type_seat === 'string' && pro
 
       // Ищем или создаем sketch-container
       let sketchContainer = container.querySelector('.sketch-container');
+      
       if (!sketchContainer) {
         // Создаем и вставляем
         sketchContainer = document.createElement('div');
@@ -1786,13 +1790,13 @@ const finishTypeSeatValue = (typeof product.finish_type_seat === 'string' && pro
 try {
   if (productName) {
     localStorage.setItem(`sketch_${productName}`, reader.result);
-    console.log('Эскиз успешно сохранен:', `sketch_${productName}`);
+    // console.log('Эскиз успешно сохранен:', `sketch_${productName}`);
   }
 } catch (e) {
   if (e.name === 'QuotaExceededError' || e.code === 22) {
-    console.warn('Достигнут лимит localStorage. Не удалось сохранить:', `sketch_${productName}`);
+    // console.warn('Достигнут лимит localStorage. Не удалось сохранить:', `sketch_${productName}`);
   } else {
-    console.error('Ошибка при сохранении в localStorage:', e);
+    // console.error('Ошибка при сохранении в localStorage:', e);
   }
 }
           };
@@ -1900,6 +1904,7 @@ try {
     document.querySelectorAll('.sketch-container').forEach(container => {
       container.addEventListener('click', handleAnyClickOnSketchArea);
     });
+    
 
     // Обработчик для всех кликов по странице
     document.addEventListener('click', (e) => {
