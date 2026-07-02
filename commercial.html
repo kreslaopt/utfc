@@ -477,7 +477,7 @@ function normalizeString(str) {
 function findProductByName(products, name) {
   const normalizedName = normalizeString(name);
   const keyWords = normalizedName.split(' ').filter(word => word.length > 2); // исключить очень короткие слова
-  console.log('Ключевые слова для поиска:', keyWords);
+  // console.log('Ключевые слова для поиска:', keyWords);
 
   for (const p of products) {
     if (p && p.name && p.name.length > 0) {
