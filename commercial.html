@@ -513,7 +513,7 @@ function findProductByName(products, name) {
 
         if (sketchContainer && sketchContainer.children.length > 0) {
           // Эскиз есть, удаляем его
-          console.log('Эскиз найден, удаляем:', sketchContainer);
+          // console.log('Эскиз найден, удаляем:', sketchContainer);
           sketchContainer.innerHTML = '';
 
           // Обновляем текст кнопки на "Добавить эскиз с размерами"
@@ -554,17 +554,17 @@ function findProductByName(products, name) {
 
             // Обновляем текст кнопки на "Удалить эскиз с размерами"
             document.getElementById('add-dimensions-btn').textContent = 'Удалить эскиз с размерами';
-            console.log('Кнопка обновлена: Удалить эскиз с размерами');
+            // console.log('Кнопка обновлена: Удалить эскиз с размерами');
           } else {
-            console.warn('Нет данных о изображениях для продукта:', product);
+            // console.warn('Нет данных о изображениях для продукта:', product);
           }
         }
       } catch (innerError) {
-        console.error('Ошибка при обработке блока товара:', innerError);
+        // console.error('Ошибка при обработке блока товара:', innerError);
       }
     });
   } catch (error) {
-    console.error('Общая ошибка обработки:', error);
+    // console.error('Общая ошибка обработки:', error);
   }
 });
 
