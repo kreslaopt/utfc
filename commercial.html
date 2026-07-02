@@ -374,197 +374,199 @@
       // Устанавливаем статус, что цены удалены
       pricesRemoved = true;
     });
-    document.getElementById('add-dimensions-btn').addEventListener('click', () => {
-  const selectedProductsStr = localStorage.getItem('selectedProducts');
-  if (!selectedProductsStr) return;
 
-  const selectedProducts = JSON.parse(selectedProductsStr);
 
-  // Функция для поиска продукта по названию с учетом сложных названий
-  function findProductByName(products, name) {
-    const lowerName = name.toLowerCase().replace(/\//g, ' ').trim();
-    return products.find(p => {
-      if (p.name && p.name.length > 0) {
-        const productName = p.name[0].toLowerCase().replace(/\//g, ' ').trim();
-        // Используем includes для поиска
-        return productName.includes(lowerName) || lowerName.includes(productName);
-      }
-      return false;
-    });
-  }
+//     document.getElementById('add-dimensions-btn').addEventListener('click', () => {
+//   const selectedProductsStr = localStorage.getItem('selectedProducts');
+//   if (!selectedProductsStr) return;
 
-  // Обрабатываем все блоки товаров
-  document.querySelectorAll('.commercial-product').forEach(productDiv => {
-    const imgs = productDiv.querySelectorAll('img[data-product-name]');
-    if (!imgs || imgs.length === 0) return;
+//   const selectedProducts = JSON.parse(selectedProductsStr);
 
-    const firstImg = imgs[0]; // предполагаем, что есть хотя бы одно изображение
-    const productName = firstImg.getAttribute('data-product-name');
+//   // Функция для поиска продукта по названию с учетом сложных названий
+//   function findProductByName(products, name) {
+//     const lowerName = name.toLowerCase().replace(/\//g, ' ').trim();
+//     return products.find(p => {
+//       if (p.name && p.name.length > 0) {
+//         const productName = p.name[0].toLowerCase().replace(/\//g, ' ').trim();
+//         // Используем includes для поиска
+//         return productName.includes(lowerName) || lowerName.includes(productName);
+//       }
+//       return false;
+//     });
+//   }
 
-    // Проверяем наличие эскиза
-    const sketchContainer = productDiv.querySelector('.sketch-container');
+//   // Обрабатываем все блоки товаров
+//   document.querySelectorAll('.commercial-product').forEach(productDiv => {
+//     const imgs = productDiv.querySelectorAll('img[data-product-name]');
+//     if (!imgs || imgs.length === 0) return;
 
-    if (sketchContainer && sketchContainer.children.length > 0) {
-      // Эскиз есть, удаляем его
-      sketchContainer.innerHTML = '';
+//     const firstImg = imgs[0]; // предполагаем, что есть хотя бы одно изображение
+//     const productName = firstImg.getAttribute('data-product-name');
 
-      // Обновляем текст кнопки на "Добавить эскиз с размерами"
-      document.getElementById('add-dimensions-btn').textContent = 'Добавить эскиз с размерами';
+//     // Проверяем наличие эскиза
+//     const sketchContainer = productDiv.querySelector('.sketch-container');
 
-    } else {
-      // Эскиза нет, ищем продукт по названию
-      const product = findProductByName(selectedProducts, productName);
+//     if (sketchContainer && sketchContainer.children.length > 0) {
+//       // Эскиз есть, удаляем его
+//       sketchContainer.innerHTML = '';
 
-      if (product && product.images && product.images.length > 0) {
-        const newSrc = product.images[0].dimensions || product.images[0];
+//       // Обновляем текст кнопки на "Добавить эскиз с размерами"
+//       document.getElementById('add-dimensions-btn').textContent = 'Добавить эскиз с размерами';
 
-        // Создаем или очищаем контейнер для эскиза
-        let newSketchContainer = productDiv.querySelector('.sketch-container');
-        if (!newSketchContainer) {
-          newSketchContainer = document.createElement('div');
-          newSketchContainer.className = 'sketch-container';
-          productDiv.appendChild(newSketchContainer);
-        } else {
-          newSketchContainer.innerHTML = '';
+//     } else {
+//       // Эскиза нет, ищем продукт по названию
+//       const product = findProductByName(selectedProducts, productName);
+
+//       if (product && product.images && product.images.length > 0) {
+//         const newSrc = product.images[0].dimensions || product.images[0];
+
+//         // Создаем или очищаем контейнер для эскиза
+//         let newSketchContainer = productDiv.querySelector('.sketch-container');
+//         if (!newSketchContainer) {
+//           newSketchContainer = document.createElement('div');
+//           newSketchContainer.className = 'sketch-container';
+//           productDiv.appendChild(newSketchContainer);
+//         } else {
+//           newSketchContainer.innerHTML = '';
+//         }
+
+//         // Создаем изображение эскиза
+//         const sketchImg = document.createElement('img');
+//         sketchImg.src = newSrc;
+//         sketchImg.className = 'sketch-img';
+//         sketchImg.setAttribute('data-isSketch', 'true');
+
+//         newSketchContainer.appendChild(sketchImg);
+
+//         // Сохраняем в localStorage
+//         localStorage.setItem(`sketch_${productName}`, newSrc);
+
+//         // Обновляем текст кнопки на "Удалить эскиз с размерами"
+//         document.getElementById('add-dimensions-btn').textContent = 'Удалить эскиз с размерами';
+//       }
+//     }
+//   });
+// });
+
+document.getElementById('add-dimensions-btn').addEventListener('click', () => {
+  // console.log('Кнопка нажата');
+
+  try {
+    const selectedProductsStr = localStorage.getItem('selectedProducts');
+    if (!selectedProductsStr) {
+      // console.warn('Нет данных о выбранных продуктах в localStorage');
+      return;
+    }
+    // console.log('Полученные данные из localStorage:', selectedProductsStr);
+
+    const selectedProducts = JSON.parse(selectedProductsStr);
+    if (!Array.isArray(selectedProducts)) {
+      // console.error('Данные о продуктах не являются массивом:', selectedProducts);
+      return;
+    }
+    // console.log('Парсинг выполнен успешно. Количество продуктов:', selectedProducts.length);
+
+    // Функция для поиска продукта по названию с учетом сложных названий
+function normalizeString(str) {
+  return str.toLowerCase()
+            .replace(/[\/\\\(\)\[\]\{\}\-\_\s]+/g, ' ') // заменяем спецсимволы и дефисы пробелами
+            .replace(/\s+/g, ' ') // убираем лишние пробелы
+            .trim();
+}
+
+function findProductByName(products, name) {
+  const normalizedName = normalizeString(name);
+  const keyWords = normalizedName.split(' ').filter(word => word.length > 2); // исключить очень короткие слова
+  console.log('Ключевые слова для поиска:', keyWords);
+
+  for (const p of products) {
+    if (p && p.name && p.name.length > 0) {
+      for (const n of p.name) {
+        const normalizedProductName = normalizeString(n);
+        // Проверяем, содержит ли название хотя бы одно ключевое слово
+        if (keyWords.some(word => normalizedProductName.includes(word))) {
+          // console.log('Продукт найден:', n);
+          return p;
         }
-
-        // Создаем изображение эскиза
-        const sketchImg = document.createElement('img');
-        sketchImg.src = newSrc;
-        sketchImg.className = 'sketch-img';
-        sketchImg.setAttribute('data-isSketch', 'true');
-
-        newSketchContainer.appendChild(sketchImg);
-
-        // Сохраняем в localStorage
-        localStorage.setItem(`sketch_${productName}`, newSrc);
-
-        // Обновляем текст кнопки на "Удалить эскиз с размерами"
-        document.getElementById('add-dimensions-btn').textContent = 'Удалить эскиз с размерами';
       }
     }
-  });
+  }
+  // console.warn(`Продукт с названием "${name}" не найден`);
+  return null;
+}
+
+    // Обрабатываем все блоки товаров
+    document.querySelectorAll('.commercial-product').forEach(productDiv => {
+      try {
+        const imgs = productDiv.querySelectorAll('img[data-product-name]');
+        if (!imgs || imgs.length === 0) {
+          // console.warn('Нет изображений с data-product-name внутри блока', productDiv);
+          return;
+        }
+
+        const firstImg = imgs[0]; // предполагаем, что есть хотя бы одно изображение
+        const productName = firstImg.getAttribute('data-product-name');
+        // console.log('Обрабатываем товар:', productName);
+
+        // Проверяем наличие эскиза
+        const sketchContainer = productDiv.querySelector('.sketch-container');
+
+        if (sketchContainer && sketchContainer.children.length > 0) {
+          // Эскиз есть, удаляем его
+          console.log('Эскиз найден, удаляем:', sketchContainer);
+          sketchContainer.innerHTML = '';
+
+          // Обновляем текст кнопки на "Добавить эскиз с размерами"
+          document.getElementById('add-dimensions-btn').textContent = 'Добавить эскиз с размерами';
+          // console.log('Кнопка обновлена: Добавить эскиз с размерами');
+
+        } else {
+          // Эскиза нет, ищем продукт по названию
+          const product = findProductByName(selectedProducts, productName);
+          if (product && product.images && product.images.length > 0) {
+            const newSrc = product.images[0].dimensions || product.images[0];
+            // console.log('Добавляем эскиз:', newSrc);
+
+            // Создаем или очищаем контейнер для эскиза
+            let newSketchContainer = productDiv.querySelector('.sketch-container');
+            if (!newSketchContainer) {
+              newSketchContainer = document.createElement('div');
+              newSketchContainer.className = 'sketch-container';
+              productDiv.appendChild(newSketchContainer);
+              // console.log('Создан новый контейнер для эскиза');
+            } else {
+              newSketchContainer.innerHTML = '';
+              // console.log('Очищен существующий контейнер для эскиза');
+            }
+
+            // Создаем изображение эскиза
+            const sketchImg = document.createElement('img');
+            sketchImg.src = newSrc;
+            sketchImg.className = 'sketch-img';
+            sketchImg.setAttribute('data-isSketch', 'true');
+
+            newSketchContainer.appendChild(sketchImg);
+            // console.log('Добавлено изображение эскиза:', sketchImg);
+
+            // Сохраняем в localStorage
+            localStorage.setItem(`sketch_${productName}`, newSrc);
+            // console.log(`Сохранено в localStorage: sketch_${productName} = ${newSrc}`);
+
+            // Обновляем текст кнопки на "Удалить эскиз с размерами"
+            document.getElementById('add-dimensions-btn').textContent = 'Удалить эскиз с размерами';
+            console.log('Кнопка обновлена: Удалить эскиз с размерами');
+          } else {
+            console.warn('Нет данных о изображениях для продукта:', product);
+          }
+        }
+      } catch (innerError) {
+        console.error('Ошибка при обработке блока товара:', innerError);
+      }
+    });
+  } catch (error) {
+    console.error('Общая ошибка обработки:', error);
+  }
 });
-
-// document.getElementById('add-dimensions-btn').addEventListener('click', () => {
-//   // console.log('Кнопка нажата');
-
-//   try {
-//     const selectedProductsStr = localStorage.getItem('selectedProducts');
-//     if (!selectedProductsStr) {
-//       // console.warn('Нет данных о выбранных продуктах в localStorage');
-//       return;
-//     }
-//     // console.log('Полученные данные из localStorage:', selectedProductsStr);
-
-//     const selectedProducts = JSON.parse(selectedProductsStr);
-//     if (!Array.isArray(selectedProducts)) {
-//       // console.error('Данные о продуктах не являются массивом:', selectedProducts);
-//       return;
-//     }
-//     // console.log('Парсинг выполнен успешно. Количество продуктов:', selectedProducts.length);
-
-//     // Функция для поиска продукта по названию с учетом сложных названий
-// function normalizeString(str) {
-//   return str.toLowerCase()
-//             .replace(/[\/\\\(\)\[\]\{\}\-\_\s]+/g, ' ') // заменяем спецсимволы и дефисы пробелами
-//             .replace(/\s+/g, ' ') // убираем лишние пробелы
-//             .trim();
-// }
-
-// function findProductByName(products, name) {
-//   const normalizedName = normalizeString(name);
-//   const keyWords = normalizedName.split(' ').filter(word => word.length > 2); // исключить очень короткие слова
-//   console.log('Ключевые слова для поиска:', keyWords);
-
-//   for (const p of products) {
-//     if (p && p.name && p.name.length > 0) {
-//       for (const n of p.name) {
-//         const normalizedProductName = normalizeString(n);
-//         // Проверяем, содержит ли название хотя бы одно ключевое слово
-//         if (keyWords.some(word => normalizedProductName.includes(word))) {
-//           // console.log('Продукт найден:', n);
-//           return p;
-//         }
-//       }
-//     }
-//   }
-//   // console.warn(`Продукт с названием "${name}" не найден`);
-//   return null;
-// }
-
-//     // Обрабатываем все блоки товаров
-//     document.querySelectorAll('.commercial-product').forEach(productDiv => {
-//       try {
-//         const imgs = productDiv.querySelectorAll('img[data-product-name]');
-//         if (!imgs || imgs.length === 0) {
-//           // console.warn('Нет изображений с data-product-name внутри блока', productDiv);
-//           return;
-//         }
-
-//         const firstImg = imgs[0]; // предполагаем, что есть хотя бы одно изображение
-//         const productName = firstImg.getAttribute('data-product-name');
-//         // console.log('Обрабатываем товар:', productName);
-
-//         // Проверяем наличие эскиза
-//         const sketchContainer = productDiv.querySelector('.sketch-container');
-
-//         if (sketchContainer && sketchContainer.children.length > 0) {
-//           // Эскиз есть, удаляем его
-//           console.log('Эскиз найден, удаляем:', sketchContainer);
-//           sketchContainer.innerHTML = '';
-
-//           // Обновляем текст кнопки на "Добавить эскиз с размерами"
-//           document.getElementById('add-dimensions-btn').textContent = 'Добавить эскиз с размерами';
-//           // console.log('Кнопка обновлена: Добавить эскиз с размерами');
-
-//         } else {
-//           // Эскиза нет, ищем продукт по названию
-//           const product = findProductByName(selectedProducts, productName);
-//           if (product && product.images && product.images.length > 0) {
-//             const newSrc = product.images[0].dimensions || product.images[0];
-//             // console.log('Добавляем эскиз:', newSrc);
-
-//             // Создаем или очищаем контейнер для эскиза
-//             let newSketchContainer = productDiv.querySelector('.sketch-container');
-//             if (!newSketchContainer) {
-//               newSketchContainer = document.createElement('div');
-//               newSketchContainer.className = 'sketch-container';
-//               productDiv.appendChild(newSketchContainer);
-//               // console.log('Создан новый контейнер для эскиза');
-//             } else {
-//               newSketchContainer.innerHTML = '';
-//               // console.log('Очищен существующий контейнер для эскиза');
-//             }
-
-//             // Создаем изображение эскиза
-//             const sketchImg = document.createElement('img');
-//             sketchImg.src = newSrc;
-//             sketchImg.className = 'sketch-img';
-//             sketchImg.setAttribute('data-isSketch', 'true');
-
-//             newSketchContainer.appendChild(sketchImg);
-//             // console.log('Добавлено изображение эскиза:', sketchImg);
-
-//             // Сохраняем в localStorage
-//             localStorage.setItem(`sketch_${productName}`, newSrc);
-//             // console.log(`Сохранено в localStorage: sketch_${productName} = ${newSrc}`);
-
-//             // Обновляем текст кнопки на "Удалить эскиз с размерами"
-//             document.getElementById('add-dimensions-btn').textContent = 'Удалить эскиз с размерами';
-//             console.log('Кнопка обновлена: Удалить эскиз с размерами');
-//           } else {
-//             console.warn('Нет данных о изображениях для продукта:', product);
-//           }
-//         }
-//       } catch (innerError) {
-//         console.error('Ошибка при обработке блока товара:', innerError);
-//       }
-//     });
-//   } catch (error) {
-//     console.error('Общая ошибка обработки:', error);
-//   }
-// });
 
 
     const signatures = {
@@ -1070,7 +1072,8 @@ const finishTypeSeatValue = (typeof product.finish_type_seat === 'string' && pro
       if (sketchSrc) {
         sketchHTML = `
     <div class="sketch-container">
-      <img src="${sketchSrc}" data-issketch="true" class="sketch-img" style="max-width: 380px;">
+      <img src="${sketchSrc}" data-issketch="true" class="sketch-img" style="max-width: 380px;
+      "alt="Эскиз">
     </div>
   `;
       }

@@ -3309,11 +3309,6 @@ if (paramChangeFlags.seat_to_floor_height) {
         `;
                     }
 
-
-
-
-
-
                     if (product.lost?.[0]?.clean === true) {
                         const lostIndicator = document.createElement('div');
                         lostIndicator.className = 'lost-indicator';
@@ -3348,20 +3343,7 @@ if (paramChangeFlags.seat_to_floor_height) {
                         }
                     });
                 });
-
-
-
             }
-
-
-
-
-
-
-
-
-
-
 
 document.querySelectorAll('.osnovanie-filter').forEach(el => {
     el.addEventListener('change', filterProducts);
@@ -3400,8 +3382,6 @@ document.querySelectorAll('.osnovanie-filter').forEach(el => {
                 });
             });
         }
-
-
 
         function buildOverallChart(products) {
             if (!products || products.length === 0) {
@@ -3503,7 +3483,6 @@ document.querySelectorAll('.osnovanie-filter').forEach(el => {
 
             Plotly.newPlot('overallChart', traces, layout, { responsive: true });
         }
-
 
         
         // Функция для обновления таблицы избранных
@@ -4180,8 +4159,6 @@ if (!productName) {
                 qrCell.id = qrId;
                 nameRow.appendChild(qrCell);
 
-
-
                 const row = document.createElement('tr');
 
                 // Артикул
@@ -4417,8 +4394,6 @@ loadEditableHeaders();
     document.querySelectorAll('#finalSelectedProductsTable thead tr th[contenteditable="true"]').forEach(th => {
         th.addEventListener('blur', saveEditableHeaders);
     });
-
-
         }
 
 
@@ -4450,8 +4425,7 @@ loadEditableHeaders();
                 }
             };
             input.click();
-        }
-        
+        }        
 
         function handleDrop(event, cell) {
             event.preventDefault();
@@ -5172,7 +5146,8 @@ if (isAdd) {
                         // Если активна вкладка "Выбранные" — сразу обновляем отображение
                         if (basketContainer.classList.contains('active')) {
                             updateSelectedProductsTable();
-                            filterProductsBySelected();
+                            filterProductsBySelected(); 
+                            updateCartIcons();                           
                         }
                     }
                 }
@@ -5358,9 +5333,7 @@ if (isAdd) {
             isManualInput = false;
         }
     });
-});
-            
-            
+});                 
             
             // При изменении фильтра категории или архива
             document.querySelectorAll('.category-filter, #archiveFilter').forEach(checkbox => {
@@ -5378,7 +5351,6 @@ if (isAdd) {
                     filterProducts();
                 });
             });
-
             
 
             document.getElementById('archiveFilter').addEventListener('change', function () {
@@ -5439,10 +5411,7 @@ document.querySelector('.checkbox-text').style.display = 'inline'; // или 'bl
 
                 // Обновляем счётчик: количество отфильтрованных товаров
                 document.getElementById('productsCountValue').textContent = filteredProducts.length;
-
-            });
-
-            
+            });            
 
             // Обработчик для вкладки "Аналитика"
             showAnalyticsButton.addEventListener('click', () => {
@@ -5468,7 +5437,6 @@ document.querySelector('.checkbox-text').style.display = 'inline'; // или 'bl
                     document.getElementById('productsCountValue').textContent = filteredProducts.length;
                 });
             });
-
 
             // Обработчик для вкладки "Выбранные"
             showSelectedButton.addEventListener('click', () => {
@@ -5526,8 +5494,6 @@ document.querySelector('.checkbox-text').style.display = 'inline'; // или 'bl
             } else {
                 console.error('Кнопка "Сформировать предложение" не найдена!');
             }
-
-
 
             const products = [];
             const promises = knownProductsAllFiles.map(item => {
@@ -5652,8 +5618,6 @@ document.querySelector('.checkbox-text').style.display = 'inline'; // или 'bl
                     console.error('Ошибка загрузки данных:', error);
                     document.getElementById('products').innerHTML = '<p>Не удалось загрузить товары. Попробуйте позже</p>';
                 });
-
-
 
 
             window.addEventListener('pageshow', function (event) {
