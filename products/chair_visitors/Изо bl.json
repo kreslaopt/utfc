@@ -3901,5 +3901,9 @@
     "color": "Ткань С73 (серый)",
     "finish_type_seat": "",
     "color_seat": "",
-    "variant_name": "Стул ИЗО BL (-, Ткань С73 (серый),, )"
+    "variant_name": "Стул ИЗО BL (-, Ткань С73 (серый),, )",
+    "additional_info": {
+        "package_dimensions": {},
+        "volume": "0"
+    }
 }
