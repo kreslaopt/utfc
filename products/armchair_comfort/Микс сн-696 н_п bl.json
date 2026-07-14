@@ -57,15 +57,15 @@
                     "height": 584
                 },
                 "box_size": "584х262х584",
-                "transportation": "удобства транспортировки и хранения кресло поставляется в разобранном виде. Каждое кресло упаковано в отдельный 5-слойный гофрокороб размером"
+                "transportation": "удобства транспортировки и хранения кресло поставляется в разобранном виде. Полозья металлические пакуются отдельно на поддон по 64 шт в полиэтиленовых пакетах. Каждое кресло упаковано в отдельный 5-слойный гофрокороб размером"
             }
         }
     ],
     "dimensions": [
         {
-            "brutto": "",
+            "brutto": "9",
             "netto": "9,50",
-            "volume": "0,11"
+            "volume": "0,14"
         }
     ],
     "guarantee": [
@@ -161,7 +161,7 @@
     "dimensions_details": [
         {
             "chair_height": {
-                "min": "935",
+                "min": "940",
                 "max": ""
             },
             "headrest_height": {
@@ -173,32 +173,32 @@
                 "max": ""
             },
             "armrest_height_from_seat": {
-                "min": "185",
+                "min": "190",
                 "max": ""
             },
             "chair_depth": {
-                "min": "600",
+                "min": "540",
                 "max": ""
             },
             "seat_depth": {
-                "min": "440",
+                "min": "420",
                 "max": ""
             },
             "backrest_height": {
                 "min": "",
-                "max": "500"
+                "max": "480"
             },
             "backrest_to_seat_height": {
                 "min": "",
                 "max": ""
             },
             "seat_width_with_armrests": {
-                "min": "570",
+                "min": "590",
                 "max": ""
             },
             "seat_width": {
                 "min": "",
-                "max": "495"
+                "max": "490"
             },
             "diameter_cross": {
                 "min": "",
