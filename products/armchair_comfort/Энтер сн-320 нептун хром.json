@@ -85,8 +85,8 @@
     ],
     "images": [
         {
-            "vid_main": "img/armchair_comfort/enter_neptune_ch_01.png",
-            "chair_view": "img/armchair_comfort/enter_neptune_ch_02.png",
+            "vid_main": "img/armchair_comfort/enter_neptune_ch_tw72_z71_01.png",
+            "chair_view": "img/armchair_comfort/enter_neptune_ch_tw72_z71_02.png",
             "dimensions": "img/armchair_comfort/dimensions/enter_neptune_ch_01.png",
             "box": "img/box_UTFC.png",
             "additional": [
