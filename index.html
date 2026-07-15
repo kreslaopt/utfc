@@ -98,6 +98,8 @@
                     Металлические</label>
                 <label><input type="checkbox" class="armrest-filter" value="Алюминиевые|алюминиевые">
                     Алюминиевые</label>
+                    <label><input type="checkbox" class="armrest-filter" value="3-D хромированные">
+                    3-D хромированные</label>
                 <label><input type="checkbox" class="armrest-filter" value="Деревянные|деревянные"> Деревянные</label>
                 <label><input type="checkbox" class="armrest-filter" value="С мягкими накладками|с мягкими накладками">
                     С мягкими накладками</label>
@@ -2093,6 +2095,7 @@ const filtersMap = {
   "металлические «ХДП»": armrestFilters.some(f => f.includes("ХДП")),
   "soft": armrestFilters.some(f => f.includes("soft")),
   "soft2": armrestFilters.some(f => f.includes("soft2")),
+  "3-D хромированные": armrestFilters.some(f => f.includes("3-D хромированные")),
 };
 
 const productName = Array.isArray(product.unique_name) ? product.unique_name[0] : product.unique_name;
