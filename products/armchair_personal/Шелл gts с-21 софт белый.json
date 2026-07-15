@@ -1,0 +1,314 @@
+{
+    "namefile": [
+        "Шелл gts с-21 софт белый"
+    ],
+    "name_all": [
+        "Шелл GTS пластик",
+        "Шелл GTS хром"
+    ],
+    "name": [
+        "Шелл GTS пластик"
+    ],
+    "unique_name": [
+        "Шелл GTS С-21 Софт белый"
+    ],
+    "vid": [
+        "кресло"
+    ],
+    "category": [
+        "поворотное кресло для персонала"
+    ],
+    "destiny": [
+        "ежедневной работы в офисных и домашних помещениях<br>Изготавливается с жестким элементом спинки-сиденья"
+    ],
+    "technical_requirements": [
+        [
+            "Кресло должно соответствовать требованиям:",
+            "ГОСТ 19917-2014 «Мебель для сидения и лежания. Общие технические условия»",
+            "ГОСТ 26800.3-86 «Мебель для административных помещений. Функциональные размеры»",
+            "настоящего технического описания",
+            "комплекта конструкторской документации",
+            "образцу-эталону, утвержденному в установленном порядке производителем"
+        ]
+    ],
+    "construction_and_materials": [
+        {
+            "upholstery_materials": [
+                "- цвет пластикового каркаса-ракушки - по каталогу"
+            ],
+            "components": [
+                "пластикового каркаса-ракушки, сиденья, пиастры, газ-лифта, пятилучья и 5-ти роликов",
+                "<strong>Каркас-ракушка</strong> пластиковый с мягким сиденьем",
+                "<strong>Сиденье</strong> состоит из фанерного основания, мягкого (пенополиуретан, жесткость - 30, плотность — 20 кг/м<sup>3</sup>) и облицовки. Крепится к каркасу-ракушке с помощью 4-х винтов М6",
+                "<strong>Материал облицовки сиденья:</strong> экокожа (S,R)",
+                "<strong>Пиастра</strong> крепится к основанию каркаса-ракушки с помощью 4-х винтов М6, снабжена рычагом регулировки газ-лифта",
+                "<strong>Газ-лифт</strong> с высотой подъема 140 мм ± 10 мм позволяет плавно регулировать высоту сиденья относительно пола, подпружинивает сиденье и демпфирует нагрузку на позвоночник в момент посадки. Газ-лифт закрыт телескопическим чехлом",
+                "<strong>Пятилучье</strong> пластиковое d=580 мм с 5-тью роликами обеспечивает устойчивость и позволяет креслу легко поворачиваться и перемещаться по любому стандартному покрытию пола",
+                "<strong>Ролики</strong> черные d=50 мм с полиуретановым покрытием имеют открытый пластиковый чехол"
+            ]
+        }
+    ],
+    "transportation": [
+        {
+            "standard": "ГОСТ 16371-2014",
+            "packaging": {
+                "type": "5-слойный гофрокороб",
+                "size": {
+                    "width": 624,
+                    "depth": 322,
+                    "height": 665
+                },
+                "box_size": "624х322х665",
+                "transportation": "удобства транспортировки и хранения кресло поставляется в разобранном виде. Каждое кресло упаковано в отдельный 5-слойный гофрокороб размером"
+            }
+        }
+    ],
+    "dimensions": [
+        {
+            "brutto": "",
+            "netto": "5,45",
+            "volume": "0,13"
+        }
+    ],
+    "guarantee": [
+        {
+            "period": "12",
+            "max_load": "120",
+            "recommended_load": "90"
+        }
+    ],
+    "images": [
+        {
+            "vid_main": "img/armchair_personal/shell_c21_gts_white_white_soft_0422_01.png",
+            "chair_view": "img/armchair_personal/shell_c21_gts_white_white_soft_0422_02.png",
+            "dimensions": "img/armchair_personal/dimensions/shell_c21_gts_white_white_soft_0422_01.png",
+            "box": "img/box_UTFC.png",
+            "additional": [
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/507/r4fhkfbfbpw2zsb1lqrujuiilygiu8dk.png",
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/uf/096/c5w4s5snuib9cl1s8f1xnlh56rp2c8ww.png",
+                "https://utfc.ru/upload/resize_cache/iblock/7f3/140_140_0/pf83viw9hi3ak4iafgaj9dss9ma98zn0.png",
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/uf/0c4/letq46x9r75qlwzijagp1dyuy76lzvyv.png",
+                "https://utfc.ru/upload/resize_cache/iblock/507/140_140_0/r4fhkfbfbpw2zsb1lqrujuiilygiu8dk.png",
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/e22/k0iuho3efijq2hkacd3c94rqa2xeo2tf.png",
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/uf/bc1/bc19ccc90baa8164a6f8de94c86f1b38.png",
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/uf/7f0/cygkn5s91y5d7e6rvpnhb8s8v0if5b78.png",
+                "https://utfc.ru/upload/resize_cache/iblock/405/70_70_0/6az8ijq3kwo614y93g1tk5dxfw4xk8zx.png",
+                "https://utfc.ru/local/templates/utfc/img/icon-4.png",
+                "https://utfc.ru/upload/resize_cache/iblock/767/400_400_0/wp198ivjc8hlplabg3tcvbq0ah7o6u0b.png",
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/uf/239/8x82kda0qf27pwob6oovhdbi34xkwa6h.png",
+                "https://utfc.ru/upload/resize_cache/iblock/5f2/70_70_0/jtoqpoxf3v0ai54dthupo7bqv6dlhff8.png",
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/f7d/v817g6tbpg2fgbmrkbpeo15eho77cdyg.png",
+                "https://utfc.ru/upload/resize_cache/iblock/752/140_140_0/9qe4qrx4g2mh2k4znvgecwahu46pc6t7.png",
+                "https://utfc.ru/local/templates/utfc/img/icon-2.png",
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/uf/cb6/gedu3qgm2qrkangz8lr8zgmtkmsnokr3.png",
+                "https://utfc.ru/upload/resize_cache/iblock/c08/400_400_0/m4t1aokeovdkaqmv8rcgu2z21g1xhwfy.png",
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/b82/yrw2kqzjb7n4iz8h66e0id4zqe70gpso.png",
+                "https://utfc.ru/local/templates/utfc/img/sites/utfc/logo_down_2.png",
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/uf/e7e/ptsn7azj32k52zm7iut1g14jfche8edp.png",
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/uf/d5d/ozpppeeq60snkvjvzv28azmwe3ycfvys.png",
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/752/9qe4qrx4g2mh2k4znvgecwahu46pc6t7.png",
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/uf/00e/e1fphri05oqe8ro626unn4ots975wpgc.png",
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/uf/be9/2ywww0asruyw5fhja3xq9p6gze48hlkd.png",
+                "https://utfc.ru/local/templates/.default/components/utfc/catalog.element/.default/images/no_photo.png",
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/uf/1d6/1d6cad79d9bf8920195690bb2e2486ea.png",
+                "https://utfc.ru/upload/resize_cache/iblock/9dd/400_400_0/9dd0fa51152fb12ef8354b1f71aabe59.png",
+                "https://utfc.ru/local/templates/utfc/img/icon-1.png",
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/3d5/3d50c1eaebd66a0582b96ae888604074/3080b2ece2f269bf6689c5f7bda1822a.png",
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/uf/766/766c72d058e3535b67624ec955aaa19d.png",
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/7f3/pf83viw9hi3ak4iafgaj9dss9ma98zn0.png",
+                "https://utfc.ru/local/templates/utfc/img/sites/utfc/logo_store_up_2x.png",
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/0bd/trjy7df0ujbjvswa0fjwr8bkg0o001u7.png",
+                "https://utfc.ru/upload/resize_cache/iblock/e22/140_140_0/k0iuho3efijq2hkacd3c94rqa2xeo2tf.png",
+                "https://utfc.ru/upload/resize_cache/iblock/0bd/140_140_0/trjy7df0ujbjvswa0fjwr8bkg0o001u7.png",
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/uf/ec4/m5d0bbjl2jqxsm0c5xc3m3xws0ricv0k.png",
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/238/iij413bkiu7l2vimchht4o4ouno4p3ky.png",
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/8b4/bx8muu1dc1xkhd3x6dagsufj9wc7aobi.png",
+                "https://utfc.ru/upload/resize_cache/iblock/f1e/70_70_0/w0ygriy5n0e2jfi6onf915j0a810dqrl.png",
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/uf/756/y2x2fw1cqiuc308vsgvm05b6ue5z024e.png",
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/uf/2f6/t58hht87rij6473bfzs7e5qa017izxtn.png",
+                "https://utfc.ru/local/templates/utfc/img/palette.png",
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/uf/b30/ocwd75xcze6h3qha3b8sdwb2ixj0f25p.png",
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/resize_cache/27729/09667609493257e3dc4f183374d2fcb3/iblock/4d4/4d41990eb99704cb4917b701ae204ad5/3a325688235932695c2d5ab0314af8c2.png",
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/resize_cache/27742/09667609493257e3dc4f183374d2fcb3/iblock/959/959dd4bf748fc6175817aec58673daf9/da8cb3bce3fcf393969db44d9eb766b8.png",
+                "https://96478eeb-ff2c-475c-9fba-7b30622ddf38.selstorage.ru/iblock/bc2/bc2166b704579feb802cd10858a30bba.png",
+                "https://cdn.utfc-store.ru/uf/d5d/ozpppeeq60snkvjvzv28azmwe3ycfvys.png",
+                "https://cdn.utfc-store.ru/uf/ec4/m5d0bbjl2jqxsm0c5xc3m3xws0ricv0k.png",
+                "https://cdn.utfc-store.ru/uf/b30/ocwd75xcze6h3qha3b8sdwb2ixj0f25p.png",
+                "https://cdn.utfc-store.ru/iblock/7f3/pf83viw9hi3ak4iafgaj9dss9ma98zn0.png",
+                "https://cdn.utfc-store.ru/uf/be9/2ywww0asruyw5fhja3xq9p6gze48hlkd.png",
+                "https://cdn.utfc-store.ru/uf/bc1/bc19ccc90baa8164a6f8de94c86f1b38.png",
+                "https://cdn.utfc-store.ru/iblock/0bd/trjy7df0ujbjvswa0fjwr8bkg0o001u7.png",
+                "https://cdn.utfc-store.ru/resize_cache/27742/09667609493257e3dc4f183374d2fcb3/iblock/959/959dd4bf748fc6175817aec58673daf9/da8cb3bce3fcf393969db44d9eb766b8.png",
+                "https://cdn.utfc-store.ru/resize_cache/27729/09667609493257e3dc4f183374d2fcb3/iblock/4d4/4d41990eb99704cb4917b701ae204ad5/3a325688235932695c2d5ab0314af8c2.png",
+                "https://cdn.utfc-store.ru/uf/766/766c72d058e3535b67624ec955aaa19d.png",
+                "https://cdn.utfc-store.ru/iblock/bc2/bc2166b704579feb802cd10858a30bba.png",
+                "https://cdn.utfc-store.ru/uf/cb6/gedu3qgm2qrkangz8lr8zgmtkmsnokr3.png",
+                "https://cdn.utfc-store.ru/iblock/f7d/v817g6tbpg2fgbmrkbpeo15eho77cdyg.png",
+                "https://cdn.utfc-store.ru/uf/e7e/ptsn7azj32k52zm7iut1g14jfche8edp.png",
+                "https://cdn.utfc-store.ru/iblock/8b4/bx8muu1dc1xkhd3x6dagsufj9wc7aobi.png",
+                "https://cdn.utfc-store.ru/iblock/238/iij413bkiu7l2vimchht4o4ouno4p3ky.png",
+                "https://cdn.utfc-store.ru/iblock/752/9qe4qrx4g2mh2k4znvgecwahu46pc6t7.png",
+                "https://cdn.utfc-store.ru/uf/7f0/cygkn5s91y5d7e6rvpnhb8s8v0if5b78.png",
+                "https://cdn.utfc-store.ru/uf/0c4/letq46x9r75qlwzijagp1dyuy76lzvyv.png",
+                "https://cdn.utfc-store.ru/uf/2f6/t58hht87rij6473bfzs7e5qa017izxtn.png",
+                "https://cdn.utfc-store.ru/iblock/b82/yrw2kqzjb7n4iz8h66e0id4zqe70gpso.png",
+                "https://cdn.utfc-store.ru/uf/00e/e1fphri05oqe8ro626unn4ots975wpgc.png",
+                "https://cdn.utfc-store.ru/uf/096/c5w4s5snuib9cl1s8f1xnlh56rp2c8ww.png",
+                "https://cdn.utfc-store.ru/uf/1d6/1d6cad79d9bf8920195690bb2e2486ea.png",
+                "https://cdn.utfc-store.ru/iblock/507/r4fhkfbfbpw2zsb1lqrujuiilygiu8dk.png",
+                "https://cdn.utfc-store.ru/iblock/e22/k0iuho3efijq2hkacd3c94rqa2xeo2tf.png",
+                "https://cdn.utfc-store.ru/uf/239/8x82kda0qf27pwob6oovhdbi34xkwa6h.png",
+                "https://cdn.utfc-store.ru/uf/756/y2x2fw1cqiuc308vsgvm05b6ue5z024e.png",
+                "https://cdn.utfc-store.ru/resize_cache/28434/f9a783e5b6ef0ba37f754dbaaffb7194/iblock/5a8/5a82f15240bed988a4a1de1c6f1f3a5b/15b8a70ba8e53e11073a4e30b58d29a3.png",
+                "https://cdn.utfc-store.ru/resize_cache/28430/f9a783e5b6ef0ba37f754dbaaffb7194/iblock/5bf/5bfbea57c1d694cd74def5738569f6eb/dd4d800587cfaa8a86b13d4bb76d827f.png",
+                "https://cdn.utfc-store.ru/resize_cache/28431/f9a783e5b6ef0ba37f754dbaaffb7194/iblock/c6c/c6ccd103828823a8dec87ace20f32f77/149c7e1566be9b75ff3b03e2f8311e14.png",
+                "https://cdn.utfc-store.ru/resize_cache/28432/f9a783e5b6ef0ba37f754dbaaffb7194/iblock/d15/d155a04bba1443438263058e195aed99/5624c2a3e18c559b4c1c64c7e3881785.png",
+                "https://cdn.utfc-store.ru/iblock/5bf/5bfbea57c1d694cd74def5738569f6eb/dd4d800587cfaa8a86b13d4bb76d827f.png",
+                "https://cdn.utfc-store.ru/iblock/5a8/5a82f15240bed988a4a1de1c6f1f3a5b/15b8a70ba8e53e11073a4e30b58d29a3.png",
+                "https://cdn.utfc-store.ru/iblock/338/3386bf4b80daad3698ce10d425183d1d/cd0bb4881df4e7a28bbe38a697eec339.png",
+                "https://cdn.utfc-store.ru/iblock/c6c/c6ccd103828823a8dec87ace20f32f77/149c7e1566be9b75ff3b03e2f8311e14.png",
+                "https://cdn.utfc-store.ru/iblock/d15/d155a04bba1443438263058e195aed99/5624c2a3e18c559b4c1c64c7e3881785.png",
+                "https://cdn.utfc-store.ru/resize_cache/28433/f9a783e5b6ef0ba37f754dbaaffb7194/iblock/338/3386bf4b80daad3698ce10d425183d1d/cd0bb4881df4e7a28bbe38a697eec339.png",
+                "https://cdn.utfc.ru/iblock/405/6az8ijq3kwo614y93g1tk5dxfw4xk8zx.png",
+                "https://cdn.utfc.ru/iblock/b82/yrw2kqzjb7n4iz8h66e0id4zqe70gpso.png",
+                "https://cdn.utfc.ru/uf/e7e/ptsn7azj32k52zm7iut1g14jfche8edp.png",
+                "https://cdn.utfc.ru/uf/cb6/gedu3qgm2qrkangz8lr8zgmtkmsnokr3.png",
+                "https://cdn.utfc.ru/iblock/338/3386bf4b80daad3698ce10d425183d1d/cd0bb4881df4e7a28bbe38a697eec339.png",
+                "https://cdn.utfc.ru/iblock/4d4/4d41990eb99704cb4917b701ae204ad5/3a325688235932695c2d5ab0314af8c2.png",
+                "https://cdn.utfc.ru/iblock/8b4/bx8muu1dc1xkhd3x6dagsufj9wc7aobi.png",
+                "https://cdn.utfc.ru/uf/00e/e1fphri05oqe8ro626unn4ots975wpgc.png",
+                "https://cdn.utfc.ru/uf/0c4/letq46x9r75qlwzijagp1dyuy76lzvyv.png",
+                "https://cdn.utfc.ru/iblock/c6c/c6ccd103828823a8dec87ace20f32f77/149c7e1566be9b75ff3b03e2f8311e14.png",
+                "https://cdn.utfc.ru/uf/096/c5w4s5snuib9cl1s8f1xnlh56rp2c8ww.png",
+                "https://cdn.utfc.ru/uf/b30/ocwd75xcze6h3qha3b8sdwb2ixj0f25p.png",
+                "https://cdn.utfc.ru/iblock/959/959dd4bf748fc6175817aec58673daf9/da8cb3bce3fcf393969db44d9eb766b8.png",
+                "https://cdn.utfc.ru/iblock/5a8/5a82f15240bed988a4a1de1c6f1f3a5b/15b8a70ba8e53e11073a4e30b58d29a3.png",
+                "https://cdn.utfc.ru/iblock/767/wp198ivjc8hlplabg3tcvbq0ah7o6u0b.png",
+                "https://cdn.utfc.ru/uf/ec4/m5d0bbjl2jqxsm0c5xc3m3xws0ricv0k.png",
+                "https://cdn.utfc.ru/iblock/d15/d155a04bba1443438263058e195aed99/5624c2a3e18c559b4c1c64c7e3881785.png",
+                "https://cdn.utfc.ru/uf/2f6/t58hht87rij6473bfzs7e5qa017izxtn.png",
+                "https://cdn.utfc.ru/uf/bc1/bc19ccc90baa8164a6f8de94c86f1b38.png",
+                "https://cdn.utfc.ru/iblock/f7d/v817g6tbpg2fgbmrkbpeo15eho77cdyg.png",
+                "https://cdn.utfc.ru/uf/be9/2ywww0asruyw5fhja3xq9p6gze48hlkd.png",
+                "https://cdn.utfc.ru/uf/7f0/cygkn5s91y5d7e6rvpnhb8s8v0if5b78.png",
+                "https://cdn.utfc.ru/uf/d5d/ozpppeeq60snkvjvzv28azmwe3ycfvys.png",
+                "https://cdn.utfc.ru/iblock/c08/m4t1aokeovdkaqmv8rcgu2z21g1xhwfy.png",
+                "https://cdn.utfc.ru/iblock/9dd/9dd0fa51152fb12ef8354b1f71aabe59.png",
+                "https://cdn.utfc.ru/iblock/238/iij413bkiu7l2vimchht4o4ouno4p3ky.png",
+                "https://cdn.utfc.ru/uf/756/y2x2fw1cqiuc308vsgvm05b6ue5z024e.png",
+                "https://cdn.utfc.ru/iblock/5bf/5bfbea57c1d694cd74def5738569f6eb/dd4d800587cfaa8a86b13d4bb76d827f.png",
+                "https://cdn.utfc.ru/uf/239/8x82kda0qf27pwob6oovhdbi34xkwa6h.png",
+                "https://cdn.utfc.ru/uf/766/766c72d058e3535b67624ec955aaa19d.png",
+                "https://cdn.utfc.ru/uf/1d6/1d6cad79d9bf8920195690bb2e2486ea.png",
+                "https://cdn.utfc.ru/iblock/bc2/bc2166b704579feb802cd10858a30bba.png",
+                "https://cdn.utfc.ru/iblock/e49/e49ef734279064b5b9be4cafd2926b1d/e5b8b54948ab237d14fbd1f59e1ba258.png",
+                "https://cdn.utfc.ru/uf/923/92395f896cdd7e8eec991ca7749badee/dbab19d12ab4dad6c84224102f284cb9.png"
+            ]
+        }
+    ],
+    "dimensions_details": [
+        {
+            "chair_height": {
+                "min": "780",
+                "max": "920"
+            },
+            "headrest_height": {
+                "min": "",
+                "max": ""
+            },
+            "seat_to_floor_height": {
+                "min": "450",
+                "max": "590"
+            },
+            "armrest_height_from_seat": {
+                "min": "",
+                "max": ""
+            },
+            "chair_depth": {
+                "min": "495",
+                "max": ""
+            },
+            "seat_depth": {
+                "min": "420",
+                "max": ""
+            },
+            "backrest_height": {
+                "min": "",
+                "max": "360"
+            },
+            "backrest_to_seat_height": {
+                "min": "",
+                "max": ""
+            },
+            "seat_width_with_armrests": {
+                "min": "",
+                "max": ""
+            },
+            "seat_width": {
+                "min": "",
+                "max": "460"
+            },
+            "diameter_cross": {
+                "min": "",
+                "max": "580"
+            },
+            "runners_width": {
+                "min": "",
+                "max": ""
+            },
+            "runners_depth": {
+                "min": "",
+                "max": ""
+            },
+            "seat_to_floor_height_upper": {
+                "min": "385",
+                "max": "525"
+            },
+            "armrest_height_from_floor": {
+                "min": "",
+                "max": ""
+            },
+            "armrest_width_support": {
+                "min": "",
+                "max": ""
+            },
+            "armrest_length_support": {
+                "min": "",
+                "max": ""
+            },
+            "seat_depth_km": {
+                "min": "",
+                "max": "420"
+            },
+            "backrest_height_external": {
+                "min": "",
+                "max": ""
+            },
+            "backrest_width_narrow": {
+                "min": "",
+                "max": "270"
+            },
+            "backrest_width_wide": {
+                "min": "",
+                "max": "430"
+            },
+            "recommended_load": "90",
+            "max_load": "120",
+            "skeleton": "монолитный",
+            "minpromtorg": "+",
+            "netto": "5",
+            "brutto": {
+                "min": "",
+                "max": ""
+            },
+            "package_width": "624",
+            "package_depth": "322",
+            "package_height": "665",
+            "volume": "0"
+        }
+    ],
+    "skeleton": "монолитный",
+    "minpromtorg": "+",
+    "addition": ""
+  
+}

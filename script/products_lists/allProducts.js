@@ -1195,6 +1195,11 @@ const knownProductsAllFiles = [
     "is_archive": false
   },
   {
+    "name": "Прямой",
+    "category": "sofa",
+    "is_archive": false
+  },
+  {
     "name": "Рекорд м-878 белый пластик",
     "category": "armchair_comfort",
     "is_archive": false
@@ -1475,6 +1480,11 @@ const knownProductsAllFiles = [
     "is_archive": false
   },
   {
+    "name": "Угловой",
+    "category": "sofa",
+    "is_archive": false
+  },
+  {
     "name": "Ультра нептун в хром",
     "category": "armchair_comfort",
     "is_archive": false
@@ -1625,7 +1635,17 @@ const knownProductsAllFiles = [
     "is_archive": false
   },
   {
+    "name": "Шелл gts с-21 софт белый",
+    "category": "armchair_personal",
+    "is_archive": false
+  },
+  {
     "name": "Шелл gts с-21 софт хром",
+    "category": "armchair_personal",
+    "is_archive": false
+  },
+  {
+    "name": "Шелл gts с-21 софт черный",
     "category": "armchair_personal",
     "is_archive": false
   },

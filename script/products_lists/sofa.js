@@ -1,1 +1,4 @@
-const knownProducts = [];
+const knownProducts = [
+  "Прямой",
+  "Угловой"
+];

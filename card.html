@@ -156,6 +156,27 @@
 
             </div>
 
+                        <!-- Блок для дивана -->
+
+
+            <!-- <div class="box-info-row" id="box-info-divan">
+    <div class="box-info-label">Диван</div>
+    <div class="box-info-item">
+        <img src="img/brutto.png" alt="Вес брутто">
+        <p><span id="brutto-divan"></span> кг</p>
+    </div>
+    <div class="box-info-line"></div>
+    <div class="box-info-item">
+        <img src="img/netto.png" alt="Вес нетто">
+        <p><span id="netto-divan"></span> кг</p>
+    </div>
+    <div class="box-info-line"></div>
+    <div class="box-info-item">
+        <img src="img/v.png" alt="Объем">
+        <p><span id="volume-divan"></span> м³</p>
+    </div>
+</div> -->
+
             <!-- Блок для BOX4 -->
             <div class="box-info-row" id="box-info-box4">
                 <div class="box-info-label">BOX4</div>
@@ -215,7 +236,8 @@
             "поворотное кресло оператора": "поворотного кресла оператора",
             "поворотное кресло руководителя": "поворотного кресла руководителя",
             "стул складной": "стула складного",
-            "конференц-кресло": "конференц-кресла"
+            "конференц-кресло": "конференц-кресла",
+            "секционно-модульный диван":"секционно-модульного дивана"
 
 
         };
@@ -234,7 +256,8 @@
             "место": "места",
             "табурет": "табуреты",
             "стул складной": "стулья складные",
-            "конференц-кресло": "конференц-кресла"
+            "конференц-кресло": "конференц-кресла",
+            "Секционно-модульный диван":"Секционно-модульные диваны"
 
 
         };
@@ -245,7 +268,8 @@
             "кресло оператора": "кресло",
             "поворотное кресло оператора": "кресло оператора",
             "табурет": "",
-            "поворотное кресло": "поворотное кресло"
+            "поворотное кресло": "поворотное кресло",
+            "Секционно-модульный диван":"диван"
 
 
         };
@@ -253,10 +277,12 @@
         // Словарь родов
         const genderMap = {
             "стул": "male",
+            "секционно-модульный диван": "male",
+            "диван": "male",
             "стул складной": "male",
             "кресло": "neuter",
             "поворотное кресло": "neuter",
-            "табурет": "male"
+            "табурет": "male"            
         };
 
 
@@ -870,18 +896,21 @@
                     let bruttoIndividual = null, nettoIndividual = null, volumeIndividual = null;
                     let bruttoBox4 = null, nettoBox4 = null, volumeBox4 = null;
 
-                    packagingData.forEach(pack => {
-                        if (pack.type === 'individual') {
-                            bruttoIndividual = pack.brutto;
-                            nettoIndividual = pack.netto;
-                            volumeIndividual = pack.volume;
-                        } else if (pack.type === 'box4') {
-                            bruttoBox4 = pack.brutto;
-                            nettoBox4 = pack.netto;
-                            volumeBox4 = pack.volume;
-                        }
-                    });
-
+                  packagingData.forEach(pack => {
+    if (pack.type === 'individual') {
+        bruttoIndividual = pack.brutto;
+        nettoIndividual = pack.netto;
+        volumeIndividual = pack.volume;
+    // } else if (pack.type === 'divan') {
+    //     bruttoIndividual = pack.brutto;
+    //     nettoIndividual = pack.netto;
+    //     volumeIndividual = pack.volume;
+    } else if (pack.type === 'box4') {
+        bruttoBox4 = pack.brutto;
+        nettoBox4 = pack.netto;
+        volumeBox4 = pack.volume;
+    }
+});
                     // Если есть packaging_type — заполняем новые блоки, скрываем старый
                     if (packagingData.length > 0) {
                         document.querySelector('.box-info').style.display = 'none';
