@@ -189,7 +189,9 @@
                 "https://cdn.utfc.ru/iblock/5d9/5d9e639b65104face4aaa582f11e1639/83e2717f494c01b2a5d92394855e1ada.png",
                 "https://cdn.utfc.ru/iblock/83b/m9v2tkrwasf3mrg12w9wxufy0r9afu4i.png",
                 "https://cdn.utfc.ru/iblock/644/2jatjw225i858kqegeavcbef969rkw89.png",
-                "https://cdn.utfc.ru/iblock/e49/e49ef734279064b5b9be4cafd2926b1d/e5b8b54948ab237d14fbd1f59e1ba258.png"
+                "https://cdn.utfc.ru/iblock/e49/e49ef734279064b5b9be4cafd2926b1d/e5b8b54948ab237d14fbd1f59e1ba258.png",
+                "https://cdn.utfc.ru/uf/bc1/bc19ccc90baa8164a6f8de94c86f1b38.png",
+                "https://cdn.utfc.ru/iblock/d95/d95f53cd00c9f40dcacd87af2b4d548e/a19470ee22f88d71526ae51b7e5a29b7.png"
             ]
         }
     ],
@@ -295,7 +297,7 @@
         }
     ],
     "skeleton": "немонолитный",
-    "minpromtorg": "+",
+    "minpromtorg": "Минпромторг",
     "addition": "",
     "parent": {
         "IE_XML_ID": "s8301",
@@ -1324,7 +1326,7 @@
     "Link_arm": "https://utfc.ru/catalog/comfort_chairs/enter_t01_pl/?offers=8340",
     "Основание": "Пятилучье пластиковое d=600 мм",
     "Подлокотники": "Подлокотник Т-01 пластиковый",
-    "Газлифт": "Газ-лифт 2 категории по стандарту Germany DIN 4550, h=230 мм, длина штока 100 мм",
+    "Газлифт": "Газ-лифт 2 категории по стандарту Germany DIN 4550, h=290 мм, длина штока 140 мм",
     "Механизм": "ПВМ — пружинно-винтовой механизм позволяет регулировать уровень жесткости отклонения спинки кресла и обеспечивает постоянный контакт спины пользователя со спинкой кресла",
     "Особенности": "",
     "Ролики": "Пластиковые ролики с полиуретановым покрытием Ср, открытый чехол, d колеса 50 мм, d штока 11 мм. Стандарт BIFMA 5,1 (США).",

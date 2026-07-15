@@ -1,6 +1,6 @@
 {
     "namefile": [
-        "Бистро"
+        "Бистро ch"
     ],
     "name_all": [
         "Бистро",
@@ -10,7 +10,7 @@
         "Бистро"
     ],
     "unique_name": [
-        "Бистро"
+        "Бистро CH"
     ],
     "vid": [
         "стул"
@@ -82,7 +82,44 @@
             "chair_view": "img/chair_cafe_and_bar/bistro_ch_02.png",
             "dimensions": "img/chair_cafe_and_bar/dimensions/bistro_ch_02.png",
             "box": "img/box_UTFC.png",
-            "additional": []
+            "additional": [
+                "https://cdn.utfc.ru/iblock/4d4/4d41990eb99704cb4917b701ae204ad5/3a325688235932695c2d5ab0314af8c2.png",
+                "https://cdn.utfc.ru/iblock/86f/86f92f51f20ec8744c967b2822b8f9d0.png",
+                "https://cdn.utfc.ru/uf/f1b/f1b389f0a925393f619c55dd840941ea.jpg",
+                "https://cdn.utfc.ru/uf/124/12488cc5e7825b6c33ec205fee2cf98d.jpg",
+                "https://cdn.utfc.ru/uf/22d/22ddf3bcabb4bd89b3efee3aafff7c7f.jpg",
+                "https://utfc.ru/local/templates/utfc/img/palette.png",
+                "https://cdn.utfc.ru/uf/7f6/7f622a8a3c6d109774c96a627c14ece3.jpg",
+                "https://cdn.utfc.ru/uf/ccb/ccb62e3bc40a804259f1514d3bc58182.jpg",
+                "https://cdn.utfc.ru/uf/766/766c72d058e3535b67624ec955aaa19d.png",
+                "https://cdn.utfc.ru/uf/12e/12eac4cbc8e29ff91e60f48774f510e1.jpg",
+                "https://cdn.utfc.ru/uf/79d/79de729e01a00f3c79268a1bfba110da.jpg",
+                "https://cdn.utfc.ru/uf/0db/oz7fxg2h75miivk27bwmeua76oy4w5jo.png",
+                "https://utfc.ru/local/templates/utfc/img/icon-1.png",
+                "https://cdn.utfc.ru/uf/3a5/3a5d425d6688006b1768d11061e38317.jpg",
+                "https://cdn.utfc.ru/uf/10d/10d0587341e6b54c71f71cc811115d9c.jpg",
+                "https://cdn.utfc.ru/uf/42b/cinoo4yb5qfal1hamdt6wvovctm6jnzh.jpg",
+                "https://cdn.utfc.ru/uf/1d4/1d4602fd80132442365aa96095e71e91.jpg",
+                "https://cdn.utfc.ru/iblock/cb6/dg0q4u612m8a8iktasl43mm0oh4vc4ha.png",
+                "https://utfc.ru/local/templates/utfc/img/sites/utfc/logo_down_2.png",
+                "https://cdn.utfc.ru/uf/e7e/e7e07310987904c68082855430874c7e.jpg",
+                "https://cdn.utfc.ru/iblock/e49/e49ef734279064b5b9be4cafd2926b1d/e5b8b54948ab237d14fbd1f59e1ba258.png",
+                "https://cdn.utfc.ru/iblock/959/959dd4bf748fc6175817aec58673daf9/da8cb3bce3fcf393969db44d9eb766b8.png",
+                "https://cdn.utfc.ru/iblock/4ad/ojtzbckd5lkceo4a90e4n1casx9kdxbf.png",
+                "https://cdn.utfc.ru/uf/6ad/6addfe40dbd34774b5944c4138bca1e4.jpg",
+                "https://utfc.ru/local/templates/utfc/img/sites/utfc/logo_store_up_2x.png",
+                "https://cdn.utfc.ru/uf/017/0170d0f775c6624be53668116b9d9805.jpg",
+                "https://cdn.utfc.ru/iblock/5f8/5f87deb598a64f6efb82c20f80096b81.png",
+                "https://cdn.utfc.ru/uf/8fe/8fe971ab8f219e93061b10b7c0d8208c.jpg",
+                "https://cdn.utfc.ru/uf/ba2/ba26cad27d0d08152e55229efdd0ed9b.jpg",
+                "https://cdn.utfc.ru/iblock/825/825222ae0487adaa00d3d37ee994e01f.png",
+                "https://utfc.ru/local/templates/.default/components/utfc/catalog.element/.default/images/no_photo.png",
+                "https://cdn.utfc.ru/uf/8d0/8d0fc428274bc3dd435ab3736b873e89.jpg",
+                "https://utfc.ru/local/templates/utfc/img/icon-2.png",
+                "https://cdn.utfc.ru/uf/df0/df06c7f63b82e1fd4408a31594276efc.jpg",
+                "https://cdn.utfc.ru/iblock/d4c/d4cedfce22b1e44b200e945fbda3d3ab.png",
+                "https://utfc.ru/local/templates/utfc/img/icon-4.png"
+            ]
         }
     ],
     "dimensions_details": [
@@ -202,7 +239,7 @@
         }
     ],
     "skeleton": "",
-    "minpromtorg": "+",
+    "minpromtorg": "Минпромторг",
     "addition": "",
     "parent": {
         "IE_XML_ID": "p_5099",
@@ -1908,62 +1945,32 @@
     ],
     "title": "Стул Бистро СН для кафе и дома производства компании UTFC",
     "base_name": "Стул Бистро СН",
-    "article_number": "bistro_ch",
+    "article_number": "ЦБ-00015914",
     "full_describe": "Хромированный стул с мягким сиденьем – сочетание лаконичности и комфорта. Высокая спинка добавляет легкости, а металлический каркас – устойчивости. Идеален для современных обеденных зон.",
-    "Link_arm": "https://utfc.ru/catalog/pos_chair/bistro_ch/",
+    "Link_arm": "https://utfc.ru/catalog/pos_chair/bistro_ch/?offers=9275",
     "Основание": "Металлические опоры стула Бистро, защитно-декоративное покрытие никель-хром (СН)",
     "Подлокотники": "Без подлокотников",
     "Газлифт": "",
     "Механизм": "",
     "Особенности": "",
     "Ролики": "",
-    "finish_type": [
-        "Кожзаменитель Z",
-        "Экокожа Santorini",
-        "-"
-    ],
-    "color": [
-        "Экокожа Santorini S0401 (черный)",
-        "Экокожа Santorini S0406 (фисташковый)",
-        "Экокожа Santorini S0413 (кофейный)",
-        "Экокожа Santorini S0419 (темно-синий)",
-        "Экокожа Santorini S0420 (светло-голубой)",
-        "Экокожа Santorini S0421 (красный)",
-        "Экокожа Santorini S0422 (темно-серый)",
-        "Экокожа Santorini S0426 (светло-коричневый)",
-        "Экокожа Santorini S0429 (шоколадный)",
-        "Экокожа Santorini S0432 (оранжевый)"
-    ],
-    "variant_name": [
-        "Стул Бистро СН (Кожзаменитель Z, Экокожа Santorini S0401 (черный))",
-        "Стул Бистро СН (Кожзаменитель Z, Экокожа Santorini S0406 (фисташковый))",
-        "Стул Бистро СН (Кожзаменитель Z, Экокожа Santorini S0413 (кофейный))",
-        "Стул Бистро СН (Кожзаменитель Z, Экокожа Santorini S0419 (темно-синий))",
-        "Стул Бистро СН (Кожзаменитель Z, Экокожа Santorini S0420 (светло-голубой))",
-        "Стул Бистро СН (Кожзаменитель Z, Экокожа Santorini S0421 (красный))",
-        "Стул Бистро СН (Кожзаменитель Z, Экокожа Santorini S0422 (темно-серый))",
-        "Стул Бистро СН (Кожзаменитель Z, Экокожа Santorini S0426 (светло-коричневый))",
-        "Стул Бистро СН (Кожзаменитель Z, Экокожа Santorini S0429 (шоколадный))",
-        "Стул Бистро СН (Кожзаменитель Z, Экокожа Santorini S0432 (оранжевый))",
-        "Стул Бистро СН (Экокожа Santorini, Экокожа Santorini S0401 (черный))",
-        "Стул Бистро СН (Экокожа Santorini, Экокожа Santorini S0406 (фисташковый))",
-        "Стул Бистро СН (Экокожа Santorini, Экокожа Santorini S0413 (кофейный))",
-        "Стул Бистро СН (Экокожа Santorini, Экокожа Santorini S0419 (темно-синий))",
-        "Стул Бистро СН (Экокожа Santorini, Экокожа Santorini S0420 (светло-голубой))",
-        "Стул Бистро СН (Экокожа Santorini, Экокожа Santorini S0421 (красный))",
-        "Стул Бистро СН (Экокожа Santorini, Экокожа Santorini S0422 (темно-серый))",
-        "Стул Бистро СН (Экокожа Santorini, Экокожа Santorini S0426 (светло-коричневый))",
-        "Стул Бистро СН (Экокожа Santorini, Экокожа Santorini S0429 (шоколадный))",
-        "Стул Бистро СН (Экокожа Santorini, Экокожа Santorini S0432 (оранжевый))",
-        "Стул Бистро СН (-, Экокожа Santorini S0401 (черный))",
-        "Стул Бистро СН (-, Экокожа Santorini S0406 (фисташковый))",
-        "Стул Бистро СН (-, Экокожа Santorini S0413 (кофейный))",
-        "Стул Бистро СН (-, Экокожа Santorini S0419 (темно-синий))",
-        "Стул Бистро СН (-, Экокожа Santorini S0420 (светло-голубой))",
-        "Стул Бистро СН (-, Экокожа Santorini S0421 (красный))",
-        "Стул Бистро СН (-, Экокожа Santorini S0422 (темно-серый))",
-        "Стул Бистро СН (-, Экокожа Santorini S0426 (светло-коричневый))",
-        "Стул Бистро СН (-, Экокожа Santorini S0429 (шоколадный))",
-        "Стул Бистро СН (-, Экокожа Santorini S0432 (оранжевый))"
-    ]
+    "finish_type": "-",
+    "color": "Экокожа S-0432 (оранжевый)",
+    "variant_name": "Стул Бистро СН (-, Экокожа S-0432 (оранжевый),, )",
+    "madeinrf": "Сделано РФ",
+    "sizes": {
+        "Ширина:": "360",
+        "Высота:": "880",
+        "Глубина:": "480",
+        "Нагрузка:": "120",
+        "Каркас:": "Монолитный",
+        "Вес брутто:": "3,95",
+        "Материал упаковки:": "Стрейч-пленка (каркас)",
+        "Объём:": "0,06"
+    },
+    "package_sizes": {
+        "Материал упаковки:": "Стрейч-пленка (каркас)"
+    },
+    "finish_type_seat": "",
+    "color_seat": ""
 }

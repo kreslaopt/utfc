@@ -171,7 +171,8 @@
                 "https://cdn.utfc.ru/uf/ed8/ed809c4302b8f61180ba2401fad216c5.png",
                 "https://cdn.utfc.ru/uf/3a5/3a5d425d6688006b1768d11061e38317.jpg",
                 "https://cdn.utfc.ru/iblock/e49/e49ef734279064b5b9be4cafd2926b1d/e5b8b54948ab237d14fbd1f59e1ba258.png",
-                "https://cdn.utfc.ru/iblock/d63/d631698094a2d720ebe351e608296720/b9b4f8205c11786ac981b42df0f094c4.png"
+                "https://cdn.utfc.ru/iblock/d63/d631698094a2d720ebe351e608296720/b9b4f8205c11786ac981b42df0f094c4.png",
+                "https://cdn.utfc.ru/iblock/3f8/3f81696df3bb502922ea8f61f400ad3b/b793105295c346f2f7cb1de0d535e670.png"
             ]
         }
     ],
@@ -280,7 +281,7 @@
         }
     ],
     "skeleton": "немонолитный",
-    "minpromtorg": "+",
+    "minpromtorg": "Минпромторг",
     "addition": "",
     "parent": {
         "IE_XML_ID": "p_5169",
@@ -689,7 +690,7 @@
     "sizes": {
         "Ширина:": "590",
         "Высота:": "880-980",
-        "Глубина:": "545",
+        "Глубина:": "555",
         "Нагрузка:": "120",
         "Каркас:": "Немонолитный",
         "Ширина упаковки:": "630",

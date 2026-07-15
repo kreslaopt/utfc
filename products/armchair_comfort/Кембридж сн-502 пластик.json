@@ -173,7 +173,12 @@
                 "https://cdn.utfc.ru/uf/61e/61eee9360f562822e04d02ce736b5f6f.jpg",
                 "https://cdn.utfc.ru/uf/ed8/ed809c4302b8f61180ba2401fad216c5.png",
                 "https://cdn.utfc.ru/uf/fc9/fc9d5521d7726f3dbfb57faf1dea62f5.jpg",
-                "https://cdn.utfc.ru/iblock/e49/e49ef734279064b5b9be4cafd2926b1d/e5b8b54948ab237d14fbd1f59e1ba258.png"
+                "https://cdn.utfc.ru/iblock/e49/e49ef734279064b5b9be4cafd2926b1d/e5b8b54948ab237d14fbd1f59e1ba258.png",
+                "https://cdn.utfc.ru/iblock/2fb/2fb29530a67d2f0935989e5cf9add4d5/669ba6fa995aa1d7c7e17f4ae049751c.png",
+                "https://cdn.utfc.ru/iblock/12d/12d14650e45968cebc96498f2e020b82/4a85dafae45cfdb51a357d8f4df90228.png",
+                "https://cdn.utfc.ru/iblock/825/8255bc60804d66bafab5535a24a58be6/b5bcffb275328caa3c185d3fb9997ba2.png",
+                "https://cdn.utfc.ru/iblock/8df/8df8f1c04ad9c73e010d5c505bc219b9/8d3748534b63879e5b7f696063bb3389.png",
+                "https://cdn.utfc.ru/iblock/510/510b2aed75dbfd159ad4d5226f372d7f/e3d7103e5dfbee0640683c4bf7877aca.png"
             ]
         }
     ],
@@ -282,7 +287,7 @@
         }
     ],
     "skeleton": "немонолитный",
-    "minpromtorg": "+",
+    "minpromtorg": "Минпромторг",
     "addition": "",
     "parent": {
         "IE_XML_ID": "7569",

@@ -226,7 +226,9 @@
                 "https://cdn.utfc.ru/iblock/6fd/6fd34bb42edbcd9a72e1a2e4cf8e6070/015ec2f12ed0ea913b8fbaf53e97fb65.png",
                 "https://cdn.utfc.ru/uf/f9a/f9a42bd21ce2344eea1b9f061b63a18b.png",
                 "https://cdn.utfc.ru/uf/960/960e751f997c5d91d1d7b1b3ebedb5cd.png",
-                "https://cdn.utfc.ru/iblock/e49/e49ef734279064b5b9be4cafd2926b1d/e5b8b54948ab237d14fbd1f59e1ba258.png"
+                "https://cdn.utfc.ru/iblock/e49/e49ef734279064b5b9be4cafd2926b1d/e5b8b54948ab237d14fbd1f59e1ba258.png",
+                "https://cdn.utfc.ru/iblock/ca1/ca1415b8b5ff041c67dfd191dde57cc7/fe2779ce7eca0c7fdf6e7cf8d7308f4e.png",
+                "https://cdn.utfc.ru/iblock/3c8/3c82f1d58415b0be9664b83b575c4643/7e259eccc3bc99fc4ff1f83f669095b0.png"
             ]
         }
     ],
@@ -336,7 +338,7 @@
     "article_number": "ПУ-00040698",
     "full_describe": "Кресло Парма - дизайн, вдохновлённый атмосферой итальянского пригорода. Это идеальное сочетание эстетики и практичности для вашей кухни, столовой или зоны отдыха.Мягкая обивка, слегка закруглённая спинка и удобное сиденье обеспечивают комфорт в каждой детали. Тонкие лучи крестовины в основании кресла придают стулу лёгкость и современный вид, который легко впишется в любой интерьер — от скандинавского до классического.",
     "Link_arm": "https://utfc.ru/catalog/staff_chairs/parma_pl/?offers=13343",
-    "minpromtorg": "",
+    "minpromtorg": "Минпромторг",
     "madeinrf": "Сделано РФ",
     "Основание": "Пятилучье Арктика пластиковое с узкими лучами, d=660 мм",
     "Подлокотники": "",

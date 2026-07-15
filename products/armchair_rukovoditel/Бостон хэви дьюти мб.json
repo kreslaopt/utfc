@@ -204,7 +204,8 @@
                 "https://cdn.utfc.ru/iblock/a16/a1668af3b39253fef3d1e07f8a96478a/1be3d139b7d25f861976d24535ec53b4.png",
                 "https://cdn.utfc.ru/iblock/277/277228a0ae4d298178881a1883f6bad3/7378a2c20b53e3af651f77ac309cf692.png",
                 "https://cdn.utfc.ru/iblock/e49/e49ef734279064b5b9be4cafd2926b1d/e5b8b54948ab237d14fbd1f59e1ba258.png",
-                "https://cdn.utfc.ru/iblock/175/lzek5k9nvnc35w5kzt1ebwocw3ngrcki.png"
+                "https://cdn.utfc.ru/iblock/175/lzek5k9nvnc35w5kzt1ebwocw3ngrcki.png",
+                "https://cdn.utfc.ru/uf/323/32352bcb4f669dcd29ab265c1820ecc2.png"
             ]
         }
     ],
@@ -310,7 +311,7 @@
         }
     ],
     "skeleton": "немонолитный",
-    "minpromtorg": "+",
+    "minpromtorg": "Минпромторг",
     "addition": "",
     "parent": {
         "IE_XML_ID": "a_1130",
@@ -1822,7 +1823,7 @@
     "Link_arm": "https://utfc.ru/catalog/boss_chairs/boston_heavy_duty_mb/?offers=12952",
     "Основание": "Пятилучье хромированное d=700 мм",
     "Подлокотники": "Подлокотник Айс хром",
-    "Газлифт": "Газ-лифт хромированный 3 класса по стандарту Germany DIN 4550, h=230 мм",
+    "Газлифт": "Газ-лифт суперкороткий хром",
     "Механизм": "МБ — мультиблок — механизм качания с регулировкой под вес пользователя и фиксацией в вертикальном положении спинки и отклонении ее назад в 5 положениях. Жесткость хода свободного отклонения спинки назад регулируется пружинным блоком",
     "Особенности": "",
     "Ролики": "Пластиковые ролики с полиуретановым покрытием Ср, открытый чехол, d колеса 50 мм, d штока 11 мм. Стандарт BIFMA 5,1 (США).",

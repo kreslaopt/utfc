@@ -150,17 +150,12 @@ const knownProductsAllFiles = [
     "is_archive": false
   },
   {
-    "name": "Бистро",
-    "category": "chair_cafe_and_bar",
-    "is_archive": false
-  },
-  {
-    "name": "Бистро м",
-    "category": "chair_cafe_and_bar",
-    "is_archive": false
-  },
-  {
     "name": "Бистро м bl",
+    "category": "chair_cafe_and_bar",
+    "is_archive": false
+  },
+  {
+    "name": "Бистро м ch",
     "category": "chair_cafe_and_bar",
     "is_archive": false
   },
@@ -171,6 +166,11 @@ const knownProductsAllFiles = [
   },
   {
     "name": "Бистро bl",
+    "category": "chair_cafe_and_bar",
+    "is_archive": false
+  },
+  {
+    "name": "Бистро ch",
     "category": "chair_cafe_and_bar",
     "is_archive": false
   },

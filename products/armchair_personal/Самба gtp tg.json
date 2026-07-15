@@ -195,7 +195,10 @@
                 "https://cdn.utfc.ru/iblock/d8e/w61c979agqoiunebp8qwhxij3llklnxz.png",
                 "https://cdn.utfc.ru/uf/3a5/3a5d425d6688006b1768d11061e38317.jpg",
                 "https://cdn.utfc.ru/iblock/bc2/bc2166b704579feb802cd10858a30bba.png",
-                "https://cdn.utfc.ru/iblock/e49/e49ef734279064b5b9be4cafd2926b1d/e5b8b54948ab237d14fbd1f59e1ba258.png"
+                "https://cdn.utfc.ru/iblock/e49/e49ef734279064b5b9be4cafd2926b1d/e5b8b54948ab237d14fbd1f59e1ba258.png",
+                "https://cdn.utfc.ru/iblock/ca1/ca1415b8b5ff041c67dfd191dde57cc7/fe2779ce7eca0c7fdf6e7cf8d7308f4e.png",
+                "https://cdn.utfc.ru/uf/bbf/bbf7536c36d45261ea7b5b770b13c25d.png",
+                "https://cdn.utfc.ru/iblock/3c8/3c82f1d58415b0be9664b83b575c4643/7e259eccc3bc99fc4ff1f83f669095b0.png"
             ]
         }
     ],
@@ -304,7 +307,7 @@
         }
     ],
     "skeleton": "монолитный",
-    "minpromtorg": "+",
+    "minpromtorg": "Минпромторг",
     "addition": "",
     "parent": {
         "IE_XML_ID": "a_1153",
@@ -1735,7 +1738,7 @@
     "Link_arm": "https://utfc.ru/catalog/staff_chairs/samba_gtp_tg_ch_d/?offers=13071",
     "Основание": "Пятилучье хромированное Альфа 640 мм",
     "Подлокотники": "",
-    "Газлифт": "Газ-лифт 2 категории по стандарту Germany DIN 4550, h=290 мм, длина штока 140 мм",
+    "Газлифт": "Газ-лифт 2 категории по стандарту Germany DIN 4550, h=230 мм, длина штока 100 мм",
     "Механизм": "Однопозиционный механизм качания Топ-Ган регулирует высоту сиденья, обеспечивает режим свободного качания и фиксацию каркаса в рабочем положении.",
     "Особенности": "",
     "Ролики": "Пластиковые ролики, открытый чехол, d колеса 50 мм, d штока 11 мм. Стандарт BIFMA 5,1 (США)",

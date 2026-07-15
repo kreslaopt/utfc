@@ -175,7 +175,8 @@
                 "https://cdn.utfc.ru/uf/1d4/1d4602fd80132442365aa96095e71e91.jpg",
                 "https://cdn.utfc.ru/iblock/277/277228a0ae4d298178881a1883f6bad3/7378a2c20b53e3af651f77ac309cf692.png",
                 "https://cdn.utfc.ru/iblock/e49/e49ef734279064b5b9be4cafd2926b1d/e5b8b54948ab237d14fbd1f59e1ba258.png",
-                "https://cdn.utfc.ru/iblock/175/lzek5k9nvnc35w5kzt1ebwocw3ngrcki.png"
+                "https://cdn.utfc.ru/iblock/175/lzek5k9nvnc35w5kzt1ebwocw3ngrcki.png",
+                "https://cdn.utfc.ru/uf/bbf/bbf7536c36d45261ea7b5b770b13c25d.png"
             ]
         }
     ],
@@ -281,7 +282,7 @@
         }
     ],
     "skeleton": "немонолитный",
-    "minpromtorg": "+",
+    "minpromtorg": "Минпромторг",
     "addition": "",
     "parent": {
         "IE_XML_ID": "13168",
@@ -1061,7 +1062,7 @@
     "Link_arm": "https://utfc.ru/catalog/boss_chairs/vermont_v_ch/?offers=13179",
     "Основание": "Пятилучье хромированное d=700 мм",
     "Подлокотники": "Подлокотники ХДП — 3-D хромированные подлокотники с мягкой накладкой",
-    "Газлифт": "",
+    "Газлифт": "Газ-лифт 2 категории по стандарту Germany DIN 4550, h=230 мм, длина штока 100 мм",
     "Механизм": "Однопозиционный механизм качания Топ-Ган регулирует высоту сиденья, обеспечивает режим свободного качания и фиксацию каркаса в рабочем положении.",
     "Особенности": "",
     "Ролики": "Пластиковые ролики, открытый чехол, d колеса 50 мм, d штока 11 мм. Стандарт BIFMA 5,1 (США)",

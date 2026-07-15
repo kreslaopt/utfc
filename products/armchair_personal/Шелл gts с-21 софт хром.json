@@ -154,7 +154,10 @@
                 "https://cdn.utfc.ru/uf/1d6/1d6cad79d9bf8920195690bb2e2486ea.png",
                 "https://cdn.utfc.ru/iblock/df6/bipsjkozsgixwy5lqw8thstxu1nntdxw.png",
                 "https://cdn.utfc.ru/iblock/bc2/bc2166b704579feb802cd10858a30bba.png",
-                "https://cdn.utfc.ru/iblock/e49/e49ef734279064b5b9be4cafd2926b1d/e5b8b54948ab237d14fbd1f59e1ba258.png"
+                "https://cdn.utfc.ru/iblock/e49/e49ef734279064b5b9be4cafd2926b1d/e5b8b54948ab237d14fbd1f59e1ba258.png",
+                "https://cdn.utfc.ru/iblock/ca1/ca1415b8b5ff041c67dfd191dde57cc7/fe2779ce7eca0c7fdf6e7cf8d7308f4e.png",
+                "https://cdn.utfc.ru/iblock/3c8/3c82f1d58415b0be9664b83b575c4643/7e259eccc3bc99fc4ff1f83f669095b0.png",
+                "https://cdn.utfc.ru/uf/960/960e751f997c5d91d1d7b1b3ebedb5cd.png"
             ]
         }
     ],
@@ -263,7 +266,7 @@
         }
     ],
     "skeleton": "монолитный",
-    "minpromtorg": "+",
+    "minpromtorg": "Минпромторг",
     "addition": "",
     "parent": {
         "IE_XML_ID": "a_1135",
@@ -492,7 +495,7 @@
     "Газлифт": "Газ-лифт хром 3 категории по стандарту Germany DIN 4550, h=260 мм, длина штока 120 мм",
     "Механизм": "Пиастра круглая — механизм регулировки высоты сиденья с помощью стальной ручки с пластиковой рукояткой",
     "Особенности": "",
-    "Ролики": "Пластиковые белые ролики с полиуретановым покрытием, открытый чехол, d колеса 50 мм, d штока 11 мм",
+    "Ролики": "Пластиковые ролики с полиуретановым покрытием Ср, открытый чехол, d колеса 50 мм, d штока 11 мм. Стандарт BIFMA 5,1 (США).",
     "finish_type": "-",
     "color": "Экокожа S-0422 (темно-серый)",
     "variant_name": "Кресло С-21 Шелл GTS Софт хром Ср (-, Экокожа S-0422 (темно-серый),, )",
