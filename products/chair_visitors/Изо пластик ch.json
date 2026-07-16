@@ -1,6 +1,6 @@
 {
     "namefile": [
-        "Изо пластик"
+        "Изо пластик ch"
     ],
     "name_all": [
         "Изо",
@@ -12,7 +12,7 @@
         "Изо пластик"
     ],
     "unique_name": [
-        "Изо пластик"
+        "Изо пластик CH"
     ],
     "vid": [
         "стул"
@@ -83,7 +83,36 @@
             "vid_main": "img/chair_visitors/izo_ch_pl_black_01.png",
             "chair_view": "img/chair_visitors/izo_ch_pl_black_02.png",
             "dimensions": "img/chair_visitors/dimensions/izo_ch_pl_black_01.png",
-            "box": "img/box_0.png"
+            "box": "img/box_0.png",
+            "additional": [
+                "https://cdn.utfc.ru/iblock/4d4/4d41990eb99704cb4917b701ae204ad5/3a325688235932695c2d5ab0314af8c2.png",
+                "https://cdn.utfc.ru/uf/c61/c618ae8a7c6ce62a44a10b3a9efeb9a6.png",
+                "https://cdn.utfc.ru/iblock/7ab/7abf175facc0debad9ad2bb9c5fa4d8d/1fc8541d5e4d3e0a90b2d85ceea6d1c1.png",
+                "https://cdn.utfc.ru/uf/b22/b22d2b7dd418f1396fa8086b6ac998c8.png",
+                "https://utfc.ru/local/templates/utfc/img/sites/utfc/logo_store_up_2x.png",
+                "https://cdn.utfc.ru/iblock/959/959dd4bf748fc6175817aec58673daf9/da8cb3bce3fcf393969db44d9eb766b8.png",
+                "https://cdn.utfc.ru/iblock/820/820684c0f1c75cc931c253509ce663bc/fe0711aa3b62210d85501af3bcde21ea.png",
+                "https://cdn.utfc.ru/iblock/e49/e49ef734279064b5b9be4cafd2926b1d/e5b8b54948ab237d14fbd1f59e1ba258.png",
+                "https://utfc.ru/local/templates/utfc/img/icon-4.png",
+                "https://cdn.utfc.ru/iblock/825/825222ae0487adaa00d3d37ee994e01f.png",
+                "https://cdn.utfc.ru/iblock/19a/19ac29a9f55721ffc1ac6b704592b9fc/7ce294dc8d8b2cc90b6f482a1bcf346a.png",
+                "https://utfc.ru/local/templates/utfc/img/palette.png",
+                "https://cdn.utfc.ru/iblock/d4c/d4cedfce22b1e44b200e945fbda3d3ab.png",
+                "https://cdn.utfc.ru/iblock/04d/04d4184748803e723b72bd772073fcf0/8144b0fe7eec208a5d6d01813485eb4f.png",
+                "https://utfc.ru/local/templates/utfc/img/icon-1.png",
+                "https://cdn.utfc.ru/uf/43e/43e9bd1814aa21ce4ca8f81f15c75fd4.png",
+                "https://utfc.ru/local/templates/utfc/img/sites/utfc/logo_down_2.png",
+                "https://utfc.ru/local/templates/utfc/img/icon-2.png",
+                "https://cdn.utfc.ru/iblock/e35/e356980a4afbab75935545a5198b153e/c7ed43a492b9a6ac6ea32679ac8189a4.png",
+                "https://cdn.utfc.ru/iblock/5f8/5f87deb598a64f6efb82c20f80096b81.png",
+                "https://cdn.utfc.ru/iblock/aad/aad93d0cd15d6be8e84218bf276df68c/4ecc8aa7eed24e8a0cf9076613068126.png",
+                "https://cdn.utfc.ru/uf/5d4/sz9v486ets8o67a5tszj4ai48kzirwzi.png",
+                "https://cdn.utfc.ru/iblock/cb6/dg0q4u612m8a8iktasl43mm0oh4vc4ha.png",
+                "https://cdn.utfc.ru/uf/8c5/8c59e893003ea87997270739ec748f91.png",
+                "https://cdn.utfc.ru/uf/d0d/d0d789ce46dc57ae94c3adfb601271a0.png",
+                "https://cdn.utfc.ru/uf/b5c/b5c6ff052dc780b8223ba10ea9e39d61.png",
+                "https://utfc.ru/local/templates/.default/components/utfc/catalog.element/.default/images/no_photo.png"
+            ]
         }
     ],
     "dimensions_details": [
@@ -203,6 +232,36 @@
         }
     ],
     "skeleton": "",
-    "minpromtorg": "+",
-    "addition": ""
+    "minpromtorg": "Минпромторг",
+    "addition": "",
+    "title": "Бестселлер в категории \"Cтулья для посетителей\". Стул ИЗО СН пластик производства компании UTFC",
+    "base_name": "Стул ИЗО СН пластик",
+    "article_number": "ЦБ-00014798",
+    "full_describe": "Бестселлер в категории \"стулья для посетителей\". Стул для посетителей имеет широкую пластиковую спинку и сиденье. Цвета пластика: синий, красный, зеленый, оранжевый, серый, черный. Максимальная нагрузка - 150 кг.",
+    "Link_arm": "https://utfc.ru/catalog/pos_chair/izo_ch_plastik/?offers=13683",
+    "madeinrf": "Сделано РФ",
+    "Основание": "Металлические опоры стула ИЗО, защитно-декоративное покрытие никель-хром (СН),  d = 16 мм",
+    "Подлокотники": "",
+    "Газлифт": "",
+    "Механизм": "",
+    "Особенности": "",
+    "Ролики": "",
+    "sizes": {
+        "Ширина:": "550",
+        "Высота:": "760",
+        "Глубина:": "580",
+        "Нагрузка:": "150",
+        "Каркас:": "Монолитный",
+        "Вес брутто:": "5,6",
+        "Материал упаковки:": "Стрейч-пленка (каркас)",
+        "Объём:": "0,04-0,06"
+    },
+    "package_sizes": {
+        "Материал упаковки:": "Стрейч-пленка (каркас)"
+    },
+    "finish_type": "-",
+    "color": "Пластик черный",
+    "finish_type_seat": "",
+    "color_seat": "",
+    "variant_name": "Стул ИЗО СН пластик (-, Пластик черный,, )"
 }

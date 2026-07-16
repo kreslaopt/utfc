@@ -465,12 +465,12 @@ const knownProductsAllFiles = [
     "is_archive": false
   },
   {
-    "name": "Изо пластик",
+    "name": "Изо пластик bl",
     "category": "chair_visitors",
     "is_archive": false
   },
   {
-    "name": "Изо пластик bl",
+    "name": "Изо пластик ch",
     "category": "chair_visitors",
     "is_archive": false
   },

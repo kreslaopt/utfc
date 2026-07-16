@@ -202,5 +202,12 @@
             },
             "volume": "0"
         }
+    ],
+        "lost": [
+        {
+            "clean": false,
+            "limit": false,
+            "del": true
+        }
     ]
 }

@@ -43,7 +43,6 @@
                 "- <strong>обивочного материала</strong> - искусственная кожа",
                 "<strong>Металлический каркас:</strong> сварной стальной каркас, рама и ножки - сварены по периметру вне зоны видимости (каждая ножка обварена сплошным сварным швом), осуществляющий базовую несущую функцию. Размер трубы рамы и ножек 40*40. На ножках установлены 4 заглушки 40*40, оснащенные регулировками на неровность пола. Для соединения модульных диванов каркас оснащается комплектом зацепа-соединителя типа «Крокодил»",
                 "Соединение мягкого элемента и металлического каркаса осуществляется с помощью 4-х саморезов 4,2*65"
-
             ]
         }
     ],
@@ -83,6 +82,39 @@
             "dimensions": "img/sofa/dimensions/uglovaya sekciya_s0422_1.png",
             "box": "img/6x_divan.png",
             "additional": [
+                "https://cdn.utfc.ru/iblock/4d4/4d41990eb99704cb4917b701ae204ad5/3a325688235932695c2d5ab0314af8c2.png",
+                "https://cdn.utfc.ru/uf/124/12488cc5e7825b6c33ec205fee2cf98d.jpg",
+                "https://cdn.utfc.ru/uf/79d/79de729e01a00f3c79268a1bfba110da.jpg",
+                "https://cdn.utfc.ru/uf/aef/aeffce3be46512c866610e3d5d7b8d82.jpg",
+                "https://cdn.utfc.ru/uf/017/0170d0f775c6624be53668116b9d9805.jpg",
+                "https://cdn.utfc.ru/uf/7f6/7f622a8a3c6d109774c96a627c14ece3.jpg",
+                "https://cdn.utfc.ru/iblock/a50/a5066eeeefed592d12d048b32c0b05bf/b7d3e72254277a558e68ddbd04d14580.png",
+                "https://utfc.ru/local/templates/utfc/img/sites/utfc/logo_store_up_2x.png",
+                "https://cdn.utfc.ru/iblock/959/959dd4bf748fc6175817aec58673daf9/da8cb3bce3fcf393969db44d9eb766b8.png",
+                "https://cdn.utfc.ru/iblock/bbe/bbeb97dfc23603391a531a30358f5e5f/c3d3f6872821c78ceac4180f6a3348ce.png",
+                "https://cdn.utfc.ru/iblock/ac0/ac0e84011c0d94d6154ed1a7e7f7b27a/ff1f0428476d7109861a09aba0218893.png",
+                "https://cdn.utfc.ru/iblock/e49/e49ef734279064b5b9be4cafd2926b1d/e5b8b54948ab237d14fbd1f59e1ba258.png",
+                "https://cdn.utfc.ru/uf/8d0/8d0fc428274bc3dd435ab3736b873e89.jpg",
+                "https://utfc.ru/local/templates/utfc/img/icon-4.png",
+                "https://cdn.utfc.ru/uf/a56/a569ed7da653191844645055717515c7.jpg",
+                "https://cdn.utfc.ru/iblock/8d3/8d31b60b20ffe90cde4afc899b0e5435/8215478dea0831dd6a8458e67fac2220.png",
+                "https://cdn.utfc.ru/iblock/74f/74f07524d685d32350d8c41c7f5eeb74/ab3fe8f6a2b101c943e7b272f17abc1d.png",
+                "https://utfc.ru/local/templates/utfc/img/palette.png",
+                "https://cdn.utfc.ru/uf/ba2/ba26cad27d0d08152e55229efdd0ed9b.jpg",
+                "https://cdn.utfc.ru/iblock/ee7/ee7694daead2c5e4f602901721cad203/c61ece15589785cd0f48f1c2734249a0.png",
+                "https://cdn.utfc.ru/uf/df0/df06c7f63b82e1fd4408a31594276efc.jpg",
+                "https://utfc.ru/local/templates/utfc/img/icon-1.png",
+                "https://cdn.utfc.ru/uf/10d/10d0587341e6b54c71f71cc811115d9c.jpg",
+                "https://cdn.utfc.ru/uf/42e/42e6c4481d6e1825f4a2de223be6e640.jpg",
+                "https://utfc.ru/local/templates/utfc/img/sites/utfc/logo_down_2.png",
+                "https://utfc.ru/local/templates/utfc/img/icon-2.png",
+                "https://cdn.utfc.ru/uf/62d/62dd1d33f42c2451bee65a671a093e3c/1c923426f06500f725c7b6ae5aaee5ba.png",
+                "https://cdn.utfc.ru/uf/f1b/f1b389f0a925393f619c55dd840941ea.jpg",
+                "https://cdn.utfc.ru/uf/1d4/1d4602fd80132442365aa96095e71e91.jpg",
+                "https://cdn.utfc.ru/uf/791/791b522e509c64b45e53cb02e39f010e.jpg",
+                "https://utfc.ru/local/templates/.default/components/utfc/catalog.element/.default/images/no_photo.png",
+                "https://cdn.utfc.ru/iblock/d67/d670809251b5fedb541a929dcc3d3678/528dd55bd355cf6185e3a350a3bfb56b.png",
+                "https://cdn.utfc.ru/iblock/47e/47eb1ee848f684dd6758b1bba41b6215/78a008f03369a34947799fdf51b56d54.png"
             ]
         }
     ],
@@ -201,5 +233,39 @@
             },
             "volume": "0"
         }
-    ]
+    ],
+    "lost": [
+        {
+            "clean": false,
+            "limit": false,
+            "del": true
+        }
+    ],
+    "title": "Модульный диван UTFC угловой GR производства компании UTFC",
+    "base_name": "Модульный диван UTFC угловой GR",
+    "article_number": "ПУ-00044662",
+    "full_describe": "Модульный диван с угловой секцией - современное и гибкое решение для вашего интерьера, позволяющее легко менять конфигурацию под любые задачи. Основание дивана выполнено на прочных металлических опорах, обеспечивающих надежность и устойчивость конструкции. Обивка из экокожи Santorini доступна в широкой палитре цветов: она приятна на ощупь, практична в уходе, идеально вписывается в современные и классические пространства.Благодаря своей износостойкости, лаконичному дизайну и возможности адаптировать форму, этот диван станет отличным выбором для офиса или зоны ожидания, где важны сочетание комфорта, презентабельного внешнего вида и долговечности в условиях интенсивной эксплуатации.",
+    "Link_arm": "https://utfc.ru/catalog/divany/divan_utfc_ugl_grey/?offers=13695",
+    "minpromtorg": "Минпромторг",
+    "madeinrf": "Сделано РФ",
+    "Основание": "Металлические опоры модульного дивана, защитно-декоративное порошковое покрытие серого цвета (GR)",
+    "Подлокотники": "",
+    "Газлифт": "",
+    "Механизм": "",
+    "Особенности": "",
+    "Ролики": "",
+    "sizes": {
+        "Ширина:": "650",
+        "Высота:": "710",
+        "Глубина:": "650",
+        "Нагрузка:": "200",
+        "Каркас:": "Монолитный",
+        "Вес брутто:": "21,9",
+        "Объём:": "0,32"
+    },
+    "finish_type": "-",
+    "color": "Экокожа S-0432 (оранжевый)",
+    "finish_type_seat": "",
+    "color_seat": "",
+    "variant_name": "Модульный диван UTFC угловой GR (-, Экокожа S-0432 (оранжевый),, )"
 }
