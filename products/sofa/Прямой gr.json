@@ -1,16 +1,16 @@
 {
     "namefile": [
-        "Угловой"
+        "Прямой gr"
     ],
     "name_all": [
         "Прямой",
         "Угловой"
     ],
     "name": [
-        "Угловой"
+        "Прямой"
     ],
     "unique_name": [
-        "Угловой"
+        "Прямой GR"
     ],
     "vid": [
         "секционно-модульный диван"
@@ -58,14 +58,14 @@
                     "height": 2030
                 },
                 "box_size": "1200х800х2030",
-                "transportation": "секционно-модульного дивана<br><br>\n<strong>В разборе:</strong><br>\nметаллический каркас секции: поддон - 24 шт. <strong>1200х900х2190</strong><br><br>\nмягкий элемент секции: поддон - 12 шт. <strong>1200х870х2040</strong><br>1 шт.: нетто - 19,4 кг., брутто - 21,3 кг., объем - 0,28 м<sup>3</sup><br><br>\n<strong>В сборе:</strong><br>\n поддон - 6 шт. "
+                "transportation": "секционно-модульного дивана<br><br>\n<strong>В разборе:</strong><br>\nметаллический каркас секции: поддон - 24 шт. <strong>1200х900х2190</strong><br><br>\nмягкий элемент секции: поддон - 12 шт. <strong>1200х800х2040</strong><br>1 шт.: нетто - 16,5 кг., брутто - 18,32 кг., объем - 0,26 м<sup>3</sup><br><br>\n<strong>В сборе:</strong><br>\n поддон - 6 шт. "
             }
         }
     ],
     "dimensions": [
         {
-            "brutto": "21,9",
-            "netto": "19,4",
+            "brutto": "19,5",
+            "netto": "16,5",
             "volume": "0,32"
         }
     ],
@@ -78,15 +78,16 @@
     ],
     "images": [
         {
-            "vid_main": "img/sofa/uglovaya sekciya_s0422_1.png",
-            "chair_view": "img/sofa/uglovaya sekciya_s0422_2.png",
-            "dimensions": "img/sofa/dimensions/uglovaya sekciya_s0422_1.png",
+            "vid_main": "img/sofa/pryamaya sekciya_s0422_01.png",
+            "chair_view": "img/sofa/pryamaya sekciya_s0422_02.png",
+            "dimensions": "img/sofa/dimensions/pryamaya sekciya_s0422_01.png",
             "box": "img/6x_divan.png",
             "additional": [
+               
             ]
         }
     ],
-    "dimensions_details": [
+     "dimensions_details": [
         {
             "chair_height": {
                 "min": "",
@@ -126,7 +127,7 @@
             },
             "seat_width": {
                 "min": "",
-                "max": "500"
+                "max": "650"
             },
             "diameter_cross": {
                 "min": "",

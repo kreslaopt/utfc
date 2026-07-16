@@ -1195,7 +1195,12 @@ const knownProductsAllFiles = [
     "is_archive": false
   },
   {
-    "name": "Прямой",
+    "name": "Прямой bl",
+    "category": "sofa",
+    "is_archive": false
+  },
+  {
+    "name": "Прямой gr",
     "category": "sofa",
     "is_archive": false
   },
@@ -1480,7 +1485,12 @@ const knownProductsAllFiles = [
     "is_archive": false
   },
   {
-    "name": "Угловой",
+    "name": "Угловой bl",
+    "category": "sofa",
+    "is_archive": false
+  },
+  {
+    "name": "Угловой gr",
     "category": "sofa",
     "is_archive": false
   },
