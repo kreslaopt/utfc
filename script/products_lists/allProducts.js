@@ -995,12 +995,12 @@ const knownProductsAllFiles = [
     "is_archive": true
   },
   {
-    "name": "Неон",
+    "name": "Неон bl",
     "category": "chair_visitors",
     "is_archive": false
   },
   {
-    "name": "Неон bl",
+    "name": "Неон ch",
     "category": "chair_visitors",
     "is_archive": false
   },
