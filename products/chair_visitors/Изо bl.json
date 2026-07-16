@@ -3897,11 +3897,11 @@
     "package_sizes": {
         "Материал упаковки:": "Стрейч-пленка (каркас)"
     },
-    "finish_type": "Экокожа Santorini",
-    "color": "Ткань С15 (черно-синий)",
+    "finish_type": "-",
+    "color": "Ткань С73 (серый)",
     "finish_type_seat": "",
     "color_seat": "",
-    "variant_name": "Стул ИЗО BL (Экокожа Santorini, Ткань С15 (черно-синий),, )",
+    "variant_name": "Стул ИЗО BL (-, Ткань С73 (серый),, )",
     "additional_info": {
         "package_dimensions": {},
         "volume": "0"
