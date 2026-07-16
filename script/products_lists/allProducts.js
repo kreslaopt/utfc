@@ -250,22 +250,22 @@ const knownProductsAllFiles = [
     "is_archive": false
   },
   {
-    "name": "Венус",
-    "category": "chair_cafe_and_bar",
-    "is_archive": false
-  },
-  {
-    "name": "Венус м",
-    "category": "chair_cafe_and_bar",
-    "is_archive": false
-  },
-  {
     "name": "Венус м bl",
     "category": "chair_cafe_and_bar",
     "is_archive": false
   },
   {
+    "name": "Венус м ch",
+    "category": "chair_cafe_and_bar",
+    "is_archive": false
+  },
+  {
     "name": "Венус м gr",
+    "category": "chair_cafe_and_bar",
+    "is_archive": false
+  },
+  {
+    "name": "Венус bl",
     "category": "chair_cafe_and_bar",
     "is_archive": false
   },
@@ -320,7 +320,7 @@ const knownProductsAllFiles = [
     "is_archive": false
   },
   {
-    "name": "Версаль",
+    "name": "Версаль bl",
     "category": "chair_cafe_and_bar",
     "is_archive": false
   },
@@ -455,11 +455,6 @@ const knownProductsAllFiles = [
     "is_archive": false
   },
   {
-    "name": "Изо",
-    "category": "chair_visitors",
-    "is_archive": false
-  },
-  {
     "name": "Изо +",
     "category": "chair_visitors",
     "is_archive": false
@@ -486,6 +481,11 @@ const knownProductsAllFiles = [
   },
   {
     "name": "Изо bl",
+    "category": "chair_visitors",
+    "is_archive": false
+  },
+  {
+    "name": "Изо ch",
     "category": "chair_visitors",
     "is_archive": false
   },
@@ -1370,11 +1370,6 @@ const knownProductsAllFiles = [
     "is_archive": false
   },
   {
-    "name": "София",
-    "category": "chair_visitors",
-    "is_archive": false
-  },
-  {
     "name": "София со столиком",
     "category": "chair_visitors",
     "is_archive": false
@@ -1386,6 +1381,11 @@ const knownProductsAllFiles = [
   },
   {
     "name": "София bl",
+    "category": "chair_visitors",
+    "is_archive": false
+  },
+  {
+    "name": "София ch",
     "category": "chair_visitors",
     "is_archive": false
   },
@@ -1545,12 +1545,12 @@ const knownProductsAllFiles = [
     "is_archive": true
   },
   {
-    "name": "Форум",
+    "name": "Форум bl",
     "category": "chair_visitors",
     "is_archive": false
   },
   {
-    "name": "Форум bl",
+    "name": "Форум ch",
     "category": "chair_visitors",
     "is_archive": false
   },
