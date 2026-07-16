@@ -240,12 +240,12 @@ const knownProductsAllFiles = [
     "is_archive": false
   },
   {
-    "name": "Ванесса",
+    "name": "Ванесса bl",
     "category": "chair_cafe_and_bar",
     "is_archive": false
   },
   {
-    "name": "Ванесса bl",
+    "name": "Ванесса ch",
     "category": "chair_cafe_and_bar",
     "is_archive": false
   },
@@ -470,12 +470,12 @@ const knownProductsAllFiles = [
     "is_archive": false
   },
   {
-    "name": "Изо со столиком",
+    "name": "Изо со столиком bl",
     "category": "chair_visitors",
     "is_archive": false
   },
   {
-    "name": "Изо со столиком bl",
+    "name": "Изо со столиком ch",
     "category": "chair_visitors",
     "is_archive": false
   },
@@ -865,7 +865,7 @@ const knownProductsAllFiles = [
     "is_archive": false
   },
   {
-    "name": "Марко",
+    "name": "Марко ch",
     "category": "chair_cafe_and_bar",
     "is_archive": false
   },
@@ -1010,7 +1010,7 @@ const knownProductsAllFiles = [
     "is_archive": false
   },
   {
-    "name": "Нерон",
+    "name": "Нерон ch",
     "category": "chair_cafe_and_bar",
     "is_archive": false
   },
@@ -1230,11 +1230,6 @@ const knownProductsAllFiles = [
     "is_archive": true
   },
   {
-    "name": "Самба",
-    "category": "chair_visitors",
-    "is_archive": false
-  },
-  {
     "name": "Самба люкс gtp пиастра",
     "category": "armchair_personal",
     "is_archive": false
@@ -1255,11 +1250,6 @@ const knownProductsAllFiles = [
     "is_archive": false
   },
   {
-    "name": "Самба со столиком",
-    "category": "chair_visitors",
-    "is_archive": false
-  },
-  {
     "name": "Самба со столиком bl",
     "category": "chair_visitors",
     "is_archive": false
@@ -1270,7 +1260,17 @@ const knownProductsAllFiles = [
     "is_archive": false
   },
   {
+    "name": "Самба со столиком soft ch",
+    "category": "chair_visitors",
+    "is_archive": false
+  },
+  {
     "name": "Самба bl",
+    "category": "chair_visitors",
+    "is_archive": false
+  },
+  {
+    "name": "Самба ch",
     "category": "chair_visitors",
     "is_archive": false
   },
@@ -1370,12 +1370,12 @@ const knownProductsAllFiles = [
     "is_archive": false
   },
   {
-    "name": "София со столиком",
+    "name": "София со столиком bl",
     "category": "chair_visitors",
     "is_archive": false
   },
   {
-    "name": "София со столиком bl",
+    "name": "София со столиком ch",
     "category": "chair_visitors",
     "is_archive": false
   },
@@ -1445,11 +1445,6 @@ const knownProductsAllFiles = [
     "is_archive": false
   },
   {
-    "name": "Табурет кр",
-    "category": "chair_cafe_and_bar",
-    "is_archive": false
-  },
-  {
     "name": "Табурет кр bl",
     "category": "chair_cafe_and_bar",
     "is_archive": false
@@ -1460,7 +1455,7 @@ const knownProductsAllFiles = [
     "is_archive": false
   },
   {
-    "name": "Табурет пр",
+    "name": "Табурет кр gr",
     "category": "chair_cafe_and_bar",
     "is_archive": false
   },
@@ -1471,6 +1466,11 @@ const knownProductsAllFiles = [
   },
   {
     "name": "Табурет пр ch",
+    "category": "chair_cafe_and_bar",
+    "is_archive": false
+  },
+  {
+    "name": "Табурет пр gr",
     "category": "chair_cafe_and_bar",
     "is_archive": false
   },

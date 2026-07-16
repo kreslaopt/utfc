@@ -626,8 +626,8 @@
                             <tr>
                                 <!-- <th>Название</th> -->
                                <th contenteditable="true">Артикул</th>
-        <th contenteditable="true">Тип отделки</th>
-        <th contenteditable="true">Тип отделки сиденья</th>
+        <!-- <th contenteditable="true">Тип отделки</th>
+        <th contenteditable="true">Тип отделки сиденья</th> -->
         <th contenteditable="true">Подлокотники</th>
         <th contenteditable="true">Каркас</th>
         <th contenteditable="true">Нагрузка (кг)</th>
@@ -660,8 +660,8 @@
                                 <th>Название</th>
                                 <!-- <th>Описание</th> -->
                                 <th>Артикул</th>
-                                <th>Тип отделки</th>
-                                <th>Тип отделки сиденья</th>
+                                <!-- <th>Тип отделки</th>
+                                <th>Тип отделки сиденья</th> -->
                                 <th>Подлокотники</th>
                                 <th>Каркас</th>
                                 <th>Нагрузка (кг)</th>
@@ -3703,7 +3703,7 @@ parents.forEach(parent => {
                 // Столбец с описанием
                 const describeCell = document.createElement('td');
                 describeCell.textContent = parent.full_describe || '—';
-                describeCell.setAttribute('colspan', '14');
+                describeCell.setAttribute('colspan', '12');
                 parentRow.appendChild(describeCell);
 
                 const parentQRCell = document.createElement('td');
@@ -3746,14 +3746,15 @@ parents.forEach(parent => {
                     // const finishtypeCell = document.createElement('td');
                     // finishtypeCell.textContent = parent.finish_type || '—';
                     // childRow.appendChild(finishtypeCell);
-                    const finishtypeCell = document.createElement('td');
-finishtypeCell.textContent = `${child.IP_PROP38 || ''}${child.IP_PROP38 && child.IP_PROP61 ? ', ' : ''}${child.IP_PROP61 || ''}` || '—';
-childRow.appendChild(finishtypeCell);
 
-                    // Тип оделки сиденья
-                    const finishtypeseatCell = document.createElement('td');
-                    finishtypeseatCell.textContent = child.IP_PROP40 || child.IP_PROP38;
-                    childRow.appendChild(finishtypeseatCell);
+//                     const finishtypeCell = document.createElement('td');
+// finishtypeCell.textContent = `${child.IP_PROP38 || ''}${child.IP_PROP38 && child.IP_PROP61 ? ', ' : ''}${child.IP_PROP61 || ''}` || '—';
+// childRow.appendChild(finishtypeCell);
+
+//                     // Тип оделки сиденья
+//                     const finishtypeseatCell = document.createElement('td');
+//                     finishtypeseatCell.textContent = child.IP_PROP40 || child.IP_PROP38;
+//                     childRow.appendChild(finishtypeseatCell);
 
                     // Подлокотники
                     const armrestCell = document.createElement('td');
@@ -4151,13 +4152,13 @@ if (!productName) {
                 describeCell.textContent = data.full_describe || '—';
                 describeCell.contentEditable = true;
                 describeCell.onblur = () => saveEditableField(name, 'full_describe', describeCell.textContent);
-                describeCell.setAttribute('colspan', '16');
+                describeCell.setAttribute('colspan', '14');
                 nameRow.appendChild(describeCell);
 
                 // QR-код
                 const qrCell = document.createElement('td');
                 qrCell.className = 'qr-cell';
-                const qrId = `qr-${Math.random().toString(36).substr(2, 9)}`;
+                const qrId = `qr-${Math.random().toString(36).substr(2, 7)}`;
                 qrCell.id = qrId;
                 nameRow.appendChild(qrCell);
 
@@ -4170,24 +4171,24 @@ if (!productName) {
                 articleCell.onblur = () => saveEditableField(name, 'article_number', articleCell.textContent);
                 row.appendChild(articleCell);
 
-                // Тип отделки
-                const finishTypeCell = document.createElement('td');
-                finishTypeCell.textContent = data.finish_type || '—';
-                finishTypeCell.contentEditable = true;
-                finishTypeCell.onblur = () => saveEditableField(name, 'finish_type', finishTypeCell.textContent);
-                row.appendChild(finishTypeCell);                
+//                 // Тип отделки
+//                 const finishTypeCell = document.createElement('td');
+//                 finishTypeCell.textContent = data.finish_type || '—';
+//                 finishTypeCell.contentEditable = true;
+//                 finishTypeCell.onblur = () => saveEditableField(name, 'finish_type', finishTypeCell.textContent);
+//                 row.appendChild(finishTypeCell);                
     
 
-                // Тип отделки сиденья
-                const finishTypeSeatCell = document.createElement('td');
-                finishTypeSeatCell.setAttribute('contenteditable', 'true'); // finishTypeSeatCell.contentEditable = true;
-                const value = (typeof data.finish_type_seat === 'string' && data.finish_type_seat.trim() !== '') 
-  ? data.finish_type_seat 
-  : (typeof data.finish_type === 'string' && data.finish_type.trim() !== '') 
-    ? data.finish_type 
-    : '—';
-                finishTypeSeatCell.textContent = value;
-                row.appendChild(finishTypeSeatCell);
+//                 // Тип отделки сиденья
+//                 const finishTypeSeatCell = document.createElement('td');
+//                 finishTypeSeatCell.setAttribute('contenteditable', 'true'); // finishTypeSeatCell.contentEditable = true;
+//                 const value = (typeof data.finish_type_seat === 'string' && data.finish_type_seat.trim() !== '') 
+//   ? data.finish_type_seat 
+//   : (typeof data.finish_type === 'string' && data.finish_type.trim() !== '') 
+//     ? data.finish_type 
+//     : '—';
+//                 finishTypeSeatCell.textContent = value;
+//                 row.appendChild(finishTypeSeatCell);
 
                 // Подлокотники
                 const armrestCell = document.createElement('td');
@@ -4544,8 +4545,8 @@ loadEditableHeaders();
                 images: ['', '', ''],
                 article_number: prompt("Введите артикул:") || '—',
                 title: prompt("Введите описание:") || '—',
-                finish_type: prompt("Введите тип отделки:") || '—',
-                finish_type_seat: prompt("Введите тип отделки сиденья:") || '—',
+                // finish_type: prompt("Введите тип отделки:") || '—',
+                // finish_type_seat: prompt("Введите тип отделки сиденья:") || '—',
                 Подлокотники: prompt("Введите тип подлокотников:") || '—',
                 skeleton: prompt("Введите тип каркаса:") || '—',
                 max_load: prompt("Введите максимальную нагрузку (кг):") || '—',

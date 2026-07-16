@@ -1049,12 +1049,12 @@ const finishTypeSeatValue = (typeof product.finish_type_seat === 'string' && pro
   : (typeof product.finish_type === 'string' && product.finish_type.trim() !== '') 
     ? product.finish_type 
     : '—';
-    console.log('finishTypeSeatValue:', finishTypeSeatValue);
+    // console.log('finishTypeSeatValue:', finishTypeSeatValue);
       const fields = [
         { label: 'Артикул', value: product.article_number },
         { label: 'Описание', value: product.full_describe },
-        { label: 'Тип отделки', value: product.finish_type},
-        { label: 'Тип отделки сиденья', value: finishTypeSeatValue},
+        // { label: 'Тип отделки', value: product.finish_type},
+        // { label: 'Тип отделки сиденья', value: finishTypeSeatValue},
         { label: 'Подлокотники', value: product.Подлокотники },
         { label: 'Каркас', value: product.skeleton },
         { label: 'Нагрузка (рекомендуемая)', value: product.recommended_load ? `${product.recommended_load} кг` : null },
