@@ -2053,7 +2053,7 @@ function calculateMinMaxForAllDepth(products) {
                      let armrestMatch = true;
 
                      if (armrestFilters.length > 0) {
-    let components = product.Подлокотники;
+    let components = product.Подлокотники || product.namefile;
 
     // Оборачиваем строку в массив, если это строка
     if (typeof components === 'string') {
