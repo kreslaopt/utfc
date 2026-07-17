@@ -2047,23 +2047,48 @@ function calculateMinMaxForAllDepth(products) {
                     );
                 });
             }
-
+const sambasExcludedNames = [
+'Самба люкс GTP пиастра',
+'Самба люкс GTP пиастра столик',
+'Самба Люкс GTP TG',
+'Самба люкс GTP TG столик',
+'Самба со столиком BL',
+'Самба со столиком Soft BL',
+'Самба со столиком Soft CH',
+'Самба BL',
+'Самба CH',
+'Самба GR',
+'Самба GTP пиастра',
+'Самба GTP TG',
+'Самба soft BL',
+'Самба soft CH',
+'Самба soft GR',
+];
                 if (armrestFilters.length > 0 || mechanismFilters.length > 0 || osnovanieFilters.length > 0 || karkasFilters.length > 0 ||  armrestTypeFilters.length > 0 ||  armrestRegulFilters.length > 0 || podgolovnikFilters.length > 0 || stolikFilters.length > 0 || otherFilters.length > 0 || skladnoyFilters.length > 0 || finishFilters.length > 0 || loadFilters.length > 0 || recomendloadFilters.length > 0 || diameterFilters.length > 0) {
                  filtered = filtered.filter(product => {
                      const uniqueName = (Array.isArray(product.unique_name) ? product.unique_name[0] : product.unique_name).toLowerCase();
+                    //  const uniqueNameStr = (Array.isArray(product.unique_name) ? product.unique_name[0] : product.unique_name);
+
                      let armrestMatch = true;
 
             if (armrestFilters.length > 0) {
         let components;
         const isIronPlasticFilterSelected = armrestFilters.some(f => f.toLowerCase().includes('айрон-пластик'));
-        const isSambaFilterSelected = armrestFilters.some(f => f.toLowerCase().includes('самба'));
+        const isSambaFilterSelected = armrestFilters.some(f => f.includes('самба'));
+        // const isExcluded = sambasExcludedNames.some(name => uniqueNameStr.includes(name));
+const isExcluded = ('' + product.unique_name).toLowerCase().startsWith('самба');
+      
 
-if (isSambaFilterSelected) {
-        // Если есть, ищем только в Подлокотники
-        components = product.Подлокотники || [];
+if (isSambaFilterSelected && !isExcluded) {    
+    if (product.Подлокотники === "") {
+        components = product.construction_and_materials?.[0]?.components || [];
     } else {
-        // Проверяем, есть ли фильтр "Айрон-пластик"
-
+        components = product.Подлокотники || [];
+    }
+    //                     console.log('Продукт выбран: ', product);
+    // console.log('Компоненты продукта: ', components);
+    // console.log('Название продукта: ', uniqueNameStr);
+    } else {
         if (isIronPlasticFilterSelected) {
             // Если есть, берем компоненты из construction_and_materials
             components = product.construction_and_materials?.[0]?.components || [];
@@ -2071,11 +2096,11 @@ if (isSambaFilterSelected) {
             // Иначе используем существующие компоненты
             components = product.Подлокотники || product.namefile || product.unique_name || [];
         }
+        
     }
 
     let nameString = '';
 
-    // Получить название продукта как строку для поиска
     if (typeof product.namefile === 'string') {
         nameString = product.namefile.toLowerCase();
     } else if (typeof product.unique_name === 'string') {
@@ -2089,7 +2114,6 @@ if (isSambaFilterSelected) {
         components = [components];
     }
 
-    // Проверяем, что components — массив
     if (Array.isArray(components)) {
         armrestMatch = armrestFilters.every((filter) => {
             const patterns = filter.split('|').map(p => p.toLowerCase().trim());
