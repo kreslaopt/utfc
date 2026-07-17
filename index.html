@@ -79,7 +79,7 @@
         </h3>
         <div class="filter-content" id="armrest-filter-content">
             <div class="checkbox-group">
-                <label><input type="checkbox" class="armrest-filter" value="б_п|бп|Б_п"> Без подлокотников</label>
+                <label><input type="checkbox" class="armrest-filter" value="б_п|бп|Б_п|Без подлокотников"> Без подлокотников</label>
                 <label><input type="checkbox" class="armrest-filter" value="рондо"> Рондо</label>
                 <label><input type="checkbox" class="armrest-filter" value="гольф"> Гольф</label>
                 <label><input type="checkbox" class="armrest-filter" value="нептун"> Нептун</label>
@@ -2095,6 +2095,7 @@ const filtersMap = {
   "soft": armrestFilters.some(f => f.includes("soft")),
   "soft2": armrestFilters.some(f => f.includes("soft2")),
   "3-D хромированные": armrestFilters.some(f => f.includes("3-D хромированные")),
+  "Без подлокотников": armrestFilters.some(f => f.includes("Без подлокотников")),
 };
 
 const productName = Array.isArray(product.unique_name) ? product.unique_name[0] : product.unique_name;
