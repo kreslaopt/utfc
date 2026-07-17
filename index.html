@@ -2048,112 +2048,123 @@ function calculateMinMaxForAllDepth(products) {
                 });
             }
 
-//                 if (armrestFilters.length > 0 || mechanismFilters.length > 0 || osnovanieFilters.length > 0 || karkasFilters.length > 0 ||  armrestTypeFilters.length > 0 ||  armrestRegulFilters.length > 0 || podgolovnikFilters.length > 0 || stolikFilters.length > 0 || otherFilters.length > 0 || skladnoyFilters.length > 0 || finishFilters.length > 0 || loadFilters.length > 0 || recomendloadFilters.length > 0 || diameterFilters.length > 0) {
-//                  filtered = filtered.filter(product => {
-//                      const uniqueName = (Array.isArray(product.unique_name) ? product.unique_name[0] : product.unique_name).toLowerCase();
+                if (armrestFilters.length > 0 || mechanismFilters.length > 0 || osnovanieFilters.length > 0 || karkasFilters.length > 0 ||  armrestTypeFilters.length > 0 ||  armrestRegulFilters.length > 0 || podgolovnikFilters.length > 0 || stolikFilters.length > 0 || otherFilters.length > 0 || skladnoyFilters.length > 0 || finishFilters.length > 0 || loadFilters.length > 0 || recomendloadFilters.length > 0 || diameterFilters.length > 0) {
+                 filtered = filtered.filter(product => {
+                     const uniqueName = (Array.isArray(product.unique_name) ? product.unique_name[0] : product.unique_name).toLowerCase();
 
-//                      let armrestMatch = true;
+                     let armrestMatch = true;
 
-//                      if (armrestFilters.length > 0) {
-//         let components = product.Подлокотники || product.namefile || product.unique_name || [];
+            if (armrestFilters.length > 0) {
+    let components = product.Подлокотники || product.namefile || product.unique_name || [];
+    let nameString = '';
 
+    // Получить название продукта как строку для поиска
+    if (typeof product.namefile === 'string') {
+        nameString = product.namefile.toLowerCase();
+    } else if (typeof product.unique_name === 'string') {
+        nameString = product.unique_name.toLowerCase();
+    } else if (Array.isArray(product.unique_name)) {
+        nameString = product.unique_name.join(' ').toLowerCase();
+    }
 
-//     // Оборачиваем строку в массив, если это строка
-//     if (typeof components === 'string') {
-//         components = [components];
-//     }
+    // Оборачиваем строку в массив, если это строка
+    if (typeof components === 'string') {
+        components = [components];
+    }
 
-//     // Проверяем, что components — массив
-//     if (Array.isArray(components)) {
-//         armrestMatch = armrestFilters.every((filter) => {
-//             const patterns = filter.split('|').map(p => p.toLowerCase().trim());
-//             return patterns.some(pattern => {
-//                 return components.some(component => {
-//                     if (typeof component === 'string') {
-//                         return component.toLowerCase().includes(pattern);
-//                     }
-//                     if (typeof component === 'object' && component !== null) {
-//                         return Object.values(component).some(value =>
-//                             typeof value === 'string' && value.toLowerCase().includes(pattern)
-//                         );
-//                     }
-//                     return false;
-//                 });
-//             });
-//         });
-//     } else {
-//         // Если components не массив после обработки, присваиваем false
-//         armrestMatch = false;
-// //         console.log('Тип:', typeof product.Подлокотники);
-// // console.log('Значение:', product.Подлокотники);
-//     }
-// }
+    // Проверяем, что components — массив
+    if (Array.isArray(components)) {
+        armrestMatch = armrestFilters.every((filter) => {
+            const patterns = filter.split('|').map(p => p.toLowerCase().trim());
+            return patterns.some(pattern => {
+                // Проверка в компонентах
+                const inComponents = components.some(component => {
+                    if (typeof component === 'string') {
+                        return component.toLowerCase().includes(pattern);
+                    }
+                    if (typeof component === 'object' && component !== null) {
+                        return Object.values(component).some(value =>
+                            typeof value === 'string' && value.toLowerCase().includes(pattern)
+                        );
+                    }
+                    return false;
+                });
+                // Проверка в названии
+                const inName = nameString.includes(pattern);
+                return inComponents || inName;
+            });
+        });
+    } else {
+        // Если components не массив после обработки, присваиваем false
+        armrestMatch = false;
+    }
+}
             // Получаем выбранные фильтры по подлокотникам
-            const selectedArmrestFilters = Array.from(document.querySelectorAll('.armrest-filter:checked'))
-                .map(input => input.value);
+//             const selectedArmrestFilters = Array.from(document.querySelectorAll('.armrest-filter:checked'))
+//                 .map(input => input.value);
 
 
-            if (armrestFilters.length > 0 || mechanismFilters.length > 0 || osnovanieFilters.length > 0 || karkasFilters.length > 0 ||  armrestTypeFilters.length > 0 ||  armrestRegulFilters.length > 0 || podgolovnikFilters.length > 0 || stolikFilters.length > 0 || otherFilters.length > 0 || skladnoyFilters.length > 0 || finishFilters.length > 0 || loadFilters.length > 0 || recomendloadFilters.length > 0 || diameterFilters.length > 0) {
-                filtered = filtered.filter(product => {
-                    const uniqueName = (Array.isArray(product.unique_name) ? product.unique_name[0] : product.unique_name).toLowerCase();
+//             if (armrestFilters.length > 0 || mechanismFilters.length > 0 || osnovanieFilters.length > 0 || karkasFilters.length > 0 ||  armrestTypeFilters.length > 0 ||  armrestRegulFilters.length > 0 || podgolovnikFilters.length > 0 || stolikFilters.length > 0 || otherFilters.length > 0 || skladnoyFilters.length > 0 || finishFilters.length > 0 || loadFilters.length > 0 || recomendloadFilters.length > 0 || diameterFilters.length > 0) {
+//                 filtered = filtered.filter(product => {
+//                     const uniqueName = (Array.isArray(product.unique_name) ? product.unique_name[0] : product.unique_name).toLowerCase();
 
-                    let armrestMatch = true;
-                    if (armrestFilters.length > 0) {
-                        const firstWord = uniqueName.split(/\s+/)[0].toLowerCase();
-                        const isFirstWordInFilter = armrestFilters.some(filter => {
-                            const patterns = filter.split('|');
-                            return patterns.some(pattern => firstWord === pattern.toLowerCase());
-                        });
-                        if (isFirstWordInFilter) {
-                            armrestMatch = false;
-                              // Если не нашли по имени — ищем в компонентах
-                                } else {
-                            armrestMatch = armrestFilters.every(filter => {
-                                const patterns = filter.split('|');
-                                const cleanedUniqueName = uniqueName.replace(/\s*([сc]н|ch)[-\s]?\d*\s*/gi, ' ').trim();
-                                return patterns.some(pattern => {
-                                    const lowerPattern = pattern.toLowerCase();
-                                    const regex = new RegExp(`(^|\\s)(${lowerPattern})(\\s|$|-)`, 'i');
-                                    return regex.test(cleanedUniqueName);
-                                });
-                            });
-                        }
-                    }                 
+//                     let armrestMatch = true;
+//                     if (armrestFilters.length > 0) {
+//                         const firstWord = uniqueName.split(/\s+/)[0].toLowerCase();
+//                         const isFirstWordInFilter = armrestFilters.some(filter => {
+//                             const patterns = filter.split('|');
+//                             return patterns.some(pattern => firstWord === pattern.toLowerCase());
+//                         });
+//                         if (isFirstWordInFilter) {
+//                             armrestMatch = false;
+//                               // Если не нашли по имени — ищем в компонентах
+//                                 } else {
+//                             armrestMatch = armrestFilters.every(filter => {
+//                                 const patterns = filter.split('|');
+//                                 const cleanedUniqueName = uniqueName.replace(/\s*([сc]н|ch)[-\s]?\d*\s*/gi, ' ').trim();
+//                                 return patterns.some(pattern => {
+//                                     const lowerPattern = pattern.toLowerCase();
+//                                     const regex = new RegExp(`(^|\\s)(${lowerPattern})(\\s|$|-)`, 'i');
+//                                     return regex.test(cleanedUniqueName);
+//                                 });
+//                             });
+//                         }
+//                     }                 
                     
 
-// Создаем объект с условиями и строками для поиска
-const filtersMap = {
-  "<strong>Подлокотники</strong> пластиковые": armrestFilters.some(f => f.includes("пластиковые")),
-  "<strong>Подлокотники</strong> регулируемые": armrestFilters.some(f => f.includes("регулируемые")),
-  "<strong>Подлокотники</strong> нерегулируемые": armrestFilters.some(f => f.includes("нерегулируемые")),
-  "<strong>Подлокотники</strong> металлические": armrestFilters.some(f => f.includes("металлические")),
-  "Подлокотники алюминиевые": armrestFilters.some(f => f.includes("алюминиевые")),
-  "деревянные": armrestFilters.some(f => f.includes("деревянные")),
-  "с мягкими накладками": armrestFilters.some(f => f.includes("с мягкими накладками")),
-  "Айрон-хром": armrestFilters.some(f => f.includes("Айрон-хром")),
-  "Айрон-пластик": armrestFilters.some(f => f.includes("Айрон-пластик")),
-  "айс": armrestFilters.some(f => f.includes("айс")),
-  "под хром": armrestFilters.some(f => f.includes("под хром")),
-  "металлические «ХДП»": armrestFilters.some(f => f.includes("ХДП")),
-  "soft": armrestFilters.some(f => f.includes("soft")),
-  "soft2": armrestFilters.some(f => f.includes("soft2")),
-  "3-D хромированные": armrestFilters.some(f => f.includes("3-D хромированные")),
-};
+// // Создаем объект с условиями и строками для поиска
+// const filtersMap = {
+//   "<strong>Подлокотники</strong> пластиковые": armrestFilters.some(f => f.includes("пластиковые")),
+//   "<strong>Подлокотники</strong> регулируемые": armrestFilters.some(f => f.includes("регулируемые")),
+//   "<strong>Подлокотники</strong> нерегулируемые": armrestFilters.some(f => f.includes("нерегулируемые")),
+//   "<strong>Подлокотники</strong> металлические": armrestFilters.some(f => f.includes("металлические")),
+//   "Подлокотники алюминиевые": armrestFilters.some(f => f.includes("алюминиевые")),
+//   "деревянные": armrestFilters.some(f => f.includes("деревянные")),
+//   "с мягкими накладками": armrestFilters.some(f => f.includes("с мягкими накладками")),
+//   "Айрон-хром": armrestFilters.some(f => f.includes("Айрон-хром")),
+//   "Айрон-пластик": armrestFilters.some(f => f.includes("Айрон-пластик")),
+//   "айс": armrestFilters.some(f => f.includes("айс")),
+//   "под хром": armrestFilters.some(f => f.includes("под хром")),
+//   "металлические «ХДП»": armrestFilters.some(f => f.includes("ХДП")),
+//   "soft": armrestFilters.some(f => f.includes("soft")),
+//   "soft2": armrestFilters.some(f => f.includes("soft2")),
+//   "3-D хромированные": armrestFilters.some(f => f.includes("3-D хромированные")),
+// };
 
-const productName = Array.isArray(product.unique_name) ? product.unique_name[0] : product.unique_name;
+// const productName = Array.isArray(product.unique_name) ? product.unique_name[0] : product.unique_name;
 
-// Проходим по каждому условию и ищем, если оно выполнено
-for (const [searchTerm, condition] of Object.entries(filtersMap)) {
-  if (condition) {
-    if (productName.includes('Б_п')) {
-  // Пропускаем этот продукт
-  continue; // если внутри цикла
-}
-    armrestMatch = searchInObject(product, searchTerm);
-    // Если достаточно первого совпадения, можно прервать цикл
-    // break;
-  }
-}
+// // Проходим по каждому условию и ищем, если оно выполнено
+// for (const [searchTerm, condition] of Object.entries(filtersMap)) {
+//   if (condition) {
+//     if (productName.includes('Б_п')) {
+//   // Пропускаем этот продукт
+//   continue; // если внутри цикла
+// }
+//     armrestMatch = searchInObject(product, searchTerm);
+//     // Если достаточно первого совпадения, можно прервать цикл
+//     // break;
+//   }
+// }
 
 
               let mechanismMatch = true;
