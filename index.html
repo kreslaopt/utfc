@@ -102,7 +102,7 @@
                     Алюминиевые</label>
                     <label><input type="checkbox" class="armrest-filter" value="3-D хромированные">
                     3-D хромированные</label>
-                <label><input type="checkbox" class="armrest-filter" value="Деревянные|деревянные"> Деревянные</label>
+                <label><input type="checkbox" class="armrest-filter" value="дерево|Деревянные|деревянные|из массива|Д8|дерева|орех|натуральное"> Деревянные</label>
                 <label><input type="checkbox" class="armrest-filter" value="С мягкими накладками|с мягкими накладками">
                     С мягкими накладками</label>
                       <label><input type="checkbox" class="armrest-filter" value="soft|soft2|Soft2|Soft">Soft и Soft2</label>     
@@ -2068,6 +2068,7 @@ function calculateMinMaxForAllDepth(products) {
                  filtered = filtered.filter(product => {
                      const uniqueName = (Array.isArray(product.unique_name) ? product.unique_name[0] : product.unique_name).toLowerCase();
                      const uniqueNameStr = (Array.isArray(product.unique_name) ? product.unique_name[0] : product.unique_name);
+                     const derevoNameStr = (Array.isArray(product.children) ? product.children[0] : product.children);
 
                      let armrestMatch = true;
 
@@ -2077,8 +2078,9 @@ function calculateMinMaxForAllDepth(products) {
         const isSambaFilterSelected = armrestFilters.some(f => f.includes('самба'));
         // const isExcluded = sambasExcludedNames.some(name => uniqueNameStr.includes(name));
 const isExcluded = uniqueNameStr.toLowerCase().startsWith('самба');
-      
-
+// const isDderevoNakladki = armrestFilters.some(f => 
+//   f.toLowerCase().includes('Д8') || f.toLowerCase().includes('орех') || []
+// );      
 if (isSambaFilterSelected && isExcluded) {    
     if (product.Подлокотники === "") {
         components = product.construction_and_materials?.[0]?.components || [];
@@ -2086,19 +2088,21 @@ if (isSambaFilterSelected && isExcluded) {
         components = product.Подлокотники || [];
     }
     return !isExcluded;
-    //                     console.log('Продукт выбран: ', product);
+
+    // console.log('Продукт выбран: ', product);
     // console.log('Компоненты продукта: ', components);
-    console.log('Название продукта: ', uniqueNameStr);
+    // console.log('Название продукта: ', uniqueNameStr);
+} else {
+    if (isIronPlasticFilterSelected) {
+        // Если есть, берем компоненты из construction_and_materials
+        components = product.construction_and_materials?.[0]?.components || [];
+//     }  if (isDderevoNakladki) {
+// components = product.construction_and_materials?.[0]?.components || product.children?.[0]?.IE_NAME || product.parent?.[0]?.IE_PREVIEW_TEXT || [];
     } else {
-        if (isIronPlasticFilterSelected) {
-            // Если есть, берем компоненты из construction_and_materials
-            components = product.construction_and_materials?.[0]?.components || [];
-        } else {
-            // Иначе используем существующие компоненты
-            components = product.Подлокотники || product.namefile || product.unique_name || [];
-        }
-        
+        // Иначе используем существующие компоненты
+        components =  product.Подлокотники || product.construction_and_materials?.[0]?.components || product.children?.[0]?.IE_NAME || product.parent?.[0]?.IE_PREVIEW_TEXT || product.namefile || product.unique_name || product.addition || [];
     }
+}
 
     let nameString = '';
 
@@ -2174,15 +2178,19 @@ if (isSambaFilterSelected && isExcluded) {
 //                     }                 
                     
 
-// // Создаем объект с условиями и строками для поиска
-// const filtersMap = {
+// Создаем объект с условиями и строками для поиска
+const filtersMap = {
 //   "<strong>Подлокотники</strong> пластиковые": armrestFilters.some(f => f.includes("пластиковые")),
 //   "<strong>Подлокотники</strong> регулируемые": armrestFilters.some(f => f.includes("регулируемые")),
 //   "<strong>Подлокотники</strong> нерегулируемые": armrestFilters.some(f => f.includes("нерегулируемые")),
 //   "<strong>Подлокотники</strong> металлические": armrestFilters.some(f => f.includes("металлические")),
 //   "Подлокотники алюминиевые": armrestFilters.some(f => f.includes("алюминиевые")),
 //   "деревянные": armrestFilters.some(f => f.includes("деревянные")),
-//   "с мягкими накладками": armrestFilters.some(f => f.includes("с мягкими накладками")),
+// "С деревянными накладками": armrestFilters.some(f => 
+//   f.toLowerCase().includes("деревянными накладками") || f.toLowerCase().includes("д8")
+// ),
+    "с мягкими накладками": armrestFilters.some(f => f.includes("с мягкими накладками")),
+
 //   "Айрон-хром": armrestFilters.some(f => f.includes("Айрон-хром")),
 //   "Айрон-пластик": armrestFilters.some(f => f.includes("Айрон-пластик")),
 //   "айс": armrestFilters.some(f => f.includes("айс")),
@@ -2191,22 +2199,22 @@ if (isSambaFilterSelected && isExcluded) {
 //   "soft": armrestFilters.some(f => f.includes("soft")),
 //   "soft2": armrestFilters.some(f => f.includes("soft2")),
 //   "3-D хромированные": armrestFilters.some(f => f.includes("3-D хромированные")),
-// };
+};
 
-// const productName = Array.isArray(product.unique_name) ? product.unique_name[0] : product.unique_name;
+const productName = Array.isArray(product.unique_name) ? product.unique_name[0] : product.unique_name;
 
-// // Проходим по каждому условию и ищем, если оно выполнено
-// for (const [searchTerm, condition] of Object.entries(filtersMap)) {
-//   if (condition) {
-//     if (productName.includes('Б_п')) {
-//   // Пропускаем этот продукт
-//   continue; // если внутри цикла
-// }
-//     armrestMatch = searchInObject(product, searchTerm);
-//     // Если достаточно первого совпадения, можно прервать цикл
-//     // break;
-//   }
-// }
+// Проходим по каждому условию и ищем, если оно выполнено
+for (const [searchTerm, condition] of Object.entries(filtersMap)) {
+  if (condition) {
+    if (productName.includes('Б_п')) {
+  // Пропускаем этот продукт
+  continue; // если внутри цикла
+}
+    armrestMatch = searchInObject(product, searchTerm);
+    // Если достаточно первого совпадения, можно прервать цикл
+    // break;
+  }
+}
 
 
               let mechanismMatch = true;

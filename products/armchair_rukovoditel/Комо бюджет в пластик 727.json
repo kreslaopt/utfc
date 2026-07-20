@@ -407,7 +407,7 @@
             },
             "seat_depth_km": {
                 "min": "",
-                "max": ""
+                "max": "530"
             },
             "backrest_height_external": {
                 "min": "",
@@ -440,7 +440,7 @@
         }
     ],
     "skeleton": "немонолитный",
-    "minpromtorg": "Минпромторг",
+    "minpromtorg": "+",
     "addition": "",
     "parent": {
         "IE_XML_ID": "p_5147",

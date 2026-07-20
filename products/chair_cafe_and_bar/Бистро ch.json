@@ -1973,5 +1973,9 @@
         "Материал упаковки:": "Стрейч-пленка (каркас)"
     },
     "finish_type_seat": "",
-    "color_seat": ""
+    "color_seat": "",
+    "additional_info": {
+        "package_dimensions": {},
+        "volume": "0"
+    }
 }

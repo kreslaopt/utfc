@@ -65,7 +65,7 @@
     ],
     "dimensions": [
         {
-            "brutto": "8,7",
+            "brutto": "",
             "netto": "",
             "volume": "0,13"
         }
@@ -267,7 +267,7 @@
         }
     ],
     "skeleton": "монолитный",
-    "minpromtorg": "Минпромторг",
+    "minpromtorg": "+",
     "addition": "",
     "parent": {
         "IE_XML_ID": "a_1135",

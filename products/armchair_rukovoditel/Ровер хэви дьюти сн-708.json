@@ -228,7 +228,7 @@
             },
             "diameter_cross": {
                 "min": "",
-                "max": "740"
+                "max": "730"
             },
             "runners_width": {
                 "min": "",
@@ -289,7 +289,7 @@
         }
     ],
     "skeleton": "немонолитный",
-    "minpromtorg": "Минпромторг",
+    "minpromtorg": "+",
     "addition": "",
     "parent": {
         "IE_XML_ID": "p_5200",

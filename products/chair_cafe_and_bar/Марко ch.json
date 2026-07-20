@@ -1847,5 +1847,10 @@
     },
     "package_sizes": {
         "Материал упаковки:": "Стрейч-пленка (каркас)"
+    },
+    "additional_info": {
+        "package_dimensions": {},
+        "netto": "4",
+        "volume": "0"
     }
 }

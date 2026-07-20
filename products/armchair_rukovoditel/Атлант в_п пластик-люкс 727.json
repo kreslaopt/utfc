@@ -244,7 +244,7 @@
             },
             "backrest_height_external": {
                 "min": "",
-                "max": ""
+                "max": "770"
             },
             "backrest_width_narrow": {
                 "min": "",
@@ -273,7 +273,7 @@
         }
     ],
     "skeleton": "монолитный",
-    "minpromtorg": "Минпромторг",
+    "minpromtorg": "+",
     "addition": "",
     "parent": {
         "IE_XML_ID": "a_1128",
