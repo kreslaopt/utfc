@@ -102,7 +102,7 @@
                     Алюминиевые</label>
                     <label><input type="checkbox" class="armrest-filter" value="3-D хромированные">
                     3-D хромированные</label>
-                <label><input type="checkbox" class="armrest-filter" value="дерево|Деревянные|деревянные|из массива|Д8|дерева|орех|натуральное"> Деревянные</label>
+                <label><input type="checkbox" class="armrest-filter" value="дерево|Деревянные|деревянные|из массива|Д8|Д1|Д5|дерева|орех|натуральное"> Деревянные</label>
                 <label><input type="checkbox" class="armrest-filter" value="С мягкими накладками|с мягкими накладками">
                     С мягкими накладками</label>
                       <label><input type="checkbox" class="armrest-filter" value="soft|soft2|Soft2|Soft">Soft и Soft2</label>     
@@ -2100,7 +2100,7 @@ if (isSambaFilterSelected && isExcluded) {
 // components = product.construction_and_materials?.[0]?.components || product.children?.[0]?.IE_NAME || product.parent?.[0]?.IE_PREVIEW_TEXT || [];
     } else {
         // Иначе используем существующие компоненты
-        components =  product.Подлокотники || product.construction_and_materials?.[0]?.components || product.children?.[0]?.IE_NAME || product.parent?.[0]?.IE_PREVIEW_TEXT || product.namefile || product.unique_name || product.addition || [];
+        components =  product.Подлокотники || product.construction_and_materials?.[0]?.components || product.construction_and_materials?.[0]?.upholstery_materials || product.children?.[0]?.IE_NAME || product.parent?.[0]?.IE_PREVIEW_TEXT || product.namefile || product.unique_name || product.addition || [];
     }
 }
 
@@ -2196,8 +2196,8 @@ const filtersMap = {
 //   "айс": armrestFilters.some(f => f.includes("айс")),
 //   "под хром": armrestFilters.some(f => f.includes("под хром")),
 //   "металлические «ХДП»": armrestFilters.some(f => f.includes("ХДП")),
-//   "soft": armrestFilters.some(f => f.includes("soft")),
-//   "soft2": armrestFilters.some(f => f.includes("soft2")),
+  "soft": armrestFilters.some(f => f.includes("soft")),
+  "soft2": armrestFilters.some(f => f.includes("soft2")),
 //   "3-D хромированные": armrestFilters.some(f => f.includes("3-D хромированные")),
 };
 
