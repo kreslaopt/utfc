@@ -105,7 +105,7 @@
                 <label><input type="checkbox" class="armrest-filter" value="дерево|Деревянные|деревянные|из массива|Д8|Д1|Д5|дерева|орех|натуральное"> Деревянные</label>
                 <label><input type="checkbox" class="armrest-filter" value="С мягкими накладками|с мягкими накладками">
                     С мягкими накладками</label>
-                      <label><input type="checkbox" class="armrest-filter" value="soft|soft2|Soft2|Soft">Soft и Soft2</label>     
+                      <label><input type="checkbox" class="armrest-filter" value="soft|soft2">Soft и Soft2</label>     
             </div>
         </div>
 
@@ -2076,6 +2076,7 @@ function calculateMinMaxForAllDepth(products) {
         let components;
         const isIronPlasticFilterSelected = armrestFilters.some(f => f.toLowerCase().includes('айрон-пластик'));
         const isSambaFilterSelected = armrestFilters.some(f => f.includes('самба'));
+        const isSoft = armrestFilters.some(f => f.toLowerCase().includes('soft') || f.toLowerCase().includes('soft2'));
         // const isExcluded = sambasExcludedNames.some(name => uniqueNameStr.includes(name));
 const isExcluded = uniqueNameStr.toLowerCase().startsWith('самба');
 // const isDderevoNakladki = armrestFilters.some(f => 
@@ -2092,7 +2093,12 @@ if (isSambaFilterSelected && isExcluded) {
     // console.log('Продукт выбран: ', product);
     // console.log('Компоненты продукта: ', components);
     // console.log('Название продукта: ', uniqueNameStr);
-} else {
+} else if (isSoft) {
+    components = product.construction_and_materials?.[0]?.upholstery_materials || product.construction_and_materials?.[0]?.components || [];
+//     }  if (isDderevoNakladki) {
+}
+
+else {
     if (isIronPlasticFilterSelected) {
         // Если есть, берем компоненты из construction_and_materials
         components = product.construction_and_materials?.[0]?.components || [];
@@ -2101,6 +2107,8 @@ if (isSambaFilterSelected && isExcluded) {
     } else {
         // Иначе используем существующие компоненты
         components =  product.Подлокотники || product.construction_and_materials?.[0]?.components || product.construction_and_materials?.[0]?.upholstery_materials || product.children?.[0]?.IE_NAME || product.parent?.[0]?.IE_PREVIEW_TEXT || product.namefile || product.unique_name || product.addition || [];
+//         console.log('Тип components:', typeof components);
+// console.log('Значение components:', components);
     }
 }
 
@@ -2199,6 +2207,10 @@ const filtersMap = {
 //   "Soft и Soft2": armrestFilters.some(f => f.includes("soft")),
 //   "Soft и Soft2": armrestFilters.some(f => f.includes("soft2")),
 //   "3-D хромированные": armrestFilters.some(f => f.includes("3-D хромированные")),
+// "Soft и Soft2": armrestFilters.some(f => {
+//   const patterns = f.split('|').map(p => p.toLowerCase().trim());
+//   return patterns.includes('soft') || patterns.includes('soft2');
+// }),
 };
 
 const productName = Array.isArray(product.unique_name) ? product.unique_name[0] : product.unique_name;
@@ -2214,6 +2226,7 @@ for (const [searchTerm, condition] of Object.entries(filtersMap)) {
     // Если достаточно первого совпадения, можно прервать цикл
     // break;
   }
+  
 }
 
 
