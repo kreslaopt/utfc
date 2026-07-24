@@ -104,8 +104,8 @@
                     Металлические</label>
                 <label><input type="checkbox" class="armrest-filter" value="Алюминиевые|алюминиевые">
                     Алюминиевые</label>
-                <label><input type="checkbox" class="armrest-filter" value="3-D хромированные">
-                    3-D хромированные</label>
+                <label><input type="checkbox" class="armrest-filter" value="хромированные">
+                    Хромированные</label>
                 <label><input type="checkbox" class="armrest-filter"
                         value="дерево|Деревянные|деревянные|из массива|Д8|Д1|Д5|дерева|орех|натуральное">
                     Деревянные</label>
@@ -251,6 +251,7 @@
         <div class="filter-content" id="finish-filter-content">
             <div class="checkbox-group">
                 <label><input type="checkbox" class="finish-filter" value="хром| ch| CH| Ch|хромированное"> Хром</label>
+                <!-- <label><input type="checkbox" class="finish-filter" value="никель-хром"> Никель-хром</label> -->
                 <label><input type="checkbox" class="finish-filter" value="пластик|пластик-люкс|pl|ppl|пластиковое">
                     Пластик</label>
                 <label><input type="checkbox" class="finish-filter" value="дерев|дерево|деревянными|дерева|деревянные">
@@ -2834,6 +2835,29 @@
                                     const regex = /(^|\s)(ch|хром)(\s|$)/i;
                                     return regex.test(cleanedUniqueName);
                                 }
+
+
+                                    // Специальная обработка для 'хром' и 'ch'
+// if (lowerPattern === 'хром' || lowerPattern === 'ch') {
+//     const regex = /(^|\s)(ch|хром)(\s|$)/i;
+//     return regex.test(cleanedUniqueName);
+// }
+
+// // Добавляем обработку для 'никель-хром'
+// if (lowerPattern === 'никель-хром') {
+//     const regex = /(^|\s|^)(никель-хром)(\s|$|^|-)/i;
+//     const baseComponents = product.Основание; 
+//     if (Array.isArray(baseComponents)) {
+//         return baseComponents.some(component => {
+//             const compStr = String(component).toLowerCase();
+//             return regex.test(compStr);
+//         });
+//     } else if (typeof baseComponents === 'string') {
+//         const compStr = baseComponents.toLowerCase();
+//         return regex.test(compStr);
+//     }
+//     return false;
+// }
 
                                 // Общий случай с регулярным выражением
                                 const regex = new RegExp(`(^|\\s)(${lowerPattern})(\\s|$|-)`, 'i');
