@@ -194,7 +194,7 @@
             },
             "backrest_height": {
                 "min": "",
-                "max": "450"
+                "max": "440"
             },
             "backrest_to_seat_height": {
                 "min": "",
@@ -250,7 +250,7 @@
             },
             "backrest_width_wide": {
                 "min": "",
-                "max": "495"
+                "max": "490"
             },
             "recommended_load": "90",
             "max_load": "120",
@@ -268,7 +268,7 @@
         }
     ],
     "skeleton": "немонолитный",
-    "minpromtorg": "Минпромторг",
+    "minpromtorg": "+",
     "addition": "",
     "parent": {
         "IE_XML_ID": "a_1001",

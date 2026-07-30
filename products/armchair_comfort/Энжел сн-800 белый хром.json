@@ -203,7 +203,7 @@
             },
             "backrest_height": {
                 "min": "",
-                "max": "450"
+                "max": "440"
             },
             "backrest_to_seat_height": {
                 "min": "",
@@ -280,7 +280,7 @@
         }
     ],
     "skeleton": "немонолитный",
-    "minpromtorg": "Минпромторг",
+    "minpromtorg": "+",
     "addition": "не поставляется в кожзаме Z",
     "parent": {
         "IE_XML_ID": "p_5201",
