@@ -341,7 +341,7 @@
         }
     ],
     "skeleton": "немонолитный",
-    "minpromtorg": "+",
+    "minpromtorg": "Минпромторг",
     "addition": "",
     "parent": {
         "IE_XML_ID": "p_5177",
@@ -1307,7 +1307,7 @@
             "IC_CODE2": "",
             "IC_PICTURE2": "",
             "IC_DETAIL_PICTURE2": "",
-            "CP_QUANTITY": "222",
+            "CP_QUANTITY": "220",
             "CP_QUANTITY_TRACE": "D",
             "CP_CAN_BUY_ZERO": "D",
             "CP_WEIGHT": "0",
@@ -1336,7 +1336,7 @@
             "CV_PRICE_3": "3449.00000000",
             "STORE_AMOUNT_5": "55",
             "CV_CURRENCY_3": "RUB",
-            "STORE_AMOUNT_6": "167"
+            "STORE_AMOUNT_6": "165"
         },
         {
             "IE_XML_ID": "29980",
@@ -1667,7 +1667,7 @@
             "IC_CODE2": "",
             "IC_PICTURE2": "",
             "IC_DETAIL_PICTURE2": "",
-            "CP_QUANTITY": "1",
+            "CP_QUANTITY": "0",
             "CP_QUANTITY_TRACE": "D",
             "CP_CAN_BUY_ZERO": "D",
             "CP_WEIGHT": "0",
@@ -1685,7 +1685,7 @@
             "CP_VAT_INCLUDED": "Y",
             "CP_MEASURE": "5",
             "STORE_AMOUNT_2": "0",
-            "STORE_AMOUNT_3": "1",
+            "STORE_AMOUNT_3": "0",
             "CV_QUANTITY_FROM": "",
             "CV_QUANTITY_TO": "",
             "CV_PRICE_1": "3449.00000000",
@@ -1847,7 +1847,7 @@
             "IC_CODE2": "",
             "IC_PICTURE2": "",
             "IC_DETAIL_PICTURE2": "",
-            "CP_QUANTITY": "80",
+            "CP_QUANTITY": "77",
             "CP_QUANTITY_TRACE": "D",
             "CP_CAN_BUY_ZERO": "D",
             "CP_WEIGHT": "0",
@@ -1864,7 +1864,7 @@
             "CP_VAT_ID": "",
             "CP_VAT_INCLUDED": "Y",
             "CP_MEASURE": "5",
-            "STORE_AMOUNT_2": "68",
+            "STORE_AMOUNT_2": "65",
             "STORE_AMOUNT_3": "12",
             "CV_QUANTITY_FROM": "",
             "CV_QUANTITY_TO": "",

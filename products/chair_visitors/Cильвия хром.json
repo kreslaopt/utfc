@@ -316,7 +316,7 @@
         }
     ],
     "skeleton": "",
-    "minpromtorg": "+",
+    "minpromtorg": "Минпромторг",
     "addition": "",
     "parent": {
         "IE_XML_ID": "p_5140",
@@ -778,7 +778,7 @@
             "IC_CODE2": "",
             "IC_PICTURE2": "",
             "IC_DETAIL_PICTURE2": "",
-            "CP_QUANTITY": "53",
+            "CP_QUANTITY": "103",
             "CP_QUANTITY_TRACE": "D",
             "CP_CAN_BUY_ZERO": "D",
             "CP_WEIGHT": "0",
@@ -805,9 +805,9 @@
             "CV_CURRENCY_2": "RUB",
             "STORE_AMOUNT_4": "0",
             "CV_PRICE_3": "4191.00000000",
-            "STORE_AMOUNT_5": "1",
+            "STORE_AMOUNT_5": "103",
             "CV_CURRENCY_3": "RUB",
-            "STORE_AMOUNT_6": "52"
+            "STORE_AMOUNT_6": "0"
         },
         {
             "IE_XML_ID": "23248",
@@ -871,7 +871,7 @@
             "IC_CODE2": "",
             "IC_PICTURE2": "",
             "IC_DETAIL_PICTURE2": "",
-            "CP_QUANTITY": "6",
+            "CP_QUANTITY": "3",
             "CP_QUANTITY_TRACE": "D",
             "CP_CAN_BUY_ZERO": "D",
             "CP_WEIGHT": "0",
@@ -888,7 +888,7 @@
             "CP_VAT_ID": "1",
             "CP_VAT_INCLUDED": "Y",
             "CP_MEASURE": "5",
-            "STORE_AMOUNT_2": "3",
+            "STORE_AMOUNT_2": "0",
             "STORE_AMOUNT_3": "3",
             "CV_QUANTITY_FROM": "",
             "CV_QUANTITY_TO": "",

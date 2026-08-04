@@ -1022,7 +1022,7 @@
             "IC_CODE2": "",
             "IC_PICTURE2": "",
             "IC_DETAIL_PICTURE2": "",
-            "CP_QUANTITY": "111",
+            "CP_QUANTITY": "142",
             "CP_QUANTITY_TRACE": "D",
             "CP_CAN_BUY_ZERO": "D",
             "CP_WEIGHT": "0",
@@ -1049,9 +1049,9 @@
             "CV_CURRENCY_2": "RUB",
             "STORE_AMOUNT_4": "0",
             "CV_PRICE_3": "4774.00000000",
-            "STORE_AMOUNT_5": "44",
+            "STORE_AMOUNT_5": "0",
             "CV_CURRENCY_3": "RUB",
-            "STORE_AMOUNT_6": "63"
+            "STORE_AMOUNT_6": "138"
         },
         {
             "IE_XML_ID": "17469",

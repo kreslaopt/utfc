@@ -320,7 +320,7 @@
         }
     ],
     "skeleton": "немонолитный",
-    "minpromtorg": "+",
+    "minpromtorg": "Минпромторг",
     "addition": "",
     "parent": {
         "IE_XML_ID": "964",
@@ -1471,8 +1471,8 @@
             "CP_VAT_ID": "",
             "CP_VAT_INCLUDED": "Y",
             "CP_MEASURE": "5",
-            "STORE_AMOUNT_2": "1",
-            "STORE_AMOUNT_3": "0",
+            "STORE_AMOUNT_2": "0",
+            "STORE_AMOUNT_3": "1",
             "CV_QUANTITY_FROM": "",
             "CV_QUANTITY_TO": "",
             "CV_PRICE_1": "5277.00000000",

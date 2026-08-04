@@ -283,7 +283,7 @@
         }
     ],
     "skeleton": "немонолитный",
-    "minpromtorg": "+",
+    "minpromtorg": "Минпромторг",
     "addition": "",
     "parent": {
         "IE_XML_ID": "7515",
@@ -328,7 +328,7 @@
         "IP_PROP17": "",
         "IP_PROP22": "",
         "IP_PROP41": "pch_660_arkt_pl",
-        "IP_PROP42": "pl_290",
+        "IP_PROP42": "pl_500",
         "IP_PROP43": "gl_230",
         "IP_PROP44": "m_tgs_500",
         "IP_PROP45": "",

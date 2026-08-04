@@ -10,7 +10,7 @@
         "Йота"
     ],
     "unique_name": [
-        "Йота М-805 white ch"
+        "Йота М-805 white CH"
     ],
     "vid": [
         "кресло"
@@ -269,7 +269,7 @@
         }
     ],
     "skeleton": "монолитный",
-    "minpromtorg": "+",
+    "minpromtorg": "Минпромторг",
     "addition": "",
     "parent": {
         "IE_XML_ID": "7531",
