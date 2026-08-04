@@ -123,16 +123,16 @@
     "dimensions_details": [
         {
             "chair_height": {
-                "min": "1130",
-                "max": "1230"
+                "min": "1150",
+                "max": "1250"
             },
             "headrest_height": {
                 "min": "",
                 "max": ""
             },
             "seat_to_floor_height": {
-                "min": "490",
-                "max": "590"
+                "min": "470",
+                "max": "570"
             },
             "armrest_height_from_seat": {
                 "min": "180",
@@ -175,8 +175,8 @@
                 "max": ""
             },
             "seat_to_floor_height_upper": {
-                "min": "",
-                "max": ""
+                "min": "350",
+                "max": "450"
             },
             "armrest_height_from_floor": {
                 "min": "300",
@@ -225,7 +225,7 @@
         }
     ],
     "skeleton": "монолитный",
-    "minpromtorg": "Минпромторг",
+    "minpromtorg": "+",
     "addition": "",
     "parent": {
         "IE_XML_ID": "p_5117",

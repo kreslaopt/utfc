@@ -131,16 +131,16 @@
     "dimensions_details": [
         {
             "chair_height": {
-                "min": "1170",
-                "max": "1270"
+                "min": "1160",
+                "max": "1260"
             },
             "headrest_height": {
                 "min": "",
                 "max": ""
             },
             "seat_to_floor_height": {
-                "min": "490",
-                "max": "590"
+                "min": "475",
+                "max": "575"
             },
             "armrest_height_from_seat": {
                 "min": "180",
@@ -151,7 +151,7 @@
                 "max": ""
             },
             "seat_depth": {
-                "min": "560",
+                "min": "530",
                 "max": ""
             },
             "backrest_height": {
@@ -168,7 +168,7 @@
             },
             "seat_width": {
                 "min": "",
-                "max": "530"
+                "max": "520"
             },
             "diameter_cross": {
                 "min": "",
@@ -183,8 +183,8 @@
                 "max": ""
             },
             "seat_to_floor_height_upper": {
-                "min": "380",
-                "max": "480"
+                "min": "355",
+                "max": "455"
             },
             "armrest_height_from_floor": {
                 "min": "290",
@@ -233,7 +233,7 @@
         }
     ],
     "skeleton": "монолитный",
-    "minpromtorg": "Минпромторг",
+    "minpromtorg": "+",
     "addition": "",
     "parent": {
         "IE_XML_ID": "p_5118",
