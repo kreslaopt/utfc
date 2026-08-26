@@ -201,7 +201,10 @@
                 "https://cdn.utfc.ru/uf/3a5/3a5d425d6688006b1768d11061e38317.jpg",
                 "https://cdn.utfc.ru/iblock/cb6/dg0q4u612m8a8iktasl43mm0oh4vc4ha.png",
                 "https://cdn.utfc.ru/iblock/e49/e49ef734279064b5b9be4cafd2926b1d/e5b8b54948ab237d14fbd1f59e1ba258.png",
-                "https://cdn.utfc.ru/iblock/f0b/f0b7f5875e76cc86c342465af1693ed0/1b687b628bb2f1a20e2a2f394b9da986.png"
+                "https://cdn.utfc.ru/iblock/f0b/f0b7f5875e76cc86c342465af1693ed0/1b687b628bb2f1a20e2a2f394b9da986.png",
+                "https://cdn.utfc.ru/iblock/173/17306f92f6a319c676c8d68897934158/b2a2a6785fa46d8c8af3a2993e6c7198.png",
+                "https://cdn.utfc.ru/iblock/c82/c82221f9290dcdd80dbc249c5412bfc7/1ee2b80fedc34481732d1646a81542ac.png",
+                "https://cdn.utfc.ru/iblock/2ea/2eae6a06a46b7ac29d86a6a02df69d89/dd1b7264900872b0447056529ae5762a.png"
             ]
         }
     ],
@@ -667,7 +670,7 @@
             "IC_CODE2": "",
             "IC_PICTURE2": "",
             "IC_DETAIL_PICTURE2": "",
-            "CP_QUANTITY": "389",
+            "CP_QUANTITY": "219",
             "CP_QUANTITY_TRACE": "D",
             "CP_CAN_BUY_ZERO": "D",
             "CP_WEIGHT": "0",
@@ -684,8 +687,8 @@
             "CP_VAT_ID": "",
             "CP_VAT_INCLUDED": "Y",
             "CP_MEASURE": "5",
-            "STORE_AMOUNT_2": "0",
-            "STORE_AMOUNT_3": "0",
+            "STORE_AMOUNT_2": "216",
+            "STORE_AMOUNT_3": "3",
             "CV_QUANTITY_FROM": "",
             "CV_QUANTITY_TO": "",
             "CV_PRICE_1": "2077.00000000",
@@ -694,9 +697,9 @@
             "CV_CURRENCY_2": "RUB",
             "STORE_AMOUNT_4": "0",
             "CV_PRICE_3": "2077.00000000",
-            "STORE_AMOUNT_5": "216",
+            "STORE_AMOUNT_5": "0",
             "CV_CURRENCY_3": "RUB",
-            "STORE_AMOUNT_6": "173"
+            "STORE_AMOUNT_6": "0"
         },
         {
             "IE_XML_ID": "13287",

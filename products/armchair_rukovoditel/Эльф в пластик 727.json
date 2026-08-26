@@ -218,7 +218,9 @@
                 "https://cdn.utfc.ru/iblock/277/277228a0ae4d298178881a1883f6bad3/7378a2c20b53e3af651f77ac309cf692.png",
                 "https://cdn.utfc.ru/iblock/e49/e49ef734279064b5b9be4cafd2926b1d/e5b8b54948ab237d14fbd1f59e1ba258.png",
                 "https://cdn.utfc.ru/iblock/175/lzek5k9nvnc35w5kzt1ebwocw3ngrcki.png",
-                "https://cdn.utfc.ru/iblock/f0b/f0b7f5875e76cc86c342465af1693ed0/1b687b628bb2f1a20e2a2f394b9da986.png"
+                "https://cdn.utfc.ru/iblock/f0b/f0b7f5875e76cc86c342465af1693ed0/1b687b628bb2f1a20e2a2f394b9da986.png",
+                "https://cdn.utfc.ru/iblock/c82/c82221f9290dcdd80dbc249c5412bfc7/1ee2b80fedc34481732d1646a81542ac.png",
+                "https://cdn.utfc.ru/iblock/2ea/2eae6a06a46b7ac29d86a6a02df69d89/dd1b7264900872b0447056529ae5762a.png"
             ]
         }
     ],
@@ -1053,7 +1055,7 @@
             "IC_CODE2": "",
             "IC_PICTURE2": "",
             "IC_DETAIL_PICTURE2": "",
-            "CP_QUANTITY": "207",
+            "CP_QUANTITY": "129",
             "CP_QUANTITY_TRACE": "D",
             "CP_CAN_BUY_ZERO": "D",
             "CP_WEIGHT": "0",
@@ -1070,8 +1072,8 @@
             "CP_VAT_ID": "",
             "CP_VAT_INCLUDED": "Y",
             "CP_MEASURE": "5",
-            "STORE_AMOUNT_2": "0",
-            "STORE_AMOUNT_3": "5",
+            "STORE_AMOUNT_2": "100",
+            "STORE_AMOUNT_3": "29",
             "CV_QUANTITY_FROM": "",
             "CV_QUANTITY_TO": "",
             "CV_PRICE_1": "6811.00000000",
@@ -1080,9 +1082,9 @@
             "CV_CURRENCY_2": "RUB",
             "STORE_AMOUNT_4": "0",
             "CV_PRICE_3": "6811.00000000",
-            "STORE_AMOUNT_5": "148",
+            "STORE_AMOUNT_5": "0",
             "CV_CURRENCY_3": "RUB",
-            "STORE_AMOUNT_6": "54"
+            "STORE_AMOUNT_6": "0"
         },
         {
             "IE_XML_ID": "17066",
@@ -2270,7 +2272,7 @@
     "full_describe": "Классическое офисное кресло, которое хорошо подойдет как для руководителя, так и для сотрудника. Широкие подлокотники и глубокое сидение сделают рабочий день максимально комфортным.",
     "Link_arm": "https://utfc.ru/catalog/boss_chairs/elf_v_pl727/?offers=9577",
     "Основание": "Пятилучье пластиковое d=660 мм",
-    "Подлокотники": "Подлокотники пластиковые используются на все ДК в исполнении Пластик 727",
+    "Подлокотники": "Подлокотники пластиковые «Пластик 727»",
     "Газлифт": "Газ-лифт 3 категории по стандарту Germany DIN 4550, h=230 мм, длина штока 100 мм",
     "Механизм": "Однопозиционный механизм качания Топ-Ган регулирует высоту сиденья, обеспечивает режим свободного качания и фиксацию каркаса в рабочем положении.",
     "Особенности": "",

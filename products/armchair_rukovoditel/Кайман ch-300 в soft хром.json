@@ -193,7 +193,9 @@
                 "https://cdn.utfc.ru/iblock/277/277228a0ae4d298178881a1883f6bad3/7378a2c20b53e3af651f77ac309cf692.png",
                 "https://cdn.utfc.ru/iblock/e49/e49ef734279064b5b9be4cafd2926b1d/e5b8b54948ab237d14fbd1f59e1ba258.png",
                 "https://cdn.utfc.ru/iblock/175/lzek5k9nvnc35w5kzt1ebwocw3ngrcki.png",
-                "https://cdn.utfc.ru/iblock/f0b/f0b7f5875e76cc86c342465af1693ed0/1b687b628bb2f1a20e2a2f394b9da986.png"
+                "https://cdn.utfc.ru/iblock/f0b/f0b7f5875e76cc86c342465af1693ed0/1b687b628bb2f1a20e2a2f394b9da986.png",
+                "https://cdn.utfc.ru/iblock/c82/c82221f9290dcdd80dbc249c5412bfc7/1ee2b80fedc34481732d1646a81542ac.png",
+                "https://cdn.utfc.ru/iblock/2ea/2eae6a06a46b7ac29d86a6a02df69d89/dd1b7264900872b0447056529ae5762a.png"
             ]
         }
     ],
@@ -307,7 +309,7 @@
     "full_describe": "Облегченный эргономичный каркас кресла, обтянутого экокожей или сеткой, базируется на металлической прочной и надежной основе. Конструкция кресла разработана с учетом максимальной функциональности и трендов в современном дизайне.",
     "Link_arm": "https://utfc.ru/catalog/boss_chairs/kayman_v_soft/?offers=11068",
     "Основание": "Пятилучье хромированное d=700 мм",
-    "Подлокотники": "Нерегулируемые хромированные подлокотники для кресла Кайман с накладкой",
+    "Подлокотники": "Подлокотники хромированные с мягкой накладкой для кресел «Кайман»",
     "Газлифт": "",
     "Механизм": "Топ-Ган Cayman — однопозиционный механизм качания Кайман позволяет регулировать высоту сиденья, обеспечивает режим свободного качания и фиксацию кресла в вертикальном положении",
     "Особенности": "",
@@ -324,7 +326,7 @@
         "IE_ACTIVE": "Y",
         "IE_ACTIVE_FROM": "",
         "IE_ACTIVE_TO": "",
-        "IE_SORT": "500",
+        "IE_SORT": "1100",
         "IE_PREVIEW_PICTURE": "https://cdn.utfc.ru/iblock/996/99656a9c824cd84c027137b407a17367/642d9743205e5d01f65365f9650d8bd2.png",
         "IE_PREVIEW_TEXT": "Облегченный эргономичный каркас кресла, обтянутого экокожей или сеткой, базируется на металлической прочной и надежной основе. Конструкция кресла разработана с учетом максимальной функциональности и трендов в современном дизайне.",
         "IE_PREVIEW_TEXT_TYPE": "text",
@@ -1045,7 +1047,7 @@
             "IC_CODE2": "",
             "IC_PICTURE2": "",
             "IC_DETAIL_PICTURE2": "",
-            "CP_QUANTITY": "110",
+            "CP_QUANTITY": "97",
             "CP_QUANTITY_TRACE": "D",
             "CP_CAN_BUY_ZERO": "D",
             "CP_WEIGHT": "0",
@@ -1062,8 +1064,8 @@
             "CP_VAT_ID": "1",
             "CP_VAT_INCLUDED": "Y",
             "CP_MEASURE": "5",
-            "STORE_AMOUNT_2": "0",
-            "STORE_AMOUNT_3": "0",
+            "STORE_AMOUNT_2": "87",
+            "STORE_AMOUNT_3": "10",
             "CV_QUANTITY_FROM": "",
             "CV_QUANTITY_TO": "",
             "CV_PRICE_1": "12237.00000000",
@@ -1072,9 +1074,9 @@
             "CV_CURRENCY_2": "RUB",
             "STORE_AMOUNT_4": "0",
             "CV_PRICE_3": "12237.00000000",
-            "STORE_AMOUNT_5": "89",
+            "STORE_AMOUNT_5": "0",
             "CV_CURRENCY_3": "RUB",
-            "STORE_AMOUNT_6": "21"
+            "STORE_AMOUNT_6": "0"
         },
         {
             "IE_XML_ID": "30407",

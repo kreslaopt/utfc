@@ -123,7 +123,9 @@
                 "https://utfc.ru/local/templates/.default/components/utfc/catalog.element/.default/images/no_photo.png",
                 "https://utfc.ru/local/templates/utfc/img/sites/utfc/logo_down_2.png",
                 "https://cdn.utfc.ru/uf/df9/1971ilsxvotcmr5wlcu1aqcpy7ck2kt7.webp",
-                "https://cdn.utfc.ru/iblock/f0b/f0b7f5875e76cc86c342465af1693ed0/1b687b628bb2f1a20e2a2f394b9da986.png"
+                "https://cdn.utfc.ru/iblock/f0b/f0b7f5875e76cc86c342465af1693ed0/1b687b628bb2f1a20e2a2f394b9da986.png",
+                "https://cdn.utfc.ru/iblock/c82/c82221f9290dcdd80dbc249c5412bfc7/1ee2b80fedc34481732d1646a81542ac.png",
+                "https://cdn.utfc.ru/iblock/2ea/2eae6a06a46b7ac29d86a6a02df69d89/dd1b7264900872b0447056529ae5762a.png"
             ]
         }
     ],
@@ -906,7 +908,7 @@
                 "https://cdn.utfc.ru/iblock/2de/2defcb57caeb6bbb3c22164fd83b885e/dd3cb599d21ddd744624ec4f3728223c.png",
                 "https://cdn.utfc.ru/iblock/8a4/8a4fe61ee28c33175a0d7d92b1388eb0/4f002e85663435e00bd7ac0b07be9611.png"
             ],
-            "IP_PROP37": "m_01",
+            "IP_PROP37": "m_75",
             "IP_PROP38": "8742d413-cc61-11f0-81dd-1866daf6186c",
             "IP_PROP39": "",
             "IP_PROP40": "",
@@ -1242,7 +1244,7 @@
     "full_describe": "Кресло является одной из самых популярных моделей для руководителей и персонала уже долгое время! Его особенности это: удобство, лаконичный дизайн и надежность. Хромированные подлокотники с мягкими накладками и глубокое сиденье обеспечат комфортную посадку. Максимальная нагрузка до 150 кг.",
     "Link_arm": "https://utfc.ru/catalog/boss_chairs/komo_v_ch/?offers=9515",
     "Основание": "Пятилучье хромированное d=700 мм",
-    "Подлокотники": "Подлокотники «Айрон-хром» с декоративными мягкими накладками",
+    "Подлокотники": "Подлокотники хромированные «Айрон-хром» с декоративными мягкими накладками",
     "Газлифт": "Газ-лифт 3 категории по стандарту Germany DIN 4550, h=230 мм, длина штока 100 мм",
     "Механизм": "Однопозиционный механизм качания Топ-Ган регулирует высоту сиденья, обеспечивает режим свободного качания и фиксацию каркаса в рабочем положении.",
     "Особенности": "",

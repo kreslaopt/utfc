@@ -1995,6 +1995,11 @@ const knownProductsAllFiles = [
     "is_archive": false
   },
   {
+    "name": "Utfc онтарио сн-105 н пластик хром",
+    "category": "armchair_rukovoditel",
+    "is_archive": false
+  },
+  {
     "name": "Utfc осака м-201",
     "category": "armchair_comfort",
     "is_archive": false

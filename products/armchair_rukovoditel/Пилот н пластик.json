@@ -121,7 +121,9 @@
                 "https://cdn.utfc.ru/uf/ccb/ccb62e3bc40a804259f1514d3bc58182.jpg",
                 "https://utfc.ru/local/templates/.default/components/utfc/catalog.element/.default/images/no_photo.png",
                 "https://utfc.ru/local/templates/utfc/img/sites/utfc/logo_down_2.png",
-                "https://cdn.utfc.ru/iblock/f0b/f0b7f5875e76cc86c342465af1693ed0/1b687b628bb2f1a20e2a2f394b9da986.png"
+                "https://cdn.utfc.ru/iblock/f0b/f0b7f5875e76cc86c342465af1693ed0/1b687b628bb2f1a20e2a2f394b9da986.png",
+                "https://cdn.utfc.ru/iblock/c82/c82221f9290dcdd80dbc249c5412bfc7/1ee2b80fedc34481732d1646a81542ac.png",
+                "https://cdn.utfc.ru/iblock/2ea/2eae6a06a46b7ac29d86a6a02df69d89/dd1b7264900872b0447056529ae5762a.png"
             ]
         }
     ],
@@ -1234,7 +1236,7 @@
     "full_describe": "Эргономичная спинка обеспечивает поддержку спины на протяжении всего рабочего дня, а широкое сиденье и подлокотники - комфортную посадку. Кресло хорошо подойдет для строгого кабинета, конференц-зала. Максимальная нагрузка до 150 кг.",
     "Link_arm": "https://utfc.ru/catalog/boss_chairs/pilot_n_pl/?offers=8950",
     "Основание": "Пятилучье пластиковое d=660 мм",
-    "Подлокотники": "Подлокотники пластиковые «Сенатор» используются на все ДК в исполнении Пластик",
+    "Подлокотники": "Подлокотники пластиковые «Сенатор»",
     "Газлифт": "Газ-лифт 3 категории по стандарту Germany DIN 4550, h=230 мм, длина штока 100 мм",
     "Механизм": "Однопозиционный механизм качания Топ-Ган регулирует высоту сиденья, обеспечивает режим свободного качания и фиксацию каркаса в рабочем положении.",
     "Особенности": "",

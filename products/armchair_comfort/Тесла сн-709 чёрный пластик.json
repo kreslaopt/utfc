@@ -158,7 +158,10 @@
                 "https://cdn.utfc.ru/uf/ed8/ed809c4302b8f61180ba2401fad216c5.png",
                 "https://cdn.utfc.ru/iblock/935/935e69ef99017b223323b13e499baa18.png",
                 "https://cdn.utfc.ru/iblock/e49/e49ef734279064b5b9be4cafd2926b1d/e5b8b54948ab237d14fbd1f59e1ba258.png",
-                "https://cdn.utfc.ru/iblock/f0b/f0b7f5875e76cc86c342465af1693ed0/1b687b628bb2f1a20e2a2f394b9da986.png"
+                "https://cdn.utfc.ru/iblock/f0b/f0b7f5875e76cc86c342465af1693ed0/1b687b628bb2f1a20e2a2f394b9da986.png",
+                "https://cdn.utfc.ru/iblock/c82/c82221f9290dcdd80dbc249c5412bfc7/1ee2b80fedc34481732d1646a81542ac.png",
+                "https://cdn.utfc.ru/iblock/2ea/2eae6a06a46b7ac29d86a6a02df69d89/dd1b7264900872b0447056529ae5762a.png",
+                "https://cdn.utfc.ru/iblock/581/581d506fc01a8c1c61d2516d45758ef1/73fc42b3c2fd8839f0f81130184c71a0.png"
             ]
         }
     ],
@@ -453,7 +456,7 @@
             "IC_CODE2": "",
             "IC_PICTURE2": "",
             "IC_DETAIL_PICTURE2": "",
-            "CP_QUANTITY": "12",
+            "CP_QUANTITY": "13",
             "CP_QUANTITY_TRACE": "D",
             "CP_CAN_BUY_ZERO": "D",
             "CP_WEIGHT": "0",
@@ -470,8 +473,8 @@
             "CP_VAT_ID": "",
             "CP_VAT_INCLUDED": "Y",
             "CP_MEASURE": "5",
-            "STORE_AMOUNT_2": "11",
-            "STORE_AMOUNT_3": "1",
+            "STORE_AMOUNT_2": "13",
+            "STORE_AMOUNT_3": "0",
             "CV_QUANTITY_FROM": "",
             "CV_QUANTITY_TO": "",
             "CV_PRICE_1": "8521.00000000",
@@ -491,7 +494,7 @@
     "full_describe": "Уникальный современный дизайн кресла напоминает автомобильное сиденье. Надежное кресло руководителя оснащено сетчатой спинкой с градиентом от светлого к темному. Эргономичная форма спинки повторяет изгибы тела, а широкий мягкий подголовник интегрирован в каркас. Кресло выдерживает нагрузку до 150 кг.",
     "Link_arm": "https://utfc.ru/catalog/comfort_chairs/ch709_tesla_-blackpl/?offers=10807",
     "Основание": "Пятилучье с пластиковыми вставками Тесла (черный)",
-    "Подлокотники": "Нерегулируемые черные пластиковые подлокотники для Тесла",
+    "Подлокотники": "Подлокотники пластиковые для кресла «Тесла»",
     "Газлифт": "Газ-лифт 3 категории по стандарту Germany DIN 4550, h=230 мм, длина штока 100 мм",
     "Механизм": "Однопозиционный механизм качания Топ-Ган регулирует высоту сиденья, обеспечивает режим свободного качания и фиксацию каркаса в рабочем положении.",
     "Особенности": "",

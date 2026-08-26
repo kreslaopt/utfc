@@ -172,7 +172,9 @@
                 "https://cdn.utfc.ru/iblock/3a9/3a91ad1effb38f96d5f0c506a82324e0/1adeda9565198f49a2cdb131cecf91ad.png",
                 "https://cdn.utfc.ru/iblock/9dc/9dce658160854fc0b72c901f9e296c44/834e0161979c22b7e5700e633653b9ae.png",
                 "https://cdn.utfc.ru/iblock/6c7/6c7f90086b1f903490a4fa906e3481e1/82a66ebfb73f11dedc2d249901b0ab6e.png",
-                "https://cdn.utfc.ru/iblock/f0b/f0b7f5875e76cc86c342465af1693ed0/1b687b628bb2f1a20e2a2f394b9da986.png"
+                "https://cdn.utfc.ru/iblock/f0b/f0b7f5875e76cc86c342465af1693ed0/1b687b628bb2f1a20e2a2f394b9da986.png",
+                "https://cdn.utfc.ru/iblock/c82/c82221f9290dcdd80dbc249c5412bfc7/1ee2b80fedc34481732d1646a81542ac.png",
+                "https://cdn.utfc.ru/iblock/2ea/2eae6a06a46b7ac29d86a6a02df69d89/dd1b7264900872b0447056529ae5762a.png"
             ]
         }
     ],
@@ -489,7 +491,7 @@
             "IC_CODE2": "",
             "IC_PICTURE2": "",
             "IC_DETAIL_PICTURE2": "",
-            "CP_QUANTITY": "14",
+            "CP_QUANTITY": "13",
             "CP_QUANTITY_TRACE": "D",
             "CP_CAN_BUY_ZERO": "D",
             "CP_WEIGHT": "0",
@@ -507,7 +509,7 @@
             "CP_VAT_INCLUDED": "Y",
             "CP_MEASURE": "5",
             "STORE_AMOUNT_2": "4",
-            "STORE_AMOUNT_3": "10",
+            "STORE_AMOUNT_3": "9",
             "CV_QUANTITY_FROM": "",
             "CV_QUANTITY_TO": "",
             "CV_PRICE_1": "11016.00000000",
@@ -527,7 +529,7 @@
     "full_describe": "Дизайн кресла вдохновлен эстетикой спортивных автомобилей: характерная ромбовидная строчка придает модели динамику и особый характер. Ярко выраженная эргономика позволит удобно сидеть весь рабочий день. Максимальная нагрузка – 120 кг.",
     "Link_arm": "https://utfc.ru/catalog/boss_chairs/roys_m_704/?offers=13332",
     "Основание": "Пятилучье пластиковое для кресел Ройс",
-    "Подлокотники": "Нерегулируемые подлокотники для кресла Ройс",
+    "Подлокотники": "Подлокотники пластиковые для кресла «Ройс»",
     "Газлифт": "Газ-лифт 3 категории по стандарту Germany DIN 4550, h=230 мм, длина штока 100 мм",
     "Механизм": "Однопозиционный механизм качания Топ-Ган регулирует высоту сиденья, обеспечивает режим свободного качания и фиксацию каркаса в рабочем положении.",
     "Особенности": "Тиснение кожи термоклешированием",

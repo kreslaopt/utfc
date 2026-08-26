@@ -116,7 +116,10 @@
                 "https://utfc.ru/local/templates/.default/components/utfc/catalog.element/.default/images/no_photo.png",
                 "https://utfc.ru/local/templates/utfc/img/sites/utfc/logo_down_2.png",
                 "https://cdn.utfc.ru/uf/df9/1971ilsxvotcmr5wlcu1aqcpy7ck2kt7.webp",
-                "https://cdn.utfc.ru/iblock/f0b/f0b7f5875e76cc86c342465af1693ed0/1b687b628bb2f1a20e2a2f394b9da986.png"
+                "https://cdn.utfc.ru/iblock/f0b/f0b7f5875e76cc86c342465af1693ed0/1b687b628bb2f1a20e2a2f394b9da986.png",
+                "https://cdn.utfc.ru/iblock/c82/c82221f9290dcdd80dbc249c5412bfc7/1ee2b80fedc34481732d1646a81542ac.png",
+                "https://cdn.utfc.ru/iblock/9d0/9d0f1eb7a7abdfde61308c77cfbff7d8/05791d0ccd84de4b8c6331bacf1ba5be.png",
+                "https://cdn.utfc.ru/iblock/2ea/2eae6a06a46b7ac29d86a6a02df69d89/dd1b7264900872b0447056529ae5762a.png"
             ]
         }
     ],
@@ -244,12 +247,12 @@
         "IE_TAGS": "Атлант",
         "IE_ID": "9397",
         "IP_PROP2": "660",
-        "IP_PROP3": "1130-1230",
+        "IP_PROP3": "1150-1250",
         "IP_PROP4": "740",
         "IP_PROP6": "",
         "IP_PROP19": "150",
         "IP_PROP25": "Монолитный",
-        "IP_PROP18": "https://cdn.utfc.ru/iblock/492/bg52x3two6qluerl7ey2bhu3y7ken6bp.png",
+        "IP_PROP18": "https://cdn.utfc.ru/iblock/9d0/9d0f1eb7a7abdfde61308c77cfbff7d8/05791d0ccd84de4b8c6331bacf1ba5be.png",
         "IP_PROP31": "https://cdn.utfc.ru/iblock/896/896a40fe19862edb2abb1ca2e504ead6.png",
         "IP_PROP5": "1090",
         "IP_PROP26": "666",
@@ -452,7 +455,7 @@
             "IP_PROP34": "9397",
             "IP_PROP35": "ЦБ-00006705",
             "IP_PROP36": "",
-            "IP_PROP37": "m_01",
+            "IP_PROP37": "m_75",
             "IP_PROP38": "8742d413-cc61-11f0-81dd-1866daf6186c",
             "IP_PROP39": "",
             "IP_PROP40": "",
@@ -707,7 +710,7 @@
     "full_describe": "Удобное кресло руководителя с необычным дизайном. Широкая спинка имеет множество горизонтальных прострочек, пластиковые подлокотники с мягкими накладками и ярко выраженный подголовник. Множество вариантов обивки и комплектаций кресла. Максимальная нагрузка до 150 кг.",
     "Link_arm": "https://utfc.ru/catalog/boss_chairs/atlant_v_pl727lux/?offers=9425",
     "Основание": "Пятилучье пластиковое d=660 мм",
-    "Подлокотники": "Подлокотники пластиковые с декоративными мягкими вставками используются на все ДК в исполнении Пластик-люкс 727",
+    "Подлокотники": "Подлокотники пластиковые с увеличенной мягкой накладкой",
     "Газлифт": "Газ-лифт 3 категории по стандарту Germany DIN 4550, h=230 мм, длина штока 100 мм",
     "Механизм": "Однопозиционный механизм качания Топ-Ган регулирует высоту сиденья, обеспечивает режим свободного качания и фиксацию каркаса в рабочем положении.",
     "Особенности": "",
@@ -718,7 +721,7 @@
     "madeinrf": "Сделано РФ",
     "sizes": {
         "Ширина:": "660",
-        "Высота:": "1130-1230",
+        "Высота:": "1150-1250",
         "Глубина:": "740",
         "Нагрузка:": "150",
         "Каркас:": "Монолитный",

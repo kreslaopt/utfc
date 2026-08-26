@@ -182,7 +182,9 @@
                 "https://cdn.utfc.ru/uf/d63/rfghq0252fj6ky7rahce8n2n0o5alalo.png",
                 "https://cdn.utfc.ru/uf/e47/9gw843m9ppyt4p99qd8q3xaqpilof9ou.png",
                 "https://cdn.utfc.ru/iblock/e49/e49ef734279064b5b9be4cafd2926b1d/e5b8b54948ab237d14fbd1f59e1ba258.png",
-                "https://cdn.utfc.ru/iblock/f0b/f0b7f5875e76cc86c342465af1693ed0/1b687b628bb2f1a20e2a2f394b9da986.png"
+                "https://cdn.utfc.ru/iblock/f0b/f0b7f5875e76cc86c342465af1693ed0/1b687b628bb2f1a20e2a2f394b9da986.png",
+                "https://cdn.utfc.ru/iblock/c82/c82221f9290dcdd80dbc249c5412bfc7/1ee2b80fedc34481732d1646a81542ac.png",
+                "https://cdn.utfc.ru/iblock/2ea/2eae6a06a46b7ac29d86a6a02df69d89/dd1b7264900872b0447056529ae5762a.png"
             ]
         }
     ],
@@ -468,7 +470,7 @@
             "IC_CODE2": "",
             "IC_PICTURE2": "",
             "IC_DETAIL_PICTURE2": "",
-            "CP_QUANTITY": "28",
+            "CP_QUANTITY": "5",
             "CP_QUANTITY_TRACE": "D",
             "CP_CAN_BUY_ZERO": "D",
             "CP_WEIGHT": "0",
@@ -486,7 +488,7 @@
             "CP_VAT_INCLUDED": "Y",
             "CP_MEASURE": "5",
             "STORE_AMOUNT_2": "0",
-            "STORE_AMOUNT_3": "28",
+            "STORE_AMOUNT_3": "5",
             "CV_QUANTITY_FROM": "",
             "CV_QUANTITY_TO": "",
             "CV_PRICE_1": "7539.00000000",
@@ -767,7 +769,7 @@
     "full_describe": "Универсальная модель по доступной цене! Подходит как для офиса, так и для дома. Широкая эргономичная спинка обтянута прочной сеткой, а высокие пластиковые подлокотники обеспечивают комфорт. Глубокое сиденье делает кресло идеальным для людей разного роста. Максимальная нагрузка 150 кг.",
     "Link_arm": "https://utfc.ru/catalog/comfort_chairs/ultra_neptun_ch/?offers=7495",
     "Основание": "Пятилучье хромированное d=700 мм",
-    "Подлокотники": "Подлокотник Нептун пластиковый с алюминиевой вставкой",
+    "Подлокотники": "Подлокотники пластиковые «Нептун» с алюминиевой вставкой",
     "Газлифт": "Газ-лифт 3 категории по стандарту Germany DIN 4550, h=230 мм, длина штока 100 мм",
     "Механизм": "Однопозиционный механизм качания Топ-Ган регулирует высоту сиденья, обеспечивает режим свободного качания и фиксацию каркаса в рабочем положении.",
     "Особенности": "Нерегулируемый подголовник отделка из искусственной кожи",

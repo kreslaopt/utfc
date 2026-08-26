@@ -159,7 +159,10 @@
                 "https://cdn.utfc.ru/iblock/60a/l3ngvqhtsn0020n565n3fxrbgl1t3dej.png",
                 "https://cdn.utfc.ru/iblock/bf5/k6r5og79c1xxr9l610myr94l2cetjgta.png",
                 "https://cdn.utfc.ru/iblock/e49/e49ef734279064b5b9be4cafd2926b1d/e5b8b54948ab237d14fbd1f59e1ba258.png",
-                "https://cdn.utfc.ru/iblock/f0b/f0b7f5875e76cc86c342465af1693ed0/1b687b628bb2f1a20e2a2f394b9da986.png"
+                "https://cdn.utfc.ru/iblock/f0b/f0b7f5875e76cc86c342465af1693ed0/1b687b628bb2f1a20e2a2f394b9da986.png",
+                "https://cdn.utfc.ru/iblock/81c/81caa1558437f3fe6aad735098c34c5a/9e7ccfc07f6f3cf1b8360a17057233e0.png",
+                "https://cdn.utfc.ru/iblock/c82/c82221f9290dcdd80dbc249c5412bfc7/1ee2b80fedc34481732d1646a81542ac.png",
+                "https://cdn.utfc.ru/iblock/2ea/2eae6a06a46b7ac29d86a6a02df69d89/dd1b7264900872b0447056529ae5762a.png"
             ]
         }
     ],
@@ -285,11 +288,11 @@
         "IE_ID": "11821",
         "IP_PROP2": "575",
         "IP_PROP3": "905",
-        "IP_PROP4": "600",
+        "IP_PROP4": "650",
         "IP_PROP6": "",
         "IP_PROP19": "120",
         "IP_PROP25": "Немонолитный",
-        "IP_PROP18": "https://cdn.utfc.ru/iblock/711/7110ba18e83a9f1d49b68b14576467f9/b19ace127f634b244dbcc5d177dc7d65.png",
+        "IP_PROP18": "https://cdn.utfc.ru/iblock/81c/81caa1558437f3fe6aad735098c34c5a/9e7ccfc07f6f3cf1b8360a17057233e0.png",
         "IP_PROP31": "https://cdn.utfc.ru/iblock/501/an4da7muar4yevzqhikjo7163731wrp7.png",
         "IP_PROP5": "584",
         "IP_PROP26": "584",
@@ -874,7 +877,7 @@
     "full_describe": "Оригинальное кресло \"Энжел\" имеет необычное дизайнерское решение. Его уникальный дизайн с \"крылышками\" на спинке, обтянутой прочной сеткой, придает креслу стильный и современный вид, задает эргономику и поддержку для спины. Благодаря удобной конструкции с полозьями, кресло становится универсальным и комфортным для использования в офисных помещениях.",
     "Link_arm": "https://utfc.ru/catalog/comfort_chairs/angel_white_neo_ch/?offers=11823",
     "Основание": "Полозья металлические Нео, защитно-декоративное покрытие никель-хром, d=25х2 мм",
-    "Подлокотники": "Нерегулируемые белые пластиковые подлокотники для кресла Энжел",
+    "Подлокотники": "Подлокотники белые пластиковые для кресла «Энжел»",
     "Газлифт": "",
     "Механизм": "",
     "Особенности": "",

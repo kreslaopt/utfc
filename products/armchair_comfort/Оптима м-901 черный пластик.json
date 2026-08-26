@@ -161,7 +161,9 @@
                 "https://cdn.utfc.ru/iblock/eef/eef488354df800e904c62a1781d22ba3.png",
                 "https://cdn.utfc.ru/uf/d18/l887nvbfl9o3xm4czq33khfs0jidbnas.png",
                 "https://cdn.utfc.ru/iblock/e49/e49ef734279064b5b9be4cafd2926b1d/e5b8b54948ab237d14fbd1f59e1ba258.png",
-                "https://cdn.utfc.ru/iblock/f0b/f0b7f5875e76cc86c342465af1693ed0/1b687b628bb2f1a20e2a2f394b9da986.png"
+                "https://cdn.utfc.ru/iblock/f0b/f0b7f5875e76cc86c342465af1693ed0/1b687b628bb2f1a20e2a2f394b9da986.png",
+                "https://cdn.utfc.ru/iblock/c82/c82221f9290dcdd80dbc249c5412bfc7/1ee2b80fedc34481732d1646a81542ac.png",
+                "https://cdn.utfc.ru/iblock/2ea/2eae6a06a46b7ac29d86a6a02df69d89/dd1b7264900872b0447056529ae5762a.png"
             ]
         }
     ],
@@ -459,7 +461,7 @@
             "IC_CODE2": "",
             "IC_PICTURE2": "",
             "IC_DETAIL_PICTURE2": "",
-            "CP_QUANTITY": "24",
+            "CP_QUANTITY": "23",
             "CP_QUANTITY_TRACE": "D",
             "CP_CAN_BUY_ZERO": "D",
             "CP_WEIGHT": "0",
@@ -477,7 +479,7 @@
             "CP_VAT_INCLUDED": "Y",
             "CP_MEASURE": "5",
             "STORE_AMOUNT_2": "1",
-            "STORE_AMOUNT_3": "1",
+            "STORE_AMOUNT_3": "0",
             "CV_QUANTITY_FROM": "",
             "CV_QUANTITY_TO": "",
             "CV_PRICE_1": "10320.00000000",
@@ -497,7 +499,7 @@
     "full_describe": "Современное кресло с эргономичной спинкой и поясничной  поддержкой, обтянутой прочной корейской сеткой. Регулируемые подлокотники оснащены мягкими ппу накладками. Кресло отлично подойдет для  открытых офисов и коворкингов.",
     "Link_arm": "https://utfc.ru/catalog/comfort_chairs/optima/?offers=8419",
     "Основание": "Пятилучье пластиковое с узкими лучами d=660 мм",
-    "Подлокотники": "Т-образные регулируемые по высоте пластиковые подлокотники с мягкими накладками",
+    "Подлокотники": "Подлокотники пластиковые Т-образные регулируемые по высоте",
     "Газлифт": "Газ-лифт 3 категории по стандарту Germany DIN 4550, h=260 мм, длина штока 120 мм",
     "Механизм": "Топ-Ган с синхроплатой — механизм качания с синхроплатой обеспечивает регулировку высоты сиденья, регулировку силы отклонения спинки под вес пользователя и фиксацию спинки в рабочем положении",
     "Особенности": "",

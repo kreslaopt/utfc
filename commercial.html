@@ -342,7 +342,7 @@
         .replace(/[\/\-\.,()]/g, ' ')   // Заменяем / - , . ( ) на пробел
         .replace(/\s+/g, ' ')          // Множественные пробелы в один
         .trim()
-        .replace(/\baero\b/g, 'аэро'); // пример замены, при необходимости
+        .replace(/\baero\b/g, 'аэро'); 
     }
 
     document.getElementById('delete-price-btn').addEventListener('click', () => {
@@ -813,7 +813,7 @@ document.getElementById('add-dimensions-btn').addEventListener('click', () => {
       const img = document.getElementById('fax-image');
       const handleContainer = this.parentElement; // контейнер с иконками
 
-      // Можно скрыть изображение и убрать иконки
+      // скрыть изображение и убрать иконки
       if (img) {
         img.style.display = 'none';
       }
@@ -1209,6 +1209,8 @@ const finishTypeSeatValue = (typeof product.finish_type_seat === 'string' && pro
           }
         });
       }
+
+      
 
 
       setTimeout(() => {
@@ -1681,12 +1683,14 @@ const finishTypeSeatValue = (typeof product.finish_type_seat === 'string' && pro
           }
         }
       });
-    }
+    }    
+
     // Функция для генерации PDF
     async function generateCommercialOffer() {
       restoreAllProductDetails();
       delPrice();
       updateProductImagesInDOM();
+
 
       const btn = document.getElementById('add-dimensions-btn');
 
@@ -1989,7 +1993,7 @@ try {
     document.querySelectorAll('.sketch-container').forEach(container => {
       container.addEventListener('click', handleAnyClickOnSketchArea);
     });
-    
+      
 
     // Обработчик для всех кликов по странице
     document.addEventListener('click', (e) => {
@@ -2051,8 +2055,6 @@ try {
         updatePageNumbers();
         refreshImages();
         setImageSizesForPDF();
-        
-
 
         // Ждём 1 секунду на случай, если QR-коды ещё грузятся
         await new Promise(resolve => setTimeout(resolve, 1000));
@@ -2077,8 +2079,6 @@ try {
     window.addEventListener('load', () => {
       updateProductImagesInDOM();
     });
-
-
 
     // Загружаем и отображаем товары при загрузке страницы
     window.onload = async () => {

@@ -174,7 +174,9 @@
                 "https://cdn.utfc.ru/iblock/277/277228a0ae4d298178881a1883f6bad3/7378a2c20b53e3af651f77ac309cf692.png",
                 "https://cdn.utfc.ru/iblock/e49/e49ef734279064b5b9be4cafd2926b1d/e5b8b54948ab237d14fbd1f59e1ba258.png",
                 "https://cdn.utfc.ru/iblock/175/lzek5k9nvnc35w5kzt1ebwocw3ngrcki.png",
-                "https://cdn.utfc.ru/iblock/f0b/f0b7f5875e76cc86c342465af1693ed0/1b687b628bb2f1a20e2a2f394b9da986.png"
+                "https://cdn.utfc.ru/iblock/f0b/f0b7f5875e76cc86c342465af1693ed0/1b687b628bb2f1a20e2a2f394b9da986.png",
+                "https://cdn.utfc.ru/iblock/c82/c82221f9290dcdd80dbc249c5412bfc7/1ee2b80fedc34481732d1646a81542ac.png",
+                "https://cdn.utfc.ru/iblock/2ea/2eae6a06a46b7ac29d86a6a02df69d89/dd1b7264900872b0447056529ae5762a.png"
             ]
         }
     ],
@@ -291,7 +293,7 @@
         "IE_ACTIVE": "Y",
         "IE_ACTIVE_FROM": "",
         "IE_ACTIVE_TO": "",
-        "IE_SORT": "980",
+        "IE_SORT": "1300",
         "IE_PREVIEW_PICTURE": "https://cdn.utfc.ru/iblock/65a/in2kcnox0y2ozzhs6ajs629ehs9mw1od.png",
         "IE_PREVIEW_TEXT": "Конференц-кресло идеально завершит композицию современного кабинета. Комфорт креслу придают мягкие подушки на сиденье и спинке, а цельнометаллический каркас подчеркивает надежность и долговечность конструкции. Максимальная нагрузка до 150 кг. ",
         "IE_PREVIEW_TEXT_TYPE": "text",
@@ -1155,7 +1157,7 @@
     "full_describe": "Конференц-кресло идеально завершит композицию современного кабинета. Комфорт креслу придают мягкие подушки на сиденье и спинке, а цельнометаллический каркас подчеркивает надежность и долговечность конструкции. Максимальная нагрузка до 150 кг.",
     "Link_arm": "https://utfc.ru/catalog/boss_chairs/kayman_comfort_np_bl/?offers=12173",
     "Основание": "Полозья металлические Нео, защитно-декоративное порошковое покрытие черного цвета, d=25х2 мм",
-    "Подлокотники": "Подлокотники для кресел \"Кайман\", нерегулируемые, черные металлические",
+    "Подлокотники": "Подлокотники черные металлические для кресел «Кайман»",
     "Газлифт": "",
     "Механизм": "",
     "Особенности": "",

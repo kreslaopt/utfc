@@ -179,7 +179,9 @@
                 "https://cdn.utfc.ru/iblock/825/8255bc60804d66bafab5535a24a58be6/b5bcffb275328caa3c185d3fb9997ba2.png",
                 "https://cdn.utfc.ru/iblock/8df/8df8f1c04ad9c73e010d5c505bc219b9/8d3748534b63879e5b7f696063bb3389.png",
                 "https://cdn.utfc.ru/iblock/510/510b2aed75dbfd159ad4d5226f372d7f/e3d7103e5dfbee0640683c4bf7877aca.png",
-                "https://cdn.utfc.ru/iblock/f0b/f0b7f5875e76cc86c342465af1693ed0/1b687b628bb2f1a20e2a2f394b9da986.png"
+                "https://cdn.utfc.ru/iblock/f0b/f0b7f5875e76cc86c342465af1693ed0/1b687b628bb2f1a20e2a2f394b9da986.png",
+                "https://cdn.utfc.ru/iblock/c82/c82221f9290dcdd80dbc249c5412bfc7/1ee2b80fedc34481732d1646a81542ac.png",
+                "https://cdn.utfc.ru/iblock/2ea/2eae6a06a46b7ac29d86a6a02df69d89/dd1b7264900872b0447056529ae5762a.png"
             ]
         }
     ],
@@ -471,7 +473,7 @@
             "IC_CODE2": "",
             "IC_PICTURE2": "",
             "IC_DETAIL_PICTURE2": "",
-            "CP_QUANTITY": "0",
+            "CP_QUANTITY": "1",
             "CP_QUANTITY_TRACE": "D",
             "CP_CAN_BUY_ZERO": "D",
             "CP_WEIGHT": "0",
@@ -488,7 +490,7 @@
             "CP_VAT_ID": "1",
             "CP_VAT_INCLUDED": "Y",
             "CP_MEASURE": "5",
-            "STORE_AMOUNT_2": "0",
+            "STORE_AMOUNT_2": "1",
             "STORE_AMOUNT_3": "0",
             "CV_QUANTITY_FROM": "",
             "CV_QUANTITY_TO": "",
@@ -1053,7 +1055,7 @@
     "full_describe": "Широкая эргономичная спинка обеспечивает удобное расположение в кресле. Изящный каркас спинки надежно соединен с сиденьем через подлокотники.",
     "Link_arm": "https://utfc.ru/catalog/comfort_chairs/kembrige_ch_502/?offers=7568",
     "Основание": "Пятилучье Арктика пластиковое с узкими лучами, d=660 мм",
-    "Подлокотники": "Нерегулируемые черные пластиковые подлокотники для СН-502 Кэмбридж",
+    "Подлокотники": "Подлокотники пластиковые СН-502 для Кэмбридж",
     "Газлифт": "Газ-лифт 3 категории по стандарту Germany DIN 4550, h=230 мм, длина штока 100 мм",
     "Механизм": "Однопозиционный механизм качания Топ-Ган регулирует высоту сиденья, обеспечивает режим свободного качания и фиксацию каркаса в рабочем положении.",
     "Особенности": "",

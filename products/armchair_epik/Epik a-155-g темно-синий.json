@@ -73,8 +73,8 @@
     "guarantee": [
         {
             "period": "12",
-            "max_load": "120",
-            "recommended_load": "90"
+            "max_load": "150",
+            "recommended_load": "120"
         }
     ],
     "images": [
@@ -166,7 +166,10 @@
                 "https://cdn.utfc.ru/iblock/49e/49e97b5c33efbcdcd02c2f61fc2a1655/3edf214263eb792bbcd7f64bff8bc07d.png",
                 "https://cdn.utfc.ru/iblock/961/9612bcbd6f5b0d7ede676215b8e2d066/e291581e0655e0999d69e6023927cabf.png",
                 "https://cdn.utfc.ru/iblock/e49/e49ef734279064b5b9be4cafd2926b1d/e5b8b54948ab237d14fbd1f59e1ba258.png",
-                "https://cdn.utfc.ru/iblock/f0b/f0b7f5875e76cc86c342465af1693ed0/1b687b628bb2f1a20e2a2f394b9da986.png"
+                "https://cdn.utfc.ru/iblock/f0b/f0b7f5875e76cc86c342465af1693ed0/1b687b628bb2f1a20e2a2f394b9da986.png",
+                "https://cdn.utfc.ru/iblock/c82/c82221f9290dcdd80dbc249c5412bfc7/1ee2b80fedc34481732d1646a81542ac.png",
+                "https://cdn.utfc.ru/iblock/2ea/2eae6a06a46b7ac29d86a6a02df69d89/dd1b7264900872b0447056529ae5762a.png",
+                "https://cdn.utfc.ru/iblock/f47/f47ed8862c34acb189a5ee3ace194227/c1fa918aaaa14ffd856ec2b20c2fb205.png"
             ]
         }
     ],
@@ -223,8 +226,8 @@
             },
             "runners_width": {},
             "runners_depth": {},
-            "recommended_load": "90",
-            "max_load": "120",
+            "recommended_load": "120",
+            "max_load": "150",
             "skeleton": "немонолитный",
             "netto": "19",
             "brutto": "22",
@@ -257,7 +260,7 @@
         "IP_PROP3": "1210-1290",
         "IP_PROP4": "730",
         "IP_PROP6": "",
-        "IP_PROP19": "120",
+        "IP_PROP19": "150",
         "IP_PROP25": "Немонолитный",
         "IP_PROP18": "https://cdn.utfc.ru/iblock/ecf/if9prblhkmwt7h671ovkfqgnt2twf9sr.png",
         "IP_PROP31": "https://cdn.utfc.ru/iblock/bf4/e1bwdynwloo2odbw7hzesdedkm826w7s.png",
@@ -418,7 +421,7 @@
             "IC_CODE2": "",
             "IC_PICTURE2": "",
             "IC_DETAIL_PICTURE2": "",
-            "CP_QUANTITY": "29",
+            "CP_QUANTITY": "27",
             "CP_QUANTITY_TRACE": "D",
             "CP_CAN_BUY_ZERO": "D",
             "CP_WEIGHT": "0",
@@ -435,7 +438,7 @@
             "CP_VAT_ID": "",
             "CP_VAT_INCLUDED": "Y",
             "CP_MEASURE": "5",
-            "STORE_AMOUNT_2": "2",
+            "STORE_AMOUNT_2": "0",
             "STORE_AMOUNT_3": "3",
             "CV_QUANTITY_FROM": "",
             "CV_QUANTITY_TO": "",
@@ -456,7 +459,7 @@
     "full_describe": "Кресло EPIK A155 — воплощение городского дизайна, которое гармонично дополнит интерьер в стиле хай-тек. Благодаря обивке из мягкой экокожи класса Lux, оно создаёт ощущение роскоши и комфорта. Элегантный дизайн кресла делает его отличным дополнением к рабочей обстановке. Кресла серии EPIK — это не просто кресла, это показатель вашего безупречного вкуса и чувства эстетики.",
     "Link_arm": "https://utfc.ru/catalog/epik_chairs/epik_a155g_blue/?offers=12397",
     "Основание": "Пятилучье алюминиевое А-155-G, покрытие глянцевое, диаметр 700мм",
-    "Подлокотники": "Подлокотники алюминиевые A-155-G с мягкими полиуретановыми накладками",
+    "Подлокотники": "Подлокотники алюминиевые с мягкими полиуретановыми накладками для кресла A-155-G",
     "Газлифт": "Высококачественный газ-лифт 3 класса Germany DIN 4550",
     "Механизм": "Механизм качания позволяет регулировать высоту сиденья, жесткость отклонения и обеспечивает фиксацию наклона в 4-х положениях.",
     "Особенности": "Алюминиевые подлокотники, плавно переходящие за спинку с декоративными элементами",
@@ -488,7 +491,7 @@
         "Ширина:": "660",
         "Высота:": "1210-1290",
         "Глубина:": "730",
-        "Нагрузка:": "120",
+        "Нагрузка:": "150",
         "Каркас:": "Немонолитный",
         "Ширина упаковки:": "855",
         "Высота упаковки:": "650",

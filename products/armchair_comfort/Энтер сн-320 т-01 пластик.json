@@ -192,7 +192,9 @@
                 "https://cdn.utfc.ru/iblock/e49/e49ef734279064b5b9be4cafd2926b1d/e5b8b54948ab237d14fbd1f59e1ba258.png",
                 "https://cdn.utfc.ru/uf/bc1/bc19ccc90baa8164a6f8de94c86f1b38.png",
                 "https://cdn.utfc.ru/iblock/d95/d95f53cd00c9f40dcacd87af2b4d548e/a19470ee22f88d71526ae51b7e5a29b7.png",
-                "https://cdn.utfc.ru/iblock/f0b/f0b7f5875e76cc86c342465af1693ed0/1b687b628bb2f1a20e2a2f394b9da986.png"
+                "https://cdn.utfc.ru/iblock/f0b/f0b7f5875e76cc86c342465af1693ed0/1b687b628bb2f1a20e2a2f394b9da986.png",
+                "https://cdn.utfc.ru/iblock/c82/c82221f9290dcdd80dbc249c5412bfc7/1ee2b80fedc34481732d1646a81542ac.png",
+                "https://cdn.utfc.ru/iblock/2ea/2eae6a06a46b7ac29d86a6a02df69d89/dd1b7264900872b0447056529ae5762a.png"
             ]
         }
     ],
@@ -839,7 +841,7 @@
             "IC_CODE2": "",
             "IC_PICTURE2": "",
             "IC_DETAIL_PICTURE2": "",
-            "CP_QUANTITY": "19",
+            "CP_QUANTITY": "16",
             "CP_QUANTITY_TRACE": "D",
             "CP_CAN_BUY_ZERO": "D",
             "CP_WEIGHT": "0",
@@ -857,7 +859,7 @@
             "CP_VAT_INCLUDED": "Y",
             "CP_MEASURE": "5",
             "STORE_AMOUNT_2": "0",
-            "STORE_AMOUNT_3": "19",
+            "STORE_AMOUNT_3": "16",
             "CV_QUANTITY_FROM": "",
             "CV_QUANTITY_TO": "",
             "CV_PRICE_1": "4668.00000000",
@@ -1326,7 +1328,7 @@
     "full_describe": "Кресло оснащено широкой эргономичной спинкой с сетчатой обивкой и двойной мягкой подушкой сиденья, покрытой износостойкой тканью. Благодаря своей компактности, оно идеально подходит для небольших помещений. Т-образные подлокотники обеспечивают надежную поддержку рук.",
     "Link_arm": "https://utfc.ru/catalog/comfort_chairs/enter_t01_pl/?offers=8340",
     "Основание": "Пятилучье пластиковое d=600 мм",
-    "Подлокотники": "Подлокотник Т-01 пластиковый",
+    "Подлокотники": "Подлокотники пластиковые «Т-01»",
     "Газлифт": "Газ-лифт 2 категории по стандарту Germany DIN 4550, h=290 мм, длина штока 140 мм",
     "Механизм": "ПВМ — пружинно-винтовой механизм позволяет регулировать уровень жесткости отклонения спинки кресла и обеспечивает постоянный контакт спины пользователя со спинкой кресла",
     "Особенности": "",

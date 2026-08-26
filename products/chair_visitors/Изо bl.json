@@ -249,7 +249,10 @@
                 "https://cdn.utfc.ru/iblock/866/cfxszjanu1jy4c5hgaqaz9gpxis37dne.png",
                 "https://cdn.utfc.ru/iblock/d4c/d4cedfce22b1e44b200e945fbda3d3ab.png",
                 "https://cdn.utfc.ru/uf/5d4/sz9v486ets8o67a5tszj4ai48kzirwzi.png",
-                "https://cdn.utfc.ru/iblock/f0b/f0b7f5875e76cc86c342465af1693ed0/1b687b628bb2f1a20e2a2f394b9da986.png"
+                "https://cdn.utfc.ru/iblock/f0b/f0b7f5875e76cc86c342465af1693ed0/1b687b628bb2f1a20e2a2f394b9da986.png",
+                "https://cdn.utfc.ru/iblock/c82/c82221f9290dcdd80dbc249c5412bfc7/1ee2b80fedc34481732d1646a81542ac.png",
+                "https://cdn.utfc.ru/iblock/87b/87b4c5c1e000cef0ba176a13af38e02d/09e3908c1b607c4a496876a11be88724.png",
+                "https://cdn.utfc.ru/iblock/2ea/2eae6a06a46b7ac29d86a6a02df69d89/dd1b7264900872b0447056529ae5762a.png"
             ]
         }
     ],
@@ -658,7 +661,7 @@
             "IC_CODE2": "",
             "IC_PICTURE2": "",
             "IC_DETAIL_PICTURE2": "",
-            "CP_QUANTITY": "302",
+            "CP_QUANTITY": "0",
             "CP_QUANTITY_TRACE": "D",
             "CP_CAN_BUY_ZERO": "D",
             "CP_WEIGHT": "0",
@@ -676,7 +679,7 @@
             "CP_VAT_INCLUDED": "Y",
             "CP_MEASURE": "5",
             "STORE_AMOUNT_2": "0",
-            "STORE_AMOUNT_3": "3",
+            "STORE_AMOUNT_3": "0",
             "CV_QUANTITY_FROM": "",
             "CV_QUANTITY_TO": "",
             "CV_PRICE_1": "1963.00000000",
@@ -685,9 +688,9 @@
             "CV_CURRENCY_2": "RUB",
             "STORE_AMOUNT_4": "0",
             "CV_PRICE_3": "1963.00000000",
-            "STORE_AMOUNT_5": "243",
+            "STORE_AMOUNT_5": "0",
             "CV_CURRENCY_3": "RUB",
-            "STORE_AMOUNT_6": "56"
+            "STORE_AMOUNT_6": "0"
         },
         {
             "IE_XML_ID": "22229",
@@ -1180,7 +1183,7 @@
             "IC_CODE2": "",
             "IC_PICTURE2": "",
             "IC_DETAIL_PICTURE2": "",
-            "CP_QUANTITY": "5",
+            "CP_QUANTITY": "7",
             "CP_QUANTITY_TRACE": "D",
             "CP_CAN_BUY_ZERO": "D",
             "CP_WEIGHT": "0",
@@ -1198,7 +1201,7 @@
             "CP_VAT_INCLUDED": "Y",
             "CP_MEASURE": "5",
             "STORE_AMOUNT_2": "0",
-            "STORE_AMOUNT_3": "5",
+            "STORE_AMOUNT_3": "7",
             "CV_QUANTITY_FROM": "",
             "CV_QUANTITY_TO": "",
             "CV_PRICE_1": "1963.00000000",
@@ -1528,7 +1531,7 @@
             "IC_CODE2": "",
             "IC_PICTURE2": "",
             "IC_DETAIL_PICTURE2": "",
-            "CP_QUANTITY": "465",
+            "CP_QUANTITY": "262",
             "CP_QUANTITY_TRACE": "D",
             "CP_CAN_BUY_ZERO": "D",
             "CP_WEIGHT": "0",
@@ -1545,8 +1548,8 @@
             "CP_VAT_ID": "1",
             "CP_VAT_INCLUDED": "Y",
             "CP_MEASURE": "5",
-            "STORE_AMOUNT_2": "0",
-            "STORE_AMOUNT_3": "40",
+            "STORE_AMOUNT_2": "100",
+            "STORE_AMOUNT_3": "162",
             "CV_QUANTITY_FROM": "",
             "CV_QUANTITY_TO": "",
             "CV_PRICE_1": "1963.00000000",
@@ -1555,9 +1558,9 @@
             "CV_CURRENCY_2": "RUB",
             "STORE_AMOUNT_4": "0",
             "CV_PRICE_3": "1963.00000000",
-            "STORE_AMOUNT_5": "236",
+            "STORE_AMOUNT_5": "0",
             "CV_CURRENCY_3": "RUB",
-            "STORE_AMOUNT_6": "189"
+            "STORE_AMOUNT_6": "0"
         },
         {
             "IE_XML_ID": "22313",
@@ -1807,7 +1810,7 @@
             "IC_CODE2": "",
             "IC_PICTURE2": "",
             "IC_DETAIL_PICTURE2": "",
-            "CP_QUANTITY": "1483",
+            "CP_QUANTITY": "142",
             "CP_QUANTITY_TRACE": "D",
             "CP_CAN_BUY_ZERO": "D",
             "CP_WEIGHT": "0",
@@ -1824,8 +1827,8 @@
             "CP_VAT_ID": "1",
             "CP_VAT_INCLUDED": "Y",
             "CP_MEASURE": "5",
-            "STORE_AMOUNT_2": "25",
-            "STORE_AMOUNT_3": "2",
+            "STORE_AMOUNT_2": "0",
+            "STORE_AMOUNT_3": "142",
             "CV_QUANTITY_FROM": "",
             "CV_QUANTITY_TO": "",
             "CV_PRICE_1": "2072.00000000",
@@ -1834,9 +1837,9 @@
             "CV_CURRENCY_2": "RUB",
             "STORE_AMOUNT_4": "0",
             "CV_PRICE_3": "2072.00000000",
-            "STORE_AMOUNT_5": "1075",
+            "STORE_AMOUNT_5": "0",
             "CV_CURRENCY_3": "RUB",
-            "STORE_AMOUNT_6": "381"
+            "STORE_AMOUNT_6": "0"
         },
         {
             "IE_XML_ID": "22318",

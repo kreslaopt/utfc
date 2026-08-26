@@ -73,8 +73,8 @@
     "guarantee": [
         {
             "period": "12",
-            "max_load": "120",
-            "recommended_load": "90"
+            "max_load": "150",
+            "recommended_load": "120"
         }
     ],
     "images": [
@@ -166,7 +166,10 @@
                 "https://cdn.utfc.ru/iblock/561/5610e7a49f4001c8cb33867467f56946/247ad2b245a88729f16aa45f11d33387.png",
                 "https://cdn.utfc.ru/iblock/961/9612bcbd6f5b0d7ede676215b8e2d066/e291581e0655e0999d69e6023927cabf.png",
                 "https://cdn.utfc.ru/iblock/e49/e49ef734279064b5b9be4cafd2926b1d/e5b8b54948ab237d14fbd1f59e1ba258.png",
-                "https://cdn.utfc.ru/iblock/f0b/f0b7f5875e76cc86c342465af1693ed0/1b687b628bb2f1a20e2a2f394b9da986.png"
+                "https://cdn.utfc.ru/iblock/f0b/f0b7f5875e76cc86c342465af1693ed0/1b687b628bb2f1a20e2a2f394b9da986.png",
+                "https://cdn.utfc.ru/iblock/c82/c82221f9290dcdd80dbc249c5412bfc7/1ee2b80fedc34481732d1646a81542ac.png",
+                "https://cdn.utfc.ru/iblock/d2e/d2ea800e13e294df1c3a01ce7ac274ee/9ac1d7a2c1f2f39a8350d15e11579169.png",
+                "https://cdn.utfc.ru/iblock/2ea/2eae6a06a46b7ac29d86a6a02df69d89/dd1b7264900872b0447056529ae5762a.png"
             ]
         }
     ],
@@ -227,8 +230,8 @@
             },
             "runners_width": {},
             "runners_depth": {},
-            "recommended_load": "90",
-            "max_load": "120",
+            "recommended_load": "120",
+            "max_load": "150",
             "skeleton": "немонолитный",
             "netto": "19",
             "brutto": "22",
@@ -261,7 +264,7 @@
         "IP_PROP3": "1215-1315",
         "IP_PROP4": "650",
         "IP_PROP6": "",
-        "IP_PROP19": "120",
+        "IP_PROP19": "150",
         "IP_PROP25": "Немонолитный",
         "IP_PROP18": "https://cdn.utfc.ru/iblock/fac/sl8904ifyecc0up2argrllq8oczlu50d.png",
         "IP_PROP31": "https://cdn.utfc.ru/iblock/18a/i6pi74fx1dti1zvuz9uru3puipe7xzay.png",
@@ -422,7 +425,7 @@
             "IC_CODE2": "",
             "IC_PICTURE2": "",
             "IC_DETAIL_PICTURE2": "",
-            "CP_QUANTITY": "75",
+            "CP_QUANTITY": "72",
             "CP_QUANTITY_TRACE": "D",
             "CP_CAN_BUY_ZERO": "D",
             "CP_WEIGHT": "0",
@@ -439,7 +442,7 @@
             "CP_VAT_ID": "",
             "CP_VAT_INCLUDED": "Y",
             "CP_MEASURE": "5",
-            "STORE_AMOUNT_2": "6",
+            "STORE_AMOUNT_2": "3",
             "STORE_AMOUNT_3": "2",
             "CV_QUANTITY_FROM": "",
             "CV_QUANTITY_TO": "",
@@ -460,7 +463,7 @@
     "full_describe": "Кресло олицетворяет идеальное сочетание комфорта и элегантности. Оно обеспечивает надёжную поддержку поясницы, гарантируя максимальный уровень удобства. Изысканные алюминиевые подлокотники с мягкими накладками придают креслу роскошный вид и создают неповторимую атмосферу в вашем интерьере. Это кресло обладает утончённым и современным дизайном.",
     "Link_arm": "https://utfc.ru/catalog/epik_chairs/epik_a130g_br/?offers=12395",
     "Основание": "Пятилучье алюминиевое А-130-G, покрытие глянцевое, диаметр 700мм",
-    "Подлокотники": "Подлокотники алюминиевые A-130-G с мягкими полиуретановыми накладками",
+    "Подлокотники": "Подлокотники алюминиевые с мягкими полиуретановыми накладками для кресла A-130-G",
     "Газлифт": "Высококачественный газ-лифт 3 класса Germany DIN 4550",
     "Механизм": "Механизм качания позволяет регулировать высоту сиденья, жесткость отклонения и обеспечивает фиксацию наклона в 4-х положениях.",
     "Особенности": "Увеличенная мягкая зона поясничной поддержки",
@@ -492,7 +495,7 @@
         "Ширина:": "640",
         "Высота:": "1215-1315",
         "Глубина:": "650",
-        "Нагрузка:": "120",
+        "Нагрузка:": "150",
         "Каркас:": "Немонолитный",
         "Ширина упаковки:": "890",
         "Высота упаковки:": "650",

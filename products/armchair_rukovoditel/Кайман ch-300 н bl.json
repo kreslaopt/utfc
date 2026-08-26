@@ -181,7 +181,9 @@
                 "https://cdn.utfc.ru/iblock/e49/e49ef734279064b5b9be4cafd2926b1d/e5b8b54948ab237d14fbd1f59e1ba258.png",
                 "https://cdn.utfc.ru/iblock/175/lzek5k9nvnc35w5kzt1ebwocw3ngrcki.png",
                 "https://cdn.utfc.ru/iblock/0fc/0fc7a3faf1d150ec1487f8cd484cba88/ac965589c48335ddd40a20b4404017e8.png",
-                "https://cdn.utfc.ru/iblock/f0b/f0b7f5875e76cc86c342465af1693ed0/1b687b628bb2f1a20e2a2f394b9da986.png"
+                "https://cdn.utfc.ru/iblock/f0b/f0b7f5875e76cc86c342465af1693ed0/1b687b628bb2f1a20e2a2f394b9da986.png",
+                "https://cdn.utfc.ru/iblock/c82/c82221f9290dcdd80dbc249c5412bfc7/1ee2b80fedc34481732d1646a81542ac.png",
+                "https://cdn.utfc.ru/iblock/2ea/2eae6a06a46b7ac29d86a6a02df69d89/dd1b7264900872b0447056529ae5762a.png"
             ]
         }
     ],
@@ -295,7 +297,7 @@
         "IE_ACTIVE": "Y",
         "IE_ACTIVE_FROM": "",
         "IE_ACTIVE_TO": "",
-        "IE_SORT": "923",
+        "IE_SORT": "900",
         "IE_PREVIEW_PICTURE": "https://cdn.utfc.ru/iblock/f19/cwl3i2bshf47sgs3ownetymyw7jyzs8f.png",
         "IE_PREVIEW_TEXT": "Кресло имеет современный вид благодаря облегченному эргономичному каркасу, обтянутому экокожей, тканью или сеткой. Металлический чёрный каркас кресла прочный и надежный. ",
         "IE_PREVIEW_TEXT_TYPE": "text",
@@ -880,7 +882,7 @@
     "full_describe": "Кресло имеет современный вид благодаря облегченному эргономичному каркасу, обтянутому экокожей, тканью или сеткой. Металлический чёрный каркас кресла прочный и надежный.",
     "Link_arm": "https://utfc.ru/catalog/boss_chairs/kayman_n_bl/?offers=12169",
     "Основание": "Пятилучье Арктика пластиковое с узкими лучами, d=660 мм",
-    "Подлокотники": "Подлокотники для кресел \"Кайман\", нерегулируемые, черные металлические",
+    "Подлокотники": "Подлокотники черные металлические для кресел «Кайман»",
     "Газлифт": "Газ-лифт 2 категории по стандарту Germany DIN 4550, h=230 мм, длина штока 100 мм",
     "Механизм": "Топ-Ган Cayman — однопозиционный механизм качания Кайман позволяет регулировать высоту сиденья, обеспечивает режим свободного качания и фиксацию кресла в вертикальном положении",
     "Особенности": "",
