@@ -226,6 +226,8 @@
   <button id="generateOffer">Сформировать PDF</button>
   <button id="add-dimensions-btn">Добавить эскиз с размерами</button>
   <button id="delete-price-btn">Удалить цены</button>
+    <button id="delete-numberpage-btn">Удалить нумерацию страниц</button>
+
 
 
   <div id="signature-buttons">
@@ -245,6 +247,7 @@
     let festTitulSiteSrc = 'img/titul_commercial_site.png';
     let originalPriceData = [];
     let pricesRemoved = false;
+    let isPageNumberRemoved = false;
 
     // Устанавливаем текущую дату для всех элементов с классом commercial-date
     document.querySelectorAll('.commercial-date span').forEach(el => {
@@ -344,6 +347,18 @@
         .trim()
         .replace(/\baero\b/g, 'аэро'); 
     }
+
+document.getElementById('delete-numberpage-btn').addEventListener('click', () => {
+  // Удаляем все элементы с классом .page-number-box
+  document.querySelectorAll('.page-number-box').forEach(el => el.remove());
+
+  // Если нумерация находится внутри контейнера, например, #page-number-box
+  // const pageNumberBoxesContainer = document.querySelector('#page-number-box');
+  // if (pageNumberBoxesContainer) {
+  //   pageNumberBoxesContainer.innerHTML = '';
+  // }
+    isPageNumberRemoved = true;
+});
 
     document.getElementById('delete-price-btn').addEventListener('click', () => {
       // Удаление цен из таблицы
@@ -1140,8 +1155,8 @@ const finishTypeSeatValue = (typeof product.finish_type_seat === 'string' && pro
       const fields = [
         { label: 'Артикул', value: product.article_number },
         { label: 'Описание', value: product.full_describe },
-        // { label: 'Тип отделки', value: product.finish_type},
-        // { label: 'Тип отделки сиденья', value: finishTypeSeatValue},
+        { label: 'Тип отделки', value: product.finish_type},
+        { label: 'Тип отделки сиденья', value: finishTypeSeatValue},
         { label: 'Подлокотники', value: product.Подлокотники },
         { label: 'Каркас', value: product.skeleton },
         { label: 'Нагрузка (рекомендуемая)', value: product.recommended_load ? `${product.recommended_load} кг` : null },
@@ -1846,6 +1861,8 @@ if (productNameElement) {
       // refreshImages();
     }
     function updatePageNumbers() {
+        if (isPageNumberRemoved) return;
+
       // Удаляем все существующие номера страниц
       document.querySelectorAll('.page-number-box').forEach(el => el.remove());
 
