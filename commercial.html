@@ -388,7 +388,7 @@ document.getElementById('delete-numberpage-btn').addEventListener('click', () =>
         div.innerHTML = div.innerHTML.replace(/<p><strong>Цена:<\/strong>.*?<\/p>/, '');
         div.innerHTML = div.innerHTML.replace(/<p><strong>Сумма:<\/strong>.*?<\/p>/, '');
       });
-
+document.getElementById('delete-price-btn').style.display = 'none';
       // Устанавливаем статус, что цены удалены
       pricesRemoved = true;
     });
