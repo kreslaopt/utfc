@@ -1495,6 +1495,11 @@ const knownProductsAllFiles = [
     "is_archive": false
   },
   {
+    "name": "Ультра н 2д пластик",
+    "category": "armchair_comfort",
+    "is_archive": false
+  },
+  {
     "name": "Ультра нептун в хром",
     "category": "armchair_comfort",
     "is_archive": false
@@ -1516,11 +1521,6 @@ const knownProductsAllFiles = [
   },
   {
     "name": "Ультра т-01 н пластик pl660",
-    "category": "armchair_comfort",
-    "is_archive": false
-  },
-  {
-    "name": "Ультра т-02 н пластик pl660",
     "category": "armchair_comfort",
     "is_archive": false
   },

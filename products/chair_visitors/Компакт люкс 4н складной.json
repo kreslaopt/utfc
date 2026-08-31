@@ -166,7 +166,10 @@
         "https://cdn.utfc.ru/iblock/cb6/dg0q4u612m8a8iktasl43mm0oh4vc4ha.png",
         "https://cdn.utfc.ru/iblock/e49/e49ef734279064b5b9be4cafd2926b1d/e5b8b54948ab237d14fbd1f59e1ba258.png",
         "https://cdn.utfc.ru/iblock/ec8/foo53i69kqejs8ssnd986s6w4asviwhv.png",
-        "https://cdn.utfc.ru/iblock/f0b/f0b7f5875e76cc86c342465af1693ed0/1b687b628bb2f1a20e2a2f394b9da986.png"
+        "https://cdn.utfc.ru/iblock/f0b/f0b7f5875e76cc86c342465af1693ed0/1b687b628bb2f1a20e2a2f394b9da986.png",
+        "https://cdn.utfc.ru/iblock/c82/c82221f9290dcdd80dbc249c5412bfc7/1ee2b80fedc34481732d1646a81542ac.png",
+        "https://cdn.utfc.ru/iblock/2ea/2eae6a06a46b7ac29d86a6a02df69d89/dd1b7264900872b0447056529ae5762a.png",
+        "https://cdn.utfc.ru/iblock/69a/69a33ef3ccaef998cd5c51ccc31f8ddb/bbdd86ad22da6b14d203863ed6ff9a52.png"
       ]
     }
   ],
@@ -269,7 +272,7 @@
     }
   ],
   "skeleton": "складной",
-  "minpromtorg": "+",
+  "minpromtorg": "Минпромторг",
   "addition": "",
   "title": "Стул складной Компакт Люкс 4Н BL с мягким сиденьем производства компании UTFC",
   "base_name": "Стул складной Компакт Люкс 4Н BL",
@@ -277,7 +280,7 @@
   "full_describe": "Благодаря эргономичному дизайну, мягкому сиденью и металлическому каркасу складной стул является компактным, прочным и универсальным в использовании. Он может быть использован в различных местах, таких как: офисы, малогабаритные квартиры, зоны отдыха, конференц-залы, кафе и рестораны, спортивные мероприятия, выставки и ярмарки, залы ожидания, учебные аудитории, выездные мероприятия и пр.",
   "Link_arm": "https://utfc.ru/catalog/pos_chair/kompakt_lux_4n_bl/?offers=13103",
   "Основание": "Металлические опоры складного стула Компакт, защитно-декоративное порошковое покрытие черного цвета (BL)",
-  "Подлокотники": "Без подлокотников",
+  "Подлокотники": "",
   "Газлифт": "",
   "Механизм": "",
   "Особенности": "",
