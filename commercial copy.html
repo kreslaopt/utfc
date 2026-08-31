@@ -584,13 +584,6 @@ document.getElementById('add-dimensions-btn').addEventListener('click', () => {
     if (!img) return;
 
     const productName = img.getAttribute('data-product-name');
-    const newName = productDiv.querySelector('h3').textContent.trim();
-    productDiv.querySelector('h3').setAttribute('data-product-name', newName);
-    const productNameForSketch = newName;
-    const sketchSrc = localStorage.getItem(`sketch_${productNameForSketch}`);
-  // console.log(productName);
-  // console.log(newName);
-  // console.log(productNameForSketch);
 
     // Обрабатываем название для поиска
     const productNameLower = productName.toLowerCase().replace(/\//g, '').trim();
@@ -627,7 +620,7 @@ document.getElementById('add-dimensions-btn').addEventListener('click', () => {
       if (existingSketchImg) {
         // Если есть - удаляем его и очищаем localStorage
         sketchContainer.innerHTML = '';
-        localStorage.removeItem(`sketch_${productNameForSketch}`);
+        localStorage.removeItem(`sketch_${productName}`);
         document.getElementById('add-dimensions-btn').textContent = 'Добавить эскиз с размерами';
         return; 
       }
@@ -648,7 +641,7 @@ document.getElementById('add-dimensions-btn').addEventListener('click', () => {
       sketchContainer.appendChild(sketchImg);
 
       // Сохраняем в localStorage
-      localStorage.setItem(`sketch_${productNameForSketch}`, newSrc);
+      localStorage.setItem(`sketch_${productName}`, newSrc);
 
       // Обновляем кнопку
       document.getElementById('add-dimensions-btn').textContent = 'Удалить эскиз с размерами';
@@ -1175,7 +1168,7 @@ const finishTypeSeatValue = (typeof product.finish_type_seat === 'string' && pro
   <div class="commercial-titul-site">
         <img src="${imageSrc}" alt="Фоновое изображение">
     </div>
-        <h3 contenteditable="true" data-product-name="${savedName}"> ${savedName}</h3>
+        <h3 contenteditable="true" data-product-name="${savedName}">${index + 1}. ${savedName}</h3>
         <div class="commercial-product-images">
             ${imagesHTML}
             <div id="${qrId}" class="qr-code-container" style="display: inline-block; vertical-align: top;"></div>
@@ -1201,7 +1194,7 @@ const finishTypeSeatValue = (typeof product.finish_type_seat === 'string' && pro
       detailsHTML += `</div>`;
       productDiv.innerHTML = detailsHTML;
 
-      // console.log(productDiv.innerHTML);
+      console.log(productDiv.innerHTML);
       // Обработчик для сохранения содержимого при потере фокуса
       
       const detailsDiv = productDiv.querySelector('.commercial-product-details');
@@ -1220,10 +1213,8 @@ if (productNameElement) {
     const newName = productNameElement.textContent?.trim();
     if (newName) {
       localStorage.setItem(`productName_${product.name}`, newName);
-            productNameElement.setAttribute('data-product-name', newName);
-
+      // Можно также обновить исходный объект
       product.name = newName;
-      // console.log(product.name);
     }
   });
 }
@@ -1620,15 +1611,11 @@ if (productNameElement) {
     // Обновляем изображения товаров перед созданием страниц
     function updateProductImagesInDOM() {
       document.querySelectorAll('.commercial-product').forEach(productDiv => {
-     const img = productDiv.querySelector('img[data-product-name]');
-    if (!img) return;
+        const productName = productDiv.querySelector('h3')?.getAttribute('data-product-name');
+        if (!productName) return;
 
-    const productName = img.getAttribute('data-product-name');
-    const newName = productDiv.querySelector('h3').textContent.trim();
-    productDiv.querySelector('h3').setAttribute('data-product-name', newName);
-    const productNameForSketch = newName;
-    const sketchSrc = localStorage.getItem(`sketch_${productNameForSketch}`);
-            let sketchContainer = productDiv.querySelector('.sketch-container');
+        const sketchSrc = localStorage.getItem(`sketch_${productName}`);
+        let sketchContainer = productDiv.querySelector('.sketch-container');
 
         if (sketchSrc) {
           if (!sketchContainer) {
@@ -1717,7 +1704,7 @@ if (productNameElement) {
     async function generateCommercialOffer() {
       restoreAllProductDetails();
       delPrice();
-      // updateProductImagesInDOM();
+      updateProductImagesInDOM();
 
       const btn = document.getElementById('add-dimensions-btn');
 
