@@ -613,13 +613,13 @@ document.getElementById('add-dimensions-btn').addEventListener('click', () => {
   console.log(productNameForSketch);
 
     // Обрабатываем название для поиска
-    const productNameLower = productName.toLowerCase().replace(/\//g, '').trim();
+    const productNameLower = productName.toLowerCase().replace(/[\/\-.,()]/g, ' ').trim();
     const productWords = new Set(productNameLower.split(/\s+/));
 
 
     const product = selectedProducts.find(p => {
       if (p.name && p.name.length > 0) {
-        const pNameLower = p.name[0].toLowerCase().replace(/\//g, '').trim();
+        const pNameLower = p.name[0].toLowerCase().replace(/[\/\-.,()]/g, ' ').trim();
         const pWords = new Set(pNameLower.split(/\s+/));
 
         for (let word of pWords) {
