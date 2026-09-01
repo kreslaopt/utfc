@@ -604,19 +604,26 @@ document.getElementById('add-dimensions-btn').addEventListener('click', () => {
     const newName = productDiv.querySelector('h3').textContent.trim();
     productDiv.querySelector('h3').setAttribute('data-product-name', newName);
     const productNameForSketch = newName;
+
     const sketchSrc = localStorage.getItem(`sketch_${productNameForSketch}`);
-  // console.log(productName);
-  // console.log(newName);
-  // console.log(productNameForSketch);
+     console.log('Stored sketch:', localStorage.getItem(`sketch_${productNameForSketch}`));
+
+  console.log(productName);
+  console.log(newName);
+  console.log(productNameForSketch);
 
     // Обрабатываем название для поиска
     const productNameLower = productName.toLowerCase().replace(/\//g, '').trim();
-    const productWords = new Set(productNameLower.split(/\s+/));
+    // const productWords = new Set(productNameLower.split(/\s+/));
+        const productWords = new Set(productNameLower);
+
 
     const product = selectedProducts.find(p => {
       if (p.name && p.name.length > 0) {
         const pNameLower = p.name[0].toLowerCase().replace(/\//g, '').trim();
-        const pWords = new Set(pNameLower.split(/\s+/));
+        // const pWords = new Set(pNameLower.split(/\s+/));
+                const pWords = new Set(pNameLower);
+
         for (let word of pWords) {
           if (!productWords.has(word)) {
             return false;

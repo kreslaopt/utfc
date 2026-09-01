@@ -139,8 +139,8 @@
                         value="3D|3D|3D-подлокотник|Подлокотники 3D|3D-подлокотники|3Д">3D</label>
                 <label><input type="checkbox" class="armrest-regul-filter"
                         value="в 6-ти плоскостях|в 6 плоскостях|6D|6Д">6D</label>
-                <label><input type="checkbox" class="armrest-regul-filter"
-                        value="трансформируемые|Подлокотники регулируются при использовании механизма отклонения спинки и сиденья">Трансформируемые</label>
+                <!-- <label><input type="checkbox" class="armrest-regul-filter"
+                        value="трансформируемые|Подлокотники регулируются при использовании механизма отклонения спинки и сиденья">Трансформируемые</label> -->
                 <!-- <label><input type="checkbox" class="armrest-regul-filter" value="по высоте">По высоте</label> -->
             </div>
         </div>
@@ -2690,7 +2690,7 @@
                     let armrestRegulMatch = true;
 
                     if (armrestRegulFilters.length > 0) {
-                        let components = product.Особенности;
+                        let components = product.Подлокотники;
 
                         // Оборачиваем строку в массив, если это строка
                         if (typeof components === 'string') {
