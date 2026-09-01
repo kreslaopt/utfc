@@ -606,11 +606,11 @@ document.getElementById('add-dimensions-btn').addEventListener('click', () => {
     const productNameForSketch = newName;
 
     const sketchSrc = localStorage.getItem(`sketch_${productNameForSketch}`);
-     console.log('Stored sketch:', localStorage.getItem(`sketch_${productNameForSketch}`));
+    //  console.log('Stored sketch:', localStorage.getItem(`sketch_${productNameForSketch}`));
 
-  console.log(productName);
-  console.log(newName);
-  console.log(productNameForSketch);
+  // console.log(productName);
+  // console.log(newName);
+  // console.log(productNameForSketch);
 
     // Обрабатываем название для поиска
     const productNameLower = productName.toLowerCase().replace(/[\/\-.,()]/g, ' ').trim();
@@ -666,11 +666,13 @@ document.getElementById('add-dimensions-btn').addEventListener('click', () => {
       //   fileInput.click();
       // });
 
-      // Вставляем изображение в контейнер
-      sketchContainer.appendChild(sketchImg);
+   
 
       // Сохраняем в localStorage
       localStorage.setItem(`sketch_${productNameForSketch}`, newSrc);
+
+         // Вставляем изображение в контейнер
+      sketchContainer.appendChild(sketchImg);
 
       // Обновляем кнопку
       document.getElementById('add-dimensions-btn').textContent = 'Удалить эскиз с размерами';
