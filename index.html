@@ -59,6 +59,36 @@
             </div>
         </div>
 
+                <!-- Блок поиска -->
+        <div class="search-block">
+            <div class="search-input-container">
+                <input type="text" id="searchInput" placeholder="Поиск...Наведите для подсказки">
+                <span class="search-icon">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.35-4.35"></path>
+                    </svg>
+                </span>
+                <span class="search-tooltip">
+                    <strong>Поиск</strong><br><br>
+                    Увидим все карточки, в описании которых присутствуют <strong>ВСЕ</strong> введенные слова<br>
+                    Можно вводить несколько значений через запятую<br>
+                    Например: люкс, топ, черный<br><br>
+                    <hr><br>
+                    <strong>Подлокотники +<br>Конструктив +<br>Исполнение +</strong><br><br>
+                    Увидим только те карточки, в наименовании которых (как в "Таблице с размерами (для внутреннего
+                    пользования).xlsx") есть выбранные позиции<br><br>
+                    <hr><br>
+                    Есть функционал по отсутствующим значениям w+ - ширина с подлокотниками | w - ширина сиденья | d -
+                    габаритная глубина | h - высота<br>
+                    Просто введите, например, высота не указана или h не указана<br><br>
+                    <hr><br>
+                    &#10024; Если вы нашли ошибку или не видите соответствующего желаемого в выдаче, просим сообщить в
+                    отдел маркетинга, поправим &#128522;
+                </span>
+            </div>
+        </div>
+
         <!-- Фильтр по наличию индикаторов -->
         <h3 class="filter-header">
             Спец. предложения
@@ -140,7 +170,7 @@
                 <label><input type="checkbox" class="armrest-regul-filter"
                         value="в 6-ти плоскостях|в 6 плоскостях|6D|6Д">6D</label>
                 <!-- <label><input type="checkbox" class="armrest-regul-filter"
-                        value="Подлокотники регулируются при использовании механизма отклонения спинки и сиденья">Трансформируемые</label> -->
+                        value="регулируются при использовании механизма отклонения спинки и сиденья">Трансформируемые</label> -->
                 <!-- <label><input type="checkbox" class="armrest-regul-filter" value="по высоте">По высоте</label> -->
             </div>
         </div>
@@ -408,35 +438,7 @@
 
 
 
-        <!-- Блок поиска -->
-        <div class="search-block">
-            <div class="search-input-container">
-                <input type="text" id="searchInput" placeholder="Поиск...Наведите для подсказки">
-                <span class="search-icon">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <circle cx="11" cy="11" r="8"></circle>
-                        <path d="m21 21-4.35-4.35"></path>
-                    </svg>
-                </span>
-                <span class="search-tooltip">
-                    <strong>Поиск</strong><br><br>
-                    Увидим все карточки, в описании которых присутствуют <strong>ВСЕ</strong> введенные слова<br>
-                    Можно вводить несколько значений через запятую<br>
-                    Например: люкс, топ, черный<br><br>
-                    <hr><br>
-                    <strong>Подлокотники +<br>Конструктив +<br>Исполнение +</strong><br><br>
-                    Увидим только те карточки, в наименовании которых (как в "Таблице с размерами (для внутреннего
-                    пользования).xlsx") есть выбранные позиции<br><br>
-                    <hr><br>
-                    Есть функционал по отсутствующим значениям w+ - ширина с подлокотниками | w - ширина сиденья | d -
-                    габаритная глубина | h - высота<br>
-                    Просто введите, например, высота не указана или h не указана<br><br>
-                    <hr><br>
-                    &#10024; Если вы нашли ошибку или не видите соответствующего желаемого в выдаче, просим сообщить в
-                    отдел маркетинга, поправим &#128522;
-                </span>
-            </div>
-        </div>
+
 
         <div class="missing_in_json">
             <b>ТО есть, фото заменить:</b><br><br>
@@ -2411,7 +2413,7 @@
                     }
 
                     // Выводим или используем массив otherGazLiftValues
-                    console.log("Другие варианты Газ-лифт: ", otherGazLiftValues);
+                    // console.log("Другие варианты Газ-лифт: ", otherGazLiftValues);
 
                     let mechanismMatch = true;
                     if (mechanismFilters.length > 0) {
@@ -2718,9 +2720,12 @@
                         } else {
                             // Если components не массив после обработки, присваиваем false
                             armrestRegulMatch = false;
-                            //         console.log('Тип:', typeof product.Подлокотники);
-                            // console.log('Значение:', product.Подлокотники);
-                        }
+                         
+                        }          
+                        // console.log('Тип:', typeof product.Подлокотники);
+                        // console.log('Значение:', product.Подлокотники);
+                        // console.log('Тип:', typeof product.Особенности);
+                        // console.log('Значение:', product.Особенности);
                     }
 
 
@@ -4219,6 +4224,8 @@
             if (!product || !product.unique_name) return null;
             return Array.isArray(product.unique_name) ? product.unique_name[0] : product.unique_name;
         }
+        
+
 
         // function toggleProductInCart(product) {
         //     const productName = Array.isArray(product.unique_name) ? product.unique_name[0] : product.unique_name;
@@ -4250,6 +4257,7 @@
             const productName = getUniqueName(product);
             if (!productName) {
                 console.warn('Отсутствует unique_name для продукта', product);
+                // console.log(typeof(productName));
                 return;
             }
             const index = selectedProducts.findIndex(p => {
@@ -5203,7 +5211,8 @@
                 const isInCart = selectedProducts.some(p => {
                     // const pName = Array.isArray(p.unique_name) ? p.unique_name[0] : p.unique_name;
                     const pName = getUniqueName(p);
-                    return pName === productName;
+                    return pName === productName;            
+
                 });
                 icon.classList.toggle('in-cart', isInCart);
             });
