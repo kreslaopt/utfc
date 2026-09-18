@@ -580,7 +580,7 @@
 
 
                     <!-- Высота спинки до сиденья (вертикальный ползунок) -->
-                    <div class="size-filter vertical" data-param="backrest_to_seat_height" data-coords="860,121,5,301">
+                    <div class="size-filter vertical" data-param="backrest_height" data-coords="860,121,5,301">
                         <input type="number" class="max-value" min="300" max="1500" step="5" value="1500">
                         <div class="custom-slider vertical"><span class="height_line"><span
                                     style="color: gray;">высота</span> спинки до сиденья</span>
@@ -592,7 +592,7 @@
                     </div>
 
                     <!-- Высота спинки до низа сиденья (вертикальный ползунок) -->
-                    <div class="size-filter vertical" data-param="backrest_height_external" data-coords="935,122,5,340">
+                    <div class="size-filter vertical" data-param="backrest_to_seat_height" data-coords="935,122,5,340">
                         <input type="number" class="max-value" min="300" max="1500" step="5" value="1500">
                         <div class="custom-slider vertical"><span class="height_line"><span
                                     style="color: gray;">высота</span> спинки до низа сиденья</span>
@@ -856,7 +856,7 @@
         // Параметры ползунков
         const sliderParams = [
             { param: 'chair_height', minId: 'minHeight', maxId: 'maxHeight', minValueId: 'minHeightValue', maxValueId: 'maxHeightValue' },
-            { param: 'backrest_height_external', minId: 'minBackrestHeight', maxId: 'maxBackrestHeight', minValueId: 'minBackrestHeightValue', maxValueId: 'maxBackrestHeightValue' },
+            { param: 'backrest_height', minId: 'minBackrestHeight', maxId: 'maxBackrestHeight', minValueId: 'minBackrestHeightValue', maxValueId: 'maxBackrestHeightValue' },
             { param: 'backrest_to_seat_height', minId: 'minBackrestToSeatHeight', maxId: 'maxBackrestToSeatHeight', minValueId: 'minBackrestToSeatHeightValue', maxValueId: 'maxBackrestToSeatHeightValue' },
             { param: 'seat_width_with_armrests', minId: 'minSeatWidthWithArmrests', maxId: 'maxSeatWidthWithArmrests', minValueId: 'minSeatWidthWithArmrestsValue', maxValueId: 'maxSeatWidthWithArmrestsValue' },
             { param: 'seat_width', minId: 'minSeatWidth', maxId: 'maxSeatWidth', minValueId: 'minSeatWidthValue', maxValueId: 'maxSeatWidthValue' },
@@ -877,7 +877,7 @@
             seat_width: false,
             backrest_width_wide: false,
             headrest_height: false,
-            backrest_height_external: false,
+            backrest_height: false,
             backrest_to_seat_height: false,
             armrest_height_from_seat: false,
             chair_depth: false,
@@ -2066,7 +2066,7 @@
                 'seat_width',
                 'backrest_width_wide',
                 "headrest_height",
-                "backrest_height_external",
+                "backrest_height",
                 "backrest_to_seat_height",
                 "armrest_height_from_seat",
                 'chair_depth',
@@ -2117,8 +2117,8 @@
             }
             const minHeight = parseInt(document.querySelector('.size-filter[data-param="chair_height"] .min-value').value);
             const maxHeight = parseInt(document.querySelector('.size-filter[data-param="chair_height"] .max-value').value);
-            const minBackrestHeight = parseInt(document.querySelector('.size-filter[data-param="backrest_height_external"] .min-value').value);
-            const maxBackrestHeight = parseInt(document.querySelector('.size-filter[data-param="backrest_height_external"] .max-value').value);
+            const minBackrestHeight = parseInt(document.querySelector('.size-filter[data-param="backrest_height"] .min-value').value);
+            const maxBackrestHeight = parseInt(document.querySelector('.size-filter[data-param="backrest_height"] .max-value').value);
             const minBackrestToSeatHeight = parseInt(document.querySelector('.size-filter[data-param="backrest_to_seat_height"] .min-value').value);
             const maxBackrestToSeatHeight = parseInt(document.querySelector('.size-filter[data-param="backrest_to_seat_height"] .max-value').value);
             // console.log(`Значения фильтра: minHeight = ${minHeight}, maxHeight = ${maxHeight}`);
@@ -3096,12 +3096,12 @@
                                     checkNumericField(dimensions.seat_width) ||
                                     checkNumericField(dimensions.backrest_width_wide) ||
                                     checkNumericField(dimensions.headrest_height) ||
-                                    checkNumericField(dimensions.backrest_height_external) ||
+                                    checkNumericField(dimensions.backrest_height) ||
                                     checkNumericField(dimensions.backrest_to_seat_height) ||
                                     checkNumericField(dimensions.seat_width_with_armrests) ||
                                     checkNumericField(dimensions.armrest_height_from_seat) ||
                                     checkNumericField(dimensions.seat_depth) ||
-                                    checkNumericField(dimensions.backrest_height_external) ||
+                                    checkNumericField(dimensions.backrest_height) ||
                                     checkNumericField(dimensions.backrest_to_seat_height) ||
                                     checkNumericField(dimensions.diameter_cross) ||
                                     checkNumericField(dimensions.runners_width) ||
@@ -3207,9 +3207,9 @@
                 });
             }
 
-            if (paramChangeFlags.backrest_height_external) {
+            if (paramChangeFlags.backrest_height) {
                 filtered = filtered.filter(product => {
-                    const backrestHeight = product.dimensions_details?.[0]?.backrest_height_external;
+                    const backrestHeight = product.dimensions_details?.[0]?.backrest_height;
                     if (isStrictRange) {
                         return backrestHeight !== null && backrestHeight !== undefined &&
                             isValueInRange(backrestHeight, minBackrestHeight, maxBackrestHeight);
@@ -3504,7 +3504,7 @@
 
                     const seatDepth = product.dimensions_details?.[0]?.seat_depth;
                     const seatToFloorHeightUpper = product.dimensions_details?.[0]?.seat_to_floor_height_upper;
-                    const backrestHeight = product.dimensions_details?.[0]?.backrest_height_external;
+                    const backrestHeight = product.dimensions_details?.[0]?.backrest_height;
                     const backrestToSeatHeight = product.dimensions_details?.[0]?.height_backrest_seat;
                     const seatWidth = product.dimensions_details?.[0]?.seat_width;
                     const backrestWidthWide = product.dimensions_details?.[0]?.backrest_width_wide;
@@ -3727,7 +3727,7 @@
                 { name: 'Высота подлокотников от сиденья (мм)', key: 'armrest_height_from_seat' },
                 { name: 'Глубина кресла (мм)', key: 'chair_depth' },
                 { name: 'Глубина сиденья (мм)', key: 'seat_depth' },
-                { name: 'Высота спинки (мм)', key: 'backrest_height_external' },
+                { name: 'Высота спинки (мм)', key: 'backrest_height' },
                 { name: 'Высота спинки от сиденья (мм)', key: 'backrest_to_seat_height' },
                 { name: 'Ширина сиденья с подлокотниками (мм)', key: 'seat_width_with_armrests' },
                 { name: 'Ширина сиденья (мм)', key: 'seat_width' },
