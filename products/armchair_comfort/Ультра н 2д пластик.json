@@ -240,31 +240,32 @@
                 "max": "490"
             },
             "armrest_height_from_floor": {
-                "min": ""
+                "min": "260",
+                "max": "330"
             },
             "armrest_width_support": {
-                "max": ""
+                "max": "80"
             },
             "armrest_length_support": {
-                "max": ""
+                "max": "260"
             },
             "seat_depth_km": {
-                "max": ""
+                "max": "515"
             },
             "backrest_height_external": {
                 "max": "580"
             },
             "backrest_width_narrow": {
-                "max": ""
+                "max": "450"
             },
             "backrest_width_wide": {
-                "max": ""
+                "max": "450"
             },
             "recommended_load": "120",
             "max_load": "150",
             "skeleton": "немонолитный",
             "minpromtorg": "+",
-            "netto": "10",
+            "netto": "9",
             "brutto": "9,5",
             "package_width": "910",
             "package_depth": "270",
@@ -632,5 +633,13 @@
         "Высота упаковки:": "690",
         "Глубина упаковки:": "270",
         "Материал упаковки:": "Гофрокартон"
+    },
+    "additional_info": {
+        "package_dimensions": {
+            "depth": "910",
+            "height": "270"
+        },
+        "netto": "9",
+        "volume": "0"
     }
 }
