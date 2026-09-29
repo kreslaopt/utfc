@@ -548,44 +548,77 @@ def enrich_parent(parent_data, variant):
         "title", "base_name", "article_number", "full_describe", "Link_arm", "minpromtorg", "madeinrf",
         "Основание", "Подлокотники", "Газлифт", "Механизм", "Особенности", "Ролики", "sizes", "package_sizes"
     ]
+
     for field in direct_fields:
-        if field in variant:
-            if field in ["sizes", "package_sizes"]:
+        if field not in variant:
+            continue
+
+        # Обработка полей sizes и package_sizes
+        if field in ["sizes", "package_sizes"]:
+            raw_value = variant[field]
+
+            # Если это строка — парсим JSON, если уже dict — оставляем как есть
+            if isinstance(raw_value, str):
                 try:
-                    parsed_value = json.loads(variant[field])
-                    if not isinstance(parsed_value, dict):
-                        continue
-                    # Обработка значений
-                    for k in parsed_value:
-                        parsed_value[k] = extract_numbers(parsed_value[k])
-                    if not isinstance(parent_data.get(field), dict) or parent_data.get(field) != parsed_value:
-                        parent_data[field] = parsed_value
-                        updated_fields.append(field)
+                    parsed_value = json.loads(raw_value)
                 except json.JSONDecodeError:
                     continue
-                if field not in parent_data or parent_data[field] != parsed_value:
-                    parent_data[field] = parsed_value
-                    updated_fields.append(field)
+            elif isinstance(raw_value, dict):
+                parsed_value = raw_value
             else:
-                if field not in parent_data or parent_data[field] != variant[field]:
-                    parent_data[field] = variant[field]
+                continue  # неожиданный тип — пропускаем
+
+            # Дальше работаем с parsed_value как с dict
+            if not isinstance(parsed_value, dict):
+                continue
+
+            for k in parsed_value:
+                parsed_value[k] = extract_numbers(str(parsed_value[k]))
+
+            current = parent_data.get(field)
+            if current != parsed_value:
+                parent_data[field] = parsed_value
+                updated_fields.append(field)
+
+        else:
+            # Обычные поля
+            val = variant[field]
+            if field not in parent_data or parent_data[field] != val:
+                parent_data[field] = val
+                updated_fields.append(field)
+
+    # Дальше — обработка массивов (finish_type, color и т.п.)
+    array_fields = ["finish_type", "color", "finish_type_seat", "color_seat", "variant_name"]
+    for field in array_fields:
+        if field not in variant:
+            continue
+
+        val = variant[field]
+        # Если значение не список — делаем из него список
+        if not isinstance(val, list):
+            val = [val]
+
+        # Инициализируем parent_data[field] как список, если его нет
+        if field not in parent_data:
+            parent_data[field] = []
+        # ГЛАВНОЕ ИСПРАВЛЕНИЕ: если там строка — превращаем в список
+        elif isinstance(parent_data[field], str):
+            parent_data[field] = [parent_data[field]]
+
+        for item in val:
+            if item not in parent_data[field]:
+                parent_data[field].append(item)
+                if field not in updated_fields:
                     updated_fields.append(field)
-    array_fields = ["finish_type", "color", "finish_type_seat", "color_seat", "variant_name"]
-    for field in array_fields:
-        if field in variant:
-            if field not in parent_data or parent_data[field] != variant[field]:
-                parent_data[field] = variant[field]
-                updated_fields.append(field)
-    array_fields = ["finish_type", "color", "finish_type_seat", "color_seat", "variant_name"]
-    for field in array_fields:
-        if field in variant:
-            if field not in parent_data:
-                parent_data[field] = []
-            if variant[field] not in parent_data[field]:
-                parent_data[field].append(variant[field])
-                updated_fields.append(field)
+
+    # Обработка images
     if "images" in variant:
-        variant_images = variant["images"].split("; ")
+        variant_images = variant["images"]
+        if isinstance(variant_images, str):
+            variant_images = variant_images.split("; ")
+        elif not isinstance(variant_images, list):
+            variant_images = []
+
         if "images" not in parent_data:
             parent_data["images"] = [
                 {
@@ -599,16 +632,22 @@ def enrich_parent(parent_data, variant):
             updated_fields.append("images")
         else:
             current_images = parent_data["images"]
-            if isinstance(current_images, list) and len(current_images) > 0:
-                if isinstance(current_images[0], dict):
-                    for img in variant_images:
-                        if img not in current_images[0].values():
-                            if "additional" not in current_images[0]:
-                                current_images[0]["additional"] = []
-                            if img not in current_images[0]["additional"]:
-                                current_images[0]["additional"].append(img)
-                                updated_fields.append("images")
+            if (isinstance(current_images, list) and len(current_images) > 0
+                    and isinstance(current_images[0], dict)):
+                img_dict = current_images[0]
+                added = False
+                for img in variant_images:
+                    if img not in img_dict.values():
+                        if "additional" not in img_dict:
+                            img_dict["additional"] = []
+                        if img not in img_dict["additional"]:
+                            img_dict["additional"].append(img)
+                            added = True
+                if added and "images" not in updated_fields:
+                    updated_fields.append("images")
+
     return updated_fields
+
 
 # Основной процесс
 def main():
