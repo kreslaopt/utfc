@@ -1,0 +1,209 @@
+{
+    "namefile": [
+        "Пуф большой"
+    ],
+    "name_all": [
+        "Пуф малый",
+        "Пуф большой"
+    ],
+    "name": [
+        "Пуф"
+    ],
+    "unique_name": [
+        "Пуф большой"
+    ],
+    "vid": [
+        "пуф"
+    ],
+    "category": [
+        "пуф"
+    ],
+    "destiny": [
+        "обстановки жилых и общественных помещений"
+    ],
+    "technical_requirements": [
+        [
+            "Пуф должен соответствовать требованиям:",
+            "ГОСТ 19917-2014 «Мебель для сидения и лежания. Общие технические условия»",
+            "ГОСТ 16371-2014 «Мебель. Общие технические условия»",
+            "настоящего технического описания",
+            "комплекта конструкторской документации",
+            "образцу-эталону, утвержденному в установленном порядке производителем"
+        ]
+    ],
+    "construction_and_materials": [
+        {
+            "upholstery_materials": [
+                "- размеры (диаметр): малый, большой<br>\n- материал облицовки спинки и сиденья:<br>экокожа (S, R); ткань (Moderno, Велтон, Умбра), Велюр (Velutto)<br>\n- цвет облицовки – по каталогу"
+            ],
+            "components": [
+                "основы-каркаса. Нерегулируемый, каркасный",
+                "Из ДСП 16 мм, брусков (реек) 25х50мм, картона прокладочного 1,5 мм",
+                "Мягкого элемента (пенополиуретан, жесткость - 25, плотность - 18 кг/м<sup>3</sup>) и облицовки",
+                "На нижней части расположены опоры-гвоздики"
+            ]
+        }
+    ],
+    "transportation": [
+        {
+            "standard": "ГОСТ 16371-2014",
+            "packaging": {
+                "type": "полиэтиленовый пакет и пузырьковую плёнку",
+                "size": {
+                    "width": "",
+                    "depth": "",
+                    "height": ""
+                },
+                "box_size": "",
+                "transportation": "транспортирования упаковываются в полиэтиленовый пакет и пузырьковую плёнку"
+            }
+        }
+    ],
+    "dimensions": [
+        {
+            "brutto": "24,7",
+            "netto": "",
+            "volume": "0,45"
+        }
+    ],
+    "guarantee": [
+        {
+            "period": "12",
+            "max_load": "150",
+            "recommended_load": "120"
+        }
+    ],
+    "images": [
+        {
+            "vid_main": "img/sofa/puf_big_s0422_01.png",
+            "chair_view": "img/sofa/puf_big_s0422_01.png",
+            "dimensions": "img/sofa/dimensions/puf.png",
+            "box": "img/box_0.png",
+            "additional": [
+            ]
+        }
+    ],
+    "dimensions_details": [
+        {
+            "chair_height": {
+                "min": "",
+                "max": "455"
+            },
+            "headrest_height": {
+                "min": "",
+                "max": ""
+            },
+            "seat_to_floor_height": {
+                "min": "",
+                "max": "455"
+            },
+            "armrest_height_from_seat": {
+                "min": "",
+                "max": ""
+            },
+            "chair_depth": {
+                "min": "",
+                "max": "1000"
+            },
+            "seat_depth": {
+                "min": "",
+                "max": "1000"
+            },
+            "backrest_height": {
+                "min": "",
+                "max": ""
+            },
+            "backrest_to_seat_height": {
+                "min": "",
+                "max": ""
+            },
+            "seat_width_with_armrests": {
+                "min": "",
+                "max": ""
+            },
+            "seat_width": {
+                "min": "",
+                "max": "1000"
+            },
+            "diameter_cross": {
+                "min": "",
+                "max": ""
+            },
+            "runners_width": {
+                "min": "",
+                "max": ""
+            },
+            "runners_depth": {
+                "min": "",
+                "max": ""
+            },
+            "seat_to_floor_height_upper": {
+                "min": "",
+                "max": ""
+            },
+            "armrest_height_from_floor": {
+                "min": "",
+                "max": ""
+            },
+            "armrest_width_support": {
+                "min": "",
+                "max": ""
+            },
+            "armrest_length_support": {
+                "min": "",
+                "max": ""
+            },
+            "seat_depth_km": {
+                "min": "",
+                "max": ""
+            },
+            "backrest_height_external": {
+                "min": "",
+                "max": ""
+            },
+            "backrest_width_narrow": {
+                "min": "",
+                "max": ""
+            },
+            "backrest_width_wide": {
+                "min": "",
+                "max": ""
+            },
+            "recommended_load": "",
+            "max_load": "",
+            "skeleton": {
+                "min": "",
+                "max": ""
+            },
+            "minpromtorg": "+",
+            "netto": {
+                "min": "",
+                "max": ""
+            },
+            "brutto": {
+                "min": "",
+                "max": ""
+            },
+            "package_width": {
+                "min": "",
+                "max": ""
+            },
+            "package_depth": {
+                "min": "",
+                "max": ""
+            },
+            "package_height": {
+                "min": "",
+                "max": ""
+            },
+            "volume": ""
+        }
+    ],
+    "lost": [
+        {
+            "clean": false,
+            "limit": false,
+            "del": false
+        }
+    ]
+}

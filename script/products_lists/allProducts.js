@@ -1205,6 +1205,16 @@ const knownProductsAllFiles = [
     "is_archive": false
   },
   {
+    "name": "Пуф большой",
+    "category": "sofa",
+    "is_archive": false
+  },
+  {
+    "name": "Пуф малый",
+    "category": "sofa",
+    "is_archive": false
+  },
+  {
     "name": "Рекорд м-878 белый пластик",
     "category": "armchair_comfort",
     "is_archive": false

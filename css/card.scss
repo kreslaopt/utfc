@@ -19,6 +19,13 @@
 
        }
 
+              .box-container{
+        z-index: 0;
+       }
+       .box-info{
+        z-index: 1;
+       }
+
        .product-card img {
            max-width: 100%;
            height: auto;
