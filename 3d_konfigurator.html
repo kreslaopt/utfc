@@ -573,6 +573,7 @@ function assignMeshTypes(model) {
           upholsteryVariant: upholsteryVariant || ''
         };
         if (upholsteryCat !== 'none' && upholsteryVariant) {
+            group.updateWorldMatrix(true, true);
           applyUpholsteryTexture(group, upholsteryCat, upholsteryVariant);
         }
         scene.add(group);
