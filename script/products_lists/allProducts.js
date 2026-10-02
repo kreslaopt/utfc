@@ -150,6 +150,11 @@ const knownProductsAllFiles = [
     "is_archive": false
   },
   {
+    "name": "Бари",
+    "category": "chair_visitors",
+    "is_archive": false
+  },
+  {
     "name": "Бистро м bl",
     "category": "chair_cafe_and_bar",
     "is_archive": false
@@ -1927,6 +1932,11 @@ const knownProductsAllFiles = [
   {
     "name": "Kid's с-01",
     "category": "armchair_personal",
+    "is_archive": false
+  },
+  {
+    "name": "Utfc акита м-828 5d серый пластик хром",
+    "category": "armchair_comfort",
     "is_archive": false
   },
   {
