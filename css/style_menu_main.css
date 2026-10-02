@@ -13,6 +13,14 @@ a {
   padding-right: calc(50% - 900px);
 }
 
+[class="3d_konfigurator"] a {
+  font-size: 14px;
+  font-weight: 800;
+  color: #3D4555;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
 .sidebar {
   position: fixed;
   left: 0;

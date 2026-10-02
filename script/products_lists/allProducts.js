@@ -1505,7 +1505,7 @@ const knownProductsAllFiles = [
     "is_archive": false
   },
   {
-    "name": "Ультра н 2д пластик",
+    "name": "Ультра н т-03 пластик",
     "category": "armchair_comfort",
     "is_archive": false
   },

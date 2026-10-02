@@ -1,0 +1,583 @@
+
+  body { margin: 0; overflow: hidden; font-family: 'Montserrat', sans-serif;}
+
+       a {
+           text-decoration: none;
+
+       }
+
+       h3 {
+           font-size: 14px;
+           color: #3D4555;
+           margin-top: 8px;
+
+           margin-bottom: 8px;
+       }
+/* ===== ЛЕВАЯ ПАНЕЛЬ ===== */
+#ui-panel {
+  /* position: absolute; top: 10px; left: 10px; z-index: 10;
+  background: rgba(255,255,255,0.95); padding: 22px; border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  max-width: 285px; max-height: 90vh; overflow-y: auto; */
+  /* overflow-x: hidden; */
+  position: fixed;
+    left: 0;
+    top: 0;
+    width: 260px;
+    height: auto;
+    overflow-y: auto;
+    padding: 12px 20px;
+    z-index: 1000;
+    background-color: #ffffff;
+}
+
+
+#ui-panel h3:first-child { margin-top: 0; }
+
+/* Тултипы */
+[data-tooltip] {
+  position: relative;
+}
+
+[data-tooltip]::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: 120%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #333;
+  color: #fff;
+  padding: 4px 8px;
+  border-radius: 2px;
+  font-size: 11px;
+  white-space: nowrap;
+  z-index: 10;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s;
+}
+
+[data-tooltip]:hover::after {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+/* Контейнер для двух кнопок на всю ширину */
+.add-section-row {
+  display: flex;
+  justify-content: space-between; /* Или space-around, если нужен небольшой отступ по краям */
+  align-items: center;
+    gap: 7px;       
+
+    margin-top: 16px; /* Отступ до следующего элемента */
+
+  margin-bottom: 16px; /* Отступ до следующего элемента */
+}
+.icon-btn-1 {
+  border: 2px solid #ddd; border-radius: 6px;
+  background: #fff; cursor: pointer; display: flex; align-items: center;
+  justify-content: center; transition: 0.2s; padding: 0; flex-shrink: 1;
+  
+}
+.icon-btn-1:hover { border-color: #96C22B; background: #f8fdf3; }
+.icon-btn-1.active { border-color: #96C22B; background: #eef7e3; }
+.icon-btn-1 svg { width: 26px; height: 26px; }
+
+
+/* Класс для кнопки-половинки */
+.half-btn {
+  flex: 1;                 /* Занимает 50% ширины родителя */
+  width: auto;             /* Игнорирует фиксированную ширину, заданную в .icon-btn */
+  height: 37px;            /* Можно задать высоту, чтобы кнопки были крупнее */
+  padding: 10px; 
+}
+
+
+/* Основной контейнер: растягиваем группы по краям */
+.panel-split-row {
+  display: flex;
+  justify-content: space-between; /* Это ключевое свойство для разделения */
+  align-items: center;
+  width: 100%;
+  margin-top: 8px; /* Небольшой отступ сверху, если нужно */
+}
+
+/* Группы кнопок */
+.panel-group-left,
+.panel-group-right {
+  display: flex;
+  gap: 12px; /* Расстояние между кнопками внутри группы */
+}
+
+/* Адаптив: если экран очень узкий (меньше 350px), кнопки встанут в одну колонку */
+@media (max-width: 350px) {
+  .panel-split-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .panel-group-left,
+  .panel-group-right {
+    width: 100%;
+    justify-content: center; /* Центрируем кнопки на узких экранах */
+    margin-bottom: 10px;
+  }
+}
+
+
+/* Ряд иконок */
+.icon-row {
+  display: flex; gap: 8px; align-items: center;
+}
+.icon-btn {
+  width: 42px; height: 42px; border: 2px solid #ddd; border-radius: 25px;
+  background: #fff; cursor: pointer; display: flex; align-items: center;
+  justify-content: center; transition: 0.2s; padding: 0; flex-shrink: 1;
+}
+.icon-btn:hover { border-color: #96C22B; background: #f8fdf3; }
+.icon-btn.active { border-color: #96C22B; background: #eef7e3; }
+.icon-btn svg { width: 26px; height: 26px; }
+
+/* Круги выбора цвета */
+.color-circle {
+  width: 36px; height: 36px; border-radius: 50%; border: 2px solid #ddd;
+  cursor: pointer; transition: 0.2s; flex-shrink: 1; position: relative;
+}
+.color-circle:hover { border-color: #96C22B; }
+.color-circle.active { border-color: #96C22B; box-shadow: 0 0 0 2px #96C22B; }
+
+/* Кружок-пикер (обёртка над скрытым input color) */
+.color-picker-wrap {
+  position: relative; width: 36px; height: 36px; border-radius: 50%;
+  cursor: pointer; flex-shrink: 0;
+  background: conic-gradient(from 0deg, #e74c3c, #e67e22, #f1c40f, #2ecc71, #3498db, #9b59b6, #e74c3c);
+  border: 2px solid #ddd; transition: 0.2s;
+}
+.color-picker-wrap:hover { transform: scale(1.1); border-color: #96C22B; }
+.color-picker-wrap input[type="color"] {
+  opacity: 0; width: 100%; height: 100%; border: none; cursor: pointer; padding: 0;
+}
+.color-picker-wrap::after {
+  content: ''; position: absolute; inset: 6px; border-radius: 50%;
+  background: rgba(255,255,255,0.7);
+  pointer-events: none;
+}
+
+/* Выпадающий список */
+#ui-panel select {
+  margin: 8px 0; width: 100%; padding: 10px; box-sizing: border-box; cursor: pointer;
+  border: 2px solid #ddd; border-radius: 6px; background: #fff; font-size: 11px;
+}
+
+/* Сетка кружков вариантов */
+.variant-grid {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 7px;
+  width: 95%;
+  margin-top: 10px; justify-items: center;
+}
+.variant-circle {
+  width: 40px; height: 40px; border-radius: 50%; border: 2px solid #ddd;
+  cursor: pointer; transition: 0.2s; background-size: cover; background-position: center;
+}
+.variant-circle:hover {border-color: #96C22B; }
+.variant-circle.active { border-color: #96C22B; box-shadow: 0 0 0 2px #96C22B; }
+
+/* Иконка-переключатель */
+.toggle-icon {
+  width: 42px; height: 42px; border: 2px solid #ddd; border-radius: 30px;
+  background: #fff; cursor: pointer; display: flex; align-items: center;
+  justify-content: center; transition: 0.2s; padding: 0; flex-shrink: 1;
+}
+.toggle-icon:hover { border-color: #96C22B; background: #f8fdf3; }
+.toggle-icon.active { border-color: #96C22B; background: #eef7e3; }
+.toggle-icon svg { width: 26px; height: 26px; }
+
+/* История */
+.history-row { display: flex; gap: 10px; }
+
+/* Кнопки в нижней части панели */
+#ui-panel .panel-btn {
+  margin: 6px 0; width: 100%; padding: 10px; box-sizing: border-box; cursor: pointer;
+  border: 2px solid #ddd; border-radius: 6px; background: #f0f0f0; color: #333;
+  transition: 0.2s; font-size: 13px;
+}
+#ui-panel .panel-btn:hover { background: #e0e0e0; }
+
+/* Оставшиеся кнопки */
+#undo-action, #redo-action {
+  background: #f0f0f0; color: #333; transition: 0.2s; font-weight: bold;
+}
+#undo-action:hover { background: #ffcccc; color: #cc0000; }
+#redo-action:hover { background: #ccffcc; color: #006600; }
+.disabled-btn { opacity: 0.5; cursor: not-allowed; pointer-events: none; }
+
+/* Настройки фона */
+#ui-panel .btn-row { display: flex; gap: 8px; }
+#ui-panel .btn-row button,
+#ui-panel .btn-row .icon-btn {
+  margin: 0; flex: 1;
+}
+#ui-panel input[type="range"] {
+  -webkit-appearance: none; appearance: none;
+  width: 100%; margin: 8px 0;
+  height: 5px; border-radius: 4px;
+  background: #96C22B; outline: none; padding: 0;
+}
+#ui-panel input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none; appearance: none;
+  width: 15px; height: 15px; border-radius: 50%;
+  background: #96C22B; border: 2px solid #fff;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.3); cursor: pointer;
+}
+#ui-panel input[type="range"]::-moz-range-thumb {
+  width: 15px; height: 15px; border-radius: 50%;
+  background: #96C22B; border: 2px solid #fff;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.3); cursor: pointer;
+}
+#ui-panel input[type="range"]::-moz-range-track {
+  height: 5px; border-radius: 4px; background: #96C22B;
+}
+#ui-panel label { font-size: 12px; color: #666; display: block; margin-bottom: 4px; }
+
+/* ===== ПРАВАЯ ПАНЕЛЬ (без изменений, но стили остаются) ===== */
+#object-controls {
+  display: none; position: absolute; top: 10px; right: 10px; z-index: 20;
+  background: rgba(255,255,255,0.95); padding: 20px; border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2); max-width: 280px;
+}
+#object-controls h3, #object-controls h4 { margin-top: 0; margin-bottom: 10px; color: #333; }
+#object-controls button,
+#object-controls input[type="color"],
+#object-controls select,
+#object-controls input[type="range"] {
+  margin: 8px 0; width: 100%; padding: 10px; box-sizing: border-box;
+  cursor: pointer; border: 2px solid #ddd; border-radius: 6px; background: #fff;
+}
+/* #object-controls button { background: #f0f0f0; color: #333; transition: 0.2s; } */
+#object-controls button:hover { background: #e0e0e0; }
+#object-controls label { font-size: 12px; color: #666; display: block; margin-bottom: 4px; }
+/* #object-controls .btn-row { display: flex; gap: 8px; } */
+/* #object-controls .btn-row button { margin: 0; flex: 1; } */
+#object-controls hr { margin: 15px 0; border: 0; border-top: 1px solid #ccc; }
+#delete-object { background: #96C22B !important; color: white !important; font-weight: bold; }
+#delete-object:hover { background: #7da820 !important; }
+#object-controls input[type="range"] {
+  -webkit-appearance: none; appearance: none; height: 5px; border-radius: 4px;
+  background: #96C22B; outline: none; padding: 0;
+}
+#object-controls input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none; appearance: none; width: 15px; height: 15px;
+  border-radius: 50%; background: #96C22B; border: 3px solid #fff;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.3); cursor: pointer;
+}
+#object-controls input[type="range"]::-moz-range-thumb {
+  width: 15px; height: 15px; border-radius: 50%; background: #96C22B;
+  border: 3px solid #fff; box-shadow: 0 1px 4px rgba(0,0,0,0.3); cursor: pointer;
+}
+#object-controls input[type="range"]::-moz-range-track {
+  height: 5px; border-radius: 4px; background: #96C22B;
+}
+
+#object-controls .slider-input-row {
+  display: flex; gap: 8px; align-items: center;
+}
+#object-controls .slider-input-row input[type="range"] {
+  flex: 1; margin: 0;
+}
+#object-controls .slider-input-row input[type="number"] {
+  width: 39px; margin: 0; padding: 6px 8px; box-sizing: border-box;
+  border: 2px solid #ddd; border-radius: 6px; font-size: 12px;
+  text-align: center; background: #fff; flex-shrink: 0;
+}
+#object-controls .slider-input-row input[type="number"]:focus {
+  border-color: #96C22B; outline: none;
+}
+/* Спрятать стрелки у number input */
+#object-controls .slider-input-row input[type="number"]::-webkit-inner-spin-button,
+#object-controls .slider-input-row input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none; margin: 0;
+}
+#object-controls .slider-input-row input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+
+
+  #ui-panel button { background: #f0f0f0; color: #333; transition: 0.2s; }
+  #ui-panel button:hover { background: #e0e0e0; }
+  #ui-panel .btn-action { background: #007bff; color: white; }
+  #ui-panel .btn-action:hover { background: #0056b3; }
+
+  #ui-panel .btn-row {
+    display: flex; gap: 8px;
+  }
+.btn-transform{
+    display: flex; gap: 8px;
+    /* width: 82%; */
+  }
+
+  #ui-panel .btn-row button { margin: 0; flex: 1; }
+
+ #object-controls {
+  display: none; /* Скрываем панель */
+  position: absolute; /* Обязательно для позиционирования поверх сцены */
+  top: 10px;
+  right: 10px;
+  z-index: 20;
+  background: rgba(255,255,255,0.95);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  max-width: 280px; /* Чтобы не вылезала за экран на мобильных */
+}
+  #object-controls h3, #object-controls h4 {
+    margin-top: 0; margin-bottom: 10px; color: #333;
+  }
+  #object-controls button,
+  #object-controls input[type="color"],
+  #object-controls select,
+  #object-controls input[type="range"] {
+    margin: 8px 0; width: 100%; padding: 10px; box-sizing: border-box;
+    cursor: pointer; border: 2px solid #ddd; border-radius: 6px; background: #fff;
+  }
+  #object-controls button {
+    background: #f0f0f0; color: #333; transition: 0.2s;
+  }
+  #object-controls button:hover { background: #e0e0e0; }
+  #object-controls label {
+    font-size: 12px; color: #666; display: block; margin-bottom: 4px;
+  }
+  #object-controls .btn-row {
+    display: flex; gap: 8px;
+  }
+  #object-controls .btn-row button { margin: 0; flex: 1; }
+  #object-controls hr {
+    margin: 15px 0; border: 0; border-top: 1px solid #ccc;
+  }
+  #delete-object {
+    background: #96C22B !important; color: white !important;
+    font-weight: bold;
+  }
+  #delete-object:hover { background: #7da820 !important; }
+
+  /* Зелёные ползунки */
+  #object-controls input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 5px;
+    border-radius: 4px;
+    background: #96C22B;
+    outline: none;
+    padding: 0;
+  }
+  #object-controls input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px; height: 15px;
+    border-radius: 50%;
+    background: #96C22B;
+    border: 3px solid #fff;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.3);
+    cursor: pointer;
+  }
+  #object-controls input[type="range"]::-moz-range-thumb {
+    width: 15px; height: 15px;
+    border-radius: 50%;
+    background: #96C22B;
+    border: 2px solid #fff;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.3);
+    cursor: pointer;
+  }
+  #object-controls input[type="range"]::-moz-range-track {
+    height: 5px; border-radius: 4px; background: #96C22B;
+  }
+
+  /* Кнопки истории */
+  #undo-action, #redo-action {
+    background: #f0f0f0; color: #333; transition: 0.2s; font-weight: bold;
+  }
+  #undo-action:hover { background: #ffcccc; color: #cc0000; }
+  #redo-action:hover { background: #ccffcc; color: #006600; }
+  .disabled-btn {
+    opacity: 0.5; cursor: not-allowed; pointer-events: none;
+  }
+
+  .upholstery-row {
+  display: flex; gap: 8px; align-items: center;
+}
+.upholstery-row select {
+  flex: 1; margin: 0;
+}
+
+#toggle-snap svg {
+  transform: translate(2px, 0px); 
+}
+.toggle-snap:hover { border-color: #96C22B; background: #f8fdf3; }
+.toggle-snap:hover span { color: #96C22B; }
+.toggle-snap.active { border-color: #96C22B; background: #eef7e3; }
+.toggle-snap.active span { color: #96C22B; }
+
+.icon-label-row {
+  display: flex; gap: 10px; flex-wrap: wrap;
+}
+.icon-label-btn {
+  width: 42px; border: 2px solid #ddd; border-radius: 30px;
+  background: #fff; cursor: pointer; display: flex; flex-direction: column;
+  align-items: center; justify-content: center; transition: 0.2s; padding: 4px 2px;
+  flex-shrink: 1; gap: 2px;
+}
+.icon-label-btn svg { width: 22px; height: 22px; }
+.icon-label-btn span {
+  font-size: 8px; font-weight: 600; color: #888; text-align: center; line-height: 1;
+}
+.icon-label-btn:hover { border-color: #96C22B; background: #f8fdf3; }
+.icon-label-btn:hover span { color: #96C22B; }
+.icon-label-btn.active { border-color: #96C22B; background: #eef7e3; }
+.icon-label-btn.active span { color: #96C22B; }
+
+.settings-panel {
+  background: rgba(255,255,255,0.95);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.scale-controls, .move-controls {
+  display: flex;
+  gap: 10px;
+}
+
+.scale-btn, .move-btn {
+  width: 42px;
+  border: 2px solid #ddd;
+  border-radius: 30px;
+  background: #fff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.2s;
+  padding: 4px
+}
+/* Раскрывающееся меню настроек фона */
+.collapse-trigger {
+  width: 100%; padding: 8px 12px; box-sizing: border-box; cursor: pointer;
+  border: 2px solid #ddd; border-radius: 6px; background: #f0f0f0; color: #333;
+  transition: 0.2s; font-size: 13px; display: flex; align-items: center;
+  justify-content: space-between;
+}
+.collapse-trigger:hover { background: #e0e0e0; }
+.collapse-trigger .arrow {
+  font-size: 10px; transition: transform 0.2s;
+}
+.collapse-trigger.open .arrow { transform: rotate(180deg); }
+
+.collapse-content {
+  max-height: 0; overflow: hidden; transition: max-height 0.3s ease;
+}
+.collapse-content.open { max-height: 400px; }
+.collapse-content-inner { padding-top: 10px; }
+
+.bg-scale-row { display: flex; gap: 8px; align-items: center; }
+.bg-scale-row button {
+  width: 36px; height: 36px; border: 2px solid #ddd; border-radius: 6px;
+  background: #fff; cursor: pointer; display: flex; align-items: center;
+  justify-content: center; transition: 0.2s; padding: 0; font-size: 18px; flex-shrink: 0;
+}
+.bg-scale-row button:hover { border-color: #96C22B; background: #f8fdf3; }
+
+.bg-move-grid {
+  display: flex;
+  gap: 8px;
+}
+.bg-move-grid button {
+  flex: 1; height: 36px; border: 1px solid #ddd; border-radius: 6px;
+  background: #fff; cursor: pointer; display: flex; align-items: center;
+  justify-content: center; transition: 0.2s; padding: 0; font-size: 16px;
+}
+.bg-move-grid button:hover { border-color: #96C22B; background: #f8fdf3; }
+.bg-move-grid .empty-cell { visibility: hidden; }
+
+.collapse-h3 {
+  cursor: pointer; user-select: none; display: flex; align-items: center;
+  justify-content: space-between;
+}
+.collapse-h3 .arrow {
+  font-size: 10px; transition: transform 0.2s;
+}
+.collapse-h3.open .arrow { transform: rotate(180deg); }
+
+#upholstery-category {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 10'><path d='M1 3 L5 7 L9 3' stroke='%23888' stroke-width='1.5' fill='none' stroke-linecap='round' stroke-linejoin='round'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 10px;
+  padding-right: 28px;
+}
+
+.select-wrap {
+  position: relative; flex: 1;
+}
+.select-wrap select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 100%;
+  margin: 0;
+  padding: 10px 28px 10px 10px;
+  box-sizing: border-box;
+  cursor: pointer;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background: #fff;
+  font-size: 13px;
+}
+.select-wrap select:hover { border-color: #96C22B; }
+.select-arrow {
+  position: absolute;
+  right: 10px; top: 50%; transform: translateY(-50%);
+  font-size: 10px; color: #000000; pointer-events: none;
+  transition: transform 0.2s;
+}
+.select-wrap:hover .select-arrow { color: #96C22B; }
+
+#object-controls .icon-btn {
+  width: 42px; height: 42px; border: 2px solid #ddd; border-radius: 30px;
+  background: #fff; cursor: pointer; display: flex; align-items: center;
+   transition: 0.2s; flex-shrink: 1;
+}
+#object-controls .icon-btn svg { width: 26px; height: 26px; }
+#object-controls .icon-btn:hover { border-color: #96C22B; background: #f8fdf3; }
+#object-controls .icon-btn.active { border-color: #96C22B; background: #eef7e3; }
+
+
+.slider-container {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  gap: 8px;
+}
+
+
+
+label {
+  margin-bottom: 5px;
+}
+
+.slider-input-row {
+  display: flex;
+  align-items: center;
+}
+
+input[type="range"] {
+  width: 100%;
+  margin: 0 5px;
+}
+
+input[type="number"] {
+  width: 120px;
+  margin: 0 5px;
+}

@@ -1,0 +1,2129 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <title>3D Конфигуратор Диванов</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="ui-panel">
+    <h3>Секции, история</h3>
+    <div class="add-section-row">
+      <button class="icon-btn" id="undo-action" data-tooltip="Ctrl+Z">
+        <svg viewBox="0 0 48 48" fill="none" stroke="#555" stroke-width="3" stroke-linecap="round"
+          stroke-linejoin="round">
+          <path d="M14 20 L8 26 L14 32" />
+          <path d="M8 26 L28 26 Q38 26 38 36 L38 38" />
+        </svg>
+      </button>
+      <button class="icon-btn-1 half-btn" id="add-straight" data-tooltip="Прямая секция">
+        <svg viewBox="0 0 48 48" fill="none" stroke="#888" stroke-width="2.5" stroke-linecap="round"
+          stroke-linejoin="round">
+          <rect x="10" y="14" width="28" height="16" rx="3" />
+          <line x1="10" y1="14" x2="38" y2="14" stroke-width="4" />
+          <circle cx="15" cy="34" r="2.5" fill="#888" stroke="none" />
+          <circle cx="33" cy="34" r="2.5" fill="#888" stroke="none" />
+        </svg>
+      </button>
+      <button class="icon-btn-1 half-btn" id="add-corner" data-tooltip="Угловая секция">
+        <svg viewBox="0 0 48 48" fill="none" stroke="#888" stroke-width="2.5" stroke-linecap="round"
+          stroke-linejoin="round">
+          <path d="M10 30 L10 14 L30 14 L30 30 L38 30 L38 38 L10 38 Z" />
+          <line x1="10" y1="14" x2="30" y2="14" stroke-width="4" />
+          <line x1="30" y1="30" x2="38" y2="30" stroke-width="4" />
+          <circle cx="14" cy="36" r="2.5" fill="#888" stroke="none" />
+          <circle cx="35" cy="36" r="2.5" fill="#888" stroke="none" />
+        </svg>
+      </button>
+      <button class="icon-btn-1 half-btn" id="add-simple" data-tooltip="Без спинки">
+        <svg viewBox="0 0 48 48" fill="none" stroke="#888" stroke-width="2.5" stroke-linecap="round"
+          stroke-linejoin="round">
+          <!-- Основной контур секции -->
+          <rect x="10" y="14" width="28" height="16" rx="3" />
+          <!-- Линия, обозначающая отсутствие спинки (тонкая, по центру) -->
+          <line x1="10" y1="22" x2="38" y2="22" stroke-width="1.5" stroke="#ccc" />
+          <!-- Точки крепления/соединения (как в оригинале) -->
+          <circle cx="15" cy="34" r="2.5" fill="#888" stroke="none" />
+          <circle cx="33" cy="34" r="2.5" fill="#888" stroke="none" />
+        </svg>
+      </button>
+      <button class="icon-btn" id="redo-action" data-tooltip="Ctrl+Y">
+        <svg viewBox="0 0 48 48" fill="none" stroke="#555" stroke-width="3" stroke-linecap="round"
+          stroke-linejoin="round">
+          <path d="M34 20 L40 26 L34 32" />
+          <path d="M40 26 L20 26 Q10 26 10 36 L10 38" />
+        </svg>
+      </button>
+    </div>
+    <h3>Каркас</h3>
+    <div class="icon-row">
+      <!-- <div class="color-picker-wrap">
+      <input type="color" id="frame-color" value="#888888" />
+    </div> -->
+      <div class="color-circle" id="frame-color-black" style="background:#101010" data-tooltip="Чёрный"></div>
+      <div class="color-circle" id="frame-color-gray" style="background:#888888" data-tooltip="Серый"></div>
+    </div>
+    <h3>Обивка</h3>
+    <div style="display: flex; gap: 8px; align-items: center;">
+      <div class="upholstery-row" style="flex: 1;">
+        <!-- <div class="color-picker-wrap">
+      <input type="color" id="upholstery-color" value="#ffffff" />
+    </div> -->
+        <div class="select-wrap">
+          <select id="upholstery-category">
+            <option value="none">Без текстуры</option>
+            <option value="santorini">Экокожа Santorini</option>
+            <option value="moderno">Ткань Moderno</option>
+            <option value="velutto">Ткань Velutto</option>
+            <option value="velton">Ткань Велтон</option>
+            <option value="umbra">Ткань Умбра</option>
+          </select>
+          <span class="select-arrow">▼</span>
+        </div>
+      </div>
+      <button class="icon-btn" id="reset-upholstery" data-tooltip="Сбросить" style="flex-shrink: 0;">
+        <svg viewBox="0 0 48 48" fill="none" stroke="#888" stroke-width="2.5" stroke-linecap="round"
+          stroke-linejoin="round">
+          <path d="M36 24 A12 12 0 1 1 24 12" />
+          <path d="M24 6 L24 14 L32 10" />
+        </svg>
+      </button>
+    </div>
+    <div class="variant-grid" id="variant-grid"></div>
+    <h3>Пол, размеры, экспорт</h3>
+    <div class="icon-label-row panel-split-row">
+      <!-- ЛЕВАЯ ГРУППА: Размеры и Пол -->
+      <div class="panel-group-left">
+        <button class="icon-label-btn" id="toggle-floor" data-tooltip="Пол">
+          <svg viewBox="0 0 48 48" fill="none" stroke="#888" stroke-width="2.5" stroke-linecap="round"
+            stroke-linejoin="round">
+            <rect x="8" y="30" width="32" height="10" rx="2" />
+            <line x1="14" y1="30" x2="14" y2="40" />
+            <line x1="20" y1="30" x2="20" y2="40" />
+            <line x1="28" y1="30" x2="28" y2="40" />
+            <line x1="34" y1="30" x2="34" y2="40" />
+          </svg>
+        </button>
+        <button class="toggle-icon" id="toggle-dimensions" data-tooltip="Размеры">
+          <svg viewBox="0 0 48 48" fill="none" stroke="#888" stroke-width="2.5" stroke-linecap="round"
+            stroke-linejoin="round">
+            <line x1="8" y1="36" x2="40" y2="36" />
+            <line x1="8" y1="32" x2="8" y2="40" />
+            <line x1="40" y1="32" x2="40" y2="40" />
+            <line x1="8" y1="12" x2="8" y2="36" />
+            <line x1="4" y1="12" x2="12" y2="12" />
+            <line x1="4" y1="36" x2="12" y2="36" />
+            <text x="22" y="30" font-size="9" fill="#888" stroke="none">↔</text>
+          </svg>
+        </button>
+        <button id="toggle-snap" class="icon-btn" data-tooltip="Привязка">
+          <svg viewBox="0 0 48 48" fill="none" stroke="#888" stroke-width="2.5" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path d="M12 12 L36 36" />
+            <path d="M36 12 L12 36" />
+            <circle cx="24" cy="24" r="10" fill="none" />
+          </svg>
+          <span style="margin-left:6px; font-size:12px;"></span>
+        </button>
+        <button class="icon-btn" id="export-model" data-tooltip="Экспорт сцены (.gltf)">
+          <svg viewBox="0 0 48 48" fill="none" stroke="#888" stroke-width="2.5" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path d="M24 8 L24 30" />
+            <path d="M16 22 L24 30 L32 22" />
+            <path d="M10 36 L10 40 L38 40 L38 36" />
+          </svg>
+        </button>
+        <button class="icon-btn" id="export-png" data-tooltip="PNG">
+          <svg viewBox="0 0 48 48" fill="none" stroke="#888" stroke-width="2.5" stroke-linecap="round"
+            stroke-linejoin="round">
+            <rect x="10" y="10" width="28" height="28" rx="3" />
+            <circle cx="18" cy="18" r="3" />
+            <path d="M10 30 L18 24 L24 30 L30 22 L38 32 L38 36 L10 36 Z" />
+          </svg>
+        </button>
+      </div>   
+    </div> 
+    <br>
+    <div id="object-controls">
+      <h3>Управление объектом</h3>
+      <div class="slider-container">
+        <button class="icon-btn" id="mode-translate" data-tooltip="Перемещение">
+          <svg viewBox="0 0 48 48" fill="none" stroke="#888" stroke-width="2.5" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path d="M24 8 L24 40" />
+            <path d="M8 24 L40 24" />
+            <path d="M18 14 L24 8 L30 14" />
+            <path d="M14 18 L8 24 L14 30" />
+            <path d="M18 34 L24 40 L30 34" />
+            <path d="M34 18 L40 24 L34 30" />
+          </svg>
+        </button>
+        <div class="btn-transform">
+          <button id="move-left">←</button>
+          <button id="move-right">→</button>
+          <!-- <button id="move-up">↑</button>
+      <button id="move-down">↓</button> -->
+        </div>
+      </div>
+      <div class="slider-container">
+        <div class="icon-row">
+          <button class="icon-btn" id="mode-rotate" data-tooltip="Вращение">
+            <svg viewBox="0 0 48 48" fill="none" stroke="#888" stroke-width="2.5" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path d="M36 24 A12 12 0 1 1 24 12" />
+              <path d="M24 8 L24 14 L18 11" />
+              <path d="M36 24 L40 20 L40 28" />
+            </svg>
+          </button>
+          <div class="btn-row">
+            <button id="rotate-left">⟲</button>
+            <button id="rotate-right">⟳</button>
+          </div>
+          <div class="slider-row">
+            <!-- <label>Поворот</label> -->
+            <div class="slider-input-row">
+              <input type="range" id="rotation-y-slider" min="0" max="360" value="0" step="1" />
+              <input type="number" id="rotation-y-input" min="0" max="360" value="0" step="1" />
+            </div>
+          </div>
+          <div>
+          </div>
+        </div>
+      </div>
+      <br>    
+      <button id="delete-object">🗑 Удалить</button>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/build/three.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/TransformControls.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/exporters/GLTFExporter.js"></script>
+    <script>
+      let scene, camera, renderer, controls;
+      const sceneObjects = [];
+      const loader = new THREE.GLTFLoader();
+      const modelsPaths = {
+        straight: 'models/straight_section.glb',
+        corner: 'models/corner_section.glb',
+        simple: 'models/simple_section.glb'
+      };
+
+      // Кэш текстур
+      const textureCache = {};
+      const textureLoader = new THREE.TextureLoader();
+      let backgroundPlane = null;
+      const bgTextureLoader = new THREE.TextureLoader();
+      // Переменные для трансформации фона
+      let bgScale = 1.0;
+      let bgOffsetX = 0;
+      let bgOffsetZ = 0;
+      let modelsCache = {};
+      let modelsLoaded = false;
+      let modelsToLoad = Object.keys(modelsPaths).length;
+      let modelsLoadedCount = 0;
+      let selectedObject = null;
+      let transformControls;
+      let currentObject = null;
+      let currentXPosition = 0;
+      const SNAP_THRESHOLD = 1.0;
+      let isDragging = false;
+      let snapEnabled = true;
+      let lastSectionRotation = 0; // в радианах
+      let lastSectionSize = null;  // { x, z }
+      let nextPlacementX = 0;
+      let nextRightEdge = 0;
+      const objectControlsDiv = document.getElementById('object-controls');
+      const rotYSlider = document.getElementById('rotation-y-slider');
+      // const posYSlider = document.getElementById('position-y-slider');
+      // ===================================================
+      // ИСТОРИЯ ДЕЙСТВИЙ
+      // ===================================================
+      const historyStack = [];
+      const redoStack = [];
+      const MAX_HISTORY = 50;
+
+      function saveState() {
+        redoStack.length = 0;
+        const snapshot = [];
+        sceneObjects.forEach(obj => {
+          const clone = obj.clone(true);
+          if (obj.userData) {
+            clone.userData = JSON.parse(JSON.stringify(obj.userData));
+          }
+          snapshot.push(clone);
+        });
+        historyStack.push(snapshot);
+        if (historyStack.length > MAX_HISTORY) {
+          historyStack.shift();
+        }
+        updateHistoryButtons();
+      }
+
+      function undo() {
+        if (historyStack.length < 2) return;
+        const currentSnapshot = historyStack.pop();
+        const prevSnapshot = historyStack[historyStack.length - 1];
+        redoStack.push(currentSnapshot);
+        restoreSnapshot(prevSnapshot);
+        updateHistoryButtons();
+      }
+
+      function redo() {
+        if (redoStack.length === 0) return;
+        const nextSnapshot = redoStack.pop();
+        historyStack.push(nextSnapshot);
+        restoreSnapshot(nextSnapshot);
+        updateHistoryButtons();
+      }
+
+      function restoreSnapshot(snapshot) {
+        sceneObjects.forEach(obj => scene.remove(obj));
+        sceneObjects.length = 0;
+        snapshot.forEach(obj => {
+          scene.add(obj);
+          sceneObjects.push(obj);
+          // Восстанавливаем текстуры, т.к. clone() не копирует ссылки на текстуры
+          if (obj.userData.upholsteryCategory && obj.userData.upholsteryCategory !== 'none') {
+            applyUpholsteryTexture(obj, obj.userData.upholsteryCategory, obj.userData.upholsteryVariant);
+          }
+          buildDimensions(obj);
+        });
+        buildTotalDimensions();
+        deselectObject();
+      }
+
+      function updateHistoryButtons() {
+        const btnUndo = document.getElementById('undo-action');
+        const btnRedo = document.getElementById('redo-action');
+        if (btnUndo) btnUndo.classList.toggle('disabled-btn', historyStack.length <= 1);
+        if (btnRedo) btnRedo.classList.toggle('disabled-btn', redoStack.length === 0);
+      }
+
+      // УТИЛИТЫ
+      function hexStringToNumber(hexStr) {
+        return parseInt(hexStr.slice(1), 16);
+      }
+
+      const COLOR_TYPE_RULES = [
+        { type: 'upholstery', colors: [0x8399CC] },  //0x393939
+        { type: 'frame', colors: [0xCCCCCC] },
+      ];
+
+      function normalizeUVs(geometry) {
+        if (!geometry.attributes || !geometry.attributes.uv) return;
+        const uv = geometry.attributes.uv;
+        let minU = Infinity, maxU = -Infinity, minV = Infinity, maxV = -Infinity;
+        for (let i = 0; i < uv.count; i++) {
+          const u = uv.getX(i), v = uv.getY(i);
+          if (u < minU) minU = u;
+          if (u > maxU) maxU = u;
+          if (v < minV) minV = v;
+          if (v > maxV) maxV = v;
+        }
+        const rangeU = maxU - minU;
+        const rangeV = maxV - minV;
+        if (rangeU < 0.001 || rangeV < 0.001) return;
+        for (let i = 0; i < uv.count; i++) {
+          uv.setXY(i, (uv.getX(i) - minU) / rangeU, (uv.getY(i) - minV) / rangeV);
+        }
+        uv.needsUpdate = true;
+      }
+
+function assignMeshTypes(model) {
+  const colorMap = {};
+
+  model.traverse((child) => {
+    if (child.isMesh) {
+      if (!child.userData) child.userData = {};
+      const colorHex = child.material.color.getHex();
+      child.userData.originalColor = colorHex;
+      child.userData.hasOriginalTexture = !!child.material.map;
+
+      // Поворачиваем встроенную текстуру
+      if (child.userData.hasOriginalTexture) {
+        const tex = child.material.map;
+        tex.center.set(0.5, 0.5);
+        tex.rotation = THREE.MathUtils.degToRad(0); // угол поворота
+        tex.repeat.set(2, 2);
+        // Смещение текстуры 
+        // tex.offset.x = 0.1;   // сдвиг по горизонтали
+        // tex.offset.y = -0.05;  // сдвиг по вертикали
+        tex.needsUpdate = true;
+      }
+
+      const colorStr = '0x' + colorHex.toString(16).toUpperCase().padStart(6, '0');
+      const meshName = child.name || '(без имени)';
+      const hasTex = child.material.map ? ' [с текстурой]' : '';
+      if (!colorMap[colorStr]) colorMap[colorStr] = { count: 0, meshes: [] };
+      colorMap[colorStr].count++;
+      colorMap[colorStr].meshes.push(meshName + hasTex);
+
+      let found = false;
+      for (const rule of COLOR_TYPE_RULES) {
+        if (rule.colors.includes(colorHex)) {
+          child.userData.type = rule.type;
+          found = true;
+          break;
+        }
+      }
+      if (!found) child.userData.type = 'undefined';
+    }
+  });
+
+  const report = {};
+  for (const [color, data] of Object.entries(colorMap)) {
+    report[color] = `${data.count} мешей: ${data.meshes.join(', ')}`;
+  }
+  console.log('🎨 Базовые цвета модели:', report);
+}
+
+
+      function changeColorByType(model, type, colorHex) {
+        let changedCount = 0;
+        model.traverse((child) => {
+          if (child.isMesh && child.userData && child.userData.type === type) {
+            child.material = child.material.clone();
+            // if (child.material.map) child.material.map = null;
+            child.material.color.setHex(colorHex);
+            child.material.metalness = 0;
+            child.material.roughness = 0.7;
+            child.material.needsUpdate = true;
+            changedCount++;
+          }
+        });
+        return changedCount;
+      }
+
+      function updateColorForAllSceneObjects(type, colorHex) {
+        sceneObjects.forEach((obj) => {
+          changeColorByType(obj, type, colorHex);
+        });
+      }
+
+      // ВЫДЕЛЕНИЕ ОБЪЕКТА
+      function highlightObject(object, on) {
+        object.traverse((child) => {
+          if (child.isMesh) {
+            if (on) {
+              if (child.userData.origEmissive === undefined) {
+                child.userData.origEmissive = child.material.emissive
+                  ? child.material.emissive.getHex()
+                  : 0x1a1a1a;
+              }
+              child.material.emissive = new THREE.Color(0x004400);
+              child.material.emissiveIntensity = 0.5;
+            } else {
+              if (child.userData.origEmissive !== undefined) {
+                child.material.emissive = new THREE.Color(child.userData.origEmissive);
+                child.material.emissiveIntensity = 1;
+              }
+            }
+            child.material.needsUpdate = true;
+          }
+        });
+      }
+
+      function selectObject(object) {
+        if (selectedObject) {
+          highlightObject(selectedObject, false);
+        }
+        selectedObject = object;
+        currentObject = object;
+
+        // Восстанавливаем категорию и вариант текстуры
+        if (object.userData.upholsteryCategory) {
+          document.getElementById('upholstery-category').value = object.userData.upholsteryCategory;
+          populateVariants();
+          if (object.userData.upholsteryVariant) {
+            setSelectedVariantFile(object.userData.upholsteryVariant);
+          }
+        }
+        highlightObject(object, true);
+        transformControls.attach(object);
+        setMode('translate');
+        updateSliders();
+        objectControlsDiv.style.display = 'contents';
+      }
+
+      function deselectObject() {
+        if (selectedObject) {
+          highlightObject(selectedObject, false);
+        }
+        selectedObject = null;
+        currentObject = null;
+        objectControlsDiv.style.display = 'none';
+        if (transformControls) transformControls.detach();
+      }
+
+      function setMode(mode) {
+        if (!transformControls) return;
+        transformControls.setMode(mode);
+        if (mode === 'translate') {
+          transformControls.showX = true;
+          transformControls.showY = false;
+          transformControls.showZ = true;
+        }
+        else if (mode === 'rotate') {
+          transformControls.showX = false;
+          transformControls.showY = true;
+          transformControls.showZ = false;
+        }
+      }
+
+      function updateSliders() {
+        if (currentObject) {
+          const rotDeg = THREE.MathUtils.radToDeg(currentObject.rotation.y).toFixed(0);
+          // const posY = currentObject.position.y.toFixed(2);
+          rotYSlider.value = rotDeg;
+          // posYSlider.value = posY;
+          document.getElementById('rotation-y-input').value = rotDeg;
+          // document.getElementById('position-y-input').value = posY;
+        }
+      }
+      function loadModels() {
+        const keys = Object.keys(modelsPaths);
+        let loadedCount = 0;
+        keys.forEach(key => {
+          new THREE.GLTFLoader().load(modelsPaths[key], (gltf) => {
+            const sceneModel = gltf.scene;
+            assignMeshTypes(sceneModel);
+            const box = new THREE.Box3().setFromObject(sceneModel);
+            const size = {
+              x: box.max.x - box.min.x,
+              y: box.max.y - box.min.y,
+              z: box.max.z - box.min.z
+            };
+            const offset = {
+              x: box.min.x,
+              y: box.min.y,
+              z: box.min.z
+            };
+            modelsCache[key] = { model: sceneModel, size, offset };
+            loadedCount++;
+            if (loadedCount === keys.length) {
+              modelsLoaded = true;
+              console.log('✅ Все модели загружены', modelsCache);
+              saveState();
+            }
+          }, undefined, (error) => console.error('Ошибка загрузки модели:', key, error));
+        });
+      }
+
+      function addSection(type) {
+        if (!modelsLoaded) {
+          alert('Модели ещё не загружены, подождите.');
+          return;
+        }
+        saveState();
+        const cache = modelsCache[type];
+        if (!cache) {
+          alert('Модель не загрузилась: ' + type);
+          return;
+        }
+        const model = cache.model.clone(true);
+        const originalSize = cache.size;
+        const originalOffset = cache.offset;
+        model.traverse((child) => {
+          if (child.isMesh) {
+            child.material = child.material.clone();
+            if (!child.userData.hasOriginalTexture) {
+              if (child.material.map) child.material.map = null;
+            }
+            if (child.material.normalMap) child.material.normalMap = null;
+            if (child.material.roughnessMap) child.material.roughnessMap = null;
+            if (child.material.metalnessMap) child.material.metalnessMap = null;
+
+            if (!child.userData.hasOriginalTexture) {
+              child.material.color.setHex(0xffffff);
+            }
+            child.material.metalness = 0;
+            child.material.roughness = 0.7;
+            child.material.emissive = new THREE.Color(0x1a1a1a);
+            child.material.needsUpdate = true;
+            child.userData.originalColor = child.material.color.getHex();
+          }
+        });
+        const scaleValue = 10;
+        model.scale.set(scaleValue, scaleValue, scaleValue);
+        // Габариты и смещение после масштабирования
+        const scaledWidth = originalSize.x * scaleValue;
+        const scaledOffsetX = originalOffset.x * scaleValue;
+        const group = new THREE.Group();
+        group.add(model);
+        group.castShadow = true;
+        group.receiveShadow = true;
+        model.traverse((child) => {
+          if (child.isMesh) child.castShadow = true; child.receiveShadow = true;
+        });
+        // --- Размещение с учётом смещения модели ---
+        // Левый край новой секции = правый край предыдущей
+        // Левый край в мире = group.position.x + scaledOffsetX
+        // Значит: group.position.x = nextRightEdge - scaledOffsetX
+        group.position.set(nextRightEdge - scaledOffsetX, 0, 0);
+        // Правый край новой секции = group.position.x + scaledOffsetX + scaledWidth
+        nextRightEdge = group.position.x + scaledOffsetX + scaledWidth;
+        // ------------------------------------------
+        const upholsteryCat = document.getElementById('upholstery-category').value;
+        const upholsteryVariant = getSelectedVariantFile();
+        group.userData = {
+          type: type,
+          upholsteryCategory: upholsteryCat,
+          upholsteryVariant: upholsteryVariant || ''
+        };
+        if (upholsteryCat !== 'none' && upholsteryVariant) {
+          applyUpholsteryTexture(group, upholsteryCat, upholsteryVariant);
+        }
+        scene.add(group);
+        sceneObjects.push(group);
+        buildDimensions(group);
+        buildTotalDimensions();
+      }
+
+      function onMouseClick(event) {
+        if (event.target.closest('#ui-panel') || event.target.closest('#object-controls')) return;
+        const mouse = new THREE.Vector2(
+          (event.clientX / window.innerWidth) * 2 - 1,
+          -(event.clientY / window.innerHeight) * 2 + 1
+        );
+        const raycaster = new THREE.Raycaster();
+        raycaster.setFromCamera(mouse, camera);
+        const intersects = raycaster.intersectObjects(sceneObjects, true);
+        if (intersects.length > 0) {
+          let object = intersects[0].object;
+          while (object.parent && !sceneObjects.includes(object)) {
+            object = object.parent;
+          }
+          if (object !== selectedObject) {
+            deselectObject();
+            selectObject(object);
+          }
+        } else {
+          deselectObject();
+        }
+      }
+
+      function exportScene() {
+        deselectObject();
+        const exporter = new THREE.GLTFExporter();
+        exporter.parse(scene, (result) => {
+          const output = JSON.stringify(result, null, 2);
+          const blob = new Blob([output], { type: 'application/json' });
+          const url = URL.createObjectURL(blob);
+          const a = document.createElement('a');
+          a.href = url;
+          a.download = 'scene.gltf';
+          a.click();
+          URL.revokeObjectURL(url);
+        }, { binary: false });
+      }
+
+      const COLLISION_PADDING = 0;
+
+      function getObjBox(obj) {
+        obj.updateMatrixWorld(true);
+        const box = new THREE.Box3();
+        const v = new THREE.Vector3();
+        obj.children.forEach(child => {
+          if (child.name === 'dimension-group') return;
+          child.traverse(mesh => {
+            if (mesh.isMesh && mesh.geometry) {
+              if (mesh.geometry.boundingBox === null) mesh.geometry.computeBoundingBox();
+              const bb = mesh.geometry.boundingBox;
+              if (bb) {
+                v.set(bb.min.x, bb.min.y, bb.min.z); mesh.localToWorld(v); box.expandByPoint(v);
+                v.set(bb.max.x, bb.min.y, bb.min.z); mesh.localToWorld(v); box.expandByPoint(v);
+                v.set(bb.min.x, bb.max.y, bb.min.z); mesh.localToWorld(v); box.expandByPoint(v);
+                v.set(bb.max.x, bb.max.y, bb.min.z); mesh.localToWorld(v); box.expandByPoint(v);
+                v.set(bb.min.x, bb.min.y, bb.max.z); mesh.localToWorld(v); box.expandByPoint(v);
+                v.set(bb.max.x, bb.min.y, bb.max.z); mesh.localToWorld(v); box.expandByPoint(v);
+                v.set(bb.min.x, bb.max.y, bb.max.z); mesh.localToWorld(v); box.expandByPoint(v);
+                v.set(bb.max.x, bb.max.y, bb.max.z); mesh.localToWorld(v); box.expandByPoint(v);
+              }
+
+            }
+          });
+        });
+        return box;
+      }
+
+      function getNominalObjBox(obj) {
+        const type = obj.userData.type;
+        const dims = modelDimensions[type];
+        if (!dims) return new THREE.Box3();
+        const realBox = getObjBox(obj);
+        if (realBox.isEmpty()) return new THREE.Box3();
+        const rotY = obj.rotation.y;
+        const isRotated = Math.abs(Math.round(rotY / (Math.PI / 2)) % 2) === 1;
+        const nw = (isRotated ? dims.depth : dims.width) / 100;
+        const nd = (isRotated ? dims.width : dims.depth) / 100;
+        const nh = dims.height / 100;
+        const center = new THREE.Vector3();
+        realBox.getCenter(center);
+        return new THREE.Box3(
+          new THREE.Vector3(center.x - nw / 2, realBox.min.y, center.z - nd / 2),
+          new THREE.Vector3(center.x + nw / 2, realBox.min.y + nh, center.z + nd / 2)
+        );
+      }
+
+      function snapToNeighbors(draggedObj) {
+        if (!draggedObj) return;
+        draggedObj.updateMatrixWorld(true);
+        const draggedBox = getObjBox(draggedObj);
+        const innerBox = draggedBox.clone();
+        innerBox.min.x += COLLISION_PADDING;
+        innerBox.max.x -= COLLISION_PADDING;
+        innerBox.min.z += COLLISION_PADDING;
+        innerBox.max.z -= COLLISION_PADDING;
+        if (innerBox.min.x >= innerBox.max.x) innerBox.min.x = draggedBox.min.x;
+        if (innerBox.min.z >= innerBox.max.z) innerBox.min.z = draggedBox.min.z;
+        // --- Фаза 1: Выталкивание (РАБОТАЕТ ВСЕГДА) ---
+        sceneObjects.forEach(obj => {
+          if (obj === draggedObj) return;
+          obj.updateMatrixWorld(true);
+          const objBox = getObjBox(obj);
+          const objInnerBox = objBox.clone();
+          objInnerBox.min.x += COLLISION_PADDING; objInnerBox.max.x -= COLLISION_PADDING;
+          objInnerBox.min.z += COLLISION_PADDING; objInnerBox.max.z -= COLLISION_PADDING;
+          const xOv = innerBox.min.x < objInnerBox.max.x && innerBox.max.x > objInnerBox.min.x;
+          const zOv = innerBox.min.z < objInnerBox.max.z && innerBox.max.z > objInnerBox.min.z;
+          if (xOv && zOv) {
+            const pushR = objInnerBox.max.x - innerBox.min.x;
+            const pushL = innerBox.max.x - objInnerBox.min.x;
+            const pushF = objInnerBox.max.z - innerBox.min.z;
+            const pushB = innerBox.max.z - objInnerBox.min.z;
+            const minPush = Math.min(pushR, pushL, pushF, pushB);
+            if (minPush === pushR) draggedObj.position.x += pushR;
+            else if (minPush === pushL) draggedObj.position.x -= pushL;
+            else if (minPush === pushF) draggedObj.position.z += pushF;
+            else draggedObj.position.z -= pushB;
+            draggedObj.updateMatrixWorld(true);
+            innerBox.copy(getObjBox(draggedObj));
+            innerBox.min.x += COLLISION_PADDING; innerBox.max.x -= COLLISION_PADDING;
+            innerBox.min.z += COLLISION_PADDING; innerBox.max.z -= COLLISION_PADDING;
+          }
+        });
+        // --- Фазы 2 и 3: Притяжение (ТОЛЬКО если snapEnabled) ---
+        if (!snapEnabled) return;
+        // --- Фаза 2: Притяжение по грани ---
+        let snapX = null, snapZ = null;
+        let minDistX = SNAP_THRESHOLD, minDistZ = SNAP_THRESHOLD;
+
+        sceneObjects.forEach(obj => {
+          if (obj === draggedObj) return;
+          obj.updateMatrixWorld(true);
+          const objBox = getObjBox(obj);
+          const objInnerBox = objBox.clone();
+          objInnerBox.min.x += COLLISION_PADDING; objInnerBox.max.x -= COLLISION_PADDING;
+          objInnerBox.min.z += COLLISION_PADDING; objInnerBox.max.z -= COLLISION_PADDING;
+          const zOverlap = innerBox.min.z < objInnerBox.max.z && innerBox.max.z > objInnerBox.min.z;
+          if (zOverlap) {
+            const gap1 = objInnerBox.min.x - innerBox.max.x;
+            if (gap1 >= 0 && gap1 < minDistX) { minDistX = gap1; snapX = draggedObj.position.x + gap1; }
+            const gap2 = innerBox.min.x - objInnerBox.max.x;
+            if (gap2 >= 0 && gap2 < minDistX) { minDistX = gap2; snapX = draggedObj.position.x - gap2; }
+          }
+          const xOverlap = innerBox.min.x < objInnerBox.max.x && innerBox.max.x > objInnerBox.min.x;
+          if (xOverlap) {
+            const gap3 = objInnerBox.min.z - innerBox.max.z;
+            if (gap3 >= 0 && gap3 < minDistZ) { minDistZ = gap3; snapZ = draggedObj.position.z + gap3; }
+            const gap4 = innerBox.min.z - objInnerBox.max.z;
+            if (gap4 >= 0 && gap4 < minDistZ) { minDistZ = gap4; snapZ = draggedObj.position.z - gap4; }
+          }
+        });
+        if (snapX !== null) {
+          draggedObj.position.x = snapX;
+          draggedObj.updateMatrixWorld(true);
+          innerBox.copy(getObjBox(draggedObj));
+          innerBox.min.x += COLLISION_PADDING; innerBox.max.x -= COLLISION_PADDING;
+          innerBox.min.z += COLLISION_PADDING; innerBox.max.z -= COLLISION_PADDING;
+        }
+        if (snapZ !== null) {
+          draggedObj.position.z = snapZ;
+          draggedObj.updateMatrixWorld(true);
+          innerBox.copy(getObjBox(draggedObj));
+          innerBox.min.x += COLLISION_PADDING; innerBox.max.x -= COLLISION_PADDING;
+          innerBox.min.z += COLLISION_PADDING; innerBox.max.z -= COLLISION_PADDING;
+        }
+        // --- Фаза 3: Притяжение углов ---
+        const CORNER_THRESHOLD = SNAP_THRESHOLD;
+        let bestCornerDist = CORNER_THRESHOLD;
+        let cornerDx = 0, cornerDz = 0;
+        const draggedCorners = [
+          { x: innerBox.min.x, z: innerBox.min.z },
+          { x: innerBox.max.x, z: innerBox.min.z },
+          { x: innerBox.min.x, z: innerBox.max.z },
+          { x: innerBox.max.x, z: innerBox.max.z }
+        ];
+        sceneObjects.forEach(obj => {
+          if (obj === draggedObj) return;
+          obj.updateMatrixWorld(true);
+          const objBox = getObjBox(obj);
+          const objInnerBox = objBox.clone();
+          objInnerBox.min.x += COLLISION_PADDING; objInnerBox.max.x -= COLLISION_PADDING;
+          objInnerBox.min.z += COLLISION_PADDING; objInnerBox.max.z -= COLLISION_PADDING;
+          const hasXOverlap = innerBox.min.x < objInnerBox.max.x && innerBox.max.x > objInnerBox.min.x;
+          const hasZOverlap = innerBox.min.z < objInnerBox.max.z && innerBox.max.z > objInnerBox.min.z;
+          if (hasXOverlap && hasZOverlap) return;
+          const objCorners = [
+            { x: objInnerBox.min.x, z: objInnerBox.min.z },
+            { x: objInnerBox.max.x, z: objInnerBox.min.z },
+            { x: objInnerBox.min.x, z: objInnerBox.max.z },
+            { x: objInnerBox.max.x, z: objInnerBox.max.z }
+          ];
+          draggedCorners.forEach(dc => {
+            objCorners.forEach(oc => {
+              const dx = oc.x - dc.x;
+              const dz = oc.z - dc.z;
+              const dist = Math.sqrt(dx * dx + dz * dz);
+              if (dist > 0.01 && dist < bestCornerDist) {
+                bestCornerDist = dist; cornerDx = dx; cornerDz = dz;
+              }
+            });
+          });
+        });
+        if (bestCornerDist < CORNER_THRESHOLD) {
+          draggedObj.position.x += cornerDx;
+          draggedObj.position.z += cornerDz;
+        }
+      }
+
+      function capturePositions() {
+        const positions = {};
+        sceneObjects.forEach((obj, i) => {
+          positions[i] = {
+            x: obj.position.x, y: obj.position.y, z: obj.position.z,
+            rx: obj.rotation.x, ry: obj.rotation.y, rz: obj.rotation.z
+          };
+        });
+        return positions;
+      }
+
+      function positionsChanged(beforeState) {
+        let changed = false;
+        sceneObjects.forEach((obj, i) => {
+          const b = beforeState[i];
+          if (!b) { changed = true; return; }
+          if (obj.position.x !== b.x || obj.position.y !== b.y || obj.position.z !== b.z ||
+            obj.rotation.x !== b.rx || obj.rotation.y !== b.ry || obj.rotation.z !== b.rz) {
+            changed = true;
+          }
+        });
+        return changed;
+      }
+
+      function exportPNG() {
+        deselectObject();
+        // Желаемое разрешение картинки
+        const EXPORT_W = 3840;
+        const EXPORT_H = 2160;
+        // Сохраняем оригинальные размеры
+        const origW = renderer.domElement.width;
+        const origH = renderer.domElement.height;
+        const origAspect = camera.aspect;
+        // Сохраняем состояние фона
+        const wasBackgroundPlane = backgroundPlane !== null;
+        let tempBgColor = null;
+        if (wasBackgroundPlane) {
+          scene.remove(backgroundPlane);
+        } else {
+          tempBgColor = scene.background;
+          scene.background = null;
+        }
+
+        // Убираем пол
+        const floor = scene.getObjectByName('grid-floor');
+        const shadow = scene.children.find(c => c.material instanceof THREE.ShadowMaterial);
+        let floorVisible = null;
+        let shadowVisible = null;
+        if (floor) { floorVisible = floor.visible; floor.visible = false; }
+        if (shadow) { shadowVisible = shadow.visible; shadow.visible = false; }
+        // Меняем размер рендерера
+        renderer.setSize(EXPORT_W, EXPORT_H, false);
+        camera.aspect = EXPORT_W / EXPORT_H;
+        camera.updateProjectionMatrix();
+        // Рендерим в новом разрешении
+        renderer.render(scene, camera);
+        const dataURL = renderer.domElement.toDataURL('image/png');
+        // Восстанавливаем рендерер
+        renderer.setSize(window.innerWidth, window.innerHeight, true);
+        camera.aspect = origAspect;
+        camera.updateProjectionMatrix();
+        // Восстанавливаем фон
+        if (wasBackgroundPlane) {
+          scene.add(backgroundPlane);
+        } else if (tempBgColor) {
+          scene.background = tempBgColor;
+        }
+        if (floor) floor.visible = floorVisible;
+        if (shadow) shadow.visible = shadowVisible;
+        // Скачиваем
+        const a = document.createElement('a');
+        a.href = dataURL;
+        a.download = 'sofa-config.png';
+        a.click();
+      }
+
+      // ===================================================
+      // КАТАЛОГ ТЕКСТУР ОБИВКИ
+      // ===================================================
+      const upholsteryCatalog = {
+        santorini: {
+          label: 'Экокожа Santorini',
+          textures: [
+            { name: 'Белый S0402', file: 'textures/santorini/S0402 (белый).jpg' },
+            { name: 'Чёрный S0401', file: 'textures/santorini/S0401 (чёрный).jpg' },
+            { name: 'Фисташковый S0406', file: 'textures/santorini/S0406 (фисташковый).jpg' },
+            { name: 'Бордовый S0411', file: 'textures/santorini/S0411 (бордовый).jpg' },
+            { name: 'Кофейный S0413', file: 'textures/santorini/S0413 (кофейный).jpg' },
+            { name: 'Тёмно-Синий S0419', file: 'textures/santorini/S0419 (темно-синий).jpg' },
+            { name: 'Светло-голубой S0420', file: 'textures/santorini/S0420 (светло-голубой).jpg' },
+            { name: 'Красный S0421', file: 'textures/santorini/S0421 (красный).jpg' },
+            { name: 'Тёмно-серый S0422', file: 'textures/santorini/S0422 (темно-серый).jpg' },
+            { name: 'Светло-коричневый S0427', file: 'textures/santorini/S0426 (светло-коричневый).jpg' },
+            { name: 'Слоновая кость', file: 'textures/santorini/S0427 (слоновая кость).jpg' },
+            { name: 'Бежевый S0428', file: 'textures/santorini/S0428 (бежевый).jpg' },
+            { name: 'Шоколадный S0429', file: 'textures/santorini/S0429 (шоколадный).jpg' },
+            { name: 'Оранжевый S0432', file: 'textures/santorini/S0432 (оранжевый).jpg' },
+          ]
+        },
+        moderno: {
+          label: 'Ткань Moderno',
+          textures: [
+            { name: 'Серый 02', file: 'textures/moderno/02 (серый).jpg' },
+            { name: 'Терракот 05', file: 'textures/moderno/05 (терракот).jpg' },
+            { name: 'Синий 07', file: 'textures/moderno/07 (синий).jpg' },
+            { name: 'Мокко 11', file: 'textures/moderno/11 (мокко).jpg' },
+            { name: 'Чёрный 16', file: 'textures/moderno/16 (чёрный).jpg' },
+          ]
+        },
+        velutto: {
+          label: 'Ткань Velutto',
+          textures: [
+            { name: 'Светло-бежевый 02', file: 'textures/velutto/Velutto 02 (светло-бежевый).jpg' },
+            { name: 'Бежевый 03', file: 'textures/velutto/Velutto 03 (бежевый).jpg' },
+            { name: 'Коричневый 06', file: 'textures/velutto/Velutto 06 (коричневый).jpg' },
+            { name: 'Серый 18', file: 'textures/velutto/Velutto 18 (серый).jpg' },
+            { name: 'Чёрный 20', file: 'textures/velutto/Velutto 20 (чёрный).jpg' },
+          ]
+        },
+        velton: {
+          label: 'Ткань Велтон',
+          textures: [
+            { name: 'Белый 000', file: 'textures/velton/wellton000 (белый).png' },
+            { name: 'Бежевый 130', file: 'textures/velton/wellton130 (бежевый).png' },
+            { name: 'Коричневый 230', file: 'textures/velton/wellton230 (коричневый).png' },
+            { name: 'Коричневый 297', file: 'textures/velton/wellton297 (коричневый).png' },
+            { name: 'Зелёный 696', file: 'textures/velton/wellton696 (зеленый).png' },
+            { name: 'Зелёный 697', file: 'textures/velton/wellton697 (зеленый).png' },
+            { name: 'Синий 797', file: 'textures/velton/wellton797 (синий).png' },
+            { name: 'Серый 912', file: 'textures/velton/wellton912 (серый).png' },
+            { name: 'Серый 953', file: 'textures/velton/wellton953 (серый).png' },
+            { name: 'Серый 990', file: 'textures/velton/wellton990 (серый).png' },
+            { name: 'Тёмно-серый 994', file: 'textures/velton/wellton994 (темно-серый).png' },
+            { name: 'Чёрный 998', file: 'textures/velton/wellton998 (чёрный).png' },
+          ]
+        },
+        umbra: {
+          label: 'Ткань Умбра',
+          textures: [
+            { name: 'Белый 000', file: 'textures/umbra/tiling_umbra000 (белый).png' },
+            { name: 'Бежевый 011', file: 'textures/umbra/tiling_umbra011 (бежевый).png' },
+            { name: 'Бежевый 110', file: 'textures/umbra/tiling_umbra110 (бежевый).png' },
+            { name: 'Жёлтый 153', file: 'textures/umbra/tiling_umbra153 (желтый).png' },
+            { name: 'Коричневый 292', file: 'textures/umbra/tiling_umbra292 (коричневый).png' },
+            { name: 'Зелёный 690', file: 'textures/umbra/tiling_umbra690 (зеленый).png' },
+            { name: 'Серый 900', file: 'textures/umbra/tiling_umbra900 (серый).png' },
+            { name: 'Серый 910', file: 'textures/umbra/tiling_umbra910 (серый).png' },
+            { name: 'Зелёный 967', file: 'textures/umbra/tiling_umbra967 (зеленый).png' },
+          ]
+        }
+      };
+
+      // Кэш: key = "category/file" -> THREE.Texture
+      const upholsteryTextureCache = {};
+      function getUpholsteryTextureKey(category, file) {
+        return category + '/' + file;
+      }
+
+      function loadUpholsteryTexture(category, file, onLoad) {
+        const key = getUpholsteryTextureKey(category, file);
+        if (upholsteryTextureCache[key]) {
+          onLoad(upholsteryTextureCache[key]);
+          return;
+        }
+        textureLoader.load(file, (tex) => {
+          // 1. Включаем повторение
+          tex.wrapS = THREE.RepeatWrapping;
+          tex.wrapT = THREE.RepeatWrapping;
+          //     tex.wrapS = THREE.MirroredRepeatWrapping;
+          // tex.wrapT = THREE.MirroredRepeatWrapping;
+          tex.offset.set(0, 0);
+          // 2. Увеличиваем повтор 
+          tex.repeat.set(1, 1);
+          // 3. ГЛАВНОЕ: Размываем края текстуры, чтобы скрыть швы
+          blurTextureEdges(tex, 20);
+          // 4. Настройки для четкости и сглаживания
+          // tex.encoding = THREE.sRGBEncoding;
+          tex.generateMipmaps = true;
+          tex.minFilter = THREE.LinearMipmapLinearFilter; // Фильтр для повторов
+          tex.magFilter = THREE.LinearFilter;            // Сглаживание при увеличении
+          tex.anisotropy = renderer ? renderer.capabilities.getMaxAnisotropy() : 16; // Четкость под углом
+          upholsteryTextureCache[key] = tex;
+          console.log('✅ Текстура загружена и обработана:', key);
+          onLoad(tex);
+        }, undefined, (err) => {
+          console.warn('⚠️ Ошибка загрузки текстуры:', file);
+          // Создаем серую заглушку с шумом, тоже с размытием
+          const canvas = document.createElement('canvas');
+          canvas.width = 364; canvas.height = 364;
+          const ctx = canvas.getContext('2d');
+          ctx.fillStyle = '#ffffff';
+          ctx.fillRect(0, 0, 364, 364);
+          for (let i = 0; i < 500; i++) {
+            const x = Math.random() * 364; const y = Math.random() * 364;
+            ctx.fillStyle = `rgb(180,180,180)`; ctx.fillRect(x, y, 4, 4);
+          }
+          const fallback = new THREE.CanvasTexture(canvas);
+          fallback.wrapS = THREE.RepeatWrapping; fallback.wrapT = THREE.MirroredRepeatWrapping;
+          fallback.repeat.set(1, 1);
+          blurTextureEdges(fallback, 20); // Применяем размытие и к заглушке
+          fallback.generateMipmaps = true; fallback.minFilter = THREE.LinearMipmapLinearFilter;
+          upholsteryTextureCache[key] = fallback;
+          onLoad(fallback);
+        });
+      }
+
+      // --- ВСПОМОГАТЕЛЬНАЯ ФУНКЦИЯ: Размытие краев текстуры ---
+      // function blurTextureEdges(texture, pixelRadius) {
+      //   const img = texture.image;
+      //   if (!img) return;
+
+      //   const canvas = document.createElement('canvas');
+      //   const ctx = canvas.getContext('2d');
+      //   canvas.width = img.width || img.naturalWidth || 256;
+      //   canvas.height = img.height || img.naturalHeight || 256;
+      //   ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+
+      //   let imageData;
+      //   try {
+      //     imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+      //   } catch (e) {
+      //     console.warn('⚠️ Не удалось обработать текстуру (CORS):', e);
+      //     return;
+      //   }
+
+      //   const d = imageData.data;
+      //   const w = canvas.width;
+      //   const h = canvas.height;
+
+      //   for (let y = 0; y < h; y++) {
+      //     for (let x = 0; x < w; x++) {
+      //       const idx = (y * w + x) * 4;
+
+      //       const distToLeft = x;
+      //       const distToRight = w - x - 1;
+      //       const distToTop = y;
+      //       const distToBottom = h - y - 1;
+      //       const minDist = Math.min(distToLeft, distToRight, distToTop, distToBottom);
+
+      //       if (minDist < pixelRadius) {
+      //         const alpha = minDist / pixelRadius;
+      //         const oppositeX = (x + Math.floor(w / 2)) % w;
+      //         const oppositeY = (y + Math.floor(h / 2)) % h;
+      //         const oppIdx = (oppositeY * w + oppositeX) * 4;
+
+      //         d[idx]     = (d[idx] * alpha + d[oppIdx] * (1 - alpha)) | 0;
+      //         d[idx + 1] = (d[idx + 1] * alpha + d[oppIdx + 1] * (1 - alpha)) | 0;
+      //         d[idx + 2] = (d[idx + 2] * alpha + d[oppIdx + 2] * (1 - alpha)) | 0;
+      //       }
+      //     }
+      //   }
+
+      //   ctx.putImageData(imageData, 0, 0);
+
+      //   // Заменяем изображение текстуры на обработанный canvas
+      //   texture.image = canvas;
+      //   texture.needsUpdate = true;
+      // }
+
+      function blurTextureEdges(texture, pixelRadius = 40) {
+        const img = texture.image;
+        if (!img) return;
+        const canvas = document.createElement('canvas');
+        const ctx = canvas.getContext('2d');
+        // Используем реальные размеры картинки
+        canvas.width = img.width || img.naturalWidth || 364;
+        canvas.height = img.height || img.naturalHeight || 364;
+        ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+        let imageData;
+        try {
+          imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+        } catch (e) {
+          console.warn('⚠️ Не удалось обработать текстуру (CORS):', e);
+          return;
+        }
+        const src = new Uint8ClampedArray(imageData.data);
+        const d = imageData.data;
+        const w = canvas.width;
+        const h = canvas.height;
+        // Smoothstep для плавного перехода вместо линейного
+        function smoothstep(t) {
+          t = Math.max(0, Math.min(1, t));
+          return t * t * (3 - 2 * t);
+        }
+        // --- Горизонтальная склейка: левый край ↔ правый край ---
+        for (let y = 0; y < h; y++) {
+          // Левый край (от 0 до pixelRadius)
+          for (let x = 0; x < pixelRadius && x < w; x++) {
+            const idx = (y * w + x) * 4;
+            const mirrorX = w - 1 - x;
+            const mIdx = (y * w + mirrorX) * 4;
+            // t = 0 у края, 1 в центре зоны перехода
+            const t = 1 - smoothstep(x / pixelRadius);
+            d[idx] = src[idx] * (1 - t) + src[mIdx] * t;
+            d[idx + 1] = src[idx + 1] * (1 - t) + src[mIdx + 1] * t;
+            d[idx + 2] = src[idx + 2] * (1 - t) + src[mIdx + 2] * t;
+          }
+          // Правый край (от w - pixelRadius до w)
+          for (let x = w - pixelRadius; x < w; x++) {
+            if (x < pixelRadius) continue; // Чтобы не дублировать обработку центральной зоны
+            const idx = (y * w + x) * 4;
+            const mirrorX = w - 1 - x;
+            const mIdx = (y * w + mirrorX) * 4;
+            const t = 1 - smoothstep((w - 1 - x) / pixelRadius);
+            d[idx] = src[idx] * (1 - t) + src[mIdx] * t;
+            d[idx + 1] = src[idx + 1] * (1 - t) + src[mIdx + 1] * t;
+            d[idx + 2] = src[idx + 2] * (1 - t) + src[mIdx + 2] * t;
+          }
+        }
+
+        // Сохраняем промежуточный результат, чтобы вертикальный проход не смешивал уже смешанные пиксели
+        const src2 = new Uint8ClampedArray(d);
+        // --- Вертикальная склейка: верхний край ↔ нижний край ---
+        for (let x = 0; x < w; x++) {
+          // Верхний край
+          for (let y = 0; y < pixelRadius && y < h; y++) {
+            const idx = (y * w + x) * 4;
+            const mirrorY = h - 1 - y;
+            const mIdx = (mirrorY * w + x) * 4;
+            const t = 1 - smoothstep(y / pixelRadius);
+            d[idx] = src2[idx] * (1 - t) + src2[mIdx] * t;
+            d[idx + 1] = src2[idx + 1] * (1 - t) + src2[mIdx + 1] * t;
+            d[idx + 2] = src2[idx + 2] * (1 - t) + src2[mIdx + 2] * t;
+          }
+          // Нижний край
+          for (let y = h - pixelRadius; y < h; y++) {
+            if (y < pixelRadius) continue;
+            const idx = (y * w + x) * 4;
+            const mirrorY = h - 1 - y;
+            const mIdx = (mirrorY * w + x) * 4;
+            const t = 1 - smoothstep((h - 1 - y) / pixelRadius);
+            d[idx] = src2[idx] * (1 - t) + src2[mIdx] * t;
+            d[idx + 1] = src2[idx + 1] * (1 - t) + src2[mIdx + 1] * t;
+            d[idx + 2] = src2[idx + 2] * (1 - t) + src2[mIdx + 2] * t;
+          }
+        }
+        ctx.putImageData(imageData, 0, 0);
+        texture.image = canvas;
+        texture.needsUpdate = true;
+      }
+
+
+      const normalMapPaths = {
+  velton: 'textures/wellton953 (серый)-normal-1024-16bit (2).png',
+  velutto: 'textures/Velutto 18 (серый)-normal-1024-16bit.png'
+};
+
+function applyUpholsteryTexture(object, category, file) {
+  if (category === 'none' || !file) {
+    object.traverse((child) => {
+      if (child.isMesh && child.userData && child.userData.type === 'upholstery') {
+        child.material.map = null;
+        child.material.normalMap = null;
+        child.material.bumpMap = null;
+        child.material.normalScale = new THREE.Vector2(1, 1);
+        child.material.bumpScale = 0;
+        child.material.needsUpdate = true;
+      }
+    });
+    return;
+  }
+
+   let TILE_WORLD = 0.3;
+       if (category === 'moderno') {
+    TILE_WORLD = 0.5;
+  }
+  if (category === 'velton') {
+    TILE_WORLD = 0.6;
+  }
+    if (category === 'umbra') {
+    TILE_WORLD = 0.25;
+  }
+  const normalPath = normalMapPaths[category];
+
+  loadUpholsteryTexture(category, file, (texture) => {
+    if (!texture) {
+      console.error('Текстура не загрузилась:', category, file);
+      return;
+    }
+
+    object.traverse((child) => {
+      if (child.isMesh && child.userData && child.userData.type === 'upholstery') {
+        child.updateMatrixWorld(true);
+        const box = new THREE.Box3().setFromObject(child);
+        const sx = box.max.x - box.min.x;
+        const sy = box.max.y - box.min.y;
+        const sz = box.max.z - box.min.z;
+
+        const dims = [sx, sy, sz].sort((a, b) => b - a);
+        const repU = Math.max(dims[0] / TILE_WORLD, 1);
+        const repV = Math.max(dims[1] / TILE_WORLD, 1);
+
+        // Клонируем диффузную текстуру
+        const tex = texture.clone();
+        tex.wrapS = THREE.RepeatWrapping;
+        tex.wrapT = THREE.RepeatWrapping;
+        tex.repeat.set(repU, repV);
+        tex.offset.set(0, 0);
+        tex.needsUpdate = true;
+
+        child.material = child.material.clone();
+        child.material.map = tex;
+
+        if (normalPath) {
+          // Есть готовая карта нормалей — используем её
+          const normalTex = textureLoader.load(normalPath);
+          normalTex.wrapS = THREE.RepeatWrapping;
+          normalTex.wrapT = THREE.RepeatWrapping;
+          normalTex.repeat.set(repU, repV);
+          normalTex.needsUpdate = true;
+
+          child.material.normalMap = normalTex;
+          child.material.normalScale = new THREE.Vector2(0.3, 0.3);
+          child.material.bumpMap = null;
+        } else {
+          // Нет карты нормалей — используем саму текстуру как bumpMap
+          // Это быстрый вариант: даёт лёгкий рельеф без доп. файлов
+          child.material.bumpMap = tex;
+          child.material.bumpScale = 0.03;
+          child.material.normalMap = null;
+        }
+
+        child.material.roughness = 0.6;
+        child.material.metalness = 0.0;
+        child.material.needsUpdate = true;
+      }
+    });
+  });
+}
+
+      // Применить текстуру ко всем объектам сцены
+      function applyUpholsteryTextureToAll(category, file) {
+        sceneObjects.forEach(obj => applyUpholsteryTexture(obj, category, file));
+      }
+      // ===================================================
+      // СВЯЗАННЫЕ ВЫПАДАЮЩИЕ СПИСКИ
+      // ===================================================
+      // ===================================================
+      // СЕТКА ВАРИАНТОВ ТЕКСТУРЫ (кружки вместо select)
+      // ===================================================
+      function populateVariants() {
+        const categorySelect = document.getElementById('upholstery-category');
+        const grid = document.getElementById('variant-grid');
+        const cat = categorySelect.value;
+        grid.innerHTML = '';
+        if (cat === 'none') {
+          grid.style.display = 'none';
+          return;
+        }
+
+        const data = upholsteryCatalog[cat];
+        if (!data) { grid.style.display = 'none'; return; }
+        grid.style.display = 'grid';
+        data.textures.forEach((tex) => {
+          const circle = document.createElement('div');
+          circle.className = 'variant-circle';
+          circle.style.backgroundImage = `url('${tex.file}')`;
+          circle.dataset.file = tex.file;
+          circle.setAttribute('data-tooltip', tex.name);
+          grid.appendChild(circle);
+        });
+        // Автовыбор первого варианта
+        if (data.textures.length > 0) {
+          setSelectedVariantFile(data.textures[0].file);
+        }
+      }
+
+      function setSelectedVariantFile(file) {
+        const grid = document.getElementById('variant-grid');
+        let found = false;
+        grid.querySelectorAll('.variant-circle').forEach(el => {
+          if (el.dataset.file === file) {
+            el.classList.add('active');
+            found = true;
+          } else {
+            el.classList.remove('active');
+          }
+        });
+        return found;
+      }
+
+      function getSelectedVariantFile() {
+        const active = document.querySelector('.variant-circle.active');
+        return active ? active.dataset.file : '';
+      }
+      // Обработка клика по кружку варианта
+      document.getElementById('variant-grid').addEventListener('click', (e) => {
+        const circle = e.target.closest('.variant-circle');
+        if (!circle) return;
+        setSelectedVariantFile(circle.dataset.file);
+        const cat = document.getElementById('upholstery-category').value;
+        const file = circle.dataset.file;
+        saveState();
+        if (selectedObject) {
+          applyUpholsteryTexture(selectedObject, cat, file);
+          selectedObject.userData.upholsteryCategory = cat;
+          selectedObject.userData.upholsteryVariant = file;
+        } else {
+          applyUpholsteryTextureToAll(cat, file);
+          sceneObjects.forEach(obj => {
+            if (obj.userData) {
+              obj.userData.upholsteryCategory = cat;
+              obj.userData.upholsteryVariant = file;
+            }
+          });
+        }
+      });
+
+      function updateUpholsteryPreview() {
+        const variantSelect = document.getElementById('upholstery-variant');
+        const preview = document.getElementById('upholstery-preview');
+        const file = variantSelect.value;
+        if (file) {
+          preview.src = file;
+          preview.style.display = 'block';
+          preview.onerror = () => { preview.style.display = 'none'; };
+        } else {
+          preview.style.display = 'none';
+        }
+      }
+
+      // ===================================================
+      // РАЗМЕРНЫЕ ЛИНИИ
+      // ===================================================
+      const modelDimensions = {
+        straight: { width: 650, depth: 650, height: 710 },
+        corner: { width: 650, depth: 650, height: 710 },
+        simple: { width: 650, depth: 650, height: 460 }
+      };
+      let dimensionsVisible = false;
+      function makeDimLine(p1, p2, color) {
+        const geo = new THREE.BufferGeometry().setFromPoints([p1, p2]);
+        const mat = new THREE.LineBasicMaterial({
+          color: color, depthTest: false, transparent: true, opacity: 0.80
+        });
+        const line = new THREE.Line(geo, mat);
+        line.renderOrder = 999;
+        line.raycast = () => { };
+        return line;
+      }
+
+      function makeDimLabel(text) {
+        const padding = 6;
+        const fontSize = 15;
+        // Временный canvas для измерения ширины текста
+        const tmpCanvas = document.createElement('canvas');
+        const tmpCtx = tmpCanvas.getContext('2d');
+        tmpCtx.font = `600 ${fontSize}px Montserrat, Segoe UI, sans-serif`;
+        const textWidth = Math.ceil(tmpCtx.measureText(text).width);
+        const cw = textWidth + padding * 2 + 8;
+        const ch = fontSize + padding;
+        const r = ch / 2; // радиус скругления
+        const canvas = document.createElement('canvas');
+        canvas.width = cw * 2;  // x2 для чёткости
+        canvas.height = ch * 2;
+        const ctx = canvas.getContext('2d');
+        ctx.scale(2, 2);
+        // — Фон-пилюля со скруглением —
+        ctx.beginPath();
+        // Левая скруглённая часть
+        ctx.arc(r, r, r, Math.PI / 2, Math.PI * 3 / 2);
+        // Верхняя прямая
+        ctx.lineTo(cw - r, 0);
+        // Правая скруглённая часть
+        ctx.arc(cw - r, r, r, Math.PI * 3 / 2, Math.PI / 2);
+        // Нижняя прямая
+        ctx.lineTo(r, ch);
+        ctx.closePath();
+        // Полупрозрачный белый фон с лёгкой тенью
+        ctx.fillStyle = 'rgba(255, 255, 255, 0.92)';
+        ctx.fill();
+        // Тонкая обводка
+        ctx.strokeStyle = 'rgba(120, 120, 120, 0.25)';
+        ctx.lineWidth = 1;
+        ctx.stroke();
+        // — Текст —
+        ctx.fillStyle = '#777777';
+        ctx.font = `600 ${fontSize}px Montserrat, Segoe UI, sans-serif`;
+        ctx.textAlign = 'center';
+        ctx.textBaseline = 'middle';
+        ctx.fillText(text, cw / 2, ch / 2);
+        const tex = new THREE.CanvasTexture(canvas);
+        tex.minFilter = THREE.LinearFilter;
+        tex.magFilter = THREE.LinearFilter;
+        tex.needsUpdate = true;
+        const mat = new THREE.SpriteMaterial({
+          map: tex,
+          depthTest: false,
+          depthWrite: false,
+          transparent: true
+        });
+        const spr = new THREE.Sprite(mat);
+        // Масштаб подбираем: ширина ~ текст + padding, высота фиксированная
+        const spriteW = cw / 35;
+        const spriteH = ch / 35;
+        spr.scale.set(spriteW, spriteH, 1);
+        spr.renderOrder = 1000;
+        spr.raycast = () => { };
+        return spr;
+      }
+
+      function toggleDimensions() {
+        dimensionsVisible = !dimensionsVisible;
+        sceneObjects.forEach(obj => {
+          const dg = obj.getObjectByName('dimension-group');
+          if (dg) dg.visible = dimensionsVisible;
+        });
+        // Включаем/выключаем общие габариты
+        const tdg = scene.getObjectByName('total-dimension-group');
+        if (tdg) tdg.visible = dimensionsVisible;
+      }
+
+      function getLocalBoundingBox(obj) {
+        if (obj.userData._localBox) return obj.userData._localBox;
+        let model = null;
+        for (const child of obj.children) {
+          if (child.name !== 'dimension-group') { model = child; break; }
+        }
+        if (!model) return new THREE.Box3();
+        obj.updateMatrixWorld(true);
+        const box = new THREE.Box3();
+        const v = new THREE.Vector3();
+        model.traverse(child => {
+          if (child.isMesh && child.geometry && child.geometry.attributes.position) {
+            const pos = child.geometry.attributes.position;
+            for (let i = 0; i < pos.count; i++) {
+              v.fromBufferAttribute(pos, i);
+              child.localToWorld(v);
+              obj.worldToLocal(v);
+              box.expandByPoint(v);
+            }
+          }
+        });
+        obj.userData._localBox = box;
+        return box;
+      }
+
+      function buildDimensions(obj) {
+        const old = obj.getObjectByName('dimension-group');
+        if (old) obj.remove(old);
+        const type = obj.userData.type;
+        const dims = modelDimensions[type];
+        if (!dims) return;
+        const box = getLocalBoundingBox(obj);
+        const off = 2;
+        const tick = 0.1;
+        const col = 0xE6E6E6;
+        const g = new THREE.Group();
+        g.name = 'dimension-group';
+        g.visible = dimensionsVisible;
+        // — Ширина (X): спереди, снизу —
+        const wY = box.min.y;
+        const wZ = box.max.z + off;
+        g.add(makeDimLine(new THREE.Vector3(box.min.x, wY, wZ), new THREE.Vector3(box.max.x, wY, wZ), col));
+        g.add(makeDimLine(new THREE.Vector3(box.min.x, box.min.y, box.max.z), new THREE.Vector3(box.min.x, wY, wZ), col));
+        g.add(makeDimLine(new THREE.Vector3(box.max.x, box.min.y, box.max.z), new THREE.Vector3(box.max.x, wY, wZ), col));
+        g.add(makeDimLine(new THREE.Vector3(box.min.x, wY - tick, wZ), new THREE.Vector3(box.min.x, wY + tick, wZ), col));
+        g.add(makeDimLine(new THREE.Vector3(box.max.x, wY - tick, wZ), new THREE.Vector3(box.max.x, wY + tick, wZ), col));
+        const wLabel = makeDimLabel(dims.width);
+        wLabel.position.set((box.min.x + box.max.x) / 2, wY, wZ);
+        g.add(wLabel);
+        // — Глубина (Z): справа, снизу —
+        const dY = box.min.y;
+        const dX = box.max.x + off;
+        g.add(makeDimLine(new THREE.Vector3(dX, dY, box.min.z), new THREE.Vector3(dX, dY, box.max.z), col));
+        g.add(makeDimLine(new THREE.Vector3(box.max.x, box.min.y, box.min.z), new THREE.Vector3(dX, dY, box.min.z), col));
+        g.add(makeDimLine(new THREE.Vector3(box.max.x, box.min.y, box.max.z), new THREE.Vector3(dX, dY, box.max.z), col));
+        g.add(makeDimLine(new THREE.Vector3(dX, dY - tick, box.min.z), new THREE.Vector3(dX, dY + tick, box.min.z), col));
+        g.add(makeDimLine(new THREE.Vector3(dX, dY - tick, box.max.z), new THREE.Vector3(dX, dY + tick, box.max.z), col));
+        const dLabel = makeDimLabel(dims.depth);
+        dLabel.position.set(dX, dY, (box.min.z + box.max.z) / 2);
+        g.add(dLabel);
+        // — Высота (Y): слева —
+        const hX = box.min.x - off;
+        const hZ = box.min.z;
+        g.add(makeDimLine(new THREE.Vector3(hX, box.min.y, hZ), new THREE.Vector3(hX, box.max.y, hZ), col));
+        g.add(makeDimLine(new THREE.Vector3(box.min.x, box.min.y, hZ), new THREE.Vector3(hX, box.min.y, hZ), col));
+        g.add(makeDimLine(new THREE.Vector3(box.min.x, box.max.y, hZ), new THREE.Vector3(hX, box.max.y, hZ), col));
+        g.add(makeDimLine(new THREE.Vector3(hX - tick, box.min.y, hZ), new THREE.Vector3(hX + tick, box.min.y, hZ), col));
+        g.add(makeDimLine(new THREE.Vector3(hX - tick, box.max.y, hZ), new THREE.Vector3(hX + tick, box.max.y, hZ), col));
+        const hLabel = makeDimLabel(dims.height);   //  const hLabel = makeDimLabel(dims.height + ' см');
+        hLabel.position.set(hX, (box.min.y + box.max.y) / 2, hZ);
+        g.add(hLabel);
+        obj.add(g);
+      }
+
+      function buildTotalDimensions() {
+        const old = scene.getObjectByName('total-dimension-group');
+        if (old) scene.remove(old);
+        if (sceneObjects.length < 2) return;
+        // Строим общий бокс из номинальных размеров каждого объекта
+        const totalBox = new THREE.Box3();
+        sceneObjects.forEach(obj => {
+          const box = getNominalObjBox(obj);
+          if (!box.isEmpty()) totalBox.union(box);
+        });
+        if (totalBox.isEmpty()) return;
+        // Сырые габариты (в мировых единицах)
+        let w = totalBox.max.x - totalBox.min.x;
+        let d = totalBox.max.z - totalBox.min.z;
+        let h = totalBox.max.y - totalBox.min.y;
+        // Округляем до кратного номиналу, если ошибка в пределах допуска.
+        // Допуск растёт пропорционально числу секций —
+        // каждая привязка добавляет ~20мм зазора от COLLISION_PADDING.
+        const STEP = 6.5;           // 650мм в мировых единицах
+        const PER_GAP_TOL = 0.25;   // 25мм на каждый стык
+        const wSteps = Math.round(w / STEP);
+        if (wSteps >= 1 && Math.abs(w - wSteps * STEP) <= PER_GAP_TOL * wSteps) w = wSteps * STEP;
+        const dSteps = Math.round(d / STEP);
+        if (dSteps >= 1 && Math.abs(d - dSteps * STEP) <= PER_GAP_TOL * dSteps) d = dSteps * STEP;
+        // Высота — всегда одна секция (710мм)
+        if (Math.abs(h - 7.1) <= PER_GAP_TOL) h = 7.1;
+        // --- Отрисовка общих размеров---
+        const off = 4;
+        const tick = 0.1;
+        const col = 0xE6E6E6;
+        const g = new THREE.Group();
+        g.name = 'total-dimension-group';
+        g.visible = dimensionsVisible;
+        // Ширина (X)
+        const wY = totalBox.min.y;
+        const wZ = totalBox.max.z + off;
+        g.add(makeDimLine(new THREE.Vector3(totalBox.min.x, wY, wZ), new THREE.Vector3(totalBox.max.x, wY, wZ), col));
+        g.add(makeDimLine(new THREE.Vector3(totalBox.min.x, totalBox.min.y, totalBox.max.z), new THREE.Vector3(totalBox.min.x, wY, wZ), col));
+        g.add(makeDimLine(new THREE.Vector3(totalBox.max.x, totalBox.min.y, totalBox.max.z), new THREE.Vector3(totalBox.max.x, wY, wZ), col));
+        g.add(makeDimLine(new THREE.Vector3(totalBox.min.x, wY - tick, wZ), new THREE.Vector3(totalBox.min.x, wY + tick, wZ), col));
+        g.add(makeDimLine(new THREE.Vector3(totalBox.max.x, wY - tick, wZ), new THREE.Vector3(totalBox.max.x, wY + tick, wZ), col));
+        const wLabel = makeDimLabel(String(Math.round(w * 100)));
+        wLabel.position.set((totalBox.min.x + totalBox.max.x) / 2, wY, wZ);
+        g.add(wLabel);
+        // Глубина (Z)
+        const dY = totalBox.min.y;
+        const dX = totalBox.max.x + off;
+        g.add(makeDimLine(new THREE.Vector3(dX, dY, totalBox.min.z), new THREE.Vector3(dX, dY, totalBox.max.z), col));
+        g.add(makeDimLine(new THREE.Vector3(totalBox.max.x, totalBox.min.y, totalBox.min.z), new THREE.Vector3(dX, dY, totalBox.min.z), col));
+        g.add(makeDimLine(new THREE.Vector3(totalBox.max.x, totalBox.min.y, totalBox.max.z), new THREE.Vector3(dX, dY, totalBox.max.z), col));
+        g.add(makeDimLine(new THREE.Vector3(dX, dY - tick, totalBox.min.z), new THREE.Vector3(dX, dY + tick, totalBox.min.z), col));
+        g.add(makeDimLine(new THREE.Vector3(dX, dY - tick, totalBox.max.z), new THREE.Vector3(dX, dY + tick, totalBox.max.z), col));
+        const dLabel = makeDimLabel(String(Math.round(d * 100)));
+        dLabel.position.set(dX, dY, (totalBox.min.z + totalBox.max.z) / 2);
+        g.add(dLabel);
+        // Высота (Y)
+        const hX = totalBox.min.x - off;
+        const hZ = totalBox.min.z;
+        g.add(makeDimLine(new THREE.Vector3(hX, totalBox.min.y, hZ), new THREE.Vector3(hX, totalBox.max.y, hZ), col));
+        g.add(makeDimLine(new THREE.Vector3(totalBox.min.x, totalBox.min.y, hZ), new THREE.Vector3(hX, totalBox.min.y, hZ), col));
+        g.add(makeDimLine(new THREE.Vector3(totalBox.min.x, totalBox.max.y, hZ), new THREE.Vector3(hX, totalBox.max.y, hZ), col));
+        g.add(makeDimLine(new THREE.Vector3(hX - tick, totalBox.min.y, hZ), new THREE.Vector3(hX + tick, totalBox.min.y, hZ), col));
+        g.add(makeDimLine(new THREE.Vector3(hX - tick, totalBox.max.y, hZ), new THREE.Vector3(hX + tick, totalBox.max.y, hZ), col));
+        const hLabel = makeDimLabel(String(Math.round(h * 100)));
+        hLabel.position.set(hX, (totalBox.min.y + totalBox.max.y) / 2, hZ);
+        g.add(hLabel);
+        scene.add(g);
+      }
+
+      function createGridFloor() {
+        const size = 200;
+        const cellSize = 10;
+        const repeatCount = size / cellSize;
+        const geometry = new THREE.PlaneGeometry(size, size);
+        geometry.rotateX(-Math.PI / 2);
+        const canvas = document.createElement('canvas');
+        canvas.width = 512;
+        canvas.height = 512;
+        const ctx = canvas.getContext('2d');
+        ctx.fillStyle = '#f0f0f0';
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+        ctx.strokeStyle = '#555555';
+        ctx.lineWidth = 1;
+        ctx.strokeRect(1, 1, canvas.width - 2, canvas.height - 2);
+        const texture = new THREE.CanvasTexture(canvas);
+        texture.wrapS = THREE.RepeatWrapping;
+        texture.wrapT = THREE.RepeatWrapping;
+        texture.repeat.set(repeatCount, repeatCount);
+        texture.minFilter = THREE.LinearFilter;
+        texture.magFilter = THREE.LinearFilter;
+        const material = new THREE.MeshStandardMaterial({
+          map: texture,
+          side: THREE.DoubleSide,
+          roughness: 0.8,
+          metalness: 0
+        });
+        const floor = new THREE.Mesh(geometry, material);
+        floor.name = 'grid-floor';
+        floor.receiveShadow = true;
+
+        // =======================================================
+        // ДОБАВЛЯЕМ СДВИГ
+        // Формат: .position.set(X, Y, Z)
+        // Y оставляем 0, так как пол должен лежать на земле.
+        // Меняем X и Z, чтобы сдвинуть сетку относительно центра (0,0,0).
+        floor.position.set(-30, 0, 0.44);
+        // Например:
+        // -10 по X сдвинет сетку влево на 1 метр (т.к. клетка = 10 единиц)
+        // -10 по Z сдвинет сетку "вглубь" (ближе к камере или дальше, зависит от ракурса)
+        // =======================================================
+        scene.add(floor);
+        return floor;
+      }
+
+      // ===================================================
+      // ИНИЦИАЛИЗАЦИЯ
+      // ===================================================
+      function init() {
+        scene = new THREE.Scene();
+        scene.background = new THREE.Color(0xffffff);
+        camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.1, 10000);
+        camera.position.set(0, 50, 100);
+        // camera.lookAt(0, 0, 0);
+        camera.position.set(-10, 20, 25);
+        renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+        renderer.shadowMap.enabled = true;
+        renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        document.body.appendChild(renderer.domElement);
+        controls = new THREE.OrbitControls(camera, renderer.domElement);
+        controls.enableDamping = true;
+        transformControls = new THREE.TransformControls(camera, renderer.domElement);
+        scene.add(transformControls);
+        let preDragState = null;
+        transformControls.addEventListener('change', () => {
+          renderer.render(scene, camera);
+          updateSliders();
+        });
+        transformControls.addEventListener('dragging-changed', (event) => {
+          controls.enabled = !event.value;
+          isDragging = event.value;
+          if (isDragging) {
+            preDragState = capturePositions();
+          } else {
+            if (selectedObject) {
+              snapToNeighbors(selectedObject);
+              updateSliders();
+            }
+            if (preDragState && positionsChanged(preDragState)) {
+              saveState();
+            }
+            preDragState = null;
+            buildTotalDimensions();
+          }
+        });
+
+        // Свет
+        scene.background = new THREE.Color(0xffffff); // нейтральный фон
+        // 2. Окружающий свет (мягкий, без теней)
+        const ambientLight = new THREE.AmbientLight(0xffffff, 0.7); // цвет, интенсивность
+        scene.add(ambientLight);
+        // 3. Направленный свет (солнце) — именно он даёт тени
+        const directionalLight = new THREE.DirectionalLight(0xffffff, 0.5);
+        directionalLight.position.set(100, 100, 50); // направление света: сверху-сбоку
+        directionalLight.castShadow = true;
+        // Настройка области теней
+        directionalLight.shadow.camera.left = -50;
+        directionalLight.shadow.camera.right = 50;
+        directionalLight.shadow.camera.top = 50;
+        directionalLight.shadow.camera.bottom = -50;
+        directionalLight.shadow.camera.near = 0.1;
+        directionalLight.shadow.camera.far = 200;
+        // Качество и мягкость теней
+        directionalLight.shadow.mapSize.width = 2048; 
+        directionalLight.shadow.mapSize.height = 2048;
+        directionalLight.shadow.type = THREE.PCFSoftShadowMap; // мягкие, размытые края
+        directionalLight.shadow.bias = 0.015; // небольшой bias, чтобы не было «плавающих» артефактов
+        scene.add(directionalLight);
+        // второй направленный свет с другой стороны (заполняющий)
+        const fillLight = new THREE.DirectionalLight(0xffffff, 0.4);
+        fillLight.position.set(-50, 80, -30);
+        fillLight.castShadow = false; // заполняющий свет без теней
+        scene.add(fillLight);
+        // Пол 
+        const floor = createGridFloor();
+        // Плоскость теней (прозрачная, только тень)
+        const floorSize = 2000;
+        const shadowPlane = new THREE.Mesh(
+          new THREE.PlaneGeometry(floorSize, floorSize),
+          new THREE.ShadowMaterial({ opacity: 0.05, color: 0x1a1a1a })
+        );
+        // Сдвигаем так, чтобы угол был в (0,0,0), а не центр
+        shadowPlane.position.set(-floorSize / 2, 0.8, -floorSize / 2);
+        shadowPlane.rotation.x = -Math.PI;
+        shadowPlane.receiveShadow = true;
+        scene.add(shadowPlane);
+        // Загрузка моделей
+        loadModels();
+        // События
+        window.addEventListener('resize', onWindowResize);
+        document.addEventListener('click', onMouseClick);
+
+        // Горячие клавиши
+        document.addEventListener('keydown', (e) => {
+          if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'z') {
+            e.preventDefault();
+            undo();
+          } else if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'y') {
+            e.preventDefault();
+            redo();
+          }
+        });
+
+        // Кнопки истории
+        document.getElementById('undo-action').onclick = undo;
+        document.getElementById('redo-action').onclick = redo;
+        updateHistoryButtons();
+
+        // Добавление секций
+        document.getElementById('add-straight').onclick = () => addSection('straight');
+        document.getElementById('add-corner').onclick = () => addSection('corner');
+        document.getElementById('add-simple').onclick = () => addSection('simple');
+        document.getElementById('frame-color-black').addEventListener('click', () => {
+          if (selectedObject) {
+            saveState();
+            const count = changeColorByType(selectedObject, 'frame', 0x1a1a1a);
+            console.log(`Перекрашено мешей каркаса: ${count}`);
+          }
+        });
+
+        document.getElementById('frame-color-gray').addEventListener('click', () => {
+          if (selectedObject) {
+            saveState();
+            const count = changeColorByType(selectedObject, 'frame', 0x888888);
+            console.log(`Перекрашено мешей каркаса: ${count}`);
+          }
+        });
+
+        // Цвет каркаса — быстрые кнопки
+        document.getElementById('frame-color-black').onclick = () => {
+          const colorHex = 0x1a1a1a;
+          if (selectedObject) {
+            saveState();
+            selectedObject.userData.frameColor = '#111111';
+            // changeColorByType(selectedObject, 'frame', colorHex);
+          } else {
+            saveState();
+            updateColorForAllSceneObjects('frame', colorHex);
+          }
+          // document.getElementById('frame-color').value = '#1a1a1a';
+          document.getElementById('frame-color-black').classList.add('active');
+          document.getElementById('frame-color-gray').classList.remove('active');
+        };
+
+        document.getElementById('frame-color-gray').onclick = () => {
+          const colorHex = 0x888888;
+          if (selectedObject) {
+            saveState();
+            selectedObject.userData.frameColor = '#888888';
+            changeColorByType(selectedObject, 'frame', colorHex);
+          } else {
+            saveState();
+            updateColorForAllSceneObjects('frame', colorHex);
+          }
+          // document.getElementById('frame-color').value = '#888888';
+          document.getElementById('frame-color-gray').classList.add('active');
+          document.getElementById('frame-color-black').classList.remove('active');
+        };
+
+        // Цвет каркаса — пикер
+        // document.getElementById('frame-color').oninput = (e) => {
+        //   const hexStr = e.target.value;
+        //   const hexNum = hexStringToNumber(hexStr);
+        //   if (selectedObject) {
+        //     selectedObject.userData.frameColor = hexStr;
+        //     changeColorByType(selectedObject, 'frame', hexNum);
+        //   } else {
+        //     updateColorForAllSceneObjects('frame', hexNum);
+        //   }
+        // };
+
+        // Цвет обивки
+        // document.getElementById('upholstery-color').oninput = (e) => {
+        //   const hexStr = e.target.value;
+        //   const hexNum = hexStringToNumber(hexStr);
+        //   if (selectedObject) {
+        //     selectedObject.userData.upholsteryColor = hexStr;
+        //     changeColorByType(selectedObject, 'upholstery', hexNum);
+        //   } else {
+        //     updateColorForAllSceneObjects('upholstery', hexNum);
+        //   }
+        // };
+
+        // Текстура обивки
+        // document.getElementById('upholstery-texture').onchange = (e) => {
+        //   const value = e.target.value;
+        //   if (selectedObject) {
+        //     saveState();
+        //     applyTextureToUpholstery(selectedObject, value);
+        //     selectedObject.userData.upholsteryTexture = value;
+        //   } else {
+        //     saveState();
+        //     sceneObjects.forEach(obj => {
+        //       applyTextureToUpholstery(obj, value);
+        //       if (obj.userData) obj.userData.upholsteryTexture = value;
+        //     });
+        //   }
+        // };
+
+        // --- Текстуры обивки (каскадные списки) ---
+        document.getElementById('upholstery-category').onchange = () => {
+          populateVariants();
+          const cat = document.getElementById('upholstery-category').value;
+          const file = getSelectedVariantFile();
+          saveState();
+          if (selectedObject) {
+            applyUpholsteryTexture(selectedObject, cat, file);
+            selectedObject.userData.upholsteryCategory = cat;
+            selectedObject.userData.upholsteryVariant = file;
+          } else {
+            applyUpholsteryTextureToAll(cat, file);
+            sceneObjects.forEach(obj => {
+              if (obj.userData) {
+                obj.userData.upholsteryCategory = cat;
+                obj.userData.upholsteryVariant = file;
+              }
+            });
+          }
+        };
+
+        // Инициализация списков
+        // Сброс цветов и материалов
+        document.getElementById('reset-upholstery').onclick = () => {
+          saveState();
+
+          // Сбрасываем UI
+          // document.getElementById('upholstery-color').value = '#ffffff';
+          // document.getElementById('frame-color').value = '#888888';
+          document.getElementById('upholstery-category').value = 'none';
+          document.getElementById('frame-color-black').classList.remove('active');
+          document.getElementById('frame-color-gray').classList.remove('active');
+          populateVariants(); // скроет сетку
+
+          if (selectedObject) {
+            // Сброс для выделенного объекта
+            selectedObject.userData.frameColor = '#888888';
+            selectedObject.userData.upholsteryColor = '#ffffff';
+            selectedObject.userData.upholsteryCategory = 'none';
+            selectedObject.userData.upholsteryVariant = '';
+            changeColorByType(selectedObject, 'frame', 0x888888);
+            changeColorByType(selectedObject, 'upholstery', 0xffffff);
+            applyUpholsteryTexture(selectedObject, 'none', '');
+          } else {
+            // Сброс для всех объектов
+            sceneObjects.forEach(obj => {
+              if (obj.userData) {
+                obj.userData.frameColor = '#888888';
+                obj.userData.upholsteryColor = '#ffffff';
+                obj.userData.upholsteryCategory = 'none';
+                obj.userData.upholsteryVariant = '';
+              }
+              changeColorByType(obj, 'frame', 0x888888);
+              changeColorByType(obj, 'upholstery', 0xffffff);
+              applyUpholsteryTexture(obj, 'none', '');
+            });
+          }
+        };
+        populateVariants();
+
+        // Режимы трансформации
+        document.getElementById('mode-translate').onclick = () => {
+          setMode('translate');
+          setActiveMode('mode-translate');
+        };
+        document.getElementById('mode-rotate').onclick = () => {
+          setMode('rotate');
+          setActiveMode('mode-rotate');
+        };
+        // document.getElementById('mode-scale').onclick = () => {
+        //   setMode('scale');
+        //   setActiveMode('mode-scale');
+        // };
+
+        // Кнопки управления объектом
+        document.getElementById('rotate-left').onclick = () => {
+          if (selectedObject) { saveState(); selectedObject.rotation.y += Math.PI / 8; snapToNeighbors(selectedObject); updateSliders(); buildTotalDimensions(); }
+        };
+        document.getElementById('rotate-right').onclick = () => {
+          if (selectedObject) { saveState(); selectedObject.rotation.y -= Math.PI / 8; snapToNeighbors(selectedObject); updateSliders(); buildTotalDimensions(); }
+        };
+        document.getElementById('move-left').onclick = () => {
+          if (selectedObject) { saveState(); selectedObject.position.x -= 1; snapToNeighbors(selectedObject); updateSliders();; buildTotalDimensions(); }
+        };
+        document.getElementById('move-right').onclick = () => {
+          if (selectedObject) { saveState(); selectedObject.position.x += 1; snapToNeighbors(selectedObject); updateSliders();; buildTotalDimensions(); }
+        };
+        // document.getElementById('move-up').onclick = () => {
+        //   if (selectedObject) { saveState(); selectedObject.position.y += 1; updateSliders(); ; buildTotalDimensions();}
+        // };
+        // document.getElementById('move-down').onclick = () => {
+        //   if (selectedObject) { saveState(); selectedObject.position.y -= 1; updateSliders(); ; buildTotalDimensions();}
+        // };
+
+        // Удаление
+        document.getElementById('delete-object').onclick = () => {
+          if (selectedObject) {
+            saveState();
+            if (transformControls) transformControls.detach();
+            scene.remove(selectedObject);
+            const idx = sceneObjects.indexOf(selectedObject);
+            if (idx !== -1) sceneObjects.splice(idx, 1);
+            deselectObject();
+            buildTotalDimensions();  // <-- добавить
+          }
+        };
+
+        // Слайдеры и поля ввода
+        const rotYInput = document.getElementById('rotation-y-input');
+        const posYInput = document.getElementById('position-y-input');
+        rotYSlider.oninput = () => {
+          if (currentObject) {
+            currentObject.rotation.y = THREE.MathUtils.degToRad(parseFloat(rotYSlider.value));
+            rotYInput.value = rotYSlider.value;
+          }
+        };
+        rotYSlider.onchange = () => {
+          if (currentObject) {
+            snapToNeighbors(currentObject);
+            buildTotalDimensions();
+          }
+        };
+        rotYInput.oninput = () => {
+          if (currentObject) {
+            let val = parseFloat(rotYInput.value);
+            if (isNaN(val)) val = 0;
+            val = Math.max(0, Math.min(360, val));
+            currentObject.rotation.y = THREE.MathUtils.degToRad(val);
+            rotYSlider.value = val;
+          }
+        };
+        rotYInput.onchange = () => {
+          if (currentObject) {
+            snapToNeighbors(currentObject);
+            buildTotalDimensions();
+          }
+        };
+
+        // posYSlider.oninput = () => {
+        //   if (currentObject) {
+        //     currentObject.position.y = parseFloat(posYSlider.value);
+        //     posYInput.value = parseFloat(posYSlider.value).toFixed(2);
+        //   }
+        // };
+        // posYInput.oninput = () => {
+        //   if (currentObject) {
+        //     let val = parseFloat(posYInput.value);
+        //     if (isNaN(val)) val = 0;
+        //     val = Math.max(-10, Math.min(10, val));
+        //     currentObject.position.y = val;
+        //     posYSlider.value = val;
+        //   }
+        // };
+
+        // Фон сцены — загрузка изображения
+        // --- ЛОГИКА ФОНА (ОБЪЕКТ, А НЕ ПРОСТО ЦВЕТ) ---
+
+        // Кнопки масштаба
+        // document.getElementById('bg-scale-plus').onclick = () => {
+        //   bgScale = Math.min(bgScale + 0.1, 3);
+        //   document.getElementById('bg-scale-slider').value = bgScale.toFixed(1);
+        //   document.getElementById('bg-scale-value').textContent = bgScale.toFixed(1);
+        //   updateBackgroundTransform();
+        // };
+
+        // document.getElementById('bg-scale-minus').onclick = () => {
+        //   bgScale = Math.max(bgScale - 0.1, 0.5);
+        //   document.getElementById('bg-scale-slider').value = bgScale.toFixed(1);
+        //   document.getElementById('bg-scale-value').textContent = bgScale.toFixed(1);
+        //   updateBackgroundTransform();
+        // };
+
+        // // Слайдер масштаба
+        // document.getElementById('bg-scale-slider').oninput = (e) => {
+        //   bgScale = parseFloat(e.target.value);
+        //   document.getElementById('bg-scale-value').textContent = bgScale.toFixed(1);
+        //   updateBackgroundTransform();
+        // };
+
+        // // Кнопки смещения
+        // const moveStep = 50;
+
+        // document.getElementById('bg-move-left').onclick = () => {
+        //   bgOffsetX -= moveStep;
+        //   updateBackgroundTransform();
+        // };
+        // document.getElementById('bg-move-right').onclick = () => {
+        //   bgOffsetX += moveStep;
+        //   updateBackgroundTransform();
+        // };
+        // document.getElementById('bg-move-up').onclick = () => {
+        //   bgOffsetZ -= moveStep; // вверх — это уменьшение Z (ближе к камере)
+        //   updateBackgroundTransform();
+        // };
+        // document.getElementById('bg-move-down').onclick = () => {
+        //   bgOffsetZ += moveStep; // вниз — это увеличение Z (дальше от камеры)
+        //   updateBackgroundTransform();
+        // };
+        //   // 1. Кнопка загрузки
+        //   document.getElementById('bg-upload-btn').onclick = () => {
+        //     document.getElementById('bg-file-input').click();
+        //   };
+
+        //   // 2. Обработка файла
+        //   document.getElementById('bg-file-input').onchange = (e) => {
+        //     const file = e.target.files[0];
+        //     if (!file) return;
+
+        //     const reader = new FileReader();
+        //     reader.onload = (event) => {
+        //       const dataUrl = event.target.result;
+
+        //       // Создаем или обновляем текстуру
+        //       const texture = bgTextureLoader.load(dataUrl, (tex) => {
+        //         tex.wrapS = THREE.RepeatWrapping;
+        //         tex.wrapT = THREE.RepeatWrapping;
+        //         // Важно: отключаем фильтрацию, если картинка маленькая, иначе будет мыльно
+        //         tex.minFilter = THREE.LinearFilter; 
+
+        //         setupBackgroundPlane(tex);
+        //       });
+        //     };
+        //     reader.readAsDataURL(file);
+        //   };
+
+        //   // 3. Кнопка сброса
+        // document.getElementById('bg-reset-btn').onclick = () => {
+        //   if (backgroundPlane) {
+        //     scene.remove(backgroundPlane);
+        //     backgroundPlane.geometry.dispose();
+        //     backgroundPlane.material.dispose();
+        //     backgroundPlane = null;
+        //   }
+        //   // Сброс параметров
+        //   bgScale = 1.0;
+        //   bgOffsetX = 0;
+        //   bgOffsetZ = 0;
+        //   scene.background = new THREE.Color(0xcccccc);
+        // };
+
+        // document.getElementById('bg-settings-trigger').onclick = () => {
+        //   const trigger = document.getElementById('bg-settings-trigger');
+        //   const content = document.getElementById('bg-settings-content');
+        //   trigger.classList.toggle('open');
+        //   content.classList.toggle('open');
+        // };
+
+        document.getElementById('toggle-snap').addEventListener('click', () => {
+          snapEnabled = !snapEnabled;
+          snapBtn.classList.toggle('active');
+          const btn = document.getElementById('toggle-snap');
+          if (snapEnabled) {
+            btn.style.color = '#96C22B'; // цвет, когда включено
+            btn.querySelector('svg').style.stroke = '#96C22B';
+          } else {
+            btn.style.color = '#888';
+            btn.querySelector('svg').style.stroke = '#888';
+          }
+        });
+        const snapBtn = document.getElementById('toggle-snap');
+        if (snapBtn) {
+          snapBtn.classList.add('active');
+        }
+
+        document.getElementById('toggle-dimensions').onclick = () => {
+          toggleDimensions();
+          const btn = document.getElementById('toggle-dimensions');
+          btn.classList.toggle('active', dimensionsVisible);
+          btn.setAttribute('data-tooltip', dimensionsVisible ? 'Скрыть размеры' : 'Показать размеры');
+        };
+
+        // Скрыть/показать пол
+        document.getElementById('toggle-floor').onclick = () => {
+          const floor = scene.getObjectByName('grid-floor');
+          const shadow = scene.children.find(c => c.material instanceof THREE.ShadowMaterial);
+          if (floor) floor.visible = !floor.visible;
+          if (shadow) shadow.visible = floor ? floor.visible : !shadow.visible;
+        };
+
+        // Экспорт
+        document.getElementById('export-model').onclick = exportScene;
+        document.getElementById('export-png').onclick = exportPNG;
+      }
+      function setActiveMode(btnId) {
+        ['mode-translate', 'mode-rotate'].forEach(id => {
+          document.getElementById(id).classList.remove('active');
+        });
+        document.getElementById(btnId).classList.add('active');
+      }
+
+      function setupBackgroundPlane(texture) {
+        if (backgroundPlane) {
+          scene.remove(backgroundPlane);
+          backgroundPlane.geometry.dispose();
+          backgroundPlane.material.dispose();
+        }
+
+        texture.encoding = THREE.sRGBEncoding;
+        const aspect = window.innerWidth / window.innerHeight;
+        const planeWidth = 2000;
+        const planeHeight = planeWidth / aspect;
+        const geometry = new THREE.PlaneGeometry(planeWidth, planeHeight);
+        const material = new THREE.MeshBasicMaterial({
+          map: texture,
+          side: THREE.DoubleSide,
+          depthWrite: false
+        });
+        backgroundPlane = new THREE.Mesh(geometry, material);
+        // Позиция: перед камерой, за диванами
+        backgroundPlane.position.set(0, 0, -500);
+        scene.add(backgroundPlane);
+        scene.background = null;
+        // Применяем сохранённые трансформации
+        updateBackgroundTransform();
+      }
+
+      function updateBackgroundTransform() {
+        if (!backgroundPlane) return;
+        backgroundPlane.scale.set(bgScale, bgScale, bgScale);
+        backgroundPlane.position.x = bgOffsetX;
+        backgroundPlane.position.z = -500 + bgOffsetZ; // смещение по глубине
+      }
+
+      function onWindowResize() {
+        camera.aspect = window.innerWidth / window.innerHeight;
+        camera.updateProjectionMatrix();
+        renderer.setSize(window.innerWidth, window.innerHeight);
+      }
+
+      function animate() {
+        requestAnimationFrame(animate);
+        if (isDragging && selectedObject && transformControls.getMode() === 'translate') {
+          snapToNeighbors(selectedObject);
+        }
+        controls.update();
+        renderer.render(scene, camera);
+      }
+
+      init();
+      animate();
+    </script>
+</body>
+</html>
