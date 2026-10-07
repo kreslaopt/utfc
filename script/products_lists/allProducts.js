@@ -1210,12 +1210,12 @@ const knownProductsAllFiles = [
     "is_archive": false
   },
   {
-    "name": "Пуф большой",
+    "name": "Пуф круглый UTFC большой",
     "category": "sofa",
     "is_archive": false
   },
   {
-    "name": "Пуф малый",
+    "name": "Пуф круглый UTFC малый",
     "category": "sofa",
     "is_archive": false
   },
@@ -1510,7 +1510,7 @@ const knownProductsAllFiles = [
     "is_archive": false
   },
   {
-    "name": "Ультра н т-03 пластик",
+    "name": "Ультра н 2d пластик",
     "category": "armchair_comfort",
     "is_archive": false
   },

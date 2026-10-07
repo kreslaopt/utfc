@@ -162,7 +162,14 @@
                 "https://cdn.utfc.ru/iblock/2ea/2eae6a06a46b7ac29d86a6a02df69d89/dd1b7264900872b0447056529ae5762a.png",
                 "https://cdn.utfc.ru/iblock/ac3/ac3987397ee9a53ac270b9f184eafe7a/62c34b7d8dcad7139f53c751dd80853d.png",
                 "https://cdn.utfc.ru/uf/42c/42c4e683765901e4f708f2f84d550b55/ec726f03ca18b3d6e2929582f4670dfa.png",
-                "https://cdn.utfc.ru/iblock/039/0390882158b7a37eb980109fd2fc0b6c/ee07ada276601b4fa49ceed4b2f071e3.png"
+                "https://cdn.utfc.ru/iblock/039/0390882158b7a37eb980109fd2fc0b6c/ee07ada276601b4fa49ceed4b2f071e3.png",
+                "https://cdn.utfc.ru/iblock/f29/tb40r8z3nw2ypmmctyo4d3gwigwb5fct.png",
+                "https://cdn.utfc.ru/iblock/ff3/0g488aj90lsh4hl5eycahs1zucdrde42.png",
+                "https://cdn.utfc.ru/iblock/3eb/zopuwgmwgz31k5f7k79sg5316gtljdyc.png",
+                "https://cdn.utfc.ru/iblock/950/950932a05266bab2055f28e16c9b42f9/27d8d7afa8690edbbcf59bc183335173.png",
+                "https://cdn.utfc.ru/iblock/9c1/zddiqahtb0pjczqdgdgvpzjxny2t20oy.png",
+                "https://cdn.utfc.ru/iblock/ce1/0h20mca74u1wfsyefg3h62dae3qle01o.png",
+                "https://cdn.utfc.ru/iblock/c1d/c1dad4264f19c09dc622fb57fd9aee76/3a65df672c37dfbe5db82890c0501c35.png"
             ]
         }
     ],
@@ -567,9 +574,9 @@
     ],
     "title": "Классическое кресло руководителя с фиксацией наклона и поясничной поддержкой UTFC Онтарио М-105 пластик/хром производства компании UTFC",
     "base_name": "Кресло UTFC Онтарио М-105 пластик/хром",
-    "article_number": "ПУ-00033567",
+    "article_number": "ПУ-00033566",
     "full_describe": "Увеличенная мягкая зона поясничной поддержки обеспечивает превосходную поддержку спины в течение рабочего дня. Изящные пластиковые подлокотники со вставками \"под хром\" и мягкими накладками гармонично сочетаются с хромированной крестовиной, придавая креслу элегантность. Механизм качания позволяет регулировать высоту сиденья, жесткость отклонения и обеспечивает фиксацию наклона в 3-х положениях. В наличии два изысканных цвета — кофейный и классический черный, которые подойдут под любой интерьер. В ассортименте представлено конференц-кресло Онтарио н/п, которое позволит дополнить кабинет руководителя.",
-    "Link_arm": "https://utfc.ru/catalog/boss_chairs/m105_ontario_pl_ch/?offers=12077",
+    "Link_arm": "https://utfc.ru/catalog/boss_chairs/m105_ontario_pl_ch/?offers=12078",
     "Основание": "Пятилучье хромированное М-105, диаметр 700мм",
     "Подлокотники": "Подлокотники пластиковые со вставками \"под хром\" и мягкими накладками для кресла Онтарио",
     "Газлифт": "Высококачественный газ-лифт 3 класса Germany DIN 4550",
@@ -596,7 +603,7 @@
     "color_seat": [
         ""
     ],
-    "minpromtorg": "",
+    "minpromtorg": "Минпромторг",
     "madeinrf": "Сделано РФ",
     "additional_info": {
         "package_dimensions": {

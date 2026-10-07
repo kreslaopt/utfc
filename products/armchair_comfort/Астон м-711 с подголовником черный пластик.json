@@ -125,7 +125,11 @@
                 "https://cdn.utfc.ru/iblock/2ea/2eae6a06a46b7ac29d86a6a02df69d89/dd1b7264900872b0447056529ae5762a.png",
                 "https://cdn.utfc.ru/iblock/4ee/4ee53f5e7ba16dd93b0021ea0d7d34dc/57ef83a6ff0072ffee39211583227da8.png",
                 "https://cdn.utfc.ru/iblock/183/183ed725f35a59538ff7cb0fbc75d813/660a34fe7d7c6312880cb74f94771f66.png",
-                "https://cdn.utfc.ru/uf/bc2/bc2cdf7e8dd7e9f1fb88fcf0420bd72d/38549b72f8d3113f0ed3fca3b8b23fdb.png"
+                "https://cdn.utfc.ru/uf/bc2/bc2cdf7e8dd7e9f1fb88fcf0420bd72d/38549b72f8d3113f0ed3fca3b8b23fdb.png",
+                "https://cdn.utfc.ru/iblock/420/4200ecddfd5b4a22457562d269869744/7cdba8a86576d55dbaa86196b41ddf9a.png",
+                "https://cdn.utfc.ru/iblock/656/65660f500e28f40e8ab8a84b254c4c18/457557f48193f68c90ac68c3d9954912.png",
+                "https://cdn.utfc.ru/iblock/c86/c869d6b11f5b391e0b45ad59c6aba7ae/20b8d4866d754964ecd1f0890dbd9b46.png",
+                "https://cdn.utfc.ru/iblock/b5c/b5c31c11e044a58093b39f7208bedcb8/aec8e8c3c2a8be82920798bf0d120eba.png"
             ]
         }
     ],
@@ -570,7 +574,7 @@
             "del": false
         }
     ],
-    "madeinrf": "Сделано РФ",
+    "madeinrf": "",
     "sizes": {
         "Ширина:": "600",
         "Высота:": "1130-1225",

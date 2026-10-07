@@ -1,6 +1,6 @@
 {
     "namefile": [
-        "Пуф малый"
+        "Пуф круглый UTFC малыйй"
     ],
     "name_all": [
         "Пуф малый",
@@ -10,7 +10,7 @@
         "Пуф"
     ],
     "unique_name": [
-        "Пуф малый"
+        "Пуф круглый UTFC малый"
     ],
     "vid": [
         "пуф"
@@ -80,6 +80,28 @@
             "dimensions": "img/sofa/dimensions/puf.png",
             "box": "img/box_0.png",
             "additional": [
+                "https://utfc.ru/local/templates/utfc/img/palette.png",
+                "https://cdn.utfc.ru/iblock/2ea/2eae6a06a46b7ac29d86a6a02df69d89/dd1b7264900872b0447056529ae5762a.png",
+                "https://cdn.utfc.ru/iblock/a57/a5744860e742aa8e98aadfd19cca3d7c/2180afb466d1896994213082e784c5b3.png",
+                "https://cdn.utfc.ru/iblock/f0b/f0b7f5875e76cc86c342465af1693ed0/1b687b628bb2f1a20e2a2f394b9da986.png",
+                "https://cdn.utfc.ru/iblock/b57/b57cc10a55f6e13d18e006d43c32146e/9198873ede66266f2b12006cf7262a1b.png",
+                "https://cdn.utfc.ru/iblock/420/4200ecddfd5b4a22457562d269869744/7cdba8a86576d55dbaa86196b41ddf9a.png",
+                "https://cdn.utfc.ru/iblock/950/950932a05266bab2055f28e16c9b42f9/27d8d7afa8690edbbcf59bc183335173.png",
+                "https://cdn.utfc.ru/uf/62d/62dd1d33f42c2451bee65a671a093e3c/1c923426f06500f725c7b6ae5aaee5ba.png",
+                "https://cdn.utfc.ru/uf/cac/cacc1ab0c9ba7f1cc10950aea26c21fb/49bf6d5955501cf9d33243c734a09aaa.jpg",
+                "https://cdn.utfc.ru/uf/63c/63c02f8a6cb8ae428c2f89d4e9838094/13248819dcb1695b9e610ca035a97743.jpg",
+                "https://utfc.ru/local/templates/utfc/img/icon-4.png",
+                "https://cdn.utfc.ru/uf/8d0/8d0fc428274bc3dd435ab3736b873e89.jpg",
+                "https://utfc.ru/local/templates/utfc/img/sites/utfc/logo_store_up_2x.png",
+                "https://cdn.utfc.ru/uf/e6e/e6e6efdfb208ea9a1ed35a8c538b7a99/08fcf616fdbafb5e809db530084ad85c.jpg",
+                "https://utfc.ru/local/templates/.default/components/utfc/catalog.element/.default/images/no_photo.png",
+                "https://cdn.utfc.ru/iblock/656/65660f500e28f40e8ab8a84b254c4c18/457557f48193f68c90ac68c3d9954912.png",
+                "https://cdn.utfc.ru/iblock/c86/c869d6b11f5b391e0b45ad59c6aba7ae/20b8d4866d754964ecd1f0890dbd9b46.png",
+                "https://cdn.utfc.ru/uf/966/f04p7jf5mzfr1iww28fnvz0fu9kcxiuw.png",
+                "https://utfc.ru/local/templates/utfc/img/sites/utfc/logo_down_2.png",
+                "https://utfc.ru/local/templates/utfc/img/icon-1.png",
+                "https://utfc.ru/local/templates/utfc/img/icon-2.png",
+                "https://cdn.utfc.ru/iblock/c82/c82221f9290dcdd80dbc249c5412bfc7/1ee2b80fedc34481732d1646a81542ac.png"
             ]
         }
     ],
@@ -205,5 +227,52 @@
             "limit": false,
             "del": false
         }
+    ],
+    "title": "Кресло Пуф круглый UTFC малый производства компании UTFC",
+    "base_name": "Пуф круглый UTFC малый",
+    "article_number": "ПУ-00044787",
+    "full_describe": "Малый круглый пуф - новая позиция в ассортименте для офиса и зон ожидания. Небольшое мягкое сиденье удобно как дополнительное место для посадки и как выразительный акцент в интерьере. Доступны разные варианты обивки и цветов, пуф просто подобрать под стиль переговорной, ресепшен или лаунж-зоны.",
+    "Link_arm": "https://utfc.ru/catalog/new_chairs/puf_kr_small/?offers=13814",
+    "minpromtorg": "Минпромторг",
+    "madeinrf": "Сделано РФ",
+    "Основание": "Металлические опоры модульного дивана, защитно-декоративное порошковое покрытие серого цвета (GR)",
+    "Подлокотники": "",
+    "Газлифт": "",
+    "Механизм": "",
+    "Особенности": "",
+    "Ролики": "",
+    "sizes": {
+        "Ширина:": "650",
+        "Высота:": "710",
+        "Глубина:": "650",
+        "Нагрузка:": "200",
+        "Каркас:": "Монолитный",
+        "Вес брутто:": "19,5",
+        "Объём:": "0,32"
+    },
+    "finish_type": [
+        "Экокожа Santorini",
+        "Ткань Moderno",
+        "Ткань Velutto",
+        "Ткань Велтон",
+        "Ткань Умбра",
+        "-"
+    ],
+    "color": [
+        "Экокожа S-0422 (темно-серый)"
+    ],
+    "finish_type_seat": [
+        ""
+    ],
+    "color_seat": [
+        ""
+    ],
+    "variant_name": [
+        "Пуф круглый UTFC малый (Экокожа Santorini, Экокожа S-0422 (темно-серый),, )",
+        "Пуф круглый UTFC малый (Ткань Moderno, Экокожа S-0422 (темно-серый),, )",
+        "Пуф круглый UTFC малый (Ткань Velutto, Экокожа S-0422 (темно-серый),, )",
+        "Пуф круглый UTFC малый (Ткань Велтон, Экокожа S-0422 (темно-серый),, )",
+        "Пуф круглый UTFC малый (Ткань Умбра, Экокожа S-0422 (темно-серый),, )",
+        "Пуф круглый UTFC малый (-, Экокожа S-0422 (темно-серый),, )"
     ]
 }
