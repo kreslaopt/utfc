@@ -3120,24 +3120,48 @@
                 }
             }
 
+            // if (paramChangeFlags.chair_height) {
+            //     filtered = filtered.filter(product => {
+            //         const chairHeight = product.dimensions_details?.[0]?.chair_height;
+
+            //         if (!chairHeight) return false;
+
+            //         const minVal = parseDimensionValue(chairHeight.min);
+            //         const maxVal = parseDimensionValue(chairHeight.max);
+
+            //         if (isStrictRange) {
+            //             return minVal !== null && maxVal !== null &&
+            //                 minVal >= minHeight && minVal <= maxHeight &&
+            //                 maxVal >= minHeight && maxVal <= maxHeight;
+            //         } else {
+            //             return isValueInRange(chairHeight, minHeight, maxHeight);
+            //         }
+            //     });
+            // }
+
             if (paramChangeFlags.chair_height) {
-                filtered = filtered.filter(product => {
-                    const chairHeight = product.dimensions_details?.[0]?.chair_height;
+    filtered = filtered.filter(product => {
+        const chairHeight = product.dimensions_details?.[0]?.chair_height;
 
-                    if (!chairHeight) return false;
+        if (!chairHeight) return false;
 
-                    const minVal = parseDimensionValue(chairHeight.min);
-                    const maxVal = parseDimensionValue(chairHeight.max);
+        let minVal = parseDimensionValue(chairHeight.min);
+        let maxVal = parseDimensionValue(chairHeight.max);
 
-                    if (isStrictRange) {
-                        return minVal !== null && maxVal !== null &&
-                            minVal >= minHeight && minVal <= maxHeight &&
-                            maxVal >= minHeight && maxVal <= maxHeight;
-                    } else {
-                        return isValueInRange(chairHeight, minHeight, maxHeight);
-                    }
-                });
-            }
+        // Если заполнена только одна граница — считаем обе равными ей
+        if (minVal === null && maxVal !== null) minVal = maxVal;
+        if (maxVal === null && minVal !== null) maxVal = minVal;
+
+        if (minVal === null || maxVal === null) return false;
+
+        if (isStrictRange) {
+            return minVal >= minHeight && minVal <= maxHeight &&
+                maxVal >= minHeight && maxVal <= maxHeight;
+        }
+
+        return isValueInRange({ min: minVal, max: maxVal }, minHeight, maxHeight);
+    });
+}
 
             // if (paramChangeFlags.chair_height) {
             //     console.log("Фильтрация по высоте кресла:");

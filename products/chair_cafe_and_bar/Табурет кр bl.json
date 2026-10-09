@@ -182,7 +182,10 @@
   ],
   "dimensions_details": [
     {
-      "chair_height": {},
+      "chair_height": {
+        "min": "",
+        "max": ""
+      },
       "headrest_height": {},
       "seat_to_floor_height": {
         "min": "450"
