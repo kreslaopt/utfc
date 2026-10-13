@@ -1975,6 +1975,11 @@ const knownProductsAllFiles = [
     "is_archive": false
   },
   {
+    "name": "Utfc като м-825 чёрный пластик экокожа",
+    "category": "armchair_comfort",
+    "is_archive": false
+  },
+  {
     "name": "Utfc катори м-848 чёрный пластик хром",
     "category": "armchair_comfort",
     "is_archive": false
