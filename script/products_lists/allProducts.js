@@ -1935,6 +1935,16 @@ const knownProductsAllFiles = [
     "is_archive": false
   },
   {
+    "name": "Utfc авара м-862 серый",
+    "category": "armchair_comfort",
+    "is_archive": false
+  },
+  {
+    "name": "Utfc авара м-862 чёрный",
+    "category": "armchair_comfort",
+    "is_archive": false
+  },
+  {
     "name": "Utfc акита м-828 5d серый пластик хром",
     "category": "armchair_comfort",
     "is_archive": false
