@@ -1955,6 +1955,11 @@ const knownProductsAllFiles = [
     "is_archive": false
   },
   {
+    "name": "Utfc като м-825 чёрный пластик",
+    "category": "armchair_comfort",
+    "is_archive": false
+  },
+  {
     "name": "Utfc киото м-250",
     "category": "armchair_comfort",
     "is_archive": false
