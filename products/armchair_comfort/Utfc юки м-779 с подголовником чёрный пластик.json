@@ -2,15 +2,15 @@
     "namefile": [
         "Utfc юки м-779 с подголовником чёрный пластик"
     ],
-  "name_all": [
-    "Юки",
-    "Юки с подголовником"
-  ],
+    "name_all": [
+        "Юки",
+        "Юки с подголовником"
+    ],
     "name": [
         "Юки с подголовником"
     ],
     "unique_name": [
-        "Utfc Юки М-779 с подголовником чёрный пластик"
+        "UTFC Юки М-779 с подголовником чёрный пластик"
     ],
     "vid": [
         "кресло"
@@ -85,6 +85,33 @@
             "dimensions": "img/armchair_comfort/dimensions/yuki_podg.png",
             "box": "img/box_UTFC.png",
             "additional": [
+                "https://cdn.utfc.ru/uf/1fd/1fd81b2174d5794842b6089c3495c7e6/b51a71d887d552e44b90d1c481c2af6c.png",
+                "https://utfc.ru/local/templates/utfc/img/icon-2.png",
+                "https://cdn.utfc.ru/iblock/656/65660f500e28f40e8ab8a84b254c4c18/457557f48193f68c90ac68c3d9954912.png",
+                "https://cdn.utfc.ru/iblock/643/64326132f2110ce15294dc18fff8368f/0cf16e6af629f8a89e00bc1fd352bd7a.png",
+                "https://utfc.ru/local/templates/.default/components/utfc/catalog.element/.default/images/no_photo.png",
+                "https://cdn.utfc.ru/uf/190/1903d414206e57d1503e4a49a6c92778/d9461ad57fdb856409cd4afc4c10be34.png",
+                "https://cdn.utfc.ru/uf/a17/a1783b8948b068a2f7c9411178fcce28/67fca4a05f668fca0434b483ffd2bef5.png",
+                "https://cdn.utfc.ru/iblock/c86/c869d6b11f5b391e0b45ad59c6aba7ae/20b8d4866d754964ecd1f0890dbd9b46.png",
+                "https://cdn.utfc.ru/iblock/5d1/5d1a7733c1332d593138c4b86b3f3e2b.png",
+                "https://cdn.utfc.ru/iblock/3ab/3abc16e490c8e3ed97357ba07ce266db/655156feb19f08a74f1cfacbcc585e27.png",
+                "https://utfc.ru/local/templates/utfc/img/icon-4.png",
+                "https://cdn.utfc.ru/iblock/ad3/ad35741f820182cd556f51ae30d40c35/011e4b415b410bb3a971a89509b820af.png",
+                "https://cdn.utfc.ru/iblock/c82/c82221f9290dcdd80dbc249c5412bfc7/1ee2b80fedc34481732d1646a81542ac.png",
+                "https://utfc.ru/local/templates/utfc/img/sites/utfc/logo_down_2.png",
+                "https://cdn.utfc.ru/iblock/795/795827c5696c3561a48695e0f60c5e71/0977a220d70f1eadfd2cf44c7cfef19b.png",
+                "https://utfc.ru/local/templates/utfc/img/icon-1.png",
+                "https://cdn.utfc.ru/uf/a52/a52aa5a690d4881fc8805f83289394c6.png",
+                "https://cdn.utfc.ru/iblock/b5c/b5c31c11e044a58093b39f7208bedcb8/aec8e8c3c2a8be82920798bf0d120eba.png",
+                "https://cdn.utfc.ru/uf/137/137aeded71d5c3e658441261d741a697/db90fe9452d54791f55bb61591b7c154.png",
+                "https://cdn.utfc.ru/uf/a6f/a6f0ee03bdb3da456a9b40986768c4b5/dbe00fbe08d91d91181badb7117626ad.png",
+                "https://utfc.ru/local/templates/utfc/img/sites/utfc/logo_store_up_2x.png",
+                "https://cdn.utfc.ru/iblock/2ea/2eae6a06a46b7ac29d86a6a02df69d89/dd1b7264900872b0447056529ae5762a.png",
+                "https://cdn.utfc.ru/iblock/f0b/f0b7f5875e76cc86c342465af1693ed0/1b687b628bb2f1a20e2a2f394b9da986.png",
+                "https://utfc.ru/local/templates/utfc/img/palette.png",
+                "https://cdn.utfc.ru/uf/402/402ee600adc01db0c6f1ac35452a69b6/eea6c940e91b1fddcbe99cd58b9539ce.png",
+                "https://cdn.utfc.ru/iblock/785/78555cc4cb1eaf0b48b75a3acd7b79c3/ef64e7e71145e0880ec8fadd3a022f5f.png",
+                "https://cdn.utfc.ru/iblock/82a/82a679f53d9c3affc6c23cc247f28d60/a7614f3ca138bb35bd12ea48ecc2b5e6.png"
             ]
         }
     ],
@@ -156,5 +183,57 @@
             "package_height": "",
             "volume": ""
         }
+    ],
+    "title": "Кресло UTFC Юки М-779 с подголовником производства компании UTFC",
+    "base_name": "Кресло UTFC Юки М-779 с подголовником",
+    "article_number": "ПУ-00045046",
+    "full_describe": "Кресло Юки - современная модель для рабочего кабинета. Выраженная поясничная поддержка снижает нагрузку на спину при длительной работе. Подголовник и спинка выполнены из дышащей сетки, что обеспечивает комфортную вентиляцию, а мягкое тканевое сиденье удобство в течение дня. Т-образные подлокотники дополняют лаконичный силуэт и удобно поддерживают руки. Строгая современная стилистика делает кресло уместным и в кабинете руководителя и в домашнем офисе.",
+    "Link_arm": "https://utfc.ru/catalog/comfort_chairs/m779_juki_headrest/?offers=13776",
+    "minpromtorg": "Минпромторг",
+    "madeinrf": "Сделано РФ",
+    "Основание": "Пятилучье пластиковое М-779 PL, диаметр 640мм, (черный)",
+    "Подлокотники": "Подлокотники пластиковые регулируемые по высоте для кресла М-779 Юки",
+    "Газлифт": "",
+    "Механизм": "Топ-ган (TG) - механизм регулирует высоту сиденья, обеспечивает режим свободного качания и фиксацию каркаса в рабочем положении.",
+    "Особенности": "",
+    "Ролики": "",
+    "sizes": {
+        "Ширина:": "640",
+        "Высота:": "1180-1310",
+        "Глубина:": "590",
+        "Нагрузка:": "120",
+        "Каркас:": "Немонолитный",
+        "Ширина упаковки:": "600",
+        "Высота упаковки:": "620",
+        "Глубина упаковки:": "300",
+        "Вес брутто:": "13,2",
+        "Материал упаковки:": "Гофрокартон",
+        "Объём:": "0,11"
+    },
+    "package_sizes": {
+        "Ширина упаковки:": "600",
+        "Высота упаковки:": "620",
+        "Глубина упаковки:": "300",
+        "Материал упаковки:": "Гофрокартон"
+    },
+    "finish_type": [
+        "Сетка М-779",
+        "-"
+    ],
+    "color": [
+        "Сетка М-779 (черный)"
+    ],
+    "finish_type_seat": [
+        "Ткань М-779",
+        "-"
+    ],
+    "color_seat": [
+        "Ткань М-779 (черный)"
+    ],
+    "variant_name": [
+        "Кресло UTFC Юки М-779 с подголовником (Сетка М-779, Сетка М-779 (черный), Ткань М-779, Ткань М-779 (черный))",
+        "Кресло UTFC Юки М-779 с подголовником (Сетка М-779, Сетка М-779 (черный), -, Ткань М-779 (черный))",
+        "Кресло UTFC Юки М-779 с подголовником (-, Сетка М-779 (черный), Ткань М-779, Ткань М-779 (черный))",
+        "Кресло UTFC Юки М-779 с подголовником (-, Сетка М-779 (черный), -, Ткань М-779 (черный))"
     ]
 }

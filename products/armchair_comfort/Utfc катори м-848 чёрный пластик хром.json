@@ -1,0 +1,234 @@
+{
+    "namefile": [
+        "Utfc катори м-848 чёрный пластик хром"
+    ],
+    "name": [
+        "Катори"
+    ],
+    "unique_name": [
+        "UTFC Катори М-848 чёрный пластик хром"
+    ],
+    "vid": [
+        "кресло"
+    ],
+    "category": [
+        "поворотное кресло серии комфорт"
+    ],
+    "destiny": [
+        "ежедневной работы в офисных и домашних помещениях"
+    ],
+    "technical_requirements": [
+        [
+            "Кресло должно соответствовать требованиям:",
+            "ГОСТ 19917-2014 «Мебель для сидения и лежания. Общие технические условия»",
+            "ГОСТ 26800.3-86 «Мебель для административных помещений. Функциональные размеры»",
+            "настоящего технического описания",
+            "комплекта конструкторской документации",
+            "образцу-эталону, утвержденному в установленном порядке производителем"
+        ]
+    ],
+    "construction_and_materials": [
+        {
+            "upholstery_materials": [
+                "- материал облицовки спинки и подголовника: сетка<br>\n- материал облицовки сиденья: ткань"
+            ],
+            "components": [
+                "спинки, сиденья, подголовника, подлокотников, механизма качания, газ-лифта, пятилучья и 5-ти роликов",
+                "<strong>Спинка</strong> состоит из пластикового каркаса и обивочного элемента. <strong>Облицовка спинки:</strong> сетка",
+                "<strong>Сиденье</strong> состоит из основания, пенополиуретана и обивочного элемента. <strong>Облицовка сиденья:</strong> ткань",
+                "<strong>Подголовник</strong> состоит из пластикового каркаса и обивочного элемента. <strong>Облицовка подголовника:</strong> сетка",
+                "<strong>Подлокотники</strong> пластиковые, крепятся к основанию сиденья с помощью винтов",
+                "<strong>Синхронный механизм со слайд-системой</strong> - регулировка кресла по высоте и углу наклона спинки, фиксация в 3-х положениях",
+                "<strong>Газ-лифт</strong> хромированный с высотой подъема 80 мм ± 10 мм позволяет плавно регулировать высоту сиденья относительно пола",
+                "<strong>Пятилучье</strong> d=700 мм хромированное с узкими лучами с 5-тью роликами обеспечивает устойчивость и позволяет креслу легко поворачиваться и перемещаться по любому стандартному покрытию пола",
+                "<strong>Ролики</strong> d=50 мм с полиуретановым покрытием имеют узкий шток"
+            ]
+        }
+    ],
+    "transportation": [
+        {
+            "standard": "ГОСТ 16371-2014",
+            "packaging": {
+                "type": "5-слойный гофрокороб",
+                "size": {
+                    "width": "750",
+                    "depth": "370",
+                    "height": "640"
+                },
+                "box_size": "750х370х640",
+                "transportation": "удобства транспортировки и хранения кресло поставляется в разобранном виде. Каждое кресло упаковано в отдельный 5-слойный гофрокороб размером"
+            }
+        }
+    ],
+    "dimensions": [
+        {
+            "brutto": "20,85",
+            "netto": "0",
+            "volume": "0,18"
+        }
+    ],
+    "guarantee": [
+        {
+            "period": "12",
+            "max_load": "130",
+            "recommended_load": "100"
+        }
+    ],
+    "images": [
+        {
+            "vid_main": "img/armchair_comfort/katori_black_pl_ch_01.png",
+            "chair_view": "img/armchair_comfort/katori_black_pl_ch_02.png",
+            "dimensions": "img/armchair_comfort/dimensions/katori.png",
+            "box": "img/box_UTFC.png",
+            "additional": [
+                "https://cdn.utfc.ru/iblock/7e3/7e31de8d881ada3670b2bee7973ead43/2f7f9e8af96c0e33dc4444273c1f8739.png",
+                "https://utfc.ru/local/templates/utfc/img/icon-2.png",
+                "https://cdn.utfc.ru/iblock/656/65660f500e28f40e8ab8a84b254c4c18/457557f48193f68c90ac68c3d9954912.png",
+                "https://cdn.utfc.ru/uf/ee4/ee4f6822a39206555614b1ae7ddf16f7/532bc60882cf42ef4a47d4355c4e86ac.png",
+                "https://utfc.ru/local/templates/.default/components/utfc/catalog.element/.default/images/no_photo.png",
+                "https://cdn.utfc.ru/iblock/f55/f55fc0da0791a123dfbef8670277f82e/f32cd49e58e9a4916bf48e1ecf6b4775.png",
+                "https://cdn.utfc.ru/iblock/1b5/1b5cf2f6cc7a1994b35545a15e26d3b0/14d10bc69f722a1392373f577f304ce9.png",
+                "https://cdn.utfc.ru/uf/64d/64d379a93ca98e8afa8bf5913d1760d6/18d68d45021f83c3be125567440717b3.png",
+                "https://cdn.utfc.ru/iblock/c86/c869d6b11f5b391e0b45ad59c6aba7ae/20b8d4866d754964ecd1f0890dbd9b46.png",
+                "https://cdn.utfc.ru/uf/971/971dba46d61b1bfee214ca39194410d0/16b41081905b7534303d1175606acca3.png",
+                "https://cdn.utfc.ru/iblock/5d1/5d1a7733c1332d593138c4b86b3f3e2b.png",
+                "https://cdn.utfc.ru/uf/184/18459e03f46e1b8fa6c505b45876d413/536059b56e09467377be99c28efc34db.png",
+                "https://cdn.utfc.ru/uf/edf/edfe5951cd9663fa0425942c90cc8df0/86e7bc0d2a45f9cd46c9ac9564cbce29.png",
+                "https://utfc.ru/local/templates/utfc/img/icon-4.png",
+                "https://cdn.utfc.ru/iblock/c82/c82221f9290dcdd80dbc249c5412bfc7/1ee2b80fedc34481732d1646a81542ac.png",
+                "https://utfc.ru/local/templates/utfc/img/sites/utfc/logo_down_2.png",
+                "https://cdn.utfc.ru/uf/818/8183e1adb2c835e477d5872b2321123e/3b4de68ddd9bce1917a2e7f0fe629a8b.png",
+                "https://utfc.ru/local/templates/utfc/img/icon-1.png",
+                "https://cdn.utfc.ru/iblock/b5c/b5c31c11e044a58093b39f7208bedcb8/aec8e8c3c2a8be82920798bf0d120eba.png",
+                "https://cdn.utfc.ru/iblock/8c4/8c4b749bce48b549675923c7057b8e0f/29da202f660a43a1eddc4e4a8692f3a4.png",
+                "https://cdn.utfc.ru/iblock/ef0/ef007a4873d9301a9685ead9ff1308a2/407167ca5cee4121ee4ccac15bbbcfa4.png",
+                "https://utfc.ru/local/templates/utfc/img/sites/utfc/logo_store_up_2x.png",
+                "https://cdn.utfc.ru/iblock/2ea/2eae6a06a46b7ac29d86a6a02df69d89/dd1b7264900872b0447056529ae5762a.png",
+                "https://cdn.utfc.ru/iblock/f0b/f0b7f5875e76cc86c342465af1693ed0/1b687b628bb2f1a20e2a2f394b9da986.png",
+                "https://utfc.ru/local/templates/utfc/img/palette.png",
+                "https://cdn.utfc.ru/iblock/82a/82a679f53d9c3affc6c23cc247f28d60/a7614f3ca138bb35bd12ea48ecc2b5e6.png"
+            ]
+        }
+    ],
+    "dimensions_details": [
+        {
+            "chair_height": {
+                "min": "1150",
+                "max": "1310"
+            },
+            "headrest_height": {
+                "min": "130",
+                "max": "220"
+            },
+            "seat_to_floor_height": {
+                "min": "460",
+                "max": "540"
+            },
+            "seat_to_floor_height_upper": {},
+            "armrest_height_from_floor": {
+                "min": "",
+                "max": ""
+            },
+            "armrest_height_from_seat": {
+                "min": "190",
+                "max": "265"
+            },
+            "armrest_width_support": {},
+            "armrest_length_support": {},
+            "chair_depth": {
+                "min": "560"
+            },
+            "seat_depth": {
+                "min": "430",
+                "max": ""
+            },
+            "seat_depth_km": {},
+            "backrest_height": {},
+            "backrest_to_seat_height": {
+                "min": "560"
+            },
+            "backrest_height_external": {
+                "max": ""
+            },
+            "seat_width_with_armrests": {
+                "min": "650",
+                "max": "680"
+            },
+            "seat_width": {
+                "max": "520"
+            },
+            "backrest_width_narrow": {
+                "max": ""
+            },
+            "backrest_width_wide": {
+                "max": ""
+            },
+            "diameter_cross": {
+                "max": "700"
+            },
+            "runners_width": {},
+            "runners_depth": {},
+            "recommended_load": "100",
+            "max_load": "130",
+            "skeleton": "",
+            "netto": "",
+            "brutto": "",
+            "package_width": "",
+            "package_depth": "",
+            "package_height": "",
+            "volume": ""
+        }
+    ],
+    "title": "Кресло UTFC Катори М-848 производства компании UTFC",
+    "base_name": "Кресло UTFC Катори М-848",
+    "article_number": "ПУ-00044242",
+    "full_describe": "Кресло Катори - готовое решение для тех, кто ценит комфорт и строгий современный дизайн. Регулируемый подголовник подстраивается под рост и посадку, поддерживая шею при длительной работе. Т-образные подлокотники удобно поддерживают руки и придают конструкции аккуратный, лаконичный вид. Завершённость образу придаёт хромированное пятилучье и современные \"дышашие\" материалы обивки.",
+    "Link_arm": "https://utfc.ru/catalog/comfort_chairs/m848_katori/?offers=13775",
+    "minpromtorg": "Минпромторг",
+    "madeinrf": "Сделано РФ",
+    "Основание": "Пятилучье хромированное М-848, диаметр 700мм",
+    "Подлокотники": "Подлокотники пластиковые 4D-регулируемые для кресла М-848 Катори",
+    "Газлифт": "",
+    "Механизм": "Синхронный механизм качания со слайд-системой позволяет регулировать высоту и глубину сиденья, регулировку силы отклонения спинки под вес пользователя в режиме качания и фиксацию в 3-х положениях.",
+    "Особенности": "",
+    "Ролики": "",
+    "sizes": {
+        "Ширина:": "650",
+        "Высота:": "1150-1310",
+        "Глубина:": "560",
+        "Нагрузка:": "120",
+        "Каркас:": "Немонолитный",
+        "Ширина упаковки:": "750",
+        "Высота упаковки:": "640",
+        "Глубина упаковки:": "370",
+        "Вес брутто:": "20,85",
+        "Материал упаковки:": "Гофрокартон",
+        "Объём:": "0,18"
+    },
+    "package_sizes": {
+        "Ширина упаковки:": "750",
+        "Высота упаковки:": "640",
+        "Глубина упаковки:": "370",
+        "Материал упаковки:": "Гофрокартон"
+    },
+    "finish_type": [
+        "Сетка М-848",
+        "-"
+    ],
+    "color": [
+        "Сетка М-848 (черный)"
+    ],
+    "finish_type_seat": [
+        "Ткань М-848",
+        "-"
+    ],
+    "color_seat": [
+        "Ткань М-848 (черный)"
+    ],
+    "variant_name": [
+        "Кресло UTFC Катори М-848 (Сетка М-848, Сетка М-848 (черный), Ткань М-848, Ткань М-848 (черный))",
+        "Кресло UTFC Катори М-848 (Сетка М-848, Сетка М-848 (черный), -, Ткань М-848 (черный))",
+        "Кресло UTFC Катори М-848 (-, Сетка М-848 (черный), Ткань М-848, Ткань М-848 (черный))",
+        "Кресло UTFC Катори М-848 (-, Сетка М-848 (черный), -, Ткань М-848 (черный))"
+    ]
+}
