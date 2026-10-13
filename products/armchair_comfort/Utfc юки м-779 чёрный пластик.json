@@ -1,0 +1,159 @@
+{
+    "namefile": [
+        "Utfc юки м-779 чёрный пластик"
+    ],
+  "name_all": [
+    "Юки",
+    "Юки с подголовником"
+  ],
+    "name": [
+        "Юки"
+    ],
+    "unique_name": [
+        "Utfc Юки М-779 чёрный пластик"
+    ],
+    "vid": [
+        "кресло"
+    ],
+    "category": [
+        "поворотное кресло серии комфорт"
+    ],
+    "destiny": [
+        "ежедневной работы в офисных и домашних помещениях"
+    ],
+    "technical_requirements": [
+        [
+            "Кресло должно соответствовать требованиям:",
+            "ГОСТ 19917-2014 «Мебель для сидения и лежания. Общие технические условия»",
+            "ГОСТ 26800.3-86 «Мебель для административных помещений. Функциональные размеры»",
+            "настоящего технического описания",
+            "комплекта конструкторской документации",
+            "образцу-эталону, утвержденному в установленном порядке производителем"
+        ]
+    ],
+    "construction_and_materials": [
+        {
+            "upholstery_materials": [
+                "- материал облицовки спинки и подголовника: сетка<br>\n- материал облицовки сиденья: ткань"
+            ],
+            "components": [
+                "спинки, сиденья, подлокотников, механизма качания, газ-лифта, пятилучья и 5-ти роликов",
+                "<strong>Спинка</strong> состоит из пластикового каркаса и обивочного элемента. <strong>Облицовка спинки:</strong> сетка",
+                "<strong>Сиденье</strong> состоит из основания, пенополиуретана и обивочного элемента. <strong>Облицовка сиденья:</strong> ткань",
+                "<strong>Подлокотники</strong> пластиковые, крепятся к основанию сиденья с помощью винтов",
+                "<strong>Механизм качания</strong> «Топ-ган» позволяет регулировать высоту сиденья, регулировку силы  отклонения спинки под вес пользователя в режиме качания и фиксацию в вертикальном положении",
+                "<strong>Газ-лифт</strong> чёрный с высотой подъема 100 мм ± 10 мм позволяет плавно регулировать высоту сиденья относительно пола",
+                "<strong>Пятилучье</strong> d=640 мм пластиковое с узкими лучами с 5-тью роликами обеспечивает устойчивость и позволяет креслу легко поворачиваться и перемещаться по любому стандартному покрытию пола",
+                "<strong>Ролики</strong> d=50 мм с полиуретановым покрытием"
+            ]
+        }
+    ],
+    "transportation": [
+        {
+            "standard": "ГОСТ 16371-2014",
+            "packaging": {
+                "type": "5-слойный гофрокороб",
+                "size": {
+                    "width": "600",
+                    "depth": "290",
+                    "height": "600"
+                },
+                "box_size": "600х290х600",
+                "transportation": "удобства транспортировки и хранения кресло поставляется в разобранном виде. Каждое кресло упаковано в отдельный 5-слойный гофрокороб размером"
+            }
+        }
+    ],
+    "dimensions": [
+        {
+            "brutto": "12,7",
+            "netto": "0",
+            "volume": "0,1"
+        }
+    ],
+    "guarantee": [
+        {
+            "period": "12",
+            "max_load": "130",
+            "recommended_load": "100"
+        }
+    ],
+    "images": [
+        {
+            "vid_main": "img/armchair_comfort/uki_m779_01.png",
+            "chair_view": "img/armchair_comfort/uki_m779_02.png",
+            "dimensions": "img/armchair_comfort/dimensions/yuki.png",
+            "box": "img/box_UTFC.png",
+            "additional": [
+            ]
+        }
+    ],
+    "dimensions_details": [
+        {
+            "chair_height": {
+                "min": "970",
+                "max": "1070"
+            },
+            "headrest_height": {
+                "min": "",
+                "max": ""
+            },
+            "seat_to_floor_height": {
+                "min": "470",
+                "max": "570"
+            },
+            "seat_to_floor_height_upper": {},
+            "armrest_height_from_floor": {
+                "min": "",
+                "max": ""
+            },
+            "armrest_height_from_seat": {
+                "min": "205",
+                "max": "285"
+            },
+            "armrest_width_support": {},
+            "armrest_length_support": {},
+            "chair_depth": {
+                "min": "590"
+            },
+            "seat_depth": {
+                "min": "470",
+                "max": ""
+            },
+            "seat_depth_km": {},
+            "backrest_height": {},
+            "backrest_to_seat_height": {
+                "min": "530"
+            },
+            "backrest_height_external": {
+                "max": ""
+            },
+            "seat_width_with_armrests": {
+                "min": "",
+                "max": "640"
+            },
+            "seat_width": {
+                "max": "480"
+            },
+            "backrest_width_narrow": {
+                "max": ""
+            },
+            "backrest_width_wide": {
+                "max": ""
+            },
+            "diameter_cross": {
+                "max": "640"
+            },
+            "runners_width": {},
+            "runners_depth": {},
+            "recommended_load": "100",
+            "max_load": "130",
+            "skeleton": "",
+            "netto": "",
+            "brutto": "",
+            "package_width": "",
+            "package_depth": "",
+            "package_height": "",
+            "volume": ""
+        }
+    ]
+}

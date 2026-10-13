@@ -2048,5 +2048,15 @@ const knownProductsAllFiles = [
     "name": "Utfc санда м-207 черный пластик",
     "category": "armchair_comfort",
     "is_archive": false
+  },
+  {
+    "name": "Utfc юки м-779 с подголовником чёрный пластик",
+    "category": "armchair_comfort",
+    "is_archive": false
+  },
+  {
+    "name": "Utfc юки м-779 чёрный пластик",
+    "category": "armchair_comfort",
+    "is_archive": false
   }
 ];
