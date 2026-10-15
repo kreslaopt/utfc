@@ -60,10 +60,10 @@
     <h3>Каркас</h3>
     <div class="icon-row">
       <!-- <div class="color-picker-wrap">
-      <input type="color" id="frame-color" value="#888888" />
+      <input type="color" id="frame-color" value="#c4c3c3" />
     </div> -->
       <div class="color-circle" id="frame-color-black" style="background:#101010" data-tooltip="Чёрный"></div>
-      <div class="color-circle" id="frame-color-gray" style="background:#888888" data-tooltip="Серый"></div>
+      <div class="color-circle" id="frame-color-gray" style="background:#c4c3c3" data-tooltip="Серый"></div>
     </div>
     <h3>Обивка</h3>
     <div style="display: flex; gap: 8px; align-items: center;">
@@ -1547,7 +1547,7 @@ function applyUpholsteryTexture(object, category, file) {
 
       function createGridFloor() {
         const size = 200;
-        const cellSize = 10;
+        const cellSize = 5;
         const repeatCount = size / cellSize;
         const geometry = new THREE.PlaneGeometry(size, size);
         geometry.rotateX(-Math.PI / 2);
@@ -1709,7 +1709,7 @@ function applyUpholsteryTexture(object, category, file) {
         document.getElementById('frame-color-gray').addEventListener('click', () => {
           if (selectedObject) {
             saveState();
-            const count = changeColorByType(selectedObject, 'frame', 0x888888);
+            const count = changeColorByType(selectedObject, 'frame', 0xc4c3c3);
             console.log(`Перекрашено мешей каркаса: ${count}`);
           }
         });
@@ -1731,16 +1731,16 @@ function applyUpholsteryTexture(object, category, file) {
         };
 
         document.getElementById('frame-color-gray').onclick = () => {
-          const colorHex = 0x888888;
+          const colorHex = 0xc4c3c3;
           if (selectedObject) {
             saveState();
-            selectedObject.userData.frameColor = '#888888';
+            selectedObject.userData.frameColor = '#c4c3c3';
             changeColorByType(selectedObject, 'frame', colorHex);
           } else {
             saveState();
             updateColorForAllSceneObjects('frame', colorHex);
           }
-          // document.getElementById('frame-color').value = '#888888';
+          // document.getElementById('frame-color').value = '#c4c3c3';
           document.getElementById('frame-color-gray').classList.add('active');
           document.getElementById('frame-color-black').classList.remove('active');
         };
@@ -1813,7 +1813,7 @@ function applyUpholsteryTexture(object, category, file) {
 
           // Сбрасываем UI
           // document.getElementById('upholstery-color').value = '#ffffff';
-          // document.getElementById('frame-color').value = '#888888';
+          // document.getElementById('frame-color').value = '#c4c3c3';
           document.getElementById('upholstery-category').value = 'none';
           document.getElementById('frame-color-black').classList.remove('active');
           document.getElementById('frame-color-gray').classList.remove('active');
@@ -1821,23 +1821,23 @@ function applyUpholsteryTexture(object, category, file) {
 
           if (selectedObject) {
             // Сброс для выделенного объекта
-            selectedObject.userData.frameColor = '#888888';
+            selectedObject.userData.frameColor = '#c4c3c3';
             selectedObject.userData.upholsteryColor = '#ffffff';
             selectedObject.userData.upholsteryCategory = 'none';
             selectedObject.userData.upholsteryVariant = '';
-            changeColorByType(selectedObject, 'frame', 0x888888);
+            changeColorByType(selectedObject, 'frame', 0xc4c3c3);
             changeColorByType(selectedObject, 'upholstery', 0xffffff);
             applyUpholsteryTexture(selectedObject, 'none', '');
           } else {
             // Сброс для всех объектов
             sceneObjects.forEach(obj => {
               if (obj.userData) {
-                obj.userData.frameColor = '#888888';
+                obj.userData.frameColor = '#c4c3c3';
                 obj.userData.upholsteryColor = '#ffffff';
                 obj.userData.upholsteryCategory = 'none';
                 obj.userData.upholsteryVariant = '';
               }
-              changeColorByType(obj, 'frame', 0x888888);
+              changeColorByType(obj, 'frame', 0xc4c3c3);
               changeColorByType(obj, 'upholstery', 0xffffff);
               applyUpholsteryTexture(obj, 'none', '');
             });
