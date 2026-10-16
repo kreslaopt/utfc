@@ -102,7 +102,9 @@
         "https://utfc.ru/local/templates/utfc/img/icon-1.png",
         "https://utfc.ru/local/templates/utfc/img/icon-2.png",
         "https://cdn.utfc.ru/iblock/c82/c82221f9290dcdd80dbc249c5412bfc7/1ee2b80fedc34481732d1646a81542ac.png",
-        "https://cdn.utfc.ru/iblock/039/0390882158b7a37eb980109fd2fc0b6c/ee07ada276601b4fa49ceed4b2f071e3.png"
+        "https://cdn.utfc.ru/iblock/039/0390882158b7a37eb980109fd2fc0b6c/ee07ada276601b4fa49ceed4b2f071e3.png",
+        "https://cdn.utfc.ru/iblock/1d9/1d9af4c959b2bca68fcb434085755d5c/53d197f9ba0ae8bdebbce8a4a87ef90a.png",
+        "https://cdn.utfc.ru/iblock/350/350dc41b95d210b5ac78404415174b25/fc6e12c960d16ce3e8a8d77ac6540f17.png"
       ]
     }
   ],
@@ -243,13 +245,13 @@
   "Особенности": "",
   "Ролики": "",
   "sizes": {
-    "Ширина:": "650",
-    "Высота:": "710",
-    "Глубина:": "650",
-    "Нагрузка:": "200",
+    "Ширина:": "400",
+    "Высота:": "455",
+    "Глубина:": "400",
+    "Нагрузка:": "150",
     "Каркас:": "Монолитный",
-    "Вес брутто:": "19,5",
-    "Объём:": "0,32"
+    "Вес брутто:": "4,7",
+    "Объём:": "0,072"
   },
   "finish_type": [
     "Экокожа Santorini",
@@ -340,7 +342,7 @@
     "IC_DESCRIPTION0": "Свежие решения и актуальный дизайн для современных интерьеров",
     "IC_DESCRIPTION_TYPE0": "text",
     "IC_CODE0": "new_chairs",
-    "IC_PICTURE0": "https://cdn.utfc.ru/iblock/5a7/vgqxwpgo0iu50sm04riv2dystf8teciu.png",
+    "IC_PICTURE0": "https://cdn.utfc.ru/iblock/a7b/a7b659cd6d42a1bf6a7774265b6b4f45/e8cf9f022bbe3baf7fd67aa6d50567ce.png",
     "IC_DETAIL_PICTURE0": "https://cdn.utfc.ru/iblock/7d7/pv174qwavt4zlhin2t1x5avsgznu0cof.png",
     "IC_ID1": "",
     "IC_XML_ID1": "",

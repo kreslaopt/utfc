@@ -181,7 +181,8 @@
         "https://cdn.utfc.ru/iblock/dc9/dc9445953df40ab677b43a21a16589a7.png",
         "https://cdn.utfc.ru/iblock/622/6221cac704ca325c99602b83912b16cc.png",
         "https://cdn.utfc.ru/iblock/e9c/e9cf0dcd9d925b6b7d1822ba5c9061ad.png",
-        "https://cdn.utfc.ru/iblock/d14/d14e43d0127627b3cd0cf8db91611bb3.png"
+        "https://cdn.utfc.ru/iblock/d14/d14e43d0127627b3cd0cf8db91611bb3.png",
+        "https://cdn.utfc.ru/iblock/1d9/1d9af4c959b2bca68fcb434085755d5c/53d197f9ba0ae8bdebbce8a4a87ef90a.png"
       ]
     }
   ],
@@ -559,7 +560,7 @@
       "IC_CODE2": "",
       "IC_PICTURE2": "",
       "IC_DETAIL_PICTURE2": "",
-      "CP_QUANTITY": 292,
+      "CP_QUANTITY": 291,
       "CP_QUANTITY_TRACE": "D",
       "CP_CAN_BUY_ZERO": "D",
       "CP_WEIGHT": 0,
@@ -576,7 +577,7 @@
       "CP_VAT_ID": 1,
       "CP_VAT_INCLUDED": "Y",
       "CP_MEASURE": 5,
-      "STORE_AMOUNT_2": 21,
+      "STORE_AMOUNT_2": 20,
       "STORE_AMOUNT_3": 44,
       "CV_QUANTITY_FROM": "",
       "CV_QUANTITY_TO": "",
