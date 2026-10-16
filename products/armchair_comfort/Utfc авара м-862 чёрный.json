@@ -151,7 +151,7 @@
       "armrest_width_support": {},
       "armrest_length_support": {},
       "chair_depth": {
-        "min": "670"
+        "min": "560"
       },
       "seat_depth": {
         "min": "490",

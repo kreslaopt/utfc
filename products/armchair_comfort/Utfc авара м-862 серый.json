@@ -80,9 +80,9 @@
   ],
   "images": [
     {
-      "vid_main": "img/armchair_comfort/katori_black_pl_ch_01.png",
-      "chair_view": "img/armchair_comfort/katori_black_pl_ch_02.png",
-      "dimensions": "img/armchair_comfort/dimensions/katori.png",
+      "vid_main": "img/armchair_comfort/lm_262a_1_grey_01.png",
+      "chair_view": "img/armchair_comfort/lm_262a_1_grey_02.png",
+      "dimensions": "img/armchair_comfort/dimensions/lm_262a_1_grey_01.png",
       "box": "img/box_UTFC.png",
       "additional": [
         "https://cdn.utfc.ru/iblock/56e/56e622a80fc329ed55203a53186fa7f0/40202ee1e0facb91594bd1b6abdf89bd.png",
