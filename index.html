@@ -3278,82 +3278,114 @@
                 });
             }
 
-            if (paramChangeFlags.all_width) {
-                filtered = filtered.filter(product => {
-                    const dimensions = product.dimensions_details?.[0] || {};
-                    const sources = [
-                        dimensions.seat_width_with_armrests,
-                        dimensions.seat_width,
-                        dimensions.backrest_width_wide,
-                        dimensions.diameter_cross,
-                        dimensions.runners_width
-                    ];
+if (paramChangeFlags.all_width) {
+    filtered = filtered.filter(product => {
+        const dimensions = product.dimensions_details?.[0];
 
-                    let allMins = [];
-                    let allMaxs = [];
+        const widthFields = [
+            dimensions?.seat_width_with_armrests,
+            dimensions?.seat_width,
+            dimensions?.backrest_width_wide,
+            dimensions?.diameter_cross,
+            dimensions?.runners_width
+        ];
 
-                    sources.forEach(source => {
-                        if (!source) return;
-                        const min = parseDimensionValue(source.min);
-                        const max = parseDimensionValue(source.max);
+        console.log("[all_width] product:", product);
+        console.log("[all_width] widthFields:", widthFields);
 
-                        if (min !== null) allMins.push(min);
-                        if (max !== null) allMaxs.push(max);
-                    });
+        const ranges = widthFields
+            .filter(Boolean)
+            .map(field => {
+                let minVal = parseDimensionValue(field.min);
+                let maxVal = parseDimensionValue(field.max);
 
-                    if (allMins.length === 0 && allMaxs.length === 0) {
-                        return false;
-                    }
+                if (minVal === null && maxVal !== null) minVal = maxVal;
+                if (maxVal === null && minVal !== null) maxVal = minVal;
 
-                    const globalMin = allMins.length > 0 ? Math.min(...allMins) : null;
-                    const globalMax = allMaxs.length > 0 ? Math.max(...allMaxs) : null;
-
-                    if (isStrictRange) {
-                        return globalMin !== null && globalMax !== null &&
-                            isValueInRange({ min: globalMin, max: globalMax }, minAllWidth, maxAllWidth);
-                    } else {
-                        return isValueInRange({ min: globalMin, max: globalMax }, minAllWidth, maxAllWidth);
-                    }
+                console.log("[all_width] field:", field, {
+                    minVal,
+                    maxVal
                 });
-            }
 
-            if (paramChangeFlags.all_depth) {
-                filtered = filtered.filter(product => {
-                    const dimensions = product.dimensions_details?.[0] || {};
-                    const sources = [
-                        dimensions.chair_depth,
-                        dimensions.seat_depth,
-                        dimensions.runners_depth,
-                        dimensions.diameter_cross
-                    ];
+                if (minVal === null || maxVal === null) return null;
+                return { min: minVal, max: maxVal };
+            })
+            .filter(Boolean);
 
-                    let allMins = [];
-                    let allMaxs = [];
+        if (ranges.length === 0) {
+            console.log("[all_width] нет диапазонов");
+            return false;
+        }
 
-                    sources.forEach(source => {
-                        if (!source) return;
-                        const min = parseDimensionValue(source.min);
-                        const max = parseDimensionValue(source.max);
+        const minVal = Math.min(...ranges.map(range => range.min));
+        const maxVal = Math.max(...ranges.map(range => range.max));
 
-                        if (min !== null) allMins.push(min);
-                        if (max !== null) allMaxs.push(max);
-                    });
+        console.log("[all_width] итог:", {
+            ranges,
+            minVal,
+            maxVal,
+            minAllWidth,
+            maxAllWidth,
+            isStrictRange
+        });
 
-                    if (allMins.length === 0 && allMaxs.length === 0) {
-                        return false;
-                    }
+        if (isStrictRange) {
+            return minVal >= minAllWidth && minVal <= maxAllWidth &&
+                maxVal >= minAllWidth && maxVal <= maxAllWidth;
+        }
 
-                    const globalMin = allMins.length > 0 ? Math.min(...allMins) : null;
-                    const globalMax = allMaxs.length > 0 ? Math.max(...allMaxs) : null;
+        return isValueInRange(
+            { min: minVal, max: maxVal },
+            minAllWidth,
+            maxAllWidth
+        );
+    });
+}
 
-                    if (isStrictRange) {
-                        return globalMin !== null && globalMax !== null &&
-                            isValueInRange({ min: globalMin, max: globalMax }, minAllDepth, maxAllDepth);
-                    } else {
-                        return isValueInRange({ min: globalMin, max: globalMax }, minAllDepth, maxAllDepth);
-                    }
-                });
-            }
+         if (paramChangeFlags.all_depth) {
+    filtered = filtered.filter(product => {
+        const dimensions = product.dimensions_details?.[0] || {};
+        const sources = [
+            dimensions.chair_depth,
+            dimensions.seat_depth,
+            dimensions.runners_depth,
+            dimensions.diameter_cross
+        ];
+
+        const ranges = [];
+
+        sources.forEach(source => {
+            if (!source) return;
+
+            let minVal = parseDimensionValue(source.min);
+            let maxVal = parseDimensionValue(source.max);
+
+            // Если заполнена только одна граница — считаем обе равными ей
+            if (minVal === null && maxVal !== null) minVal = maxVal;
+            if (maxVal === null && minVal !== null) maxVal = minVal;
+
+            if (minVal === null || maxVal === null) return;
+
+            ranges.push({ min: minVal, max: maxVal });
+        });
+
+        if (ranges.length === 0) return false;
+
+        const globalMin = Math.min(...ranges.map(range => range.min));
+        const globalMax = Math.max(...ranges.map(range => range.max));
+
+        if (isStrictRange) {
+            return globalMin >= minAllDepth && globalMin <= maxAllDepth &&
+                globalMax >= minAllDepth && globalMax <= maxAllDepth;
+        }
+
+        return isValueInRange(
+            { min: globalMin, max: globalMax },
+            minAllDepth,
+            maxAllDepth
+        );
+    });
+}
 
             if (paramChangeFlags.chair_depth) {
                 filtered = filtered.filter(product => {
