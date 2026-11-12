@@ -2262,7 +2262,7 @@
                                 // Иначе используем существующие компоненты
                                 components = product.Подлокотники || product.construction_and_materials?.[0]?.components || product.construction_and_materials?.[0]?.upholstery_materials || product.children?.[0]?.IE_NAME || product.parent?.[0]?.IE_PREVIEW_TEXT || product.namefile || product.unique_name || product.addition || [];
                                 //         console.log('Тип components:', typeof components);
-                                // console.log('Значение components:', components);
+                                console.log('Значение components:', components);
                             }
                         }
 
@@ -2342,29 +2342,29 @@
 
                     // Создаем объект с условиями и строками для поиска
                     const filtersMap = {
-                        //   "<strong>Подлокотники</strong> пластиковые": armrestFilters.some(f => f.includes("пластиковые")),
-                        //   "<strong>Подлокотники</strong> регулируемые": armrestFilters.some(f => f.includes("регулируемые")),
-                        //   "<strong>Подлокотники</strong> нерегулируемые": armrestFilters.some(f => f.includes("нерегулируемые")),
-                        //   "<strong>Подлокотники</strong> металлические": armrestFilters.some(f => f.includes("металлические")),
-                        //   "Подлокотники алюминиевые": armrestFilters.some(f => f.includes("алюминиевые")),
-                        //   "деревянные": armrestFilters.some(f => f.includes("деревянные")),
-                        // "С деревянными накладками": armrestFilters.some(f => 
-                        //   f.toLowerCase().includes("деревянными накладками") || f.toLowerCase().includes("д8")
-                        // ),
+                          "<strong>Подлокотники</strong> пластиковые": armrestFilters.some(f => f.includes("пластиковые")),
+                          "<strong>Подлокотники</strong> регулируемые": armrestFilters.some(f => f.includes("регулируемые")),
+                          "<strong>Подлокотники</strong> нерегулируемые": armrestFilters.some(f => f.includes("нерегулируемые")),
+                          "<strong>Подлокотники</strong> металлические": armrestFilters.some(f => f.includes("металлические")),
+                          "Подлокотники алюминиевые": armrestFilters.some(f => f.includes("алюминиевые")),
+                          "деревянные": armrestFilters.some(f => f.includes("деревянные")),
+                        "С деревянными накладками": armrestFilters.some(f => 
+                          f.toLowerCase().includes("деревянными накладками") || f.toLowerCase().includes("д8")
+                        ),
                         "с мягкими накладками": armrestFilters.some(f => f.includes("с мягкими накладками")),
 
-                        //   "Айрон-хром": armrestFilters.some(f => f.includes("Айрон-хром")),
-                        //   "Айрон-пластик": armrestFilters.some(f => f.includes("Айрон-пластик")),
-                        //   "айс": armrestFilters.some(f => f.includes("айс")),
-                        //   "под хром": armrestFilters.some(f => f.includes("под хром")),
-                        //   "металлические «ХДП»": armrestFilters.some(f => f.includes("ХДП")),
-                        //   "Soft и Soft2": armrestFilters.some(f => f.includes("soft")),
-                        //   "Soft и Soft2": armrestFilters.some(f => f.includes("soft2")),
-                        //   "3-D хромированные": armrestFilters.some(f => f.includes("3-D хромированные")),
-                        // "Soft и Soft2": armrestFilters.some(f => {
-                        //   const patterns = f.split('|').map(p => p.toLowerCase().trim());
-                        //   return patterns.includes('soft') || patterns.includes('soft2');
-                        // }),
+                          "Айрон-хром": armrestFilters.some(f => f.includes("Айрон-хром")),
+                          "Айрон-пластик": armrestFilters.some(f => f.includes("Айрон-пластик")),
+                          "айс": armrestFilters.some(f => f.includes("айс")),
+                          "под хром": armrestFilters.some(f => f.includes("под хром")),
+                          "металлические «ХДП»": armrestFilters.some(f => f.includes("ХДП")),
+                          "Soft и Soft2": armrestFilters.some(f => f.includes("soft")),
+                          "Soft и Soft2": armrestFilters.some(f => f.includes("soft2")),
+                          "3-D хромированные": armrestFilters.some(f => f.includes("3-D хромированные")),
+                        "Soft и Soft2": armrestFilters.some(f => {
+                          const patterns = f.split('|').map(p => p.toLowerCase().trim());
+                          return patterns.includes('soft') || patterns.includes('soft2');
+                        }),
                     };
 
                     const productName = Array.isArray(product.unique_name) ? product.unique_name[0] : product.unique_name;
