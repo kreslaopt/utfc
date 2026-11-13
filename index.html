@@ -133,6 +133,8 @@
                     хром</label>
                 <label><input type="checkbox" class="armrest-filter" value="Пластиковые|пластиковые|пластиковый">
                     Пластиковые</label>
+                                        <label><input type="checkbox" class="armrest-filter" value="Сенатор">
+                    Сенатор</label>
                 <label><input type="checkbox" class="armrest-filter" value="под хром"> Со вставками "под хром"</label>
                 <label><input type="checkbox" class="armrest-filter" value="Металлические|металлические">
                     Металлические</label>
@@ -2233,6 +2235,7 @@
                         const isSoft = armrestFilters.some(f => f.toLowerCase().includes('soft') || f.toLowerCase().includes('soft2'));
                         // const isExcluded = sambasExcludedNames.some(name => uniqueNameStr.includes(name));
                         const isExcluded = uniqueNameStr.toLowerCase().startsWith('самба');
+                        const isMetall = uniqueNameStr.toLowerCase().startsWith('Каркас подлокотников металлический');
                         // const isDderevoNakladki = armrestFilters.some(f => 
                         //   f.toLowerCase().includes('Д8') || f.toLowerCase().includes('орех') || []
                         // );      
@@ -2265,6 +2268,7 @@
                                 console.log('Значение components:', components);
                             }
                         }
+               
 
                         let nameString = '';
 
@@ -2346,6 +2350,7 @@
                           "<strong>Подлокотники</strong> регулируемые": armrestFilters.some(f => f.includes("регулируемые")),
                           "<strong>Подлокотники</strong> нерегулируемые": armrestFilters.some(f => f.includes("нерегулируемые")),
                           "<strong>Подлокотники</strong> металлические": armrestFilters.some(f => f.includes("металлические")),
+                          "Каркас подлокотников металлический": armrestFilters.some(f => f.includes("металлический")),
                           "Подлокотники алюминиевые": armrestFilters.some(f => f.includes("алюминиевые")),
                           "деревянные": armrestFilters.some(f => f.includes("деревянные")),
                         "С деревянными накладками": armrestFilters.some(f => 
